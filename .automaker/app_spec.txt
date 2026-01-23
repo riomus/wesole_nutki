@@ -2082,6 +2082,133 @@ Requirements:
 - Test that the About page loads correctly when accessed via this button
 - Confirm the button styling and behavior remain unchanged</description>
     </feature>
+    <feature>
+      <name>Fix base path routing for deployed links</name>
+      <description>Fix Base Path Configuration for Deployed Webpage Links
+
+Correct the routing and link generation on the deployed webpage to include the proper base path in all URLs. Currently, links are missing the &quot;/wesole_nutki/&quot; segment and incorrectly redirect to &quot;https://bartusiak.ai/&quot; instead of &quot;https://bartusiak.ai/wesole_nutki/&quot;.
+
+Requirements:
+- Configure the application to use &quot;https://bartusiak.ai/wesole_nutki/&quot; as the base path
+- Update all internal links to include the correct base path prefix
+- Verify navigation links maintain the &quot;/wesole_nutki/&quot; path segment
+- Check and fix asset references (CSS, JavaScript, images) to use correct paths
+- Test all navigation flows to ensure no links break or redirect incorrectly
+- Verify that deep linking to specific pages works correctly with the base path
+
+Areas to check:
+- Router configuration (base URL setting)
+- Build configuration for deployment
+- Relative vs absolute URL usage in navigation components
+- Static asset path resolution
+- Any hardcoded URLs in the codebase
+
+Expected outcome:
+All links should navigate within &quot;https://bartusiak.ai/wesole_nutki/*&quot; and no navigation should drop the &quot;/wesole_nutki/&quot; path segment.</description>
+    </feature>
+    <feature>
+      <name>Fix image aspect ratios across all components</name>
+      <description>Preserve Image Aspect Ratios Across All Components
+
+Audit and fix all image implementations throughout the application to ensure aspect ratios are maintained during resize operations and responsive layout changes.
+
+Requirements:
+- Fix the confirmed aspect ratio issue in the about-preview-section component
+- Conduct a comprehensive audit of all image elements across the entire codebase
+- Identify instances where images are stretched, squashed, or distorted
+- Implement proper CSS properties (object-fit, aspect-ratio) to preserve original proportions
+- Ensure images maintain correct aspect ratios across all viewport sizes and breakpoints
+- Test images in various containers (flex, grid, fixed width, responsive containers)
+- Handle both img tags and background images appropriately
+- Verify behavior during browser window resizing and orientation changes
+- Consider edge cases like very wide/tall images and loading states
+- Document the correct pattern for image usage to prevent future issues</description>
+    </feature>
+    <feature>
+      <name>Configure appointment button language-aware routing to contact page</name>
+      <description>Add Contact Page Redirect to Home Page Appointment Button
+
+Configure the &quot;umów wizytę&quot; (book appointment) button on the home page to navigate users to the contact page with proper language routing.
+
+Requirements:
+- Locate the &quot;umów wizytę&quot; button component on the home page
+- Update the button&apos;s href/onClick to route to /&lt;lang&gt;/contact where &lt;lang&gt; is the current locale
+- Ensure language parameter is dynamically populated based on active language (e.g., /en/contact, /pl/contact)
+- Maintain existing button styling and accessibility attributes
+- Verify navigation works correctly for all supported languages
+- Test that the routing preserves any existing query parameters if needed
+- Ensure the contact page exists and renders properly for all language variants</description>
+    </feature>
+    <feature>
+      <name>Fix missing hero background image on About page</name>
+      <description>Investigate and Fix Missing Hero Background Image on About Page
+
+The hero section on the About page is displaying empty because the background SVG file (about-hero-bg.svg) is not loading correctly.
+
+Requirements:
+- Verify the file about-hero-bg.svg exists in the expected directory
+- Check that the file path in the About page component is correct (relative vs absolute paths)
+- Ensure the SVG file is properly imported or referenced in the codebase
+- Verify the build process includes SVG files in the output bundle
+- Check browser console for any 404 errors or network failures related to this asset
+- Confirm the CSS/styling correctly applies the background image to the hero section
+- Test the fix across different environments (development, staging, production)
+- Validate the hero section displays the background image correctly after the fix
+
+Edge cases to consider:
+- SVG file may have been moved or renamed
+- Build configuration may exclude certain asset types or directories
+- Path resolution may differ between development and production builds
+- Image may be loading but not visible due to CSS issues (z-index, dimensions, positioning)</description>
+    </feature>
+    <feature>
+      <name>Fix navigation links with configurable base path</name>
+      <description>Update Base Path Configuration for Local Development
+
+Fix navigation links that are currently broken in the local development environment due to a base path mismatch between the server configuration and client-side routing.
+
+Requirements:
+- Update all internal links to use the correct base path `/wesole_nutki/` when running locally
+- Identify and update hardcoded absolute paths (starting with `/`) to include the base path
+- Implement a configurable base path solution that works for both local (`/wesole_nutki/`) and production (`/`) environments
+- Update routing configuration to respect the base path
+- Update asset references (CSS, JS, images) to use the correct base path
+- Test all navigation links, redirects, and deep linking to ensure they work correctly
+- Consider using environment variables or build configuration to manage different base paths per environment</description>
+    </feature>
+    <feature>
+      <name>Fix logo image loading in development environment</name>
+      <description>Fix Logo Image Loading Issue on Localhost
+
+Resolve the issue preventing logo.png from displaying when the application is run in the local development environment.
+
+Requirements:
+- Verify the logo.png file exists in the expected directory
+- Check the file path reference in the code is correct (relative vs absolute paths)
+- Ensure the image import/require statement uses proper syntax for the build tool
+- Verify the logo file is included in the development server&apos;s static assets configuration
+- Check for case-sensitivity issues in the filename (logo.png vs Logo.png)
+- Confirm the image is accessible via direct URL in browser (e.g., http://localhost:3000/logo.png)
+- Verify no CORS or content security policy issues blocking the resource
+- Check browser console and network tab for specific error messages
+- Test that the logo loads correctly after the fix
+- Ensure the fix doesn&apos;t break the logo in production environment</description>
+    </feature>
+    <feature>
+      <name>Add Learn More button navigation to About page</name>
+      <description>Add About Page Navigation Link to Homepage
+
+Implement proper navigation from the homepage &quot;Dowiedz się więcej&quot; (Learn more) button to the localized About page.
+
+Requirements:
+- Locate the &quot;Dowiedz się więcej&quot; button component on the homepage
+- Update the button&apos;s link/navigation to route to the About page with proper language prefix
+- Ensure the link format follows the pattern: /&lt;lang&gt;/about where &lt;lang&gt; is the current user&apos;s language code
+- Preserve the current language context when navigating (e.g., if user is on /pl homepage, button should link to /pl/about)
+- Verify the About page exists for all supported language variants
+- Test navigation works correctly for all language versions of the site
+- Ensure the link is accessible and follows proper routing conventions (use router navigation, not hard-coded hrefs if applicable)</description>
+    </feature>
   </implemented_features>
 
   <additional_requirements>

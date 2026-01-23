@@ -1,0 +1,28 @@
+{
+  "category": "Uncategorized",
+  "description": "Preserve Image Aspect Ratios Across All Components\n\nAudit and fix all image implementations throughout the application to ensure aspect ratios are maintained during resize operations and responsive layout changes.\n\nRequirements:\n- Fix the confirmed aspect ratio issue in the about-preview-section component\n- Conduct a comprehensive audit of all image elements across the entire codebase\n- Identify instances where images are stretched, squashed, or distorted\n- Implement proper CSS properties (object-fit, aspect-ratio) to preserve original proportions\n- Ensure images maintain correct aspect ratios across all viewport sizes and breakpoints\n- Test images in various containers (flex, grid, fixed width, responsive containers)\n- Handle both img tags and background images appropriately\n- Verify behavior during browser window resizing and orientation changes\n- Consider edge cases like very wide/tall images and loading states\n- Document the correct pattern for image usage to prevent future issues",
+  "title": "Fix image aspect ratios across all components",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "backlog",
+  "id": "feature-1769180802737-108m47d0s",
+  "descriptionHistory": [
+    {
+      "description": "Preserve Image Aspect Ratios Across All Components\n\nAudit and fix all image implementations throughout the application to ensure aspect ratios are maintained during resize operations and responsive layout changes.\n\nRequirements:\n- Fix the confirmed aspect ratio issue in the about-preview-section component\n- Conduct a comprehensive audit of all image elements across the entire codebase\n- Identify instances where images are stretched, squashed, or distorted\n- Implement proper CSS properties (object-fit, aspect-ratio) to preserve original proportions\n- Ensure images maintain correct aspect ratios across all viewport sizes and breakpoints\n- Test images in various containers (flex, grid, fixed width, responsive containers)\n- Handle both img tags and background images appropriately\n- Verify behavior during browser window resizing and orientation changes\n- Consider edge cases like very wide/tall images and loading states\n- Document the correct pattern for image usage to prevent future issues",
+      "timestamp": "2026-01-23T15:06:42.770Z",
+      "source": "initial"
+    }
+  ]
+}

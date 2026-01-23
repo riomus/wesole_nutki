@@ -1,0 +1,11 @@
+{
+  "id": "evt-1769181541057-a775ed37",
+  "trigger": "feature_success",
+  "timestamp": "2026-01-23T15:19:01.057Z",
+  "projectPath": "/Users/romanbartusiak/git/riomus/wesole_nutki",
+  "projectName": "wesole_nutki",
+  "featureId": "feature-1769181270760-wcrlhgpg9",
+  "featureName": "Configure appointment button language-aware routing to contact page",
+  "error": "Feature completed in 263s - auto-verified",
+  "passes": true
+}

@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix Base Path Configuration for Deployed Webpage Links\n\nCorrect the routing and link generation on the deployed webpage to include the proper base path in all URLs. Currently, links are missing the \"/wesole_nutki/\" segment and incorrectly redirect to \"https://bartusiak.ai/\" instead of \"https://bartusiak.ai/wesole_nutki/\".\n\nRequirements:\n- Configure the application to use \"https://bartusiak.ai/wesole_nutki/\" as the base path\n- Update all internal links to include the correct base path prefix\n- Verify navigation links maintain the \"/wesole_nutki/\" path segment\n- Check and fix asset references (CSS, JavaScript, images) to use correct paths\n- Test all navigation flows to ensure no links break or redirect incorrectly\n- Verify that deep linking to specific pages works correctly with the base path\n\nAreas to check:\n- Router configuration (base URL setting)\n- Build configuration for deployment\n- Relative vs absolute URL usage in navigation components\n- Static asset path resolution\n- Any hardcoded URLs in the codebase\n\nExpected outcome:\nAll links should navigate within \"https://bartusiak.ai/wesole_nutki/*\" and no navigation should drop the \"/wesole_nutki/\" path segment.",
+  "title": "Fix base path routing for deployed links",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "completed",
+  "id": "feature-1769180164136-bkn5aksud",
+  "descriptionHistory": [
+    {
+      "description": "Fix Base Path Configuration for Deployed Webpage Links\n\nCorrect the routing and link generation on the deployed webpage to include the proper base path in all URLs. Currently, links are missing the \"/wesole_nutki/\" segment and incorrectly redirect to \"https://bartusiak.ai/\" instead of \"https://bartusiak.ai/wesole_nutki/\".\n\nRequirements:\n- Configure the application to use \"https://bartusiak.ai/wesole_nutki/\" as the base path\n- Update all internal links to include the correct base path prefix\n- Verify navigation links maintain the \"/wesole_nutki/\" path segment\n- Check and fix asset references (CSS, JavaScript, images) to use correct paths\n- Test all navigation flows to ensure no links break or redirect incorrectly\n- Verify that deep linking to specific pages works correctly with the base path\n\nAreas to check:\n- Router configuration (base URL setting)\n- Build configuration for deployment\n- Relative vs absolute URL usage in navigation components\n- Static asset path resolution\n- Any hardcoded URLs in the codebase\n\nExpected outcome:\nAll links should navigate within \"https://bartusiak.ai/wesole_nutki/*\" and no navigation should drop the \"/wesole_nutki/\" path segment.",
+      "timestamp": "2026-01-23T14:56:11.347Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T15:03:25.380Z"
+}

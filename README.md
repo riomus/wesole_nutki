@@ -99,8 +99,10 @@ npm run dev
 
 Or directly with Hugo:
 ```bash
-hugo server --buildDrafts --buildFuture
+hugo server --buildDrafts --buildFuture --baseURL http://localhost:1313/
 ```
+
+**Important**: The `--baseURL` flag is required for local development to override the production baseURL configured in `hugo.toml`. Without it, the site will only be accessible at http://localhost:1313/wesole_nutki/ instead of the root path.
 
 The site will be available at: **http://localhost:1313**
 
@@ -109,12 +111,22 @@ The development server features:
 - **Draft content**: View draft posts and pages with `--buildDrafts`
 - **Future posts**: View scheduled content with `--buildFuture`
 - **Fast rebuild**: Hugo rebuilds only changed files
+- **Local baseURL override**: Uses http://localhost:1313/ for convenient local development
 
 ### 4. Access the Site
 
+When using the standard `npm run dev` command:
 - **Homepage (Polish)**: http://localhost:1313/pl/
 - **Homepage (English)**: http://localhost:1313/en/
 - **CMS Admin Panel**: http://localhost:1313/admin/ (requires authentication)
+
+**Alternative**: To test with the production URL structure (with `/wesole_nutki/` base path):
+```bash
+npm run dev:basepath
+```
+Then access:
+- **Homepage (Polish)**: http://localhost:1313/wesole_nutki/pl/
+- **Homepage (English)**: http://localhost:1313/wesole_nutki/en/
 
 ## Available Scripts
 

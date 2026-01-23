@@ -13,7 +13,7 @@ items:
 
   - identifier: about
     name: About Us
-    url: /en/about/
+    url: en/about/
     weight: 2
     i18n_key: menu_about
     external: false
@@ -133,7 +133,7 @@ items:
 
   - identifier: contact
     name: Contact
-    url: /en/contact/
+    url: en/contact/
     weight: 7
     i18n_key: menu_contact
     external: false

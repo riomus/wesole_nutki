@@ -1,0 +1,11 @@
+{
+  "id": "evt-1769181959046-4bd798a9",
+  "trigger": "feature_success",
+  "timestamp": "2026-01-23T15:25:59.046Z",
+  "projectPath": "/Users/romanbartusiak/git/riomus/wesole_nutki",
+  "projectName": "wesole_nutki",
+  "featureId": "feature-1769181409602-d4fntm34t",
+  "featureName": "Fix logo image loading in development environment",
+  "error": "Feature completed in 401s - auto-verified",
+  "passes": true
+}

@@ -21,7 +21,7 @@ items:
 
   - identifier: about
     name: O przedszkolu
-    url: /pl/about
+    url: pl/about
     weight: 3
     i18n_key: menu_about
     external: false
@@ -141,7 +141,7 @@ items:
 
   - identifier: contact
     name: Kontakt
-    url: /pl/contact/
+    url: pl/contact/
     weight: 9
     i18n_key: menu_contact
     external: false

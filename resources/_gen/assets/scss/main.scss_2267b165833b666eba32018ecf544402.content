@@ -1238,6 +1238,14 @@ body.mobile-menu-open {
         --tw-gradient-to: rgb(129 215 66 / 0) var(--tw-gradient-to-position);
         --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
         --tw-gradient-to: rgb(255 140 97 / 0.2) var(--tw-gradient-to-position); }
+.about-preview-section .about-image-wrapper img {
+    height: auto;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+.about-preview-section .about-image-wrapper .responsive-image-wrapper{
+  width: 100%;
+}
 .about-preview-section .about-text{
   margin-bottom: 1.5rem;
   font-size: 1rem;
@@ -2609,6 +2617,8 @@ a:not(.btn):not(.nav-link):not(.dropdown-item):focus-visible {
       transform: translateY(-8px); } }
 img{
   border-radius: 1.5rem;
+    max-width: 100%;
+    height: auto;
 }
 img.img-fluid {
     height: auto;
@@ -5217,6 +5227,7 @@ img.img-fluid {
 .gallery-card .gallery-card-image {
     position: relative;
     overflow: hidden;
+      aspect-ratio: 4/3;
       background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
       border-radius: 1rem 1rem 0 0; }
 .gallery-card .gallery-card-image img{
@@ -6286,6 +6297,8 @@ img.img-fluid {
   inset: 0px;
   height: 100%;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .responsive-image-placeholder{
   position: absolute;
@@ -6303,6 +6316,10 @@ img.img-fluid {
 }
 .responsive-image-main {
     position: relative;
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
     opacity: 0;
     transition-property: opacity;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

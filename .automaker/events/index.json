@@ -2,6 +2,107 @@
   "version": 1,
   "events": [
     {
+      "id": "evt-1769182001453-a2397220",
+      "trigger": "auto_mode_complete",
+      "timestamp": "2026-01-23T15:26:41.453Z"
+    },
+    {
+      "id": "evt-1769182000370-3eeef513",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T15:26:40.370Z",
+      "featureName": "Add Learn More button navigation to About page",
+      "featureId": "feature-1769181300518-3ylx7ivkh"
+    },
+    {
+      "id": "evt-1769181959046-4bd798a9",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T15:25:59.046Z",
+      "featureName": "Fix logo image loading in development environment",
+      "featureId": "feature-1769181409602-d4fntm34t"
+    },
+    {
+      "id": "evt-1769181757075-bcac39ff",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T15:22:37.075Z",
+      "featureName": "Fix navigation links with configurable base path",
+      "featureId": "feature-1769180711812-ddltctf5g"
+    },
+    {
+      "id": "evt-1769181557080-094524e6",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T15:19:17.080Z",
+      "featureName": "",
+      "featureId": "feature-1769181171908-lrvp4mo1i"
+    },
+    {
+      "id": "evt-1769181541057-a775ed37",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T15:19:01.057Z",
+      "featureName": "Configure appointment button language-aware routing to contact page",
+      "featureId": "feature-1769181270760-wcrlhgpg9"
+    },
+    {
+      "id": "evt-1769181409687-88207730",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T15:16:49.687Z",
+      "featureId": "feature-1769181409602-d4fntm34t"
+    },
+    {
+      "id": "evt-1769181300600-1fd7d647",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T15:15:00.600Z",
+      "featureId": "feature-1769181300518-3ylx7ivkh"
+    },
+    {
+      "id": "evt-1769181270845-a3176877",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T15:14:30.845Z",
+      "featureId": "feature-1769181270760-wcrlhgpg9"
+    },
+    {
+      "id": "evt-1769181171932-de4af0ff",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T15:12:51.932Z",
+      "featureId": "feature-1769181171908-lrvp4mo1i"
+    },
+    {
+      "id": "evt-1769181017962-0f380d58",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T15:10:17.962Z",
+      "featureName": "Fix image aspect ratios across all components",
+      "featureId": "feature-1769180802737-108m47d0s"
+    },
+    {
+      "id": "evt-1769180802771-1f31e09a",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T15:06:42.771Z",
+      "featureId": "feature-1769180802737-108m47d0s"
+    },
+    {
+      "id": "evt-1769180711907-54c4c40c",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T15:05:11.907Z",
+      "featureId": "feature-1769180711812-ddltctf5g"
+    },
+    {
+      "id": "evt-1769180608629-8fc39366",
+      "trigger": "auto_mode_complete",
+      "timestamp": "2026-01-23T15:03:28.629Z"
+    },
+    {
+      "id": "evt-1769180605387-bef7dfc3",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T15:03:25.387Z",
+      "featureName": "",
+      "featureId": "feature-1769180164136-bkn5aksud"
+    },
+    {
+      "id": "evt-1769180171404-f0829ee3",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T14:56:11.404Z",
+      "featureId": "feature-1769180164136-bkn5aksud"
+    },
+    {
       "id": "evt-1769177851645-d32ec892",
       "trigger": "auto_mode_complete",
       "timestamp": "2026-01-23T14:17:31.646Z"

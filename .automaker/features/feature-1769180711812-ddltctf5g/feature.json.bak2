@@ -1,0 +1,28 @@
+{
+  "category": "Uncategorized",
+  "description": "Update Base Path Configuration for Local Development\n\nFix navigation links that are currently broken in the local development environment due to a base path mismatch between the server configuration and client-side routing.\n\nRequirements:\n- Update all internal links to use the correct base path `/wesole_nutki/` when running locally\n- Identify and update hardcoded absolute paths (starting with `/`) to include the base path\n- Implement a configurable base path solution that works for both local (`/wesole_nutki/`) and production (`/`) environments\n- Update routing configuration to respect the base path\n- Update asset references (CSS, JS, images) to use the correct base path\n- Test all navigation links, redirects, and deep linking to ensure they work correctly\n- Consider using environment variables or build configuration to manage different base paths per environment",
+  "title": "Fix navigation links with configurable base path",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "backlog",
+  "id": "feature-1769180711812-ddltctf5g",
+  "descriptionHistory": [
+    {
+      "description": "Update Base Path Configuration for Local Development\n\nFix navigation links that are currently broken in the local development environment due to a base path mismatch between the server configuration and client-side routing.\n\nRequirements:\n- Update all internal links to use the correct base path `/wesole_nutki/` when running locally\n- Identify and update hardcoded absolute paths (starting with `/`) to include the base path\n- Implement a configurable base path solution that works for both local (`/wesole_nutki/`) and production (`/`) environments\n- Update routing configuration to respect the base path\n- Update asset references (CSS, JS, images) to use the correct base path\n- Test all navigation links, redirects, and deep linking to ensure they work correctly\n- Consider using environment variables or build configuration to manage different base paths per environment",
+      "timestamp": "2026-01-23T15:05:11.906Z",
+      "source": "initial"
+    }
+  ]
+}

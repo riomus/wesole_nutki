@@ -2,458 +2,458 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/wesole_nutki/en/documents/statute/</loc>
+    <loc>http://localhost:1313/en/documents/statute/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/programs/toddlers/</loc>
+    <loc>http://localhost:1313/en/programs/toddlers/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/documents/enrollment-form/</loc>
+    <loc>http://localhost:1313/en/documents/enrollment-form/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/programs/preschoolers/</loc>
+    <loc>http://localhost:1313/en/programs/preschoolers/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/documents/privacy-policy/</loc>
+    <loc>http://localhost:1313/en/documents/privacy-policy/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/programs/pre-k/</loc>
+    <loc>http://localhost:1313/en/programs/pre-k/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/programs/kindergarten/</loc>
+    <loc>http://localhost:1313/en/programs/kindergarten/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/programs/schedule/</loc>
+    <loc>http://localhost:1313/en/programs/schedule/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="http://localhost:1313/wesole_nutki/pl/programs/schedule/"
+                href="http://localhost:1313/pl/programs/schedule/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/wesole_nutki/en/programs/schedule/"
+                href="http://localhost:1313/en/programs/schedule/"
                 />
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/child-protection-standards/</loc>
+    <loc>http://localhost:1313/en/child-protection-standards/</loc>
     <lastmod>2026-01-23T14:55:21+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/galleries/</loc>
+    <loc>http://localhost:1313/en/galleries/</loc>
     <lastmod>2026-01-23T14:55:21+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/daily-plan/events/</loc>
+    <loc>http://localhost:1313/en/daily-plan/events/</loc>
     <lastmod>2026-01-23T14:55:21+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/daily-plan/extra-activities/</loc>
+    <loc>http://localhost:1313/en/daily-plan/extra-activities/</loc>
     <lastmod>2026-01-23T14:55:21+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/schedule/</loc>
+    <loc>http://localhost:1313/en/schedule/</loc>
     <lastmod>2026-01-23T14:55:21+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/daily-plan/</loc>
+    <loc>http://localhost:1313/en/daily-plan/</loc>
     <lastmod>2026-01-23T14:55:21+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/staff/</loc>
+    <loc>http://localhost:1313/en/staff/</loc>
     <lastmod>2026-01-23T14:55:21+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/about/enrollment/</loc>
+    <loc>http://localhost:1313/en/about/enrollment/</loc>
     <lastmod>2026-01-23T14:55:21+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/about/payments/</loc>
+    <loc>http://localhost:1313/en/about/payments/</loc>
     <lastmod>2026-01-23T14:55:21+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/about/pricing/</loc>
+    <loc>http://localhost:1313/en/about/pricing/</loc>
     <lastmod>2026-01-23T14:55:21+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/about/offer/</loc>
+    <loc>http://localhost:1313/en/about/offer/</loc>
     <lastmod>2026-01-23T14:55:21+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/about/vision/</loc>
+    <loc>http://localhost:1313/en/about/vision/</loc>
     <lastmod>2026-01-23T14:55:21+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/recruitment/</loc>
+    <loc>http://localhost:1313/en/recruitment/</loc>
     <lastmod>2026-01-23T14:55:21+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/categories/</loc>
+    <loc>http://localhost:1313/en/categories/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="http://localhost:1313/wesole_nutki/pl/categories/"
+                href="http://localhost:1313/pl/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/wesole_nutki/en/categories/"
+                href="http://localhost:1313/en/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/categories/events/</loc>
+    <loc>http://localhost:1313/en/categories/events/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="http://localhost:1313/wesole_nutki/pl/categories/events/"
+                href="http://localhost:1313/pl/categories/events/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/wesole_nutki/en/categories/events/"
+                href="http://localhost:1313/en/categories/events/"
                 />
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/tags/fun/</loc>
+    <loc>http://localhost:1313/en/tags/fun/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="http://localhost:1313/wesole_nutki/pl/tags/fun/"
+                href="http://localhost:1313/pl/tags/fun/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/wesole_nutki/en/tags/fun/"
+                href="http://localhost:1313/en/tags/fun/"
                 />
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/tags/snow/</loc>
+    <loc>http://localhost:1313/en/tags/snow/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="http://localhost:1313/wesole_nutki/pl/tags/snow/"
+                href="http://localhost:1313/pl/tags/snow/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/wesole_nutki/en/tags/snow/"
+                href="http://localhost:1313/en/tags/snow/"
                 />
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/tags/</loc>
+    <loc>http://localhost:1313/en/tags/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="http://localhost:1313/wesole_nutki/pl/tags/"
+                href="http://localhost:1313/pl/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/wesole_nutki/en/tags/"
+                href="http://localhost:1313/en/tags/"
                 />
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/categories/winter/</loc>
+    <loc>http://localhost:1313/en/categories/winter/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="http://localhost:1313/wesole_nutki/pl/categories/winter/"
+                href="http://localhost:1313/pl/categories/winter/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/wesole_nutki/en/categories/winter/"
+                href="http://localhost:1313/en/categories/winter/"
                 />
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/tags/winter/</loc>
+    <loc>http://localhost:1313/en/tags/winter/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="http://localhost:1313/wesole_nutki/pl/tags/winter/"
+                href="http://localhost:1313/pl/tags/winter/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/wesole_nutki/en/tags/winter/"
+                href="http://localhost:1313/en/tags/winter/"
                 />
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/news/2025/01/winter-fun-in-the-snow/</loc>
+    <loc>http://localhost:1313/en/news/2025/01/winter-fun-in-the-snow/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/categories/activities/</loc>
+    <loc>http://localhost:1313/en/categories/activities/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="http://localhost:1313/wesole_nutki/pl/categories/activities/"
+                href="http://localhost:1313/pl/categories/activities/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/wesole_nutki/en/categories/activities/"
+                href="http://localhost:1313/en/categories/activities/"
                 />
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/tags/cooking/</loc>
+    <loc>http://localhost:1313/en/tags/cooking/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="http://localhost:1313/wesole_nutki/pl/tags/cooking/"
+                href="http://localhost:1313/pl/tags/cooking/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/wesole_nutki/en/tags/cooking/"
+                href="http://localhost:1313/en/tags/cooking/"
                 />
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/news/2024/11/cooking-workshops-for-children/</loc>
+    <loc>http://localhost:1313/en/news/2024/11/cooking-workshops-for-children/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/tags/healthy-eating/</loc>
+    <loc>http://localhost:1313/en/tags/healthy-eating/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="http://localhost:1313/wesole_nutki/pl/tags/healthy-eating/"
+                href="http://localhost:1313/pl/tags/healthy-eating/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/wesole_nutki/en/tags/healthy-eating/"
+                href="http://localhost:1313/en/tags/healthy-eating/"
                 />
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/tags/workshops/</loc>
+    <loc>http://localhost:1313/en/tags/workshops/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="http://localhost:1313/wesole_nutki/pl/tags/workshops/"
+                href="http://localhost:1313/pl/tags/workshops/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/wesole_nutki/en/tags/workshops/"
+                href="http://localhost:1313/en/tags/workshops/"
                 />
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/gallery/autumn-festival-2024/</loc>
+    <loc>http://localhost:1313/en/gallery/autumn-festival-2024/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/gallery_categories/events/</loc>
+    <loc>http://localhost:1313/en/gallery_categories/events/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="http://localhost:1313/wesole_nutki/pl/gallery_categories/events/"
+                href="http://localhost:1313/pl/gallery_categories/events/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/wesole_nutki/en/gallery_categories/events/"
+                href="http://localhost:1313/en/gallery_categories/events/"
                 />
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/gallery_categories/family/</loc>
+    <loc>http://localhost:1313/en/gallery_categories/family/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="http://localhost:1313/wesole_nutki/pl/gallery_categories/family/"
+                href="http://localhost:1313/pl/gallery_categories/family/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/wesole_nutki/en/gallery_categories/family/"
+                href="http://localhost:1313/en/gallery_categories/family/"
                 />
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/gallery_categories/</loc>
+    <loc>http://localhost:1313/en/gallery_categories/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="http://localhost:1313/wesole_nutki/pl/gallery_categories/"
+                href="http://localhost:1313/pl/gallery_categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/wesole_nutki/en/gallery_categories/"
+                href="http://localhost:1313/en/gallery_categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/tags/autumn/</loc>
+    <loc>http://localhost:1313/en/tags/autumn/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="http://localhost:1313/wesole_nutki/pl/tags/autumn/"
+                href="http://localhost:1313/pl/tags/autumn/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/wesole_nutki/en/tags/autumn/"
+                href="http://localhost:1313/en/tags/autumn/"
                 />
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/news/2024/10/autumn-family-picnic/</loc>
+    <loc>http://localhost:1313/en/news/2024/10/autumn-family-picnic/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/tags/family/</loc>
+    <loc>http://localhost:1313/en/tags/family/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="http://localhost:1313/wesole_nutki/pl/tags/family/"
+                href="http://localhost:1313/pl/tags/family/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/wesole_nutki/en/tags/family/"
+                href="http://localhost:1313/en/tags/family/"
                 />
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/tags/picnic/</loc>
+    <loc>http://localhost:1313/en/tags/picnic/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="http://localhost:1313/wesole_nutki/pl/tags/picnic/"
+                href="http://localhost:1313/pl/tags/picnic/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/wesole_nutki/en/tags/picnic/"
+                href="http://localhost:1313/en/tags/picnic/"
                 />
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/tags/beginning/</loc>
+    <loc>http://localhost:1313/en/tags/beginning/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="http://localhost:1313/wesole_nutki/pl/tags/beginning/"
+                href="http://localhost:1313/pl/tags/beginning/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/wesole_nutki/en/tags/beginning/"
+                href="http://localhost:1313/en/tags/beginning/"
                 />
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/tags/school-year/</loc>
+    <loc>http://localhost:1313/en/tags/school-year/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="http://localhost:1313/wesole_nutki/pl/tags/school-year/"
+                href="http://localhost:1313/pl/tags/school-year/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/wesole_nutki/en/tags/school-year/"
+                href="http://localhost:1313/en/tags/school-year/"
                 />
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/news/2024/09/welcome-to-the-new-school-year-2024/2025/</loc>
+    <loc>http://localhost:1313/en/news/2024/09/welcome-to-the-new-school-year-2024/2025/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/gallery_categories/daily-activities/</loc>
+    <loc>http://localhost:1313/en/gallery_categories/daily-activities/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="http://localhost:1313/wesole_nutki/pl/gallery_categories/daily-activities/"
+                href="http://localhost:1313/pl/gallery_categories/daily-activities/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/wesole_nutki/en/gallery_categories/daily-activities/"
+                href="http://localhost:1313/en/gallery_categories/daily-activities/"
                 />
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/gallery/daily-activities/</loc>
+    <loc>http://localhost:1313/en/gallery/daily-activities/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/gallery_categories/excursions/</loc>
+    <loc>http://localhost:1313/en/gallery_categories/excursions/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="http://localhost:1313/wesole_nutki/pl/gallery_categories/excursions/"
+                href="http://localhost:1313/pl/gallery_categories/excursions/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/wesole_nutki/en/gallery_categories/excursions/"
+                href="http://localhost:1313/en/gallery_categories/excursions/"
                 />
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/gallery/spring-trip-2024/</loc>
+    <loc>http://localhost:1313/en/gallery/spring-trip-2024/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/gallery/christmas-2023/</loc>
+    <loc>http://localhost:1313/en/gallery/christmas-2023/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/gallery_categories/holidays/</loc>
+    <loc>http://localhost:1313/en/gallery_categories/holidays/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="http://localhost:1313/wesole_nutki/pl/gallery_categories/holidays/"
+                href="http://localhost:1313/pl/gallery_categories/holidays/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/wesole_nutki/en/gallery_categories/holidays/"
+                href="http://localhost:1313/en/gallery_categories/holidays/"
                 />
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/about/</loc>
+    <loc>http://localhost:1313/en/about/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/contact/</loc>
+    <loc>http://localhost:1313/en/contact/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/documents/</loc>
+    <loc>http://localhost:1313/en/documents/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="http://localhost:1313/wesole_nutki/pl/documents/"
+                href="http://localhost:1313/pl/documents/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/wesole_nutki/en/documents/"
+                href="http://localhost:1313/en/documents/"
                 />
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/gallery/</loc>
+    <loc>http://localhost:1313/en/gallery/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="http://localhost:1313/wesole_nutki/pl/gallery/"
+                href="http://localhost:1313/pl/gallery/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/wesole_nutki/en/gallery/"
+                href="http://localhost:1313/en/gallery/"
                 />
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/news/</loc>
+    <loc>http://localhost:1313/en/news/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="http://localhost:1313/wesole_nutki/pl/news/"
+                href="http://localhost:1313/pl/news/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/wesole_nutki/en/news/"
+                href="http://localhost:1313/en/news/"
                 />
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/programs/</loc>
+    <loc>http://localhost:1313/en/programs/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="http://localhost:1313/wesole_nutki/pl/programs/"
+                href="http://localhost:1313/pl/programs/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/wesole_nutki/en/programs/"
+                href="http://localhost:1313/en/programs/"
                 />
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/en/</loc>
+    <loc>http://localhost:1313/en/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="http://localhost:1313/wesole_nutki/pl/"
+                href="http://localhost:1313/pl/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/wesole_nutki/en/"
+                href="http://localhost:1313/en/"
                 />
   </url>
 </urlset>

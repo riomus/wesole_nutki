@@ -41,9 +41,16 @@
             {{- $url = .url -}}
           {{- else if .url_menu_identifier -}}
             {{- $targetIdentifier := .url_menu_identifier -}}
-            {{- range $.Site.Menus.main -}}
-              {{- if eq .Identifier $targetIdentifier -}}
-                {{- $url = .URL -}}
+            {{- $lang := $.Lang -}}
+            {{- $menuData := index $.Site.Data.menus (printf "main_%s" $lang) -}}
+            {{- if not $menuData -}}
+              {{- $menuData = $.Site.Data.menus.main_pl -}}
+            {{- end -}}
+            {{- if $menuData -}}
+              {{- range $menuData.items -}}
+                {{- if eq .identifier $targetIdentifier -}}
+                  {{- $url = .url -}}
+                {{- end -}}
               {{- end -}}
             {{- end -}}
           {{- else if .url_menu_index -}}
@@ -52,7 +59,7 @@
               {{- $url = $menuItem.URL -}}
             {{- end -}}
           {{- end -}}
-          <a href="{{ $url }}" class="btn btn-{{ .style | default "light" }} btn-lg{{ if .icon }} btn-icon{{ end }}" data-testid="hero-cta-button">
+          <a href="{{ $url | absURL }}" class="btn btn-{{ .style | default "light" }} btn-lg{{ if .icon }} btn-icon{{ end }}" data-testid="hero-cta-button">
             {{ i18n .label_key | default .label_key }}
             {{- if eq .icon "arrow-right" }}
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">

@@ -4,7 +4,8 @@
   "description": "Wesole Nutki - Preschool website built with Hugo and Tailwind CSS",
   "private": true,
   "scripts": {
-    "dev": "hugo server --buildDrafts --buildFuture",
+    "dev": "hugo server --buildDrafts --buildFuture --baseURL http://localhost:1313/",
+    "dev:basepath": "hugo server --buildDrafts --buildFuture --baseURL http://localhost:1313/wesole_nutki/",
     "build": "hugo --minify",
     "clean": "rm -rf public resources",
     "test": "npx playwright test",
@@ -13,7 +14,8 @@
     "test:firefox": "npx playwright test --project=firefox",
     "test:safari": "npx playwright test --project=webkit",
     "test:headed": "npx playwright test --headed",
-    "test:debug": "npx playwright test --debug"
+    "test:debug": "npx playwright test --debug",
+    "test:basepath": "BASEPATH=true npx playwright test"
   },
   "devDependencies": {
     "@playwright/test": "^1.49.0",

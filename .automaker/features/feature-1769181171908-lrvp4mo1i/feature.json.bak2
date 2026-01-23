@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Investigate and Fix Missing Hero Background Image on About Page\n\nThe hero section on the About page is displaying empty because the background SVG file (about-hero-bg.svg) is not loading correctly.\n\nRequirements:\n- Verify the file about-hero-bg.svg exists in the expected directory\n- Check that the file path in the About page component is correct (relative vs absolute paths)\n- Ensure the SVG file is properly imported or referenced in the codebase\n- Verify the build process includes SVG files in the output bundle\n- Check browser console for any 404 errors or network failures related to this asset\n- Confirm the CSS/styling correctly applies the background image to the hero section\n- Test the fix across different environments (development, staging, production)\n- Validate the hero section displays the background image correctly after the fix\n\nEdge cases to consider:\n- SVG file may have been moved or renamed\n- Build configuration may exclude certain asset types or directories\n- Path resolution may differ between development and production builds\n- Image may be loading but not visible due to CSS issues (z-index, dimensions, positioning)",
+  "title": "",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": "Investigate and Fix Missing Hero Background Image on About Page\n\nThe hero section on the About page is displaying empty because the background SVG file (about-hero-bg.svg) is not loading correctly.\n\nRequirements:\n- Verify the file about-hero-bg.svg exists in the expected directory\n- Check that the file path in the About page component is correct (relative vs absolute paths)\n- Ensure the SVG file is properly imported or referenced in the codebase\n- Verify the build process includes SVG files in the output bundle\n- Check browser console for any 404 errors or network failures related to this asset\n- Confirm the CSS/styling correctly applies the background image to the hero section\n- Test the fix across different environments (development, staging, production)\n- Validate the hero section displays the background image correctly after the fix\n\nEdge cases to consider:\n- SVG file may have been moved or renamed\n- Build configuration may exclude certain asset types or directories\n- Path resolution may differ between development and production builds\n- Image may be loading but not visible due to CSS issues (z-index, dimensions, positioning)",
+  "status": "in_progress",
+  "id": "feature-1769181171908-lrvp4mo1i",
+  "descriptionHistory": [
+    {
+      "description": "Investigate and Fix Missing Hero Background Image on About Page\n\nThe hero section on the About page is displaying empty because the background SVG file (about-hero-bg.svg) is not loading correctly.\n\nRequirements:\n- Verify the file about-hero-bg.svg exists in the expected directory\n- Check that the file path in the About page component is correct (relative vs absolute paths)\n- Ensure the SVG file is properly imported or referenced in the codebase\n- Verify the build process includes SVG files in the output bundle\n- Check browser console for any 404 errors or network failures related to this asset\n- Confirm the CSS/styling correctly applies the background image to the hero section\n- Test the fix across different environments (development, staging, production)\n- Validate the hero section displays the background image correctly after the fix\n\nEdge cases to consider:\n- SVG file may have been moved or renamed\n- Build configuration may exclude certain asset types or directories\n- Path resolution may differ between development and production builds\n- Image may be loading but not visible due to CSS issues (z-index, dimensions, positioning)",
+      "timestamp": "2026-01-23T15:12:51.931Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T15:12:55.430Z"
+}

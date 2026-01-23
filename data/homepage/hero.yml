@@ -28,6 +28,6 @@ buttons:
     style: light
     icon: arrow-right
   - label_key: contact_us
-    url: /pl/contact/
+    url_menu_identifier: contact
     style: outline-light
     icon: null

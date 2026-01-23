@@ -25,7 +25,7 @@
       {{ end }}
     {{ end }}
     {{ if not $targetURL }}
-      {{ $targetURL = printf "/%s/" .Lang }}
+      {{ $targetURL = .Lang | absLangURL }}
     {{ end }}
 
     {{ if $isActive }}

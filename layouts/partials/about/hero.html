@@ -1,7 +1,9 @@
 {{- $data := site.Data.about.hero -}}
 {{- if $data.enabled -}}
+{{- $bgImage := $data.background_image | default "" -}}
+{{- $overlayOpacity := $data.overlay_opacity | default 0.7 -}}
 <!-- About Page Hero Section -->
-<section class="hero-section hero-bg-image about-hero" {{- with $data.background_image }} style="background-image: url('{{ . }}'); --hero-overlay-opacity: {{ $data.overlay_opacity | default 0.7 }};"{{- end }}>
+<section class="hero-section hero-bg-image about-hero" {{- if $bgImage }} style="background-image: url('{{ $bgImage | relURL }}'); --hero-overlay-opacity: {{ $overlayOpacity }};"{{- end }}>
   {{- if $data.background_image -}}
   <div class="hero-overlay"></div>
   {{- end -}}

@@ -57,7 +57,7 @@
                 {{ end }}
               {{ end }}
               <li>
-                <a href="{{ .url }}">{{ $menuName }}</a>
+                <a href="{{ strings.TrimPrefix "/" .url | relURL }}">{{ $menuName }}</a>
               </li>
             {{ end }}
           </ul>

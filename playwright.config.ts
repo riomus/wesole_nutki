@@ -1,5 +1,14 @@
 import { defineConfig, devices } from '@playwright/test';
 
+// Support testing with base path (e.g., /wesole_nutki/) for production-like testing
+const useBasePath = process.env.BASEPATH === 'true';
+const baseURL = useBasePath
+  ? 'http://localhost:1313/wesole_nutki/'
+  : 'http://localhost:1313';
+const serverCommand = useBasePath
+  ? 'hugo server --port 1313 --baseURL http://localhost:1313/wesole_nutki/ --appendPort=false'
+  : 'hugo server --port 1313';
+
 export default defineConfig({
   testDir: './tests',
   fullyParallel: true,
@@ -8,7 +17,7 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   reporter: 'html',
   use: {
-    baseURL: 'http://localhost:1313',
+    baseURL,
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
@@ -28,7 +37,7 @@ export default defineConfig({
     },
   ],
   webServer: {
-    command: 'hugo server --port 1313',
+    command: serverCommand,
     port: 1313,
     reuseExistingServer: !process.env.CI,
     timeout: 120000,

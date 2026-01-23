@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix Logo Image Loading Issue on Localhost\n\nResolve the issue preventing logo.png from displaying when the application is run in the local development environment.\n\nRequirements:\n- Verify the logo.png file exists in the expected directory\n- Check the file path reference in the code is correct (relative vs absolute paths)\n- Ensure the image import/require statement uses proper syntax for the build tool\n- Verify the logo file is included in the development server's static assets configuration\n- Check for case-sensitivity issues in the filename (logo.png vs Logo.png)\n- Confirm the image is accessible via direct URL in browser (e.g., http://localhost:3000/logo.png)\n- Verify no CORS or content security policy issues blocking the resource\n- Check browser console and network tab for specific error messages\n- Test that the logo loads correctly after the fix\n- Ensure the fix doesn't break the logo in production environment",
+  "title": "Fix logo image loading in development environment",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "in_progress",
+  "id": "feature-1769181409602-d4fntm34t",
+  "descriptionHistory": [
+    {
+      "description": "Fix Logo Image Loading Issue on Localhost\n\nResolve the issue preventing logo.png from displaying when the application is run in the local development environment.\n\nRequirements:\n- Verify the logo.png file exists in the expected directory\n- Check the file path reference in the code is correct (relative vs absolute paths)\n- Ensure the image import/require statement uses proper syntax for the build tool\n- Verify the logo file is included in the development server's static assets configuration\n- Check for case-sensitivity issues in the filename (logo.png vs Logo.png)\n- Confirm the image is accessible via direct URL in browser (e.g., http://localhost:3000/logo.png)\n- Verify no CORS or content security policy issues blocking the resource\n- Check browser console and network tab for specific error messages\n- Test that the logo loads correctly after the fix\n- Ensure the fix doesn't break the logo in production environment",
+      "timestamp": "2026-01-23T15:16:49.686Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T15:19:17.748Z"
+}

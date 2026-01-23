@@ -1,0 +1,28 @@
+{
+  "category": "Uncategorized",
+  "description": "Add About Page Navigation Link to Homepage\n\nImplement proper navigation from the homepage \"Dowiedz się więcej\" (Learn more) button to the localized About page.\n\nRequirements:\n- Locate the \"Dowiedz się więcej\" button component on the homepage\n- Update the button's link/navigation to route to the About page with proper language prefix\n- Ensure the link format follows the pattern: /<lang>/about where <lang> is the current user's language code\n- Preserve the current language context when navigating (e.g., if user is on /pl homepage, button should link to /pl/about)\n- Verify the About page exists for all supported language variants\n- Test navigation works correctly for all language versions of the site\n- Ensure the link is accessible and follows proper routing conventions (use router navigation, not hard-coded hrefs if applicable)",
+  "title": "Add Learn More button navigation to About page",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "backlog",
+  "id": "feature-1769181300518-3ylx7ivkh",
+  "descriptionHistory": [
+    {
+      "description": "Add About Page Navigation Link to Homepage\n\nImplement proper navigation from the homepage \"Dowiedz się więcej\" (Learn more) button to the localized About page.\n\nRequirements:\n- Locate the \"Dowiedz się więcej\" button component on the homepage\n- Update the button's link/navigation to route to the About page with proper language prefix\n- Ensure the link format follows the pattern: /<lang>/about where <lang> is the current user's language code\n- Preserve the current language context when navigating (e.g., if user is on /pl homepage, button should link to /pl/about)\n- Verify the About page exists for all supported language variants\n- Test navigation works correctly for all language versions of the site\n- Ensure the link is accessible and follows proper routing conventions (use router navigation, not hard-coded hrefs if applicable)",
+      "timestamp": "2026-01-23T15:15:00.600Z",
+      "source": "initial"
+    }
+  ]
+}
