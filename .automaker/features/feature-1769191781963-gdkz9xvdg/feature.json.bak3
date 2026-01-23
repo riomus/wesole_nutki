@@ -1,0 +1,28 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix Blank Grey Space Below Image Error State\n\nRemove unwanted blank grey space appearing at the bottom of the responsive-image-wrapper component when it's in an error state (image-error class applied).\n\nRequirements:\n- Inspect the CSS for responsive-image-wrapper when image-error class is present\n- Identify the source of the grey space (padding, margin, min-height, aspect-ratio, or placeholder dimensions)\n- Adjust styling to eliminate the blank space while maintaining proper error state display\n- Ensure the fix works across different viewport sizes (mobile, tablet, desktop)\n- Verify the error state still displays correctly (error icon, message, or fallback content)\n- Test that successful image loading is not affected by the fix",
+  "title": "",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": "Fix Blank Grey Space Below Image Error State\n\nRemove unwanted blank grey space appearing at the bottom of the responsive-image-wrapper component when it's in an error state (image-error class applied).\n\nRequirements:\n- Inspect the CSS for responsive-image-wrapper when image-error class is present\n- Identify the source of the grey space (padding, margin, min-height, aspect-ratio, or placeholder dimensions)\n- Adjust styling to eliminate the blank space while maintaining proper error state display\n- Ensure the fix works across different viewport sizes (mobile, tablet, desktop)\n- Verify the error state still displays correctly (error icon, message, or fallback content)\n- Test that successful image loading is not affected by the fix",
+  "status": "backlog",
+  "id": "feature-1769191781963-gdkz9xvdg",
+  "descriptionHistory": [
+    {
+      "description": "Fix Blank Grey Space Below Image Error State\n\nRemove unwanted blank grey space appearing at the bottom of the responsive-image-wrapper component when it's in an error state (image-error class applied).\n\nRequirements:\n- Inspect the CSS for responsive-image-wrapper when image-error class is present\n- Identify the source of the grey space (padding, margin, min-height, aspect-ratio, or placeholder dimensions)\n- Adjust styling to eliminate the blank space while maintaining proper error state display\n- Ensure the fix works across different viewport sizes (mobile, tablet, desktop)\n- Verify the error state still displays correctly (error icon, message, or fallback content)\n- Test that successful image loading is not affected by the fix",
+      "timestamp": "2026-01-23T18:09:42.064Z",
+      "source": "initial"
+    }
+  ]
+}

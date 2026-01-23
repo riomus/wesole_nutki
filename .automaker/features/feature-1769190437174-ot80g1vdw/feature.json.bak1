@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Add Close/Exit Buttons for Mobile Hamburger Menu and Image Galleries\n\nImplement missing close/exit buttons to improve navigation and user experience on mobile devices and within image galleries.\n\nRequirements:\n- Add a visible close button (X icon) to the mobile hamburger menu\n- Position the close button in a consistent, easily accessible location (typically top-right corner)\n- Add a close button to image gallery views/modals\n- Ensure close buttons are touch-friendly with adequate tap target size (minimum 44x44px)\n- Implement proper click/tap handlers that close the respective components\n- Add appropriate ARIA labels for accessibility (aria-label=\"Close menu\" / \"Close gallery\")\n- Consider adding escape key handler for desktop users\n- Ensure close actions properly restore focus to the triggering element\n- Test that closing resets any scroll locks or body overflow styles\n- Verify close buttons are visible against all background colors/images\n\nEdge Cases:\n- Test behavior when user navigates between gallery images before closing\n- Ensure menu close button doesn't conflict with other header elements on various screen sizes\n- Verify proper z-index layering so close buttons appear above content",
+  "title": "Add close buttons to mobile menu and image galleries",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "in_progress",
+  "id": "feature-1769190437174-ot80g1vdw",
+  "descriptionHistory": [
+    {
+      "description": "Add Close/Exit Buttons for Mobile Hamburger Menu and Image Galleries\n\nImplement missing close/exit buttons to improve navigation and user experience on mobile devices and within image galleries.\n\nRequirements:\n- Add a visible close button (X icon) to the mobile hamburger menu\n- Position the close button in a consistent, easily accessible location (typically top-right corner)\n- Add a close button to image gallery views/modals\n- Ensure close buttons are touch-friendly with adequate tap target size (minimum 44x44px)\n- Implement proper click/tap handlers that close the respective components\n- Add appropriate ARIA labels for accessibility (aria-label=\"Close menu\" / \"Close gallery\")\n- Consider adding escape key handler for desktop users\n- Ensure close actions properly restore focus to the triggering element\n- Test that closing resets any scroll locks or body overflow styles\n- Verify close buttons are visible against all background colors/images\n\nEdge Cases:\n- Test behavior when user navigates between gallery images before closing\n- Ensure menu close button doesn't conflict with other header elements on various screen sizes\n- Verify proper z-index layering so close buttons appear above content",
+      "timestamp": "2026-01-23T17:47:17.259Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T17:47:20.628Z"
+}

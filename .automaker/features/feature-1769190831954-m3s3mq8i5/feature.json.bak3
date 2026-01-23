@@ -1,0 +1,28 @@
+{
+  "category": "Uncategorized",
+  "description": "Prevent Preview Images from Being Cropped or Cut Off\n\nFix image display issues where large preview images are being truncated or cut off instead of being fully visible within their containers.\n\nRequirements:\n- Locate and fix the image display issue in the \"O nas\" (About Us) section on the homepage\n- Ensure images scale appropriately to fit their containers without cropping\n- Implement proper CSS sizing (e.g., object-fit: contain or responsive width/height constraints)\n- Maintain aspect ratios of original images\n- Apply the fix consistently across all preview images throughout the site\n- Test with various image sizes and aspect ratios to ensure consistent behavior\n- Ensure images remain responsive across different screen sizes and devices\n\nEdge cases to consider:\n- Very tall or very wide images\n- Small viewport sizes (mobile devices)\n- Images with unusual aspect ratios",
+  "title": "",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": "Prevent Preview Images from Being Cropped or Cut Off\n\nFix image display issues where large preview images are being truncated or cut off instead of being fully visible within their containers.\n\nRequirements:\n- Locate and fix the image display issue in the \"O nas\" (About Us) section on the homepage\n- Ensure images scale appropriately to fit their containers without cropping\n- Implement proper CSS sizing (e.g., object-fit: contain or responsive width/height constraints)\n- Maintain aspect ratios of original images\n- Apply the fix consistently across all preview images throughout the site\n- Test with various image sizes and aspect ratios to ensure consistent behavior\n- Ensure images remain responsive across different screen sizes and devices\n\nEdge cases to consider:\n- Very tall or very wide images\n- Small viewport sizes (mobile devices)\n- Images with unusual aspect ratios",
+  "status": "backlog",
+  "id": "feature-1769190831954-m3s3mq8i5",
+  "descriptionHistory": [
+    {
+      "description": "Prevent Preview Images from Being Cropped or Cut Off\n\nFix image display issues where large preview images are being truncated or cut off instead of being fully visible within their containers.\n\nRequirements:\n- Locate and fix the image display issue in the \"O nas\" (About Us) section on the homepage\n- Ensure images scale appropriately to fit their containers without cropping\n- Implement proper CSS sizing (e.g., object-fit: contain or responsive width/height constraints)\n- Maintain aspect ratios of original images\n- Apply the fix consistently across all preview images throughout the site\n- Test with various image sizes and aspect ratios to ensure consistent behavior\n- Ensure images remain responsive across different screen sizes and devices\n\nEdge cases to consider:\n- Very tall or very wide images\n- Small viewport sizes (mobile devices)\n- Images with unusual aspect ratios",
+      "timestamp": "2026-01-23T17:53:52.041Z",
+      "source": "initial"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Update Gallery Card Counter Z-Index Layer Positioning\n\nFix the visual stacking order of the gallery card counter so it appears above the image instead of being hidden underneath.\n\nRequirements:\n- Increase the z-index value of `.gallery-card .gallery-card-count` to ensure it layers above the gallery image\n- Verify that the parent `.gallery-card` element has appropriate positioning context (position: relative) for z-index to work\n- Test that the counter remains visible across different gallery card states (hover, active, etc.)\n- Ensure the z-index value doesn't conflict with other UI elements (modals, dropdowns, tooltips)\n- Confirm visual appearance is correct across different browsers",
+  "title": "Fix gallery card counter z-index layering",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "verified",
+  "id": "feature-1769191420021-g8nhb4ojo",
+  "descriptionHistory": [
+    {
+      "description": "Update Gallery Card Counter Z-Index Layer Positioning\n\nFix the visual stacking order of the gallery card counter so it appears above the image instead of being hidden underneath.\n\nRequirements:\n- Increase the z-index value of `.gallery-card .gallery-card-count` to ensure it layers above the gallery image\n- Verify that the parent `.gallery-card` element has appropriate positioning context (position: relative) for z-index to work\n- Test that the counter remains visible across different gallery card states (hover, active, etc.)\n- Ensure the z-index value doesn't conflict with other UI elements (modals, dropdowns, tooltips)\n- Confirm visual appearance is correct across different browsers",
+      "timestamp": "2026-01-23T18:03:40.057Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T18:08:25.139Z"
+}

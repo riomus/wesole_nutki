@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Improve Responsive Image Display in Image Wrappers\n\nFix the responsive-image-wrapper component to display complete images without cropping, maintaining aspect ratio and proper centering within available space.\n\nRequirements:\n- Modify responsive-image-wrapper to contain entire image within bounds without cropping\n- Implement intelligent fitting: scale by width or height depending on which dimension would exceed container first\n- Maintain original image aspect ratio (no stretching or skewing)\n- Center images both horizontally and vertically within their containers\n- Ensure images never overflow container boundaries regardless of original dimensions\n- Apply same fixes to about-image-wrapper on main page (currently showing cropped images)\n- Consider using image display library (object-fit utilities, dedicated image components) for consistent, polished presentation\n- Test with various image aspect ratios: landscape, portrait, square, extreme ratios\n- Verify behavior across different viewport sizes and container dimensions\n- Ensure solution works for both oversized and undersized images\n\nEdge cases to handle:\n- Very wide panoramic images\n- Very tall portrait images\n- Images smaller than container\n- Images with extreme aspect ratios\n- Dynamic container size changes",
+  "title": "Fix responsive image cropping and centering",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "in_progress",
+  "id": "feature-1769191145063-aj66mg3f4",
+  "descriptionHistory": [
+    {
+      "description": "Improve Responsive Image Display in Image Wrappers\n\nFix the responsive-image-wrapper component to display complete images without cropping, maintaining aspect ratio and proper centering within available space.\n\nRequirements:\n- Modify responsive-image-wrapper to contain entire image within bounds without cropping\n- Implement intelligent fitting: scale by width or height depending on which dimension would exceed container first\n- Maintain original image aspect ratio (no stretching or skewing)\n- Center images both horizontally and vertically within their containers\n- Ensure images never overflow container boundaries regardless of original dimensions\n- Apply same fixes to about-image-wrapper on main page (currently showing cropped images)\n- Consider using image display library (object-fit utilities, dedicated image components) for consistent, polished presentation\n- Test with various image aspect ratios: landscape, portrait, square, extreme ratios\n- Verify behavior across different viewport sizes and container dimensions\n- Ensure solution works for both oversized and undersized images\n\nEdge cases to handle:\n- Very wide panoramic images\n- Very tall portrait images\n- Images smaller than container\n- Images with extreme aspect ratios\n- Dynamic container size changes",
+      "timestamp": "2026-01-23T17:59:05.149Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T17:59:07.809Z"
+}

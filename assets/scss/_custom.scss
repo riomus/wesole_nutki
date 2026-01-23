@@ -197,6 +197,43 @@
     @apply overflow-hidden;
   }
 
+  // Mobile menu close button
+  .mobile-menu-close {
+    @apply hidden; // Hidden on desktop
+
+    @media (max-width: 991.98px) {
+      @apply fixed top-4 right-4 z-[1050] flex items-center justify-center;
+      @apply bg-white border-2 border-dark rounded-full;
+      @apply transition-all duration-200 shadow-lg;
+      width: 44px;
+      height: 44px;
+      min-width: 44px;
+      min-height: 44px;
+
+      svg {
+        @apply text-dark;
+        width: 24px;
+        height: 24px;
+      }
+
+      &:hover {
+        @apply bg-dark scale-110;
+
+        svg {
+          @apply text-white;
+        }
+      }
+
+      &:focus-visible {
+        @apply outline-none ring-2 ring-primary ring-offset-2;
+      }
+
+      &:active {
+        @apply scale-95;
+      }
+    }
+  }
+
   @media (max-width: 991.98px) {
     .mobile-nav-collapse {
       &.show {
@@ -503,11 +540,15 @@
       }
 
       img {
-        @apply w-full h-auto object-cover;
+        max-height: 600px; // Limit height on about section for better layout
       }
 
       .responsive-image-wrapper {
-        @apply w-full;
+        max-height: 600px; // Match image max-height for about section
+        // Explicitly ensure flexbox properties are applied
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
       }
     }
 
@@ -739,7 +780,7 @@
   }
 
   .card-img-top {
-    @apply w-full object-cover;
+    @apply w-full object-contain;
     height: 200px;
 
     @media (max-width: 768px) {
@@ -929,7 +970,7 @@
     }
 
     .program-card-image {
-      @apply w-full h-full object-cover transition-transform duration-500;
+      @apply w-full h-full object-contain transition-transform duration-500;
     }
 
     &:hover .program-card-image {
@@ -1021,7 +1062,7 @@
       background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
 
       img {
-        @apply w-full h-full object-cover transition-transform duration-500;
+        @apply w-full h-full object-contain transition-transform duration-500;
       }
 
       .responsive-image-wrapper {
@@ -1273,7 +1314,7 @@
         aspect-ratio: 16/9;
 
         img {
-          @apply w-full h-full object-cover transition-transform duration-500;
+          @apply w-full h-full object-contain transition-transform duration-500;
         }
       }
 
@@ -2221,7 +2262,7 @@
       background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
 
       img {
-        @apply w-full h-full object-cover transition-transform duration-500;
+        @apply w-full h-full object-contain transition-transform duration-500;
       }
 
       a:hover img {
@@ -3046,7 +3087,7 @@
     img {
       @apply w-full h-auto rounded-2xl shadow-lg;
       aspect-ratio: 16 / 9;
-      object-fit: cover;
+      object-fit: contain;
     }
   }
 
@@ -3467,7 +3508,7 @@
         @apply block relative overflow-hidden aspect-video bg-gradient-to-br from-primary/10 to-coral/10;
 
         img {
-          @apply w-full h-full object-cover transition-transform duration-500;
+          @apply w-full h-full object-contain transition-transform duration-500;
         }
 
         &:hover img {
@@ -3552,12 +3593,12 @@
 
     .gallery-card-image {
       @apply relative overflow-hidden;
-      aspect-ratio: 4/3;
+      min-height: 250px;
       background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
       border-radius: 1rem 1rem 0 0;
 
       img {
-        @apply w-full h-full object-cover transition-transform duration-500;
+        @apply w-full h-full object-contain transition-transform duration-500;
         border-radius: 1rem 1rem 0 0;
       }
     }
@@ -3567,7 +3608,7 @@
     }
 
     .gallery-card-img {
-      @apply w-full h-full object-cover;
+      @apply w-full h-full object-contain;
     }
 
     .gallery-card-placeholder {
@@ -3582,6 +3623,7 @@
     .gallery-card-count {
       @apply absolute bottom-3 right-3 bg-white/95 backdrop-blur-sm px-3 py-1.5 rounded-full text-sm font-semibold text-dark flex items-center gap-2;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      z-index: 10;
 
       .count-icon {
         @apply text-base leading-none;
@@ -3722,7 +3764,7 @@
 
   // Gallery image
   .gallery-image {
-    @apply w-full h-full object-cover transition-transform duration-500;
+    @apply w-full h-full object-contain transition-transform duration-500;
     display: block;
     border-radius: 1rem 1rem 0 0;
   }
@@ -4346,32 +4388,45 @@
   // Wrapper for responsive images with loading states
   .responsive-image-wrapper {
     @apply relative overflow-hidden bg-gradient-to-br from-primary/5 to-coral/5;
-    display: block;
-
-    // Maintain aspect ratio during loading
-    &::before {
-      content: '';
-      display: block;
-      padding-bottom: 56.25%; // 16:9 aspect ratio default
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px; // Minimum height during loading
+    max-height: 800px; // Prevent extremely tall images from dominating layout
+    width: 100%;
 
     picture, img {
-      @apply absolute inset-0 w-full h-full object-cover;
+      @apply relative object-contain;
+      max-height: 800px; // Match wrapper max-height
+      max-width: 100%;
+      height: auto;
+      width: auto;
     }
   }
 
   // Blur placeholder that shows while image is loading
   .responsive-image-placeholder {
-    @apply absolute inset-0 w-full h-full object-cover transition-opacity duration-300;
+    @apply absolute object-contain transition-opacity duration-300;
     filter: blur(10px);
-    transform: scale(1.1);
+    transform: scale(1.05);
     z-index: 1;
+    max-height: 800px;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.05);
   }
 
   // Main image with fade-in effect
   .responsive-image-main {
-    @apply relative opacity-0 transition-opacity duration-500 w-full h-full object-cover;
+    @apply relative opacity-0 transition-opacity duration-500 object-contain;
     z-index: 2;
+    max-height: 800px; // Match wrapper max-height
+    max-width: 100%;
+    width: auto;
+    height: auto;
 
     // Fade in when loaded
     &.loaded,
@@ -4403,6 +4458,11 @@
 
   // Show fallback when image fails to load
   .responsive-image-wrapper.image-error {
+    // Remove min-height constraint to eliminate blank space
+    min-height: 120px; // Just enough for error icon and text
+    height: auto;
+    max-height: none;
+
     .responsive-image-main {
       @apply opacity-0;
     }
@@ -4607,7 +4667,7 @@
   .embedded-gallery-image {
     width: 100%;
     height: 180px;
-    object-fit: cover;
+    object-fit: contain;
     transition: transform 0.4s ease;
     display: block;
     margin: 0 !important;
@@ -4896,6 +4956,305 @@
         padding: 0.5rem;
       }
     }
+  }
+
+  // ============================================================
+  // MOBILE RESPONSIVENESS ENHANCEMENTS
+  // ============================================================
+  // Comprehensive mobile fixes for all card and column components
+
+  // Ensure all cards display at full width on mobile devices
+  @media (max-width: 767.98px) {
+    // News Cards - Full width on mobile
+    .news-card {
+      @apply w-full;
+      max-width: 100%;
+
+      .card-body {
+        padding: 1.25rem;
+      }
+
+      .card-img-wrapper {
+        width: 100%;
+      }
+    }
+
+    // Contact Cards - Full width on mobile
+    .contact-card {
+      @apply w-full;
+      max-width: 100%;
+      margin-bottom: 1rem;
+
+      // Ensure adequate padding
+      padding: 1.25rem !important;
+    }
+
+    // Program Cards - Full width on mobile
+    .program-card {
+      @apply w-full;
+      max-width: 100%;
+
+      .program-card-body {
+        padding: 1.25rem;
+      }
+    }
+
+    // Gallery Cards - Full width on mobile
+    .gallery-card {
+      @apply w-full;
+      max-width: 100%;
+
+      .gallery-card-body {
+        padding: 1.25rem;
+      }
+    }
+
+    // Team Cards - Full width on mobile
+    .team-card {
+      @apply w-full;
+      max-width: 100%;
+    }
+
+    // Ensure all Bootstrap column classes stack properly
+    [class*="col-"] {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    // Container padding adjustments for mobile
+    .container {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    // Prevent horizontal overflow
+    .row {
+      margin-left: -0.5rem;
+      margin-right: -0.5rem;
+
+      > [class*="col-"] {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+      }
+    }
+  }
+
+  // Very small mobile devices (320px - 375px)
+  @media (max-width: 375px) {
+    .news-card,
+    .contact-card,
+    .program-card,
+    .gallery-card,
+    .team-card {
+      .card-body,
+      .program-card-body,
+      .gallery-card-body {
+        padding: 1rem;
+      }
+    }
+
+    // Reduce padding on very small screens
+    .container {
+      padding-left: 0.75rem;
+      padding-right: 0.75rem;
+    }
+
+    // Adjust font sizes for readability
+    .card-title,
+    .program-card-title,
+    .gallery-card-title {
+      font-size: 1.25rem !important;
+    }
+
+    .contact-card-title {
+      font-size: 0.875rem !important;
+    }
+  }
+
+  // Touch Target Size Enforcement (Minimum 44x44px)
+  @media (max-width: 767.98px) {
+    // Ensure all interactive elements meet minimum touch target size
+    a,
+    button,
+    .btn,
+    .read-more,
+    .contact-card-link,
+    .program-card-link-text {
+      min-height: 44px;
+      min-width: 44px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    // Links that are text-only should have adequate padding
+    .card-title a,
+    .program-card-title,
+    .gallery-card-title {
+      min-height: 44px;
+      display: flex;
+      align-items: center;
+      padding: 0.25rem 0;
+    }
+
+    // Navigation and interactive elements
+    .nav-link,
+    .btn-link {
+      min-height: 44px;
+      padding: 0.5rem 1rem;
+    }
+  }
+
+  // Text overflow handling for all cards
+  .news-card,
+  .contact-card,
+  .program-card,
+  .gallery-card,
+  .team-card {
+    // Prevent text overflow
+    .card-title,
+    .contact-card-title,
+    .program-card-title,
+    .gallery-card-title,
+    .card-text,
+    .contact-card-text,
+    .program-card-summary,
+    .gallery-card-description {
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      word-break: break-word;
+      hyphens: auto;
+    }
+
+    // Handle long URLs and email addresses
+    .contact-card-link,
+    a[href^="mailto:"],
+    a[href^="tel:"] {
+      word-break: break-all;
+      overflow-wrap: break-word;
+    }
+  }
+
+  // Ensure images don't cause horizontal scroll
+  @media (max-width: 767.98px) {
+    img,
+    picture,
+    .card-img-top,
+    .card-img-wrapper img,
+    .program-card-image,
+    .gallery-card-img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  // ============================================================
+  // GLIGHTBOX CUSTOMIZATION
+  // ============================================================
+  // Custom styles for GLightbox gallery viewer to ensure accessibility
+  // and proper visibility on all devices and backgrounds
+
+  :global(.glightbox-container) {
+    // Ensure close button is always visible
+    :global(.gclose) {
+      @apply transition-all duration-200;
+      width: 44px !important;
+      height: 44px !important;
+      min-width: 44px !important;
+      min-height: 44px !important;
+      top: 15px !important;
+      right: 15px !important;
+      background: rgba(0, 0, 0, 0.7) !important;
+      border-radius: 50% !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      z-index: 99999 !important;
+      backdrop-filter: blur(4px);
+
+      &:hover {
+        background: rgba(0, 0, 0, 0.9) !important;
+        transform: scale(1.1);
+      }
+
+      &:focus-visible {
+        outline: 2px solid #81d742 !important;
+        outline-offset: 2px !important;
+      }
+
+      svg {
+        width: 24px !important;
+        height: 24px !important;
+        color: white !important;
+        fill: white !important;
+      }
+    }
+
+    // Navigation buttons - ensure touch-friendly sizes
+    :global(.gnext),
+    :global(.gprev) {
+      @apply transition-all duration-200;
+      width: 50px !important;
+      height: 50px !important;
+      min-width: 50px !important;
+      min-height: 50px !important;
+      background: rgba(0, 0, 0, 0.6) !important;
+      border-radius: 50% !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      backdrop-filter: blur(4px);
+
+      &:hover {
+        background: rgba(0, 0, 0, 0.8) !important;
+        transform: scale(1.05);
+      }
+
+      &:focus-visible {
+        outline: 2px solid #81d742 !important;
+        outline-offset: 2px !important;
+      }
+
+      svg {
+        width: 32px !important;
+        height: 32px !important;
+        color: white !important;
+        fill: white !important;
+      }
+    }
+
+    // Mobile-specific adjustments
+    @media (max-width: 767.98px) {
+      :global(.gclose) {
+        top: 10px !important;
+        right: 10px !important;
+        width: 48px !important;
+        height: 48px !important;
+        min-width: 48px !important;
+        min-height: 48px !important;
+      }
+
+      :global(.gnext),
+      :global(.gprev) {
+        width: 54px !important;
+        height: 54px !important;
+        min-width: 54px !important;
+        min-height: 54px !important;
+      }
+    }
+
+    // Ensure buttons are always above content
+    :global(.gclose),
+    :global(.gnext),
+    :global(.gprev) {
+      position: fixed !important;
+    }
+  }
+
+  // Body lock when lightbox is open
+  :global(body.glightbox-open) {
+    @apply overflow-hidden;
   }
 }
 

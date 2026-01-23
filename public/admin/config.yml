@@ -1,7 +1,32 @@
+# Use DecapBridge PKCE auth (required)
 backend:
-  name: github
+  name: git-gateway
   repo: riomus/wesole_nutki
-  branch: master
+  branch: main
+  auth_type: pkce
+  base_url: https://auth.decapbridge.com
+  auth_endpoint: /sites/b61619a5-b054-40c9-960d-b3861a953269/pkce
+  auth_token_endpoint: /sites/b61619a5-b054-40c9-960d-b3861a953269/token
+  gateway_url: https://gateway.decapbridge.com
+
+  # See who did what (optional)
+  commit_messages:
+    create: Create {{collection}} “{{slug}}” - {{author-name}} <{{author-login}}> via DecapBridge
+    update: Update {{collection}} “{{slug}}” - {{author-name}} <{{author-login}}> via DecapBridge
+    delete: Delete {{collection}} “{{slug}}” - {{author-name}} <{{author-login}}> via DecapBridge
+    uploadMedia: Upload “{{path}}” - {{author-name}} <{{author-login}}> via DecapBridge
+    deleteMedia: Delete “{{path}}” - {{author-name}} <{{author-login}}> via DecapBridge
+    openAuthoring: Message {{message}} - {{author-name}} <{{author-login}}> via DecapBridge
+
+# Enable PKCE fields (optional, recommended)
+auth:
+  email_claim: email
+  first_name_claim: first_name
+  last_name_claim: last_name
+  avatar_url_claim: avatar_url
+
+# Better Decap + Bridge logo (optional)
+logo_url: https://decapbridge.com/decapcms-with-bridge.svg
 
 # Publish mode for editorial workflow (optional - enables draft/review/ready states)
 publish_mode: editorial_workflow
@@ -18,13 +43,11 @@ slug:
 
 # Site URL for previews
 # Update this when custom domain is configured, or use GitHub Pages URL
-site_url: https://wesolenutki.pl
+site_url: https://bartusiak.ai/wesole_nutki/
 
 # Localization settings
 locale: pl
 
-# Logo for the CMS
-logo_url: /images/logo.png
 
 # Image upload guidelines (referenced in collection field hints):
 # - Featured images: 1200x630px (2:1 aspect ratio) for social sharing

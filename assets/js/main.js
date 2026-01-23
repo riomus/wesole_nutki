@@ -158,6 +158,7 @@ function initSmoothScroll() {
 function initMobileMenu() {
   const navbarCollapse = document.querySelector('.mobile-nav-collapse');
   const menuToggle = document.querySelector('.mobile-menu-toggle');
+  const menuCloseBtn = document.querySelector('.mobile-menu-close');
 
   if (!navbarCollapse || !menuToggle) return;
 
@@ -181,6 +182,16 @@ function initMobileMenu() {
     const isOpen = navbarCollapse.classList.contains('show');
     toggleMenu(!isOpen);
   });
+
+  // Handle mobile menu close button click
+  if (menuCloseBtn) {
+    menuCloseBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleMenu(false);
+      // Return focus to menu toggle button
+      menuToggle.focus();
+    });
+  }
 
   // Handle mobile dropdown toggles (collapsible nested menus)
   const mobileDropdowns = navbarCollapse.querySelectorAll('.mobile-dropdown');
@@ -373,11 +384,11 @@ function initGalleryLightbox() {
       slide: { in: 'slideInRight', out: 'slideOutLeft' }
     },
 
-    // SVG icons for navigation (custom preschool-friendly icons)
+    // SVG icons for navigation (custom preschool-friendly icons with ARIA labels)
     svg: {
-      close: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16"><path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/></svg>',
-      prev: '<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/></svg>',
-      next: '<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/></svg>'
+      close: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16" aria-label="Close gallery"><title>Close gallery</title><path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/></svg>',
+      prev: '<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16" aria-label="Previous image"><title>Previous image</title><path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/></svg>',
+      next: '<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16" aria-label="Next image"><title>Next image</title><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/></svg>'
     },
 
     // Lightbox skin customization

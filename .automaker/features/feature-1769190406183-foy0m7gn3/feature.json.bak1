@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Ensure Mobile Responsiveness for Card and Column Components\n\nFix layout issues affecting card items and columnar elements on mobile devices, specifically addressing contact cards not displaying at full width.\n\nRequirements:\n- Audit all card components across the application to identify mobile layout issues\n- Ensure contact cards render at full width (100%) on mobile breakpoints\n- Verify columnar layouts stack vertically on mobile screens\n- Check that padding and margins are appropriate for mobile viewports\n- Test card content (text, images, buttons) scales correctly without overflow\n- Apply consistent mobile breakpoint behavior (typically < 768px)\n- Ensure touch targets meet minimum size requirements (44x44px)\n- Test across multiple mobile device sizes (small phones 320px to tablets 768px)\n- Verify no horizontal scrolling occurs on mobile views\n\nEdge Cases to Consider:\n- Cards with varying content lengths\n- Cards containing images or icons\n- Nested card components\n- Grid or flexbox layouts containing cards\n- Cards within containers that have their own width constraints",
+  "title": "Fix mobile responsiveness for card and column components",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "in_progress",
+  "id": "feature-1769190406183-foy0m7gn3",
+  "descriptionHistory": [
+    {
+      "description": "Ensure Mobile Responsiveness for Card and Column Components\n\nFix layout issues affecting card items and columnar elements on mobile devices, specifically addressing contact cards not displaying at full width.\n\nRequirements:\n- Audit all card components across the application to identify mobile layout issues\n- Ensure contact cards render at full width (100%) on mobile breakpoints\n- Verify columnar layouts stack vertically on mobile screens\n- Check that padding and margins are appropriate for mobile viewports\n- Test card content (text, images, buttons) scales correctly without overflow\n- Apply consistent mobile breakpoint behavior (typically < 768px)\n- Ensure touch targets meet minimum size requirements (44x44px)\n- Test across multiple mobile device sizes (small phones 320px to tablets 768px)\n- Verify no horizontal scrolling occurs on mobile views\n\nEdge Cases to Consider:\n- Cards with varying content lengths\n- Cards containing images or icons\n- Nested card components\n- Grid or flexbox layouts containing cards\n- Cards within containers that have their own width constraints",
+      "timestamp": "2026-01-23T17:46:46.278Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T17:46:48.295Z"
+}

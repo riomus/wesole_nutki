@@ -2209,6 +2209,144 @@ Requirements:
 - Test navigation works correctly for all language versions of the site
 - Ensure the link is accessible and follows proper routing conventions (use router navigation, not hard-coded hrefs if applicable)</description>
     </feature>
+    <feature>
+      <name>Fix mobile responsiveness for card and column components</name>
+      <description>Ensure Mobile Responsiveness for Card and Column Components
+
+Fix layout issues affecting card items and columnar elements on mobile devices, specifically addressing contact cards not displaying at full width.
+
+Requirements:
+- Audit all card components across the application to identify mobile layout issues
+- Ensure contact cards render at full width (100%) on mobile breakpoints
+- Verify columnar layouts stack vertically on mobile screens
+- Check that padding and margins are appropriate for mobile viewports
+- Test card content (text, images, buttons) scales correctly without overflow
+- Apply consistent mobile breakpoint behavior (typically &lt; 768px)
+- Ensure touch targets meet minimum size requirements (44x44px)
+- Test across multiple mobile device sizes (small phones 320px to tablets 768px)
+- Verify no horizontal scrolling occurs on mobile views
+
+Edge Cases to Consider:
+- Cards with varying content lengths
+- Cards containing images or icons
+- Nested card components
+- Grid or flexbox layouts containing cards
+- Cards within containers that have their own width constraints</description>
+    </feature>
+    <feature>
+      <name>Add close buttons to mobile menu and image galleries</name>
+      <description>Add Close/Exit Buttons for Mobile Hamburger Menu and Image Galleries
+
+Implement missing close/exit buttons to improve navigation and user experience on mobile devices and within image galleries.
+
+Requirements:
+- Add a visible close button (X icon) to the mobile hamburger menu
+- Position the close button in a consistent, easily accessible location (typically top-right corner)
+- Add a close button to image gallery views/modals
+- Ensure close buttons are touch-friendly with adequate tap target size (minimum 44x44px)
+- Implement proper click/tap handlers that close the respective components
+- Add appropriate ARIA labels for accessibility (aria-label=&quot;Close menu&quot; / &quot;Close gallery&quot;)
+- Consider adding escape key handler for desktop users
+- Ensure close actions properly restore focus to the triggering element
+- Test that closing resets any scroll locks or body overflow styles
+- Verify close buttons are visible against all background colors/images
+
+Edge Cases:
+- Test behavior when user navigates between gallery images before closing
+- Ensure menu close button doesn&apos;t conflict with other header elements on various screen sizes
+- Verify proper z-index layering so close buttons appear above content</description>
+    </feature>
+    <feature>
+      <name>Fix image cropping in About Us section</name>
+      <description>Prevent Preview Images from Being Cropped or Cut Off
+
+Fix image display issues where large preview images are being truncated or cut off instead of being fully visible within their containers.
+
+Requirements:
+- Locate and fix the image display issue in the &quot;O nas&quot; (About Us) section on the homepage
+- Ensure images scale appropriately to fit their containers without cropping
+- Implement proper CSS sizing (e.g., object-fit: contain or responsive width/height constraints)
+- Maintain aspect ratios of original images
+- Apply the fix consistently across all preview images throughout the site
+- Test with various image sizes and aspect ratios to ensure consistent behavior
+- Ensure images remain responsive across different screen sizes and devices
+
+Edge cases to consider:
+- Very tall or very wide images
+- Small viewport sizes (mobile devices)
+- Images with unusual aspect ratios</description>
+    </feature>
+    <feature>
+      <name>Fix responsive image cropping and centering</name>
+      <description>Improve Responsive Image Display in Image Wrappers
+
+Fix the responsive-image-wrapper component to display complete images without cropping, maintaining aspect ratio and proper centering within available space.
+
+Requirements:
+- Modify responsive-image-wrapper to contain entire image within bounds without cropping
+- Implement intelligent fitting: scale by width or height depending on which dimension would exceed container first
+- Maintain original image aspect ratio (no stretching or skewing)
+- Center images both horizontally and vertically within their containers
+- Ensure images never overflow container boundaries regardless of original dimensions
+- Apply same fixes to about-image-wrapper on main page (currently showing cropped images)
+- Consider using image display library (object-fit utilities, dedicated image components) for consistent, polished presentation
+- Test with various image aspect ratios: landscape, portrait, square, extreme ratios
+- Verify behavior across different viewport sizes and container dimensions
+- Ensure solution works for both oversized and undersized images
+
+Edge cases to handle:
+- Very wide panoramic images
+- Very tall portrait images
+- Images smaller than container
+- Images with extreme aspect ratios
+- Dynamic container size changes</description>
+    </feature>
+    <feature>
+      <name>Overlay card count on gallery image</name>
+      <description>Adjust Gallery Card Layout to Overlay Card Count on Image
+
+Fix the gallery card layout so that the card-count element overlays the image instead of appearing below it.
+
+Requirements:
+- Remove aspect-ratio CSS property from .gallery-card .gallery-card-image element
+- OR implement alternative CSS solution to enable overlay positioning
+- Ensure card-count element is positioned over the image (typically using absolute positioning)
+- Verify the overlay appears in the intended position (e.g., top-right, bottom-right corner)
+- Maintain image responsiveness and proper display across different screen sizes
+- Test that overlay remains visible with appropriate z-index and contrast
+
+Technical considerations:
+- Parent container may need position: relative for absolute positioning to work
+- Consider adding semi-transparent background to card-count for readability
+- Ensure overlay doesn&apos;t break existing hover states or interactions</description>
+    </feature>
+    <feature>
+      <name>Fix gallery card counter z-index layering</name>
+      <description>Update Gallery Card Counter Z-Index Layer Positioning
+
+Fix the visual stacking order of the gallery card counter so it appears above the image instead of being hidden underneath.
+
+Requirements:
+- Increase the z-index value of `.gallery-card .gallery-card-count` to ensure it layers above the gallery image
+- Verify that the parent `.gallery-card` element has appropriate positioning context (position: relative) for z-index to work
+- Test that the counter remains visible across different gallery card states (hover, active, etc.)
+- Ensure the z-index value doesn&apos;t conflict with other UI elements (modals, dropdowns, tooltips)
+- Confirm visual appearance is correct across different browsers</description>
+    </feature>
+    <feature>
+      <name>Fix grey space in error state image wrapper</name>
+      <description>Fix Blank Grey Space Below Image Error State
+
+Remove unwanted blank grey space appearing at the bottom of the responsive-image-wrapper component when it&apos;s in an error state (image-error class applied).
+
+Requirements:
+- Inspect the CSS for responsive-image-wrapper when image-error class is present
+- Identify the source of the grey space (padding, margin, min-height, aspect-ratio, or placeholder dimensions)
+- Adjust styling to eliminate the blank space while maintaining proper error state display
+- Ensure the fix works across different viewport sizes (mobile, tablet, desktop)
+- Verify the error state still displays correctly (error icon, message, or fallback content)
+- Test that successful image loading is not affected by the fix</description>
+    </feature>
   </implemented_features>
 
   <additional_requirements>

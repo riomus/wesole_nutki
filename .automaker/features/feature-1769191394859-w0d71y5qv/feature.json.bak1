@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Adjust Gallery Card Layout to Overlay Card Count on Image\n\nFix the gallery card layout so that the card-count element overlays the image instead of appearing below it.\n\nRequirements:\n- Remove aspect-ratio CSS property from .gallery-card .gallery-card-image element\n- OR implement alternative CSS solution to enable overlay positioning\n- Ensure card-count element is positioned over the image (typically using absolute positioning)\n- Verify the overlay appears in the intended position (e.g., top-right, bottom-right corner)\n- Maintain image responsiveness and proper display across different screen sizes\n- Test that overlay remains visible with appropriate z-index and contrast\n\nTechnical considerations:\n- Parent container may need position: relative for absolute positioning to work\n- Consider adding semi-transparent background to card-count for readability\n- Ensure overlay doesn't break existing hover states or interactions",
+  "title": "Overlay card count on gallery image",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "in_progress",
+  "id": "feature-1769191394859-w0d71y5qv",
+  "descriptionHistory": [
+    {
+      "description": "Adjust Gallery Card Layout to Overlay Card Count on Image\n\nFix the gallery card layout so that the card-count element overlays the image instead of appearing below it.\n\nRequirements:\n- Remove aspect-ratio CSS property from .gallery-card .gallery-card-image element\n- OR implement alternative CSS solution to enable overlay positioning\n- Ensure card-count element is positioned over the image (typically using absolute positioning)\n- Verify the overlay appears in the intended position (e.g., top-right, bottom-right corner)\n- Maintain image responsiveness and proper display across different screen sizes\n- Test that overlay remains visible with appropriate z-index and contrast\n\nTechnical considerations:\n- Parent container may need position: relative for absolute positioning to work\n- Consider adding semi-transparent background to card-count for readability\n- Ensure overlay doesn't break existing hover states or interactions",
+      "timestamp": "2026-01-23T18:03:14.890Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T18:03:20.913Z"
+}
