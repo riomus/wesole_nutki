@@ -1,0 +1,28 @@
+{
+  "category": "Uncategorized",
+  "description": "Redesign Program Cards Layout on Programs Page\n\nUpdate the programs page to display program cards in a more compact, three-column grid layout with consistent spacing.\n\nRequirements:\n- Reduce the size of each program-card component to fit three cards per row\n- Ensure the three-column layout is responsive and works across different screen sizes\n- Add consistent vertical spacing between rows of cards\n- Add consistent horizontal spacing (gap) between cards in each row\n- Maintain proper alignment and prevent cards from stretching unevenly\n- Ensure card content (images, text, buttons) scales appropriately with the smaller card size\n- Verify that all card content remains readable and accessible at the reduced size\n- Test on mobile/tablet to ensure responsive breakpoints work correctly (likely stacking to 1-2 columns on smaller screens)",
+  "title": "",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": "Redesign Program Cards Layout on Programs Page\n\nUpdate the programs page to display program cards in a more compact, three-column grid layout with consistent spacing.\n\nRequirements:\n- Reduce the size of each program-card component to fit three cards per row\n- Ensure the three-column layout is responsive and works across different screen sizes\n- Add consistent vertical spacing between rows of cards\n- Add consistent horizontal spacing (gap) between cards in each row\n- Maintain proper alignment and prevent cards from stretching unevenly\n- Ensure card content (images, text, buttons) scales appropriately with the smaller card size\n- Verify that all card content remains readable and accessible at the reduced size\n- Test on mobile/tablet to ensure responsive breakpoints work correctly (likely stacking to 1-2 columns on smaller screens)",
+  "status": "backlog",
+  "id": "feature-1769173671887-vukuajfjy",
+  "descriptionHistory": [
+    {
+      "description": "Redesign Program Cards Layout on Programs Page\n\nUpdate the programs page to display program cards in a more compact, three-column grid layout with consistent spacing.\n\nRequirements:\n- Reduce the size of each program-card component to fit three cards per row\n- Ensure the three-column layout is responsive and works across different screen sizes\n- Add consistent vertical spacing between rows of cards\n- Add consistent horizontal spacing (gap) between cards in each row\n- Maintain proper alignment and prevent cards from stretching unevenly\n- Ensure card content (images, text, buttons) scales appropriately with the smaller card size\n- Verify that all card content remains readable and accessible at the reduced size\n- Test on mobile/tablet to ensure responsive breakpoints work correctly (likely stacking to 1-2 columns on smaller screens)",
+      "timestamp": "2026-01-23T13:07:52.219Z",
+      "source": "initial"
+    }
+  ]
+}

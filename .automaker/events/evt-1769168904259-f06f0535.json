@@ -1,0 +1,11 @@
+{
+  "id": "evt-1769168904259-f06f0535",
+  "trigger": "feature_success",
+  "timestamp": "2026-01-23T11:48:24.259Z",
+  "projectPath": "/Users/romanbartusiak/git/riomus/wesole_nutki",
+  "projectName": "wesole_nutki",
+  "featureId": "feature-1769168030875-jhvm8uu7s",
+  "featureName": "Fix embedded gallery overlay rendering in news articles",
+  "error": "Feature completed in 517s - auto-verified",
+  "passes": true
+}

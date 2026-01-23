@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix Persistent Menu Expansion Issue\n\nResolve the issue where the menu remains constantly expanded instead of collapsing properly when expected.\n\nRequirements:\n- Identify why the menu stays in an expanded state\n- Implement proper toggle functionality to allow menu expansion and collapse\n- Ensure menu state is controlled correctly (open/closed)\n- Verify click handlers and event listeners are working as intended\n- Check if menu state is being persisted incorrectly (localStorage, state management)\n- Test menu behavior across different screen sizes and devices\n- Ensure menu collapses when clicking outside the menu area (if applicable)\n- Verify no CSS or styling conflicts forcing the menu to appear expanded\n- Add proper default state (collapsed on page load unless intentionally expanded)",
+  "title": "Fix Menu Collapse Functionality",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "in_progress",
+  "id": "feature-1769158582107-bt1imw1rl",
+  "descriptionHistory": [
+    {
+      "description": "Fix Persistent Menu Expansion Issue\n\nResolve the issue where the menu remains constantly expanded instead of collapsing properly when expected.\n\nRequirements:\n- Identify why the menu stays in an expanded state\n- Implement proper toggle functionality to allow menu expansion and collapse\n- Ensure menu state is controlled correctly (open/closed)\n- Verify click handlers and event listeners are working as intended\n- Check if menu state is being persisted incorrectly (localStorage, state management)\n- Test menu behavior across different screen sizes and devices\n- Ensure menu collapses when clicking outside the menu area (if applicable)\n- Verify no CSS or styling conflicts forcing the menu to appear expanded\n- Add proper default state (collapsed on page load unless intentionally expanded)",
+      "timestamp": "2026-01-23T08:56:22.222Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T08:56:28.759Z"
+}

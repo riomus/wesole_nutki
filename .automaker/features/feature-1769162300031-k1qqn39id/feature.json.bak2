@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix Post-Tailwind Migration Menu Visibility and Layout Issues\n\nAfter migrating to Tailwind CSS, the menu component is broken with visibility and layout problems that need to be resolved.\n\nRequirements:\n- Restore full menu visibility - investigate why menu elements are hidden or not rendering\n- Fix menu layout structure - identify and correct misaligned or improperly positioned elements\n- Review Tailwind class replacements for menu components to ensure proper styling migration\n- Check for conflicting CSS rules between legacy styles and new Tailwind classes\n- Verify responsive behavior across different screen sizes\n- Test menu interactions (hover states, dropdowns, active states, transitions)\n- Ensure menu positioning (fixed, absolute, sticky) is correctly implemented with Tailwind utilities\n- Check z-index layering to ensure menu appears above other content when needed\n- Validate that all menu items are accessible and clickable\n- Review any JavaScript that manipulates menu classes to ensure compatibility with Tailwind\n\nEdge Cases to Consider:\n- Menu behavior on mobile vs desktop viewports\n- Menu state when page loads vs after user interaction\n- Nested submenu items if present\n- Menu appearance in different browser environments",
+  "title": "Fix Tailwind Menu Visibility and Layout Issues",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "in_progress",
+  "id": "feature-1769162300031-k1qqn39id",
+  "descriptionHistory": [
+    {
+      "description": "Fix Post-Tailwind Migration Menu Visibility and Layout Issues\n\nAfter migrating to Tailwind CSS, the menu component is broken with visibility and layout problems that need to be resolved.\n\nRequirements:\n- Restore full menu visibility - investigate why menu elements are hidden or not rendering\n- Fix menu layout structure - identify and correct misaligned or improperly positioned elements\n- Review Tailwind class replacements for menu components to ensure proper styling migration\n- Check for conflicting CSS rules between legacy styles and new Tailwind classes\n- Verify responsive behavior across different screen sizes\n- Test menu interactions (hover states, dropdowns, active states, transitions)\n- Ensure menu positioning (fixed, absolute, sticky) is correctly implemented with Tailwind utilities\n- Check z-index layering to ensure menu appears above other content when needed\n- Validate that all menu items are accessible and clickable\n- Review any JavaScript that manipulates menu classes to ensure compatibility with Tailwind\n\nEdge Cases to Consider:\n- Menu behavior on mobile vs desktop viewports\n- Menu state when page loads vs after user interaction\n- Nested submenu items if present\n- Menu appearance in different browser environments",
+      "timestamp": "2026-01-23T09:58:20.133Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T09:58:22.272Z"
+}

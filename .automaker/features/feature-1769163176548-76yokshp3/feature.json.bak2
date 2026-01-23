@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix Navigation Menu Visibility and Layout Issues\n\nResolve two issues with the navigation menu: incorrect default visibility state and misaligned layout with the logo.\n\nRequirements:\n- Remove or conditionally apply the 'collapse' class from the menu element so it is visible by default on appropriate screen sizes\n- Adjust the layout/flexbox properties to align the menu horizontally inline with the logo\n- Ensure the menu and logo appear on the same horizontal line in the header\n- Verify responsive behavior: collapsed menu should only apply on mobile/smaller viewports if using a hamburger menu pattern\n- Test that the menu remains accessible and functional after changes\n- Confirm styling is consistent with the overall header design\n\nEdge Cases to Consider:\n- Menu visibility at different viewport breakpoints\n- Menu behavior when toggled on mobile devices (if applicable)\n- Proper alignment regardless of logo size or menu item count",
+  "title": "Fix navigation menu visibility and layout alignment",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "in_progress",
+  "id": "feature-1769163176548-76yokshp3",
+  "descriptionHistory": [
+    {
+      "description": "Fix Navigation Menu Visibility and Layout Issues\n\nResolve two issues with the navigation menu: incorrect default visibility state and misaligned layout with the logo.\n\nRequirements:\n- Remove or conditionally apply the 'collapse' class from the menu element so it is visible by default on appropriate screen sizes\n- Adjust the layout/flexbox properties to align the menu horizontally inline with the logo\n- Ensure the menu and logo appear on the same horizontal line in the header\n- Verify responsive behavior: collapsed menu should only apply on mobile/smaller viewports if using a hamburger menu pattern\n- Test that the menu remains accessible and functional after changes\n- Confirm styling is consistent with the overall header design\n\nEdge Cases to Consider:\n- Menu visibility at different viewport breakpoints\n- Menu behavior when toggled on mobile devices (if applicable)\n- Proper alignment regardless of logo size or menu item count",
+      "timestamp": "2026-01-23T10:12:56.641Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T10:12:57.502Z"
+}

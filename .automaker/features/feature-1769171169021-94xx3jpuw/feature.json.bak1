@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Adjust Image Styling in Embedded Gallery Item Component\n\nUpdate the CSS styling for images within the embedded-gallery-item component to align with the gallery layout design.\n\nRequirements:\n- Set margin-top to 0 for img elements inside embedded-gallery-item\n- Set border-bottom-left-radius to 0 for img elements inside embedded-gallery-item\n- Set border-bottom-right-radius to 0 for img elements inside embedded-gallery-item\n- Verify changes apply correctly to all gallery item states (loading, error, loaded)\n- Test that images align properly with their container borders\n- Ensure changes don't affect images in other gallery components",
+  "title": "Update embedded gallery item image styling",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "verified",
+  "id": "feature-1769171169021-94xx3jpuw",
+  "descriptionHistory": [
+    {
+      "description": "Adjust Image Styling in Embedded Gallery Item Component\n\nUpdate the CSS styling for images within the embedded-gallery-item component to align with the gallery layout design.\n\nRequirements:\n- Set margin-top to 0 for img elements inside embedded-gallery-item\n- Set border-bottom-left-radius to 0 for img elements inside embedded-gallery-item\n- Set border-bottom-right-radius to 0 for img elements inside embedded-gallery-item\n- Verify changes apply correctly to all gallery item states (loading, error, loaded)\n- Test that images align properly with their container borders\n- Ensure changes don't affect images in other gallery components",
+      "timestamp": "2026-01-23T12:26:09.113Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T12:29:23.795Z"
+}

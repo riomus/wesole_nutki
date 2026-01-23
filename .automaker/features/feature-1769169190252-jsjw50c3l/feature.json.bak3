@@ -1,0 +1,28 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix Card Display Issues on Documents Page\n\nResolve visual formatting problems with cards displayed on the documents page, including spacing, typography, and date localization.\n\nRequirements:\n- Add proper spacing/padding between card elements (margins, gaps between cards)\n- Fix internal card spacing (padding around content, gaps between text elements)\n- Improve text styling and typography for better readability (font sizes, weights, line heights)\n- Localize date formats from English to appropriate regional format\n- Ensure consistent card layout across all card instances on the page\n- Verify responsive behavior on different screen sizes\n- Check alignment and visual hierarchy of card content\n\nEdge Cases to Consider:\n- Cards with long text content that might wrap\n- Cards with missing optional fields\n- Different date formats needed (relative dates, full dates, time stamps)\n- Various content lengths across different cards",
+  "title": "Fix card spacing, typography, and date localization",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "backlog",
+  "id": "feature-1769169190252-jsjw50c3l",
+  "descriptionHistory": [
+    {
+      "description": "Fix Card Display Issues on Documents Page\n\nResolve visual formatting problems with cards displayed on the documents page, including spacing, typography, and date localization.\n\nRequirements:\n- Add proper spacing/padding between card elements (margins, gaps between cards)\n- Fix internal card spacing (padding around content, gaps between text elements)\n- Improve text styling and typography for better readability (font sizes, weights, line heights)\n- Localize date formats from English to appropriate regional format\n- Ensure consistent card layout across all card instances on the page\n- Verify responsive behavior on different screen sizes\n- Check alignment and visual hierarchy of card content\n\nEdge Cases to Consider:\n- Cards with long text content that might wrap\n- Cards with missing optional fields\n- Different date formats needed (relative dates, full dates, time stamps)\n- Various content lengths across different cards",
+      "timestamp": "2026-01-23T11:53:10.346Z",
+      "source": "initial"
+    }
+  ]
+}

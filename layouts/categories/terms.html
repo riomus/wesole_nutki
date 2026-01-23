@@ -1,0 +1,70 @@
+{{ define "main" }}
+{{/* Breadcrumb Navigation */}}
+{{ partial "breadcrumb.html" . }}
+
+<section class="py-5">
+  <div class="container">
+    <header class="mb-5">
+      <h1 class="display-4">{{ i18n "news_categories" | default "News Categories" }}</h1>
+      <p class="lead">{{ i18n "news_categories_subtitle" | default "Browse our news articles by category" }}</p>
+    </header>
+
+    {{ if .Pages }}
+    <div class="news-categories-grid">
+      {{ range .Pages }}
+      {{ $categoryName := .Title }}
+      {{ $articleCount := len .Pages }}
+      <a href="{{ .Permalink }}" class="news-category-card">
+        <div class="news-category-card-icon">
+          {{/* Determine icon based on category name */}}
+          {{ $lowerName := lower $categoryName }}
+          {{ if in $lowerName "event" }}
+            <span class="category-emoji">🎉</span>
+          {{ else if in $lowerName "wydarzen" }}
+            <span class="category-emoji">🎉</span>
+          {{ else if in $lowerName "announc" }}
+            <span class="category-emoji">📢</span>
+          {{ else if in $lowerName "ogłosz" }}
+            <span class="category-emoji">📢</span>
+          {{ else if in $lowerName "activ" }}
+            <span class="category-emoji">🎨</span>
+          {{ else if in $lowerName "zajec" }}
+            <span class="category-emoji">🎨</span>
+          {{ else if in $lowerName "warsta" }}
+            <span class="category-emoji">🔧</span>
+          {{ else if in $lowerName "workshop" }}
+            <span class="category-emoji">🔧</span>
+          {{ else if in $lowerName "trip" }}
+            <span class="category-emoji">🚌</span>
+          {{ else if in $lowerName "wycieczk" }}
+            <span class="category-emoji">🚌</span>
+          {{ else if in $lowerName "holiday" }}
+            <span class="category-emoji">🎄</span>
+          {{ else if in $lowerName "swiat" }}
+            <span class="category-emoji">🎄</span>
+          {{ else }}
+            <span class="category-emoji">📰</span>
+          {{ end }}
+        </div>
+        <div class="news-category-card-body">
+          <h2 class="news-category-card-title">{{ $categoryName }}</h2>
+          <span class="news-category-card-count">
+            {{ $articleCount }} {{ if eq $articleCount 1 }}{{ i18n "article_singular" | default "article" }}{{ else }}{{ i18n "articles_plural" | default "articles" }}{{ end }}
+          </span>
+        </div>
+      </a>
+      {{ end }}
+    </div>
+    {{ else }}
+    <p class="text-muted">{{ i18n "no_categories" | default "No categories available yet." }}</p>
+    {{ end }}
+
+    {{/* Link back to all news */}}
+    <div class="text-center mt-5">
+      <a href="{{ "news" | relLangURL }}" class="btn btn-outline-primary">
+        <span class="me-2">←</span>{{ i18n "all_news" | default "All news" }}
+      </a>
+    </div>
+  </div>
+</section>
+{{ end }}

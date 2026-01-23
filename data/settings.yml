@@ -1,0 +1,68 @@
+# Global Site Settings
+# Managed via Decap CMS at /admin/
+
+# Basic Site Information
+site_title: Wesole Nutki
+site_description: Przedszkole Niepubliczne Jezykowo-Muzyczne Wesole Nutki we Wroclawiu - ciepla i rodzinna atmosfera w sercu miasta
+site_tagline: Przedszkole Jezykowo-Muzyczne
+
+# Contact Information
+contact:
+  phone: "530 114 202"
+  email: "przedszkole@wesolenutki.eu"
+  address: "Ul. Łaciarska 8"
+  city: Wroclaw
+  postal_code: "50-104"
+  country: Polska
+
+# Opening Hours
+opening_hours:
+  weekdays: "6:30 - 17:30"
+  saturday: "Zamkniete"
+  sunday: "Zamkniete"
+
+# Social Media Links
+# Add your social media profile URLs here
+social_media:
+  facebook: "https://www.facebook.com/NutkiWroclaw/"
+  instagram: ""
+  youtube: ""
+  linkedin: ""
+  twitter: ""
+  tiktok: ""
+  pinterest: ""
+
+# Homepage Section Toggles
+# Control which sections are visible on the homepage
+homepage_sections:
+  hero: true
+  recruitment: true
+  features: true
+  about: true
+  stats: true
+  news: true
+  cta: true
+
+# SEO Settings
+seo:
+  # Default meta description (if not provided by page)
+  meta_description: Przedszkole Wesole Nutki we Wroclawiu - nowoczesna placowka edukacyjna dla dzieci
+  # Keywords for search engines
+  meta_keywords: przedszkole, Wroclaw, edukacja, dzieci, wesole nutki
+  # Google Analytics tracking ID (leave empty to disable)
+  google_analytics: ""
+  # Enable/disable search engine indexing
+  allow_indexing: true
+  # Twitter site handle (e.g., @wesolenutki) - used for twitter:site meta tag
+  twitter_site: ""
+
+# Footer Settings
+footer:
+  # Copyright text (year is added automatically)
+  copyright_text: Wesole Nutki. Wszelkie prawa zastrzezone.
+  # Show social media icons in footer
+  show_social_icons: true
+  # Show contact info in footer
+  show_contact_info: true
+  # Show newsletter signup (if implemented)
+  show_newsletter: false

@@ -1,0 +1,28 @@
+{
+  "category": "Uncategorized",
+  "description": "Adjust Gallery Card Image Border Radius\n\nModify the CSS styling for images within gallery card components to remove bottom border radius while maintaining top border radius.\n\nRequirements:\n- Target img elements inside .gallery-card-image containers\n- Set bottom-left and bottom-right border radius to 0\n- Preserve any existing top border radius values\n- Ensure the change applies consistently across all gallery card instances\n- Verify the visual appearance aligns with the card layout design\n- Test responsiveness across different screen sizes to ensure consistent rendering",
+  "title": "Update gallery card image border radius styling",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "backlog",
+  "id": "feature-1769171961513-x65ki28x0",
+  "descriptionHistory": [
+    {
+      "description": "Adjust Gallery Card Image Border Radius\n\nModify the CSS styling for images within gallery card components to remove bottom border radius while maintaining top border radius.\n\nRequirements:\n- Target img elements inside .gallery-card-image containers\n- Set bottom-left and bottom-right border radius to 0\n- Preserve any existing top border radius values\n- Ensure the change applies consistently across all gallery card instances\n- Verify the visual appearance aligns with the card layout design\n- Test responsiveness across different screen sizes to ensure consistent rendering",
+      "timestamp": "2026-01-23T12:39:21.598Z",
+      "source": "initial"
+    }
+  ]
+}

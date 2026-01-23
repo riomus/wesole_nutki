@@ -1,0 +1,12 @@
+{
+  "id": "programs-page",
+  "category": "Core",
+  "title": "Programs/Offerings Page",
+  "description": "Create a page showcasing the preschool's educational programs, daily schedules, curriculum, and special activities. Use structured sections with images and descriptions for each program type.",
+  "status": "in_progress",
+  "priority": 1,
+  "complexity": "moderate",
+  "createdAt": "2026-01-22T14:36:35.503Z",
+  "updatedAt": "2026-01-22T15:20:29.144Z",
+  "descriptionHistory": []
+}

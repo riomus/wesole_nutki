@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix Single News Post Display Issues\n\nRestore proper rendering and functionality of individual news post pages that are currently broken.\n\nRequirements:\n- Fix share functionality: Ensure share buttons/links are visible and functional\n- Fix image rendering: Restore proper display of post images (sizing, alignment, aspect ratio)\n- Verify post content layout and formatting render correctly\n- Check responsive behavior across desktop, tablet, and mobile viewports\n- Ensure all post metadata (date, author, category) displays properly\n- Test with posts containing different content types (multiple images, no images, embedded media)\n- Validate that related posts or navigation elements render as expected\n\nEdge cases to consider:\n- Posts with missing or broken image URLs\n- Posts with very long titles or content\n- Posts with special characters in share URLs\n- Various image sizes and orientations",
+  "title": "Fix News Post Display and Share Functionality",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "verified",
+  "id": "feature-1769167279151-sfketyujt",
+  "descriptionHistory": [
+    {
+      "description": "Fix Single News Post Display Issues\n\nRestore proper rendering and functionality of individual news post pages that are currently broken.\n\nRequirements:\n- Fix share functionality: Ensure share buttons/links are visible and functional\n- Fix image rendering: Restore proper display of post images (sizing, alignment, aspect ratio)\n- Verify post content layout and formatting render correctly\n- Check responsive behavior across desktop, tablet, and mobile viewports\n- Ensure all post metadata (date, author, category) displays properly\n- Test with posts containing different content types (multiple images, no images, embedded media)\n- Validate that related posts or navigation elements render as expected\n\nEdge cases to consider:\n- Posts with missing or broken image URLs\n- Posts with very long titles or content\n- Posts with special characters in share URLs\n- Various image sizes and orientations",
+      "timestamp": "2026-01-23T11:21:19.208Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T11:39:14.556Z"
+}

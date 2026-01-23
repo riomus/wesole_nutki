@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Ensure Counter Suffix Displays on Same Line as Counter Number\n\nFix the layout of counter components so that the suffix text appears inline with the counter value rather than wrapping to a new line.\n\nRequirements:\n- Identify all counter displays in the application where suffix text exists\n- Apply CSS or layout adjustments to prevent line breaks between number and suffix\n- Use appropriate white-space or flexbox properties to keep elements together\n- Test with various counter values (short and long numbers) to ensure consistent behavior\n- Verify responsive behavior across different screen sizes\n- Ensure the fix works with different suffix lengths and content",
+  "title": "Fix counter suffix layout wrapping",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "verified",
+  "id": "feature-1769164503403-8bfirexm2",
+  "descriptionHistory": [
+    {
+      "description": "Ensure Counter Suffix Displays on Same Line as Counter Number\n\nFix the layout of counter components so that the suffix text appears inline with the counter value rather than wrapping to a new line.\n\nRequirements:\n- Identify all counter displays in the application where suffix text exists\n- Apply CSS or layout adjustments to prevent line breaks between number and suffix\n- Use appropriate white-space or flexbox properties to keep elements together\n- Test with various counter values (short and long numbers) to ensure consistent behavior\n- Verify responsive behavior across different screen sizes\n- Ensure the fix works with different suffix lengths and content",
+      "timestamp": "2026-01-23T10:35:03.660Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T10:46:49.673Z"
+}

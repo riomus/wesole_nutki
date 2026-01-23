@@ -1,0 +1,72 @@
+{{ define "main" }}
+{{/* Breadcrumb Navigation */}}
+{{ partial "breadcrumb.html" . }}
+
+<section class="py-5">
+  <div class="container">
+    <header class="mb-5">
+      <h1 class="display-4">{{ .Title }}</h1>
+      {{ with .Content }}
+      <div class="lead">{{ . }}</div>
+      {{ end }}
+    </header>
+
+    {{/* Use paginator for proper pagination */}}
+    {{ $paginator := .Paginate .Pages }}
+
+    {{ if $paginator.Pages }}
+    <div class="row g-4">
+      {{ range $paginator.Pages }}
+      <div class="col-md-6 col-lg-4">
+        <article class="card h-100 shadow-sm">
+          {{ with .Params.image }}
+          <img src="{{ . | relURL }}" class="card-img-top" alt="{{ $.Title }}">
+          {{ end }}
+          <div class="card-body d-flex flex-column">
+            {{ if not .Date.IsZero }}
+            <div class="card-date mb-2">
+              <small class="text-muted">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16" class="me-1" style="vertical-align: baseline;">
+                  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                </svg>
+                <time datetime="{{ .Date.Format "2006-01-02" }}">
+                  {{ partial "format-date" .Date }}
+                </time>
+              </small>
+            </div>
+            {{ end }}
+            <h2 class="card-title h5 mb-3">
+              <a href="{{ .Permalink }}" class="text-decoration-none stretched-link">{{ .Title }}</a>
+            </h2>
+            <p class="card-text flex-grow-1 mb-3">
+              {{- with .Params.description -}}
+                {{ . | plainify | truncate 150 }}
+              {{- else with .Summary -}}
+                {{ . | plainify | truncate 150 }}
+              {{- else -}}
+                {{ .Content | plainify | truncate 150 }}
+              {{- end -}}
+            </p>
+          </div>
+          <div class="card-footer bg-transparent border-0 pt-0">
+            <a href="{{ .Permalink }}" class="btn btn-primary btn-sm">
+              {{ i18n "read_more" }}
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16" class="ms-1" style="vertical-align: baseline;">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+      </div>
+      {{ end }}
+    </div>
+
+    {{/* Custom Pagination */}}
+    {{ partial "pagination.html" $paginator }}
+    {{ else }}
+    <p class="text-muted">{{ i18n "no_results" }}</p>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

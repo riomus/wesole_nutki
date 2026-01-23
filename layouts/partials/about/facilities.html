@@ -1,0 +1,27 @@
+{{- $data := site.Data.about.facilities -}}
+{{- if $data.enabled -}}
+<!-- Facilities Section -->
+<section class="section section-alt about-facilities-section" id="facilities-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-heading" style="margin-bottom: 1rem;">{{ i18n $data.heading_key | default "Our Facilities" }}</h2>
+      {{- with $data.subtitle_key -}}
+      <p class="section-subtitle" style="font-size: 1.125rem; line-height: 1.6; max-width: 42rem; margin: 0 auto 3rem;">{{ i18n . }}</p>
+      {{- end -}}
+    </div>
+    <div class="row g-4">
+      {{- range $data.items -}}
+      <div class="col-lg-3 col-md-6">
+        <div class="facility-card h-100">
+          <div class="facility-icon">
+            {{- partial "icons/feature-icon.html" .icon -}}
+          </div>
+          <h4 style="font-size: 1.25rem; font-weight: 600; line-height: 1.3; margin-bottom: 0.75rem;">{{ i18n .title_key | default .title_key }}</h4>
+          <p style="font-size: 1rem; line-height: 1.7; color: rgba(45, 49, 66, 0.75);">{{ i18n .description_key | default .description_key }}</p>
+        </div>
+      </div>
+      {{- end -}}
+    </div>
+  </div>
+</section>
+{{- end -}}

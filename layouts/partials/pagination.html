@@ -1,0 +1,97 @@
+{{/* Custom Pagination Partial for Wesole Nutki */}}
+{{/* Accepts a paginator object as context */}}
+
+{{ $paginator := . }}
+
+{{ if gt $paginator.TotalPages 1 }}
+<nav class="pagination-nav mt-5" aria-label="{{ i18n "pagination_aria_label" | default "Page navigation" }}">
+  <ul class="pagination justify-content-center flex-wrap">
+
+    {{/* Previous Page Button */}}
+    {{ if $paginator.HasPrev }}
+    <li class="page-item">
+      <a class="page-link page-link-prev" href="{{ $paginator.Prev.URL }}" aria-label="{{ i18n "pagination_previous" | default "Previous page" }}">
+        <span class="page-link-icon" aria-hidden="true">&laquo;</span>
+        <span class="page-link-text d-none d-sm-inline">{{ i18n "pagination_prev" | default "Previous" }}</span>
+      </a>
+    </li>
+    {{ else }}
+    <li class="page-item disabled">
+      <span class="page-link page-link-prev" aria-disabled="true">
+        <span class="page-link-icon" aria-hidden="true">&laquo;</span>
+        <span class="page-link-text d-none d-sm-inline">{{ i18n "pagination_prev" | default "Previous" }}</span>
+      </span>
+    </li>
+    {{ end }}
+
+    {{/* First Page (if not in visible range) */}}
+    {{ $adjacentPages := 2 }}
+    {{ $showFirst := gt $paginator.PageNumber (add $adjacentPages 1) }}
+    {{ $showLast := lt $paginator.PageNumber (sub $paginator.TotalPages $adjacentPages) }}
+
+    {{ if $showFirst }}
+    <li class="page-item">
+      <a class="page-link" href="{{ $paginator.First.URL }}">1</a>
+    </li>
+    {{ if gt $paginator.PageNumber (add $adjacentPages 2) }}
+    <li class="page-item disabled">
+      <span class="page-link page-ellipsis">&hellip;</span>
+    </li>
+    {{ end }}
+    {{ end }}
+
+    {{/* Page Numbers */}}
+    {{ range $paginator.Pagers }}
+      {{ $distance := sub .PageNumber $paginator.PageNumber }}
+      {{ if lt $distance 0 }}{{ $distance = mul $distance -1 }}{{ end }}
+
+      {{ if le $distance $adjacentPages }}
+        {{ if eq .PageNumber $paginator.PageNumber }}
+        <li class="page-item active" aria-current="page">
+          <span class="page-link">{{ .PageNumber }}</span>
+        </li>
+        {{ else }}
+        <li class="page-item">
+          <a class="page-link" href="{{ .URL }}">{{ .PageNumber }}</a>
+        </li>
+        {{ end }}
+      {{ end }}
+    {{ end }}
+
+    {{/* Last Page (if not in visible range) */}}
+    {{ if $showLast }}
+    {{ if lt $paginator.PageNumber (sub $paginator.TotalPages (add $adjacentPages 1)) }}
+    <li class="page-item disabled">
+      <span class="page-link page-ellipsis">&hellip;</span>
+    </li>
+    {{ end }}
+    <li class="page-item">
+      <a class="page-link" href="{{ $paginator.Last.URL }}">{{ $paginator.TotalPages }}</a>
+    </li>
+    {{ end }}
+
+    {{/* Next Page Button */}}
+    {{ if $paginator.HasNext }}
+    <li class="page-item">
+      <a class="page-link page-link-next" href="{{ $paginator.Next.URL }}" aria-label="{{ i18n "pagination_next_page" | default "Next page" }}">
+        <span class="page-link-text d-none d-sm-inline">{{ i18n "pagination_next" | default "Next" }}</span>
+        <span class="page-link-icon" aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+    {{ else }}
+    <li class="page-item disabled">
+      <span class="page-link page-link-next" aria-disabled="true">
+        <span class="page-link-text d-none d-sm-inline">{{ i18n "pagination_next" | default "Next" }}</span>
+        <span class="page-link-icon" aria-hidden="true">&raquo;</span>
+      </span>
+    </li>
+    {{ end }}
+
+  </ul>
+
+  {{/* Page Info */}}
+  <div class="pagination-info text-center text-muted mt-3">
+    {{ i18n "pagination_page" | default "Page" }} {{ $paginator.PageNumber }} {{ i18n "pagination_of" | default "of" }} {{ $paginator.TotalPages }}
+  </div>
+</nav>
+{{ end }}

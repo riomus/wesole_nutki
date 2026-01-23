@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix Program Subpage Layout and Typography\n\nResolve UI rendering issues on program subpages (e.g., /pl/programs/sredniaki/) where visual elements are currently broken or improperly displayed.\n\nRequirements:\n- Audit all visual elements on program subpages to identify broken layouts\n- Fix CSS/styling issues causing UI destruction (misaligned elements, overflow, broken grids, etc.)\n- Ensure proper spacing and alignment of all page components\n- Verify typography hierarchy is correct (headings, body text, captions)\n- Apply consistent and pleasant font sizing, line height, and letter spacing\n- Ensure text is readable with appropriate contrast ratios\n- Test responsiveness across different screen sizes (mobile, tablet, desktop)\n- Verify consistency with other pages in the application\n- Test with actual program data to ensure dynamic content renders correctly\n- Cross-browser testing (Chrome, Firefox, Safari, Edge)\n\nElements to verify:\n- Page header and title section\n- Content blocks and text sections\n- Images and media elements\n- Buttons and interactive components\n- Navigation elements\n- Footer section\n\nSuccess criteria:\n- All page elements render in their intended positions\n- Typography is visually harmonious and easy to read\n- No visual artifacts, overlapping elements, or broken layouts\n- Consistent styling with the rest of the application",
+  "title": "Fix program subpage layout and typography issues",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "verified",
+  "id": "feature-1769174076657-0ah3yoz7t",
+  "descriptionHistory": [
+    {
+      "description": "Fix Program Subpage Layout and Typography\n\nResolve UI rendering issues on program subpages (e.g., /pl/programs/sredniaki/) where visual elements are currently broken or improperly displayed.\n\nRequirements:\n- Audit all visual elements on program subpages to identify broken layouts\n- Fix CSS/styling issues causing UI destruction (misaligned elements, overflow, broken grids, etc.)\n- Ensure proper spacing and alignment of all page components\n- Verify typography hierarchy is correct (headings, body text, captions)\n- Apply consistent and pleasant font sizing, line height, and letter spacing\n- Ensure text is readable with appropriate contrast ratios\n- Test responsiveness across different screen sizes (mobile, tablet, desktop)\n- Verify consistency with other pages in the application\n- Test with actual program data to ensure dynamic content renders correctly\n- Cross-browser testing (Chrome, Firefox, Safari, Edge)\n\nElements to verify:\n- Page header and title section\n- Content blocks and text sections\n- Images and media elements\n- Buttons and interactive components\n- Navigation elements\n- Footer section\n\nSuccess criteria:\n- All page elements render in their intended positions\n- Typography is visually harmonious and easy to read\n- No visual artifacts, overlapping elements, or broken layouts\n- Consistent styling with the rest of the application",
+      "timestamp": "2026-01-23T13:14:36.749Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T13:20:08.598Z"
+}

@@ -1,0 +1,11 @@
+# About Page Hero Section Configuration
+enabled: true
+
+# Section header keys (from i18n)
+heading_key: about_page_title
+subtitle_key: about_page_subtitle
+
+# Background image (optional)
+# Preschool-themed SVG background matching the playful aesthetic of the homepage
+background_image: /images/about-hero-bg.svg
+overlay_opacity: 0.6

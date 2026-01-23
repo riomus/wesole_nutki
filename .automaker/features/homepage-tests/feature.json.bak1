@@ -1,0 +1,12 @@
+{
+  "id": "homepage-tests",
+  "category": "Testing",
+  "title": "Homepage E2E Tests",
+  "description": "Write Playwright tests for homepage functionality including hero section rendering, features display, navigation links, and language switching in both Polish and English.",
+  "status": "verified",
+  "priority": 2,
+  "complexity": "moderate",
+  "createdAt": "2026-01-22T14:36:35.511Z",
+  "updatedAt": "2026-01-22T16:05:05.479Z",
+  "descriptionHistory": []
+}

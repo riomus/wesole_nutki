@@ -1,0 +1,39 @@
+{{/* News Tag Filter - displays filter buttons for news tags */}}
+{{/* Can be used on news list page and tag term pages */}}
+
+{{ $currentTag := "" }}
+{{ if eq .Kind "term" }}
+  {{ $currentTag = lower .Title }}
+{{ else if eq .Kind "taxonomy" }}
+  {{/* We're on the taxonomy listing page, no specific tag selected */}}
+{{ end }}
+
+{{/* Get language-specific taxonomies */}}
+{{ $newsTags := .Site.Taxonomies.tags }}
+
+{{ if $newsTags }}
+<nav class="news-tag-filter mb-4" aria-label="{{ i18n "filter_by_tag" | default "Filter by tag" }}">
+  <div class="news-tag-filter-wrapper">
+    {{/* "All" button */}}
+    <a href="{{ "news" | relLangURL }}"
+       class="news-tag-filter-btn {{ if not $currentTag }}active{{ end }}"
+       {{ if not $currentTag }}aria-current="page"{{ end }}>
+      {{ i18n "all" | default "All" }}
+    </a>
+
+    {{/* Tag buttons */}}
+    {{ range $name, $pages := $newsTags }}
+      {{ $isActive := eq (lower $name) $currentTag }}
+      <a href="{{ printf "tags/%s" (urlize $name) | relLangURL }}"
+         class="news-tag-filter-btn {{ if $isActive }}active{{ end }}"
+         {{ if $isActive }}aria-current="page"{{ end }}>
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16" class="tag-icon me-1">
+          <path d="M2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586V2zm3.5 4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+        </svg>
+        {{ $name }}
+        <span class="filter-count">({{ len $pages }})</span>
+      </a>
+    {{ end }}
+  </div>
+</nav>
+{{ end }}

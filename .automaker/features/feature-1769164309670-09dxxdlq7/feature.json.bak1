@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Update Font Family to Support Polish Characters\n\nReplace current fonts with typefaces that include full support for Polish language characters and diacritics throughout the application.\n\nRequirements:\n- Identify all current font declarations in the codebase (CSS, style files, design system)\n- Select replacement fonts that include Polish special characters (ą, ć, ę, ł, ń, ó, ś, ź, ż and their uppercase variants)\n- Update font-family declarations across all stylesheets and components\n- Ensure fallback fonts also support Polish characters\n- Test rendering of Polish text across different browsers and devices\n- Verify font weights and styles (regular, bold, italic) all support Polish characters\n- Update web font imports or local font files as needed\n- Check that font loading performance is not negatively impacted\n- Validate proper display of Polish characters in all UI contexts (buttons, headings, body text, form inputs)",
+  "title": "Add Polish character support to fonts",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "verified",
+  "id": "feature-1769164309670-09dxxdlq7",
+  "descriptionHistory": [
+    {
+      "description": "Update Font Family to Support Polish Characters\n\nReplace current fonts with typefaces that include full support for Polish language characters and diacritics throughout the application.\n\nRequirements:\n- Identify all current font declarations in the codebase (CSS, style files, design system)\n- Select replacement fonts that include Polish special characters (ą, ć, ę, ł, ń, ó, ś, ź, ż and their uppercase variants)\n- Update font-family declarations across all stylesheets and components\n- Ensure fallback fonts also support Polish characters\n- Test rendering of Polish text across different browsers and devices\n- Verify font weights and styles (regular, bold, italic) all support Polish characters\n- Update web font imports or local font files as needed\n- Check that font loading performance is not negatively impacted\n- Validate proper display of Polish characters in all UI contexts (buttons, headings, body text, form inputs)",
+      "timestamp": "2026-01-23T10:31:49.906Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T10:38:37.640Z"
+}

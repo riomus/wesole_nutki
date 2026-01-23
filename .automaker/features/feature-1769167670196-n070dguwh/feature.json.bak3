@@ -1,0 +1,28 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix Filter Selection Visual Feedback in Gallery and News Components\n\nUpdate the gallery and news filter UI to visually indicate which filter is currently active when users make a selection.\n\nRequirements:\n- Apply active/selected styling to the currently selected filter option\n- Remove active styling from previously selected filter when a new one is chosen\n- Ensure the visual state persists during and after filtering operation\n- Verify active state styling is visible and consistent with design system\n- Test filter selection works correctly for both gallery and news sections\n- Handle initial state (default filter if applicable) with appropriate highlighting\n- Ensure keyboard navigation updates visual state correctly if filters are keyboard-accessible\n\nEdge Cases to Consider:\n- Multiple filters being applied simultaneously (if supported)\n- Filter state when navigating away and returning to the page\n- Filter appearance on page load/refresh with pre-selected filters",
+  "title": "Fix filter selection visual feedback in gallery and news",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "backlog",
+  "id": "feature-1769167670196-n070dguwh",
+  "descriptionHistory": [
+    {
+      "description": "Fix Filter Selection Visual Feedback in Gallery and News Components\n\nUpdate the gallery and news filter UI to visually indicate which filter is currently active when users make a selection.\n\nRequirements:\n- Apply active/selected styling to the currently selected filter option\n- Remove active styling from previously selected filter when a new one is chosen\n- Ensure the visual state persists during and after filtering operation\n- Verify active state styling is visible and consistent with design system\n- Test filter selection works correctly for both gallery and news sections\n- Handle initial state (default filter if applicable) with appropriate highlighting\n- Ensure keyboard navigation updates visual state correctly if filters are keyboard-accessible\n\nEdge Cases to Consider:\n- Multiple filters being applied simultaneously (if supported)\n- Filter state when navigating away and returning to the page\n- Filter appearance on page load/refresh with pre-selected filters",
+      "timestamp": "2026-01-23T11:27:50.517Z",
+      "source": "initial"
+    }
+  ]
+}

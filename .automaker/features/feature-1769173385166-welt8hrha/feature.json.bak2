@@ -1,0 +1,28 @@
+{
+  "category": "Uncategorized",
+  "description": "Add English Menu Translations to Match Polish Page Structure\n\nUpdate the English version of the website to include the same menu structure and items as the Polish version, with properly translated names and labels.\n\nRequirements:\n- Audit the Polish page menu to identify all menu items, categories, and sections\n- Translate all Polish menu text to English while preserving context and meaning\n- Ensure menu hierarchy and organization matches between both language versions\n- Verify all menu links point to correct English page equivalents\n- Maintain consistent styling and layout between Polish and English menus\n- Test navigation to confirm all menu items are functional\n- Handle any locale-specific menu items appropriately (hide/show based on language)\n\nEdge cases to consider:\n- Menu items that may not have direct English equivalents\n- Dynamic menu content that needs localization\n- Submenus and nested navigation structures\n- Mobile vs desktop menu variations",
+  "title": "Synchronize English menu with Polish structure",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "backlog",
+  "id": "feature-1769173385166-welt8hrha",
+  "descriptionHistory": [
+    {
+      "description": "Add English Menu Translations to Match Polish Page Structure\n\nUpdate the English version of the website to include the same menu structure and items as the Polish version, with properly translated names and labels.\n\nRequirements:\n- Audit the Polish page menu to identify all menu items, categories, and sections\n- Translate all Polish menu text to English while preserving context and meaning\n- Ensure menu hierarchy and organization matches between both language versions\n- Verify all menu links point to correct English page equivalents\n- Maintain consistent styling and layout between Polish and English menus\n- Test navigation to confirm all menu items are functional\n- Handle any locale-specific menu items appropriately (hide/show based on language)\n\nEdge cases to consider:\n- Menu items that may not have direct English equivalents\n- Dynamic menu content that needs localization\n- Submenus and nested navigation structures\n- Mobile vs desktop menu variations",
+      "timestamp": "2026-01-23T13:03:05.310Z",
+      "source": "initial"
+    }
+  ]
+}

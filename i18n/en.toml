@@ -1,0 +1,1012 @@
+# English translations for Wesole Nutki website
+
+[site_title]
+other = "Wesole Nutki"
+
+[site_description]
+other = "Preschool in Wroclaw"
+
+[read_more]
+other = "Read more"
+
+[back_to_home]
+other = "Back to home"
+
+[posted_on]
+other = "Posted on"
+
+[by_author]
+other = "by"
+
+[categories]
+other = "Categories"
+
+[tags]
+other = "Tags"
+
+[share]
+other = "Share"
+
+[related_posts]
+other = "Related posts"
+
+[newer_posts]
+other = "Newer posts"
+
+[older_posts]
+other = "Older posts"
+
+[page_not_found]
+other = "Page not found"
+
+[page_not_found_message]
+other = "Sorry, the page you are looking for does not exist."
+
+[page_not_found_encouragement]
+other = "Don't worry! You can explore our site using the links below."
+
+[helpful_links]
+other = "Helpful Links"
+
+[search]
+other = "Search"
+
+[search_placeholder]
+other = "Enter search term..."
+
+[no_results]
+other = "No results"
+
+[menu]
+other = "Menu"
+
+[close]
+other = "Close"
+
+[copyright]
+other = "All rights reserved"
+
+[phone]
+other = "Phone"
+
+[email]
+other = "Email"
+
+[address]
+other = "Address"
+
+[follow_us]
+other = "Follow us"
+
+[gallery]
+other = "Gallery"
+
+[news]
+other = "News"
+
+[about_us]
+other = "About Us"
+
+[contact]
+other = "Contact"
+
+[home]
+other = "Home"
+
+[programs]
+other = "Programs"
+
+[our_offer]
+other = "Our Offer"
+
+[view_gallery]
+other = "View gallery"
+
+[all_news]
+other = "All news"
+
+[all_galleries]
+other = "All galleries"
+
+[language]
+other = "Language"
+
+[language_switcher]
+other = "Language selection"
+
+[skip_to_content]
+other = "Skip to content"
+
+[learn_more]
+other = "Learn More"
+
+[contact_us]
+other = "Contact Us"
+
+[why_choose_us]
+other = "Why Choose Us?"
+
+[loving_care]
+other = "Loving Care"
+
+[loving_care_desc]
+other = "A nurturing environment where every child feels valued and loved."
+
+[quality_education]
+other = "Quality Education"
+
+[quality_education_desc]
+other = "Engaging curriculum designed to inspire curiosity and a love of learning."
+
+[community]
+other = "Community"
+
+[community_desc]
+other = "A welcoming community of families, teachers, and children."
+
+[photos]
+other = "photos"
+
+[other_galleries]
+other = "Other galleries"
+
+[view_full_gallery]
+other = "View full gallery"
+
+# Hero Section
+[hero_headline]
+other = "Wesole Nutki - Preschool in Wroclaw"
+
+[hero_subheadline]
+other = "A place where every child discovers the joy of learning through play, creativity, and friendship. Join our preschool family today!"
+
+[why_choose_us_subtitle]
+other = "Discover what makes our preschool special"
+
+[safe_environment]
+other = "Safe Environment"
+
+[safe_environment_desc]
+other = "A secure space designed with children's safety and well-being as the top priority."
+
+[play_based_learning]
+other = "Play-Based Learning"
+
+[play_based_learning_desc]
+other = "Learning through creative play, exploration, and hands-on activities."
+
+[qualified_teachers]
+other = "Qualified Teachers"
+
+[qualified_teachers_desc]
+other = "Experienced and passionate educators dedicated to early childhood development."
+
+[happy_children]
+other = "Happy Children"
+
+[expert_teachers]
+other = "Expert Teachers"
+
+[years_experience]
+other = "Years Experience"
+
+[parent_satisfaction]
+other = "% Parent Satisfaction"
+
+[ready_to_start]
+other = "Ready to Give Your Child the Best Start?"
+
+[cta_description]
+other = "Join our warm and welcoming preschool community. Schedule a visit today!"
+
+[schedule_visit]
+other = "Schedule a Visit"
+
+# Homepage sections - News
+[latest_news]
+other = "Latest News"
+
+[latest_news_subtitle]
+other = "Stay updated with our latest activities"
+
+# Homepage sections - About Preview
+[about_us_subtitle]
+other = "Get to know our preschool"
+
+[about_preview_text]
+other = "Welcome to Wesole Nutki, where every child is valued and surrounded by caring attention. Our preschool offers a warm, friendly atmosphere that promotes development and learning through play."
+
+[about_image_alt]
+other = "Children at Wesole Nutki preschool"
+
+# Menu translations
+[menu_home]
+other = "Home"
+
+[menu_recruitment]
+other = "RECRUITMENT OPEN"
+
+[menu_about]
+other = "About Us"
+
+[menu_about_vision]
+other = "Our Vision"
+
+[menu_about_offer]
+other = "Offer"
+
+[menu_about_pricing]
+other = "Pricing"
+
+[menu_about_payments]
+other = "Payments"
+
+[menu_about_enrollment]
+other = "Enrollment"
+
+[menu_about_documents]
+other = "Documents"
+
+[menu_about_privacy]
+other = "Privacy Policy"
+
+[menu_staff]
+other = "Staff"
+
+[menu_volunteers]
+other = "Volunteers"
+
+[menu_daily_plan]
+other = "Daily Plan"
+
+[menu_daily_plan_weekly]
+other = "Weekly Plan"
+
+[menu_daily_plan_extra]
+other = "Extra Activities 2025/2026"
+
+[menu_daily_plan_calendar]
+other = "School Year Calendar 2025/2026"
+
+[menu_galleries]
+other = "Galleries"
+
+[menu_child_protection]
+other = "Child Protection Standards"
+
+[menu_programs]
+other = "Programs"
+
+[menu_programs_overview]
+other = "Our Programs"
+
+[menu_programs_schedule]
+other = "Daily Schedule"
+
+[menu_news]
+other = "News"
+
+[menu_gallery]
+other = "Gallery"
+
+[menu_contact]
+other = "Contact"
+
+# Footer section
+[quick_links]
+other = "Quick Links"
+
+[useful_links]
+other = "Useful Links"
+
+[opening_hours]
+other = "Opening Hours"
+
+[opening_hours_value]
+other = "Mon-Fri: 7:00 AM - 5:00 PM"
+
+[monday_friday]
+other = "Monday - Friday"
+
+[saturday]
+other = "Saturday"
+
+[sunday]
+other = "Sunday"
+
+[closed]
+other = "Closed"
+
+[footer_description]
+other = "Wesole Nutki is a place where every child discovers the joy of learning through play, creativity, and friendship."
+
+[privacy_policy]
+other = "Privacy Policy"
+
+[terms_of_service]
+other = "Terms of Service"
+
+# Breadcrumb navigation
+[breadcrumb_home]
+other = "Home"
+
+[breadcrumb_aria_label]
+other = "Breadcrumb navigation"
+
+[breadcrumb_news]
+other = "News"
+
+[breadcrumb_programs]
+other = "Programs"
+
+[breadcrumb_gallery]
+other = "Gallery"
+
+[breadcrumb_about]
+other = "About Us"
+
+[breadcrumb_contact]
+other = "Contact"
+
+# Social sharing
+[share_on_facebook]
+other = "Share on Facebook"
+
+[share_on_twitter]
+other = "Share on X (Twitter)"
+
+[share_on_linkedin]
+other = "Share on LinkedIn"
+
+[share_on_whatsapp]
+other = "Share on WhatsApp"
+
+[copy_link]
+other = "Copy link"
+
+[link_copied]
+other = "Link copied!"
+
+# Reading time
+[reading_time]
+other = "min read"
+
+# Previous/Next navigation
+[previous_article]
+other = "Previous article"
+
+[next_article]
+other = "Next article"
+
+# ============================================================
+# About Page Translations
+# ============================================================
+
+# About Page Hero
+[about_page_title]
+other = "About Us"
+
+[about_page_subtitle]
+other = "Discover Wesole Nutki - a preschool where every child is special"
+
+# About Page Mission Section
+[about_mission_heading]
+other = "Our Mission"
+
+[about_mission_subtitle]
+other = "What makes us unique"
+
+[about_mission_content]
+other = "Wesole Nutki is a place where every child discovers their potential in an atmosphere full of warmth and acceptance. Our goal is to support the comprehensive development of children through play, creativity, and an individual approach to each little one."
+
+[about_mission_image_alt]
+other = "Children at Wesole Nutki preschool during playtime"
+
+[about_mission_highlight_1]
+other = "Individual approach to every child"
+
+[about_mission_highlight_2]
+other = "Learning through play and experience"
+
+[about_mission_highlight_3]
+other = "Safe and friendly environment"
+
+[about_mission_highlight_4]
+other = "Supporting children's natural curiosity"
+
+# About Page Values Section
+[about_values_heading]
+other = "Our Values"
+
+[about_values_subtitle]
+other = "The foundations of our work with children"
+
+[about_value_safety_title]
+other = "Safety"
+
+[about_value_safety_desc]
+other = "We provide a safe space where children can freely develop and explore."
+
+[about_value_creativity_title]
+other = "Creativity"
+
+[about_value_creativity_desc]
+other = "We inspire children to create, experiment, and express their imagination."
+
+[about_value_development_title]
+other = "Development"
+
+[about_value_development_desc]
+other = "We support the harmonious intellectual, emotional, and social development of every child."
+
+[about_value_community_title]
+other = "Community"
+
+[about_value_community_desc]
+other = "We build a friendly community of parents, teachers, and children based on mutual respect."
+
+[about_value_respect_title]
+other = "Respect"
+
+[about_value_respect_desc]
+other = "We teach children respect for themselves, others, and the world around them."
+
+[about_value_joy_title]
+other = "Joy"
+
+[about_value_joy_desc]
+other = "We create an atmosphere full of laughter, joy, and positive energy."
+
+# About Page Team Section
+[about_team_heading]
+other = "Our Team"
+
+[about_team_subtitle]
+other = "Meet our qualified and dedicated teachers"
+
+[about_team_role_director]
+other = "Director"
+
+[about_team_bio_director]
+other = "An experienced educator with a passion for early childhood education. Has been leading the preschool with heart and dedication for years."
+
+[about_team_role_teacher1]
+other = "Lead Teacher"
+
+[about_team_bio_teacher1]
+other = "A specialist in creative and musical activities. Supports children's artistic development."
+
+[about_team_role_teacher2]
+other = "Lead Teacher"
+
+[about_team_bio_teacher2]
+other = "An expert in physical activities and sensory play. Takes care of children's motor development."
+
+[about_team_role_teacher3]
+other = "Teaching Assistant"
+
+[about_team_bio_teacher3]
+other = "A helpful and patient caregiver. Always ready to support children in their daily activities."
+
+# About Page Facilities Section
+[about_facilities_heading]
+other = "Our Facilities"
+
+[about_facilities_subtitle]
+other = "Space designed with children in mind"
+
+[about_facility_classrooms_title]
+other = "Spacious Classrooms"
+
+[about_facility_classrooms_desc]
+other = "Bright, colorful rooms equipped with modern teaching aids and educational toys."
+
+[about_facility_playground_title]
+other = "Playground"
+
+[about_facility_playground_desc]
+other = "A safe playground with various equipment for outdoor fun."
+
+[about_facility_kitchen_title]
+other = "Own Kitchen"
+
+[about_facility_kitchen_desc]
+other = "We prepare healthy, balanced meals tailored to the needs of our little ones."
+
+[about_facility_rest_title]
+other = "Rest Area"
+
+[about_facility_rest_desc]
+other = "Cozy places for rest and naps for our youngest charges."
+
+# About Page Contact CTA Section
+[about_contact_heading]
+other = "Want to Meet Us?"
+
+[about_contact_subtitle]
+other = "Contact us to schedule a visit and see our preschool from the inside."
+
+# ============================================================
+# Programs Page Translations
+# ============================================================
+
+[all_programs]
+other = "All Programs"
+
+[daily_schedule]
+other = "Daily Schedule"
+
+[daily_schedule_subtitle]
+other = "A typical day at our preschool"
+
+[view_full_schedule]
+other = "View Full Schedule"
+
+[ready_to_enroll]
+other = "Ready to Enroll Your Child?"
+
+[enroll_cta_description]
+other = "Contact us to learn more about our programs and schedule a visit to our preschool."
+
+[program_activities]
+other = "Activities & Learning Areas"
+
+[program_schedule]
+other = "Daily Schedule"
+
+[program_info]
+other = "Program Info"
+
+[age_group]
+other = "Age Group"
+
+[group_size]
+other = "Group Size"
+
+[hours]
+other = "Hours"
+
+[key_features]
+other = "Key Features"
+
+[interested_in_program]
+other = "Interested?"
+
+[program_cta_text]
+other = "Contact us to learn more about this program and schedule a visit."
+
+[other_programs]
+other = "Other Programs"
+
+[no_programs]
+other = "No programs available yet."
+
+# Schedule page translations
+[schedule_arrival]
+other = "Arrival & Free Play"
+
+[schedule_arrival_desc]
+other = "Children arrive and engage in free play activities"
+
+[schedule_arrival_full]
+other = "Children arrive and engage in quiet activities, free play in learning centers, individual conversations with teachers."
+
+[schedule_breakfast]
+other = "Breakfast"
+
+[schedule_breakfast_desc]
+other = "Healthy breakfast time together"
+
+[schedule_breakfast_full]
+other = "Healthy breakfast prepared fresh daily. Children learn table manners and self-service skills."
+
+[schedule_circle]
+other = "Circle Time"
+
+[schedule_circle_full]
+other = "Morning greeting, calendar activities, discussing the day's plan, songs and movement activities."
+
+[schedule_learning]
+other = "Learning Activities"
+
+[schedule_learning_desc]
+other = "Educational activities, creative play, and outdoor time"
+
+[schedule_learning_time]
+other = "Learning Time"
+
+[schedule_main_activity]
+other = "Main Educational Activity"
+
+[schedule_main_activity_full]
+other = "Structured learning activities based on weekly theme: literacy, math, science, art, or social studies. Small group and individual instruction."
+
+[schedule_outdoor]
+other = "Outdoor Play & Physical Activity"
+
+[schedule_outdoor_full]
+other = "Structured outdoor play, sports activities, nature exploration. In bad weather: indoor gym or movement activities."
+
+[schedule_lunch]
+other = "Lunch"
+
+[schedule_lunch_desc]
+other = "Nutritious lunch prepared fresh daily"
+
+[schedule_lunch_full]
+other = "Nutritious hot lunch prepared by our kitchen. Balanced meals following children's dietary needs and preferences."
+
+[schedule_midday]
+other = "Midday"
+
+[schedule_rest]
+other = "Rest Time"
+
+[schedule_rest_desc]
+other = "Quiet time and nap for younger children"
+
+[schedule_rest_full]
+other = "Nap time for younger children. Older children engage in quiet activities: reading, puzzles, art projects."
+
+[schedule_afternoon]
+other = "Afternoon Activities"
+
+[schedule_afternoon_desc]
+other = "Snack time and creative afternoon activities"
+
+[schedule_afternoon_title]
+other = "Afternoon"
+
+[schedule_snack]
+other = "Afternoon Snack"
+
+[schedule_snack_full]
+other = "Light healthy snack: fruits, vegetables, dairy products, whole grain snacks."
+
+[schedule_enrichment]
+other = "Enrichment Activities"
+
+[schedule_enrichment_full]
+other = "Specialized activities: music, dance, English, art workshops, science experiments, or special events."
+
+[schedule_departure]
+other = "Free Play & Departure"
+
+[schedule_departure_desc]
+other = "Free play and gradual pickup by parents"
+
+[schedule_departure_full]
+other = "Free play time, learning centers, outdoor play (weather permitting). Gradual pickup by parents with opportunity for teacher communication."
+
+[schedule_morning]
+other = "Morning"
+
+[meals_nutrition]
+other = "Meals & Nutrition"
+
+[meals_nutrition_desc]
+other = "All meals are prepared fresh daily in our kitchen using high-quality ingredients. We accommodate dietary restrictions and allergies."
+
+[what_to_bring]
+other = "What to Bring"
+
+[what_to_bring_desc]
+other = "Comfortable clothes for play, indoor shoes, change of clothes, and any comfort items for rest time (for younger children)."
+
+[parent_communication]
+other = "Stay Connected"
+
+[parent_communication_desc]
+other = "Regular updates through our parent app, daily reports, and open communication with teachers during drop-off and pick-up times."
+
+# ============================================================
+# Contact Page Translations
+# ============================================================
+
+[contact_information]
+other = "Contact Information"
+
+[our_location]
+other = "Our Location"
+
+[map_title]
+other = "Map showing preschool location"
+
+[how_to_reach_us]
+other = "How to Reach Us"
+
+[by_car]
+other = "By Car"
+
+[by_public_transport]
+other = "By Public Transport"
+
+[parking]
+other = "Parking"
+
+[get_directions]
+other = "Get Directions"
+
+[schedule_visit_heading]
+other = "Schedule a Visit"
+
+[schedule_visit_text]
+other = "We invite you to visit our preschool. We'll show you our classrooms, introduce our staff, and answer all your questions."
+
+[call_us]
+other = "Call Us"
+
+[email_us]
+other = "Email Us"
+
+# ============================================================
+# Gallery Category Translations
+# ============================================================
+
+[gallery_categories]
+other = "Gallery Categories"
+
+[gallery_categories_subtitle]
+other = "Browse our photo galleries by category"
+
+[gallery_singular]
+other = "gallery"
+
+[galleries_plural]
+other = "galleries"
+
+[in_this_category]
+other = "in this category"
+
+[no_categories]
+other = "No categories available yet."
+
+[no_galleries_in_category]
+other = "No galleries in this category yet."
+
+[filter_by_category]
+other = "Filter by category"
+
+[all]
+other = "All"
+
+[back_to_gallery]
+other = "Back to Gallery"
+
+# Gallery Category Names
+[category_events]
+other = "Events"
+
+[category_daily_activities]
+other = "Daily Activities"
+
+[category_holidays]
+other = "Holidays"
+
+[category_excursions]
+other = "Excursions"
+
+[category_family]
+other = "Family"
+
+# ============================================================
+# News Category Translations
+# ============================================================
+
+[news_categories]
+other = "News Categories"
+
+[news_categories_subtitle]
+other = "Browse our news articles by category"
+
+[article_singular]
+other = "article"
+
+[articles_plural]
+other = "articles"
+
+[no_articles_in_category]
+other = "No articles in this category yet."
+
+[back_to_news]
+other = "Back to news"
+
+# News Category Names
+[news_category_events]
+other = "Events"
+
+[news_category_announcements]
+other = "Announcements"
+
+[news_category_activities]
+other = "Activities"
+
+# ============================================================
+# News Tag Translations
+# ============================================================
+
+[news_tags]
+other = "News Tags"
+
+[news_tags_subtitle]
+other = "Browse our news articles by tag"
+
+[with_this_tag]
+other = "with this tag"
+
+[no_articles_with_tag]
+other = "No articles with this tag yet."
+
+[no_tags]
+other = "No tags available yet."
+
+[filter_by_tag]
+other = "Filter by tag"
+
+[all_tags]
+other = "All tags"
+
+[browse_by_tag]
+other = "Browse by tag"
+
+# ============================================================
+# Pagination Translations
+# ============================================================
+
+[pagination_aria_label]
+other = "Page navigation"
+
+[pagination_prev]
+other = "Previous"
+
+[pagination_next]
+other = "Next"
+
+[pagination_previous]
+other = "Previous page"
+
+[pagination_next_page]
+other = "Next page"
+
+[pagination_page]
+other = "Page"
+
+[pagination_of]
+other = "of"
+
+# ============================================================
+# Social Media ARIA Labels
+# ============================================================
+
+[facebook_aria]
+other = "Visit our Facebook page (opens in new tab)"
+
+[instagram_aria]
+other = "Visit our Instagram page (opens in new tab)"
+
+[youtube_aria]
+other = "Visit our YouTube channel (opens in new tab)"
+
+[linkedin_aria]
+other = "Visit our LinkedIn page (opens in new tab)"
+
+[twitter_aria]
+other = "Visit our X (Twitter) page (opens in new tab)"
+
+[tiktok_aria]
+other = "Visit our TikTok page (opens in new tab)"
+
+[pinterest_aria]
+other = "Visit our Pinterest page (opens in new tab)"
+
+# ============================================================
+# Image Loading Translations
+# ============================================================
+
+[image_unavailable]
+other = "Image unavailable"
+
+# ============================================================
+# Recruitment Section Translations
+# ============================================================
+
+[recruitment_heading]
+other = "RECRUITMENT"
+
+[recruitment_announcement]
+other = "Enrollment is now open for our language and music preschool"
+
+[recruitment_details]
+other = "WESOŁE NUTKI welcomes children born in 2022. We also have two spots available for children born in 2019"
+
+[download_application_form]
+other = "Download application form"
+
+[download_form_text]
+other = "Download application form:"
+
+[view_documents]
+other = "View documents"
+
+[recruitment_cta]
+other = "JOIN US!"
+
+# ============================================================
+# Date Translations (Month Names for English)
+# ============================================================
+
+[month_january]
+other = "January"
+
+[month_february]
+other = "February"
+
+[month_march]
+other = "March"
+
+[month_april]
+other = "April"
+
+[month_may]
+other = "May"
+
+[month_june]
+other = "June"
+
+[month_july]
+other = "July"
+
+[month_august]
+other = "August"
+
+[month_september]
+other = "September"
+
+[month_october]
+other = "October"
+
+[month_november]
+other = "November"
+
+[month_december]
+other = "December"
+
+# ============================================================
+# Documents Page Translations
+# ============================================================
+
+[documents]
+other = "Documents"
+
+[main_document]
+other = "Main document"
+
+[pdf_document]
+other = "PDF document"
+
+[download_pdf]
+other = "Download PDF"
+
+[view_pdf]
+other = "View PDF"
+
+[download]
+other = "Download"
+
+[view]
+other = "View"
+
+[additional_files]
+other = "Additional files"
+
+[back_to_documents]
+other = "Back to documents"
+
+[last_updated]
+other = "Last updated"
+
+[no_documents_found]
+other = "No documents found"
+
+[breadcrumb_documents]
+other = "Documents"

@@ -1,0 +1,51 @@
+{{/* Gallery Category Filter - displays filter buttons for gallery categories */}}
+{{/* Can be used on gallery list page and category term pages */}}
+
+{{ $currentCategory := "" }}
+{{ if eq .Kind "term" }}
+  {{ $currentCategory = .Title }}
+{{ else if eq .Kind "taxonomy" }}
+  {{/* We're on the taxonomy listing page, no specific category selected */}}
+{{ end }}
+
+{{/* Get language-specific taxonomies */}}
+{{ $galleryCategories := .Site.Taxonomies.gallery_categories }}
+
+{{ if $galleryCategories }}
+<nav class="gallery-filter mb-4" aria-label="{{ i18n "filter_by_category" | default "Filter by category" }}">
+  <div class="gallery-filter-wrapper">
+    {{/* "All" button */}}
+    <a href="{{ "gallery" | relLangURL }}"
+       class="gallery-filter-btn {{ if not $currentCategory }}active{{ end }}"
+       {{ if not $currentCategory }}aria-current="page"{{ end }}>
+      {{ i18n "all" | default "All" }}
+    </a>
+
+    {{/* Category buttons */}}
+    {{ range $name, $pages := $galleryCategories }}
+      {{ $isActive := eq $name $currentCategory }}
+      <a href="{{ printf "gallery_categories/%s" (urlize $name) | relLangURL }}"
+         class="gallery-filter-btn {{ if $isActive }}active{{ end }}"
+         {{ if $isActive }}aria-current="page"{{ end }}>
+        {{/* Category icon */}}
+        {{ $lowerName := lower $name }}
+        {{ if in $lowerName "event" }}<span class="filter-icon">🎉</span>
+        {{ else if in $lowerName "wydarzen" }}<span class="filter-icon">🎉</span>
+        {{ else if in $lowerName "wycieczk" }}<span class="filter-icon">🚌</span>
+        {{ else if in $lowerName "trip" }}<span class="filter-icon">🚌</span>
+        {{ else if in $lowerName "excursion" }}<span class="filter-icon">🚌</span>
+        {{ else if in $lowerName "holiday" }}<span class="filter-icon">🎄</span>
+        {{ else if in $lowerName "swiat" }}<span class="filter-icon">🎄</span>
+        {{ else if in $lowerName "activ" }}<span class="filter-icon">🎨</span>
+        {{ else if in $lowerName "zajec" }}<span class="filter-icon">🎨</span>
+        {{ else if in $lowerName "rodzin" }}<span class="filter-icon">👨‍👩‍👧‍👦</span>
+        {{ else if in $lowerName "family" }}<span class="filter-icon">👨‍👩‍👧‍👦</span>
+        {{ else }}<span class="filter-icon">📷</span>
+        {{ end }}
+        {{ $name }}
+        <span class="filter-count">({{ len $pages }})</span>
+      </a>
+    {{ end }}
+  </div>
+</nav>
+{{ end }}

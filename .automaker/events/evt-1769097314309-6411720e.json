@@ -1,0 +1,11 @@
+{
+  "id": "evt-1769097314309-6411720e",
+  "trigger": "feature_success",
+  "timestamp": "2026-01-22T15:55:14.309Z",
+  "projectPath": "/Users/romanbartusiak/git/riomus/wesole_nutki",
+  "projectName": "wesole_nutki",
+  "featureId": "embedded-gallery-shortcode",
+  "featureName": "Gallery Embedding in News Posts",
+  "error": "Feature completed in 445s - auto-verified",
+  "passes": true
+}

@@ -1,0 +1,11 @@
+{
+  "id": "evt-1769172755166-4c2e8b2a",
+  "trigger": "feature_success",
+  "timestamp": "2026-01-23T12:52:35.166Z",
+  "projectPath": "/Users/romanbartusiak/git/riomus/wesole_nutki",
+  "projectName": "wesole_nutki",
+  "featureId": "feature-1769172513066-giyvxu8xs",
+  "featureName": "Restructure main menu and add More section dropdown",
+  "error": "Feature completed in 238s - auto-verified",
+  "passes": true
+}

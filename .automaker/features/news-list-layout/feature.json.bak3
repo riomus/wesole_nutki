@@ -1,0 +1,12 @@
+{
+  "id": "news-list-layout",
+  "category": "Core",
+  "title": "News List Page Layout",
+  "description": "Create the news/blog list template showing news article summaries with featured images, dates, excerpts, and read more links. Implement responsive card-based layout for article previews.",
+  "status": "backlog",
+  "priority": 1,
+  "complexity": "moderate",
+  "createdAt": "2026-01-22T14:36:35.499Z",
+  "updatedAt": "2026-01-22T14:36:35.499Z",
+  "descriptionHistory": []
+}

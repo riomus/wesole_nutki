@@ -1,0 +1,28 @@
+{
+  "category": "Uncategorized",
+  "description": "Investigate and Fix Gallery Image Loading Errors\n\nResolve the 404 error that occurs when clicking on gallery images, preventing them from displaying correctly.\n\nRequirements:\n- Investigate why clicking gallery images triggers 404 errors for image files\n- Verify the actual location and file structure of gallery images in the project\n- Check if image paths in the gallery code match the actual file locations\n- Correct the path references (currently looking in /images/gallery/daily/ but files may be elsewhere)\n- Ensure the correct base URL and path concatenation logic\n- Test image loading across all galleries, not just the specific 02.jpg case\n- Verify that the fix works for both development (localhost:1313) and production environments\n- Check if other gallery images have the same path issue or if it's isolated to specific files\n\nEdge Cases to Consider:\n- Images with different naming conventions or in different subdirectories\n- Images that may have been moved or reorganized\n- Relative vs absolute path handling\n- Any build/bundling process that may affect image paths",
+  "title": "Fix gallery image 404 loading errors",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "backlog",
+  "id": "feature-1769158675122-r3ksfwybr",
+  "descriptionHistory": [
+    {
+      "description": "Investigate and Fix Gallery Image Loading Errors\n\nResolve the 404 error that occurs when clicking on gallery images, preventing them from displaying correctly.\n\nRequirements:\n- Investigate why clicking gallery images triggers 404 errors for image files\n- Verify the actual location and file structure of gallery images in the project\n- Check if image paths in the gallery code match the actual file locations\n- Correct the path references (currently looking in /images/gallery/daily/ but files may be elsewhere)\n- Ensure the correct base URL and path concatenation logic\n- Test image loading across all galleries, not just the specific 02.jpg case\n- Verify that the fix works for both development (localhost:1313) and production environments\n- Check if other gallery images have the same path issue or if it's isolated to specific files\n\nEdge Cases to Consider:\n- Images with different naming conventions or in different subdirectories\n- Images that may have been moved or reorganized\n- Relative vs absolute path handling\n- Any build/bundling process that may affect image paths",
+      "timestamp": "2026-01-23T08:57:55.230Z",
+      "source": "initial"
+    }
+  ]
+}

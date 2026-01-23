@@ -1,0 +1,263 @@
+{{/* Load global settings */}}
+{{ $settings := site.Data.settings }}
+{{ $seo := $settings.seo }}
+{{ $siteTitle := "" }}
+{{ with $settings }}{{ $siteTitle = .site_title }}{{ end }}
+{{ if not $siteTitle }}{{ $siteTitle = .Site.Title }}{{ end }}
+
+{{/* Load branding settings */}}
+{{ $branding := site.Data.branding }}
+
+{{/*
+  SEO Meta Tags with Per-Page Customization
+
+  Supported front matter parameters:
+  - seo_title: Custom title for SEO (overrides .Title in <title> tag)
+  - description: Page description (used for meta description)
+  - og_title: Custom Open Graph title
+  - og_description: Custom Open Graph description
+  - og_image: Custom Open Graph image
+  - og_type: Custom Open Graph type (default: article for pages, website for others)
+  - twitter_title: Custom Twitter Card title
+  - twitter_description: Custom Twitter Card description
+  - twitter_image: Custom Twitter Card image
+  - twitter_card: Custom Twitter Card type (default: summary_large_image)
+  - canonical: Custom canonical URL
+  - noindex: Set to true to add noindex directive
+  - nofollow: Set to true to add nofollow directive
+  - keywords: Page-specific keywords (comma-separated string or array)
+*/}}
+
+{{/* Determine the page title */}}
+{{ $pageTitle := .Title }}
+{{ with .Params.seo_title }}{{ $pageTitle = . }}{{ end }}
+
+{{/* Determine the meta description - cascade: page description > global SEO > site params */}}
+{{ $metaDescription := "" }}
+{{ with .Description }}{{ $metaDescription = . }}{{ end }}
+{{ if not $metaDescription }}{{ with $seo.meta_description }}{{ $metaDescription = . }}{{ end }}{{ end }}
+{{ if not $metaDescription }}{{ with .Site.Params.description }}{{ $metaDescription = . }}{{ end }}{{ end }}
+
+{{/* Determine keywords - cascade: page keywords > global keywords */}}
+{{ $keywords := "" }}
+{{ with .Params.keywords }}
+  {{ if reflect.IsSlice . }}
+    {{ $keywords = delimit . ", " }}
+  {{ else }}
+    {{ $keywords = . }}
+  {{ end }}
+{{ else }}
+  {{ with $seo.meta_keywords }}{{ $keywords = . }}{{ end }}
+{{ end }}
+
+{{/* Determine canonical URL */}}
+{{ $canonicalURL := .Permalink }}
+{{ with .Params.canonical }}{{ $canonicalURL = . | absURL }}{{ end }}
+
+{{/* Determine robots directives */}}
+{{ $robotsContent := "" }}
+{{ $noindex := false }}
+{{ $nofollow := false }}
+{{ if and $seo (eq $seo.allow_indexing false) }}{{ $noindex = true }}{{ end }}
+{{ with .Params.noindex }}{{ if . }}{{ $noindex = true }}{{ end }}{{ end }}
+{{ with .Params.nofollow }}{{ if . }}{{ $nofollow = true }}{{ end }}{{ end }}
+{{ if or $noindex $nofollow }}
+  {{ if and $noindex $nofollow }}
+    {{ $robotsContent = "noindex, nofollow" }}
+  {{ else if $noindex }}
+    {{ $robotsContent = "noindex" }}
+  {{ else }}
+    {{ $robotsContent = "nofollow" }}
+  {{ end }}
+{{ end }}
+
+{{/* Open Graph settings */}}
+{{ $ogTitle := $pageTitle }}
+{{ with .Params.og_title }}{{ $ogTitle = . }}{{ end }}
+
+{{ $ogDescription := $metaDescription }}
+{{ with .Params.og_description }}{{ $ogDescription = . }}{{ end }}
+
+{{ $ogType := "website" }}
+{{ if .IsPage }}{{ $ogType = "article" }}{{ end }}
+{{ with .Params.og_type }}{{ $ogType = . }}{{ end }}
+
+{{ $ogImage := "" }}
+{{ with $branding.og_image }}{{ $ogImage = . }}{{ end }}
+{{ with .Site.Params.logo }}{{ if not $ogImage }}{{ $ogImage = . }}{{ end }}{{ end }}
+{{ with .Params.featured_image }}{{ $ogImage = . }}{{ end }}
+{{ with .Params.image }}{{ $ogImage = . }}{{ end }}
+{{ with .Params.og_image }}{{ $ogImage = . }}{{ end }}
+
+{{/* Twitter Card settings */}}
+{{ $twitterCard := "summary_large_image" }}
+{{ with .Params.twitter_card }}{{ $twitterCard = . }}{{ end }}
+
+{{ $twitterTitle := $ogTitle }}
+{{ with .Params.twitter_title }}{{ $twitterTitle = . }}{{ end }}
+
+{{ $twitterDescription := $ogDescription }}
+{{ with .Params.twitter_description }}{{ $twitterDescription = . }}{{ end }}
+
+{{ $twitterImage := $ogImage }}
+{{ with .Params.twitter_image }}{{ $twitterImage = . }}{{ end }}
+
+{{ $twitterSite := "" }}
+{{ with $seo.twitter_site }}{{ $twitterSite = . }}{{ end }}
+
+{{ $twitterCreator := "" }}
+{{ with .Params.twitter_creator }}{{ $twitterCreator = . }}{{ end }}
+{{ if not $twitterCreator }}{{ $twitterCreator = $twitterSite }}{{ end }}
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Title -->
+<title>{{ $pageTitle }} | {{ $siteTitle }}</title>
+
+<!-- Meta Description -->
+{{ with $metaDescription }}
+<meta name="description" content="{{ . }}">
+{{ end }}
+
+<!-- Meta Keywords -->
+{{ with $keywords }}
+<meta name="keywords" content="{{ . }}">
+{{ end }}
+
+<!-- Robots -->
+{{ with $robotsContent }}
+<meta name="robots" content="{{ . }}">
+{{ end }}
+
+<!-- Author -->
+<meta name="author" content="{{ .Site.Params.author | default .Site.Title }}">
+
+<!-- Language and locale -->
+<meta property="og:locale" content="{{ .Site.Language.Lang }}">
+{{ range .Site.Languages }}
+{{ if ne .Lang $.Site.Language.Lang }}
+<link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Lang | absLangURL }}">
+{{ end }}
+{{ end }}
+<link rel="alternate" hreflang="x-default" href="{{ .Site.BaseURL }}">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="{{ $canonicalURL }}">
+
+<!-- Open Graph -->
+<meta property="og:title" content="{{ $ogTitle }}">
+{{ with $ogDescription }}
+<meta property="og:description" content="{{ . }}">
+{{ end }}
+<meta property="og:type" content="{{ $ogType }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ with $settings.site_title }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}">
+{{ with $ogImage }}
+<meta property="og:image" content="{{ . | absURL }}">
+{{ end }}
+{{/* Article-specific Open Graph tags */}}
+{{ if eq $ogType "article" }}
+{{ with .Date }}
+<meta property="article:published_time" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}">
+{{ end }}
+{{ with .Lastmod }}
+<meta property="article:modified_time" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}">
+{{ end }}
+{{ with .Params.author }}
+<meta property="article:author" content="{{ . }}">
+{{ end }}
+{{ with .Site.Params.author }}
+<meta property="article:author" content="{{ . }}">
+{{ end }}
+{{ range .Params.categories }}
+<meta property="article:section" content="{{ . }}">
+{{ end }}
+{{ range .Params.tags }}
+<meta property="article:tag" content="{{ . }}">
+{{ end }}
+{{ end }}
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="{{ $twitterCard }}">
+{{ with $twitterSite }}
+<meta name="twitter:site" content="{{ . }}">
+{{ end }}
+{{ with $twitterCreator }}
+<meta name="twitter:creator" content="{{ . }}">
+{{ end }}
+<meta name="twitter:title" content="{{ $twitterTitle }}">
+{{ with $twitterDescription }}
+<meta name="twitter:description" content="{{ . }}">
+{{ end }}
+{{ with $twitterImage }}
+<meta name="twitter:image" content="{{ . | absURL }}">
+{{ end }}
+
+<!-- Favicon and PWA Icons -->
+<!-- SVG favicon for modern browsers (scales to any size) -->
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<!-- Fallback PNG favicon from branding config -->
+{{ with $branding.favicon }}
+<link rel="icon" type="image/png" href="{{ . | relURL }}">
+{{ end }}
+<!-- Apple Touch Icon for iOS devices -->
+<link rel="apple-touch-icon" href="/apple-touch-icon.svg">
+<!-- PWA Web App Manifest -->
+<link rel="manifest" href="/site.webmanifest">
+<!-- Theme color for browser chrome -->
+<meta name="theme-color" content="#4CAF50">
+<!-- Microsoft Tile Color -->
+<meta name="msapplication-TileColor" content="#4CAF50">
+
+<!-- Preconnect for Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- Google Fonts - Poppins and Quicksand for preschool branding with Polish character support -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Tailwind CSS with PostCSS via Hugo Pipes -->
+{{ with resources.Get "scss/main.scss" }}
+  {{ $options := dict "targetPath" "css/style.css" "includePaths" (slice "node_modules") }}
+  {{ $style := . | toCSS $options | postCSS }}
+  {{ if hugo.IsProduction }}
+    {{ $style = $style | minify | fingerprint "sha256" }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous">
+  {{ else }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+  {{ end }}
+{{ end }}
+
+<!-- GLightbox CSS for full-screen image viewing -->
+{{ with resources.Get "css/glightbox.min.css" }}
+  {{ if hugo.IsProduction }}
+    {{ $glightboxCss := . | minify | fingerprint "sha256" }}
+    <link rel="stylesheet" href="{{ $glightboxCss.RelPermalink }}" integrity="{{ $glightboxCss.Data.Integrity }}" crossorigin="anonymous">
+  {{ else }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}">
+  {{ end }}
+{{ end }}
+
+<!-- No-JS class removal -->
+<script>document.documentElement.classList.remove('no-js');</script>
+
+<!-- Netlify Identity Widget for Decap CMS authentication -->
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+<!-- Google Analytics (if configured) -->
+{{ with $seo.google_analytics }}
+{{ if and hugo.IsProduction . }}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ . }}');
+</script>
+{{ end }}
+{{ end }}
+
+<!-- Additional head content from child templates -->
+{{ block "head" . }}{{ end }}

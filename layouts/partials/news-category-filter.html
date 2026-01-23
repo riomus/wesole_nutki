@@ -1,0 +1,52 @@
+{{/* News Category Filter - displays filter buttons for news categories */}}
+{{/* Can be used on news list page and category term pages */}}
+
+{{ $currentCategory := "" }}
+{{ if eq .Kind "term" }}
+  {{ $currentCategory = lower .Title }}
+{{ else if eq .Kind "taxonomy" }}
+  {{/* We're on the taxonomy listing page, no specific category selected */}}
+{{ end }}
+
+{{/* Get language-specific taxonomies */}}
+{{ $newsCategories := .Site.Taxonomies.categories }}
+
+{{ if $newsCategories }}
+<nav class="news-filter mb-4" aria-label="{{ i18n "filter_by_category" | default "Filter by category" }}">
+  <div class="news-filter-wrapper">
+    {{/* "All" button */}}
+    <a href="{{ "news" | relLangURL }}"
+       class="news-filter-btn {{ if not $currentCategory }}active{{ end }}"
+       {{ if not $currentCategory }}aria-current="page"{{ end }}>
+      {{ i18n "all" | default "All" }}
+    </a>
+
+    {{/* Category buttons */}}
+    {{ range $name, $pages := $newsCategories }}
+      {{ $isActive := eq (lower $name) $currentCategory }}
+      <a href="{{ printf "categories/%s" (urlize $name) | relLangURL }}"
+         class="news-filter-btn {{ if $isActive }}active{{ end }}"
+         {{ if $isActive }}aria-current="page"{{ end }}>
+        {{/* Category icon */}}
+        {{ $lowerName := lower $name }}
+        {{ if in $lowerName "event" }}<span class="filter-icon">🎉</span>
+        {{ else if in $lowerName "wydarzen" }}<span class="filter-icon">🎉</span>
+        {{ else if in $lowerName "announc" }}<span class="filter-icon">📢</span>
+        {{ else if in $lowerName "ogłosz" }}<span class="filter-icon">📢</span>
+        {{ else if in $lowerName "activ" }}<span class="filter-icon">🎨</span>
+        {{ else if in $lowerName "zajec" }}<span class="filter-icon">🎨</span>
+        {{ else if in $lowerName "warsta" }}<span class="filter-icon">🔧</span>
+        {{ else if in $lowerName "workshop" }}<span class="filter-icon">🔧</span>
+        {{ else if in $lowerName "trip" }}<span class="filter-icon">🚌</span>
+        {{ else if in $lowerName "wycieczk" }}<span class="filter-icon">🚌</span>
+        {{ else if in $lowerName "holiday" }}<span class="filter-icon">🎄</span>
+        {{ else if in $lowerName "swiat" }}<span class="filter-icon">🎄</span>
+        {{ else }}<span class="filter-icon">📰</span>
+        {{ end }}
+        {{ $name }}
+        <span class="filter-count">({{ len $pages }})</span>
+      </a>
+    {{ end }}
+  </div>
+</nav>
+{{ end }}

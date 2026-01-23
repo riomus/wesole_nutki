@@ -1,0 +1,970 @@
+backend:
+  name: github
+  repo: riomus/wesole_nutki
+  branch: master
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
+
+# Publish mode for editorial workflow (optional - enables draft/review/ready states)
+publish_mode: editorial_workflow
+
+# Media files configuration
+media_folder: static/images
+public_folder: /images
+
+# Media library settings
+media_library:
+  name: default
+  max_file_size: 5242880  # 5MB max file size
+  folder_support: true     # Enable folder organization
+
+# Slug configuration for file naming
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "-"
+
+# Site URL for previews
+# Update this when custom domain is configured, or use GitHub Pages URL
+site_url: https://wesolenutki.pl
+
+# Localization settings
+locale: pl
+
+# Logo for the CMS
+logo_url: /images/logo.png
+
+# Image upload guidelines (referenced in collection field hints):
+# - Featured images: 1200x630px (2:1 aspect ratio) for social sharing
+# - Gallery images: 1600x1200px (4:3 aspect ratio) recommended
+# - Team photos: 400x400px (1:1 square) for profile pictures
+# - Program images: 800x600px (4:3 aspect ratio) for cards
+# - File formats: JPG for photos, PNG for graphics with transparency, SVG for icons
+# - File naming: use-lowercase-with-hyphens.jpg (no spaces, no special characters)
+# - Max file size: 5MB
+
+# Collections
+collections:
+  # Navigation Menu Polish
+  - name: menu_pl
+    label: "Menu nawigacji (PL)"
+    files:
+      - name: main_menu_pl
+        label: "Menu glowne (PL)"
+        file: data/menus/main_pl.yml
+        fields:
+          - label: "Elementy menu"
+            name: "items"
+            widget: "list"
+            allow_add: true
+            summary: "{{fields.name}} ({{fields.url}})"
+            fields:
+              - {label: "Identyfikator", name: "identifier", widget: "string", hint: "Unikalny identyfikator (bez spacji, np. 'about' lub 'programs')"}
+              - {label: "Nazwa", name: "name", widget: "string", hint: "Tekst wyswietlany w menu"}
+              - {label: "URL", name: "url", widget: "string", hint: "Adres strony (np. /pl/about/) lub # dla menu z podmenu"}
+              - {label: "Kolejnosc", name: "weight", widget: "number", default: 10, hint: "Kolejnosc wyswietlania (mniejsza = wczesniej)"}
+              - {label: "Klucz tlumaczenia", name: "i18n_key", widget: "string", required: false, hint: "Klucz do pliku tlumaczen (opcjonalny)"}
+              - {label: "Link zewnetrzny", name: "external", widget: "boolean", default: false, hint: "Czy link prowadzi do zewnetrznej strony?"}
+              - {label: "Otworz w nowej karcie", name: "open_in_new_tab", widget: "boolean", default: false, hint: "Czy otworzyc link w nowej karcie przegladarki?"}
+              - label: "Podmenu"
+                name: "children"
+                widget: "list"
+                required: false
+                allow_add: true
+                summary: "{{fields.name}} ({{fields.url}})"
+                hint: "Elementy podmenu (dropdown)"
+                fields:
+                  - {label: "Identyfikator", name: "identifier", widget: "string", hint: "Unikalny identyfikator podmenu"}
+                  - {label: "Nazwa", name: "name", widget: "string", hint: "Tekst wyswietlany w podmenu"}
+                  - {label: "URL", name: "url", widget: "string", hint: "Adres strony (np. /pl/programs/schedule/)"}
+                  - {label: "Kolejnosc", name: "weight", widget: "number", default: 10, hint: "Kolejnosc wyswietlania w podmenu"}
+                  - {label: "Klucz tlumaczenia", name: "i18n_key", widget: "string", required: false, hint: "Klucz do pliku tlumaczen (opcjonalny)"}
+                  - {label: "Link zewnetrzny", name: "external", widget: "boolean", default: false, hint: "Czy link prowadzi do zewnetrznej strony?"}
+                  - {label: "Otworz w nowej karcie", name: "open_in_new_tab", widget: "boolean", default: false, hint: "Czy otworzyc link w nowej karcie przegladarki?"}
+
+  # Navigation Menu English
+  - name: menu_en
+    label: "Navigation Menu (EN)"
+    files:
+      - name: main_menu_en
+        label: "Main Menu (EN)"
+        file: data/menus/main_en.yml
+        fields:
+          - label: "Menu Items"
+            name: "items"
+            widget: "list"
+            allow_add: true
+            summary: "{{fields.name}} ({{fields.url}})"
+            fields:
+              - {label: "Identifier", name: "identifier", widget: "string", hint: "Unique identifier (no spaces, e.g., 'about' or 'programs')"}
+              - {label: "Name", name: "name", widget: "string", hint: "Text displayed in the menu"}
+              - {label: "URL", name: "url", widget: "string", hint: "Page address (e.g., /en/about/) or # for dropdown parent"}
+              - {label: "Order", name: "weight", widget: "number", default: 10, hint: "Display order (lower = earlier)"}
+              - {label: "Translation Key", name: "i18n_key", widget: "string", required: false, hint: "Key for translation file (optional)"}
+              - {label: "External Link", name: "external", widget: "boolean", default: false, hint: "Is this an external link?"}
+              - {label: "Open in New Tab", name: "open_in_new_tab", widget: "boolean", default: false, hint: "Open link in new browser tab?"}
+              - label: "Submenu"
+                name: "children"
+                widget: "list"
+                required: false
+                allow_add: true
+                summary: "{{fields.name}} ({{fields.url}})"
+                hint: "Submenu items (dropdown)"
+                fields:
+                  - {label: "Identifier", name: "identifier", widget: "string", hint: "Unique submenu identifier"}
+                  - {label: "Name", name: "name", widget: "string", hint: "Text displayed in submenu"}
+                  - {label: "URL", name: "url", widget: "string", hint: "Page address (e.g., /en/programs/schedule/)"}
+                  - {label: "Order", name: "weight", widget: "number", default: 10, hint: "Display order within submenu"}
+                  - {label: "Translation Key", name: "i18n_key", widget: "string", required: false, hint: "Key for translation file (optional)"}
+                  - {label: "External Link", name: "external", widget: "boolean", default: false, hint: "Is this an external link?"}
+                  - {label: "Open in New Tab", name: "open_in_new_tab", widget: "boolean", default: false, hint: "Open link in new browser tab?"}
+
+  # Polish Pages
+  - name: pages_pl
+    label: "Strony (PL)"
+    label_singular: "Strona"
+    folder: content/pl
+    create: true
+    slug: "{{slug}}"
+    filter: {field: "type", value: "page"}
+    fields:
+      - {label: "Tytul", name: "title", widget: "string"}
+      - {label: "Opis", name: "description", widget: "text", required: false}
+      - {label: "Data", name: "date", widget: "datetime", required: false}
+      - {label: "Wersja robocza", name: "draft", widget: "boolean", default: false}
+      - {label: "Typ", name: "type", widget: "hidden", default: "page"}
+      - {label: "Tresc", name: "body", widget: "markdown"}
+
+  # English Pages
+  - name: pages_en
+    label: "Pages (EN)"
+    label_singular: "Page"
+    folder: content/en
+    create: true
+    slug: "{{slug}}"
+    filter: {field: "type", value: "page"}
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text", required: false}
+      - {label: "Date", name: "date", widget: "datetime", required: false}
+      - {label: "Draft", name: "draft", widget: "boolean", default: false}
+      - {label: "Type", name: "type", widget: "hidden", default: "page"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  # Polish News
+  - name: news_pl
+    label: "Aktualnosci (PL)"
+    label_singular: "Aktualnosc"
+    folder: content/pl/news
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    sortable_fields: ["date", "title"]
+    summary: "{{title}} - {{date | date('YYYY-MM-DD')}}"
+    fields:
+      - {label: "Tytul", name: "title", widget: "string", hint: "Tytul artykulu wyswietlany na stronie"}
+      - {label: "Data publikacji", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: "HH:mm", format: "YYYY-MM-DDTHH:mm:ssZ"}
+      - {label: "Wersja robocza", name: "draft", widget: "boolean", default: false, hint: "Zaznacz, aby zapisac jako wersje robocza"}
+      - {label: "Jezyk", name: "language", widget: "hidden", default: "pl"}
+      - label: "Kategorie"
+        name: "categories"
+        widget: "list"
+        allow_add: true
+        hint: "Dodaj kategorie dla tego artykulu (np. Wydarzenia, Zajecia, Wazne)"
+        field: {label: "Kategoria", name: "category", widget: "string"}
+      - label: "Tagi"
+        name: "tags"
+        widget: "list"
+        allow_add: true
+        hint: "Dodaj tagi opisujace artykul"
+        field: {label: "Tag", name: "tag", widget: "string"}
+      - label: "Obrazek wyrozniajacy"
+        name: "featured_image"
+        widget: "image"
+        required: false
+        hint: "Glowny obrazek artykulu (zalecany rozmiar: 1200x630px, format: JPG, max 5MB). Uzywaj nazw plikow z myslnikami bez polskich znakow."
+        media_folder: "/static/images/news"
+        public_folder: "/images/news"
+        choose_url: false
+      - {label: "Podsumowanie", name: "summary", widget: "text", required: false, hint: "Krotki opis artykulu wyswietlany na liscie aktualnosci (maks. 200 znakow)"}
+      - label: "Tresc"
+        name: "body"
+        widget: "markdown"
+        hint: "Pelna tresc artykulu z formatowaniem"
+        buttons: ["bold", "italic", "link", "heading-two", "heading-three", "quote", "bulleted-list", "numbered-list"]
+        editor_components: ["image"]
+
+  # English News
+  - name: news_en
+    label: "News (EN)"
+    label_singular: "News Article"
+    folder: content/en/news
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    sortable_fields: ["date", "title"]
+    summary: "{{title}} - {{date | date('YYYY-MM-DD')}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string", hint: "Article title displayed on the site"}
+      - {label: "Publish Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: "HH:mm", format: "YYYY-MM-DDTHH:mm:ssZ"}
+      - {label: "Draft", name: "draft", widget: "boolean", default: false, hint: "Check to save as draft"}
+      - {label: "Language", name: "language", widget: "hidden", default: "en"}
+      - label: "Categories"
+        name: "categories"
+        widget: "list"
+        allow_add: true
+        hint: "Add categories for this article (e.g., Events, Activities, Important)"
+        field: {label: "Category", name: "category", widget: "string"}
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        allow_add: true
+        hint: "Add tags to describe the article"
+        field: {label: "Tag", name: "tag", widget: "string"}
+      - label: "Featured Image"
+        name: "featured_image"
+        widget: "image"
+        required: false
+        hint: "Main article image (recommended: 1200x630px, format: JPG, max 5MB). Use hyphenated lowercase filenames without special characters."
+        media_folder: "/static/images/news"
+        public_folder: "/images/news"
+        choose_url: false
+      - label: "Summary"
+        name: "summary"
+        widget: "text"
+        required: false
+        hint: "Short description shown in news list (max 200 characters)"
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+        hint: "Full article content with formatting"
+        buttons: ["bold", "italic", "link", "heading-two", "heading-three", "quote", "bulleted-list", "numbered-list"]
+        editor_components: ["image"]
+
+  # Polish Gallery
+  - name: gallery_pl
+    label: "Galeria (PL)"
+    label_singular: "Album"
+    folder: content/pl/gallery
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Tytul", name: "title", widget: "string"}
+      - {label: "Opis galerii", name: "description", widget: "text", required: false}
+      - {label: "Data", name: "date", widget: "datetime"}
+      - {label: "Wersja robocza", name: "draft", widget: "boolean", default: false}
+      - label: "Kategorie"
+        name: "categories"
+        widget: "list"
+        allow_add: true
+        field: {label: "Kategoria", name: "category", widget: "string"}
+      - label: "Obrazek wyrozniajacy"
+        name: "featured_image"
+        widget: "image"
+        required: false
+        hint: "Miniaturka albumu (zalecany rozmiar: 800x600px, format: JPG)"
+        media_folder: "/static/images/gallery"
+        public_folder: "/images/gallery"
+        choose_url: false
+      - label: "Zdjecia"
+        name: "images"
+        widget: "list"
+        allow_add: true
+        summary: "{{fields.caption}}"
+        fields:
+          - label: "Zdjecie"
+            name: "src"
+            widget: "image"
+            hint: "Zdjecie galerii (zalecany rozmiar: 1600x1200px, format: JPG, max 5MB)"
+            media_folder: "/static/images/gallery"
+            public_folder: "/images/gallery"
+            choose_url: false
+          - {label: "Podpis", name: "caption", widget: "string", required: false, hint: "Krotki opis zdjecia"}
+          - {label: "Tekst alternatywny", name: "alt", widget: "string", required: false, hint: "Opis dla osob niedowidzacych i SEO"}
+      - {label: "Tresc dodatkowa", name: "body", widget: "markdown", required: false}
+
+  # English Gallery
+  - name: gallery_en
+    label: "Gallery (EN)"
+    label_singular: "Album"
+    folder: content/en/gallery
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Gallery Description", name: "description", widget: "text", required: false}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Draft", name: "draft", widget: "boolean", default: false}
+      - label: "Categories"
+        name: "categories"
+        widget: "list"
+        allow_add: true
+        field: {label: "Category", name: "category", widget: "string"}
+      - label: "Featured Image"
+        name: "featured_image"
+        widget: "image"
+        required: false
+        hint: "Album thumbnail (recommended: 800x600px, format: JPG)"
+        media_folder: "/static/images/gallery"
+        public_folder: "/images/gallery"
+        choose_url: false
+      - label: "Images"
+        name: "images"
+        widget: "list"
+        allow_add: true
+        summary: "{{fields.caption}}"
+        fields:
+          - label: "Image"
+            name: "src"
+            widget: "image"
+            hint: "Gallery image (recommended: 1600x1200px, format: JPG, max 5MB)"
+            media_folder: "/static/images/gallery"
+            public_folder: "/images/gallery"
+            choose_url: false
+          - {label: "Caption", name: "caption", widget: "string", required: false, hint: "Short image description"}
+          - {label: "Alt Text", name: "alt", widget: "string", required: false, hint: "Description for accessibility and SEO"}
+      - {label: "Additional Content", name: "body", widget: "markdown", required: false}
+
+  # Homepage Polish
+  - name: homepage_pl
+    label: "Strona glowna (PL)"
+    files:
+      - name: home_pl
+        label: "Strona glowna PL"
+        file: content/pl/_index.md
+        fields:
+          - {label: "Tytul", name: "title", widget: "string"}
+          - {label: "Opis", name: "description", widget: "text", required: false}
+          - {label: "Tresc", name: "body", widget: "markdown", required: false}
+
+  # Homepage English
+  - name: homepage_en
+    label: "Homepage (EN)"
+    files:
+      - name: home_en
+        label: "Homepage EN"
+        file: content/en/_index.md
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "text", required: false}
+          - {label: "Body", name: "body", widget: "markdown", required: false}
+
+  # Static Pages Polish (About, Contact)
+  - name: static_pages_pl
+    label: "Strony statyczne (PL)"
+    files:
+      - name: about_pl
+        label: "O nas"
+        file: content/pl/about/_index.md
+        fields:
+          - {label: "Tytul", name: "title", widget: "string", hint: "Tytul strony wyswietlany na stronie"}
+          - {label: "Opis", name: "description", widget: "text", required: false, hint: "Krotki opis strony dla wyszukiwarek (SEO)"}
+          - label: "Obrazek wyrozniajacy"
+            name: "featured_image"
+            widget: "image"
+            required: false
+            hint: "Glowny obrazek strony (zalecany rozmiar: 1200x630px)"
+            media_folder: "/static/images/pages"
+            public_folder: "/images/pages"
+          - label: "Sekcje"
+            name: "sections"
+            widget: "list"
+            required: false
+            hint: "Dodatkowe sekcje na stronie"
+            fields:
+              - {label: "Tytul sekcji", name: "title", widget: "string"}
+              - {label: "Tresc", name: "content", widget: "markdown"}
+              - label: "Obrazek"
+                name: "image"
+                widget: "image"
+                required: false
+                media_folder: "/static/images/pages"
+                public_folder: "/images/pages"
+          - label: "Zespol"
+            name: "team"
+            widget: "list"
+            required: false
+            hint: "Czlonkowie zespolu"
+            summary: "{{fields.name}} - {{fields.role}}"
+            fields:
+              - {label: "Imie i nazwisko", name: "name", widget: "string"}
+              - {label: "Stanowisko", name: "role", widget: "string"}
+              - {label: "Opis", name: "bio", widget: "text", required: false}
+              - label: "Zdjecie"
+                name: "photo"
+                widget: "image"
+                required: false
+                hint: "Zdjecie profilowe (zalecany rozmiar: 400x400px kwadrat, format: JPG)"
+                media_folder: "/static/images/team"
+                public_folder: "/images/team"
+                choose_url: false
+          - {label: "Tresc", name: "body", widget: "markdown", required: false}
+      - name: contact_pl
+        label: "Kontakt"
+        file: content/pl/contact/_index.md
+        fields:
+          - {label: "Tytul", name: "title", widget: "string", hint: "Tytul strony kontaktowej"}
+          - {label: "Opis", name: "description", widget: "text", required: false, hint: "Krotki opis strony dla wyszukiwarek (SEO)"}
+          - label: "Obrazek wyrozniajacy"
+            name: "featured_image"
+            widget: "image"
+            required: false
+            hint: "Glowny obrazek strony"
+            media_folder: "/static/images/pages"
+            public_folder: "/images/pages"
+          - label: "Dane kontaktowe"
+            name: "contact_info"
+            widget: "object"
+            fields:
+              - {label: "Adres", name: "address", widget: "string", required: false}
+              - {label: "Telefon", name: "phone", widget: "string", required: false}
+              - {label: "Email", name: "email", widget: "string", required: false}
+              - {label: "Godziny otwarcia", name: "hours", widget: "text", required: false}
+          - label: "Mapa"
+            name: "map"
+            widget: "object"
+            required: false
+            fields:
+              - {label: "Szerokosc geograficzna", name: "latitude", widget: "string", required: false}
+              - {label: "Dlugosc geograficzna", name: "longitude", widget: "string", required: false}
+              - {label: "Link do Google Maps", name: "google_maps_url", widget: "string", required: false}
+          - {label: "Tresc", name: "body", widget: "markdown", required: false}
+
+  # Static Pages English (About, Contact)
+  - name: static_pages_en
+    label: "Static Pages (EN)"
+    files:
+      - name: about_en
+        label: "About Us"
+        file: content/en/about/_index.md
+        fields:
+          - {label: "Title", name: "title", widget: "string", hint: "Page title displayed on the site"}
+          - {label: "Description", name: "description", widget: "text", required: false, hint: "Short page description for search engines (SEO)"}
+          - label: "Featured Image"
+            name: "featured_image"
+            widget: "image"
+            required: false
+            hint: "Main page image (recommended size: 1200x630px)"
+            media_folder: "/static/images/pages"
+            public_folder: "/images/pages"
+          - label: "Sections"
+            name: "sections"
+            widget: "list"
+            required: false
+            hint: "Additional sections on the page"
+            fields:
+              - {label: "Section Title", name: "title", widget: "string"}
+              - {label: "Content", name: "content", widget: "markdown"}
+              - label: "Image"
+                name: "image"
+                widget: "image"
+                required: false
+                media_folder: "/static/images/pages"
+                public_folder: "/images/pages"
+          - label: "Team"
+            name: "team"
+            widget: "list"
+            required: false
+            hint: "Team members"
+            summary: "{{fields.name}} - {{fields.role}}"
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Role", name: "role", widget: "string"}
+              - {label: "Bio", name: "bio", widget: "text", required: false}
+              - label: "Photo"
+                name: "photo"
+                widget: "image"
+                required: false
+                hint: "Profile photo (recommended: 400x400px square, format: JPG)"
+                media_folder: "/static/images/team"
+                public_folder: "/images/team"
+                choose_url: false
+          - {label: "Body", name: "body", widget: "markdown", required: false}
+      - name: contact_en
+        label: "Contact"
+        file: content/en/contact/_index.md
+        fields:
+          - {label: "Title", name: "title", widget: "string", hint: "Contact page title"}
+          - {label: "Description", name: "description", widget: "text", required: false, hint: "Short page description for search engines (SEO)"}
+          - label: "Featured Image"
+            name: "featured_image"
+            widget: "image"
+            required: false
+            hint: "Main page image"
+            media_folder: "/static/images/pages"
+            public_folder: "/images/pages"
+          - label: "Contact Info"
+            name: "contact_info"
+            widget: "object"
+            fields:
+              - {label: "Address", name: "address", widget: "string", required: false}
+              - {label: "Phone", name: "phone", widget: "string", required: false}
+              - {label: "Email", name: "email", widget: "string", required: false}
+              - {label: "Opening Hours", name: "hours", widget: "text", required: false}
+          - label: "Map"
+            name: "map"
+            widget: "object"
+            required: false
+            fields:
+              - {label: "Latitude", name: "latitude", widget: "string", required: false}
+              - {label: "Longitude", name: "longitude", widget: "string", required: false}
+              - {label: "Google Maps Link", name: "google_maps_url", widget: "string", required: false}
+          - {label: "Body", name: "body", widget: "markdown", required: false}
+
+  # Programs Polish (Individual Program Pages)
+  - name: programs_pl
+    label: "Programy (PL)"
+    label_singular: "Program"
+    folder: content/pl/programs
+    create: true
+    slug: "{{slug}}"
+    filter: {field: "type", value: "program"}
+    sortable_fields: ["weight", "title"]
+    summary: "{{title}} - {{age_group}}"
+    fields:
+      - {label: "Tytul", name: "title", widget: "string", hint: "Nazwa grupy/programu"}
+      - {label: "Opis", name: "description", widget: "text", required: false, hint: "Krotki opis programu dla wyszukiwarek (SEO)"}
+      - {label: "Typ", name: "type", widget: "hidden", default: "program"}
+      - {label: "Kolejnosc", name: "weight", widget: "number", default: 10, hint: "Kolejnosc wyswietlania (mniejsza = wczesniej)"}
+      - {label: "Ikona", name: "icon", widget: "string", required: false, hint: "Emoji lub ikona dla programu (np. 🐣)"}
+      - {label: "Grupa wiekowa", name: "age_group", widget: "string", required: false, hint: "Np. 2.5-3 lata"}
+      - {label: "Wielkosc grupy", name: "group_size", widget: "string", required: false, hint: "Np. do 12 dzieci"}
+      - {label: "Godziny", name: "hours", widget: "string", required: false, hint: "Np. 7:00 - 17:00"}
+      - {label: "Podsumowanie", name: "summary", widget: "text", required: false, hint: "Krotki opis wyswietlany na liscie programow"}
+      - label: "Obrazek wyrozniajacy"
+        name: "featured_image"
+        widget: "image"
+        required: false
+        hint: "Glowny obrazek programu (zalecany rozmiar: 800x600px, format: JPG, max 5MB)"
+        media_folder: "/static/images/programs"
+        public_folder: "/images/programs"
+        choose_url: false
+      - label: "Glowne cechy"
+        name: "features"
+        widget: "list"
+        required: false
+        hint: "Lista glownych cech/korzysci programu"
+        field: {label: "Cecha", name: "feature", widget: "string"}
+      - label: "Zajecia"
+        name: "activities"
+        widget: "list"
+        required: false
+        hint: "Lista typowych zajec w programie"
+        summary: "{{fields.title}}"
+        fields:
+          - {label: "Tytul", name: "title", widget: "string"}
+          - {label: "Ikona", name: "icon", widget: "string", required: false, hint: "Emoji dla zajecia"}
+          - {label: "Opis", name: "description", widget: "text", required: false}
+      - label: "Plan dnia"
+        name: "schedule"
+        widget: "list"
+        required: false
+        hint: "Typowy plan dnia"
+        summary: "{{fields.time}}: {{fields.activity}}"
+        fields:
+          - {label: "Godzina", name: "time", widget: "string", hint: "Np. 7:00 - 8:30"}
+          - {label: "Aktywnosc", name: "activity", widget: "string"}
+      - {label: "Wersja robocza", name: "draft", widget: "boolean", default: false}
+      - label: "Tresc"
+        name: "body"
+        widget: "markdown"
+        required: false
+        hint: "Pelna tresc opisu programu"
+        buttons: ["bold", "italic", "link", "heading-two", "heading-three", "quote", "bulleted-list", "numbered-list"]
+        editor_components: ["image"]
+
+  # Programs English (Individual Program Pages)
+  - name: programs_en
+    label: "Programs (EN)"
+    label_singular: "Program"
+    folder: content/en/programs
+    create: true
+    slug: "{{slug}}"
+    filter: {field: "type", value: "program"}
+    sortable_fields: ["weight", "title"]
+    summary: "{{title}} - {{age_group}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string", hint: "Group/program name"}
+      - {label: "Description", name: "description", widget: "text", required: false, hint: "Short program description for search engines (SEO)"}
+      - {label: "Type", name: "type", widget: "hidden", default: "program"}
+      - {label: "Order", name: "weight", widget: "number", default: 10, hint: "Display order (smaller = earlier)"}
+      - {label: "Icon", name: "icon", widget: "string", required: false, hint: "Emoji or icon for the program (e.g., 🐣)"}
+      - {label: "Age Group", name: "age_group", widget: "string", required: false, hint: "E.g., 2.5-3 years"}
+      - {label: "Group Size", name: "group_size", widget: "string", required: false, hint: "E.g., up to 12 children"}
+      - {label: "Hours", name: "hours", widget: "string", required: false, hint: "E.g., 7:00 AM - 5:00 PM"}
+      - {label: "Summary", name: "summary", widget: "text", required: false, hint: "Short description shown in program list"}
+      - label: "Featured Image"
+        name: "featured_image"
+        widget: "image"
+        required: false
+        hint: "Main program image (recommended: 800x600px, format: JPG, max 5MB)"
+        media_folder: "/static/images/programs"
+        public_folder: "/images/programs"
+        choose_url: false
+      - label: "Key Features"
+        name: "features"
+        widget: "list"
+        required: false
+        hint: "List of main features/benefits"
+        field: {label: "Feature", name: "feature", widget: "string"}
+      - label: "Activities"
+        name: "activities"
+        widget: "list"
+        required: false
+        hint: "List of typical activities in the program"
+        summary: "{{fields.title}}"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Icon", name: "icon", widget: "string", required: false, hint: "Emoji for the activity"}
+          - {label: "Description", name: "description", widget: "text", required: false}
+      - label: "Daily Schedule"
+        name: "schedule"
+        widget: "list"
+        required: false
+        hint: "Typical daily schedule"
+        summary: "{{fields.time}}: {{fields.activity}}"
+        fields:
+          - {label: "Time", name: "time", widget: "string", hint: "E.g., 7:00 AM - 8:30 AM"}
+          - {label: "Activity", name: "activity", widget: "string"}
+      - {label: "Draft", name: "draft", widget: "boolean", default: false}
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+        required: false
+        hint: "Full program description content"
+        buttons: ["bold", "italic", "link", "heading-two", "heading-three", "quote", "bulleted-list", "numbered-list"]
+        editor_components: ["image"]
+
+  # Programs Overview Pages (Section Index)
+  - name: programs_overview_pl
+    label: "Programy - Strona glowna (PL)"
+    files:
+      - name: programs_index_pl
+        label: "Strona glowna programow PL"
+        file: content/pl/programs/_index.md
+        fields:
+          - {label: "Tytul", name: "title", widget: "string"}
+          - {label: "Opis", name: "description", widget: "text", required: false}
+          - {label: "Tresc", name: "body", widget: "markdown", required: false}
+
+  # Programs Overview Pages (Section Index)
+  - name: programs_overview_en
+    label: "Programs - Overview (EN)"
+    files:
+      - name: programs_index_en
+        label: "Programs overview EN"
+        file: content/en/programs/_index.md
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "text", required: false}
+          - {label: "Body", name: "body", widget: "markdown", required: false}
+
+  # Site Settings - Branding and Logos
+  - name: site_settings
+    label: "Ustawienia strony / Site Settings"
+    files:
+      - name: branding
+        label: "Logo i branding / Branding"
+        file: data/branding.yml
+        fields:
+          - label: "Logo"
+            name: "logo"
+            widget: "image"
+            required: false
+            hint: "Main site logo (recommended: 200x60px, format: PNG with transparency)"
+            media_folder: "/static/images"
+            public_folder: "/images"
+            choose_url: false
+          - label: "Logo alternatywne / Alternative Logo"
+            name: "logo_alt"
+            widget: "image"
+            required: false
+            hint: "Alternative logo for dark backgrounds (PNG with transparency)"
+            media_folder: "/static/images"
+            public_folder: "/images"
+            choose_url: false
+          - label: "Favicon"
+            name: "favicon"
+            widget: "image"
+            required: false
+            hint: "Site favicon (recommended: 32x32px or 64x64px, format: PNG or ICO)"
+            media_folder: "/static/images"
+            public_folder: "/images"
+            choose_url: false
+          - label: "Open Graph Image"
+            name: "og_image"
+            widget: "image"
+            required: false
+            hint: "Default social sharing image (recommended: 1200x630px, format: JPG)"
+            media_folder: "/static/images"
+            public_folder: "/images"
+            choose_url: false
+      - name: global_settings
+        label: "Ustawienia globalne / Global Settings"
+        file: data/settings.yml
+        fields:
+          - label: "Tytul strony / Site Title"
+            name: "site_title"
+            widget: "string"
+            hint: "Main title of the website"
+          - label: "Opis strony / Site Description"
+            name: "site_description"
+            widget: "text"
+            hint: "Short description of the website for search engines and social media"
+          - label: "Slogan / Tagline"
+            name: "site_tagline"
+            widget: "string"
+            required: false
+            hint: "A catchy tagline or motto for the site"
+          - label: "Dane kontaktowe / Contact Information"
+            name: "contact"
+            widget: "object"
+            fields:
+              - {label: "Telefon / Phone", name: "phone", widget: "string", required: false, hint: "Main contact phone number"}
+              - {label: "Email", name: "email", widget: "string", required: false, hint: "Main contact email address"}
+              - {label: "Adres / Address", name: "address", widget: "string", required: false, hint: "Street address"}
+              - {label: "Miasto / City", name: "city", widget: "string", required: false, default: "Wroclaw"}
+              - {label: "Kod pocztowy / Postal Code", name: "postal_code", widget: "string", required: false}
+              - {label: "Kraj / Country", name: "country", widget: "string", required: false, default: "Polska"}
+          - label: "Godziny otwarcia / Opening Hours"
+            name: "opening_hours"
+            widget: "object"
+            fields:
+              - {label: "Dni robocze / Weekdays", name: "weekdays", widget: "string", required: false, hint: "e.g., 7:00 - 17:00"}
+              - {label: "Sobota / Saturday", name: "saturday", widget: "string", required: false, hint: "e.g., Closed or 8:00 - 12:00"}
+              - {label: "Niedziela / Sunday", name: "sunday", widget: "string", required: false, hint: "e.g., Closed"}
+          - label: "Media spolecznosciowe / Social Media"
+            name: "social_media"
+            widget: "object"
+            fields:
+              - {label: "Facebook", name: "facebook", widget: "string", required: false, hint: "Full Facebook page URL"}
+              - {label: "Instagram", name: "instagram", widget: "string", required: false, hint: "Full Instagram profile URL"}
+              - {label: "YouTube", name: "youtube", widget: "string", required: false, hint: "Full YouTube channel URL"}
+              - {label: "LinkedIn", name: "linkedin", widget: "string", required: false, hint: "Full LinkedIn page URL"}
+          - label: "Sekcje strony glownej / Homepage Sections"
+            name: "homepage_sections"
+            widget: "object"
+            hint: "Toggle which sections appear on the homepage"
+            fields:
+              - {label: "Hero (baner glowny)", name: "hero", widget: "boolean", default: true, hint: "Main hero banner section"}
+              - {label: "Rekrutacja / Recruitment", name: "recruitment", widget: "boolean", default: true, hint: "Recruitment announcement section"}
+              - {label: "Cechy (Dlaczego my)", name: "features", widget: "boolean", default: true, hint: "Why choose us features section"}
+              - {label: "O nas", name: "about", widget: "boolean", default: true, hint: "About us preview section"}
+              - {label: "Statystyki", name: "stats", widget: "boolean", default: true, hint: "Statistics/counters section"}
+              - {label: "Aktualnosci", name: "news", widget: "boolean", default: true, hint: "Latest news section"}
+              - {label: "CTA (wezwanie do dzialania)", name: "cta", widget: "boolean", default: true, hint: "Call to action section"}
+          - label: "Ustawienia SEO / SEO Settings"
+            name: "seo"
+            widget: "object"
+            collapsed: true
+            fields:
+              - {label: "Meta opis / Meta Description", name: "meta_description", widget: "text", required: false, hint: "Default meta description for pages without their own"}
+              - {label: "Slowa kluczowe / Keywords", name: "meta_keywords", widget: "string", required: false, hint: "Comma-separated keywords for search engines"}
+              - {label: "Google Analytics ID", name: "google_analytics", widget: "string", required: false, hint: "Google Analytics tracking ID (e.g., G-XXXXXXXXXX)"}
+              - {label: "Zezwol na indeksowanie / Allow Indexing", name: "allow_indexing", widget: "boolean", default: true, hint: "Allow search engines to index the site"}
+          - label: "Ustawienia stopki / Footer Settings"
+            name: "footer"
+            widget: "object"
+            collapsed: true
+            fields:
+              - {label: "Tekst praw autorskich / Copyright Text", name: "copyright_text", widget: "string", required: false, hint: "Copyright notice (year is added automatically)"}
+              - {label: "Pokaz ikony social media / Show Social Icons", name: "show_social_icons", widget: "boolean", default: true}
+              - {label: "Pokaz dane kontaktowe / Show Contact Info", name: "show_contact_info", widget: "boolean", default: true}
+              - {label: "Pokaz newsletter / Show Newsletter", name: "show_newsletter", widget: "boolean", default: false}
+      - name: recruitment_section
+        label: "Sekcja rekrutacji / Recruitment Section"
+        file: data/homepage/recruitment.yml
+        fields:
+          - label: "Wlaczona / Enabled"
+            name: "enabled"
+            widget: "boolean"
+            default: true
+            hint: "Toggle recruitment section on/off. Use this to easily enable/disable the section when recruitment period ends."
+          - label: "Naglowek / Heading"
+            name: "heading_key"
+            widget: "hidden"
+            default: "recruitment_heading"
+            hint: "Translation key for heading (i18n)"
+          - label: "Ogloszenie / Announcement"
+            name: "announcement_key"
+            widget: "hidden"
+            default: "recruitment_announcement"
+            hint: "Translation key for main announcement text (i18n)"
+          - label: "Szczegoly / Details"
+            name: "details_key"
+            widget: "hidden"
+            default: "recruitment_details"
+            hint: "Translation key for detailed information (i18n)"
+          - label: "Dane kontaktowe / Contact Information"
+            name: "contact"
+            widget: "object"
+            hint: "Contact information specific to recruitment (overrides global contact info)"
+            fields:
+              - {label: "Telefon / Phone", name: "phone", widget: "string", default: "71 343 18 99", hint: "Recruitment contact phone"}
+              - {label: "Email", name: "email", widget: "string", default: "przedszkole@wesolenutki.eu", hint: "Recruitment contact email"}
+          - label: "Formularz zgloszeniowy / Application Form"
+            name: "application_form"
+            widget: "object"
+            hint: "Application form download and document links"
+            fields:
+              - label: "Link do pobrania / Download URL"
+                name: "download_url"
+                widget: "string"
+                default: "/documents/karta-zgloszenia.pdf"
+                hint: "Direct link to downloadable PDF form (e.g., /documents/enrollment-form.pdf)"
+              - label: "Link do strony dokumentow / Documents Page URL"
+                name: "documents_page_url"
+                widget: "string"
+                default: "/pl/documents/"
+                required: false
+                hint: "Alternative link to documents section page"
+              - label: "Etykieta przycisku / Button Label"
+                name: "label_key"
+                widget: "hidden"
+                default: "download_application_form"
+                hint: "Translation key for download button label (i18n)"
+          - label: "Wezwanie do dzialania / Call to Action"
+            name: "cta"
+            widget: "object"
+            fields:
+              - label: "Tekst / Text"
+                name: "text_key"
+                widget: "hidden"
+                default: "recruitment_cta"
+                hint: "Translation key for CTA text (i18n)"
+              - label: "Styl / Style"
+                name: "style"
+                widget: "select"
+                options: ["primary", "secondary", "accent", "coral", "purple"]
+                default: "primary"
+                hint: "Color scheme for CTA button"
+              - label: "Ikona / Icon"
+                name: "icon"
+                widget: "select"
+                options: ["arrow-right", "none"]
+                default: "arrow-right"
+                hint: "Icon to display with CTA button"
+          - label: "Ustawienia wizualne / Visual Settings"
+            name: "visual"
+            widget: "object"
+            collapsed: true
+            hint: "Visual styling options for the recruitment section"
+            fields:
+              - label: "Styl tla / Background Style"
+                name: "background_style"
+                widget: "select"
+                options: ["gradient", "solid", "pattern"]
+                default: "gradient"
+                hint: "Background style for the section"
+              - label: "Schemat kolorow / Color Scheme"
+                name: "color_scheme"
+                widget: "select"
+                options: ["warm", "primary", "cool", "secondary"]
+                default: "warm"
+                hint: "Color scheme: warm (coral/pink), primary (green/yellow), cool (mint/lavender), secondary (orange)"
+              - label: "Widocznosc / Prominence"
+                name: "prominence"
+                widget: "select"
+                options: ["high", "medium", "normal"]
+                default: "high"
+                hint: "Visual prominence level - high makes it more attention-grabbing"
+
+  # Polish Documents
+  - name: documents_pl
+    label: "Dokumenty (PL)"
+    label_singular: "Dokument"
+    folder: content/documents
+    create: true
+    slug: "{{slug}}"
+    sortable_fields: ["weight", "title", "date"]
+    summary: "{{title}} - {{date | date('YYYY-MM-DD')}}"
+    fields:
+      - {label: "Tytul", name: "title", widget: "string", hint: "Nazwa dokumentu"}
+      - {label: "Opis", name: "description", widget: "text", required: false, hint: "Krotki opis dokumentu"}
+      - {label: "Data", name: "date", widget: "datetime", hint: "Data publikacji lub ostatniej aktualizacji dokumentu"}
+      - {label: "Kolejnosc", name: "weight", widget: "number", default: 10, hint: "Kolejnosc wyswietlania (mniejsza = wczesniej)"}
+      - {label: "Wersja robocza", name: "draft", widget: "boolean", default: false}
+      - label: "Plik PDF"
+        name: "pdf_file"
+        widget: "file"
+        required: false
+        hint: "Glowny plik PDF do pobrania (max 10MB). Zalecane nazwy plikow bez polskich znakow."
+        media_folder: "/static/documents"
+        public_folder: "/documents"
+        media_library:
+          config:
+            max_file_size: 10485760
+      - label: "Dodatkowe pliki PDF"
+        name: "attachments"
+        widget: "list"
+        required: false
+        hint: "Dodatkowe pliki PDF zwiazane z tym dokumentem"
+        summary: "{{fields.name}}"
+        fields:
+          - {label: "Nazwa pliku", name: "name", widget: "string", hint: "Nazwa wyswietlana dla uzytkownika"}
+          - label: "Plik"
+            name: "file"
+            widget: "file"
+            hint: "Plik PDF (max 10MB)"
+            media_folder: "/static/documents"
+            public_folder: "/documents"
+            media_library:
+              config:
+                max_file_size: 10485760
+          - {label: "Opis", name: "description", widget: "text", required: false}
+      - label: "Kategoria"
+        name: "category"
+        widget: "select"
+        options: ["Statuty i regulaminy", "Formularze", "Informacje prawne", "Inne"]
+        default: "Inne"
+        hint: "Kategoria dokumentu"
+      - {label: "Tresc", name: "body", widget: "markdown", required: false, hint: "Dodatkowy opis lub informacje o dokumencie"}
+
+  # English Documents
+  - name: documents_en
+    label: "Documents (EN)"
+    label_singular: "Document"
+    folder: content/en/documents
+    create: true
+    slug: "{{slug}}"
+    sortable_fields: ["weight", "title", "date"]
+    summary: "{{title}} - {{date | date('YYYY-MM-DD')}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string", hint: "Document name"}
+      - {label: "Description", name: "description", widget: "text", required: false, hint: "Short document description"}
+      - {label: "Date", name: "date", widget: "datetime", hint: "Publication or last update date"}
+      - {label: "Order", name: "weight", widget: "number", default: 10, hint: "Display order (smaller = earlier)"}
+      - {label: "Draft", name: "draft", widget: "boolean", default: false}
+      - label: "PDF File"
+        name: "pdf_file"
+        widget: "file"
+        required: false
+        hint: "Main PDF file for download (max 10MB). Use lowercase filenames with hyphens."
+        media_folder: "/static/documents"
+        public_folder: "/documents"
+        media_library:
+          config:
+            max_file_size: 10485760
+      - label: "Additional PDF Files"
+        name: "attachments"
+        widget: "list"
+        required: false
+        hint: "Additional PDF files related to this document"
+        summary: "{{fields.name}}"
+        fields:
+          - {label: "File name", name: "name", widget: "string", hint: "Display name for users"}
+          - label: "File"
+            name: "file"
+            widget: "file"
+            hint: "PDF file (max 10MB)"
+            media_folder: "/static/documents"
+            public_folder: "/documents"
+            media_library:
+              config:
+                max_file_size: 10485760
+          - {label: "Description", name: "description", widget: "text", required: false}
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options: ["Statutes and Regulations", "Forms", "Legal Information", "Other"]
+        default: "Other"
+        hint: "Document category"
+      - {label: "Body", name: "body", widget: "markdown", required: false, hint: "Additional description or information about the document"}

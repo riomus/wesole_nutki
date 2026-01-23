@@ -1,0 +1,148 @@
+# Polish Main Navigation Menu
+# This file is editable through the CMS admin interface
+# Changes here will update the main navigation on the Polish version of the site
+
+items:
+  - identifier: home
+    name: Strona Główna
+    url: /pl/
+    weight: 1
+    i18n_key: menu_home
+    external: false
+    open_in_new_tab: false
+
+  - identifier: news
+    name: Aktualności
+    url: /pl/news
+    weight: 2
+    i18n_key: menu_news
+    external: false
+    open_in_new_tab: false
+
+  - identifier: about
+    name: O przedszkolu
+    url: /pl/about
+    weight: 3
+    i18n_key: menu_about
+    external: false
+    open_in_new_tab: false
+  - identifier: offer
+    name: Oferta
+    url: /pl/programs
+    weight: 3
+    i18n_key: menu_offer
+    external: false
+    open_in_new_tab: false
+
+  - identifier: daily-plan
+    name: Plan dnia
+    url: /pl/programs/schedule
+    weight: 6
+    i18n_key: menu_daily_plan
+    external: false
+    open_in_new_tab: false
+    children:
+      - identifier: daily-plan-weekly
+        name: Plan tygodniowy
+        url: /plan-zajec/
+        weight: 1
+        i18n_key: menu_daily_plan_weekly
+        external: false
+        open_in_new_tab: false
+
+      - identifier: daily-plan-extra
+        name: Zajęcia dodatkowe 2025/2026
+        url: /plan-dnia/zajecia-dodatkowe/
+        weight: 2
+        i18n_key: menu_daily_plan_extra
+        external: false
+        open_in_new_tab: false
+
+      - identifier: daily-plan-calendar
+        name: Harmonogram roku szkolnego 2025/2026
+        url: /plan-dnia/imprezy/
+        weight: 3
+        i18n_key: menu_daily_plan_calendar
+        external: false
+        open_in_new_tab: false
+
+  - identifier: galleries
+    name: Galerie
+    url: /pl/gallery/
+    weight: 7
+    i18n_key: menu_galleries
+    external: false
+    open_in_new_tab: false
+
+  - identifier: more
+    name: Więcej...
+    url: "#"
+    weight: 8
+    i18n_key: menu_more
+    external: false
+    open_in_new_tab: false
+    children:
+      - identifier: more-recruitment
+        name: Rekrutacja
+        url: /rekrutacja/
+        weight: 1
+        i18n_key: menu_recruitment
+        external: false
+        open_in_new_tab: false
+
+      - identifier: more-vision
+        name: Wizja
+        url: /o-przedszkolu/nasza-wizja/
+        weight: 2
+        i18n_key: menu_about_vision
+        external: false
+        open_in_new_tab: false
+
+
+      - identifier: more-pricing
+        name: Cennik
+        url: /o-przedszkolu/cennik/
+        weight: 4
+        i18n_key: menu_about_pricing
+        external: false
+        open_in_new_tab: false
+
+      - identifier: more-payments
+        name: Płatności
+        url: /o-przedszkolu/platnosci/
+        weight: 5
+        i18n_key: menu_about_payments
+        external: false
+        open_in_new_tab: false
+
+      - identifier: more-enrollment
+        name: Zapisy
+        url: /o-przedszkolu/zapisy/
+        weight: 6
+        i18n_key: menu_about_enrollment
+        external: false
+        open_in_new_tab: false
+
+      - identifier: more-privacy
+        name: Polityka Prywatności
+        url: /o-przedszkolu/polityka-prywatnosci/
+        weight: 7
+        i18n_key: menu_about_privacy
+        external: false
+        open_in_new_tab: false
+
+      - identifier: more-child-protection
+        name: Standardy Ochrony Małoletnich
+        url: /standardy-ochrony-maloletnich/
+        weight: 8
+        i18n_key: menu_child_protection
+        external: false
+        open_in_new_tab: false
+
+  - identifier: contact
+    name: Kontakt
+    url: /pl/contact/
+    weight: 9
+    i18n_key: menu_contact
+    external: false
+    open_in_new_tab: false

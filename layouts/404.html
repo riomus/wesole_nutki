@@ -1,0 +1,92 @@
+{{ define "main" }}
+<section class="py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <!-- Large 404 Display -->
+        <div class="mb-4">
+          <span class="display-1 fw-bold text-primary" aria-hidden="true">404</span>
+        </div>
+
+        <!-- Error Title -->
+        <h1 class="display-5 fw-bold mb-3">{{ i18n "page_not_found" | default "Page not found" }}</h1>
+
+        <!-- Friendly Message -->
+        <p class="lead text-muted mb-4">
+          {{ i18n "page_not_found_message" | default "Sorry, the page you are looking for does not exist." }}
+        </p>
+
+        <!-- Encouraging Message -->
+        <p class="text-muted mb-5">
+          {{ i18n "page_not_found_encouragement" | default "Don't worry! You can explore our site using the links below." }}
+        </p>
+
+        <!-- Primary Action Button -->
+        <div class="mb-5">
+          <a href="{{ .Site.Home.Permalink }}" class="btn btn-primary btn-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-door me-2" viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z"/>
+            </svg>
+            {{ i18n "back_to_home" | default "Back to home" }}
+          </a>
+        </div>
+
+        <!-- Helpful Navigation Links -->
+        <div class="border-top pt-5">
+          <h2 class="h5 fw-bold mb-4">{{ i18n "helpful_links" | default "Helpful Links" }}</h2>
+          <div class="row g-3 justify-content-center">
+            <!-- About Us -->
+            <div class="col-6 col-md-4 col-lg-3">
+              <a href="{{ "about/" | relLangURL }}" class="d-block p-3 bg-light rounded text-decoration-none text-dark h-100 helpful-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-info-circle mb-2 text-primary" viewBox="0 0 16 16" aria-hidden="true">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                  <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                </svg>
+                <span class="d-block small fw-medium">{{ i18n "about_us" | default "About Us" }}</span>
+              </a>
+            </div>
+            <!-- Programs -->
+            <div class="col-6 col-md-4 col-lg-3">
+              <a href="{{ "programs/" | relLangURL }}" class="d-block p-3 bg-light rounded text-decoration-none text-dark h-100 helpful-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-book mb-2 text-primary" viewBox="0 0 16 16" aria-hidden="true">
+                  <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
+                </svg>
+                <span class="d-block small fw-medium">{{ i18n "programs" | default "Programs" }}</span>
+              </a>
+            </div>
+            <!-- News -->
+            <div class="col-6 col-md-4 col-lg-3">
+              <a href="{{ "news/" | relLangURL }}" class="d-block p-3 bg-light rounded text-decoration-none text-dark h-100 helpful-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-newspaper mb-2 text-primary" viewBox="0 0 16 16" aria-hidden="true">
+                  <path d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5z"/>
+                  <path d="M2 3h10v2H2zm0 3h4v3H2zm0 4h4v1H2zm0 2h4v1H2zm5-6h2v1H7zm3 0h2v1h-2zM7 8h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2z"/>
+                </svg>
+                <span class="d-block small fw-medium">{{ i18n "news" | default "News" }}</span>
+              </a>
+            </div>
+            <!-- Contact -->
+            <div class="col-6 col-md-4 col-lg-3">
+              <a href="{{ "contact/" | relLangURL }}" class="d-block p-3 bg-light rounded text-decoration-none text-dark h-100 helpful-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-envelope mb-2 text-primary" viewBox="0 0 16 16" aria-hidden="true">
+                  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                </svg>
+                <span class="d-block small fw-medium">{{ i18n "contact" | default "Contact" }}</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .helpful-link {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .helpful-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+</style>
+{{ end }}

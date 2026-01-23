@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Implement About Page Navigation Link\n\nUpdate the \"Dowiedz się więcej\" (Learn More) button on the homepage to correctly navigate to the about page with proper language routing.\n\nRequirements:\n- Locate the \"Dowiedz się więcej\" link/button element on the homepage\n- Update the href/navigation target to route to `/<lang>/about/` where `<lang>` is the current language context\n- Ensure the language parameter dynamically reflects the user's active language (e.g., `/en/about/`, `/pl/about/`, etc.)\n- Verify the link works correctly for all supported languages\n- Test that the about page exists at the target route and renders properly\n- Ensure proper routing behavior (no 404 errors, correct page loads)\n- Maintain existing styling and behavior of the button",
+  "title": "Fix Learn More button language-specific routing",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "verified",
+  "id": "feature-1769174686235-e4i602645",
+  "descriptionHistory": [
+    {
+      "description": "Implement About Page Navigation Link\n\nUpdate the \"Dowiedz się więcej\" (Learn More) button on the homepage to correctly navigate to the about page with proper language routing.\n\nRequirements:\n- Locate the \"Dowiedz się więcej\" link/button element on the homepage\n- Update the href/navigation target to route to `/<lang>/about/` where `<lang>` is the current language context\n- Ensure the language parameter dynamically reflects the user's active language (e.g., `/en/about/`, `/pl/about/`, etc.)\n- Verify the link works correctly for all supported languages\n- Test that the about page exists at the target route and renders properly\n- Ensure proper routing behavior (no 404 errors, correct page loads)\n- Maintain existing styling and behavior of the button",
+      "timestamp": "2026-01-23T13:24:46.323Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T13:28:31.032Z"
+}

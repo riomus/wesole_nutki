@@ -1,0 +1,28 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix Map Pin Location on Contact Page\n\nCorrect the map marker coordinates on the contact page Leaflet map to point to the accurate business address.\n\nRequirements:\n- Identify the current coordinates being used for the map pin\n- Verify the correct address and obtain accurate latitude/longitude coordinates\n- Update the Leaflet map marker with correct coordinates\n- Ensure the map view is properly centered on the correct location\n- Set appropriate zoom level for clear location visibility\n- Verify the correct address is displayed in any associated text/labels\n- Test that the pin appears at the correct physical location when compared to the actual address\n- Consider adding a popup or tooltip to the marker showing the correct address for user confirmation",
+  "title": "Fix Map Pin Coordinates on Contact Page",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "backlog",
+  "id": "feature-1769164153039-244jqz35u",
+  "descriptionHistory": [
+    {
+      "description": "Fix Map Pin Location on Contact Page\n\nCorrect the map marker coordinates on the contact page Leaflet map to point to the accurate business address.\n\nRequirements:\n- Identify the current coordinates being used for the map pin\n- Verify the correct address and obtain accurate latitude/longitude coordinates\n- Update the Leaflet map marker with correct coordinates\n- Ensure the map view is properly centered on the correct location\n- Set appropriate zoom level for clear location visibility\n- Verify the correct address is displayed in any associated text/labels\n- Test that the pin appears at the correct physical location when compared to the actual address\n- Consider adding a popup or tooltip to the marker showing the correct address for user confirmation",
+      "timestamp": "2026-01-23T10:29:13.281Z",
+      "source": "initial"
+    }
+  ]
+}

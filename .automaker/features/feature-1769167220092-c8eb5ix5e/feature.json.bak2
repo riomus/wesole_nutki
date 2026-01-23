@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Implement Placeholder Images for All Post Views\n\nEnsure all images throughout the application use placeholder images as fallbacks, with specific focus on fixing the error appearing in the single post view.\n\nRequirements:\n- Identify the specific image error occurring in the single post view\n- Implement placeholder images for all image components in single post view\n- Audit all other post views (list view, grid view, card view, etc.) to ensure consistent placeholder usage\n- Add error handling for failed image loads with automatic fallback to placeholder\n- Ensure placeholder images are appropriately sized and styled for different contexts\n- Use a consistent placeholder image or loading state across the application\n- Handle edge cases: missing image URLs, broken URLs, slow-loading images\n- Verify no console errors appear when images fail to load\n- Test with posts that have no images, invalid image URLs, and valid images",
+  "title": "Add placeholder image fallbacks for all post views",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "in_progress",
+  "id": "feature-1769167220092-c8eb5ix5e",
+  "descriptionHistory": [
+    {
+      "description": "Implement Placeholder Images for All Post Views\n\nEnsure all images throughout the application use placeholder images as fallbacks, with specific focus on fixing the error appearing in the single post view.\n\nRequirements:\n- Identify the specific image error occurring in the single post view\n- Implement placeholder images for all image components in single post view\n- Audit all other post views (list view, grid view, card view, etc.) to ensure consistent placeholder usage\n- Add error handling for failed image loads with automatic fallback to placeholder\n- Ensure placeholder images are appropriately sized and styled for different contexts\n- Use a consistent placeholder image or loading state across the application\n- Handle edge cases: missing image URLs, broken URLs, slow-loading images\n- Verify no console errors appear when images fail to load\n- Test with posts that have no images, invalid image URLs, and valid images",
+      "timestamp": "2026-01-23T11:20:20.361Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T11:21:09.165Z"
+}

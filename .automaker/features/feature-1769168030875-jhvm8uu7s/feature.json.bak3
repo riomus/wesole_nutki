@@ -1,0 +1,28 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix Embedded Gallery Overlay Display Issue in Single News View\n\nResolve rendering problems with the embedded gallery overlay component when displayed within individual news article pages.\n\nRequirements:\n- Identify the specific visual/functional issues with the gallery overlay (e.g., positioning, z-index, dimensions, visibility)\n- Locate the gallery overlay component implementation in single news view templates\n- Check for CSS conflicts or missing styles affecting the overlay\n- Verify overlay behavior across different viewport sizes (mobile, tablet, desktop)\n- Ensure gallery images load and display correctly within the overlay\n- Test overlay interaction controls (close button, navigation arrows, thumbnails)\n- Verify overlay works with various gallery sizes (single image, multiple images)\n- Confirm overlay properly overlays content without breaking page layout\n- Test in major browsers for cross-browser compatibility\n\nEdge cases to consider:\n- News articles with no images or single image\n- Gallery with very large or very small images\n- Overlay behavior when triggered multiple times rapidly\n- Keyboard navigation and accessibility (ESC to close, arrow keys for navigation)",
+  "title": "Fix embedded gallery overlay rendering in news articles",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "backlog",
+  "id": "feature-1769168030875-jhvm8uu7s",
+  "descriptionHistory": [
+    {
+      "description": "Fix Embedded Gallery Overlay Display Issue in Single News View\n\nResolve rendering problems with the embedded gallery overlay component when displayed within individual news article pages.\n\nRequirements:\n- Identify the specific visual/functional issues with the gallery overlay (e.g., positioning, z-index, dimensions, visibility)\n- Locate the gallery overlay component implementation in single news view templates\n- Check for CSS conflicts or missing styles affecting the overlay\n- Verify overlay behavior across different viewport sizes (mobile, tablet, desktop)\n- Ensure gallery images load and display correctly within the overlay\n- Test overlay interaction controls (close button, navigation arrows, thumbnails)\n- Verify overlay works with various gallery sizes (single image, multiple images)\n- Confirm overlay properly overlays content without breaking page layout\n- Test in major browsers for cross-browser compatibility\n\nEdge cases to consider:\n- News articles with no images or single image\n- Gallery with very large or very small images\n- Overlay behavior when triggered multiple times rapidly\n- Keyboard navigation and accessibility (ESC to close, arrow keys for navigation)",
+      "timestamp": "2026-01-23T11:33:51.117Z",
+      "source": "initial"
+    }
+  ]
+}

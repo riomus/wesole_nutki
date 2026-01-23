@@ -1,0 +1,12 @@
+{
+  "id": "gallery-categories",
+  "category": "Core",
+  "title": "Gallery Category System",
+  "description": "Add category taxonomy for organizing galleries (e.g., Events, Daily Activities, Holidays, Excursions). Create category filter on gallery list page and category archive pages.",
+  "status": "in_progress",
+  "priority": 2,
+  "complexity": "moderate",
+  "createdAt": "2026-01-22T14:36:35.504Z",
+  "updatedAt": "2026-01-22T15:55:17.204Z",
+  "descriptionHistory": []
+}

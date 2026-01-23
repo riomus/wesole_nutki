@@ -1,0 +1,12 @@
+{
+  "id": "navigation-tests",
+  "category": "Testing",
+  "title": "Navigation Menu Tests",
+  "description": "Create E2E tests for navigation menu functionality including menu item clicks, nested menu expansion, mobile hamburger menu, and active state highlighting.",
+  "status": "completed",
+  "priority": 2,
+  "complexity": "moderate",
+  "createdAt": "2026-01-22T14:36:35.511Z",
+  "updatedAt": "2026-01-22T16:16:56.760Z",
+  "descriptionHistory": []
+}

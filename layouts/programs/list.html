@@ -1,0 +1,130 @@
+{{ define "main" }}
+{{/* Breadcrumb Navigation */}}
+{{ partial "breadcrumb.html" . }}
+
+{{/* Hero Section for Programs Overview */}}
+<section class="programs-hero section-gradient">
+  <div class="container py-5">
+    <header class="section-header text-center">
+      <h1 class="section-heading">{{ .Title | default (i18n "programs") }}</h1>
+      {{ with .Content }}
+      <div class="section-subtitle">{{ . }}</div>
+      {{ end }}
+    </header>
+  </div>
+</section>
+
+<section class="programs-list-section py-5">
+  <div class="container">
+    {{ if .Pages }}
+    {{/* Programs Grid */}}
+    <div class="programs-grid">
+      {{ range .Pages.ByWeight }}
+      <div class="programs-grid-item">
+        {{ partial "program-card.html" . }}
+      </div>
+      {{ end }}
+    </div>
+    {{ else }}
+    {{/* No Content Message */}}
+    <div class="text-center py-5">
+      <div class="no-content-icon mb-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="text-muted" viewBox="0 0 16 16">
+          <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+        </svg>
+      </div>
+      <p class="text-muted fs-5">{{ i18n "no_programs" | default "No programs available yet." }}</p>
+    </div>
+    {{ end }}
+  </div>
+</section>
+
+{{/* Daily Schedule Preview Section */}}
+<section class="schedule-preview-section section-alt py-5">
+  <div class="container">
+    <header class="section-header text-center mb-5">
+      <h2 class="section-heading">{{ i18n "daily_schedule" | default "Daily Schedule" }}</h2>
+      <p class="section-subtitle">{{ i18n "daily_schedule_subtitle" | default "A typical day at our preschool" }}</p>
+    </header>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="schedule-timeline">
+          <div class="schedule-item">
+            <div class="schedule-time">7:00 - 8:30</div>
+            <div class="schedule-content">
+              <h4>{{ i18n "schedule_arrival" | default "Arrival & Free Play" }}</h4>
+              <p>{{ i18n "schedule_arrival_desc" | default "Children arrive and engage in free play activities" }}</p>
+            </div>
+          </div>
+          <div class="schedule-item">
+            <div class="schedule-time">8:30 - 9:00</div>
+            <div class="schedule-content">
+              <h4>{{ i18n "schedule_breakfast" | default "Breakfast" }}</h4>
+              <p>{{ i18n "schedule_breakfast_desc" | default "Healthy breakfast time together" }}</p>
+            </div>
+          </div>
+          <div class="schedule-item">
+            <div class="schedule-time">9:00 - 11:30</div>
+            <div class="schedule-content">
+              <h4>{{ i18n "schedule_learning" | default "Learning Activities" }}</h4>
+              <p>{{ i18n "schedule_learning_desc" | default "Educational activities, creative play, and outdoor time" }}</p>
+            </div>
+          </div>
+          <div class="schedule-item">
+            <div class="schedule-time">11:30 - 12:00</div>
+            <div class="schedule-content">
+              <h4>{{ i18n "schedule_lunch" | default "Lunch" }}</h4>
+              <p>{{ i18n "schedule_lunch_desc" | default "Nutritious lunch prepared fresh daily" }}</p>
+            </div>
+          </div>
+          <div class="schedule-item">
+            <div class="schedule-time">12:00 - 14:00</div>
+            <div class="schedule-content">
+              <h4>{{ i18n "schedule_rest" | default "Rest Time" }}</h4>
+              <p>{{ i18n "schedule_rest_desc" | default "Quiet time and nap for younger children" }}</p>
+            </div>
+          </div>
+          <div class="schedule-item">
+            <div class="schedule-time">14:00 - 15:00</div>
+            <div class="schedule-content">
+              <h4>{{ i18n "schedule_afternoon" | default "Afternoon Activities" }}</h4>
+              <p>{{ i18n "schedule_afternoon_desc" | default "Snack time and creative afternoon activities" }}</p>
+            </div>
+          </div>
+          <div class="schedule-item">
+            <div class="schedule-time">15:00 - 17:00</div>
+            <div class="schedule-content">
+              <h4>{{ i18n "schedule_departure" | default "Free Play & Departure" }}</h4>
+              <p>{{ i18n "schedule_departure_desc" | default "Free play and gradual pickup by parents" }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <a href="{{ "programs/schedule/" | relLangURL }}" class="btn btn-primary btn-icon">
+        {{ i18n "view_full_schedule" | default "View Full Schedule" }}
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+{{/* CTA Section */}}
+<section class="cta-section">
+  <div class="container">
+    <h2>{{ i18n "ready_to_enroll" | default "Ready to Enroll Your Child?" }}</h2>
+    <p>{{ i18n "enroll_cta_description" | default "Contact us to learn more about our programs and schedule a visit to our preschool." }}</p>
+    <a href="{{ "contact/" | relLangURL }}" class="btn btn-light btn-icon">
+      {{ i18n "contact_us" | default "Contact Us" }}
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+      </svg>
+    </a>
+  </div>
+</section>
+{{ end }}

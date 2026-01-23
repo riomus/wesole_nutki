@@ -1,0 +1,12 @@
+{
+  "id": "cms-gallery-collection",
+  "category": "CMS",
+  "title": "CMS Gallery Collection Config",
+  "description": "Configure CMS collection for photo galleries with fields for gallery name, description, category, date, and multiple image uploads with captions and alt text.",
+  "status": "in_progress",
+  "priority": 1,
+  "complexity": "moderate",
+  "createdAt": "2026-01-22T14:36:35.509Z",
+  "updatedAt": "2026-01-22T14:45:41.043Z",
+  "descriptionHistory": []
+}

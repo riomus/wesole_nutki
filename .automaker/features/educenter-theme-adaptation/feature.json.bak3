@@ -1,0 +1,12 @@
+{
+  "id": "educenter-theme-adaptation",
+  "category": "UI",
+  "title": "Adapt Educenter Theme Assets",
+  "description": "Import and customize Educenter Bootstrap theme components, styles, and JavaScript. Modify color schemes, typography, and spacing to create a warm, child-friendly aesthetic appropriate for preschool.",
+  "status": "backlog",
+  "priority": 1,
+  "complexity": "complex",
+  "createdAt": "2026-01-22T14:36:35.495Z",
+  "updatedAt": "2026-01-22T14:36:35.495Z",
+  "descriptionHistory": []
+}

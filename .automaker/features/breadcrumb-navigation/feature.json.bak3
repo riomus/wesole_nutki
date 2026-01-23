@@ -1,0 +1,12 @@
+{
+  "id": "breadcrumb-navigation",
+  "category": "UI",
+  "title": "Breadcrumb Navigation Component",
+  "description": "Implement breadcrumb navigation showing page hierarchy on all pages except homepage. Include structured data markup for SEO benefits and multilingual support.",
+  "status": "backlog",
+  "priority": 2,
+  "complexity": "simple",
+  "createdAt": "2026-01-22T14:36:35.507Z",
+  "updatedAt": "2026-01-22T14:36:35.507Z",
+  "descriptionHistory": []
+}

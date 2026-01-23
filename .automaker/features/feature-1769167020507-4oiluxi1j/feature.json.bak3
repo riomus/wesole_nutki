@@ -1,0 +1,28 @@
+{
+  "category": "Uncategorized",
+  "description": "Remove Privacy, Terms, and FAQ Links from Footer\n\nRemove the footer section that contains links to Privacy Policy, Terms of Service, and FAQ pages.\n\nRequirements:\n- Locate the footer component in the codebase\n- Identify and remove the specific section/container with Privacy, Terms, and FAQ links\n- Preserve any other footer content (copyright, social links, contact info, etc.)\n- Ensure footer layout adjusts properly after removal (no empty spaces or broken styling)\n- Verify the change across different screen sizes and devices\n- Confirm the actual policy/terms/FAQ pages themselves remain accessible if needed elsewhere",
+  "title": "Remove Privacy, Terms, and FAQ footer links",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "backlog",
+  "id": "feature-1769167020507-4oiluxi1j",
+  "descriptionHistory": [
+    {
+      "description": "Remove Privacy, Terms, and FAQ Links from Footer\n\nRemove the footer section that contains links to Privacy Policy, Terms of Service, and FAQ pages.\n\nRequirements:\n- Locate the footer component in the codebase\n- Identify and remove the specific section/container with Privacy, Terms, and FAQ links\n- Preserve any other footer content (copyright, social links, contact info, etc.)\n- Ensure footer layout adjusts properly after removal (no empty spaces or broken styling)\n- Verify the change across different screen sizes and devices\n- Confirm the actual policy/terms/FAQ pages themselves remain accessible if needed elsewhere",
+      "timestamp": "2026-01-23T11:17:00.639Z",
+      "source": "initial"
+    }
+  ]
+}

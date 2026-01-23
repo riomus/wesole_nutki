@@ -1,0 +1,42 @@
+# Recruitment Section Configuration
+# Displays a prominent recruitment announcement on the homepage
+
+enabled: true
+
+# Recruitment content - uses i18n keys for multilingual support
+# These keys are defined in i18n/pl.toml and i18n/en.toml
+heading_key: recruitment_heading
+announcement_key: recruitment_announcement
+details_key: recruitment_details
+
+# Contact Information
+# Override global contact info for recruitment-specific contacts if needed
+contact:
+  phone: "71 343 18 99"
+  email: "przedszkole@wesolenutki.eu"
+
+# Application Form Download
+# Can link to a document or navigate to documents section
+application_form:
+  # Direct download link (e.g., /documents/enrollment-form.pdf)
+  download_url: "/documents/karta-zgloszenia.pdf"
+  # Alternative: link to documents section page
+  documents_page_url: "/pl/documents/"
+  # Label for download button
+  label_key: download_application_form
+
+# Call to Action
+cta:
+  text_key: recruitment_cta
+  # Style options: primary, secondary, accent, coral, purple
+  style: primary
+  icon: arrow-right
+
+# Visual styling options
+visual:
+  # Background style: gradient, solid, pattern
+  background_style: gradient
+  # Color scheme: primary, secondary, accent, warm (coral/pink), cool (mint/lavender)
+  color_scheme: warm
+  # Prominence level: high, medium, normal
+  prominence: high

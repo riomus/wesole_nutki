@@ -1,0 +1,97 @@
+{{/* Related Posts Partial - displays up to 3 related articles based on tags/categories */}}
+{{- $currentPage := . -}}
+{{- $related := slice -}}
+
+{{/* First try to find posts with matching tags */}}
+{{- with .Params.tags -}}
+  {{- $tags := . -}}
+  {{- range $currentPage.Site.RegularPages.ByDate.Reverse -}}
+    {{- if and (ne . $currentPage) (eq .Section "news") -}}
+      {{- $hasMatchingTag := false -}}
+      {{- with .Params.tags -}}
+        {{- range . -}}
+          {{- if in $tags . -}}
+            {{- $hasMatchingTag = true -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+      {{- if $hasMatchingTag -}}
+        {{- $related = $related | append . -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{/* If not enough related posts, find posts with matching categories */}}
+{{- if lt (len $related) 3 -}}
+  {{- with $currentPage.Params.categories -}}
+    {{- $categories := . -}}
+    {{- range $currentPage.Site.RegularPages.ByDate.Reverse -}}
+      {{- if and (ne . $currentPage) (eq .Section "news") (not (in $related .)) -}}
+        {{- $hasMatchingCategory := false -}}
+        {{- with .Params.categories -}}
+          {{- range . -}}
+            {{- if in $categories . -}}
+              {{- $hasMatchingCategory = true -}}
+            {{- end -}}
+          {{- end -}}
+        {{- end -}}
+        {{- if $hasMatchingCategory -}}
+          {{- $related = $related | append . -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{/* If still not enough, fill with recent posts from same section */}}
+{{- if lt (len $related) 3 -}}
+  {{- range $currentPage.Site.RegularPages.ByDate.Reverse -}}
+    {{- if and (ne . $currentPage) (eq .Section "news") (not (in $related .)) -}}
+      {{- $related = $related | append . -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{/* Display related posts if we have any */}}
+{{- $related = first 3 $related -}}
+{{- if gt (len $related) 0 -}}
+<section class="related-posts-section">
+  <div class="container">
+    <h2 class="related-posts-title">{{ i18n "related_posts" | default "Related posts" }}</h2>
+    <div class="related-posts-grid">
+      {{- range $related -}}
+      {{- $relatedPost := . -}}
+      <article class="related-post-card">
+        {{- with .Params.featured_image -}}
+        <a href="{{ $relatedPost.Permalink }}" class="related-post-image">
+          {{ partial "responsive-image" (dict
+            "src" .
+            "alt" $relatedPost.Title
+            "class" "related-post-img"
+            "sizes" "(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw"
+            "loading" "lazy"
+            "context" $relatedPost
+          ) }}
+        </a>
+        {{- else -}}
+        <a href="{{ $relatedPost.Permalink }}" class="related-post-image related-post-placeholder">
+          <span class="placeholder-icon">📰</span>
+        </a>
+        {{- end -}}
+        <div class="related-post-content">
+          {{- if not .Date.IsZero -}}
+          <time datetime="{{ .Date.Format "2006-01-02" }}" class="related-post-date">
+            {{ partial "format-date" .Date }}
+          </time>
+          {{- end -}}
+          <h3 class="related-post-title">
+            <a href="{{ .Permalink }}">{{ .Title | truncate 60 }}</a>
+          </h3>
+        </div>
+      </article>
+      {{- end -}}
+    </div>
+  </div>
+</section>
+{{- end -}}

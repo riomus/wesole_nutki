@@ -1,0 +1,21 @@
+# About Preview Section Configuration
+# Displays a brief about section on the homepage
+
+enabled: true
+
+# Section header keys (from i18n)
+heading_key: about_us
+subtitle_key: about_us_subtitle
+
+# About content key (from i18n)
+content_key: about_preview_text
+
+# Image to display
+image: /images/about-preview.jpg
+image_alt_key: about_image_alt
+
+# CTA button
+# Use url_menu_identifier to link to the language-appropriate About page from the menu
+button:
+  label_key: learn_more
+  url_menu_identifier: about

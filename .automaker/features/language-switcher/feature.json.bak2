@@ -1,0 +1,12 @@
+{
+  "id": "language-switcher",
+  "category": "UI",
+  "title": "Language Switcher Component",
+  "description": "Create a language toggle component in the header that allows users to switch between Polish and English. Maintain current page context when switching languages and display language flags or abbreviations.",
+  "status": "in_progress",
+  "priority": 1,
+  "complexity": "moderate",
+  "createdAt": "2026-01-22T14:36:35.496Z",
+  "updatedAt": "2026-01-22T15:05:06.228Z",
+  "descriptionHistory": []
+}

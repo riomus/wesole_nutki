@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix Typography Issues in Schedule Timeline Section of Programs Page\n\nCorrect typographical inconsistencies and styling problems in the schedule-timeline section on the programs page to ensure proper text rendering and readability.\n\nRequirements:\n- Identify and fix incorrect font families, sizes, or weights\n- Correct text alignment and spacing issues\n- Ensure consistent typography with the rest of the application\n- Fix any text overflow, truncation, or wrapping problems\n- Verify typography renders correctly across different screen sizes\n- Check for proper line-height and letter-spacing\n- Ensure sufficient color contrast for accessibility\n- Test with actual content to confirm fixes work with various text lengths",
+  "title": "Fix typography inconsistencies in schedule timeline",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "verified",
+  "id": "feature-1769164720552-ha6b2d7v2",
+  "descriptionHistory": [
+    {
+      "description": "Fix Typography Issues in Schedule Timeline Section of Programs Page\n\nCorrect typographical inconsistencies and styling problems in the schedule-timeline section on the programs page to ensure proper text rendering and readability.\n\nRequirements:\n- Identify and fix incorrect font families, sizes, or weights\n- Correct text alignment and spacing issues\n- Ensure consistent typography with the rest of the application\n- Fix any text overflow, truncation, or wrapping problems\n- Verify typography renders correctly across different screen sizes\n- Check for proper line-height and letter-spacing\n- Ensure sufficient color contrast for accessibility\n- Test with actual content to confirm fixes work with various text lengths",
+      "timestamp": "2026-01-23T10:38:40.729Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T10:57:37.994Z"
+}

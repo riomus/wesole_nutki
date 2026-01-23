@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix Gallery Card Layout and Display Missing Title\n\nResolve layout issues in gallery card components where excessive bottom padding is present, and ensure gallery titles are properly displayed.\n\nRequirements:\n- Remove or reduce excessive whitespace at the bottom of gallery-card items\n- Display the gallery title on each card (currently hidden or missing)\n- Ensure consistent card height across all gallery items\n- Verify proper spacing between title and other card elements\n- Maintain responsive behavior across different screen sizes\n- Test with various title lengths to prevent overflow or truncation issues\n- Ensure alignment and visual hierarchy within the card remains balanced",
+  "title": "",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": "Fix Gallery Card Layout and Display Missing Title\n\nResolve layout issues in gallery card components where excessive bottom padding is present, and ensure gallery titles are properly displayed.\n\nRequirements:\n- Remove or reduce excessive whitespace at the bottom of gallery-card items\n- Display the gallery title on each card (currently hidden or missing)\n- Ensure consistent card height across all gallery items\n- Verify proper spacing between title and other card elements\n- Maintain responsive behavior across different screen sizes\n- Test with various title lengths to prevent overflow or truncation issues\n- Ensure alignment and visual hierarchy within the card remains balanced",
+  "status": "in_progress",
+  "id": "feature-1769166636083-7ycmhlff1",
+  "descriptionHistory": [
+    {
+      "description": "Fix Gallery Card Layout and Display Missing Title\n\nResolve layout issues in gallery card components where excessive bottom padding is present, and ensure gallery titles are properly displayed.\n\nRequirements:\n- Remove or reduce excessive whitespace at the bottom of gallery-card items\n- Display the gallery title on each card (currently hidden or missing)\n- Ensure consistent card height across all gallery items\n- Verify proper spacing between title and other card elements\n- Maintain responsive behavior across different screen sizes\n- Test with various title lengths to prevent overflow or truncation issues\n- Ensure alignment and visual hierarchy within the card remains balanced",
+      "timestamp": "2026-01-23T11:10:36.182Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T11:10:36.866Z"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "social-media-links",
+  "category": "UI",
+  "title": "Social Media Integration",
+  "description": "Add social media icon links in header and footer for Facebook, Instagram, and other platforms. Configure through site params with icons and proper ARIA labels.",
+  "status": "verified",
+  "priority": 2,
+  "complexity": "simple",
+  "createdAt": "2026-01-22T14:36:35.506Z",
+  "updatedAt": "2026-01-22T16:33:21.329Z",
+  "descriptionHistory": []
+}

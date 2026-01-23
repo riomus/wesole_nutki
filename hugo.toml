@@ -1,0 +1,498 @@
+# Hugo configuration for Wesole Nutki preschool website
+# Documentation: https://gohugo.io/getting-started/configuration/
+
+# Base URL for GitHub Pages deployment
+# This is overridden by the GitHub Actions workflow using --baseURL flag
+# Custom domain configured via static/CNAME - HTTPS is enforced by GitHub Pages
+# Fallback (if no custom domain): https://riomus.github.io/wesole_nutki/
+baseURL = "https://wesolenutki.pl/"
+title = "Wesole Nutki"
+
+# Default language
+defaultContentLanguage = "pl"
+defaultContentLanguageInSubdir = true
+
+# Enable Git info for last modified dates
+enableGitInfo = true
+
+# Disable taxonomy pages initially (will be enabled when needed)
+disableKinds = []
+
+# Enable robots.txt generation
+enableRobotsTXT = true
+
+# Pagination
+[pagination]
+  pagerSize = 10
+
+# Theme (will be configured when theme is integrated)
+# theme = "educenter"
+
+# Summary length for list pages
+summaryLength = 70
+
+# Build settings
+[build]
+  writeStats = true
+
+# Multilingual configuration
+[languages]
+  [languages.pl]
+    languageName = "Polski"
+    languageCode = "pl"
+    weight = 1
+    title = "Wesołe Nutki - Przedszkole"
+    contentDir = "content"
+    [languages.pl.params]
+      description = "Wesołe Nutki - Przedszkole we Wrocławiu"
+
+    # Polish main navigation menu
+    [[languages.pl.menus.main]]
+      identifier = "home"
+      name = "Strona Główna"
+      url = "/pl/"
+      weight = 1
+      [languages.pl.menus.main.params]
+        i18n_key = "menu_home"
+
+    [[languages.pl.menus.main]]
+      identifier = "recruitment"
+      name = "REKRUTACJA W TOKU"
+      url = "/rekrutacja/"
+      weight = 2
+      [languages.pl.menus.main.params]
+        i18n_key = "menu_recruitment"
+
+    [[languages.pl.menus.main]]
+      identifier = "news"
+      name = "Aktualności"
+      url = "/category/aktualnosci/"
+      weight = 3
+      [languages.pl.menus.main.params]
+        i18n_key = "menu_news"
+
+    [[languages.pl.menus.main]]
+      identifier = "about"
+      name = "O przedszkolu"
+      url = "/o-przedszkolu/"
+      weight = 4
+      [languages.pl.menus.main.params]
+        i18n_key = "menu_about"
+
+    [[languages.pl.menus.main]]
+      identifier = "about-vision"
+      name = "Nasza wizja"
+      url = "/o-przedszkolu/nasza-wizja/"
+      weight = 1
+      parent = "about"
+      [languages.pl.menus.main.params]
+        i18n_key = "menu_about_vision"
+
+    [[languages.pl.menus.main]]
+      identifier = "about-offer"
+      name = "Oferta"
+      url = "/o-przedszkolu/oferta/"
+      weight = 2
+      parent = "about"
+      [languages.pl.menus.main.params]
+        i18n_key = "menu_about_offer"
+
+    [[languages.pl.menus.main]]
+      identifier = "about-pricing"
+      name = "Cennik"
+      url = "/o-przedszkolu/cennik/"
+      weight = 3
+      parent = "about"
+      [languages.pl.menus.main.params]
+        i18n_key = "menu_about_pricing"
+
+    [[languages.pl.menus.main]]
+      identifier = "about-payments"
+      name = "Płatności"
+      url = "/o-przedszkolu/platnosci/"
+      weight = 4
+      parent = "about"
+      [languages.pl.menus.main.params]
+        i18n_key = "menu_about_payments"
+
+    [[languages.pl.menus.main]]
+      identifier = "about-enrollment"
+      name = "Zapisy"
+      url = "/o-przedszkolu/zapisy/"
+      weight = 5
+      parent = "about"
+      [languages.pl.menus.main.params]
+        i18n_key = "menu_about_enrollment"
+
+    [[languages.pl.menus.main]]
+      identifier = "about-documents"
+      name = "Dokumenty"
+      url = "/o-przedszkolu/dokumenty/"
+      weight = 6
+      parent = "about"
+      [languages.pl.menus.main.params]
+        i18n_key = "menu_about_documents"
+
+    [[languages.pl.menus.main]]
+      identifier = "about-privacy"
+      name = "Polityka prywatności"
+      url = "/o-przedszkolu/polityka-prywatnosci/"
+      weight = 7
+      parent = "about"
+      [languages.pl.menus.main.params]
+        i18n_key = "menu_about_privacy"
+
+    [[languages.pl.menus.main]]
+      identifier = "staff"
+      name = "Kadra"
+      url = "/kadra/"
+      weight = 5
+      [languages.pl.menus.main.params]
+        i18n_key = "menu_staff"
+
+    [[languages.pl.menus.main]]
+      identifier = "volunteers"
+      name = "Wolontariusze"
+      url = "/category/wolontariusze/"
+      weight = 6
+      [languages.pl.menus.main.params]
+        i18n_key = "menu_volunteers"
+
+    [[languages.pl.menus.main]]
+      identifier = "daily-plan"
+      name = "Plan dnia"
+      url = "/plan-dnia/"
+      weight = 7
+      [languages.pl.menus.main.params]
+        i18n_key = "menu_daily_plan"
+
+    [[languages.pl.menus.main]]
+      identifier = "daily-plan-weekly"
+      name = "Plan tygodniowy"
+      url = "/plan-zajec/"
+      weight = 1
+      parent = "daily-plan"
+      [languages.pl.menus.main.params]
+        i18n_key = "menu_daily_plan_weekly"
+
+    [[languages.pl.menus.main]]
+      identifier = "daily-plan-extra"
+      name = "Zajęcia dodatkowe 2025/2026"
+      url = "/plan-dnia/zajecia-dodatkowe/"
+      weight = 2
+      parent = "daily-plan"
+      [languages.pl.menus.main.params]
+        i18n_key = "menu_daily_plan_extra"
+
+    [[languages.pl.menus.main]]
+      identifier = "daily-plan-calendar"
+      name = "Harmonogram roku szkolnego 2025/2026"
+      url = "/plan-dnia/imprezy/"
+      weight = 3
+      parent = "daily-plan"
+      [languages.pl.menus.main.params]
+        i18n_key = "menu_daily_plan_calendar"
+
+    [[languages.pl.menus.main]]
+      identifier = "galleries"
+      name = "Galerie"
+      url = "/galerie/"
+      weight = 8
+      [languages.pl.menus.main.params]
+        i18n_key = "menu_galleries"
+
+    [[languages.pl.menus.main]]
+      identifier = "child-protection"
+      name = "Standardy ochrony małoletnich"
+      url = "/standardy-ochrony-maloletnich/"
+      weight = 9
+      [languages.pl.menus.main.params]
+        i18n_key = "menu_child_protection"
+
+    [[languages.pl.menus.main]]
+      identifier = "contact"
+      name = "Kontakt"
+      url = "/kontakt/"
+      weight = 10
+      [languages.pl.menus.main.params]
+        i18n_key = "menu_contact"
+
+  [languages.en]
+    languageName = "English"
+    languageCode = "en"
+    weight = 2
+    title = "Wesole Nutki - Preschool"
+    contentDir = "content/en"
+    [languages.en.params]
+      description = "Wesole Nutki - Preschool in Wroclaw, Poland"
+
+    # English main navigation menu
+    [[languages.en.menus.main]]
+      identifier = "home"
+      name = "Home"
+      url = "/en/"
+      weight = 1
+      [languages.en.menus.main.params]
+        i18n_key = "menu_home"
+
+    [[languages.en.menus.main]]
+      identifier = "recruitment"
+      name = "RECRUITMENT OPEN"
+      url = "/en/recruitment/"
+      weight = 2
+      [languages.en.menus.main.params]
+        i18n_key = "menu_recruitment"
+
+    [[languages.en.menus.main]]
+      identifier = "news"
+      name = "News"
+      url = "/en/category/news/"
+      weight = 3
+      [languages.en.menus.main.params]
+        i18n_key = "menu_news"
+
+    [[languages.en.menus.main]]
+      identifier = "about"
+      name = "About Us"
+      url = "/en/about/"
+      weight = 4
+      [languages.en.menus.main.params]
+        i18n_key = "menu_about"
+
+    [[languages.en.menus.main]]
+      identifier = "about-vision"
+      name = "Our Vision"
+      url = "/en/about/vision/"
+      weight = 1
+      parent = "about"
+      [languages.en.menus.main.params]
+        i18n_key = "menu_about_vision"
+
+    [[languages.en.menus.main]]
+      identifier = "about-offer"
+      name = "Offer"
+      url = "/en/about/offer/"
+      weight = 2
+      parent = "about"
+      [languages.en.menus.main.params]
+        i18n_key = "menu_about_offer"
+
+    [[languages.en.menus.main]]
+      identifier = "about-pricing"
+      name = "Pricing"
+      url = "/en/about/pricing/"
+      weight = 3
+      parent = "about"
+      [languages.en.menus.main.params]
+        i18n_key = "menu_about_pricing"
+
+    [[languages.en.menus.main]]
+      identifier = "about-payments"
+      name = "Payments"
+      url = "/en/about/payments/"
+      weight = 4
+      parent = "about"
+      [languages.en.menus.main.params]
+        i18n_key = "menu_about_payments"
+
+    [[languages.en.menus.main]]
+      identifier = "about-enrollment"
+      name = "Enrollment"
+      url = "/en/about/enrollment/"
+      weight = 5
+      parent = "about"
+      [languages.en.menus.main.params]
+        i18n_key = "menu_about_enrollment"
+
+    [[languages.en.menus.main]]
+      identifier = "about-documents"
+      name = "Documents"
+      url = "/en/about/documents/"
+      weight = 6
+      parent = "about"
+      [languages.en.menus.main.params]
+        i18n_key = "menu_about_documents"
+
+    [[languages.en.menus.main]]
+      identifier = "about-privacy"
+      name = "Privacy Policy"
+      url = "/en/about/privacy-policy/"
+      weight = 7
+      parent = "about"
+      [languages.en.menus.main.params]
+        i18n_key = "menu_about_privacy"
+
+    [[languages.en.menus.main]]
+      identifier = "staff"
+      name = "Staff"
+      url = "/en/staff/"
+      weight = 5
+      [languages.en.menus.main.params]
+        i18n_key = "menu_staff"
+
+    [[languages.en.menus.main]]
+      identifier = "volunteers"
+      name = "Volunteers"
+      url = "/en/category/volunteers/"
+      weight = 6
+      [languages.en.menus.main.params]
+        i18n_key = "menu_volunteers"
+
+    [[languages.en.menus.main]]
+      identifier = "daily-plan"
+      name = "Daily Plan"
+      url = "/en/daily-plan/"
+      weight = 7
+      [languages.en.menus.main.params]
+        i18n_key = "menu_daily_plan"
+
+    [[languages.en.menus.main]]
+      identifier = "daily-plan-weekly"
+      name = "Weekly Plan"
+      url = "/en/schedule/"
+      weight = 1
+      parent = "daily-plan"
+      [languages.en.menus.main.params]
+        i18n_key = "menu_daily_plan_weekly"
+
+    [[languages.en.menus.main]]
+      identifier = "daily-plan-extra"
+      name = "Extra Activities 2025/2026"
+      url = "/en/daily-plan/extra-activities/"
+      weight = 2
+      parent = "daily-plan"
+      [languages.en.menus.main.params]
+        i18n_key = "menu_daily_plan_extra"
+
+    [[languages.en.menus.main]]
+      identifier = "daily-plan-calendar"
+      name = "School Year Calendar 2025/2026"
+      url = "/en/daily-plan/events/"
+      weight = 3
+      parent = "daily-plan"
+      [languages.en.menus.main.params]
+        i18n_key = "menu_daily_plan_calendar"
+
+    [[languages.en.menus.main]]
+      identifier = "galleries"
+      name = "Galleries"
+      url = "/en/galleries/"
+      weight = 8
+      [languages.en.menus.main.params]
+        i18n_key = "menu_galleries"
+
+    [[languages.en.menus.main]]
+      identifier = "child-protection"
+      name = "Child Protection Standards"
+      url = "/en/child-protection-standards/"
+      weight = 9
+      [languages.en.menus.main.params]
+        i18n_key = "menu_child_protection"
+
+    [[languages.en.menus.main]]
+      identifier = "contact"
+      name = "Contact"
+      url = "/en/contact/"
+      weight = 10
+      [languages.en.menus.main.params]
+        i18n_key = "menu_contact"
+
+# Site parameters
+[params]
+  # Site metadata
+  author = "Wesołe Nutki"
+  description = "Przedszkole Niepubliczne Językowo-Muzyczne Wesołe Nutki we Wrocławiu"
+
+  # Contact information
+  phone = "530 114 202"
+  email = "przedszkole@wesolenutki.eu"
+  address = "Ul. Łaciarska 8, 50-104 Wrocław"
+
+  # Social media (to be configured)
+  facebook = "https://www.facebook.com/NutkiWroclaw/"
+  instagram = ""
+
+  # Images
+  logo = "/images/logo.png"
+  favicon = "/images/favicon.svg"
+
+  # Features
+  enableSearch = false
+
+# Menu configuration with nested menu support
+# Menus are defined within language sections using the 'main' menu name
+# Use 'parent' field to create dropdown menus
+# Use 'i18n_key' parameter for translations (falls back to 'name' if not found)
+
+# Permalinks configuration
+[permalinks]
+  news = "/:section/:year/:month/:slug/"
+
+# Taxonomies
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  gallery_category = "gallery_categories"
+
+# Markup configuration
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = "monokai"
+    lineNos = false
+
+# Security settings for Hugo
+[security]
+  [security.funcs]
+    getenv = ["^HUGO_", "^CI$"]
+
+# Output formats
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML"]
+  term = ["HTML"]
+
+# Media types
+[mediaTypes]
+  [mediaTypes."application/manifest+json"]
+    suffixes = ["webmanifest"]
+
+# Custom output formats
+[outputFormats]
+  [outputFormats.WebAppManifest]
+    mediaType = "application/manifest+json"
+    rel = "manifest"
+
+# Image processing configuration
+[imaging]
+  # Default quality for JPEG/WebP images
+  quality = 85
+  # Hint for resampling filter - "Lanczos" provides best quality
+  resampleFilter = "Lanczos"
+  # Anchor point for image cropping
+  anchor = "Smart"
+  # Background color for images with transparency
+  bgColor = "#ffffff"
+
+  [imaging.exif]
+    # Disable EXIF data in processed images for privacy
+    disableDate = true
+    disableLatLong = true
+    includeFields = ""
+    excludeFields = ""
+
+# Image processing settings in params for template access
+[params.images]
+  # Enable responsive image generation
+  responsive = true
+  # Enable WebP format generation
+  webp = true
+  # Default lazy loading
+  lazyLoad = true
+  # Responsive image widths (in pixels)
+  sizes = [320, 480, 768, 1024, 1280]
+  # Default placeholder color
+  placeholderColor = "#f5f5f5"

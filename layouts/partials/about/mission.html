@@ -1,0 +1,39 @@
+{{- $data := site.Data.about.mission -}}
+{{- if $data.enabled -}}
+<!-- Mission/Philosophy Section -->
+<section class="section about-mission-section" id="mission-section">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        {{- if $data.image -}}
+        <div class="about-mission-image">
+          {{ partial "responsive-image" (dict
+            "src" $data.image
+            "alt" (i18n $data.image_alt_key | default "Our mission")
+            "class" "img-fluid rounded-3 shadow-lg"
+            "sizes" "(max-width: 768px) 100vw, 50vw"
+            "loading" "lazy"
+          ) }}
+        </div>
+        {{- end -}}
+      </div>
+      <div class="col-lg-6">
+        <div class="about-mission-content">
+          <h2 class="section-heading text-start" style="margin-bottom: 1.25rem;">{{ i18n $data.heading_key | default "Our Mission" }}</h2>
+          {{- with $data.subtitle_key -}}
+          <p class="section-subtitle text-start" style="font-size: 1.125rem; line-height: 1.6; margin-bottom: 1.5rem;">{{ i18n . }}</p>
+          {{- end -}}
+          <p class="about-text" style="font-size: 1.125rem; line-height: 1.75; margin-bottom: 1.5rem; color: rgba(45, 49, 66, 0.85);">{{ i18n $data.content_key }}</p>
+          {{- if $data.highlights -}}
+          <ul class="feature-list">
+            {{- range $data.highlights -}}
+            <li>{{ i18n .key }}</li>
+            {{- end -}}
+          </ul>
+          {{- end -}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{- end -}}

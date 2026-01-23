@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix Gallery Card Image Aspect Ratio to Allow Counter Overlay\n\nRemove the fixed 4/3 aspect ratio constraint from gallery card images to enable proper visual overlay of the counter element.\n\nRequirements:\n- Locate the gallery-card-image component or CSS class definition\n- Remove or modify the aspect-ratio: 4/3 property\n- Ensure images display at their natural aspect ratio or use a more flexible sizing approach\n- Verify the counter element now properly overlays the image without layout issues\n- Test with images of various aspect ratios (portrait, landscape, square) to ensure counter positioning remains consistent\n- Confirm no unintended layout shifts or breaking changes in the gallery grid",
+  "title": "Remove fixed aspect ratio from gallery card images",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "in_progress",
+  "id": "feature-1769170091521-gdi3ucku2",
+  "descriptionHistory": [
+    {
+      "description": "Fix Gallery Card Image Aspect Ratio to Allow Counter Overlay\n\nRemove the fixed 4/3 aspect ratio constraint from gallery card images to enable proper visual overlay of the counter element.\n\nRequirements:\n- Locate the gallery-card-image component or CSS class definition\n- Remove or modify the aspect-ratio: 4/3 property\n- Ensure images display at their natural aspect ratio or use a more flexible sizing approach\n- Verify the counter element now properly overlays the image without layout issues\n- Test with images of various aspect ratios (portrait, landscape, square) to ensure counter positioning remains consistent\n- Confirm no unintended layout shifts or breaking changes in the gallery grid",
+      "timestamp": "2026-01-23T12:08:11.648Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T12:08:17.748Z"
+}

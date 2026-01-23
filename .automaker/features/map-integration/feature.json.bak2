@@ -1,0 +1,12 @@
+{
+  "id": "map-integration",
+  "category": "UI",
+  "title": "Location Map Embedding",
+  "description": "Embed an interactive map (Google Maps or OpenStreetMap) on the contact page showing the preschool location in Wrocław. Add marker with custom icon and ensure mobile responsiveness.",
+  "status": "in_progress",
+  "priority": 2,
+  "complexity": "simple",
+  "createdAt": "2026-01-22T14:36:35.502Z",
+  "updatedAt": "2026-01-22T16:05:28.083Z",
+  "descriptionHistory": []
+}

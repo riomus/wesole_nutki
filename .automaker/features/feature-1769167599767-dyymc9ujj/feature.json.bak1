@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix Gallery Card Display Issues\n\nResolve layout and content rendering problems in the gallery-card component where blank space appears at the bottom and the title is not visible.\n\nRequirements:\n- Locate the gallery-card component in the codebase\n- Fix the missing title display (ensure title text is being rendered and is visible)\n- Remove or correct the blank space appearing at the bottom of the card\n- Verify proper spacing and alignment of all card elements\n- Check CSS/styling for layout issues (flexbox, grid, padding, margins, height calculations)\n- Ensure the card displays correctly across different screen sizes\n- Test with various content lengths (short titles, long titles, missing titles)\n\nEdge cases to consider:\n- Cards with no title data\n- Cards with very long titles\n- Different image aspect ratios that may affect layout\n- Container constraints that may cause spacing issues",
+  "title": "Fix gallery card layout and title visibility issues",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "verified",
+  "id": "feature-1769167599767-dyymc9ujj",
+  "descriptionHistory": [
+    {
+      "description": "Fix Gallery Card Display Issues\n\nResolve layout and content rendering problems in the gallery-card component where blank space appears at the bottom and the title is not visible.\n\nRequirements:\n- Locate the gallery-card component in the codebase\n- Fix the missing title display (ensure title text is being rendered and is visible)\n- Remove or correct the blank space appearing at the bottom of the card\n- Verify proper spacing and alignment of all card elements\n- Check CSS/styling for layout issues (flexbox, grid, padding, margins, height calculations)\n- Ensure the card displays correctly across different screen sizes\n- Test with various content lengths (short titles, long titles, missing titles)\n\nEdge cases to consider:\n- Cards with no title data\n- Cards with very long titles\n- Different image aspect ratios that may affect layout\n- Container constraints that may cause spacing issues",
+      "timestamp": "2026-01-23T11:26:40.162Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T11:39:43.587Z"
+}

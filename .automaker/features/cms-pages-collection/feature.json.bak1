@@ -1,0 +1,12 @@
+{
+  "id": "cms-pages-collection",
+  "category": "CMS",
+  "title": "CMS Pages Collection Config",
+  "description": "Configure Decap CMS collection for managing static pages (About, Contact, Programs) with appropriate fields for title, content, images, and multilingual support.",
+  "status": "verified",
+  "priority": 1,
+  "complexity": "moderate",
+  "createdAt": "2026-01-22T14:36:35.508Z",
+  "updatedAt": "2026-01-22T15:32:03.534Z",
+  "descriptionHistory": []
+}

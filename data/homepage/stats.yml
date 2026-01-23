@@ -1,0 +1,23 @@
+# Stats/Counter Section Configuration
+# Displays animated statistics counters
+
+enabled: true
+
+# Stats items
+items:
+  - icon: person-circle
+    number: 150
+    label_key: happy_children
+
+  - icon: people
+    number: 25
+    label_key: expert_teachers
+
+  - icon: mortarboard
+    number: 10
+    label_key: years_experience
+
+  - icon: star
+    number: 100
+    label_key: parent_satisfaction
+    suffix: "%"

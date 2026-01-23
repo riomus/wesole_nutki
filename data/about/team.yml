@@ -1,0 +1,28 @@
+# Team Section Configuration
+enabled: true
+
+# Section header keys (from i18n)
+heading_key: about_team_heading
+subtitle_key: about_team_subtitle
+
+# Team members
+members:
+  - name: Anna Kowalska
+    role_key: about_team_role_director
+    bio_key: about_team_bio_director
+    image: /images/team/director.jpg
+
+  - name: Maria Nowak
+    role_key: about_team_role_teacher1
+    bio_key: about_team_bio_teacher1
+    image: /images/team/teacher1.jpg
+
+  - name: Katarzyna Wisniewska
+    role_key: about_team_role_teacher2
+    bio_key: about_team_bio_teacher2
+    image: /images/team/teacher2.jpg
+
+  - name: Ewa Dabrowska
+    role_key: about_team_role_teacher3
+    bio_key: about_team_bio_teacher3
+    image: /images/team/teacher3.jpg

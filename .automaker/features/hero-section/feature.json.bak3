@@ -1,0 +1,12 @@
+{
+  "id": "hero-section",
+  "category": "UI",
+  "title": "Hero Banner Section",
+  "description": "Design and implement the hero section for the homepage with large background image, headline, subheadline, and call-to-action button. Make content editable through front matter or data files.",
+  "status": "backlog",
+  "priority": 1,
+  "complexity": "simple",
+  "createdAt": "2026-01-22T14:36:35.497Z",
+  "updatedAt": "2026-01-22T14:36:35.497Z",
+  "descriptionHistory": []
+}

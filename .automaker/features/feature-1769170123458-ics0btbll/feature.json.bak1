@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Remove Margins and Bottom Border Radius from Embedded Gallery Item Images\n\nModify the styling of images within embedded-gallery-item components to eliminate margins and adjust border-radius properties.\n\nRequirements:\n- Remove all margins (top, right, bottom, left) from img elements inside embedded-gallery-item\n- Remove border-radius from bottom-left and bottom-right corners of these images\n- Preserve border-radius on top corners if currently applied\n- Ensure changes apply consistently across all instances of embedded-gallery-item\n- Verify the layout remains intact after margin removal\n- Test that images align properly with their container edges\n\nEdge cases to consider:\n- Multiple images within a single embedded-gallery-item\n- Responsive behavior at different viewport sizes\n- Images with varying aspect ratios\n- Interaction with parent container padding/spacing",
+  "title": "Remove embedded gallery image margins and bottom border-radius",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "verified",
+  "id": "feature-1769170123458-ics0btbll",
+  "descriptionHistory": [
+    {
+      "description": "Remove Margins and Bottom Border Radius from Embedded Gallery Item Images\n\nModify the styling of images within embedded-gallery-item components to eliminate margins and adjust border-radius properties.\n\nRequirements:\n- Remove all margins (top, right, bottom, left) from img elements inside embedded-gallery-item\n- Remove border-radius from bottom-left and bottom-right corners of these images\n- Preserve border-radius on top corners if currently applied\n- Ensure changes apply consistently across all instances of embedded-gallery-item\n- Verify the layout remains intact after margin removal\n- Test that images align properly with their container edges\n\nEdge cases to consider:\n- Multiple images within a single embedded-gallery-item\n- Responsive behavior at different viewport sizes\n- Images with varying aspect ratios\n- Interaction with parent container padding/spacing",
+      "timestamp": "2026-01-23T12:08:43.556Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T12:20:30.245Z"
+}

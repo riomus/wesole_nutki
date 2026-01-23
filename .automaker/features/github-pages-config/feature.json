@@ -1,0 +1,12 @@
+{
+  "id": "github-pages-config",
+  "category": "Infrastructure",
+  "title": "GitHub Pages Configuration",
+  "description": "Configure repository settings for GitHub Pages deployment. Set up custom domain if needed, enforce HTTPS, and configure base URL in Hugo config.",
+  "status": "completed",
+  "priority": 1,
+  "complexity": "simple",
+  "createdAt": "2026-01-22T14:36:35.511Z",
+  "updatedAt": "2026-01-22T15:00:20.048Z",
+  "descriptionHistory": []
+}

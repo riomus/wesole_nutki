@@ -1,0 +1,203 @@
+{{ define "main" }}
+{{/* Breadcrumb Navigation */}}
+{{ partial "breadcrumb.html" . }}
+
+<article class="program-article py-5">
+  <div class="container">
+    <div class="row">
+      {{/* Main Content */}}
+      <div class="col-lg-8">
+        {{/* Program Header */}}
+        <header class="program-header mb-4">
+          {{/* Age Group Badge */}}
+          {{ with .Params.age_group }}
+          <div class="program-age-badge mb-3">
+            <span class="badge bg-primary-light text-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16" class="me-1">
+                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+              </svg>
+              {{ . }}
+            </span>
+          </div>
+          {{ end }}
+
+          {{/* Title */}}
+          <h1 class="mb-3">{{ .Title }}</h1>
+
+          {{/* Summary */}}
+          {{ with .Params.summary }}
+          <p class="lead">{{ . }}</p>
+          {{ end }}
+        </header>
+
+        {{/* Featured Image */}}
+        {{ with .Params.featured_image }}
+        <figure class="program-featured-image mb-4">
+          {{ partial "responsive-image" (dict
+            "src" .
+            "alt" $.Title
+            "class" "img-fluid rounded-3"
+            "sizes" "(max-width: 768px) 100vw, (max-width: 1024px) 80vw, 70vw"
+            "loading" "eager"
+            "context" $
+          ) }}
+        </figure>
+        {{ end }}
+
+        {{/* Program Content */}}
+        <div class="program-content">
+          {{ .Content }}
+        </div>
+
+        {{/* Activities Section */}}
+        {{ with .Params.activities }}
+        <div class="program-activities mt-5">
+          <h2 class="mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16" class="me-2 text-primary">
+              <path d="M7 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1zM2 1a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm0 8a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2H2zm.854-3.646a.5.5 0 0 1-.708 0l-1-1a.5.5 0 1 1 .708-.708l.646.647 1.646-1.647a.5.5 0 1 1 .708.708l-2 2zm0 8a.5.5 0 0 1-.708 0l-1-1a.5.5 0 0 1 .708-.708l.646.647 1.646-1.647a.5.5 0 0 1 .708.708l-2 2zM7 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1zm0-5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+            {{ i18n "program_activities" | default "Activities & Learning Areas" }}
+          </h2>
+          <div class="activities-grid">
+            {{ range . }}
+            <div class="activity-item">
+              {{ with .icon }}<span class="activity-icon">{{ . }}</span>{{ end }}
+              <div class="activity-content">
+                <h5>{{ .title }}</h5>
+                {{ with .description }}<p>{{ . }}</p>{{ end }}
+              </div>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+
+        {{/* Schedule Section */}}
+        {{ with .Params.schedule }}
+        <div class="program-schedule mt-5">
+          <h2 class="mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16" class="me-2 text-primary">
+              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+            </svg>
+            {{ i18n "program_schedule" | default "Daily Schedule" }}
+          </h2>
+          <div class="schedule-list">
+            {{ range . }}
+            <div class="schedule-list-item">
+              <span class="schedule-list-time">{{ .time }}</span>
+              <span class="schedule-list-activity">{{ .activity }}</span>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+
+        {{/* Back Navigation */}}
+        <div class="program-back-nav mt-5 pt-4 border-top">
+          <a href="{{ "programs/" | relLangURL }}" class="btn btn-outline-primary me-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="me-1">
+              <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+            </svg>
+            {{ i18n "all_programs" | default "All Programs" }}
+          </a>
+          <a href="{{ "contact/" | relLangURL }}" class="btn btn-primary">
+            {{ i18n "contact_us" | default "Contact Us" }}
+          </a>
+        </div>
+      </div>
+
+      {{/* Sidebar */}}
+      <div class="col-lg-4">
+        <aside class="program-sidebar">
+          {{/* Program Info Card */}}
+          <div class="sidebar-card mb-4">
+            <h3 class="sidebar-card-title">{{ i18n "program_info" | default "Program Info" }}</h3>
+            <ul class="program-info-list">
+              {{ with .Params.age_group }}
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                </svg>
+                <span>
+                  <strong>{{ i18n "age_group" | default "Age Group" }}:</strong>
+                  {{ . }}
+                </span>
+              </li>
+              {{ end }}
+              {{ with .Params.group_size }}
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"/>
+                </svg>
+                <span>
+                  <strong>{{ i18n "group_size" | default "Group Size" }}:</strong>
+                  {{ . }}
+                </span>
+              </li>
+              {{ end }}
+              {{ with .Params.hours }}
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                </svg>
+                <span>
+                  <strong>{{ i18n "hours" | default "Hours" }}:</strong>
+                  {{ . }}
+                </span>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+
+          {{/* Key Features Card */}}
+          {{ with .Params.features }}
+          <div class="sidebar-card mb-4">
+            <h3 class="sidebar-card-title">{{ i18n "key_features" | default "Key Features" }}</h3>
+            <ul class="features-list">
+              {{ range . }}
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="text-success">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                </svg>
+                <span>{{ . }}</span>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+          {{ end }}
+
+          {{/* CTA Card */}}
+          <div class="sidebar-card sidebar-card-cta">
+            <h3 class="sidebar-card-title text-white">{{ i18n "interested_in_program" | default "Interested?" }}</h3>
+            <p class="text-white-50 mb-3">{{ i18n "program_cta_text" | default "Contact us to learn more about this program and schedule a visit." }}</p>
+            <a href="{{ "contact/" | relLangURL }}" class="btn btn-light btn-sm w-100">
+              {{ i18n "schedule_visit" | default "Schedule a Visit" }}
+            </a>
+          </div>
+
+          {{/* Other Programs */}}
+          {{ $currentProgram := . }}
+          {{ $otherPrograms := where (where .Site.RegularPages "Section" "programs") ".Permalink" "!=" .Permalink }}
+          {{ if $otherPrograms }}
+          <div class="sidebar-card mt-4">
+            <h3 class="sidebar-card-title">{{ i18n "other_programs" | default "Other Programs" }}</h3>
+            <ul class="other-programs-list">
+              {{ range first 3 $otherPrograms }}
+              <li>
+                <a href="{{ .Permalink }}">
+                  {{ with .Params.icon }}<span class="program-icon-small">{{ . }}</span>{{ end }}
+                  <span>{{ .Title }}</span>
+                </a>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+          {{ end }}
+        </aside>
+      </div>
+    </div>
+  </div>
+</article>
+{{ end }}

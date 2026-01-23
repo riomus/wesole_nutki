@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Synchronize Website Menu Structure with Reference Site\n\nEnsure the website's navigation menu matches the structure and content of https://wesolenutki.eu/, resolving the current disconnect between existing pages and menu links.\n\nRequirements:\n- Audit https://wesolenutki.eu/ to document the complete menu structure, including all navigation items, hierarchy, and link destinations\n- Identify all pages currently defined in markdown files that are not appearing in the navigation\n- Update the menu configuration to include all existing pages with correct links\n- Verify menu hierarchy matches the reference site (top-level items, dropdowns, nested submenus)\n- Ensure menu link paths correctly correspond to the markdown page URLs\n- Test all menu links to confirm they navigate to the intended pages\n- Verify menu structure is responsive and works across different screen sizes\n- Confirm menu item labels and ordering match the reference site\n\nEdge cases to consider:\n- Pages that exist in markdown but shouldn't be in the main menu\n- External links vs internal page links\n- Localization or multi-language menu items if applicable\n- Active/current page highlighting in menu",
+  "title": "Synchronize navigation menu with reference site structure",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "in_progress",
+  "id": "feature-1769171721992-owkjjbc0r",
+  "descriptionHistory": [
+    {
+      "description": "Synchronize Website Menu Structure with Reference Site\n\nEnsure the website's navigation menu matches the structure and content of https://wesolenutki.eu/, resolving the current disconnect between existing pages and menu links.\n\nRequirements:\n- Audit https://wesolenutki.eu/ to document the complete menu structure, including all navigation items, hierarchy, and link destinations\n- Identify all pages currently defined in markdown files that are not appearing in the navigation\n- Update the menu configuration to include all existing pages with correct links\n- Verify menu hierarchy matches the reference site (top-level items, dropdowns, nested submenus)\n- Ensure menu link paths correctly correspond to the markdown page URLs\n- Test all menu links to confirm they navigate to the intended pages\n- Verify menu structure is responsive and works across different screen sizes\n- Confirm menu item labels and ordering match the reference site\n\nEdge cases to consider:\n- Pages that exist in markdown but shouldn't be in the main menu\n- External links vs internal page links\n- Localization or multi-language menu items if applicable\n- Active/current page highlighting in menu",
+      "timestamp": "2026-01-23T12:35:22.083Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T12:35:25.481Z"
+}

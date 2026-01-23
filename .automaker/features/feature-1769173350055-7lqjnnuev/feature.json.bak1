@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Standardize Typography Across All Content Pages\n\nAudit and improve typography consistency and visual appeal across all textual subpages in the application.\n\nRequirements:\n- Identify all textual subpages requiring typography improvements\n- Document current typography issues (inconsistent font sizes, line heights, spacing, hierarchy)\n- Establish a consistent typographic scale and hierarchy (headings, body text, captions)\n- Ensure proper line height (typically 1.5-1.6 for body text) for readability\n- Verify appropriate font weights and sizes for different text elements\n- Check and fix text color contrast ratios for accessibility (WCAG AA minimum)\n- Standardize paragraph spacing and margin consistency\n- Ensure proper heading hierarchy (h1, h2, h3) is semantically correct\n- Review and adjust letter spacing where needed\n- Test typography on different screen sizes for responsive behavior\n- Apply consistent styling for special text elements (quotes, lists, links, code blocks)\n\nEdge cases to consider:\n- Long text content without breaks\n- Text overflow in constrained containers\n- Mixed content types on same page\n- Internationalization with different character sets",
+  "title": "Standardize typography and improve readability consistency",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "in_progress",
+  "id": "feature-1769173350055-7lqjnnuev",
+  "descriptionHistory": [
+    {
+      "description": "Standardize Typography Across All Content Pages\n\nAudit and improve typography consistency and visual appeal across all textual subpages in the application.\n\nRequirements:\n- Identify all textual subpages requiring typography improvements\n- Document current typography issues (inconsistent font sizes, line heights, spacing, hierarchy)\n- Establish a consistent typographic scale and hierarchy (headings, body text, captions)\n- Ensure proper line height (typically 1.5-1.6 for body text) for readability\n- Verify appropriate font weights and sizes for different text elements\n- Check and fix text color contrast ratios for accessibility (WCAG AA minimum)\n- Standardize paragraph spacing and margin consistency\n- Ensure proper heading hierarchy (h1, h2, h3) is semantically correct\n- Review and adjust letter spacing where needed\n- Test typography on different screen sizes for responsive behavior\n- Apply consistent styling for special text elements (quotes, lists, links, code blocks)\n\nEdge cases to consider:\n- Long text content without breaks\n- Text overflow in constrained containers\n- Mixed content types on same page\n- Internationalization with different character sets",
+      "timestamp": "2026-01-23T13:02:30.153Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T13:02:32.451Z"
+}

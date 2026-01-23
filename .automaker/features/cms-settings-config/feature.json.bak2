@@ -1,0 +1,12 @@
+{
+  "id": "cms-settings-config",
+  "category": "CMS",
+  "title": "CMS Site Settings Config",
+  "description": "Add CMS collection for global site settings including site title, description, contact information, social media links, and homepage section toggles.",
+  "status": "in_progress",
+  "priority": 2,
+  "complexity": "moderate",
+  "createdAt": "2026-01-22T14:36:35.509Z",
+  "updatedAt": "2026-01-22T15:47:47.334Z",
+  "descriptionHistory": []
+}

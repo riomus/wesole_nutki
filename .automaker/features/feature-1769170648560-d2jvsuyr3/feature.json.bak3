@@ -1,0 +1,28 @@
+{
+  "category": "Uncategorized",
+  "description": "Review and Correct Polish Diacritical Marks in Text Content\n\nAudit all Polish language text throughout the application to ensure proper use of diacritical marks and special characters, specifically fixing instances where Polish characters are missing or incorrectly rendered.\n\nRequirements:\n- Locate all Polish text content in the codebase (UI labels, messages, content files)\n- Verify correct use of Polish special characters: ą, ć, ę, ł, ń, ó, ś, ź, ż (and uppercase variants)\n- Fix identified errors, including but not limited to:\n  - \"posilk,i\" → \"Posiłki\" (meals)\n  - Any other instances of missing or corrupted diacritical marks\n- Check for encoding issues that may cause character corruption (ensure UTF-8)\n- Review both hardcoded strings and any translation/localization files\n- Test rendered output to confirm characters display correctly in the UI\n- Consider reviewing the entire Polish vocabulary set, not just the reported issue\n\nEdge cases to verify:\n- Characters in different contexts (headings, body text, form labels, buttons)\n- Database-stored content if applicable\n- Dynamically generated text",
+  "title": "Audit and Fix Polish Diacritical Marks Across Application",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "backlog",
+  "id": "feature-1769170648560-d2jvsuyr3",
+  "descriptionHistory": [
+    {
+      "description": "Review and Correct Polish Diacritical Marks in Text Content\n\nAudit all Polish language text throughout the application to ensure proper use of diacritical marks and special characters, specifically fixing instances where Polish characters are missing or incorrectly rendered.\n\nRequirements:\n- Locate all Polish text content in the codebase (UI labels, messages, content files)\n- Verify correct use of Polish special characters: ą, ć, ę, ł, ń, ó, ś, ź, ż (and uppercase variants)\n- Fix identified errors, including but not limited to:\n  - \"posilk,i\" → \"Posiłki\" (meals)\n  - Any other instances of missing or corrupted diacritical marks\n- Check for encoding issues that may cause character corruption (ensure UTF-8)\n- Review both hardcoded strings and any translation/localization files\n- Test rendered output to confirm characters display correctly in the UI\n- Consider reviewing the entire Polish vocabulary set, not just the reported issue\n\nEdge cases to verify:\n- Characters in different contexts (headings, body text, form labels, buttons)\n- Database-stored content if applicable\n- Dynamically generated text",
+      "timestamp": "2026-01-23T12:17:28.728Z",
+      "source": "initial"
+    }
+  ]
+}

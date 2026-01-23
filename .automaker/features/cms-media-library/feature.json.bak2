@@ -1,0 +1,12 @@
+{
+  "id": "cms-media-library",
+  "category": "CMS",
+  "title": "CMS Media Library Setup",
+  "description": "Configure Decap CMS media library for uploading and managing images. Set up folder structure, file naming conventions, and image optimization settings.",
+  "status": "in_progress",
+  "priority": 2,
+  "complexity": "simple",
+  "createdAt": "2026-01-22T14:36:35.510Z",
+  "updatedAt": "2026-01-22T15:42:25.308Z",
+  "descriptionHistory": []
+}

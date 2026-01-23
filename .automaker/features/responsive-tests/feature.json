@@ -1,0 +1,12 @@
+{
+  "id": "responsive-tests",
+  "category": "Testing",
+  "title": "Responsive Design Tests",
+  "description": "Write Playwright tests for responsive behavior across mobile, tablet, and desktop viewports. Test menu collapse, image scaling, and layout reflow.",
+  "status": "completed",
+  "priority": 2,
+  "complexity": "moderate",
+  "createdAt": "2026-01-22T14:36:35.512Z",
+  "updatedAt": "2026-01-22T16:27:22.046Z",
+  "descriptionHistory": []
+}

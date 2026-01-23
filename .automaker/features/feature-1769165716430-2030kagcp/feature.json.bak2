@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix Navigation Menu Active State Bug\n\nThe navigation menu incorrectly highlights the main page link regardless of which page the user is currently viewing. The active/highlighted state should only apply to the link corresponding to the current page.\n\nRequirements:\n- Investigate current routing and active state logic in the navigation menu component\n- Ensure active state correctly reflects the current route/page\n- Remove hardcoded or default active state on main page link\n- Verify active state updates properly when navigating between pages\n- Test all navigation links to ensure only the current page is highlighted\n- Handle edge cases like nested routes, query parameters, and hash fragments\n- Ensure visual indicator (highlighting) is consistent across all menu items",
+  "title": "Fix navigation menu active state indicator",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "in_progress",
+  "id": "feature-1769165716430-2030kagcp",
+  "descriptionHistory": [
+    {
+      "description": "Fix Navigation Menu Active State Bug\n\nThe navigation menu incorrectly highlights the main page link regardless of which page the user is currently viewing. The active/highlighted state should only apply to the link corresponding to the current page.\n\nRequirements:\n- Investigate current routing and active state logic in the navigation menu component\n- Ensure active state correctly reflects the current route/page\n- Remove hardcoded or default active state on main page link\n- Verify active state updates properly when navigating between pages\n- Test all navigation links to ensure only the current page is highlighted\n- Handle edge cases like nested routes, query parameters, and hash fragments\n- Ensure visual indicator (highlighting) is consistent across all menu items",
+      "timestamp": "2026-01-23T10:55:16.523Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T11:02:13.718Z"
+}

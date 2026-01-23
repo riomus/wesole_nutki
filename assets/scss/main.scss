@@ -1,0 +1,10 @@
+// Wesole Nutki - Main CSS Entry Point with Tailwind CSS
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Import SCSS variables first
+@import "variables";
+
+// Custom component styles
+@import "custom";

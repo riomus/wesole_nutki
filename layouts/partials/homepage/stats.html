@@ -1,0 +1,23 @@
+{{- $data := site.Data.homepage.stats -}}
+{{- if $data.enabled -}}
+<!-- Educenter-style Counter/Stats Section -->
+<section class="counter-section">
+  <div class="container">
+    <div class="row g-4">
+      {{- range $data.items -}}
+      <div class="col-md-3 col-6">
+        <div class="counter-item">
+          <div class="counter-icon">
+            {{- partial "icons/stats-icon.html" .icon -}}
+          </div>
+          <div class="counter-value-wrapper">
+            <span class="counter-number" data-target="{{ .number }}">{{ .number }}</span>{{ with .suffix }}<span class="counter-suffix">{{ . }}</span>{{ end }}
+          </div>
+          <span class="counter-label">{{ i18n .label_key | default .label_key }}</span>
+        </div>
+      </div>
+      {{- end -}}
+    </div>
+  </div>
+</section>
+{{- end -}}

@@ -1,0 +1,11 @@
+{
+  "id": "evt-1769173828430-218f4d23",
+  "trigger": "feature_success",
+  "timestamp": "2026-01-23T13:10:28.430Z",
+  "projectPath": "/Users/romanbartusiak/git/riomus/wesole_nutki",
+  "projectName": "wesole_nutki",
+  "featureId": "feature-1769173385166-welt8hrha",
+  "featureName": "Synchronize English menu with Polish structure",
+  "error": "Feature completed in 434s - auto-verified",
+  "passes": true
+}

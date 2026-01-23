@@ -1,0 +1,28 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix Post-Tailwind Migration Layout and Styling Issues\n\nRestore all visual elements and layout structure that broke after migrating to Tailwind CSS. The application currently has widespread styling problems affecting core UI components and page layout.\n\nRequirements:\n- Restore proper page layout structure and container alignment\n- Fix navigation menu display and ensure it's visible and functional\n- Realign hero section to match original design specifications\n- Audit and fix styling for all broken UI components throughout the application\n- Ensure responsive behavior works correctly at all breakpoints\n- Verify spacing, padding, and margin values match the pre-migration design\n- Check that typography (font sizes, weights, colors) is consistent\n- Validate color scheme and theme variables are properly applied\n- Test all interactive elements (buttons, forms, dropdowns) for proper styling\n- Document any Tailwind class misconfigurations or missing utility classes\n\nApproach:\n- Compare current broken state with pre-migration screenshots or designs\n- Systematically go through each major section (header/nav, hero, content areas, footer)\n- Identify missing or incorrect Tailwind classes\n- Check for conflicting CSS from old styling system\n- Ensure Tailwind configuration includes all necessary custom values",
+  "title": "Fix Post-Tailwind Migration Layout Issues",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "backlog",
+  "id": "feature-1769160592135-fhhixs4rk",
+  "descriptionHistory": [
+    {
+      "description": "Fix Post-Tailwind Migration Layout and Styling Issues\n\nRestore all visual elements and layout structure that broke after migrating to Tailwind CSS. The application currently has widespread styling problems affecting core UI components and page layout.\n\nRequirements:\n- Restore proper page layout structure and container alignment\n- Fix navigation menu display and ensure it's visible and functional\n- Realign hero section to match original design specifications\n- Audit and fix styling for all broken UI components throughout the application\n- Ensure responsive behavior works correctly at all breakpoints\n- Verify spacing, padding, and margin values match the pre-migration design\n- Check that typography (font sizes, weights, colors) is consistent\n- Validate color scheme and theme variables are properly applied\n- Test all interactive elements (buttons, forms, dropdowns) for proper styling\n- Document any Tailwind class misconfigurations or missing utility classes\n\nApproach:\n- Compare current broken state with pre-migration screenshots or designs\n- Systematically go through each major section (header/nav, hero, content areas, footer)\n- Identify missing or incorrect Tailwind classes\n- Check for conflicting CSS from old styling system\n- Ensure Tailwind configuration includes all necessary custom values",
+      "timestamp": "2026-01-23T09:29:52.228Z",
+      "source": "initial"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "category": "Uncategorized",
+  "description": "Align Footer Navigation Menu with Header Menu\n\nCreate a footer navigation menu that mirrors the top-level items from the header menu, ensuring consistent structure and alignment across both navigation areas.\n\nRequirements:\n- Extract top-level menu items from the existing header navigation\n- Generate footer menu dynamically using the same data source as header menu\n- Ensure footer menu items match header items in order and content\n- Maintain visual alignment between footer and header menu layouts\n- Verify both menus update automatically when navigation structure changes\n- Apply appropriate styling to distinguish footer menu while maintaining consistency\n- Test that all footer menu links function correctly and point to same destinations as header\n- Handle responsive behavior for both menus on mobile and tablet breakpoints\n- Ensure accessibility features (ARIA labels, keyboard navigation) are consistent between both menus",
+  "title": "Add Dynamic Footer Navigation Menu Mirroring Header",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "backlog",
+  "id": "feature-1769175031803-j4x8h9ttx",
+  "descriptionHistory": [
+    {
+      "description": "Align Footer Navigation Menu with Header Menu\n\nCreate a footer navigation menu that mirrors the top-level items from the header menu, ensuring consistent structure and alignment across both navigation areas.\n\nRequirements:\n- Extract top-level menu items from the existing header navigation\n- Generate footer menu dynamically using the same data source as header menu\n- Ensure footer menu items match header items in order and content\n- Maintain visual alignment between footer and header menu layouts\n- Verify both menus update automatically when navigation structure changes\n- Apply appropriate styling to distinguish footer menu while maintaining consistency\n- Test that all footer menu links function correctly and point to same destinations as header\n- Handle responsive behavior for both menus on mobile and tablet breakpoints\n- Ensure accessibility features (ARIA labels, keyboard navigation) are consistent between both menus",
+      "timestamp": "2026-01-23T13:30:31.893Z",
+      "source": "initial"
+    }
+  ]
+}

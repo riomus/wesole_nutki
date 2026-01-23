@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix and Standardize Card Component Styling\n\nAudit all card components throughout the application to identify and fix styling issues, then apply consistent visual design.\n\nRequirements:\n- Locate all card component instances across the codebase\n- Identify cards with broken or inconsistent styling (layout issues, missing spacing, incorrect borders/shadows, etc.)\n- Fix structural CSS/styling bugs preventing proper rendering\n- Establish a unified card design system including:\n  - Consistent padding and margins\n  - Standardized border radius and shadow effects\n  - Proper hover and focus states\n  - Responsive behavior across screen sizes\n- Apply the standardized styling to all card components\n- Ensure visual hierarchy is clear (title, content, actions)\n- Test rendering across different content lengths and viewport sizes\n- Verify accessibility (contrast ratios, focus indicators)",
+  "title": "Fix and Standardize Card Component Styling",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "completed",
+  "id": "feature-1769163655371-jqsffcjd4",
+  "descriptionHistory": [
+    {
+      "description": "Fix and Standardize Card Component Styling\n\nAudit all card components throughout the application to identify and fix styling issues, then apply consistent visual design.\n\nRequirements:\n- Locate all card component instances across the codebase\n- Identify cards with broken or inconsistent styling (layout issues, missing spacing, incorrect borders/shadows, etc.)\n- Fix structural CSS/styling bugs preventing proper rendering\n- Establish a unified card design system including:\n  - Consistent padding and margins\n  - Standardized border radius and shadow effects\n  - Proper hover and focus states\n  - Responsive behavior across screen sizes\n- Apply the standardized styling to all card components\n- Ensure visual hierarchy is clear (title, content, actions)\n- Test rendering across different content lengths and viewport sizes\n- Verify accessibility (contrast ratios, focus indicators)",
+      "timestamp": "2026-01-23T10:20:55.496Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T10:32:06.164Z"
+}

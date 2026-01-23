@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Localize Date Formatting on Polish Homepage News Section\n\nEnsure all date displays in the news section of the Polish homepage are formatted in Polish language and locale conventions.\n\nRequirements:\n- Identify all date elements currently displaying in English within the Polish homepage news section\n- Update date formatting to use Polish locale (pl-PL)\n- Apply Polish month names, day names, and date format conventions\n- Verify date formatting respects Polish grammar rules (e.g., genitive case for months)\n- Check for any other text elements in the news section that may be in incorrect language\n- Ensure timezone handling remains correct after locale changes\n- Test with various date scenarios (today, past dates, future dates, different months)\n\nEdge cases to consider:\n- Relative dates (e.g., \"2 days ago\" should display as \"2 dni temu\")\n- Date ranges spanning multiple months or years\n- Abbreviated vs. full date formats\n- Any dynamically generated date strings from APIs or backend services\n\nDependencies:\n- Confirm the locale/internationalization library being used in the project\n- Verify Polish translation files include all necessary date-related strings\n- Check if other language versions have similar issues requiring fixes",
+  "title": "Localize Polish homepage news section date formatting",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "verified",
+  "id": "feature-1769160880510-6pzqwudhk",
+  "descriptionHistory": [
+    {
+      "description": "Localize Date Formatting on Polish Homepage News Section\n\nEnsure all date displays in the news section of the Polish homepage are formatted in Polish language and locale conventions.\n\nRequirements:\n- Identify all date elements currently displaying in English within the Polish homepage news section\n- Update date formatting to use Polish locale (pl-PL)\n- Apply Polish month names, day names, and date format conventions\n- Verify date formatting respects Polish grammar rules (e.g., genitive case for months)\n- Check for any other text elements in the news section that may be in incorrect language\n- Ensure timezone handling remains correct after locale changes\n- Test with various date scenarios (today, past dates, future dates, different months)\n\nEdge cases to consider:\n- Relative dates (e.g., \"2 days ago\" should display as \"2 dni temu\")\n- Date ranges spanning multiple months or years\n- Abbreviated vs. full date formats\n- Any dynamically generated date strings from APIs or backend services\n\nDependencies:\n- Confirm the locale/internationalization library being used in the project\n- Verify Polish translation files include all necessary date-related strings\n- Check if other language versions have similar issues requiring fixes",
+      "timestamp": "2026-01-23T09:34:40.603Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T09:43:13.466Z"
+}

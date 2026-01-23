@@ -1,0 +1,82 @@
+{{/* Gallery Card Partial - displays a gallery album with cover image, title, date, and photo count */}}
+{{/* Supports both old format (string list) and new format (object list with src, caption, alt) */}}
+{{/* Now with responsive images and WebP format support */}}
+<article class="gallery-card">
+  <a href="{{ .Permalink }}" class="gallery-card-link">
+    <div class="gallery-card-image">
+      {{/* Determine cover image - supports both old and new image formats */}}
+      {{ $coverImage := .Params.featured_image }}
+      {{ if not $coverImage }}
+        {{ with index .Params.images 0 }}
+          {{/* Check if it's the new object format or old string format */}}
+          {{ if reflect.IsMap . }}
+            {{ $coverImage = .src }}
+          {{ else }}
+            {{ $coverImage = . }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+
+      {{/* Get alt text for cover image */}}
+      {{ $coverAlt := .Title }}
+      {{ if not .Params.featured_image }}
+        {{ with index .Params.images 0 }}
+          {{ if reflect.IsMap . }}
+            {{ if .alt }}
+              {{ $coverAlt = .alt }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+
+      {{ if $coverImage }}
+      {{/* Use responsive image partial for optimized loading */}}
+      {{ partial "responsive-image" (dict
+        "src" $coverImage
+        "alt" $coverAlt
+        "class" "gallery-card-img"
+        "sizes" "(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw"
+        "loading" "lazy"
+        "context" .
+      ) }}
+      {{ else }}
+      <div class="gallery-card-placeholder">
+        <span class="placeholder-icon">🖼️</span>
+      </div>
+      {{ end }}
+
+      {{/* Photo count badge */}}
+      {{ $photoCount := len .Params.images }}
+      {{ if gt $photoCount 0 }}
+      <span class="gallery-card-count">
+        <span class="count-icon">📷</span>
+        {{ $photoCount }} {{ i18n "photos" | default "photos" }}
+      </span>
+      {{ end }}
+    </div>
+
+    <div class="gallery-card-body">
+      <h3 class="gallery-card-title">{{ .Title }}</h3>
+
+      {{/* Show description if available */}}
+      {{ with .Params.description }}
+      <p class="gallery-card-description">{{ . | truncate 100 }}</p>
+      {{ end }}
+
+      {{ if not .Date.IsZero }}
+      <time class="gallery-card-date" datetime="{{ .Date.Format "2006-01-02" }}">
+        {{ partial "format-date" .Date }}
+      </time>
+      {{ end }}
+
+      {{/* Show gallery categories as tags */}}
+      {{ with .Params.gallery_categories }}
+      <div class="gallery-card-categories">
+        {{ range . }}
+        <a href="{{ printf "gallery_categories/%s" (urlize .) | relLangURL }}" class="gallery-card-tag">{{ . }}</a>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </a>
+</article>

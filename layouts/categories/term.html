@@ -1,0 +1,66 @@
+{{ define "main" }}
+{{/* Breadcrumb Navigation */}}
+{{ partial "breadcrumb.html" . }}
+
+<section class="py-5">
+  <div class="container">
+    <header class="mb-5">
+      <div class="d-flex align-items-center mb-3">
+        {{/* Category icon */}}
+        <span class="news-category-icon me-3">
+          {{ $categoryName := lower .Title }}
+          {{ if in $categoryName "event" }}<span class="category-emoji">🎉</span>
+          {{ else if in $categoryName "wydarzen" }}<span class="category-emoji">🎉</span>
+          {{ else if in $categoryName "announc" }}<span class="category-emoji">📢</span>
+          {{ else if in $categoryName "ogłosz" }}<span class="category-emoji">📢</span>
+          {{ else if in $categoryName "activ" }}<span class="category-emoji">🎨</span>
+          {{ else if in $categoryName "zajec" }}<span class="category-emoji">🎨</span>
+          {{ else if in $categoryName "warsta" }}<span class="category-emoji">🔧</span>
+          {{ else if in $categoryName "workshop" }}<span class="category-emoji">🔧</span>
+          {{ else if in $categoryName "trip" }}<span class="category-emoji">🚌</span>
+          {{ else if in $categoryName "wycieczk" }}<span class="category-emoji">🚌</span>
+          {{ else if in $categoryName "holiday" }}<span class="category-emoji">🎄</span>
+          {{ else if in $categoryName "swiat" }}<span class="category-emoji">🎄</span>
+          {{ else }}<span class="category-emoji">📰</span>
+          {{ end }}
+        </span>
+        <h1 class="display-4 mb-0">{{ .Title }}</h1>
+      </div>
+      <p class="lead text-muted">
+        {{ len .Pages }} {{ if eq (len .Pages) 1 }}{{ i18n "article_singular" | default "article" }}{{ else }}{{ i18n "articles_plural" | default "articles" }}{{ end }}
+        {{ i18n "in_this_category" | default "in this category" }}
+      </p>
+    </header>
+
+    {{/* Category filter buttons */}}
+    {{ partial "news-category-filter.html" . }}
+
+    {{/* Use paginator for proper pagination */}}
+    {{ $paginator := .Paginate (.Pages.ByDate.Reverse) }}
+
+    {{ if $paginator.Pages }}
+    <div class="news-grid">
+      {{ range $paginator.Pages }}
+      <div class="news-grid-item">
+        {{ partial "news-card.html" . }}
+      </div>
+      {{ end }}
+    </div>
+
+    {{/* Custom Pagination */}}
+    {{ partial "pagination.html" $paginator }}
+    {{ else }}
+    <div class="text-center py-5">
+      <p class="text-muted fs-5">{{ i18n "no_articles_in_category" | default "No articles in this category yet." }}</p>
+    </div>
+    {{ end }}
+
+    {{/* Link back to all news */}}
+    <div class="text-center mt-5">
+      <a href="{{ "news" | relLangURL }}" class="btn btn-outline-primary">
+        <span class="me-2">←</span>{{ i18n "all_news" | default "All news" }}
+      </a>
+    </div>
+  </div>
+</section>
+{{ end }}

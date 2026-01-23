@@ -1,0 +1,11 @@
+{
+  "id": "evt-1769174911037-034541de",
+  "trigger": "feature_success",
+  "timestamp": "2026-01-23T13:28:31.037Z",
+  "projectPath": "/Users/romanbartusiak/git/riomus/wesole_nutki",
+  "projectName": "wesole_nutki",
+  "featureId": "feature-1769174686235-e4i602645",
+  "featureName": "Fix Learn More button language-specific routing",
+  "error": "Feature completed in 221s - auto-verified",
+  "passes": true
+}

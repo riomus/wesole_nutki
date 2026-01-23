@@ -1,0 +1,12 @@
+{
+  "id": "gallery-list-layout",
+  "category": "Core",
+  "title": "Gallery List Page Layout",
+  "description": "Build a gallery overview page showing thumbnails of all photo galleries organized by category or date. Display gallery titles, cover images, photo counts, and dates.",
+  "status": "completed",
+  "priority": 1,
+  "complexity": "moderate",
+  "createdAt": "2026-01-22T14:36:35.503Z",
+  "updatedAt": "2026-01-22T14:53:59.359Z",
+  "descriptionHistory": []
+}

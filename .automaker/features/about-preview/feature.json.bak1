@@ -1,0 +1,12 @@
+{
+  "id": "about-preview",
+  "category": "UI",
+  "title": "About Preview Section",
+  "description": "Build a homepage about section with image, headline, description text, and link to full About page. Allow content configuration through front matter with multilingual support.",
+  "status": "verified",
+  "priority": 2,
+  "complexity": "simple",
+  "createdAt": "2026-01-22T14:36:35.498Z",
+  "updatedAt": "2026-01-22T15:42:25.102Z",
+  "descriptionHistory": []
+}

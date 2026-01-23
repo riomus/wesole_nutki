@@ -1,0 +1,12 @@
+{
+  "id": "cms-menu-config",
+  "category": "CMS",
+  "title": "CMS Menu Configuration",
+  "description": "Create CMS interface for managing navigation menus with support for nested items, external links, and ordering. Allow non-technical editors to modify site navigation structure.",
+  "status": "backlog",
+  "priority": 2,
+  "complexity": "complex",
+  "createdAt": "2026-01-22T14:36:35.509Z",
+  "updatedAt": "2026-01-22T14:36:35.509Z",
+  "descriptionHistory": []
+}

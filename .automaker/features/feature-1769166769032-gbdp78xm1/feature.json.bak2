@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Remove Rounded Corners from Full-Width Sections\n\nUpdate the styling for full-width sections to display with square corners instead of rounded corners, starting with the hero section.\n\nRequirements:\n- Remove border-radius from the hero section\n- Identify all other full-width sections in the application\n- Remove border-radius from all full-width sections (e.g., banners, footers, full-width CTAs)\n- Preserve rounded corners for contained/card-style components\n- Ensure consistent styling across all breakpoints (mobile, tablet, desktop)\n- Verify visual consistency after changes",
+  "title": "Remove rounded corners from full-width sections",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "in_progress",
+  "id": "feature-1769166769032-gbdp78xm1",
+  "descriptionHistory": [
+    {
+      "description": "Remove Rounded Corners from Full-Width Sections\n\nUpdate the styling for full-width sections to display with square corners instead of rounded corners, starting with the hero section.\n\nRequirements:\n- Remove border-radius from the hero section\n- Identify all other full-width sections in the application\n- Remove border-radius from all full-width sections (e.g., banners, footers, full-width CTAs)\n- Preserve rounded corners for contained/card-style components\n- Ensure consistent styling across all breakpoints (mobile, tablet, desktop)\n- Verify visual consistency after changes",
+      "timestamp": "2026-01-23T11:12:49.126Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T11:15:18.784Z"
+}

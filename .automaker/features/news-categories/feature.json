@@ -1,0 +1,12 @@
+{
+  "id": "news-categories",
+  "category": "Core",
+  "title": "News Category System",
+  "description": "Add taxonomy support for categorizing news articles (e.g., Events, Announcements, Activities). Create category archive pages and category filtering on the news list page.",
+  "status": "completed",
+  "priority": 2,
+  "complexity": "moderate",
+  "createdAt": "2026-01-22T14:36:35.501Z",
+  "updatedAt": "2026-01-22T16:15:33.008Z",
+  "descriptionHistory": []
+}

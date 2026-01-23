@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="about-bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFE4E1;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FFD6E8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E6E6FA;stop-opacity:1" />
+    </linearGradient>
+    <pattern id="dots" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
+      <circle cx="40" cy="40" r="15" fill="rgba(255,255,255,0.15)"/>
+    </pattern>
+  </defs>
+
+  <!-- Background gradient -->
+  <rect width="100%" height="100%" fill="url(#about-bg-gradient)"/>
+
+  <!-- Decorative dot pattern -->
+  <rect width="100%" height="100%" fill="url(#dots)"/>
+
+  <!-- Stars/Sparkles -->
+  <g fill="#FFD700" opacity="0.6">
+    <path d="M 250 200 L 260 220 L 280 225 L 260 235 L 255 255 L 250 235 L 230 230 L 245 220 Z"/>
+    <path d="M 1500 150 L 1508 165 L 1525 169 L 1508 178 L 1504 195 L 1500 178 L 1483 174 L 1496 165 Z"/>
+    <path d="M 1700 280 L 1710 300 L 1730 305 L 1710 315 L 1705 335 L 1700 315 L 1680 310 L 1695 300 Z"/>
+  </g>
+
+  <!-- Clouds -->
+  <g fill="white" opacity="0.85">
+    <ellipse cx="400" cy="180" rx="90" ry="50"/>
+    <ellipse cx="470" cy="170" rx="70" ry="40"/>
+    <ellipse cx="340" cy="175" rx="60" ry="35"/>
+  </g>
+  <g fill="white" opacity="0.75">
+    <ellipse cx="1100" cy="120" rx="80" ry="45"/>
+    <ellipse cx="1160" cy="110" rx="65" ry="35"/>
+    <ellipse cx="1050" cy="115" rx="55" ry="30"/>
+  </g>
+  <g fill="white" opacity="0.8">
+    <ellipse cx="1650" cy="220" rx="85" ry="48"/>
+    <ellipse cx="1720" cy="210" rx="68" ry="38"/>
+    <ellipse cx="1590" cy="215" rx="58" ry="32"/>
+  </g>
+
+  <!-- Ground/Hills with pastel colors -->
+  <ellipse cx="960" cy="1250" rx="1300" ry="450" fill="#FFB6C1"/>
+  <ellipse cx="300" cy="1200" rx="700" ry="350" fill="#FFC0CB"/>
+  <ellipse cx="1600" cy="1220" rx="750" ry="380" fill="#FFD1DC"/>
+
+  <!-- Trees with colorful foliage -->
+  <g transform="translate(150, 720)">
+    <rect x="50" y="100" width="30" height="85" fill="#8B4513"/>
+    <circle cx="65" cy="65" r="65" fill="#FF69B4"/>
+    <circle cx="35" cy="85" r="45" fill="#FF85C1"/>
+    <circle cx="95" cy="85" r="45" fill="#FF85C1"/>
+  </g>
+  <g transform="translate(1650, 700)">
+    <rect x="50" y="100" width="35" height="95" fill="#8B4513"/>
+    <circle cx="67" cy="60" r="70" fill="#E6A8D7"/>
+    <circle cx="30" cy="85" r="50" fill="#F0B6E3"/>
+    <circle cx="104" cy="85" r="50" fill="#F0B6E3"/>
+  </g>
+
+  <!-- Colorful Books/Learning Elements -->
+  <g transform="translate(800, 820)">
+    <!-- Book 1 -->
+    <rect x="0" y="20" width="40" height="60" fill="#FF6B9D" rx="3"/>
+    <rect x="3" y="23" width="34" height="54" fill="#FF85B1" rx="2"/>
+    <!-- Book 2 -->
+    <rect x="35" y="10" width="40" height="70" fill="#9B72CB" rx="3"/>
+    <rect x="38" y="13" width="34" height="64" fill="#B18AD9" rx="2"/>
+    <!-- Book 3 -->
+    <rect x="70" y="25" width="40" height="55" fill="#FFB347" rx="3"/>
+    <rect x="73" y="28" width="34" height="49" fill="#FFC166" rx="2"/>
+  </g>
+
+  <!-- ABC Blocks -->
+  <g transform="translate(1200, 880)">
+    <!-- Block A -->
+    <rect x="0" y="30" width="50" height="50" fill="#FF6B9D" rx="5"/>
+    <text x="25" y="60" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="white" text-anchor="middle">A</text>
+    <!-- Block B -->
+    <rect x="45" y="10" width="50" height="50" fill="#87CEEB" rx="5"/>
+    <text x="70" y="40" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="white" text-anchor="middle">B</text>
+    <!-- Block C -->
+    <rect x="90" y="25" width="50" height="50" fill="#98D8C8" rx="5"/>
+    <text x="115" y="55" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="white" text-anchor="middle">C</text>
+  </g>
+
+  <!-- Colorful Flowers -->
+  <g transform="translate(500, 880)">
+    <circle cx="0" cy="0" r="18" fill="#FF1493"/>
+    <circle cx="35" cy="10" r="15" fill="#FFD700"/>
+    <circle cx="70" cy="5" r="16" fill="#9370DB"/>
+    <circle cx="105" cy="8" r="14" fill="#FF69B4"/>
+  </g>
+
+  <!-- Musical Notes (for Wesole Nutki - Musical Preschool) -->
+  <g transform="translate(400, 450)" fill="#9B72CB">
+    <ellipse cx="0" cy="30" rx="15" ry="12" />
+    <rect x="13" y="5" width="4" height="30"/>
+    <ellipse cx="17" cy="5" rx="10" ry="8" transform="rotate(-30 17 5)"/>
+  </g>
+  <g transform="translate(1300, 500)" fill="#FF69B4">
+    <ellipse cx="0" cy="25" rx="13" ry="10" />
+    <rect x="11" y="5" width="3.5" height="25"/>
+    <ellipse cx="14.5" cy="5" rx="9" ry="7" transform="rotate(25 14.5 5)"/>
+  </g>
+
+  <!-- Balloons -->
+  <g transform="translate(600, 300)">
+    <line x1="10" y1="80" x2="5" y2="150" stroke="#999" stroke-width="1.5"/>
+    <ellipse cx="10" cy="50" rx="25" ry="30" fill="#FF6B9D"/>
+    <ellipse cx="10" cy="45" rx="8" ry="12" fill="rgba(255,255,255,0.4)"/>
+  </g>
+  <g transform="translate(1450, 250)">
+    <line x1="12" y1="85" x2="8" y2="160" stroke="#999" stroke-width="1.5"/>
+    <ellipse cx="12" cy="55" rx="28" ry="33" fill="#87CEEB"/>
+    <ellipse cx="12" cy="48" rx="10" ry="14" fill="rgba(255,255,255,0.4)"/>
+  </g>
+
+  <!-- Butterflies -->
+  <g transform="translate(900, 380)" fill="#FFD700">
+    <ellipse cx="0" cy="0" rx="22" ry="14" transform="rotate(-35)"/>
+    <ellipse cx="28" cy="5" rx="22" ry="14" transform="rotate(35)"/>
+    <ellipse cx="14" cy="0" rx="5" ry="10" fill="#FF69B4"/>
+  </g>
+  <g transform="translate(1100, 420)" fill="#FF85C1">
+    <ellipse cx="0" cy="0" rx="20" ry="12" transform="rotate(-30)"/>
+    <ellipse cx="25" cy="4" rx="20" ry="12" transform="rotate(30)"/>
+    <ellipse cx="12.5" cy="0" rx="4" ry="8" fill="#9B72CB"/>
+  </g>
+
+  <!-- Heart shapes (for warmth and care) -->
+  <g transform="translate(300, 600)" fill="#FF69B4" opacity="0.7">
+    <path d="M 20,15 C 20,8 15,3 10,3 C 5,3 0,8 0,15 C 0,22 10,30 20,38 C 30,30 40,22 40,15 C 40,8 35,3 30,3 C 25,3 20,8 20,15 Z"/>
+  </g>
+  <g transform="translate(1600, 550)" fill="#FFB6C1" opacity="0.7">
+    <path d="M 15,12 C 15,7 12,3 8,3 C 4,3 0,7 0,12 C 0,17 8,23 15,29 C 22,23 30,17 30,12 C 30,7 26,3 22,3 C 18,3 15,7 15,12 Z"/>
+  </g>
+
+  <!-- Rainbow (subtle arc) -->
+  <path d="M 50 950 Q 960 350 1870 950" fill="none" stroke="#FF6B9D" stroke-width="18" opacity="0.25"/>
+  <path d="M 50 975 Q 960 375 1870 975" fill="none" stroke="#FFD700" stroke-width="18" opacity="0.25"/>
+  <path d="M 50 1000 Q 960 400 1870 1000" fill="none" stroke="#87CEEB" stroke-width="18" opacity="0.25"/>
+  <path d="M 50 1025 Q 960 425 1870 1025" fill="none" stroke="#E6A8D7" stroke-width="18" opacity="0.25"/>
+</svg>

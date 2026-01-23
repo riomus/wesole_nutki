@@ -1,0 +1,28 @@
+{
+  "category": "Uncategorized",
+  "description": "Remove Rounded Corners from Full-Width Sections\n\nUpdate the styling for all full-width sections to have square corners instead of rounded corners, starting with the counter-section.\n\nRequirements:\n- Remove border-radius styling from the counter-section component\n- Audit all other full-width sections in the application for rounded corners\n- Apply consistent square corner styling across all full-width sections\n- Ensure container or wrapper sections that span the full viewport width have border-radius: 0\n- Verify that sections with constrained widths retain their existing corner styling\n- Test responsive behavior to confirm styling applies correctly at all breakpoints",
+  "title": "",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": "Remove Rounded Corners from Full-Width Sections\n\nUpdate the styling for all full-width sections to have square corners instead of rounded corners, starting with the counter-section.\n\nRequirements:\n- Remove border-radius styling from the counter-section component\n- Audit all other full-width sections in the application for rounded corners\n- Apply consistent square corner styling across all full-width sections\n- Ensure container or wrapper sections that span the full viewport width have border-radius: 0\n- Verify that sections with constrained widths retain their existing corner styling\n- Test responsive behavior to confirm styling applies correctly at all breakpoints",
+  "status": "backlog",
+  "id": "feature-1769167923684-8al0n4fio",
+  "descriptionHistory": [
+    {
+      "description": "Remove Rounded Corners from Full-Width Sections\n\nUpdate the styling for all full-width sections to have square corners instead of rounded corners, starting with the counter-section.\n\nRequirements:\n- Remove border-radius styling from the counter-section component\n- Audit all other full-width sections in the application for rounded corners\n- Apply consistent square corner styling across all full-width sections\n- Ensure container or wrapper sections that span the full viewport width have border-radius: 0\n- Verify that sections with constrained widths retain their existing corner styling\n- Test responsive behavior to confirm styling applies correctly at all breakpoints",
+      "timestamp": "2026-01-23T11:32:03.904Z",
+      "source": "initial"
+    }
+  ]
+}

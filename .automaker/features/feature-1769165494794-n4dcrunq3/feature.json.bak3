@@ -1,0 +1,28 @@
+{
+  "category": "Uncategorized",
+  "description": "Standardize Typography and Visual Design for Single News Page\n\nUpdate the single news page to match the typography, spacing, and visual design patterns used throughout the rest of the application, creating a cohesive and polished user experience.\n\nRequirements:\n- Audit typography on single news page and compare with other pages (font families, sizes, weights, line heights)\n- Apply consistent heading hierarchy (h1, h2, h3) matching site-wide standards\n- Align text colors, link styles, and text formatting with global design system\n- Standardize spacing and layout (margins, padding, content width, white space)\n- Ensure visual elements (images, cards, buttons, dividers) match design patterns used elsewhere\n- Improve readability with appropriate line length, paragraph spacing, and contrast ratios\n- Add consistent styling for metadata (author, date, categories, tags)\n- Verify responsive behavior matches other pages across device sizes\n- Ensure accessibility standards are maintained (proper heading structure, color contrast, focus states)",
+  "title": "Standardize single news page design patterns",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "backlog",
+  "id": "feature-1769165494794-n4dcrunq3",
+  "descriptionHistory": [
+    {
+      "description": "Standardize Typography and Visual Design for Single News Page\n\nUpdate the single news page to match the typography, spacing, and visual design patterns used throughout the rest of the application, creating a cohesive and polished user experience.\n\nRequirements:\n- Audit typography on single news page and compare with other pages (font families, sizes, weights, line heights)\n- Apply consistent heading hierarchy (h1, h2, h3) matching site-wide standards\n- Align text colors, link styles, and text formatting with global design system\n- Standardize spacing and layout (margins, padding, content width, white space)\n- Ensure visual elements (images, cards, buttons, dividers) match design patterns used elsewhere\n- Improve readability with appropriate line length, paragraph spacing, and contrast ratios\n- Add consistent styling for metadata (author, date, categories, tags)\n- Verify responsive behavior matches other pages across device sizes\n- Ensure accessibility standards are maintained (proper heading structure, color contrast, focus states)",
+      "timestamp": "2026-01-23T10:51:35.133Z",
+      "source": "initial"
+    }
+  ]
+}

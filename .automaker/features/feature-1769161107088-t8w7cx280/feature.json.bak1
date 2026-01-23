@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Restore UI Design After Tailwind Migration\n\nFix visual and layout issues introduced during the migration to Tailwind CSS, ensuring the preschool website meets design standards with proper spacing, alignment, and visibility.\n\nRequirements:\n- Add visual separation between section elements (margins, borders, or background colors)\n- Fix hero image alignment to properly display at fullscreen/various viewport sizes\n- Restore menu visibility with appropriate contrast, positioning, and styling\n- Correct font casing on clickable elements (buttons, links, CTAs) to match design specs\n- Adjust padding and spacing on interactive elements for proper touch targets and visual balance\n- Ensure all changes maintain child-friendly, playful aesthetic appropriate for preschool audience\n- Test layout responsiveness across mobile, tablet, and desktop breakpoints\n- Verify color contrast meets accessibility standards for young children and parents\n\nEdge Cases to Consider:\n- Very wide screens (ultrawide monitors)\n- Mobile landscape orientation\n- Menu behavior on scroll (fixed/sticky positioning)\n- Interactive element states (hover, focus, active) for both mouse and touch users",
+  "title": "Fix Tailwind CSS design and layout issues",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "verified",
+  "id": "feature-1769161107088-t8w7cx280",
+  "descriptionHistory": [
+    {
+      "description": "Restore UI Design After Tailwind Migration\n\nFix visual and layout issues introduced during the migration to Tailwind CSS, ensuring the preschool website meets design standards with proper spacing, alignment, and visibility.\n\nRequirements:\n- Add visual separation between section elements (margins, borders, or background colors)\n- Fix hero image alignment to properly display at fullscreen/various viewport sizes\n- Restore menu visibility with appropriate contrast, positioning, and styling\n- Correct font casing on clickable elements (buttons, links, CTAs) to match design specs\n- Adjust padding and spacing on interactive elements for proper touch targets and visual balance\n- Ensure all changes maintain child-friendly, playful aesthetic appropriate for preschool audience\n- Test layout responsiveness across mobile, tablet, and desktop breakpoints\n- Verify color contrast meets accessibility standards for young children and parents\n\nEdge Cases to Consider:\n- Very wide screens (ultrawide monitors)\n- Mobile landscape orientation\n- Menu behavior on scroll (fixed/sticky positioning)\n- Interactive element states (hover, focus, active) for both mouse and touch users",
+      "timestamp": "2026-01-23T09:38:27.183Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T09:47:23.209Z"
+}

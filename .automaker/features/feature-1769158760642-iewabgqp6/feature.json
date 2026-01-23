@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Debug and Fix CMS External Media Library Configuration Error\n\nResolve the CMS configuration error preventing the system from loading due to a missing external media library registration.\n\nProblem Summary:\nThe CMS fails to load with error message: \"Missing external media library 'default'. Please use 'registerMediaLibrary' to register it.\"\n\nRequirements:\n- Locate and review the CMS configuration file (config.yml)\n- Identify where external media libraries should be registered\n- Verify if 'default' media library is defined in the configuration\n- Register the missing 'default' media library using the 'registerMediaLibrary' method\n- Ensure the media library configuration includes all required parameters (storage backend, upload paths, access credentials)\n- Verify the media library initialization occurs before CMS attempts to use it\n- Test CMS loading to confirm the error is resolved\n- Validate media upload/retrieval functionality works correctly after fix\n\nEdge Cases to Consider:\n- Check if other media libraries beyond 'default' are also missing\n- Verify media library dependencies are installed\n- Ensure file system permissions allow media storage access\n- Confirm storage service credentials (if using cloud storage) are valid",
+  "title": "Fix Missing CMS Default Media Library Registration",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "completed",
+  "id": "feature-1769158760642-iewabgqp6",
+  "descriptionHistory": [
+    {
+      "description": "Debug and Fix CMS External Media Library Configuration Error\n\nResolve the CMS configuration error preventing the system from loading due to a missing external media library registration.\n\nProblem Summary:\nThe CMS fails to load with error message: \"Missing external media library 'default'. Please use 'registerMediaLibrary' to register it.\"\n\nRequirements:\n- Locate and review the CMS configuration file (config.yml)\n- Identify where external media libraries should be registered\n- Verify if 'default' media library is defined in the configuration\n- Register the missing 'default' media library using the 'registerMediaLibrary' method\n- Ensure the media library configuration includes all required parameters (storage backend, upload paths, access credentials)\n- Verify the media library initialization occurs before CMS attempts to use it\n- Test CMS loading to confirm the error is resolved\n- Validate media upload/retrieval functionality works correctly after fix\n\nEdge Cases to Consider:\n- Check if other media libraries beyond 'default' are also missing\n- Verify media library dependencies are installed\n- Ensure file system permissions allow media storage access\n- Confirm storage service credentials (if using cloud storage) are valid",
+      "timestamp": "2026-01-23T08:59:20.867Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T09:10:28.322Z"
+}

@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Remove Footer Wave Component\n\nRemove the wave graphic or animation element from the footer section of the website.\n\nRequirements:\n- Locate the footer-wave component in the codebase\n- Remove all references to the wave element from the footer\n- Clean up any associated CSS/styling specific to the wave\n- Ensure footer layout remains intact after removal\n- Verify footer appears correctly across different screen sizes\n- Remove any unused image assets or animation files related to the wave",
+  "title": "Remove footer wave component",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "verified",
+  "id": "feature-1769162355010-ah4bkzu8o",
+  "descriptionHistory": [
+    {
+      "description": "Remove Footer Wave Component\n\nRemove the wave graphic or animation element from the footer section of the website.\n\nRequirements:\n- Locate the footer-wave component in the codebase\n- Remove all references to the wave element from the footer\n- Clean up any associated CSS/styling specific to the wave\n- Ensure footer layout remains intact after removal\n- Verify footer appears correctly across different screen sizes\n- Remove any unused image assets or animation files related to the wave",
+      "timestamp": "2026-01-23T09:59:15.041Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T10:02:30.433Z"
+}

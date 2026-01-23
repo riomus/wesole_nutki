@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Replace Bootstrap with Tailwind CSS\n\nRemove Bootstrap dependency and replace all Bootstrap styling with Tailwind CSS utility classes throughout the application.\n\nRequirements:\n- Remove Bootstrap from package dependencies and import statements\n- Install and configure Tailwind CSS with appropriate configuration file\n- Convert all Bootstrap component classes to Tailwind equivalents (buttons, forms, cards, modals, etc.)\n- Replace Bootstrap grid system with Tailwind's flexbox/grid utilities\n- Convert Bootstrap responsive breakpoints to Tailwind's responsive modifiers\n- Replace Bootstrap JavaScript components (modals, dropdowns, tooltips) with headless UI libraries or custom implementations\n- Ensure all existing UI functionality remains intact after migration\n- Verify responsive behavior across all breakpoints\n- Update any custom CSS that relies on Bootstrap variables or mixins\n- Test all pages and components for visual consistency and proper styling\n- Remove any unused CSS and optimize bundle size",
+  "title": "Migrate from Bootstrap to Tailwind CSS",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "in_progress",
+  "id": "feature-1769158784602-va0o53sxf",
+  "descriptionHistory": [
+    {
+      "description": "Replace Bootstrap with Tailwind CSS\n\nRemove Bootstrap dependency and replace all Bootstrap styling with Tailwind CSS utility classes throughout the application.\n\nRequirements:\n- Remove Bootstrap from package dependencies and import statements\n- Install and configure Tailwind CSS with appropriate configuration file\n- Convert all Bootstrap component classes to Tailwind equivalents (buttons, forms, cards, modals, etc.)\n- Replace Bootstrap grid system with Tailwind's flexbox/grid utilities\n- Convert Bootstrap responsive breakpoints to Tailwind's responsive modifiers\n- Replace Bootstrap JavaScript components (modals, dropdowns, tooltips) with headless UI libraries or custom implementations\n- Ensure all existing UI functionality remains intact after migration\n- Verify responsive behavior across all breakpoints\n- Update any custom CSS that relies on Bootstrap variables or mixins\n- Test all pages and components for visual consistency and proper styling\n- Remove any unused CSS and optimize bundle size",
+      "timestamp": "2026-01-23T08:59:44.914Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T09:08:28.607Z"
+}

@@ -1,0 +1,24 @@
+# Facilities Section Configuration
+enabled: true
+
+# Section header keys (from i18n)
+heading_key: about_facilities_heading
+subtitle_key: about_facilities_subtitle
+
+# Facility features
+items:
+  - title_key: about_facility_classrooms_title
+    description_key: about_facility_classrooms_desc
+    icon: book
+
+  - title_key: about_facility_playground_title
+    description_key: about_facility_playground_desc
+    icon: puzzle
+
+  - title_key: about_facility_kitchen_title
+    description_key: about_facility_kitchen_desc
+    icon: heart
+
+  - title_key: about_facility_rest_title
+    description_key: about_facility_rest_desc
+    icon: shield

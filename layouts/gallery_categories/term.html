@@ -1,0 +1,54 @@
+{{ define "main" }}
+{{/* Breadcrumb Navigation */}}
+{{ partial "breadcrumb.html" . }}
+
+<section class="py-5">
+  <div class="container">
+    <header class="mb-5">
+      <div class="d-flex align-items-center mb-3">
+        {{/* Category icon */}}
+        <span class="gallery-category-icon me-3">
+          {{ $categoryName := lower .Title }}
+          {{ if in $categoryName "event" }}🎉
+          {{ else if in $categoryName "wydarzen" }}🎉
+          {{ else if in $categoryName "wycieczk" }}🚌
+          {{ else if in $categoryName "trip" }}🚌
+          {{ else if in $categoryName "excursion" }}🚌
+          {{ else if in $categoryName "holiday" }}🎄
+          {{ else if in $categoryName "swiat" }}🎄
+          {{ else if in $categoryName "activ" }}🎨
+          {{ else if in $categoryName "zajec" }}🎨
+          {{ else if in $categoryName "rodzin" }}👨‍👩‍👧‍👦
+          {{ else if in $categoryName "family" }}👨‍👩‍👧‍👦
+          {{ else }}📷
+          {{ end }}
+        </span>
+        <h1 class="display-4 mb-0">{{ .Title }}</h1>
+      </div>
+      <p class="lead text-muted">
+        {{ len .Pages }} {{ if eq (len .Pages) 1 }}{{ i18n "gallery_singular" | default "gallery" }}{{ else }}{{ i18n "galleries_plural" | default "galleries" }}{{ end }}
+        {{ i18n "in_this_category" | default "in this category" }}
+      </p>
+    </header>
+
+    {{/* Category filter buttons */}}
+    {{ partial "gallery-category-filter.html" . }}
+
+    {{/* Use paginator for proper pagination */}}
+    {{ $paginator := .Paginate (.Pages.ByDate.Reverse) }}
+
+    {{ if $paginator.Pages }}
+    <div class="gallery-grid">
+      {{ range $paginator.Pages }}
+      {{ partial "gallery-card.html" . }}
+      {{ end }}
+    </div>
+
+    {{/* Custom Pagination */}}
+    {{ partial "pagination.html" $paginator }}
+    {{ else }}
+    <p class="text-muted">{{ i18n "no_galleries_in_category" | default "No galleries in this category yet." }}</p>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

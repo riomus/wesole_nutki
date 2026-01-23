@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Add Recruitment Announcement Section to Main Page\n\nCreate an eye-catching, visually prominent recruitment announcement section on the main page that displays information about kindergarten enrollment for \"Wesołe Nutki\" language and music preschool.\n\nContent Requirements:\n- Display heading \"REKRUTACJA\" prominently\n- Show announcement text: \"Trwa rekrutacja do naszego przedszkola językowo-muzycznego\"\n- Highlight key information: \"WESOŁE NUTKI zapraszają dzieci z rocznika 2022. Mamy również dwa miejsca dla dzieci z rocznika 2019\"\n- Include download link for application form (\"Karta zgłoszenia\") with options to download directly or navigate to documents section\n- Display contact information: phone number 71 343 18 99 and email przedszkole@wesolenutki.eu\n- End with clear \"ZAPRASZAMY!\" call-to-action\n\nDesign Requirements:\n- Position section prominently to immediately capture visitor attention above the fold or as hero section\n- Apply attention-grabbing visual treatment using colors, contrast, or background styling\n- Implement clear visual hierarchy with varied typography sizes and weights\n- Style the CTA button or link to be visually distinct and actionable\n- Use appropriate spacing and whitespace for readability and pleasant appearance\n- Consider using child-friendly design elements appropriate for preschool context (colors, shapes, friendly fonts)\n- Ensure responsive design that works well on mobile and desktop devices\n\nTechnical Requirements:\n- Integrate with CMS to make all text content editable without code changes\n- Make the following fields configurable: heading text, body paragraphs, contact phone number, contact email, download link URL, CTA text\n- Structure content fields logically in CMS for easy updating by non-technical staff\n- Ensure download link can be updated to point to current enrollment form\n- Allow for easy enabling/disabling of the entire section when recruitment period ends\n\nAccessibility Considerations:\n- Ensure sufficient color contrast for text readability\n- Make links and buttons keyboard accessible\n- Provide appropriate alt text for any decorative images\n- Use semantic HTML structure for screen readers",
+  "title": "Add recruitment announcement hero section with enrollment details",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "completed",
+  "id": "feature-1769164997999-anw140i20",
+  "descriptionHistory": [
+    {
+      "description": "Add Recruitment Announcement Section to Main Page\n\nCreate an eye-catching, visually prominent recruitment announcement section on the main page that displays information about kindergarten enrollment for \"Wesołe Nutki\" language and music preschool.\n\nContent Requirements:\n- Display heading \"REKRUTACJA\" prominently\n- Show announcement text: \"Trwa rekrutacja do naszego przedszkola językowo-muzycznego\"\n- Highlight key information: \"WESOŁE NUTKI zapraszają dzieci z rocznika 2022. Mamy również dwa miejsca dla dzieci z rocznika 2019\"\n- Include download link for application form (\"Karta zgłoszenia\") with options to download directly or navigate to documents section\n- Display contact information: phone number 71 343 18 99 and email przedszkole@wesolenutki.eu\n- End with clear \"ZAPRASZAMY!\" call-to-action\n\nDesign Requirements:\n- Position section prominently to immediately capture visitor attention above the fold or as hero section\n- Apply attention-grabbing visual treatment using colors, contrast, or background styling\n- Implement clear visual hierarchy with varied typography sizes and weights\n- Style the CTA button or link to be visually distinct and actionable\n- Use appropriate spacing and whitespace for readability and pleasant appearance\n- Consider using child-friendly design elements appropriate for preschool context (colors, shapes, friendly fonts)\n- Ensure responsive design that works well on mobile and desktop devices\n\nTechnical Requirements:\n- Integrate with CMS to make all text content editable without code changes\n- Make the following fields configurable: heading text, body paragraphs, contact phone number, contact email, download link URL, CTA text\n- Structure content fields logically in CMS for easy updating by non-technical staff\n- Ensure download link can be updated to point to current enrollment form\n- Allow for easy enabling/disabling of the entire section when recruitment period ends\n\nAccessibility Considerations:\n- Ensure sufficient color contrast for text readability\n- Make links and buttons keyboard accessible\n- Provide appropriate alt text for any decorative images\n- Use semantic HTML structure for screen readers",
+      "timestamp": "2026-01-23T10:43:18.038Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T11:03:13.517Z"
+}

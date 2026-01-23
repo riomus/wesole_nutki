@@ -1,0 +1,158 @@
+{{ define "main" }}
+{{/* Breadcrumb Navigation */}}
+{{ partial "breadcrumb.html" . }}
+
+<article class="news-article py-12 md:py-16 lg:py-20">
+  <div class="container">
+    <div class="flex justify-center">
+      <div class="w-full lg:w-4/5 xl:w-3/4">
+        {{/* Article Header */}}
+        <header class="article-header">
+          {{/* Categories */}}
+          {{ with .Params.categories }}
+          <div class="article-categories">
+            {{ range . }}
+            <a href="{{ "categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+            {{ end }}
+          </div>
+          {{ end }}
+
+          {{/* Title */}}
+          <h1>{{ .Title }}</h1>
+
+          {{/* Meta Information */}}
+          <div class="article-meta">
+            {{/* Publication Date */}}
+            {{ if not .Date.IsZero }}
+            <span class="article-date">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+              </svg>
+              <time datetime="{{ .Date.Format "2006-01-02" }}">{{ partial "format-date" .Date }}</time>
+            </span>
+            {{ end }}
+
+            {{/* Reading Time */}}
+            <span class="article-reading-time">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+              </svg>
+              {{ .ReadingTime }} {{ i18n "reading_time" | default "min read" }}
+            </span>
+          </div>
+        </header>
+
+        {{/* Featured Image */}}
+        {{ with .Params.featured_image }}
+        <figure class="article-featured-image">
+          {{ partial "responsive-image" (dict
+            "src" .
+            "alt" $.Title
+            "class" "w-full"
+            "sizes" "(max-width: 768px) 100vw, (max-width: 1024px) 80vw, 70vw"
+            "loading" "eager"
+            "context" $
+          ) }}
+        </figure>
+        {{ end }}
+
+        {{/* Article Content */}}
+        <div class="article-content">
+          {{ .Content }}
+        </div>
+
+        {{/* Tags */}}
+        {{ with .Params.tags }}
+        <div class="article-tags">
+          <span class="text-muted">{{ i18n "tags" | default "Tags" }}:</span>
+          {{ range . }}
+          <a href="{{ "tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+          {{ end }}
+        </div>
+        {{ end }}
+
+        {{/* Social Share Section */}}
+        <div class="article-share">
+          {{ partial "social-share.html" . }}
+        </div>
+
+        {{/* Article Navigation */}}
+        <nav class="article-navigation" aria-label="{{ i18n "article_navigation" | default "Article navigation" }}">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              {{ with .PrevInSection }}
+              <a href="{{ .Permalink }}" class="article-nav-link article-nav-prev">
+                <span class="article-nav-label">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                  </svg>
+                  {{ i18n "previous_article" | default "Previous article" }}
+                </span>
+                <span class="article-nav-title">{{ .Title | truncate 50 }}</span>
+              </a>
+              {{ end }}
+            </div>
+            <div class="text-right">
+              {{ with .NextInSection }}
+              <a href="{{ .Permalink }}" class="article-nav-link article-nav-next">
+                <span class="article-nav-label">
+                  {{ i18n "next_article" | default "Next article" }}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                  </svg>
+                </span>
+                <span class="article-nav-title">{{ .Title | truncate 50 }}</span>
+              </a>
+              {{ end }}
+            </div>
+          </div>
+        </nav>
+
+        {{/* Back Navigation */}}
+        <div class="article-back-nav">
+          <a href="{{ "news/" | relLangURL }}" class="btn btn-outline-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+            </svg>
+            {{ i18n "all_news" | default "All News" }}
+          </a>
+          <a href="{{ .Site.Home.Permalink }}" class="btn btn-outline-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z"/>
+            </svg>
+            {{ i18n "back_to_home" | default "Back to home" }}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+{{/* Related Posts Section */}}
+{{ partial "related-posts.html" . }}
+{{ end }}
+
+{{ define "scripts" }}
+<script>
+// Copy link functionality
+document.querySelectorAll('.social-share-copy').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var url = this.getAttribute('data-url');
+    var copyIcon = this.querySelector('.copy-icon');
+    var checkIcon = this.querySelector('.check-icon');
+
+    navigator.clipboard.writeText(url).then(function() {
+      copyIcon.style.display = 'none';
+      checkIcon.style.display = 'inline';
+
+      setTimeout(function() {
+        copyIcon.style.display = 'inline';
+        checkIcon.style.display = 'none';
+      }, 2000);
+    });
+  });
+});
+</script>
+{{ end }}

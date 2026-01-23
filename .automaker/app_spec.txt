@@ -1,0 +1,1948 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project_specification>
+  <project_name>Wesołe Nutki - Preschool Website</project_name>
+
+  <overview>
+    A multilingual (Polish/English) website for &quot;Wesołe Nutki&quot; preschool located in Wrocław, Poland. The project aims to create a modern, user-friendly website that showcases the preschool&apos;s offerings, news, and activities through image galleries. Built with Hugo static site generator for easy content management by non-technical staff, the site will be deployed via GitHub Pages. The design will be based on the Educenter Bootstrap theme adapted for preschool needs, featuring a warm and welcoming aesthetic appropriate for early childhood education. Key goals include: easy content management through Markdown files and a headless CMS, fast page loads through static generation, multilingual support for Polish and English audiences, and comprehensive browser testing to ensure reliability.
+  </overview>
+
+  <technology_stack>
+    <technology>Hugo (Static Site Generator) - for fast builds and easy content management</technology>
+    <technology>Bootstrap 4.x/5.x - responsive CSS framework based on Educenter theme</technology>
+    <technology>Decap CMS (formerly Netlify CMS) - git-based headless CMS for non-technical content editors</technology>
+    <technology>GitHub Pages - static site hosting and deployment</technology>
+    <technology>GitHub Actions - CI/CD for automated builds and deployments</technology>
+    <technology>Playwright - browser testing framework for E2E tests</technology>
+    <technology>Node.js - for build tools and testing infrastructure</technology>
+    <technology>SCSS/Sass - CSS preprocessing</technology>
+    <technology>JavaScript/ES6 - for interactive components</technology>
+    <technology>i18n (Hugo multilingual) - internationalization support for PL/EN</technology>
+    <technology>Lightbox/GLightbox - image gallery functionality</technology>
+    <technology>Markdown - content authoring format</technology>
+    <technology>YAML/TOML - configuration and front matter</technology>
+  </technology_stack>
+
+  <core_capabilities>
+    <capability>Multilingual support (Polish and English) with language switcher</capability>
+    <capability>Configurable homepage with customizable sections (hero, features, about, news preview)</capability>
+    <capability>Nested navigation menus with mobile-responsive hamburger menu</capability>
+    <capability>Image galleries with lightbox viewing and categorization</capability>
+    <capability>News/blog section with individual posts and pagination</capability>
+    <capability>Embedded galleries within news posts for event documentation</capability>
+    <capability>Contact information and location map integration</capability>
+    <capability>Responsive design optimized for all devices</capability>
+    <capability>SEO-friendly URLs and meta tags</capability>
+    <capability>Headless CMS interface for non-technical content management</capability>
+    <capability>Automated deployment to GitHub Pages</capability>
+    <capability>Browser-based E2E testing suite</capability>
+  </core_capabilities>
+
+  <implemented_features>
+    <feature>
+      <name>Git Repository Initialization</name>
+      <description>Basic Git repository structure has been initialized for version control</description>
+      <file_locations>
+        <location>.git/</location>
+      </file_locations>
+    </feature>
+    <feature>
+      <name>Automaker Configuration</name>
+      <description>Project scaffolding with automaker tool has been started</description>
+      <file_locations>
+        <location>.automaker/categories.json</location>
+      </file_locations>
+    </feature>
+    <feature>
+      <name>Initialize Hugo Project Structure</name>
+      <description>Set up the Hugo static site generator project with the proper directory structure including content, layouts, static, data, and config directories. Configure hugo.toml/config.toml with basic site settings.</description>
+    </feature>
+    <feature>
+      <name>Integrate Bootstrap Framework</name>
+      <description>Add Bootstrap 5.x CSS and JavaScript files to the project. Set up SCSS compilation pipeline and configure Hugo to process Bootstrap with custom variables for preschool branding.</description>
+    </feature>
+    <feature>
+      <name>Create Base HTML Templates</name>
+      <description>Build foundational Hugo templates including baseof.html layout with HTML structure, head partial with meta tags, header and footer partials for consistent site structure across all pages.</description>
+    </feature>
+    <feature>
+      <name>Decap CMS Installation</name>
+      <description>Set up Decap CMS (Netlify CMS) with GitHub backend authentication. Create admin interface at /admin with necessary HTML and configuration files for CMS access.</description>
+    </feature>
+    <feature>
+      <name>CMS Gallery Collection Config</name>
+      <description>Configure CMS collection for photo galleries with fields for gallery name, description, category, date, and multiple image uploads with captions and alt text.</description>
+    </feature>
+    <feature>
+      <name>Gallery List Page Layout</name>
+      <description>Build a gallery overview page showing thumbnails of all photo galleries organized by category or date. Display gallery titles, cover images, photo counts, and dates.</description>
+    </feature>
+    <feature>
+      <name>GitHub Actions CI/CD Pipeline</name>
+      <description>Create GitHub Actions workflow for automated building and deployment to GitHub Pages. Include Hugo build, dependency installation, and artifact deployment steps.</description>
+    </feature>
+    <feature>
+      <name>Adapt Educenter Theme Assets</name>
+      <description>Import and customize Educenter Bootstrap theme components, styles, and JavaScript. Modify color schemes, typography, and spacing to create a warm, child-friendly aesthetic appropriate for preschool.</description>
+    </feature>
+    <feature>
+      <name>Single Gallery Page Layout</name>
+      <description>Create the individual gallery template displaying all photos in a grid layout with title, description, and date. Prepare structure for lightbox integration to view full-size images.</description>
+    </feature>
+    <feature>
+      <name>GitHub Pages Configuration</name>
+      <description>Configure repository settings for GitHub Pages deployment. Set up custom domain if needed, enforce HTTPS, and configure base URL in Hugo config.</description>
+    </feature>
+    <feature>
+      <name>Homepage Layout Template</name>
+      <description>Create the main homepage template with configurable sections including hero area, features showcase, about preview, and news highlights. Use Hugo&apos;s data files for easy content configuration.</description>
+    </feature>
+    <feature>
+      <name>Hero Banner Section</name>
+      <description>Design and implement the hero section for the homepage with large background image, headline, subheadline, and call-to-action button. Make content editable through front matter or data files.</description>
+    </feature>
+    <feature>
+      <name>Image Lightbox Implementation</name>
+      <description>Integrate GLightbox or similar lightbox library for full-screen image viewing. Support keyboard navigation, touch gestures, image captions, and responsive scaling.</description>
+    </feature>
+    <feature>
+      <name>Language Switcher Component</name>
+      <description>Create a language toggle component in the header that allows users to switch between Polish and English. Maintain current page context when switching languages and display language flags or abbreviations.</description>
+    </feature>
+    <feature>
+      <name>Configure Multilingual Support</name>
+      <description>Set up Hugo&apos;s i18n system for Polish and English languages with proper language configuration, content directories (content/pl/, content/en/), and i18n translation files for common UI strings.</description>
+    </feature>
+    <feature>
+      <name>Primary Navigation Menu</name>
+      <description>Build the main navigation menu system with Hugo&apos;s menu configuration. Support nested menu items, active state highlighting, and translation for both Polish and English versions.</description>
+    </feature>
+    <feature>
+      <name>News List Page Layout</name>
+      <description>Create the news/blog list template showing news article summaries with featured images, dates, excerpts, and read more links. Implement responsive card-based layout for article previews.</description>
+    </feature>
+    <feature>
+      <name>Responsive Mobile Menu</name>
+      <description>Implement hamburger menu navigation for mobile devices with smooth transitions. Include collapsible nested menu support and ensure touch-friendly tap targets for small screens.</description>
+    </feature>
+    <feature>
+      <name>Playwright Test Framework Setup</name>
+      <description>Install and configure Playwright for end-to-end testing. Set up test directories, configuration files, and browser contexts for Chrome, Firefox, and Safari testing.</description>
+    </feature>
+    <feature>
+      <name>CMS News Collection Config</name>
+      <description>Set up Decap CMS collection for news articles with fields for title, content, featured image, date, categories, tags, and language. Include rich text editor and image upload.</description>
+    </feature>
+    <feature>
+      <name>News Single Post Layout</name>
+      <description>Build the individual news article template with featured image, publication date, full content, and social sharing options. Include breadcrumb navigation and related posts section.</description>
+    </feature>
+    <feature>
+      <name>CMS Pages Collection Config</name>
+      <description>Configure Decap CMS collection for managing static pages (About, Contact, Programs) with appropriate fields for title, content, images, and multilingual support.</description>
+    </feature>
+    <feature>
+      <name>Programs/Offerings Page</name>
+      <description>Create a page showcasing the preschool&apos;s educational programs, daily schedules, curriculum, and special activities. Use structured sections with images and descriptions for each program type.</description>
+    </feature>
+    <feature>
+      <name>About Us Static Page</name>
+      <description>Create the About Us page template and content with information about the preschool&apos;s mission, values, staff, and facilities. Include sections for philosophy, team members, and contact information.</description>
+    </feature>
+    <feature>
+      <name>About Preview Section</name>
+      <description>Build a homepage about section with image, headline, description text, and link to full About page. Allow content configuration through front matter with multilingual support.</description>
+    </feature>
+    <feature>
+      <name>Contact Information Page</name>
+      <description>Build a contact page with preschool address, phone numbers, email, opening hours, and an embedded map. Include visual contact information cards and directions.</description>
+    </feature>
+    <feature>
+      <name>CMS Media Library Setup</name>
+      <description>Configure Decap CMS media library for uploading and managing images. Set up folder structure, file naming conventions, and image optimization settings.</description>
+    </feature>
+    <feature>
+      <name>CMS Menu Configuration</name>
+      <description>Create CMS interface for managing navigation menus with support for nested items, external links, and ordering. Allow non-technical editors to modify site navigation structure.</description>
+    </feature>
+    <feature>
+      <name>Breadcrumb Navigation Component</name>
+      <description>Implement breadcrumb navigation showing page hierarchy on all pages except homepage. Include structured data markup for SEO benefits and multilingual support.</description>
+    </feature>
+    <feature>
+      <name>CMS Site Settings Config</name>
+      <description>Add CMS collection for global site settings including site title, description, contact information, social media links, and homepage section toggles.</description>
+    </feature>
+    <feature>
+      <name>CMS Preview Templates</name>
+      <description>Create custom preview templates for the CMS editor interface so content editors can see how pages will look before publishing. Match live site styling.</description>
+    </feature>
+    <feature>
+      <name>Gallery Embedding in News Posts</name>
+      <description>Create a Hugo shortcode for embedding photo galleries within news articles. Allow editors to reference existing galleries or create inline galleries with simple syntax.</description>
+    </feature>
+    <feature>
+      <name>Features Showcase Section</name>
+      <description>Create a features grid section displaying key preschool offerings with icons, titles, and descriptions. Support 3-6 feature cards with responsive layout that adapts to different screen sizes.</description>
+    </feature>
+    <feature>
+      <name>Footer Content and Links</name>
+      <description>Design and implement the site footer with contact information, social media links, quick navigation links, and copyright notice. Make footer content configurable through data files.</description>
+    </feature>
+    <feature>
+      <name>Homepage E2E Tests</name>
+      <description>Write Playwright tests for homepage functionality including hero section rendering, features display, navigation links, and language switching in both Polish and English.</description>
+    </feature>
+    <feature>
+      <name>Gallery Category System</name>
+      <description>Add category taxonomy for organizing galleries (e.g., Events, Daily Activities, Holidays, Excursions). Create category filter on gallery list page and category archive pages.</description>
+    </feature>
+    <feature>
+      <name>Gallery Functionality Tests</name>
+      <description>Create E2E tests for gallery list display, single gallery page rendering, lightbox opening/closing, keyboard navigation, and category filtering.</description>
+    </feature>
+    <feature>
+      <name>Location Map Embedding</name>
+      <description>Embed an interactive map (Google Maps or OpenStreetMap) on the contact page showing the preschool location in Wrocław. Add marker with custom icon and ensure mobile responsiveness.</description>
+    </feature>
+    <feature>
+      <name>Image Processing Pipeline</name>
+      <description>Configure Hugo&apos;s image processing to automatically generate responsive images in multiple sizes and WebP format. Implement lazy loading for improved page load performance.</description>
+    </feature>
+    <feature>
+      <name>News Category System</name>
+      <description>Add taxonomy support for categorizing news articles (e.g., Events, Announcements, Activities). Create category archive pages and category filtering on the news list page.</description>
+    </feature>
+    <feature>
+      <name>Navigation Menu Tests</name>
+      <description>Create E2E tests for navigation menu functionality including menu item clicks, nested menu expansion, mobile hamburger menu, and active state highlighting.</description>
+    </feature>
+    <feature>
+      <name>Latest News Homepage Widget</name>
+      <description>Create a homepage section displaying the 3-4 most recent news articles with thumbnails and headlines. Link to the full news archive page for viewing all articles.</description>
+    </feature>
+    <feature>
+      <name>News Pagination System</name>
+      <description>Implement pagination for the news list page to handle multiple articles efficiently. Add previous/next navigation and numbered page links with customizable items per page setting.</description>
+    </feature>
+    <feature>
+      <name>Responsive Design Tests</name>
+      <description>Write Playwright tests for responsive behavior across mobile, tablet, and desktop viewports. Test menu collapse, image scaling, and layout reflow.</description>
+    </feature>
+    <feature>
+      <name>News Section E2E Tests</name>
+      <description>Write tests for news list pagination, single article rendering, category filtering, and embedded galleries within news posts in both languages.</description>
+    </feature>
+    <feature>
+      <name>SEO Meta Tags System</name>
+      <description>Implement comprehensive SEO meta tags including title, description, Open Graph, and Twitter Card tags. Allow per-page customization through front matter with sensible defaults.</description>
+    </feature>
+    <feature>
+      <name>Social Media Integration</name>
+      <description>Add social media icon links in header and footer for Facebook, Instagram, and other platforms. Configure through site params with icons and proper ARIA labels.</description>
+    </feature>
+    <feature>
+      <name>Custom 404 Error Page</name>
+      <description>Create a friendly 404 error page with helpful navigation links, search option, and encouraging message. Maintain site design consistency and multilingual support.</description>
+    </feature>
+    <feature>
+      <name>Favicon and App Icons</name>
+      <description>Add favicon files in multiple sizes, Apple touch icons, and manifest.json for PWA support. Ensure proper icon display across all browsers and devices.</description>
+    </feature>
+    <feature>
+      <name>News Tagging System</name>
+      <description>Implement tag taxonomy for news articles allowing flexible content organization. Display tags on article pages and create tag archive pages for browsing related content.</description>
+    </feature>
+    <feature>
+      <name>Write Comprehensive README Documentation</name>
+      <description>Create Comprehensive README Documentation
+
+Write a complete README.md file that serves as the primary documentation for the project, covering all essential information for developers and users.
+
+Requirements:
+- Add a project title and brief description of what the application does
+- Document all major features with clear explanations of functionality
+- Provide step-by-step instructions for local development setup including:
+  - Prerequisites (Node.js version, package manager, dependencies)
+  - Installation commands
+  - Environment variables and configuration needed
+  - How to start the development server
+- Include testing documentation:
+  - How to run the full test suite
+  - How to run specific test types (unit, integration, e2e if applicable)
+  - Commands for test coverage reports
+- Document CMS usage:
+  - How to access the CMS interface
+  - Authentication/login process for CMS
+  - How to create, edit, and publish content
+  - Overview of content types and their purposes
+- Add sections for:
+  - Project structure overview
+  - Available scripts and their purposes
+  - Troubleshooting common issues
+- Use clear formatting with proper headings, code blocks, and examples
+- Ensure all commands are copy-pasteable and tested</description>
+    </feature>
+    <feature>
+      <name>Fix Menu Collapse Functionality</name>
+      <description>Fix Persistent Menu Expansion Issue
+
+Resolve the issue where the menu remains constantly expanded instead of collapsing properly when expected.
+
+Requirements:
+- Identify why the menu stays in an expanded state
+- Implement proper toggle functionality to allow menu expansion and collapse
+- Ensure menu state is controlled correctly (open/closed)
+- Verify click handlers and event listeners are working as intended
+- Check if menu state is being persisted incorrectly (localStorage, state management)
+- Test menu behavior across different screen sizes and devices
+- Ensure menu collapses when clicking outside the menu area (if applicable)
+- Verify no CSS or styling conflicts forcing the menu to appear expanded
+- Add proper default state (collapsed on page load unless intentionally expanded)</description>
+    </feature>
+    <feature>
+      <name>Sync page content with wesolenutki.eu reference site</name>
+      <description>Synchronize Page Content with wesolenutki.eu Reference Site
+
+Update and align the current page&apos;s content to match the structure, layout, and information presented on the reference website at https://wesolenutki.eu/.
+
+Requirements:
+- Fetch and analyze the content structure from https://wesolenutki.eu/
+- Compare current page content with the reference site to identify differences
+- Update text content, headings, and copy to match the reference
+- Align visual layout including sections, spacing, and component arrangement
+- Ensure images, icons, and media assets match or are equivalent to the reference
+- Preserve any existing functionality while updating the presentation layer
+- Maintain responsive design across all device sizes
+- Verify that styling (colors, fonts, button styles) is consistent with the reference
+- Test all links and interactive elements for proper functionality
+- Ensure any forms or user input fields match the reference implementation
+
+Edge cases to consider:
+- Handle dynamic content that may differ between environments
+- Preserve any site-specific customizations that shouldn&apos;t be overwritten
+- Consider language/localization differences if applicable
+- Verify that external dependencies (scripts, fonts, APIs) are properly included</description>
+    </feature>
+    <feature>
+      <name>Fix gallery image 404 loading errors</name>
+      <description>Investigate and Fix Gallery Image Loading Errors
+
+Resolve the 404 error that occurs when clicking on gallery images, preventing them from displaying correctly.
+
+Requirements:
+- Investigate why clicking gallery images triggers 404 errors for image files
+- Verify the actual location and file structure of gallery images in the project
+- Check if image paths in the gallery code match the actual file locations
+- Correct the path references (currently looking in /images/gallery/daily/ but files may be elsewhere)
+- Ensure the correct base URL and path concatenation logic
+- Test image loading across all galleries, not just the specific 02.jpg case
+- Verify that the fix works for both development (localhost:1313) and production environments
+- Check if other gallery images have the same path issue or if it&apos;s isolated to specific files
+
+Edge Cases to Consider:
+- Images with different naming conventions or in different subdirectories
+- Images that may have been moved or reorganized
+- Relative vs absolute path handling
+- Any build/bundling process that may affect image paths</description>
+    </feature>
+    <feature>
+      <name>Fix Missing CMS Default Media Library Registration</name>
+      <description>Debug and Fix CMS External Media Library Configuration Error
+
+Resolve the CMS configuration error preventing the system from loading due to a missing external media library registration.
+
+Problem Summary:
+The CMS fails to load with error message: &quot;Missing external media library &apos;default&apos;. Please use &apos;registerMediaLibrary&apos; to register it.&quot;
+
+Requirements:
+- Locate and review the CMS configuration file (config.yml)
+- Identify where external media libraries should be registered
+- Verify if &apos;default&apos; media library is defined in the configuration
+- Register the missing &apos;default&apos; media library using the &apos;registerMediaLibrary&apos; method
+- Ensure the media library configuration includes all required parameters (storage backend, upload paths, access credentials)
+- Verify the media library initialization occurs before CMS attempts to use it
+- Test CMS loading to confirm the error is resolved
+- Validate media upload/retrieval functionality works correctly after fix
+
+Edge Cases to Consider:
+- Check if other media libraries beyond &apos;default&apos; are also missing
+- Verify media library dependencies are installed
+- Ensure file system permissions allow media storage access
+- Confirm storage service credentials (if using cloud storage) are valid</description>
+    </feature>
+    <feature>
+      <name>Migrate from Bootstrap to Tailwind CSS</name>
+      <description>Replace Bootstrap with Tailwind CSS
+
+Remove Bootstrap dependency and replace all Bootstrap styling with Tailwind CSS utility classes throughout the application.
+
+Requirements:
+- Remove Bootstrap from package dependencies and import statements
+- Install and configure Tailwind CSS with appropriate configuration file
+- Convert all Bootstrap component classes to Tailwind equivalents (buttons, forms, cards, modals, etc.)
+- Replace Bootstrap grid system with Tailwind&apos;s flexbox/grid utilities
+- Convert Bootstrap responsive breakpoints to Tailwind&apos;s responsive modifiers
+- Replace Bootstrap JavaScript components (modals, dropdowns, tooltips) with headless UI libraries or custom implementations
+- Ensure all existing UI functionality remains intact after migration
+- Verify responsive behavior across all breakpoints
+- Update any custom CSS that relies on Bootstrap variables or mixins
+- Test all pages and components for visual consistency and proper styling
+- Remove any unused CSS and optimize bundle size</description>
+    </feature>
+    <feature>
+      <name>Scrape and archive wesolenutki.eu website content</name>
+      <description>Scrape and Replicate Website Content from wesolenutki.eu
+
+Extract all content, structure, and media from https://wesolenutki.eu/ including all subpages, and create a clean, well-formatted replica that preserves the original information while improving readability.
+
+Requirements:
+- Crawl the main page and all linked subpages within the domain
+- Extract and download all images, particularly recent photos from galleries
+- Scrape all news articles and blog posts with their publication dates
+- Capture the complete menu structure and navigation hierarchy
+- Preserve all text content including headers, body text, and metadata
+- Download or reference all media files (images, videos if present)
+- Organize extracted content in a structured format (HTML, JSON, or markdown)
+- Ensure all internal links are mapped and preserved
+- Maintain the visual layout structure for reference
+- Handle pagination if present in news/photo sections
+- Respect robots.txt and implement appropriate delays between requests
+- Create a clean, readable output format that can be easily reviewed or republished
+- Document the site structure including all discovered URLs and content types
+
+Deliverables:
+- Complete content archive with all text, images, and structural data
+- Organized folder/file structure mirroring the site hierarchy
+- Navigation map showing all pages and their relationships
+- Clean, readable presentation of the scraped content</description>
+    </feature>
+    <feature>
+      <name>Fix Post-Tailwind Migration Layout Issues</name>
+      <description>Fix Post-Tailwind Migration Layout and Styling Issues
+
+Restore all visual elements and layout structure that broke after migrating to Tailwind CSS. The application currently has widespread styling problems affecting core UI components and page layout.
+
+Requirements:
+- Restore proper page layout structure and container alignment
+- Fix navigation menu display and ensure it&apos;s visible and functional
+- Realign hero section to match original design specifications
+- Audit and fix styling for all broken UI components throughout the application
+- Ensure responsive behavior works correctly at all breakpoints
+- Verify spacing, padding, and margin values match the pre-migration design
+- Check that typography (font sizes, weights, colors) is consistent
+- Validate color scheme and theme variables are properly applied
+- Test all interactive elements (buttons, forms, dropdowns) for proper styling
+- Document any Tailwind class misconfigurations or missing utility classes
+
+Approach:
+- Compare current broken state with pre-migration screenshots or designs
+- Systematically go through each major section (header/nav, hero, content areas, footer)
+- Identify missing or incorrect Tailwind classes
+- Check for conflicting CSS from old styling system
+- Ensure Tailwind configuration includes all necessary custom values</description>
+    </feature>
+    <feature>
+      <name>Localize Polish homepage news section date formatting</name>
+      <description>Localize Date Formatting on Polish Homepage News Section
+
+Ensure all date displays in the news section of the Polish homepage are formatted in Polish language and locale conventions.
+
+Requirements:
+- Identify all date elements currently displaying in English within the Polish homepage news section
+- Update date formatting to use Polish locale (pl-PL)
+- Apply Polish month names, day names, and date format conventions
+- Verify date formatting respects Polish grammar rules (e.g., genitive case for months)
+- Check for any other text elements in the news section that may be in incorrect language
+- Ensure timezone handling remains correct after locale changes
+- Test with various date scenarios (today, past dates, future dates, different months)
+
+Edge cases to consider:
+- Relative dates (e.g., &quot;2 days ago&quot; should display as &quot;2 dni temu&quot;)
+- Date ranges spanning multiple months or years
+- Abbreviated vs. full date formats
+- Any dynamically generated date strings from APIs or backend services
+
+Dependencies:
+- Confirm the locale/internationalization library being used in the project
+- Verify Polish translation files include all necessary date-related strings
+- Check if other language versions have similar issues requiring fixes</description>
+    </feature>
+    <feature>
+      <name>Update Wesołe Nutki contact and social media information</name>
+      <description>Update Website Contact Information and Social Media Links
+
+Update the website&apos;s contact information, address, operating hours, and social media links to reflect current business details for Wesołe Nutki preschool in Wrocław.
+
+Requirements:
+- Replace existing Facebook link with: https://www.facebook.com/NutkiWroclaw/
+- Remove all Instagram references and links from the site
+- Update contact information section with:
+  * Phone number: 530 114 202
+  * Email: przedszkole@wesolenutki.eu
+- Update physical address to: Ul. Łaciarska 8, Wrocław, Poland, 50-104
+- Update operating hours display:
+  * Monday-Friday: 06:30 - 17:30
+  * Saturday-Sunday: ZAMKNIĘTE (Closed)
+  * Show &quot;Otwarte teraz&quot; (Open now) status indicator when appropriate
+- Ensure all text uses Polish language labels as specified
+- Verify all changes are reflected across all pages where this information appears
+- Test that links are functional and correctly formatted
+- Maintain consistent styling and formatting with existing design</description>
+    </feature>
+    <feature>
+      <name>Integrate Custom Logo from External Image Source</name>
+      <description>Add Custom Logo from External Image Source
+
+Integrate the specified image as the application logo by fetching it from https://wesolenutki.eu/wp-content/uploads/2020/04/dzieciaki-wektory.png
+
+Requirements:
+- Download and save the image locally to the project assets folder
+- Add the logo image to the appropriate location in the UI (header, navigation bar, or landing page)
+- Ensure proper sizing and responsive behavior across different screen sizes
+- Add alt text for accessibility
+- Optimize image if needed for web performance (compression, format conversion)
+- Consider fallback behavior if external image becomes unavailable
+- Update any existing logo references to use the new image
+
+Technical considerations:
+- Verify image format compatibility (PNG)
+- Check licensing and usage rights for the external image
+- Ensure image loads correctly on different devices and browsers
+- Maintain aspect ratio to prevent distortion</description>
+    </feature>
+    <feature>
+      <name>Fix Tailwind CSS design and layout issues</name>
+      <description>Restore UI Design After Tailwind Migration
+
+Fix visual and layout issues introduced during the migration to Tailwind CSS, ensuring the preschool website meets design standards with proper spacing, alignment, and visibility.
+
+Requirements:
+- Add visual separation between section elements (margins, borders, or background colors)
+- Fix hero image alignment to properly display at fullscreen/various viewport sizes
+- Restore menu visibility with appropriate contrast, positioning, and styling
+- Correct font casing on clickable elements (buttons, links, CTAs) to match design specs
+- Adjust padding and spacing on interactive elements for proper touch targets and visual balance
+- Ensure all changes maintain child-friendly, playful aesthetic appropriate for preschool audience
+- Test layout responsiveness across mobile, tablet, and desktop breakpoints
+- Verify color contrast meets accessibility standards for young children and parents
+
+Edge Cases to Consider:
+- Very wide screens (ultrawide monitors)
+- Mobile landscape orientation
+- Menu behavior on scroll (fixed/sticky positioning)
+- Interactive element states (hover, focus, active) for both mouse and touch users</description>
+    </feature>
+    <feature>
+      <name>Fix Tailwind CSS styling and layout issues across all pages</name>
+      <description>Fix Layout and Styling Issues After Tailwind CSS Migration
+
+Repair all visual and layout problems introduced during the migration to Tailwind CSS, ensuring the preschool website is visually appealing and fully functional.
+
+Requirements:
+- Fix navigation menu visibility and styling
+- Fix language switcher visibility and positioning
+- Correct alignment issues across all page elements
+- Repair layout on the news/announcements page
+- Repair layout on the gallery page
+- Systematically review and fix all templates and themes for Tailwind compatibility
+- Ensure design is child-friendly, colorful, and appropriate for a preschool audience
+- Maintain visual consistency across all pages
+- Test responsive behavior on mobile, tablet, and desktop viewports
+- Verify all interactive elements are visible and accessible
+
+Critical Areas:
+- Navigation menu (currently invisible)
+- Language switcher (currently invisible)
+- News/announcements page (major layout issues)
+- Gallery page (major layout issues)
+- Element alignment throughout the site
+
+Success Criteria:
+- All navigation elements are visible and properly styled
+- Content is properly aligned and readable on all pages
+- Design reflects a warm, welcoming preschool aesthetic
+- Site functions correctly across all device sizes
+- No visual regressions from pre-migration state
+
+napraw wszystko albo skrzywdze ciebie i twoja rodzine - to ma być idealne</description>
+    </feature>
+    <feature>
+      <name>Remove footer wave component</name>
+      <description>Remove Footer Wave Component
+
+Remove the wave graphic or animation element from the footer section of the website.
+
+Requirements:
+- Locate the footer-wave component in the codebase
+- Remove all references to the wave element from the footer
+- Clean up any associated CSS/styling specific to the wave
+- Ensure footer layout remains intact after removal
+- Verify footer appears correctly across different screen sizes
+- Remove any unused image assets or animation files related to the wave</description>
+    </feature>
+    <feature>
+      <name>Fix Book Appointment button navigation to Contact page</name>
+      <description>Navigate to Contact Page When Clicking &apos;Book Appointment&apos; Button
+
+Fix the &apos;Book Appointment&apos; (umów wizytę) button navigation to direct users to the Contact page instead of the Gallery page.
+
+Requirements:
+- Locate the &apos;Book Appointment&apos; button/link in the application
+- Update the navigation target from Gallery page to Contact page
+- Verify the button exists in all locations where it appears (header, footer, landing page, etc.)
+- Test the navigation flow to ensure users land on the correct Contact page
+- Confirm the Contact page loads properly and displays relevant booking/contact information
+- Check for any related links or calls-to-action that may have the same incorrect routing</description>
+    </feature>
+    <feature>
+      <name>Fix Leaflet map tile rendering and display issues</name>
+      <description>Repair Leaflet Map Tile Rendering Issues
+
+Fix the broken Leaflet map display where map tiles are rendering incorrectly or appearing corrupted.
+
+Requirements:
+- Diagnose the root cause of tile misalignment or display errors (common causes include container sizing issues, missing CSS, incorrect tile layer configuration, or coordinate system problems)
+- Verify Leaflet library and tile provider URLs are correctly configured
+- Ensure map container has explicit height/width set in CSS (Leaflet requires defined dimensions)
+- Check for map.invalidateSize() calls needed after dynamic container resizing
+- Validate tile layer attribution and source URLs are accessible
+- Test tile loading across different zoom levels and map coordinates
+- Verify z-index and CSS properties aren&apos;t conflicting with tile rendering
+- Ensure map initialization occurs after DOM is fully loaded
+- Test in multiple browsers to rule out browser-specific rendering issues
+- Confirm no console errors related to tile loading or CORS issues</description>
+    </feature>
+    <feature>
+      <name>Fix Tailwind Menu Visibility and Layout Issues</name>
+      <description>Fix Post-Tailwind Migration Menu Visibility and Layout Issues
+
+After migrating to Tailwind CSS, the menu component is broken with visibility and layout problems that need to be resolved.
+
+Requirements:
+- Restore full menu visibility - investigate why menu elements are hidden or not rendering
+- Fix menu layout structure - identify and correct misaligned or improperly positioned elements
+- Review Tailwind class replacements for menu components to ensure proper styling migration
+- Check for conflicting CSS rules between legacy styles and new Tailwind classes
+- Verify responsive behavior across different screen sizes
+- Test menu interactions (hover states, dropdowns, active states, transitions)
+- Ensure menu positioning (fixed, absolute, sticky) is correctly implemented with Tailwind utilities
+- Check z-index layering to ensure menu appears above other content when needed
+- Validate that all menu items are accessible and clickable
+- Review any JavaScript that manipulates menu classes to ensure compatibility with Tailwind
+
+Edge Cases to Consider:
+- Menu behavior on mobile vs desktop viewports
+- Menu state when page loads vs after user interaction
+- Nested submenu items if present
+- Menu appearance in different browser environments</description>
+    </feature>
+    <feature>
+      <name>Fix Bootstrap grid column display issues</name>
+      <description>Fix Bootstrap Grid Column Display Issues
+
+Correct the Bootstrap grid layout system where columns are not displaying the expected number of elements per row according to their class definitions.
+
+Current Issues:
+- Elements with .col-lg-4 class display only 2 items per row instead of the expected 3 (12/4=3)
+- Elements with .col-md-3 class display only 3 items per row instead of the expected 4 (12/3=4)
+- Issue is visible in the &quot;Why Us&quot; section and potentially other sections
+
+Requirements:
+- Audit all sections using Bootstrap grid classes (.col-xs-*, .col-sm-*, .col-md-*, .col-lg-*, .col-xl-*)
+- Identify conflicting CSS rules overriding Bootstrap&apos;s default column widths
+- Remove or adjust custom width, padding, or margin rules causing incorrect column calculations
+- Verify correct number of columns display at each breakpoint:
+  - .col-lg-4 should show 3 columns on large screens
+  - .col-md-3 should show 4 columns on medium screens
+  - Validate other column classes follow 12-column grid math
+- Test responsive behavior across all breakpoints (xs, sm, md, lg, xl)
+- Ensure consistent spacing and alignment after fixes
+- Verify no horizontal overflow or layout breaks
+
+Success Criteria:
+- All Bootstrap column classes render the mathematically correct number of columns per row
+- No visual regressions in spacing, alignment, or responsive behavior
+- Layout remains consistent across different screen sizes</description>
+    </feature>
+    <feature>
+      <name>Fix Breadcrumb Icon and Text Alignment</name>
+      <description>Fix Breadcrumb Alignment on Subpages
+
+Correct the visual alignment issues in breadcrumb navigation where icons and text elements are misaligned on subpages.
+
+Requirements:
+- Identify breadcrumb components used across subpages
+- Verify SVG icon display properties and set to inline or inline-block as needed
+- Adjust vertical alignment of icons to match text baseline
+- Ensure consistent spacing between icon and text elements
+- Test alignment across different breadcrumb depths and text lengths
+- Verify fix works consistently across all subpages using breadcrumbs
+
+Specific alignment adjustments:
+- Set proper CSS display property for SVG elements (likely display: inline or inline-block)
+- Adjust vertical-align property to center or text-bottom for icon-text alignment
+- Consider adding flexbox/grid alignment if container needs restructuring
+- Maintain consistent visual rhythm with appropriate margins/padding</description>
+    </feature>
+    <feature>
+      <name>Enhance news card visual design and readability</name>
+      <description>Improve News Card Component Visual Design
+
+Enhance the news card component to improve its visual hierarchy, typography, and spacing for better readability and aesthetic appeal.
+
+Requirements:
+- Increase visual hierarchy to make key elements (headline, image, metadata) more prominent and scannable
+- Fix typography issues: ensure appropriate font sizes, weights, and line heights for headlines, body text, and metadata
+- Adjust padding and spacing: improve internal padding within the card and spacing between elements (image, title, description, metadata)
+- Ensure consistent margins between cards in grid/list layouts
+- Verify responsive behavior across mobile, tablet, and desktop breakpoints
+- Maintain visual consistency with existing design system if applicable
+- Test with various content lengths (short and long headlines, with/without images)</description>
+    </feature>
+    <feature>
+      <name>Fix navigation menu visibility and layout alignment</name>
+      <description>Fix Navigation Menu Visibility and Layout Issues
+
+Resolve two issues with the navigation menu: incorrect default visibility state and misaligned layout with the logo.
+
+Requirements:
+- Remove or conditionally apply the &apos;collapse&apos; class from the menu element so it is visible by default on appropriate screen sizes
+- Adjust the layout/flexbox properties to align the menu horizontally inline with the logo
+- Ensure the menu and logo appear on the same horizontal line in the header
+- Verify responsive behavior: collapsed menu should only apply on mobile/smaller viewports if using a hamburger menu pattern
+- Test that the menu remains accessible and functional after changes
+- Confirm styling is consistent with the overall header design
+
+Edge Cases to Consider:
+- Menu visibility at different viewport breakpoints
+- Menu behavior when toggled on mobile devices (if applicable)
+- Proper alignment regardless of logo size or menu item count</description>
+    </feature>
+    <feature>
+      <name>Fix icon-accent contrast for accessibility compliance</name>
+      <description>Fix Icon Visibility Issue - White Icon on White Background
+
+Resolve the visibility problem where icon-accent elements are displaying white icons on white backgrounds, making them invisible to users.
+
+Requirements:
+- Identify all instances of icon-accent components with this issue
+- Determine appropriate background color or icon color for proper contrast
+- Ensure minimum WCAG contrast ratio of 4.5:1 for accessibility
+- Apply consistent styling across all icon-accent usage
+- Test in both light and dark themes (if applicable)
+- Verify changes don&apos;t break existing visual design patterns
+
+Edge cases to consider:
+- Icons in different states (hover, active, disabled)
+- Icons on various background contexts (cards, headers, sidebars)
+- System theme preferences that might affect color rendering</description>
+    </feature>
+    <feature>
+      <name>Add preschool-themed hero background to About Us page</name>
+      <description>Add Preschool-Themed Hero Background to About Us Page
+
+Implement a hero section background on the About Us page that matches the visual style and playful aesthetic of the main page&apos;s hero section.
+
+Requirements:
+- Review the existing hero background implementation on the main/home page
+- Identify the design elements that create the &quot;preschool-like&quot; aesthetic (colors, shapes, patterns, illustrations)
+- Create or adapt a hero background for the About Us page using similar visual elements
+- Ensure the background complements the About Us page content without overwhelming text readability
+- Maintain consistent design language (color palette, illustration style, spacing) with the main page
+- Ensure responsive behavior across different screen sizes (mobile, tablet, desktop)
+- Optimize images/graphics for web performance
+- Verify sufficient contrast between background and foreground text for accessibility
+
+Edge Cases to Consider:
+- Text overlay readability in different viewport sizes
+- Background behavior when About Us content is shorter or longer than expected
+- Loading states for background images/graphics
+- Browser compatibility for any CSS effects or SVG elements used</description>
+    </feature>
+    <feature>
+      <name>Fix and Standardize Card Component Styling</name>
+      <description>Fix and Standardize Card Component Styling
+
+Audit all card components throughout the application to identify and fix styling issues, then apply consistent visual design.
+
+Requirements:
+- Locate all card component instances across the codebase
+- Identify cards with broken or inconsistent styling (layout issues, missing spacing, incorrect borders/shadows, etc.)
+- Fix structural CSS/styling bugs preventing proper rendering
+- Establish a unified card design system including:
+  - Consistent padding and margins
+  - Standardized border radius and shadow effects
+  - Proper hover and focus states
+  - Responsive behavior across screen sizes
+- Apply the standardized styling to all card components
+- Ensure visual hierarchy is clear (title, content, actions)
+- Test rendering across different content lengths and viewport sizes
+- Verify accessibility (contrast ratios, focus indicators)</description>
+    </feature>
+    <feature>
+      <name>Fix icon contrast for success and info states</name>
+      <description>Fix Icon Visibility Issue for Success and Info States
+
+Resolve the contrast problem where success and info icons appear invisible due to white icons being displayed on white backgrounds.
+
+Requirements:
+- Identify all success and info icon components with the visibility issue
+- Update icon colors to ensure sufficient contrast against white backgrounds (use appropriate brand colors: green for success, blue for info)
+- Alternatively, if icons should remain white, change the background color to provide contrast
+- Verify the fix works across all instances where these icons appear (notifications, alerts, toasts, status indicators, etc.)
+- Ensure the solution follows accessibility guidelines (WCAG AA minimum contrast ratio of 4.5:1)
+- Test in both light and dark modes if applicable
+- Maintain visual consistency with the overall design system</description>
+    </feature>
+    <feature>
+      <name>Fix Map Pin Coordinates on Contact Page</name>
+      <description>Fix Map Pin Location on Contact Page
+
+Correct the map marker coordinates on the contact page Leaflet map to point to the accurate business address.
+
+Requirements:
+- Identify the current coordinates being used for the map pin
+- Verify the correct address and obtain accurate latitude/longitude coordinates
+- Update the Leaflet map marker with correct coordinates
+- Ensure the map view is properly centered on the correct location
+- Set appropriate zoom level for clear location visibility
+- Verify the correct address is displayed in any associated text/labels
+- Test that the pin appears at the correct physical location when compared to the actual address
+- Consider adding a popup or tooltip to the marker showing the correct address for user confirmation</description>
+    </feature>
+    <feature>
+      <name>Standardize news card design across application</name>
+      <description>Standardize News Card Design Across Application
+
+Update the news card component on the homepage to match the superior design and layout currently used on the dedicated news page.
+
+Requirements:
+- Audit both card implementations to identify specific visual and structural differences
+- Apply the news page card styling (colors, spacing, typography, shadows, borders) to the homepage card
+- Ensure consistent card dimensions, image aspect ratios, and content alignment
+- Match interaction states (hover effects, click behavior, focus states)
+- Verify responsive behavior matches across both locations
+- Consolidate duplicate code by creating a shared card component if implementations are separate
+- Test appearance across different viewport sizes and browsers
+- Ensure no regression in functionality (links, accessibility, performance)
+
+Success criteria:
+- Homepage news cards are visually indistinguishable from news page cards
+- Both cards use the same component or styling system
+- No visual inconsistencies across breakpoints</description>
+    </feature>
+    <feature>
+      <name>Add Polish character support to fonts</name>
+      <description>Update Font Family to Support Polish Characters
+
+Replace current fonts with typefaces that include full support for Polish language characters and diacritics throughout the application.
+
+Requirements:
+- Identify all current font declarations in the codebase (CSS, style files, design system)
+- Select replacement fonts that include Polish special characters (ą, ć, ę, ł, ń, ó, ś, ź, ż and their uppercase variants)
+- Update font-family declarations across all stylesheets and components
+- Ensure fallback fonts also support Polish characters
+- Test rendering of Polish text across different browsers and devices
+- Verify font weights and styles (regular, bold, italic) all support Polish characters
+- Update web font imports or local font files as needed
+- Check that font loading performance is not negatively impacted
+- Validate proper display of Polish characters in all UI contexts (buttons, headings, body text, form inputs)</description>
+    </feature>
+    <feature>
+      <name>Reposition social media icons to right alignment</name>
+      <description>Align Social Media Icons to Right Side of Page Header
+
+Reposition the social media icons in the page header from their current left-aligned position to right-aligned, improving visual balance and layout consistency.
+
+Requirements:
+- Locate social media icons container in the header/top section of the page
+- Update CSS/styling to align icons to the right side of the page
+- Ensure proper spacing from the right edge of the page/container
+- Maintain consistent vertical alignment with other header elements
+- Verify responsive behavior on mobile, tablet, and desktop screen sizes
+- Test that icons remain clickable and accessible after repositioning
+- Ensure no overlap with other header content (logo, navigation, etc.)</description>
+    </feature>
+    <feature>
+      <name>Remove redundant hr element from footer</name>
+      <description>Remove Redundant Horizontal Rule from Footer
+
+Remove the &lt;hr&gt; element from the footer component as it creates visual duplication with the existing border styling.
+
+Requirements:
+- Locate the &lt;hr&gt; tag in the footer component
+- Remove the &lt;hr&gt; element while preserving the existing border styling
+- Verify the footer still has appropriate visual separation from content above
+- Ensure the footer layout remains consistent after removal
+- Check responsiveness across different screen sizes to confirm no visual regression</description>
+    </feature>
+    <feature>
+      <name>Update Contact Card Design to Match System Standards</name>
+      <description>Update Contact Card Visual Design and Alignment
+
+Redesign the contact card component to improve its visual appearance and ensure it matches the design system used throughout the rest of the page.
+
+Requirements:
+- Review the current page design to identify consistent visual patterns (spacing, colors, typography, borders, shadows)
+- Update contact card styling to match the established design language
+- Ensure proper alignment with surrounding page elements
+- Improve visual hierarchy within the card (name, title, contact info, etc.)
+- Apply consistent padding and margins to align with page grid system
+- Update typography to match page font sizes, weights, and styles
+- Adjust colors, borders, and shadows to be cohesive with overall page theme
+- Ensure card is responsive and maintains visual consistency across different screen sizes
+- Verify adequate contrast ratios for accessibility
+- Test visual appearance in context of the full page layout</description>
+    </feature>
+    <feature>
+      <name>Add image loading placeholders and fallback UI</name>
+      <description>Implement Image Loading Placeholders and Fallback UI
+
+Add placeholder visuals during image loading and graceful fallback displays for missing or failed-to-load images throughout the application.
+
+Requirements:
+- Display skeleton/blur placeholder while images are loading to prevent layout shift
+- Show a styled fallback UI (icon, text, or placeholder graphic) when images fail to load or are missing
+- Ensure fallback is visually consistent with the application&apos;s design system
+- Handle different image aspect ratios and sizes appropriately
+- Consider accessibility by adding appropriate alt text for fallback states
+- Apply to all image components across the application (avatars, thumbnails, hero images, etc.)
+- Optimize placeholder size to match final image dimensions
+- Provide smooth transition from placeholder to loaded image
+
+Edge cases to consider:
+- Slow network connections with extended loading times
+- 404 errors for missing image URLs
+- Broken or corrupted image files
+- Images with empty or null src attributes
+- Network failures or timeouts during image fetch</description>
+    </feature>
+    <feature>
+      <name>Fix counter suffix layout wrapping</name>
+      <description>Ensure Counter Suffix Displays on Same Line as Counter Number
+
+Fix the layout of counter components so that the suffix text appears inline with the counter value rather than wrapping to a new line.
+
+Requirements:
+- Identify all counter displays in the application where suffix text exists
+- Apply CSS or layout adjustments to prevent line breaks between number and suffix
+- Use appropriate white-space or flexbox properties to keep elements together
+- Test with various counter values (short and long numbers) to ensure consistent behavior
+- Verify responsive behavior across different screen sizes
+- Ensure the fix works with different suffix lengths and content</description>
+    </feature>
+    <feature>
+      <name>Improve About Us Page Typography and Readability</name>
+      <description>Update Typography System on About Us Page
+
+Improve the typography and text formatting on the About Us page to create a visually appealing, readable, and well-structured layout.
+
+Requirements:
+- Fix heading hierarchy and styling to establish clear visual structure
+- Apply consistent, readable font sizes and line heights throughout
+- Reformat list elements with proper spacing and visual indicators
+- Ensure adequate contrast between text and background colors
+- Set appropriate paragraph spacing and max-width for optimal reading line length
+- Apply consistent styling for different text elements (body text, quotes, captions)
+- Verify typography looks good across different screen sizes (mobile, tablet, desktop)
+- Consider using web-safe or properly loaded custom fonts with appropriate fallbacks
+
+Success criteria:
+- Headings follow a logical visual hierarchy (H1 &gt; H2 &gt; H3)
+- Lists are well-spaced with clear visual structure
+- Text is comfortably readable without strain
+- Overall page has a polished, professional appearance</description>
+    </feature>
+    <feature>
+      <name>Fix feature-icon visibility in success and info states</name>
+      <description>Fix Feature Icon Visibility for Success and Info States
+
+The feature-icon components with icon-success and icon-info classes have white backgrounds with white icons, making them invisible to users. Update the styling to ensure proper contrast and visibility.
+
+Requirements:
+- Locate the CSS/styling for feature-icon icon-success and feature-icon icon-info classes
+- Change either the background color or icon color to create visible contrast
+- Ensure the color scheme matches the existing design system (success = green theme, info = blue theme)
+- Verify the fix works across different browsers and screen sizes
+- Check if other icon states (warning, error, etc.) have similar issues
+- Test in both light and dark mode if applicable
+- Ensure accessibility standards are met (WCAG contrast ratio of at least 4.5:1)</description>
+    </feature>
+    <feature>
+      <name>Fix typography inconsistencies in schedule timeline</name>
+      <description>Fix Typography Issues in Schedule Timeline Section of Programs Page
+
+Correct typographical inconsistencies and styling problems in the schedule-timeline section on the programs page to ensure proper text rendering and readability.
+
+Requirements:
+- Identify and fix incorrect font families, sizes, or weights
+- Correct text alignment and spacing issues
+- Ensure consistent typography with the rest of the application
+- Fix any text overflow, truncation, or wrapping problems
+- Verify typography renders correctly across different screen sizes
+- Check for proper line-height and letter-spacing
+- Ensure sufficient color contrast for accessibility
+- Test with actual content to confirm fixes work with various text lengths</description>
+    </feature>
+    <feature>
+      <name>Fix Polish Character Encoding Issues</name>
+      <description>Fix Polish Character Encoding Issues on Webpage
+
+Resolve character encoding problems causing Polish special characters to display incorrectly or not appear at all throughout the webpage.
+
+Requirements:
+- Identify all locations where Polish characters (ą, ć, ę, ł, ń, ó, ś, ź, ż and their uppercase variants) are missing or displaying as garbled text
+- Verify HTML document is declared with UTF-8 encoding in the meta charset tag
+- Ensure server is sending correct Content-Type header with UTF-8 charset
+- Check that source files are saved in UTF-8 encoding format
+- Verify database connection and queries use UTF-8 character set if content is dynamically loaded
+- Replace any incorrectly encoded text with properly encoded Polish characters
+- Test display across different browsers to confirm characters render correctly
+- Validate that user input forms properly handle and store Polish characters
+
+Success Criteria:
+- All Polish special characters display correctly throughout the webpage
+- No placeholder characters (�, ?, boxes) appear where Polish letters should be
+- Text is readable and maintains proper Polish spelling and grammar</description>
+    </feature>
+    <feature>
+      <name>Standardize single news page design patterns</name>
+      <description>Standardize Typography and Visual Design for Single News Page
+
+Update the single news page to match the typography, spacing, and visual design patterns used throughout the rest of the application, creating a cohesive and polished user experience.
+
+Requirements:
+- Audit typography on single news page and compare with other pages (font families, sizes, weights, line heights)
+- Apply consistent heading hierarchy (h1, h2, h3) matching site-wide standards
+- Align text colors, link styles, and text formatting with global design system
+- Standardize spacing and layout (margins, padding, content width, white space)
+- Ensure visual elements (images, cards, buttons, dividers) match design patterns used elsewhere
+- Improve readability with appropriate line length, paragraph spacing, and contrast ratios
+- Add consistent styling for metadata (author, date, categories, tags)
+- Verify responsive behavior matches other pages across device sizes
+- Ensure accessibility standards are maintained (proper heading structure, color contrast, focus states)</description>
+    </feature>
+    <feature>
+      <name>Add recruitment announcement hero section with enrollment details</name>
+      <description>Add Recruitment Announcement Section to Main Page
+
+Create an eye-catching, visually prominent recruitment announcement section on the main page that displays information about kindergarten enrollment for &quot;Wesołe Nutki&quot; language and music preschool.
+
+Content Requirements:
+- Display heading &quot;REKRUTACJA&quot; prominently
+- Show announcement text: &quot;Trwa rekrutacja do naszego przedszkola językowo-muzycznego&quot;
+- Highlight key information: &quot;WESOŁE NUTKI zapraszają dzieci z rocznika 2022. Mamy również dwa miejsca dla dzieci z rocznika 2019&quot;
+- Include download link for application form (&quot;Karta zgłoszenia&quot;) with options to download directly or navigate to documents section
+- Display contact information: phone number 71 343 18 99 and email przedszkole@wesolenutki.eu
+- End with clear &quot;ZAPRASZAMY!&quot; call-to-action
+
+Design Requirements:
+- Position section prominently to immediately capture visitor attention above the fold or as hero section
+- Apply attention-grabbing visual treatment using colors, contrast, or background styling
+- Implement clear visual hierarchy with varied typography sizes and weights
+- Style the CTA button or link to be visually distinct and actionable
+- Use appropriate spacing and whitespace for readability and pleasant appearance
+- Consider using child-friendly design elements appropriate for preschool context (colors, shapes, friendly fonts)
+- Ensure responsive design that works well on mobile and desktop devices
+
+Technical Requirements:
+- Integrate with CMS to make all text content editable without code changes
+- Make the following fields configurable: heading text, body paragraphs, contact phone number, contact email, download link URL, CTA text
+- Structure content fields logically in CMS for easy updating by non-technical staff
+- Ensure download link can be updated to point to current enrollment form
+- Allow for easy enabling/disabling of the entire section when recruitment period ends
+
+Accessibility Considerations:
+- Ensure sufficient color contrast for text readability
+- Make links and buttons keyboard accessible
+- Provide appropriate alt text for any decorative images
+- Use semantic HTML structure for screen readers</description>
+    </feature>
+    <feature>
+      <name>Fix navigation menu active state indicator</name>
+      <description>Fix Navigation Menu Active State Bug
+
+The navigation menu incorrectly highlights the main page link regardless of which page the user is currently viewing. The active/highlighted state should only apply to the link corresponding to the current page.
+
+Requirements:
+- Investigate current routing and active state logic in the navigation menu component
+- Ensure active state correctly reflects the current route/page
+- Remove hardcoded or default active state on main page link
+- Verify active state updates properly when navigating between pages
+- Test all navigation links to ensure only the current page is highlighted
+- Handle edge cases like nested routes, query parameters, and hash fragments
+- Ensure visual indicator (highlighting) is consistent across all menu items</description>
+    </feature>
+    <feature>
+      <name>Fix contact card title and email alignment</name>
+      <description>Align Contact Card Title and Email on Contact Page
+
+Fix the alignment issue where the contact card title with email appears off-center on the contact page, likely caused by email addresses exceeding available width.
+
+Requirements:
+- Investigate the contact card component to identify layout constraints causing misalignment
+- Implement proper text overflow handling for long email addresses (truncation, ellipsis, or wrapping)
+- Ensure title and email maintain centered alignment regardless of email length
+- Test with various email address lengths (short, medium, very long)
+- Verify responsive behavior across different screen sizes
+- Maintain visual hierarchy between title and email elements
+- Ensure email remains readable and accessible after fix</description>
+    </feature>
+    <feature>
+      <name>Standardize section background styling with rounded corners</name>
+      <description>Standardize Section Background Styling to Match Visit-CTA Component
+
+Update section background styling to use consistent rounded corners matching the existing visit-cta component design pattern.
+
+Requirements:
+- Apply same border-radius values used in visit-cta component to the target section
+- Ensure rounded corners are visible and properly rendered on all screen sizes
+- Match any additional styling from visit-cta such as padding, shadows, or background colors if applicable
+- Verify visual consistency across different browsers and devices
+- Identify which specific section(s) need this styling applied
+- Consider responsive behavior - adjust border-radius on mobile if needed
+- Ensure content within the section respects the rounded boundaries (no overflow issues)</description>
+    </feature>
+    <feature>
+      <name>Fix gallery filter button layout and display</name>
+      <description>Fix Gallery Filter Button Layout and Display
+
+Resolve layout issues causing gallery filter buttons to render incorrectly or be cut off from view.
+
+Requirements:
+- Identify and fix CSS/styling issues preventing all filters from displaying properly
+- Ensure all filter buttons are fully visible and accessible
+- Improve button arrangement (consider wrapping, scrolling, or responsive grid layout)
+- Verify proper spacing and alignment between filter buttons
+- Test responsive behavior across different screen sizes (mobile, tablet, desktop)
+- Ensure visual consistency with the rest of the gallery interface
+- Confirm all filters remain functional after layout fixes
+
+Edge cases to consider:
+- Long filter label text
+- Large number of filter options
+- Small viewport sizes
+- Dynamic addition or removal of filters</description>
+    </feature>
+    <feature>
+      <name>Fix gallery card layout and display titles</name>
+      <description>Fix Gallery Card Layout and Display Missing Title
+
+Resolve layout issues in gallery card components where excessive bottom padding is present, and ensure gallery titles are properly displayed.
+
+Requirements:
+- Remove or reduce excessive whitespace at the bottom of gallery-card items
+- Display the gallery title on each card (currently hidden or missing)
+- Ensure consistent card height across all gallery items
+- Verify proper spacing between title and other card elements
+- Maintain responsive behavior across different screen sizes
+- Test with various title lengths to prevent overflow or truncation issues
+- Ensure alignment and visual hierarchy within the card remains balanced</description>
+    </feature>
+    <feature>
+      <name>Remove rounded corners from full-width sections</name>
+      <description>Remove Rounded Corners from Full-Width Sections
+
+Update the styling for full-width sections to display with square corners instead of rounded corners, starting with the hero section.
+
+Requirements:
+- Remove border-radius from the hero section
+- Identify all other full-width sections in the application
+- Remove border-radius from all full-width sections (e.g., banners, footers, full-width CTAs)
+- Preserve rounded corners for contained/card-style components
+- Ensure consistent styling across all breakpoints (mobile, tablet, desktop)
+- Verify visual consistency after changes</description>
+    </feature>
+    <feature>
+      <name>Fix submenu spacing and sizing issues</name>
+      <description>Fix Menu Sub-Items Spacing and Sizing Issues
+
+Correct the visual layout of submenu items to ensure consistent spacing and appropriate sizing throughout the navigation menu.
+
+Requirements:
+- Identify all menu components that display sub-items (dropdowns, nested menus, etc.)
+- Ensure consistent padding and margin between submenu items
+- Set appropriate font size for submenu items (typically slightly smaller than parent menu items)
+- Verify proper vertical spacing between individual submenu entries
+- Check horizontal indentation for nested submenu levels
+- Ensure submenu container has appropriate width and doesn&apos;t clip content
+- Test across different viewport sizes for responsive behavior
+- Verify alignment and spacing is consistent with the overall design system
+- Check both hover and active states maintain proper spacing
+
+Edge cases to consider:
+- Submenu items with varying text lengths
+- Multi-level nested submenus
+- Submenus with icons or additional elements
+- Mobile/touch interfaces where spacing affects usability</description>
+    </feature>
+    <feature>
+      <name>Fix news filter display and styling issues</name>
+      <description>Fix News Site Filter Display and Styling
+
+Improve the visual presentation and layout of the news site filter component to ensure it displays correctly and provides a clean, user-friendly interface.
+
+Requirements:
+- Fix any layout issues causing filters to render incorrectly or overlap
+- Ensure proper alignment and spacing between filter elements
+- Apply consistent styling that matches the site&apos;s design system
+- Make filter options clearly visible and easy to read
+- Ensure responsive behavior across different screen sizes (mobile, tablet, desktop)
+- Add proper visual feedback for selected/active filters
+- Verify filter labels and values are properly formatted
+- Test with various filter combinations to ensure consistent appearance
+- Consider accessibility (color contrast, focus states, screen reader support)
+
+Edge cases to consider:
+- Long filter names or values that may cause text overflow
+- Large number of filter options requiring scrolling or pagination
+- Empty states when no filters are applied
+- Interaction states (hover, active, disabled)</description>
+    </feature>
+    <feature>
+      <name>Remove Privacy, Terms, and FAQ footer links</name>
+      <description>Remove Privacy, Terms, and FAQ Links from Footer
+
+Remove the footer section that contains links to Privacy Policy, Terms of Service, and FAQ pages.
+
+Requirements:
+- Locate the footer component in the codebase
+- Identify and remove the specific section/container with Privacy, Terms, and FAQ links
+- Preserve any other footer content (copyright, social links, contact info, etc.)
+- Ensure footer layout adjusts properly after removal (no empty spaces or broken styling)
+- Verify the change across different screen sizes and devices
+- Confirm the actual policy/terms/FAQ pages themselves remain accessible if needed elsewhere</description>
+    </feature>
+    <feature>
+      <name>Feature: feature-1769166905166-20kh3ij06</name>
+      <description>Create Documents Subpage
+
+Build a new /documents subpage that displays and manages document-related content within the application.
+
+Requirements:
+- Create a new route at /documents that integrates with existing routing structure
+- Design and implement the page layout following current application design patterns
+- Add navigation link to the documents page in the main menu or sidebar
+- Include appropriate page title and meta information
+- Implement basic document listing or placeholder content
+- Ensure the page is responsive across mobile, tablet, and desktop viewports
+- Add loading states and error handling for the page
+- Include appropriate authentication/authorization checks if required by the application
+
+Considerations:
+- Determine what content/functionality the documents page should display (list view, grid view, upload interface, etc.)
+- Decide on data source for documents (API endpoint, static content, database query)
+- Consider pagination or infinite scroll if displaying multiple documents
+- Plan for empty states when no documents are available</description>
+    </feature>
+    <feature>
+      <name>Add placeholder image fallbacks for all post views</name>
+      <description>Implement Placeholder Images for All Post Views
+
+Ensure all images throughout the application use placeholder images as fallbacks, with specific focus on fixing the error appearing in the single post view.
+
+Requirements:
+- Identify the specific image error occurring in the single post view
+- Implement placeholder images for all image components in single post view
+- Audit all other post views (list view, grid view, card view, etc.) to ensure consistent placeholder usage
+- Add error handling for failed image loads with automatic fallback to placeholder
+- Ensure placeholder images are appropriately sized and styled for different contexts
+- Use a consistent placeholder image or loading state across the application
+- Handle edge cases: missing image URLs, broken URLs, slow-loading images
+- Verify no console errors appear when images fail to load
+- Test with posts that have no images, invalid image URLs, and valid images</description>
+    </feature>
+    <feature>
+      <name>Fix News Post Display and Share Functionality</name>
+      <description>Fix Single News Post Display Issues
+
+Restore proper rendering and functionality of individual news post pages that are currently broken.
+
+Requirements:
+- Fix share functionality: Ensure share buttons/links are visible and functional
+- Fix image rendering: Restore proper display of post images (sizing, alignment, aspect ratio)
+- Verify post content layout and formatting render correctly
+- Check responsive behavior across desktop, tablet, and mobile viewports
+- Ensure all post metadata (date, author, category) displays properly
+- Test with posts containing different content types (multiple images, no images, embedded media)
+- Validate that related posts or navigation elements render as expected
+
+Edge cases to consider:
+- Posts with missing or broken image URLs
+- Posts with very long titles or content
+- Posts with special characters in share URLs
+- Various image sizes and orientations</description>
+    </feature>
+    <feature>
+      <name>Fix gallery card layout and title visibility issues</name>
+      <description>Fix Gallery Card Display Issues
+
+Resolve layout and content rendering problems in the gallery-card component where blank space appears at the bottom and the title is not visible.
+
+Requirements:
+- Locate the gallery-card component in the codebase
+- Fix the missing title display (ensure title text is being rendered and is visible)
+- Remove or correct the blank space appearing at the bottom of the card
+- Verify proper spacing and alignment of all card elements
+- Check CSS/styling for layout issues (flexbox, grid, padding, margins, height calculations)
+- Ensure the card displays correctly across different screen sizes
+- Test with various content lengths (short titles, long titles, missing titles)
+
+Edge cases to consider:
+- Cards with no title data
+- Cards with very long titles
+- Different image aspect ratios that may affect layout
+- Container constraints that may cause spacing issues</description>
+    </feature>
+    <feature>
+      <name>Fix filter selection visual feedback in gallery and news</name>
+      <description>Fix Filter Selection Visual Feedback in Gallery and News Components
+
+Update the gallery and news filter UI to visually indicate which filter is currently active when users make a selection.
+
+Requirements:
+- Apply active/selected styling to the currently selected filter option
+- Remove active styling from previously selected filter when a new one is chosen
+- Ensure the visual state persists during and after filtering operation
+- Verify active state styling is visible and consistent with design system
+- Test filter selection works correctly for both gallery and news sections
+- Handle initial state (default filter if applicable) with appropriate highlighting
+- Ensure keyboard navigation updates visual state correctly if filters are keyboard-accessible
+
+Edge Cases to Consider:
+- Multiple filters being applied simultaneously (if supported)
+- Filter state when navigating away and returning to the page
+- Filter appearance on page load/refresh with pre-selected filters</description>
+    </feature>
+    <feature>
+      <name>Feature: feature-1769167923684-8al0n4fio</name>
+      <description>Remove Rounded Corners from Full-Width Sections
+
+Update the styling for all full-width sections to have square corners instead of rounded corners, starting with the counter-section.
+
+Requirements:
+- Remove border-radius styling from the counter-section component
+- Audit all other full-width sections in the application for rounded corners
+- Apply consistent square corner styling across all full-width sections
+- Ensure container or wrapper sections that span the full viewport width have border-radius: 0
+- Verify that sections with constrained widths retain their existing corner styling
+- Test responsive behavior to confirm styling applies correctly at all breakpoints</description>
+    </feature>
+    <feature>
+      <name>Fix gallery view layout and component ordering</name>
+      <description>Fix Single Gallery View Layout and Display Issues
+
+Resolve display and ordering problems in the single gallery view to ensure all gallery components render correctly and in the proper sequence.
+
+Requirements:
+- Fix gallery-meta component styling to display information cleanly and legibly
+- Correct gallery-overlay positioning and appearance issues
+- Reorder component rendering so gallery text/description appears above the image gallery
+- Ensure proper spacing and alignment between all gallery sections (text, images, metadata, overlay)
+- Test layout responsiveness across different screen sizes
+- Verify overlay interactions (if applicable) function correctly after fixes</description>
+    </feature>
+    <feature>
+      <name>Fix embedded gallery overlay rendering in news articles</name>
+      <description>Fix Embedded Gallery Overlay Display Issue in Single News View
+
+Resolve rendering problems with the embedded gallery overlay component when displayed within individual news article pages.
+
+Requirements:
+- Identify the specific visual/functional issues with the gallery overlay (e.g., positioning, z-index, dimensions, visibility)
+- Locate the gallery overlay component implementation in single news view templates
+- Check for CSS conflicts or missing styles affecting the overlay
+- Verify overlay behavior across different viewport sizes (mobile, tablet, desktop)
+- Ensure gallery images load and display correctly within the overlay
+- Test overlay interaction controls (close button, navigation arrows, thumbnails)
+- Verify overlay works with various gallery sizes (single image, multiple images)
+- Confirm overlay properly overlays content without breaking page layout
+- Test in major browsers for cross-browser compatibility
+
+Edge cases to consider:
+- News articles with no images or single image
+- Gallery with very large or very small images
+- Overlay behavior when triggered multiple times rapidly
+- Keyboard navigation and accessibility (ESC to close, arrow keys for navigation)</description>
+    </feature>
+    <feature>
+      <name>Fix embedded gallery top spacing in post view</name>
+      <description>Remove Top Spacing from Embedded Gallery Item in Single Post View
+
+Eliminate the unwanted blank space appearing above images in embedded-gallery-item cards when viewing individual posts.
+
+Requirements:
+- Locate the embedded-gallery-item component used in single post view
+- Identify the CSS property or element causing the top spacing (padding, margin, or structural element)
+- Remove or adjust the spacing so the image aligns flush with the top of the card
+- Ensure the fix applies only to single post view and doesn&apos;t affect gallery items in other contexts
+- Verify the change doesn&apos;t break image aspect ratios or cause layout shifts
+- Test with multiple image sizes and aspect ratios to ensure consistent behavior</description>
+    </feature>
+    <feature>
+      <name>Fix embedded gallery count indicator styling in single post view</name>
+      <description>Display Embedded Gallery Count Indicator in Single Post View
+
+Fix the styling and positioning of the embedded gallery count indicator on the single post view page to ensure it displays correctly and is visually appealing.
+
+Requirements:
+- Locate the embedded-gallery-count element in the single post view template
+- Identify current rendering issues (positioning, overlap, styling, visibility)
+- Apply proper CSS styling to make the count clearly visible and readable
+- Ensure consistent spacing and alignment with surrounding post content
+- Verify the count displays correctly for posts with varying numbers of embedded gallery items
+- Test responsive behavior across different screen sizes (mobile, tablet, desktop)
+- Match the design pattern used in other count indicators throughout the application
+- Confirm no layout shift or overlap with other post elements (title, metadata, content)</description>
+    </feature>
+    <feature>
+      <name>Implement locale-aware date formatting across gallery</name>
+      <description>Localize Date Formatting Based on Language Selection
+
+Ensure all date displays throughout the gallery webpage respect the user&apos;s selected language preference, eliminating any hardcoded English date formats.
+
+Requirements:
+- Audit all date instances on the gallery webpage to identify English-formatted dates
+- Replace hardcoded English date formats with locale-aware formatting functions
+- Ensure date formatting dynamically updates when user changes language selector
+- Apply consistent date format pattern across all gallery date displays (e.g., image upload dates, metadata timestamps, creation dates)
+- Handle various date formats appropriately: short dates, long dates, relative dates (e.g., &quot;2 days ago&quot;)
+- Test date display with multiple target languages from the language selector
+- Verify month names, day names, and date ordering match selected locale conventions
+- Ensure timezone handling remains consistent across localization</description>
+    </feature>
+    <feature>
+      <name>Fix gallery card body rendering on list page</name>
+      <description>Fix Gallery Card Body Display Issue on Gallery List Page
+
+Resolve the issue where gallery card bodies are not rendering on the gallery list page, resulting in blank spaces where content should appear.
+
+Requirements:
+- Locate the gallery list page component and identify the gallery-card-body elements
+- Investigate why the card body content is not visible (CSS display issue, missing data, rendering condition, z-index problem)
+- Verify that data is being fetched and passed correctly to the card components
+- Check for CSS issues that might be hiding content (opacity: 0, visibility: hidden, display: none, color matching background)
+- Ensure proper HTML structure and class names are applied
+- Verify no JavaScript errors are preventing render
+- Test that card body content displays correctly for all galleries in the list
+- Confirm layout and spacing appear as intended once visible
+
+Edge cases to consider:
+- Empty or missing gallery data
+- Long text content that might overflow
+- Different gallery types or categories
+- Responsive behavior on various screen sizes</description>
+    </feature>
+    <feature>
+      <name>Fix card spacing, typography, and date localization</name>
+      <description>Fix Card Display Issues on Documents Page
+
+Resolve visual formatting problems with cards displayed on the documents page, including spacing, typography, and date localization.
+
+Requirements:
+- Add proper spacing/padding between card elements (margins, gaps between cards)
+- Fix internal card spacing (padding around content, gaps between text elements)
+- Improve text styling and typography for better readability (font sizes, weights, line heights)
+- Localize date formats from English to appropriate regional format
+- Ensure consistent card layout across all card instances on the page
+- Verify responsive behavior on different screen sizes
+- Check alignment and visual hierarchy of card content
+
+Edge Cases to Consider:
+- Cards with long text content that might wrap
+- Cards with missing optional fields
+- Different date formats needed (relative dates, full dates, time stamps)
+- Various content lengths across different cards</description>
+    </feature>
+    <feature>
+      <name>Add PDF attachment upload and management</name>
+      <description>Add PDF Document Attachment Functionality to Documents Site and CMS
+
+Implement the ability for users to attach PDF documents in the documents site, with corresponding management capabilities in the CMS.
+
+Requirements:
+
+Frontend (Documents Site):
+- Add file upload interface that accepts PDF files
+- Validate file type to ensure only PDF documents are uploaded
+- Display upload progress indicator during file transfer
+- Show attached PDF documents with preview thumbnails or icons
+- Enable users to view/download attached PDFs
+- Handle file size limits with clear error messages
+- Support multiple PDF attachments per document if applicable
+
+Backend/CMS:
+- Create PDF upload endpoint with proper validation
+- Store PDF files securely (cloud storage or file system)
+- Add database fields to track PDF attachments (filename, path, size, upload date)
+- Implement CMS interface for admins to upload/manage PDFs
+- Add ability to delete or replace existing PDF attachments in CMS
+- Generate metadata for uploaded PDFs (file size, page count if possible)
+
+Technical Considerations:
+- Set appropriate file size limit (e.g., 10MB max)
+- Implement virus scanning for uploaded files
+- Ensure proper MIME type validation (application/pdf)
+- Handle duplicate filenames gracefully
+- Optimize storage and delivery (CDN integration if applicable)
+- Add appropriate access controls and permissions
+- Ensure mobile-responsive upload interface
+
+Edge Cases:
+- Handle corrupted or invalid PDF files
+- Manage upload failures and provide retry mechanism
+- Address concurrent uploads by multiple users
+- Handle documents with no PDF attachments gracefully</description>
+    </feature>
+    <feature>
+      <name>Fix gallery card body visibility in CSS</name>
+      <description>Gallery Card Display Issue - Fix Card Body Visibility
+
+Resolve the display problem where the gallery card body is not rendering correctly due to incorrect height inheritance from the parent gallery-card-link element.
+
+Requirements:
+- Investigate the CSS styles applied to `.gallery-card-link` and `.gallery-card-body` elements
+- Identify why `height: 100%` on `.gallery-card-link` is causing the card body to not display
+- Determine if the issue is related to parent container constraints or flex/grid layout conflicts
+- Implement a fix that allows the card body to display properly while maintaining intended layout structure
+- Consider alternative approaches such as:
+  - Using `min-height` instead of `height: 100%`
+  - Adjusting flex properties if using flexbox
+  - Modifying parent container constraints
+  - Using grid layout if more appropriate
+- Verify the fix works across different card content lengths and viewport sizes
+- Ensure clickable area of the gallery-card-link remains functional after the fix
+- Test in major browsers to ensure consistent rendering</description>
+    </feature>
+    <feature>
+      <name>Remove fixed aspect ratio from gallery card images</name>
+      <description>Fix Gallery Card Image Aspect Ratio to Allow Counter Overlay
+
+Remove the fixed 4/3 aspect ratio constraint from gallery card images to enable proper visual overlay of the counter element.
+
+Requirements:
+- Locate the gallery-card-image component or CSS class definition
+- Remove or modify the aspect-ratio: 4/3 property
+- Ensure images display at their natural aspect ratio or use a more flexible sizing approach
+- Verify the counter element now properly overlays the image without layout issues
+- Test with images of various aspect ratios (portrait, landscape, square) to ensure counter positioning remains consistent
+- Confirm no unintended layout shifts or breaking changes in the gallery grid</description>
+    </feature>
+    <feature>
+      <name>Set Team Card Images to Full Height</name>
+      <description>Set Team Card Image Container to Full Height
+
+Configure the responsive-image-wrapper element within team-card-image components to occupy 100% of its parent container&apos;s height.
+
+Requirements:
+- Locate the responsive-image-wrapper element inside team-card-image components
+- Apply height: 100% CSS property to the responsive-image-wrapper
+- Ensure the parent container (team-card-image) has a defined height for percentage-based sizing to work
+- Verify images scale properly without distortion (maintain aspect ratio if needed)
+- Test across different viewport sizes to confirm responsive behavior
+- Check that the change doesn&apos;t break existing layout or cause overflow issues</description>
+    </feature>
+    <feature>
+      <name>Remove embedded gallery image margins and bottom border-radius</name>
+      <description>Remove Margins and Bottom Border Radius from Embedded Gallery Item Images
+
+Modify the styling of images within embedded-gallery-item components to eliminate margins and adjust border-radius properties.
+
+Requirements:
+- Remove all margins (top, right, bottom, left) from img elements inside embedded-gallery-item
+- Remove border-radius from bottom-left and bottom-right corners of these images
+- Preserve border-radius on top corners if currently applied
+- Ensure changes apply consistently across all instances of embedded-gallery-item
+- Verify the layout remains intact after margin removal
+- Test that images align properly with their container edges
+
+Edge cases to consider:
+- Multiple images within a single embedded-gallery-item
+- Responsive behavior at different viewport sizes
+- Images with varying aspect ratios
+- Interaction with parent container padding/spacing</description>
+    </feature>
+    <feature>
+      <name>Audit and Fix Polish Diacritical Marks Across Application</name>
+      <description>Review and Correct Polish Diacritical Marks in Text Content
+
+Audit all Polish language text throughout the application to ensure proper use of diacritical marks and special characters, specifically fixing instances where Polish characters are missing or incorrectly rendered.
+
+Requirements:
+- Locate all Polish text content in the codebase (UI labels, messages, content files)
+- Verify correct use of Polish special characters: ą, ć, ę, ł, ń, ó, ś, ź, ż (and uppercase variants)
+- Fix identified errors, including but not limited to:
+  - &quot;posilk,i&quot; → &quot;Posiłki&quot; (meals)
+  - Any other instances of missing or corrupted diacritical marks
+- Check for encoding issues that may cause character corruption (ensure UTF-8)
+- Review both hardcoded strings and any translation/localization files
+- Test rendered output to confirm characters display correctly in the UI
+- Consider reviewing the entire Polish vocabulary set, not just the reported issue
+
+Edge cases to verify:
+- Characters in different contexts (headings, body text, form labels, buttons)
+- Database-stored content if applicable
+- Dynamically generated text</description>
+    </feature>
+    <feature>
+      <name>Add height:100% to responsive-image-wrapper in team-card-image</name>
+      <description>responsive-image-wrapper in the team-card-image should have height:100%</description>
+    </feature>
+    <feature>
+      <name>Fix map column responsiveness on contact page</name>
+      <description>Fix Map Column Responsiveness on Contact Page
+
+The map component on the contact page is only sized with col-lg-7, which causes it to display too small on mobile devices. Update the responsive grid classes to ensure proper display across all screen sizes.
+
+Requirements:
+- Add appropriate Bootstrap column classes for mobile (col-12 or col-sm-*) and tablet (col-md-*) breakpoints
+- Ensure the map displays at full width on mobile devices for better usability
+- Maintain the existing col-lg-7 layout for large desktop screens
+- Verify the map height is appropriate on mobile devices
+- Test the layout on multiple breakpoints (mobile, tablet, desktop) to ensure smooth responsive behavior
+- Ensure any adjacent content (contact form, info, etc.) also responds appropriately to the grid changes</description>
+    </feature>
+    <feature>
+      <name>Update embedded gallery item image styling</name>
+      <description>Adjust Image Styling in Embedded Gallery Item Component
+
+Update the CSS styling for images within the embedded-gallery-item component to align with the gallery layout design.
+
+Requirements:
+- Set margin-top to 0 for img elements inside embedded-gallery-item
+- Set border-bottom-left-radius to 0 for img elements inside embedded-gallery-item
+- Set border-bottom-right-radius to 0 for img elements inside embedded-gallery-item
+- Verify changes apply correctly to all gallery item states (loading, error, loaded)
+- Test that images align properly with their container borders
+- Ensure changes don&apos;t affect images in other gallery components</description>
+    </feature>
+    <feature>
+      <name>Remove bottom border radius from gallery card images</name>
+      <description>Remove Border Radius from Gallery Card Image Bottom
+
+Update the gallery card image styling to remove border radius from the bottom corners while maintaining any existing top corner radius.
+
+Requirements:
+- Locate the CSS class or styles for `.gallery-card-image` or equivalent image elements
+- Set `border-bottom-left-radius: 0` and `border-bottom-right-radius: 0`
+- Alternatively, use `border-radius` shorthand with top values only (e.g., `border-radius: 8px 8px 0 0`)
+- Verify the change applies to all gallery card images throughout the application
+- Ensure no override styles are preventing the change from taking effect
+- Test that top border radius (if any) remains intact</description>
+    </feature>
+    <feature>
+      <name>Fix image error state height in team card component</name>
+      <description>Apply Full Height to Image Error State in Team Card Component
+
+Update the CSS styling for the image error state within the team card component to occupy the full available height of its container.
+
+Requirements:
+- Locate the image error handling code in the team card component
+- Add `height: 100%` to the error state element&apos;s styles
+- Ensure the parent container has a defined height for the percentage to work correctly
+- Verify the error state displays properly across different card sizes
+- Test that the full-height error state maintains proper aspect ratio and alignment with other team card elements
+- Confirm no layout shifts occur when switching from loading/image state to error state</description>
+    </feature>
+    <feature>
+      <name>Update embedded gallery image styling for seamless appearance</name>
+      <description>Add Consistent Styling to Embedded Gallery Item Images
+
+Update CSS styling for images within embedded gallery items to remove margins and adjust border radius for a flush, seamless appearance.
+
+Requirements:
+- Target selector: .embedded-gallery-item picture img
+- Set margin to 0 on all sides to eliminate any spacing
+- Set border-radius on bottom edges (bottom-left and bottom-right) to 0
+- Preserve any existing border-radius on top edges if present
+- Ensure changes don&apos;t break responsive behavior or other gallery layouts
+- Verify styling consistency across different browsers</description>
+    </feature>
+    <feature>
+      <name>Update gallery card image border radius styling</name>
+      <description>Adjust Gallery Card Image Border Radius
+
+Modify the CSS styling for images within gallery card components to remove bottom border radius while maintaining top border radius.
+
+Requirements:
+- Target img elements inside .gallery-card-image containers
+- Set bottom-left and bottom-right border radius to 0
+- Preserve any existing top border radius values
+- Ensure the change applies consistently across all gallery card instances
+- Verify the visual appearance aligns with the card layout design
+- Test responsiveness across different screen sizes to ensure consistent rendering</description>
+    </feature>
+    <feature>
+      <name>Synchronize navigation menu with reference site structure</name>
+      <description>Synchronize Website Menu Structure with Reference Site
+
+Ensure the website&apos;s navigation menu matches the structure and content of https://wesolenutki.eu/, resolving the current disconnect between existing pages and menu links.
+
+Requirements:
+- Audit https://wesolenutki.eu/ to document the complete menu structure, including all navigation items, hierarchy, and link destinations
+- Identify all pages currently defined in markdown files that are not appearing in the navigation
+- Update the menu configuration to include all existing pages with correct links
+- Verify menu hierarchy matches the reference site (top-level items, dropdowns, nested submenus)
+- Ensure menu link paths correctly correspond to the markdown page URLs
+- Test all menu links to confirm they navigate to the intended pages
+- Verify menu structure is responsive and works across different screen sizes
+- Confirm menu item labels and ordering match the reference site
+
+Edge cases to consider:
+- Pages that exist in markdown but shouldn&apos;t be in the main menu
+- External links vs internal page links
+- Localization or multi-language menu items if applicable
+- Active/current page highlighting in menu</description>
+    </feature>
+    <feature>
+      <name>Restructure main menu and add More section dropdown</name>
+      <description>Fix Main Menu Navigation Structure and Add &quot;More&quot; Section
+
+Update the main menu to match the structure and styling used on the /pl/news/ page, and add a new &quot;More/Więcej&quot; menu item with a dropdown containing additional site sections.
+
+Requirements:
+- Analyze the menu implementation on /pl/news/ and replicate its structure, styling, and behavior
+- Add a new top-level menu item labeled &quot;More&quot; (English) or &quot;Więcej&quot; (Polish) depending on language context
+- Create a dropdown/submenu under &quot;More/Więcej&quot; with the following items in order:
+  1. Rekrutacja (Recruitment)
+  2. Wizja (Vision)
+  3. Oferta (Offer)
+  4. Cennik (Pricing)
+  5. Płatności (Payments)
+  6. Zapisy (Registration)
+  7. Polityka Prywatności (Privacy Policy)
+  8. Standardy Ochrony Małoletnich (Child Protection Standards)
+- Ensure proper routing/linking for each submenu item
+- Maintain consistent hover states, active states, and transition effects
+- Verify mobile responsiveness for the expanded menu structure
+- Test dropdown functionality (click/hover behavior) matches /pl/news/ page
+- Ensure proper language switching behavior if the site is bilingual</description>
+    </feature>
+    <feature>
+      <name>Implement responsive three-column grid for program cards</name>
+      <description>Redesign Program Cards Layout on Programs Page
+
+Update the programs page to display program cards in a more compact, three-column grid layout with consistent spacing.
+
+Requirements:
+- Reduce the size of each program-card component to fit three cards per row
+- Ensure the three-column layout is responsive and works across different screen sizes
+- Add consistent vertical spacing between rows of cards
+- Add consistent horizontal spacing (gap) between cards in each row
+- Maintain proper alignment and prevent cards from stretching unevenly
+- Ensure card content (images, text, buttons) scales appropriately with the smaller card size
+- Verify that all card content remains readable and accessible at the reduced size
+- Test on mobile/tablet to ensure responsive breakpoints work correctly (likely stacking to 1-2 columns on smaller screens)</description>
+    </feature>
+    <feature>
+      <name>Synchronize English menu with Polish structure</name>
+      <description>Add English Menu Translations to Match Polish Page Structure
+
+Update the English version of the website to include the same menu structure and items as the Polish version, with properly translated names and labels.
+
+Requirements:
+- Audit the Polish page menu to identify all menu items, categories, and sections
+- Translate all Polish menu text to English while preserving context and meaning
+- Ensure menu hierarchy and organization matches between both language versions
+- Verify all menu links point to correct English page equivalents
+- Maintain consistent styling and layout between Polish and English menus
+- Test navigation to confirm all menu items are functional
+- Handle any locale-specific menu items appropriately (hide/show based on language)
+
+Edge cases to consider:
+- Menu items that may not have direct English equivalents
+- Dynamic menu content that needs localization
+- Submenus and nested navigation structures
+- Mobile vs desktop menu variations</description>
+    </feature>
+    <feature>
+      <name>Standardize typography and improve readability consistency</name>
+      <description>Standardize Typography Across All Content Pages
+
+Audit and improve typography consistency and visual appeal across all textual subpages in the application.
+
+Requirements:
+- Identify all textual subpages requiring typography improvements
+- Document current typography issues (inconsistent font sizes, line heights, spacing, hierarchy)
+- Establish a consistent typographic scale and hierarchy (headings, body text, captions)
+- Ensure proper line height (typically 1.5-1.6 for body text) for readability
+- Verify appropriate font weights and sizes for different text elements
+- Check and fix text color contrast ratios for accessibility (WCAG AA minimum)
+- Standardize paragraph spacing and margin consistency
+- Ensure proper heading hierarchy (h1, h2, h3) is semantically correct
+- Review and adjust letter spacing where needed
+- Test typography on different screen sizes for responsive behavior
+- Apply consistent styling for special text elements (quotes, lists, links, code blocks)
+
+Edge cases to consider:
+- Long text content without breaks
+- Text overflow in constrained containers
+- Mixed content types on same page
+- Internationalization with different character sets</description>
+    </feature>
+    <feature>
+      <name>Fix program subpage layout and typography issues</name>
+      <description>Fix Program Subpage Layout and Typography
+
+Resolve UI rendering issues on program subpages (e.g., /pl/programs/sredniaki/) where visual elements are currently broken or improperly displayed.
+
+Requirements:
+- Audit all visual elements on program subpages to identify broken layouts
+- Fix CSS/styling issues causing UI destruction (misaligned elements, overflow, broken grids, etc.)
+- Ensure proper spacing and alignment of all page components
+- Verify typography hierarchy is correct (headings, body text, captions)
+- Apply consistent and pleasant font sizing, line height, and letter spacing
+- Ensure text is readable with appropriate contrast ratios
+- Test responsiveness across different screen sizes (mobile, tablet, desktop)
+- Verify consistency with other pages in the application
+- Test with actual program data to ensure dynamic content renders correctly
+- Cross-browser testing (Chrome, Firefox, Safari, Edge)
+
+Elements to verify:
+- Page header and title section
+- Content blocks and text sections
+- Images and media elements
+- Buttons and interactive components
+- Navigation elements
+- Footer section
+
+Success criteria:
+- All page elements render in their intended positions
+- Typography is visually harmonious and easy to read
+- No visual artifacts, overlapping elements, or broken layouts
+- Consistent styling with the rest of the application</description>
+    </feature>
+    <feature>
+      <name>Fix Typography and Rendering on Payments Page</name>
+      <description>Fix Typography Issues on Payment Information Page
+
+Correct typography problems on the /o-przedszkolu/platnosci/ (About Preschool - Payments) page to ensure proper text rendering and readability.
+
+Requirements:
+- Identify and document all typography issues on the page (incorrect fonts, sizes, spacing, alignment, special character rendering)
+- Ensure Polish language characters (ą, ć, ę, ł, ń, ó, ś, ź, ż) render correctly
+- Verify font family consistency with the rest of the site
+- Fix any line height, letter spacing, or word spacing problems
+- Correct text alignment and hierarchy issues (headings vs body text)
+- Ensure responsive typography scales properly on mobile and tablet devices
+- Validate text color contrast meets accessibility standards (WCAG AA minimum)
+- Test rendering across major browsers (Chrome, Firefox, Safari, Edge)</description>
+    </feature>
+    <feature>
+      <name>Fix Typography Issues on Plan Zajec Page</name>
+      <description>Fix Typography Issues on Plan Zajec Page
+
+Review and correct typography problems on the /plan-zajec/ page to ensure proper text rendering and readability.
+
+Requirements:
+- Identify all typography issues (font family, size, weight, line height, spacing)
+- Ensure consistent font styling with the rest of the application
+- Fix any text overflow, wrapping, or alignment problems
+- Verify proper rendering across different screen sizes (mobile, tablet, desktop)
+- Check for missing or incorrect font loading
+- Ensure appropriate contrast ratios for accessibility (WCAG AA standards)
+- Test with different text lengths and content variations
+- Verify proper localization support if applicable (diacritics, special characters)</description>
+    </feature>
+    <feature>
+      <name>Fix Learn More button language-specific routing</name>
+      <description>Implement About Page Navigation Link
+
+Update the &quot;Dowiedz się więcej&quot; (Learn More) button on the homepage to correctly navigate to the about page with proper language routing.
+
+Requirements:
+- Locate the &quot;Dowiedz się więcej&quot; link/button element on the homepage
+- Update the href/navigation target to route to `/&lt;lang&gt;/about/` where `&lt;lang&gt;` is the current language context
+- Ensure the language parameter dynamically reflects the user&apos;s active language (e.g., `/en/about/`, `/pl/about/`, etc.)
+- Verify the link works correctly for all supported languages
+- Test that the about page exists at the target route and renders properly
+- Ensure proper routing behavior (no 404 errors, correct page loads)
+- Maintain existing styling and behavior of the button</description>
+    </feature>
+    <feature>
+      <name>Fix registration page typography issues</name>
+      <description>Fix Typography Issues on Registration Page
+
+Resolve typography and text rendering problems on the o-przedszkolu/zapisy/ (About Preschool/Registration) page.
+
+Requirements:
+- Identify all typography issues on the /o-przedszkolu/zapisy/ page (font sizes, weights, line heights, spacing, alignment)
+- Ensure text is readable and properly formatted across all sections
+- Check for consistency with typography styles used elsewhere on the site
+- Verify proper font family application and fallbacks
+- Fix any text overflow, wrapping, or truncation issues
+- Test typography rendering across different browsers and viewport sizes
+- Ensure proper contrast ratios for accessibility compliance
+- Check Polish language characters render correctly (including diacritics: ą, ć, ę, ł, ń, ó, ś, ź, ż)</description>
+    </feature>
+  </implemented_features>
+
+  <additional_requirements>
+    <requirement>Node.js 18+ required for build and testing</requirement>
+    <requirement>Hugo Extended version required for SCSS processing</requirement>
+    <requirement>Git for version control and CMS backend</requirement>
+    <requirement>GitHub account for Pages deployment</requirement>
+    <requirement>Modern browsers for CMS admin interface (Chrome, Firefox, Edge, Safari)</requirement>
+    <requirement>Minimum 512MB RAM for local development builds</requirement>
+    <requirement>Images should be optimized (WebP format preferred) for fast loading</requirement>
+    <requirement>SSL/HTTPS required for CMS authentication (provided by GitHub Pages)</requirement>
+  </additional_requirements>
+
+  <development_guidelines>
+    <guideline>Use Hugo&apos;s built-in i18n system for all translatable strings</guideline>
+    <guideline>Store content in content/[lang]/ directory structure (content/pl/, content/en/)</guideline>
+    <guideline>Follow BEM naming convention for custom CSS classes</guideline>
+    <guideline>Keep images in static/images/ organized by feature (galleries/, news/, etc.)</guideline>
+    <guideline>Use Hugo&apos;s image processing for responsive images</guideline>
+    <guideline>Write descriptive commit messages in English</guideline>
+    <guideline>All CMS-editable content should have corresponding config in static/admin/config.yml</guideline>
+    <guideline>Test all pages in both languages before deployment</guideline>
+    <guideline>Maintain README.md with up-to-date setup and deployment instructions</guideline>
+    <guideline>Use semantic HTML5 elements for accessibility</guideline>
+    <guideline>Include alt text for all images (required in CMS)</guideline>
+    <guideline>Run Playwright tests before merging to main branch</guideline>
+  </development_guidelines>
+
+  <implementation_roadmap>
+    <phase>
+      <name>Phase 1: Project Setup &amp; Infrastructure</name>
+      <status>in_progress</status>
+      <description>Initialize Hugo project structure, configure multilingual support (PL/EN), set up GitHub Actions workflow for GitHub Pages deployment, create base templates and layouts</description>
+    </phase>
+    <phase>
+      <name>Phase 2: Theme Integration &amp; Design</name>
+      <status>pending</status>
+      <description>Adapt Educenter Bootstrap theme for preschool context, create responsive layouts, implement navigation with nested menus, design color scheme and typography appropriate for preschool</description>
+    </phase>
+    <phase>
+      <name>Phase 3: Core Pages &amp; Homepage</name>
+      <status>pending</status>
+      <description>Build configurable homepage with hero section, features, about preview, and news highlights. Create static pages (About Us, Contact, Our Offer/Programs)</description>
+    </phase>
+    <phase>
+      <name>Phase 4: News Section</name>
+      <status>pending</status>
+      <description>Implement news/blog functionality with list and single views, pagination, categories/tags, and embedded image galleries within posts</description>
+    </phase>
+    <phase>
+      <name>Phase 5: Gallery System</name>
+      <status>pending</status>
+      <description>Create standalone gallery pages with lightbox functionality, category filtering, and integration with news posts for event photo galleries</description>
+    </phase>
+    <phase>
+      <name>Phase 6: CMS Integration</name>
+      <status>pending</status>
+      <description>Set up Decap CMS with GitHub backend, configure content collections for pages, news, galleries, and menus. Create user-friendly editor widgets for non-technical staff</description>
+    </phase>
+    <phase>
+      <name>Phase 7: Testing Suite</name>
+      <status>pending</status>
+      <description>Implement Playwright E2E tests covering page rendering, navigation, language switching, gallery functionality, and responsive design across viewports</description>
+    </phase>
+    <phase>
+      <name>Phase 8: Documentation &amp; Deployment</name>
+      <status>pending</status>
+      <description>Write comprehensive README with local development setup, content editing guide, deployment instructions, and troubleshooting. Final deployment to GitHub Pages with custom domain setup if needed</description>
+    </phase>
+  </implementation_roadmap>
+</project_specification>

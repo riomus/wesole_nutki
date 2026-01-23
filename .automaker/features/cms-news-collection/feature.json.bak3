@@ -1,0 +1,12 @@
+{
+  "id": "cms-news-collection",
+  "category": "CMS",
+  "title": "CMS News Collection Config",
+  "description": "Set up Decap CMS collection for news articles with fields for title, content, featured image, date, categories, tags, and language. Include rich text editor and image upload.",
+  "status": "backlog",
+  "priority": 1,
+  "complexity": "moderate",
+  "createdAt": "2026-01-22T14:36:35.508Z",
+  "updatedAt": "2026-01-22T14:36:35.508Z",
+  "descriptionHistory": []
+}

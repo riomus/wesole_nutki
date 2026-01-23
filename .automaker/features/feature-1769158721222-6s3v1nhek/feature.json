@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Synchronize Page Content with wesolenutki.eu Reference Site\n\nUpdate and align the current page's content to match the structure, layout, and information presented on the reference website at https://wesolenutki.eu/.\n\nRequirements:\n- Fetch and analyze the content structure from https://wesolenutki.eu/\n- Compare current page content with the reference site to identify differences\n- Update text content, headings, and copy to match the reference\n- Align visual layout including sections, spacing, and component arrangement\n- Ensure images, icons, and media assets match or are equivalent to the reference\n- Preserve any existing functionality while updating the presentation layer\n- Maintain responsive design across all device sizes\n- Verify that styling (colors, fonts, button styles) is consistent with the reference\n- Test all links and interactive elements for proper functionality\n- Ensure any forms or user input fields match the reference implementation\n\nEdge cases to consider:\n- Handle dynamic content that may differ between environments\n- Preserve any site-specific customizations that shouldn't be overwritten\n- Consider language/localization differences if applicable\n- Verify that external dependencies (scripts, fonts, APIs) are properly included",
+  "title": "Sync page content with wesolenutki.eu reference site",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "completed",
+  "id": "feature-1769158721222-6s3v1nhek",
+  "descriptionHistory": [
+    {
+      "description": "Synchronize Page Content with wesolenutki.eu Reference Site\n\nUpdate and align the current page's content to match the structure, layout, and information presented on the reference website at https://wesolenutki.eu/.\n\nRequirements:\n- Fetch and analyze the content structure from https://wesolenutki.eu/\n- Compare current page content with the reference site to identify differences\n- Update text content, headings, and copy to match the reference\n- Align visual layout including sections, spacing, and component arrangement\n- Ensure images, icons, and media assets match or are equivalent to the reference\n- Preserve any existing functionality while updating the presentation layer\n- Maintain responsive design across all device sizes\n- Verify that styling (colors, fonts, button styles) is consistent with the reference\n- Test all links and interactive elements for proper functionality\n- Ensure any forms or user input fields match the reference implementation\n\nEdge cases to consider:\n- Handle dynamic content that may differ between environments\n- Preserve any site-specific customizations that shouldn't be overwritten\n- Consider language/localization differences if applicable\n- Verify that external dependencies (scripts, fonts, APIs) are properly included",
+      "timestamp": "2026-01-23T08:58:41.480Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T09:08:24.904Z"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "cms-preview-templates",
+  "category": "CMS",
+  "title": "CMS Preview Templates",
+  "description": "Create custom preview templates for the CMS editor interface so content editors can see how pages will look before publishing. Match live site styling.",
+  "status": "in_progress",
+  "priority": 2,
+  "complexity": "complex",
+  "createdAt": "2026-01-22T14:36:35.510Z",
+  "updatedAt": "2026-01-22T15:46:35.096Z",
+  "descriptionHistory": []
+}

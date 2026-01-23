@@ -1,0 +1,19 @@
+{{- $data := site.Data.about.hero -}}
+{{- if $data.enabled -}}
+<!-- About Page Hero Section -->
+<section class="hero-section hero-bg-image about-hero" {{- with $data.background_image }} style="background-image: url('{{ . }}'); --hero-overlay-opacity: {{ $data.overlay_opacity | default 0.7 }};"{{- end }}>
+  {{- if $data.background_image -}}
+  <div class="hero-overlay"></div>
+  {{- end -}}
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10 text-center">
+        <h1 style="font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; margin-bottom: 1.5rem;">{{ i18n $data.heading_key | default "About Us" }}</h1>
+        {{- with $data.subtitle_key -}}
+        <p class="lead" style="font-size: clamp(1.125rem, 2vw, 1.5rem); line-height: 1.6; max-width: 48rem; margin: 0 auto; opacity: 0.95;">{{ i18n . }}</p>
+        {{- end -}}
+      </div>
+    </div>
+  </div>
+</section>
+{{- end -}}

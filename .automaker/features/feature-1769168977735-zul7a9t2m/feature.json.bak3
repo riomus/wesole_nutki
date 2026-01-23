@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Display Embedded Gallery Count Indicator in Single Post View\n\nFix the styling and positioning of the embedded gallery count indicator on the single post view page to ensure it displays correctly and is visually appealing.\n\nRequirements:\n- Locate the embedded-gallery-count element in the single post view template\n- Identify current rendering issues (positioning, overlap, styling, visibility)\n- Apply proper CSS styling to make the count clearly visible and readable\n- Ensure consistent spacing and alignment with surrounding post content\n- Verify the count displays correctly for posts with varying numbers of embedded gallery items\n- Test responsive behavior across different screen sizes (mobile, tablet, desktop)\n- Match the design pattern used in other count indicators throughout the application\n- Confirm no layout shift or overlap with other post elements (title, metadata, content)",
+  "title": "",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": "Display Embedded Gallery Count Indicator in Single Post View\n\nFix the styling and positioning of the embedded gallery count indicator on the single post view page to ensure it displays correctly and is visually appealing.\n\nRequirements:\n- Locate the embedded-gallery-count element in the single post view template\n- Identify current rendering issues (positioning, overlap, styling, visibility)\n- Apply proper CSS styling to make the count clearly visible and readable\n- Ensure consistent spacing and alignment with surrounding post content\n- Verify the count displays correctly for posts with varying numbers of embedded gallery items\n- Test responsive behavior across different screen sizes (mobile, tablet, desktop)\n- Match the design pattern used in other count indicators throughout the application\n- Confirm no layout shift or overlap with other post elements (title, metadata, content)",
+  "status": "in_progress",
+  "id": "feature-1769168977735-zul7a9t2m",
+  "descriptionHistory": [
+    {
+      "description": "Display Embedded Gallery Count Indicator in Single Post View\n\nFix the styling and positioning of the embedded gallery count indicator on the single post view page to ensure it displays correctly and is visually appealing.\n\nRequirements:\n- Locate the embedded-gallery-count element in the single post view template\n- Identify current rendering issues (positioning, overlap, styling, visibility)\n- Apply proper CSS styling to make the count clearly visible and readable\n- Ensure consistent spacing and alignment with surrounding post content\n- Verify the count displays correctly for posts with varying numbers of embedded gallery items\n- Test responsive behavior across different screen sizes (mobile, tablet, desktop)\n- Match the design pattern used in other count indicators throughout the application\n- Confirm no layout shift or overlap with other post elements (title, metadata, content)",
+      "timestamp": "2026-01-23T11:49:37.896Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T11:49:39.472Z"
+}

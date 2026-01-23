@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix Feature Icon Visibility for Success and Info States\n\nThe feature-icon components with icon-success and icon-info classes have white backgrounds with white icons, making them invisible to users. Update the styling to ensure proper contrast and visibility.\n\nRequirements:\n- Locate the CSS/styling for feature-icon icon-success and feature-icon icon-info classes\n- Change either the background color or icon color to create visible contrast\n- Ensure the color scheme matches the existing design system (success = green theme, info = blue theme)\n- Verify the fix works across different browsers and screen sizes\n- Check if other icon states (warning, error, etc.) have similar issues\n- Test in both light and dark mode if applicable\n- Ensure accessibility standards are met (WCAG contrast ratio of at least 4.5:1)",
+  "title": "Fix feature-icon visibility in success and info states",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "verified",
+  "id": "feature-1769164809408-95vsm20hw",
+  "descriptionHistory": [
+    {
+      "description": "Fix Feature Icon Visibility for Success and Info States\n\nThe feature-icon components with icon-success and icon-info classes have white backgrounds with white icons, making them invisible to users. Update the styling to ensure proper contrast and visibility.\n\nRequirements:\n- Locate the CSS/styling for feature-icon icon-success and feature-icon icon-info classes\n- Change either the background color or icon color to create visible contrast\n- Ensure the color scheme matches the existing design system (success = green theme, info = blue theme)\n- Verify the fix works across different browsers and screen sizes\n- Check if other icon states (warning, error, etc.) have similar issues\n- Test in both light and dark mode if applicable\n- Ensure accessibility standards are met (WCAG contrast ratio of at least 4.5:1)",
+      "timestamp": "2026-01-23T10:40:09.694Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T10:57:37.674Z"
+}

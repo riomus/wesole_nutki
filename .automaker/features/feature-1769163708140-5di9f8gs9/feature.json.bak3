@@ -1,0 +1,28 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix Icon Visibility Issue - White Icon on White Background\n\nResolve the visibility problem where icon-accent elements are displaying white icons on white backgrounds, making them invisible to users.\n\nRequirements:\n- Identify all instances of icon-accent components with this issue\n- Determine appropriate background color or icon color for proper contrast\n- Ensure minimum WCAG contrast ratio of 4.5:1 for accessibility\n- Apply consistent styling across all icon-accent usage\n- Test in both light and dark themes (if applicable)\n- Verify changes don't break existing visual design patterns\n\nEdge cases to consider:\n- Icons in different states (hover, active, disabled)\n- Icons on various background contexts (cards, headers, sidebars)\n- System theme preferences that might affect color rendering",
+  "title": "Fix icon-accent contrast for accessibility compliance",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "backlog",
+  "id": "feature-1769163708140-5di9f8gs9",
+  "descriptionHistory": [
+    {
+      "description": "Fix Icon Visibility Issue - White Icon on White Background\n\nResolve the visibility problem where icon-accent elements are displaying white icons on white backgrounds, making them invisible to users.\n\nRequirements:\n- Identify all instances of icon-accent components with this issue\n- Determine appropriate background color or icon color for proper contrast\n- Ensure minimum WCAG contrast ratio of 4.5:1 for accessibility\n- Apply consistent styling across all icon-accent usage\n- Test in both light and dark themes (if applicable)\n- Verify changes don't break existing visual design patterns\n\nEdge cases to consider:\n- Icons in different states (hover, active, disabled)\n- Icons on various background contexts (cards, headers, sidebars)\n- System theme preferences that might affect color rendering",
+      "timestamp": "2026-01-23T10:21:48.432Z",
+      "source": "initial"
+    }
+  ]
+}

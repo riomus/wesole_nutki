@@ -1,0 +1,28 @@
+{
+  "category": "Uncategorized",
+  "description": "Update Website Contact Information and Social Media Links\n\nUpdate the website's contact information, address, operating hours, and social media links to reflect current business details for Wesołe Nutki preschool in Wrocław.\n\nRequirements:\n- Replace existing Facebook link with: https://www.facebook.com/NutkiWroclaw/\n- Remove all Instagram references and links from the site\n- Update contact information section with:\n  * Phone number: 530 114 202\n  * Email: przedszkole@wesolenutki.eu\n- Update physical address to: Ul. Łaciarska 8, Wrocław, Poland, 50-104\n- Update operating hours display:\n  * Monday-Friday: 06:30 - 17:30\n  * Saturday-Sunday: ZAMKNIĘTE (Closed)\n  * Show \"Otwarte teraz\" (Open now) status indicator when appropriate\n- Ensure all text uses Polish language labels as specified\n- Verify all changes are reflected across all pages where this information appears\n- Test that links are functional and correctly formatted\n- Maintain consistent styling and formatting with existing design",
+  "title": "Update Wesołe Nutki contact and social media information",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "backlog",
+  "id": "feature-1769160983134-bzft8v0xk",
+  "descriptionHistory": [
+    {
+      "description": "Update Website Contact Information and Social Media Links\n\nUpdate the website's contact information, address, operating hours, and social media links to reflect current business details for Wesołe Nutki preschool in Wrocław.\n\nRequirements:\n- Replace existing Facebook link with: https://www.facebook.com/NutkiWroclaw/\n- Remove all Instagram references and links from the site\n- Update contact information section with:\n  * Phone number: 530 114 202\n  * Email: przedszkole@wesolenutki.eu\n- Update physical address to: Ul. Łaciarska 8, Wrocław, Poland, 50-104\n- Update operating hours display:\n  * Monday-Friday: 06:30 - 17:30\n  * Saturday-Sunday: ZAMKNIĘTE (Closed)\n  * Show \"Otwarte teraz\" (Open now) status indicator when appropriate\n- Ensure all text uses Polish language labels as specified\n- Verify all changes are reflected across all pages where this information appears\n- Test that links are functional and correctly formatted\n- Maintain consistent styling and formatting with existing design",
+      "timestamp": "2026-01-23T09:36:23.230Z",
+      "source": "initial"
+    }
+  ]
+}

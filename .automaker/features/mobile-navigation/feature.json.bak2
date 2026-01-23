@@ -1,0 +1,12 @@
+{
+  "id": "mobile-navigation",
+  "category": "UI",
+  "title": "Responsive Mobile Menu",
+  "description": "Implement hamburger menu navigation for mobile devices with smooth transitions. Include collapsible nested menu support and ensure touch-friendly tap targets for small screens.",
+  "status": "in_progress",
+  "priority": 1,
+  "complexity": "moderate",
+  "createdAt": "2026-01-22T14:36:35.497Z",
+  "updatedAt": "2026-01-22T15:08:50.902Z",
+  "descriptionHistory": []
+}

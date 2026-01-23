@@ -1,0 +1,28 @@
+{
+  "category": "Uncategorized",
+  "description": "Localize Date Formatting Based on Language Selection\n\nEnsure all date displays throughout the gallery webpage respect the user's selected language preference, eliminating any hardcoded English date formats.\n\nRequirements:\n- Audit all date instances on the gallery webpage to identify English-formatted dates\n- Replace hardcoded English date formats with locale-aware formatting functions\n- Ensure date formatting dynamically updates when user changes language selector\n- Apply consistent date format pattern across all gallery date displays (e.g., image upload dates, metadata timestamps, creation dates)\n- Handle various date formats appropriately: short dates, long dates, relative dates (e.g., \"2 days ago\")\n- Test date display with multiple target languages from the language selector\n- Verify month names, day names, and date ordering match selected locale conventions\n- Ensure timezone handling remains consistent across localization",
+  "title": "Implement locale-aware date formatting across gallery",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "backlog",
+  "id": "feature-1769169137493-jywvb69iv",
+  "descriptionHistory": [
+    {
+      "description": "Localize Date Formatting Based on Language Selection\n\nEnsure all date displays throughout the gallery webpage respect the user's selected language preference, eliminating any hardcoded English date formats.\n\nRequirements:\n- Audit all date instances on the gallery webpage to identify English-formatted dates\n- Replace hardcoded English date formats with locale-aware formatting functions\n- Ensure date formatting dynamically updates when user changes language selector\n- Apply consistent date format pattern across all gallery date displays (e.g., image upload dates, metadata timestamps, creation dates)\n- Handle various date formats appropriately: short dates, long dates, relative dates (e.g., \"2 days ago\")\n- Test date display with multiple target languages from the language selector\n- Verify month names, day names, and date ordering match selected locale conventions\n- Ensure timezone handling remains consistent across localization",
+      "timestamp": "2026-01-23T11:52:17.535Z",
+      "source": "initial"
+    }
+  ]
+}

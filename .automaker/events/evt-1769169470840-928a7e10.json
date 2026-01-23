@@ -1,0 +1,11 @@
+{
+  "id": "evt-1769169470840-928a7e10",
+  "trigger": "feature_success",
+  "timestamp": "2026-01-23T11:57:50.840Z",
+  "projectPath": "/Users/romanbartusiak/git/riomus/wesole_nutki",
+  "projectName": "wesole_nutki",
+  "featureId": "feature-1769169048080-vgocy8ifc",
+  "featureName": "Fix embedded gallery top spacing in post view",
+  "error": "Feature completed in 419s - auto-verified",
+  "passes": true
+}

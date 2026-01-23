@@ -1,0 +1,12 @@
+{
+  "id": "lightbox-integration",
+  "category": "UI",
+  "title": "Image Lightbox Implementation",
+  "description": "Integrate GLightbox or similar lightbox library for full-screen image viewing. Support keyboard navigation, touch gestures, image captions, and responsive scaling.",
+  "status": "completed",
+  "priority": 1,
+  "complexity": "moderate",
+  "createdAt": "2026-01-22T14:36:35.504Z",
+  "updatedAt": "2026-01-22T15:07:14.566Z",
+  "descriptionHistory": []
+}

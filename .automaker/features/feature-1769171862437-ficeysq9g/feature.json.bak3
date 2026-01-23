@@ -1,0 +1,28 @@
+{
+  "category": "Uncategorized",
+  "description": "Add Consistent Styling to Embedded Gallery Item Images\n\nUpdate CSS styling for images within embedded gallery items to remove margins and adjust border radius for a flush, seamless appearance.\n\nRequirements:\n- Target selector: .embedded-gallery-item picture img\n- Set margin to 0 on all sides to eliminate any spacing\n- Set border-radius on bottom edges (bottom-left and bottom-right) to 0\n- Preserve any existing border-radius on top edges if present\n- Ensure changes don't break responsive behavior or other gallery layouts\n- Verify styling consistency across different browsers",
+  "title": "Update embedded gallery image styling for seamless appearance",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "backlog",
+  "id": "feature-1769171862437-ficeysq9g",
+  "descriptionHistory": [
+    {
+      "description": "Add Consistent Styling to Embedded Gallery Item Images\n\nUpdate CSS styling for images within embedded gallery items to remove margins and adjust border radius for a flush, seamless appearance.\n\nRequirements:\n- Target selector: .embedded-gallery-item picture img\n- Set margin to 0 on all sides to eliminate any spacing\n- Set border-radius on bottom edges (bottom-left and bottom-right) to 0\n- Preserve any existing border-radius on top edges if present\n- Ensure changes don't break responsive behavior or other gallery layouts\n- Verify styling consistency across different browsers",
+      "timestamp": "2026-01-23T12:37:42.524Z",
+      "source": "initial"
+    }
+  ]
+}

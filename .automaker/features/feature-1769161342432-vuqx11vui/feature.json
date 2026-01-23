@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Add Custom Logo from External Image Source\n\nIntegrate the specified image as the application logo by fetching it from https://wesolenutki.eu/wp-content/uploads/2020/04/dzieciaki-wektory.png\n\nRequirements:\n- Download and save the image locally to the project assets folder\n- Add the logo image to the appropriate location in the UI (header, navigation bar, or landing page)\n- Ensure proper sizing and responsive behavior across different screen sizes\n- Add alt text for accessibility\n- Optimize image if needed for web performance (compression, format conversion)\n- Consider fallback behavior if external image becomes unavailable\n- Update any existing logo references to use the new image\n\nTechnical considerations:\n- Verify image format compatibility (PNG)\n- Check licensing and usage rights for the external image\n- Ensure image loads correctly on different devices and browsers\n- Maintain aspect ratio to prevent distortion",
+  "title": "Integrate Custom Logo from External Image Source",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "completed",
+  "id": "feature-1769161342432-vuqx11vui",
+  "descriptionHistory": [
+    {
+      "description": "Add Custom Logo from External Image Source\n\nIntegrate the specified image as the application logo by fetching it from https://wesolenutki.eu/wp-content/uploads/2020/04/dzieciaki-wektory.png\n\nRequirements:\n- Download and save the image locally to the project assets folder\n- Add the logo image to the appropriate location in the UI (header, navigation bar, or landing page)\n- Ensure proper sizing and responsive behavior across different screen sizes\n- Add alt text for accessibility\n- Optimize image if needed for web performance (compression, format conversion)\n- Consider fallback behavior if external image becomes unavailable\n- Update any existing logo references to use the new image\n\nTechnical considerations:\n- Verify image format compatibility (PNG)\n- Check licensing and usage rights for the external image\n- Ensure image loads correctly on different devices and browsers\n- Maintain aspect ratio to prevent distortion",
+      "timestamp": "2026-01-23T09:42:22.502Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T09:45:08.535Z"
+}

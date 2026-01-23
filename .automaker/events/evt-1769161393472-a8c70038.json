@@ -1,0 +1,11 @@
+{
+  "id": "evt-1769161393472-a8c70038",
+  "trigger": "feature_success",
+  "timestamp": "2026-01-23T09:43:13.472Z",
+  "projectPath": "/Users/romanbartusiak/git/riomus/wesole_nutki",
+  "projectName": "wesole_nutki",
+  "featureId": "feature-1769160880510-6pzqwudhk",
+  "featureName": "Localize Polish homepage news section date formatting",
+  "error": "Feature completed in 509s - auto-verified",
+  "passes": true
+}

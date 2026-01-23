@@ -1,0 +1,12 @@
+{
+  "id": "gallery-tests",
+  "category": "Testing",
+  "title": "Gallery Functionality Tests",
+  "description": "Create E2E tests for gallery list display, single gallery page rendering, lightbox opening/closing, keyboard navigation, and category filtering.",
+  "status": "verified",
+  "priority": 2,
+  "complexity": "moderate",
+  "createdAt": "2026-01-22T14:36:35.512Z",
+  "updatedAt": "2026-01-22T16:06:31.780Z",
+  "descriptionHistory": []
+}

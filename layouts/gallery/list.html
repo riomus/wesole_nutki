@@ -1,0 +1,87 @@
+{{ define "main" }}
+{{/* Breadcrumb Navigation */}}
+{{ partial "breadcrumb.html" . }}
+
+<section class="py-5">
+  <div class="container">
+    <header class="mb-5">
+      <h1 class="display-4">{{ .Title }}</h1>
+      {{ with .Content }}
+      <div class="lead">{{ . }}</div>
+      {{ end }}
+    </header>
+
+    {{/* Category Filter */}}
+    {{ partial "gallery-category-filter.html" . }}
+
+    {{/* Use paginator for proper pagination */}}
+    {{ $paginator := .Paginate (.Pages.ByDate.Reverse) }}
+
+    {{ if $paginator.Pages }}
+    {{/* Group galleries by gallery_categories if they exist, otherwise show all */}}
+    {{ $groupedByCategory := $paginator.Pages.GroupByParam "gallery_categories" }}
+
+    {{ if and $groupedByCategory (gt (len $groupedByCategory) 1) }}
+      {{/* Show galleries grouped by category */}}
+      {{ range $groupedByCategory }}
+        {{ if .Key }}
+        <div class="gallery-category-section mb-5">
+          <h2 class="h3 mb-4 text-primary">
+            {{/* Determine icon based on category name */}}
+            {{ $categoryName := lower .Key }}
+            <span class="category-icon me-2">
+              {{ if in $categoryName "event" }}🎉
+              {{ else if in $categoryName "wydarzen" }}🎉
+              {{ else if in $categoryName "wycieczk" }}🚌
+              {{ else if in $categoryName "trip" }}🚌
+              {{ else if in $categoryName "excursion" }}🚌
+              {{ else if in $categoryName "holiday" }}🎄
+              {{ else if in $categoryName "swiat" }}🎄
+              {{ else if in $categoryName "activ" }}🎨
+              {{ else if in $categoryName "zajec" }}🎨
+              {{ else if in $categoryName "rodzin" }}👨‍👩‍👧‍👦
+              {{ else if in $categoryName "family" }}👨‍👩‍👧‍👦
+              {{ else }}📁
+              {{ end }}
+            </span>
+            <a href="{{ printf "gallery_categories/%s" (urlize .Key) | relLangURL }}" class="text-decoration-none">{{ .Key }}</a>
+          </h2>
+          <div class="gallery-grid">
+            {{ range .Pages }}
+            {{ partial "gallery-card.html" . }}
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+      {{ end }}
+
+      {{/* Show uncategorized galleries */}}
+      {{ range $groupedByCategory }}
+        {{ if not .Key }}
+        <div class="gallery-category-section mb-5">
+          <h2 class="h3 mb-4 text-muted">{{ i18n "other_galleries" | default "Other galleries" }}</h2>
+          <div class="gallery-grid">
+            {{ range .Pages }}
+            {{ partial "gallery-card.html" . }}
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+      {{ end }}
+    {{ else }}
+      {{/* Show all galleries in a grid (no categories or single category) */}}
+      <div class="gallery-grid">
+        {{ range $paginator.Pages }}
+        {{ partial "gallery-card.html" . }}
+        {{ end }}
+      </div>
+    {{ end }}
+
+    {{/* Custom Pagination */}}
+    {{ partial "pagination.html" $paginator }}
+    {{ else }}
+    <p class="text-muted">{{ i18n "no_results" }}</p>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,21 @@
+# News Highlights Section Configuration
+# Displays latest news/blog posts on the homepage
+
+enabled: true
+
+# Section header keys (from i18n)
+heading_key: latest_news
+subtitle_key: latest_news_subtitle
+
+# Number of news items to display
+count: 3
+
+# Show featured posts only
+featured_only: false
+
+# News section to pull from
+section: news
+
+# Show "View All" button
+show_view_all: true
+view_all_label_key: all_news

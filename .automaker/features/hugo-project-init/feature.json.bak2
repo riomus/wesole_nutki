@@ -1,0 +1,12 @@
+{
+  "id": "hugo-project-init",
+  "category": "Infrastructure",
+  "title": "Initialize Hugo Project Structure",
+  "description": "Set up the Hugo static site generator project with the proper directory structure including content, layouts, static, data, and config directories. Configure hugo.toml/config.toml with basic site settings.",
+  "status": "in_progress",
+  "priority": 1,
+  "complexity": "simple",
+  "dependencies": [],
+  "createdAt": "2026-01-22T14:36:35.492Z",
+  "updatedAt": "2026-01-22T14:36:56.459Z"
+}

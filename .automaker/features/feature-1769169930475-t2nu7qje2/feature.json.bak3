@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Add PDF Document Attachment Functionality to Documents Site and CMS\n\nImplement the ability for users to attach PDF documents in the documents site, with corresponding management capabilities in the CMS.\n\nRequirements:\n\nFrontend (Documents Site):\n- Add file upload interface that accepts PDF files\n- Validate file type to ensure only PDF documents are uploaded\n- Display upload progress indicator during file transfer\n- Show attached PDF documents with preview thumbnails or icons\n- Enable users to view/download attached PDFs\n- Handle file size limits with clear error messages\n- Support multiple PDF attachments per document if applicable\n\nBackend/CMS:\n- Create PDF upload endpoint with proper validation\n- Store PDF files securely (cloud storage or file system)\n- Add database fields to track PDF attachments (filename, path, size, upload date)\n- Implement CMS interface for admins to upload/manage PDFs\n- Add ability to delete or replace existing PDF attachments in CMS\n- Generate metadata for uploaded PDFs (file size, page count if possible)\n\nTechnical Considerations:\n- Set appropriate file size limit (e.g., 10MB max)\n- Implement virus scanning for uploaded files\n- Ensure proper MIME type validation (application/pdf)\n- Handle duplicate filenames gracefully\n- Optimize storage and delivery (CDN integration if applicable)\n- Add appropriate access controls and permissions\n- Ensure mobile-responsive upload interface\n\nEdge Cases:\n- Handle corrupted or invalid PDF files\n- Manage upload failures and provide retry mechanism\n- Address concurrent uploads by multiple users\n- Handle documents with no PDF attachments gracefully",
+  "title": "",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": "Add PDF Document Attachment Functionality to Documents Site and CMS\n\nImplement the ability for users to attach PDF documents in the documents site, with corresponding management capabilities in the CMS.\n\nRequirements:\n\nFrontend (Documents Site):\n- Add file upload interface that accepts PDF files\n- Validate file type to ensure only PDF documents are uploaded\n- Display upload progress indicator during file transfer\n- Show attached PDF documents with preview thumbnails or icons\n- Enable users to view/download attached PDFs\n- Handle file size limits with clear error messages\n- Support multiple PDF attachments per document if applicable\n\nBackend/CMS:\n- Create PDF upload endpoint with proper validation\n- Store PDF files securely (cloud storage or file system)\n- Add database fields to track PDF attachments (filename, path, size, upload date)\n- Implement CMS interface for admins to upload/manage PDFs\n- Add ability to delete or replace existing PDF attachments in CMS\n- Generate metadata for uploaded PDFs (file size, page count if possible)\n\nTechnical Considerations:\n- Set appropriate file size limit (e.g., 10MB max)\n- Implement virus scanning for uploaded files\n- Ensure proper MIME type validation (application/pdf)\n- Handle duplicate filenames gracefully\n- Optimize storage and delivery (CDN integration if applicable)\n- Add appropriate access controls and permissions\n- Ensure mobile-responsive upload interface\n\nEdge Cases:\n- Handle corrupted or invalid PDF files\n- Manage upload failures and provide retry mechanism\n- Address concurrent uploads by multiple users\n- Handle documents with no PDF attachments gracefully",
+  "status": "in_progress",
+  "id": "feature-1769169930475-t2nu7qje2",
+  "descriptionHistory": [
+    {
+      "description": "Add PDF Document Attachment Functionality to Documents Site and CMS\n\nImplement the ability for users to attach PDF documents in the documents site, with corresponding management capabilities in the CMS.\n\nRequirements:\n\nFrontend (Documents Site):\n- Add file upload interface that accepts PDF files\n- Validate file type to ensure only PDF documents are uploaded\n- Display upload progress indicator during file transfer\n- Show attached PDF documents with preview thumbnails or icons\n- Enable users to view/download attached PDFs\n- Handle file size limits with clear error messages\n- Support multiple PDF attachments per document if applicable\n\nBackend/CMS:\n- Create PDF upload endpoint with proper validation\n- Store PDF files securely (cloud storage or file system)\n- Add database fields to track PDF attachments (filename, path, size, upload date)\n- Implement CMS interface for admins to upload/manage PDFs\n- Add ability to delete or replace existing PDF attachments in CMS\n- Generate metadata for uploaded PDFs (file size, page count if possible)\n\nTechnical Considerations:\n- Set appropriate file size limit (e.g., 10MB max)\n- Implement virus scanning for uploaded files\n- Ensure proper MIME type validation (application/pdf)\n- Handle duplicate filenames gracefully\n- Optimize storage and delivery (CDN integration if applicable)\n- Add appropriate access controls and permissions\n- Ensure mobile-responsive upload interface\n\nEdge Cases:\n- Handle corrupted or invalid PDF files\n- Manage upload failures and provide retry mechanism\n- Address concurrent uploads by multiple users\n- Handle documents with no PDF attachments gracefully",
+      "timestamp": "2026-01-23T12:05:30.748Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T12:05:39.115Z"
+}

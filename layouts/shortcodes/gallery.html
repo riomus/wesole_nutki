@@ -1,0 +1,193 @@
+{{/*
+  Gallery Shortcode - Embed photo galleries within news articles
+
+  Usage:
+
+  1. Reference an existing gallery by path:
+     {{< gallery ref="gallery/codzienne-zajecia" >}}
+
+  2. Create inline gallery with simple image list:
+     {{< gallery >}}
+       /images/event/photo1.jpg
+       /images/event/photo2.jpg
+       /images/event/photo3.jpg
+     {{< /gallery >}}
+
+  3. Create inline gallery with captions (pipe-separated):
+     {{< gallery >}}
+       /images/event/photo1.jpg | Caption for photo 1 | Alt text for photo 1
+       /images/event/photo2.jpg | Caption for photo 2
+       /images/event/photo3.jpg
+     {{< /gallery >}}
+
+  4. Optional parameters:
+     - ref: path to existing gallery (e.g., "gallery/christmas-2023")
+     - title: custom title for the gallery section
+     - columns: number of columns (2, 3, 4) - default is auto
+     - class: additional CSS classes
+     - id: custom id for the gallery container
+*/}}
+
+{{ $ref := .Get "ref" }}
+{{ $title := .Get "title" }}
+{{ $columns := .Get "columns" }}
+{{ $class := .Get "class" | default "" }}
+{{ $customId := .Get "id" }}
+
+{{/* Generate unique ID for this gallery instance */}}
+{{ $uniqueId := $customId | default (printf "embedded-gallery-%s" (md5 (printf "%s-%s" .Page.File.UniqueID .Position))) }}
+
+{{/* Initialize images slice */}}
+{{ $images := slice }}
+{{ $galleryTitle := $title }}
+{{ $galleryDescription := "" }}
+
+{{/* Mode 1: Reference existing gallery */}}
+{{ if $ref }}
+  {{ $galleryPage := .Page.Site.GetPage $ref }}
+  {{ if $galleryPage }}
+    {{ $images = $galleryPage.Params.images }}
+    {{ if not $galleryTitle }}
+      {{ $galleryTitle = $galleryPage.Title }}
+    {{ end }}
+    {{ $galleryDescription = $galleryPage.Params.description }}
+  {{ else }}
+    {{ warnf "Gallery shortcode: Gallery not found at path '%s'" $ref }}
+  {{ end }}
+{{ else }}
+  {{/* Mode 2: Parse inline content */}}
+  {{ $content := .Inner | default "" }}
+  {{ if $content }}
+    {{ $lines := split $content "\n" }}
+    {{ range $lines }}
+      {{ $line := . | strings.TrimSpace }}
+      {{ if $line }}
+        {{/* Parse line: image_path | caption | alt */}}
+        {{ $parts := split $line "|" }}
+        {{ $src := index $parts 0 | strings.TrimSpace }}
+        {{ $caption := "" }}
+        {{ $alt := "" }}
+
+        {{ if gt (len $parts) 1 }}
+          {{ $caption = index $parts 1 | strings.TrimSpace }}
+        {{ end }}
+
+        {{ if gt (len $parts) 2 }}
+          {{ $alt = index $parts 2 | strings.TrimSpace }}
+        {{ else if $caption }}
+          {{ $alt = $caption }}
+        {{ end }}
+
+        {{/* Create image object */}}
+        {{ $imageObj := dict "src" $src "caption" $caption "alt" $alt }}
+        {{ $images = $images | append $imageObj }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{/* Determine grid class based on columns parameter */}}
+{{ $gridClass := "embedded-gallery-grid" }}
+{{ if $columns }}
+  {{ $gridClass = printf "embedded-gallery-grid embedded-gallery-cols-%s" $columns }}
+{{ end }}
+
+{{/* Render the gallery */}}
+{{ if $images }}
+<div class="embedded-gallery {{ $class }}" id="{{ $uniqueId }}">
+  {{/* Optional title */}}
+  {{ if $galleryTitle }}
+  <div class="embedded-gallery-header">
+    <h3 class="embedded-gallery-title">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="me-2" viewBox="0 0 16 16">
+        <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+        <path d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3h10a2 2 0 0 1 2 2v8a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v.5a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H2.002a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1z"/>
+        <path d="M10.648 7.646a.5.5 0 0 1 .577-.093L15.002 9.5V13h-14v-2l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71z"/>
+      </svg>
+      {{ $galleryTitle }}
+    </h3>
+    {{ if $galleryDescription }}
+    <p class="embedded-gallery-description">{{ $galleryDescription }}</p>
+    {{ end }}
+    <span class="embedded-gallery-count badge bg-secondary">
+      {{ len $images }} {{ i18n "photos" | default "photos" }}
+    </span>
+  </div>
+  {{ end }}
+
+  {{/* Gallery grid with GLightbox integration */}}
+  <div class="{{ $gridClass }}" data-gallery-lightbox>
+    {{ range $index, $image := $images }}
+      {{/* Support both old format (string) and new format (object with src, caption, alt) */}}
+      {{ $imageSrc := "" }}
+      {{ $imageAlt := "" }}
+      {{ $imageCaption := "" }}
+
+      {{ if reflect.IsMap $image }}
+        {{ $imageSrc = $image.src }}
+        {{ $imageAlt = $image.alt | default $image.caption | default (printf "Gallery image %d" (add $index 1)) }}
+        {{ $imageCaption = $image.caption }}
+      {{ else }}
+        {{ $imageSrc = $image }}
+        {{ $imageAlt = printf "Gallery image %d" (add $index 1) }}
+      {{ end }}
+
+      <figure class="embedded-gallery-item" data-index="{{ $index }}">
+        {{/* GLightbox link with required data attributes */}}
+        {{/* Get processed image URL for lightbox */}}
+        {{- $lightboxUrl := $imageSrc | relURL -}}
+        {{- $assetPath := strings.TrimPrefix "/" $imageSrc -}}
+        {{- with resources.Get $assetPath -}}
+          {{/* Image found - use processed version */}}
+          {{- $resized := .Resize "1920x" -}}
+          {{- $lightboxUrl = $resized.RelPermalink -}}
+        {{- end -}}
+        <a href="{{ $lightboxUrl }}"
+           class="embedded-gallery-link glightbox"
+           data-gallery="gallery-{{ $uniqueId }}"
+           data-glightbox="title: {{ $imageCaption }}; description: {{ $imageAlt }}"
+           data-title="{{ $imageCaption }}"
+           data-description="{{ $imageAlt }}">
+          {{/* Use responsive image partial for optimized loading */}}
+          {{ partial "responsive-image" (dict
+            "src" $imageSrc
+            "alt" $imageAlt
+            "class" "embedded-gallery-image"
+            "sizes" "(max-width: 576px) 100vw, (max-width: 768px) 50vw, 25vw"
+            "loading" "lazy"
+            "context" $.Page
+          ) }}
+          <div class="embedded-gallery-overlay">
+            <span class="overlay-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+                <path d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1z"/>
+              </svg>
+            </span>
+          </div>
+        </a>
+        {{ if $imageCaption }}
+        <figcaption class="embedded-gallery-caption">{{ $imageCaption }}</figcaption>
+        {{ end }}
+      </figure>
+    {{ end }}
+  </div>
+
+  {{/* Link to full gallery if referencing existing gallery */}}
+  {{ if $ref }}
+    {{ $galleryPage := .Page.Site.GetPage $ref }}
+    {{ if $galleryPage }}
+    <div class="embedded-gallery-footer">
+      <a href="{{ $galleryPage.Permalink }}" class="btn btn-outline-primary btn-sm">
+        {{ i18n "view_full_gallery" | default "View full gallery" }}
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="ms-1" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+        </svg>
+      </a>
+    </div>
+    {{ end }}
+  {{ end }}
+</div>
+{{ else }}
+  {{ warnf "Gallery shortcode: No images found (ref: '%s', inner content length: %d)" $ref (len (.Inner | default "")) }}
+{{ end }}

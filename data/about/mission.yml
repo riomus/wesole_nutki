@@ -1,0 +1,20 @@
+# Mission/Philosophy Section Configuration
+enabled: true
+
+# Section header keys (from i18n)
+heading_key: about_mission_heading
+subtitle_key: about_mission_subtitle
+
+# Mission content key (from i18n)
+content_key: about_mission_content
+
+# Image
+image: /images/about-mission.jpg
+image_alt_key: about_mission_image_alt
+
+# Mission highlights (from i18n)
+highlights:
+  - key: about_mission_highlight_1
+  - key: about_mission_highlight_2
+  - key: about_mission_highlight_3
+  - key: about_mission_highlight_4

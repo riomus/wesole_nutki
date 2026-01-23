@@ -1,0 +1,44 @@
+{{ define "main" }}
+{{/* Breadcrumb Navigation */}}
+{{ partial "breadcrumb.html" . }}
+
+<section class="py-5">
+  <div class="container">
+    <header class="mb-5">
+      <h1 class="display-4">{{ i18n "news_tags" | default "News Tags" }}</h1>
+      <p class="lead">{{ i18n "news_tags_subtitle" | default "Browse our news articles by tag" }}</p>
+    </header>
+
+    {{ if .Pages }}
+    <div class="news-tags-grid">
+      {{ range .Pages }}
+      {{ $tagName := .Title }}
+      {{ $articleCount := len .Pages }}
+      <a href="{{ .Permalink }}" class="news-tag-card">
+        <div class="news-tag-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586V2zm3.5 4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+          </svg>
+        </div>
+        <div class="news-tag-card-body">
+          <h2 class="news-tag-card-title">{{ $tagName }}</h2>
+          <span class="news-tag-card-count">
+            {{ $articleCount }} {{ if eq $articleCount 1 }}{{ i18n "article_singular" | default "article" }}{{ else }}{{ i18n "articles_plural" | default "articles" }}{{ end }}
+          </span>
+        </div>
+      </a>
+      {{ end }}
+    </div>
+    {{ else }}
+    <p class="text-muted">{{ i18n "no_tags" | default "No tags available yet." }}</p>
+    {{ end }}
+
+    {{/* Link back to all news */}}
+    <div class="text-center mt-5">
+      <a href="{{ "news" | relLangURL }}" class="btn btn-outline-primary">
+        <span class="me-2">&larr;</span>{{ i18n "all_news" | default "All news" }}
+      </a>
+    </div>
+  </div>
+</section>
+{{ end }}

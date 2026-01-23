@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Update Contact Card Visual Design and Alignment\n\nRedesign the contact card component to improve its visual appearance and ensure it matches the design system used throughout the rest of the page.\n\nRequirements:\n- Review the current page design to identify consistent visual patterns (spacing, colors, typography, borders, shadows)\n- Update contact card styling to match the established design language\n- Ensure proper alignment with surrounding page elements\n- Improve visual hierarchy within the card (name, title, contact info, etc.)\n- Apply consistent padding and margins to align with page grid system\n- Update typography to match page font sizes, weights, and styles\n- Adjust colors, borders, and shadows to be cohesive with overall page theme\n- Ensure card is responsive and maintains visual consistency across different screen sizes\n- Verify adequate contrast ratios for accessibility\n- Test visual appearance in context of the full page layout",
+  "title": "Update Contact Card Design to Match System Standards",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "in_progress",
+  "id": "feature-1769164338907-duvdrks2o",
+  "descriptionHistory": [
+    {
+      "description": "Update Contact Card Visual Design and Alignment\n\nRedesign the contact card component to improve its visual appearance and ensure it matches the design system used throughout the rest of the page.\n\nRequirements:\n- Review the current page design to identify consistent visual patterns (spacing, colors, typography, borders, shadows)\n- Update contact card styling to match the established design language\n- Ensure proper alignment with surrounding page elements\n- Improve visual hierarchy within the card (name, title, contact info, etc.)\n- Apply consistent padding and margins to align with page grid system\n- Update typography to match page font sizes, weights, and styles\n- Adjust colors, borders, and shadows to be cohesive with overall page theme\n- Ensure card is responsive and maintains visual consistency across different screen sizes\n- Verify adequate contrast ratios for accessibility\n- Test visual appearance in context of the full page layout",
+      "timestamp": "2026-01-23T10:32:18.999Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T10:35:09.048Z"
+}

@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Scrape and Replicate Website Content from wesolenutki.eu\n\nExtract all content, structure, and media from https://wesolenutki.eu/ including all subpages, and create a clean, well-formatted replica that preserves the original information while improving readability.\n\nRequirements:\n- Crawl the main page and all linked subpages within the domain\n- Extract and download all images, particularly recent photos from galleries\n- Scrape all news articles and blog posts with their publication dates\n- Capture the complete menu structure and navigation hierarchy\n- Preserve all text content including headers, body text, and metadata\n- Download or reference all media files (images, videos if present)\n- Organize extracted content in a structured format (HTML, JSON, or markdown)\n- Ensure all internal links are mapped and preserved\n- Maintain the visual layout structure for reference\n- Handle pagination if present in news/photo sections\n- Respect robots.txt and implement appropriate delays between requests\n- Create a clean, readable output format that can be easily reviewed or republished\n- Document the site structure including all discovered URLs and content types\n\nDeliverables:\n- Complete content archive with all text, images, and structural data\n- Organized folder/file structure mirroring the site hierarchy\n- Navigation map showing all pages and their relationships\n- Clean, readable presentation of the scraped content",
+  "title": "Scrape and archive wesolenutki.eu website content",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "verified",
+  "id": "feature-1769160082949-18241ob5m",
+  "descriptionHistory": [
+    {
+      "description": "Scrape and Replicate Website Content from wesolenutki.eu\n\nExtract all content, structure, and media from https://wesolenutki.eu/ including all subpages, and create a clean, well-formatted replica that preserves the original information while improving readability.\n\nRequirements:\n- Crawl the main page and all linked subpages within the domain\n- Extract and download all images, particularly recent photos from galleries\n- Scrape all news articles and blog posts with their publication dates\n- Capture the complete menu structure and navigation hierarchy\n- Preserve all text content including headers, body text, and metadata\n- Download or reference all media files (images, videos if present)\n- Organize extracted content in a structured format (HTML, JSON, or markdown)\n- Ensure all internal links are mapped and preserved\n- Maintain the visual layout structure for reference\n- Handle pagination if present in news/photo sections\n- Respect robots.txt and implement appropriate delays between requests\n- Create a clean, readable output format that can be easily reviewed or republished\n- Document the site structure including all discovered URLs and content types\n\nDeliverables:\n- Complete content archive with all text, images, and structural data\n- Organized folder/file structure mirroring the site hierarchy\n- Navigation map showing all pages and their relationships\n- Clean, readable presentation of the scraped content",
+      "timestamp": "2026-01-23T09:21:23.044Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T09:31:44.697Z"
+}

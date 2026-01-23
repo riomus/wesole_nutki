@@ -1,0 +1,11 @@
+{
+  "id": "evt-1769160227097-e147732e",
+  "trigger": "feature_success",
+  "timestamp": "2026-01-23T09:23:47.097Z",
+  "projectPath": "/Users/romanbartusiak/git/riomus/wesole_nutki",
+  "projectName": "wesole_nutki",
+  "featureId": "feature-1769158784602-va0o53sxf",
+  "featureName": "Migrate from Bootstrap to Tailwind CSS",
+  "error": "Feature completed in 919s - auto-verified",
+  "passes": true
+}

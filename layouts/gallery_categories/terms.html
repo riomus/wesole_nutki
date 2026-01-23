@@ -1,0 +1,67 @@
+{{ define "main" }}
+{{/* Breadcrumb Navigation */}}
+{{ partial "breadcrumb.html" . }}
+
+<section class="py-5">
+  <div class="container">
+    <header class="mb-5">
+      <h1 class="display-4">{{ i18n "gallery_categories" | default "Gallery Categories" }}</h1>
+      <p class="lead">{{ i18n "gallery_categories_subtitle" | default "Browse our photo galleries by category" }}</p>
+    </header>
+
+    {{ if .Pages }}
+    <div class="gallery-categories-grid">
+      {{ range .Pages }}
+      {{ $categoryName := .Title }}
+      {{ $galleryCount := len .Pages }}
+      <a href="{{ .Permalink }}" class="gallery-category-card">
+        <div class="gallery-category-card-icon">
+          {{/* Determine icon based on category name */}}
+          {{ if in (lower $categoryName) "event" }}
+            <span class="category-emoji">🎉</span>
+          {{ else if in (lower $categoryName) "wydarzen" }}
+            <span class="category-emoji">🎉</span>
+          {{ else if in (lower $categoryName) "wycieczk" }}
+            <span class="category-emoji">🚌</span>
+          {{ else if in (lower $categoryName) "trip" }}
+            <span class="category-emoji">🚌</span>
+          {{ else if in (lower $categoryName) "excursion" }}
+            <span class="category-emoji">🚌</span>
+          {{ else if in (lower $categoryName) "holiday" }}
+            <span class="category-emoji">🎄</span>
+          {{ else if in (lower $categoryName) "swiat" }}
+            <span class="category-emoji">🎄</span>
+          {{ else if in (lower $categoryName) "activ" }}
+            <span class="category-emoji">🎨</span>
+          {{ else if in (lower $categoryName) "zajec" }}
+            <span class="category-emoji">🎨</span>
+          {{ else if in (lower $categoryName) "rodzin" }}
+            <span class="category-emoji">👨‍👩‍👧‍👦</span>
+          {{ else if in (lower $categoryName) "family" }}
+            <span class="category-emoji">👨‍👩‍👧‍👦</span>
+          {{ else }}
+            <span class="category-emoji">📷</span>
+          {{ end }}
+        </div>
+        <div class="gallery-category-card-body">
+          <h2 class="gallery-category-card-title">{{ $categoryName }}</h2>
+          <span class="gallery-category-card-count">
+            {{ $galleryCount }} {{ if eq $galleryCount 1 }}{{ i18n "gallery_singular" | default "gallery" }}{{ else }}{{ i18n "galleries_plural" | default "galleries" }}{{ end }}
+          </span>
+        </div>
+      </a>
+      {{ end }}
+    </div>
+    {{ else }}
+    <p class="text-muted">{{ i18n "no_categories" | default "No categories available yet." }}</p>
+    {{ end }}
+
+    {{/* Link back to all galleries */}}
+    <div class="text-center mt-5">
+      <a href="{{ "gallery" | relLangURL }}" class="btn btn-outline-primary">
+        <span class="me-2">←</span>{{ i18n "all_galleries" | default "All galleries" }}
+      </a>
+    </div>
+  </div>
+</section>
+{{ end }}

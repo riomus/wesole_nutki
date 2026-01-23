@@ -1,0 +1,15 @@
+# CTA (Call to Action) Section Configuration
+# Displays a call-to-action section near the bottom
+
+enabled: true
+
+# CTA content keys (from i18n)
+heading_key: ready_to_start
+description_key: cta_description
+
+# CTA button
+button:
+  label_key: schedule_visit
+  url_menu_index: 5
+  style: light
+  icon: arrow-right

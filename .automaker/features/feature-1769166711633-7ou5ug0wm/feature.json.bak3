@@ -1,0 +1,28 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix Menu Sub-Items Spacing and Sizing Issues\n\nCorrect the visual layout of submenu items to ensure consistent spacing and appropriate sizing throughout the navigation menu.\n\nRequirements:\n- Identify all menu components that display sub-items (dropdowns, nested menus, etc.)\n- Ensure consistent padding and margin between submenu items\n- Set appropriate font size for submenu items (typically slightly smaller than parent menu items)\n- Verify proper vertical spacing between individual submenu entries\n- Check horizontal indentation for nested submenu levels\n- Ensure submenu container has appropriate width and doesn't clip content\n- Test across different viewport sizes for responsive behavior\n- Verify alignment and spacing is consistent with the overall design system\n- Check both hover and active states maintain proper spacing\n\nEdge cases to consider:\n- Submenu items with varying text lengths\n- Multi-level nested submenus\n- Submenus with icons or additional elements\n- Mobile/touch interfaces where spacing affects usability",
+  "title": "Fix submenu spacing and sizing issues",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "backlog",
+  "id": "feature-1769166711633-7ou5ug0wm",
+  "descriptionHistory": [
+    {
+      "description": "Fix Menu Sub-Items Spacing and Sizing Issues\n\nCorrect the visual layout of submenu items to ensure consistent spacing and appropriate sizing throughout the navigation menu.\n\nRequirements:\n- Identify all menu components that display sub-items (dropdowns, nested menus, etc.)\n- Ensure consistent padding and margin between submenu items\n- Set appropriate font size for submenu items (typically slightly smaller than parent menu items)\n- Verify proper vertical spacing between individual submenu entries\n- Check horizontal indentation for nested submenu levels\n- Ensure submenu container has appropriate width and doesn't clip content\n- Test across different viewport sizes for responsive behavior\n- Verify alignment and spacing is consistent with the overall design system\n- Check both hover and active states maintain proper spacing\n\nEdge cases to consider:\n- Submenu items with varying text lengths\n- Multi-level nested submenus\n- Submenus with icons or additional elements\n- Mobile/touch interfaces where spacing affects usability",
+      "timestamp": "2026-01-23T11:11:51.729Z",
+      "source": "initial"
+    }
+  ]
+}

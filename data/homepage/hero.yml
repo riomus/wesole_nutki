@@ -1,0 +1,33 @@
+# Hero Section Configuration
+# This section appears at the top of the homepage
+
+enabled: true
+
+# Hero background style
+# Options: gradient, image
+background_style: image
+
+# Background image (used when background_style is 'image')
+# Supported formats: jpg, png, svg, webp
+# Recommended size: 1920x1080 or larger for best quality
+background_image: /images/hero-bg.svg
+
+# Overlay opacity for background images (0.0 to 1.0)
+# Darker overlay makes text more readable
+overlay_opacity: 0.6
+
+# Hero content - uses i18n keys for multilingual support
+# These keys are defined in i18n/pl.toml and i18n/en.toml
+headline_key: hero_headline
+subheadline_key: hero_subheadline
+
+# CTA Buttons
+buttons:
+  - label_key: learn_more
+    url_menu_index: 1
+    style: light
+    icon: arrow-right
+  - label_key: contact_us
+    url_menu_index: 5
+    style: outline-light
+    icon: null

@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Align Contact Card Title and Email on Contact Page\n\nFix the alignment issue where the contact card title with email appears off-center on the contact page, likely caused by email addresses exceeding available width.\n\nRequirements:\n- Investigate the contact card component to identify layout constraints causing misalignment\n- Implement proper text overflow handling for long email addresses (truncation, ellipsis, or wrapping)\n- Ensure title and email maintain centered alignment regardless of email length\n- Test with various email address lengths (short, medium, very long)\n- Verify responsive behavior across different screen sizes\n- Maintain visual hierarchy between title and email elements\n- Ensure email remains readable and accessible after fix",
+  "title": "",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": "Align Contact Card Title and Email on Contact Page\n\nFix the alignment issue where the contact card title with email appears off-center on the contact page, likely caused by email addresses exceeding available width.\n\nRequirements:\n- Investigate the contact card component to identify layout constraints causing misalignment\n- Implement proper text overflow handling for long email addresses (truncation, ellipsis, or wrapping)\n- Ensure title and email maintain centered alignment regardless of email length\n- Test with various email address lengths (short, medium, very long)\n- Verify responsive behavior across different screen sizes\n- Maintain visual hierarchy between title and email elements\n- Ensure email remains readable and accessible after fix",
+  "status": "in_progress",
+  "id": "feature-1769166519909-bx5heq4rw",
+  "descriptionHistory": [
+    {
+      "description": "Align Contact Card Title and Email on Contact Page\n\nFix the alignment issue where the contact card title with email appears off-center on the contact page, likely caused by email addresses exceeding available width.\n\nRequirements:\n- Investigate the contact card component to identify layout constraints causing misalignment\n- Implement proper text overflow handling for long email addresses (truncation, ellipsis, or wrapping)\n- Ensure title and email maintain centered alignment regardless of email length\n- Test with various email address lengths (short, medium, very long)\n- Verify responsive behavior across different screen sizes\n- Maintain visual hierarchy between title and email elements\n- Ensure email remains readable and accessible after fix",
+      "timestamp": "2026-01-23T11:08:40.003Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T11:08:42.391Z"
+}

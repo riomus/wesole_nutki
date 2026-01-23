@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Remove Top Spacing from Embedded Gallery Item in Single Post View\n\nEliminate the unwanted blank space appearing above images in embedded-gallery-item cards when viewing individual posts.\n\nRequirements:\n- Locate the embedded-gallery-item component used in single post view\n- Identify the CSS property or element causing the top spacing (padding, margin, or structural element)\n- Remove or adjust the spacing so the image aligns flush with the top of the card\n- Ensure the fix applies only to single post view and doesn't affect gallery items in other contexts\n- Verify the change doesn't break image aspect ratios or cause layout shifts\n- Test with multiple image sizes and aspect ratios to ensure consistent behavior",
+  "title": "Fix embedded gallery top spacing in post view",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "in_progress",
+  "id": "feature-1769169048080-vgocy8ifc",
+  "descriptionHistory": [
+    {
+      "description": "Remove Top Spacing from Embedded Gallery Item in Single Post View\n\nEliminate the unwanted blank space appearing above images in embedded-gallery-item cards when viewing individual posts.\n\nRequirements:\n- Locate the embedded-gallery-item component used in single post view\n- Identify the CSS property or element causing the top spacing (padding, margin, or structural element)\n- Remove or adjust the spacing so the image aligns flush with the top of the card\n- Ensure the fix applies only to single post view and doesn't affect gallery items in other contexts\n- Verify the change doesn't break image aspect ratios or cause layout shifts\n- Test with multiple image sizes and aspect ratios to ensure consistent behavior",
+      "timestamp": "2026-01-23T11:50:48.223Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T11:50:51.975Z"
+}

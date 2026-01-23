@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix Main Menu Navigation Structure and Add \"More\" Section\n\nUpdate the main menu to match the structure and styling used on the /pl/news/ page, and add a new \"More/Więcej\" menu item with a dropdown containing additional site sections.\n\nRequirements:\n- Analyze the menu implementation on /pl/news/ and replicate its structure, styling, and behavior\n- Add a new top-level menu item labeled \"More\" (English) or \"Więcej\" (Polish) depending on language context\n- Create a dropdown/submenu under \"More/Więcej\" with the following items in order:\n  1. Rekrutacja (Recruitment)\n  2. Wizja (Vision)\n  3. Oferta (Offer)\n  4. Cennik (Pricing)\n  5. Płatności (Payments)\n  6. Zapisy (Registration)\n  7. Polityka Prywatności (Privacy Policy)\n  8. Standardy Ochrony Małoletnich (Child Protection Standards)\n- Ensure proper routing/linking for each submenu item\n- Maintain consistent hover states, active states, and transition effects\n- Verify mobile responsiveness for the expanded menu structure\n- Test dropdown functionality (click/hover behavior) matches /pl/news/ page\n- Ensure proper language switching behavior if the site is bilingual",
+  "title": "Restructure main menu and add More section dropdown",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "in_progress",
+  "id": "feature-1769172513066-giyvxu8xs",
+  "descriptionHistory": [
+    {
+      "description": "Fix Main Menu Navigation Structure and Add \"More\" Section\n\nUpdate the main menu to match the structure and styling used on the /pl/news/ page, and add a new \"More/Więcej\" menu item with a dropdown containing additional site sections.\n\nRequirements:\n- Analyze the menu implementation on /pl/news/ and replicate its structure, styling, and behavior\n- Add a new top-level menu item labeled \"More\" (English) or \"Więcej\" (Polish) depending on language context\n- Create a dropdown/submenu under \"More/Więcej\" with the following items in order:\n  1. Rekrutacja (Recruitment)\n  2. Wizja (Vision)\n  3. Oferta (Offer)\n  4. Cennik (Pricing)\n  5. Płatności (Payments)\n  6. Zapisy (Registration)\n  7. Polityka Prywatności (Privacy Policy)\n  8. Standardy Ochrony Małoletnich (Child Protection Standards)\n- Ensure proper routing/linking for each submenu item\n- Maintain consistent hover states, active states, and transition effects\n- Verify mobile responsiveness for the expanded menu structure\n- Test dropdown functionality (click/hover behavior) matches /pl/news/ page\n- Ensure proper language switching behavior if the site is bilingual",
+      "timestamp": "2026-01-23T12:48:33.156Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T12:48:36.807Z"
+}

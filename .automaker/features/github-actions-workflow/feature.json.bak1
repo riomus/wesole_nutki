@@ -1,0 +1,12 @@
+{
+  "id": "github-actions-workflow",
+  "category": "Infrastructure",
+  "title": "GitHub Actions CI/CD Pipeline",
+  "description": "Create GitHub Actions workflow for automated building and deployment to GitHub Pages. Include Hugo build, dependency installation, and artifact deployment steps.",
+  "status": "verified",
+  "priority": 1,
+  "complexity": "moderate",
+  "createdAt": "2026-01-22T14:36:35.510Z",
+  "updatedAt": "2026-01-22T14:56:38.524Z",
+  "descriptionHistory": []
+}

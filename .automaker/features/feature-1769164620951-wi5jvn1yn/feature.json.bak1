@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Update Typography System on About Us Page\n\nImprove the typography and text formatting on the About Us page to create a visually appealing, readable, and well-structured layout.\n\nRequirements:\n- Fix heading hierarchy and styling to establish clear visual structure\n- Apply consistent, readable font sizes and line heights throughout\n- Reformat list elements with proper spacing and visual indicators\n- Ensure adequate contrast between text and background colors\n- Set appropriate paragraph spacing and max-width for optimal reading line length\n- Apply consistent styling for different text elements (body text, quotes, captions)\n- Verify typography looks good across different screen sizes (mobile, tablet, desktop)\n- Consider using web-safe or properly loaded custom fonts with appropriate fallbacks\n\nSuccess criteria:\n- Headings follow a logical visual hierarchy (H1 > H2 > H3)\n- Lists are well-spaced with clear visual structure\n- Text is comfortably readable without strain\n- Overall page has a polished, professional appearance",
+  "title": "Improve About Us Page Typography and Readability",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "verified",
+  "id": "feature-1769164620951-wi5jvn1yn",
+  "descriptionHistory": [
+    {
+      "description": "Update Typography System on About Us Page\n\nImprove the typography and text formatting on the About Us page to create a visually appealing, readable, and well-structured layout.\n\nRequirements:\n- Fix heading hierarchy and styling to establish clear visual structure\n- Apply consistent, readable font sizes and line heights throughout\n- Reformat list elements with proper spacing and visual indicators\n- Ensure adequate contrast between text and background colors\n- Set appropriate paragraph spacing and max-width for optimal reading line length\n- Apply consistent styling for different text elements (body text, quotes, captions)\n- Verify typography looks good across different screen sizes (mobile, tablet, desktop)\n- Consider using web-safe or properly loaded custom fonts with appropriate fallbacks\n\nSuccess criteria:\n- Headings follow a logical visual hierarchy (H1 > H2 > H3)\n- Lists are well-spaced with clear visual structure\n- Text is comfortably readable without strain\n- Overall page has a polished, professional appearance",
+      "timestamp": "2026-01-23T10:37:01.119Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T10:53:04.495Z"
+}

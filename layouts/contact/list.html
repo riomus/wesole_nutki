@@ -1,0 +1,429 @@
+
+{{ define "main" }}
+{{ partial "breadcrumb.html" . }}
+
+<section class="contact-page py-5">
+  <div class="container">
+    <header class="section-header text-center mb-5">
+      <h1 class="section-heading">{{ .Title }}</h1>
+      {{ with .Params.description }}
+      <p class="section-subtitle">{{ . }}</p>
+      {{ end }}
+    </header>
+
+    <!-- Contact Information Cards -->
+    {{ with .Params.contact_info }}
+    <div class="row g-4 mb-5">
+      <!-- Address Card -->
+      {{ with .address }}
+      <div class="col-md-6 col-lg-3">
+        <div class="contact-card h-100 p-5">
+          <div class="contact-card-icon mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+            </svg>
+          </div>
+          <h3 class="contact-card-title mb-3">{{ i18n "address" | default "Address" }}</h3>
+          <p class="contact-card-text mb-0">{{ . }}</p>
+        </div>
+      </div>
+      {{ end }}
+
+      <!-- Phone Card -->
+      {{ with .phone }}
+      <div class="col-md-6 col-lg-3">
+        <div class="contact-card h-100 p-5">
+          <div class="contact-card-icon mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+            </svg>
+          </div>
+          <h3 class="contact-card-title mb-3">{{ i18n "phone" | default "Phone" }}</h3>
+          <a href="tel:{{ . | replaceRE `[^+0-9]` `` }}" class="contact-card-link" aria-label="{{ i18n "call_us" | default "Call us" }}">{{ . }}</a>
+        </div>
+      </div>
+      {{ end }}
+
+      <!-- Email Card -->
+      {{ with .email }}
+      <div class="col-md-6 col-lg-3">
+        <div class="contact-card h-100 p-5">
+          <div class="contact-card-icon mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+            </svg>
+          </div>
+          <h3 class="contact-card-title mb-3">{{ i18n "email" | default "Email" }}</h3>
+          <a href="mailto:{{ . }}" class="contact-card-link" aria-label="{{ i18n "email_us" | default "Email us" }}">{{ . }}</a>
+        </div>
+      </div>
+      {{ end }}
+
+      <!-- Opening Hours Card -->
+      {{ with .hours }}
+      <div class="col-md-6 col-lg-3">
+        <div class="contact-card h-100 p-5">
+          <div class="contact-card-icon mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+            </svg>
+          </div>
+          <h3 class="contact-card-title mb-3">{{ i18n "opening_hours" | default "Opening Hours" }}</h3>
+          <p class="contact-card-text mb-0">{{ . }}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+
+    <!-- Map and Directions Section -->
+    <div class="row g-4 align-items-stretch">
+      <!-- Map Column -->
+      <div class="col-12 col-md-7 col-lg-7">
+        {{ with .Params.map }}
+        {{ if and .latitude .longitude }}
+        <div class="contact-map-wrapper h-100">
+          <h2 class="h4 mb-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="text-primary me-2" viewBox="0 0 16 16">
+              <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+            </svg>
+            {{ i18n "our_location" | default "Our Location" }}
+          </h2>
+          <div class="contact-map rounded-4 overflow-hidden shadow-sm">
+            <div id="preschool-map"
+                 class="interactive-map"
+                 data-lat="{{ .latitude }}"
+                 data-lng="{{ .longitude }}"
+                 data-zoom="{{ .zoom | default 16 }}"
+                 data-marker-title="{{ .marker_title | default "Wesole Nutki Preschool" }}"
+                 data-marker-popup="{{ .marker_popup | default "" }}"
+                 role="application"
+                 aria-label="{{ i18n "map_title" | default "Interactive map showing preschool location" }}">
+            </div>
+          </div>
+        </div>
+        {{ end }}
+        {{ else }}
+        <div class="contact-image rounded-4 overflow-hidden shadow-sm h-100">
+          {{ with $.Params.featured_image }}
+          {{ partial "responsive-image" (dict
+            "src" .
+            "alt" $.Title
+            "class" "img-fluid w-100 h-100 object-fit-cover"
+            "sizes" "(max-width: 768px) 100vw, 60vw"
+            "loading" "lazy"
+            "context" $
+          ) }}
+          {{ else }}
+          <div class="bg-light d-flex align-items-center justify-content-center" style="height: 400px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="text-muted" viewBox="0 0 16 16">
+              <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+            </svg>
+          </div>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+
+      <!-- Directions Column -->
+      <div class="col-12 col-md-5 col-lg-5">
+        <div class="directions-card h-100 p-4 rounded-4 shadow-sm bg-light">
+          <h2 class="h4 mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="text-primary me-2" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8 0a.5.5 0 0 1 .5.5v.518A7 7 0 0 1 14.982 8H15.5a.5.5 0 0 1 0 1h-.518A7 7 0 0 1 8.5 15.482v.518a.5.5 0 0 1-1 0v-.518A7 7 0 0 1 1.018 9H.5a.5.5 0 0 1 0-1h.518A7 7 0 0 1 7.5 1.018V.5A.5.5 0 0 1 8 0m-.5 2.02A6 6 0 0 0 2.02 7.5h1.005A5 5 0 0 1 7.5 3.025zm1 1.005A5 5 0 0 1 12.975 7.5h1.005A6 6 0 0 0 8.5 2.02zM12.975 8.5A5 5 0 0 1 8.5 12.975v1.005a6 6 0 0 0 5.48-5.48zM7.5 12.975A5 5 0 0 1 3.025 8.5H2.02a6 6 0 0 0 5.48 5.48zM8 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+            </svg>
+            {{ i18n "how_to_reach_us" | default "How to Reach Us" }}
+          </h2>
+
+          {{ with .Params.directions }}
+          <!-- By Car -->
+          {{ with .by_car }}
+          <div class="directions-item mb-4">
+            <div class="d-flex align-items-start">
+              <div class="directions-icon me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="text-secondary" viewBox="0 0 16 16">
+                  <path d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679c.033.161.049.325.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.807.807 0 0 0 .381-.404l.792-1.848ZM3 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2m10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2M6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="h6 mb-1">{{ i18n "by_car" | default "By Car" }}</h3>
+                <p class="text-muted mb-0 small">{{ . }}</p>
+              </div>
+            </div>
+          </div>
+          {{ end }}
+
+          <!-- By Public Transport -->
+          {{ with .by_public_transport }}
+          <div class="directions-item mb-4">
+            <div class="d-flex align-items-start">
+              <div class="directions-icon me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="text-secondary" viewBox="0 0 16 16">
+                  <path d="M4 3.5C4 2.67 4.67 2 5.5 2h5c.83 0 1.5.67 1.5 1.5V5h1.5a.5.5 0 0 1 0 1H12v1.5c0 .83-.67 1.5-1.5 1.5h-5C4.67 9 4 8.33 4 7.5V5H2.5a.5.5 0 0 1 0-1H4zM6 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m4 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2M7 3v1h2V3zm3.5 7.5H10v3.5a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V10.5H4.5a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="h6 mb-1">{{ i18n "by_public_transport" | default "By Public Transport" }}</h3>
+                <p class="text-muted mb-0 small">{{ . }}</p>
+              </div>
+            </div>
+          </div>
+          {{ end }}
+
+          <!-- Parking -->
+          {{ with .parking }}
+          <div class="directions-item mb-4">
+            <div class="d-flex align-items-start">
+              <div class="directions-icon me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="text-secondary" viewBox="0 0 16 16">
+                  <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm2.5 4h3a2 2 0 0 1 0 4H7v4H5.5V4.5A.5.5 0 0 1 6 4h.5zM7 6.5v1.5h2a.5.5 0 0 0 0-1H7z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="h6 mb-1">{{ i18n "parking" | default "Parking" }}</h3>
+                <p class="text-muted mb-0 small">{{ . }}</p>
+              </div>
+            </div>
+          </div>
+          {{ end }}
+          {{ end }}
+
+          <!-- Page Content (if any) -->
+          {{ with $.Content }}
+          <div class="directions-content mt-4 pt-4 border-top">
+            {{ . }}
+          </div>
+          {{ end }}
+
+          <!-- CTA Button -->
+          {{ with $.Params.map }}
+          {{ if .directions_url }}
+          <div class="mt-4">
+            <a href="{{ .directions_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-primary w-100">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="me-2" viewBox="0 0 16 16">
+                <path d="M9.05.435c-.58-.58-1.52-.58-2.1 0L.436 6.95c-.58.58-.58 1.519 0 2.098l6.516 6.516c.58.58 1.519.58 2.098 0l6.516-6.516c.58-.58.58-1.519 0-2.098zM8 11a.5.5 0 0 1-.5-.5V8.354L5.354 10.5a.5.5 0 0 1-.708-.708L7.293 7.5H5a.5.5 0 0 1 0-1h2.293L4.646 3.854a.5.5 0 1 1 .708-.708L8 6.793V3.5a.5.5 0 0 1 1 0v3.293l2.646-2.647a.5.5 0 0 1 .708.708L9.707 7.5H12a.5.5 0 0 1 0 1H9.707l2.647 2.646a.5.5 0 0 1-.708.708L9 8.207V10.5a.5.5 0 0 1-.5.5z"/>
+              </svg>
+              {{ i18n "get_directions" | default "Get Directions" }}
+            </a>
+          </div>
+          {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+
+    <!-- Schedule a Visit Section -->
+    <div class="row mt-5">
+      <div class="col-12">
+        <div class="visit-cta text-center p-5 rounded-4 bg-gradient-primary">
+          <h2 class="h3 text-white mb-3">{{ i18n "schedule_visit_heading" | default "Schedule a Visit" }}</h2>
+          <p class="text-white-50 mb-4">{{ i18n "schedule_visit_text" | default "We invite you to visit our preschool. We'll show you our classrooms, introduce our staff, and answer all your questions." }}</p>
+          {{ with .Params.contact_info }}
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+            {{ with .phone }}
+            <a href="tel:{{ . | replaceRE `[^+0-9]` `` }}" class="btn btn-light btn-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="me-2" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+              </svg>
+              {{ i18n "call_us" | default "Call Us" }}
+            </a>
+            {{ end }}
+            {{ with .email }}
+            <a href="mailto:{{ . }}" class="btn btn-outline-light btn-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="me-2" viewBox="0 0 16 16">
+                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+              </svg>
+              {{ i18n "email_us" | default "Email Us" }}
+            </a>
+            {{ end }}
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ define "scripts" }}
+<!-- Leaflet CSS for interactive map -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="anonymous">
+<style>
+  /* Interactive Map Styles */
+  .interactive-map {
+    width: 100%;
+    height: 400px;
+    min-height: 300px;
+    background: #e5e3df;
+  }
+
+  /* Custom marker icon styling */
+  .custom-marker-icon {
+    background: linear-gradient(135deg, #FF6B35, #FF8C61);
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(255, 107, 53, 0.4);
+    border: 3px solid #fff;
+  }
+
+  .custom-marker-icon svg {
+    transform: rotate(45deg);
+    fill: white;
+  }
+
+  /* Popup styling */
+  .leaflet-popup-content-wrapper {
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    padding: 0;
+  }
+
+  .leaflet-popup-content {
+    margin: 16px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+  }
+
+  .leaflet-popup-tip {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Map controls styling */
+  .leaflet-control-zoom a {
+    background: #fff;
+    color: #FF6B35;
+    font-weight: bold;
+    transition: all 0.2s ease;
+  }
+
+  .leaflet-control-zoom a:hover {
+    background: #FF6B35;
+    color: #fff;
+  }
+
+  /* Attribution styling */
+  .leaflet-control-attribution {
+    font-size: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 2px 8px;
+    border-radius: 4px 0 0 0;
+  }
+
+  /* Responsive map height */
+  @media (max-width: 991.98px) {
+    .interactive-map {
+      height: 350px;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .interactive-map {
+      height: 300px;
+      min-height: 250px;
+    }
+  }
+</style>
+<!-- Leaflet JS for interactive map -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous"></script>
+<script>
+(function() {
+  'use strict';
+
+  // Initialize the interactive map
+  function initContactMap() {
+    const mapContainer = document.getElementById('preschool-map');
+    if (!mapContainer) return;
+
+    // Get map configuration from data attributes
+    const lat = parseFloat(mapContainer.dataset.lat);
+    const lng = parseFloat(mapContainer.dataset.lng);
+    const zoom = parseInt(mapContainer.dataset.zoom, 10) || 16;
+    const markerTitle = mapContainer.dataset.markerTitle || 'Wesole Nutki Preschool';
+    const markerPopup = mapContainer.dataset.markerPopup || '';
+
+    // Validate coordinates
+    if (isNaN(lat) || isNaN(lng)) {
+      console.error('Invalid map coordinates');
+      return;
+    }
+
+    // Create the map
+    const map = L.map('preschool-map', {
+      scrollWheelZoom: false, // Disable scroll zoom for better UX
+      tap: true // Enable tap for touch devices
+    }).setView([lat, lng], zoom);
+
+    // Add OpenStreetMap tiles
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Create custom marker icon (preschool-themed)
+    const customIcon = L.divIcon({
+      className: 'custom-div-icon',
+      html: `
+        <div class="custom-marker-icon" style="width: 40px; height: 40px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16">
+            <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+          </svg>
+        </div>
+      `,
+      iconSize: [40, 40],
+      iconAnchor: [20, 40],
+      popupAnchor: [0, -40]
+    });
+
+    // Add marker with custom icon
+    const marker = L.marker([lat, lng], {
+      icon: customIcon,
+      title: markerTitle,
+      alt: markerTitle
+    }).addTo(map);
+
+    // Add popup if content is provided
+    if (markerPopup) {
+      marker.bindPopup(markerPopup, {
+        maxWidth: 250,
+        className: 'preschool-popup'
+      }).openPopup();
+    }
+
+    // Enable scroll wheel zoom when map is clicked/focused
+    map.on('click', function() {
+      map.scrollWheelZoom.enable();
+    });
+
+    // Disable scroll wheel zoom when mouse leaves map
+    mapContainer.addEventListener('mouseleave', function() {
+      map.scrollWheelZoom.disable();
+    });
+
+    // Handle window resize for responsive behavior
+    let resizeTimer;
+    window.addEventListener('resize', function() {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(function() {
+        map.invalidateSize();
+      }, 250);
+    });
+
+    // Expose map instance for potential extensions
+    window.preschoolMap = map;
+  }
+
+  // Initialize map when DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initContactMap);
+  } else {
+    initContactMap();
+  }
+})();
+</script>
+{{ end }}

@@ -1,0 +1,12 @@
+{
+  "id": "navigation-menu",
+  "category": "UI",
+  "title": "Primary Navigation Menu",
+  "description": "Build the main navigation menu system with Hugo's menu configuration. Support nested menu items, active state highlighting, and translation for both Polish and English versions.",
+  "status": "completed",
+  "priority": 1,
+  "complexity": "moderate",
+  "createdAt": "2026-01-22T14:36:35.496Z",
+  "updatedAt": "2026-01-22T15:13:43.251Z",
+  "descriptionHistory": []
+}

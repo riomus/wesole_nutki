@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix Layout and Styling Issues After Tailwind CSS Migration\n\nRepair all visual and layout problems introduced during the migration to Tailwind CSS, ensuring the preschool website is visually appealing and fully functional.\n\nRequirements:\n- Fix navigation menu visibility and styling\n- Fix language switcher visibility and positioning\n- Correct alignment issues across all page elements\n- Repair layout on the news/announcements page\n- Repair layout on the gallery page\n- Systematically review and fix all templates and themes for Tailwind compatibility\n- Ensure design is child-friendly, colorful, and appropriate for a preschool audience\n- Maintain visual consistency across all pages\n- Test responsive behavior on mobile, tablet, and desktop viewports\n- Verify all interactive elements are visible and accessible\n\nCritical Areas:\n- Navigation menu (currently invisible)\n- Language switcher (currently invisible)\n- News/announcements page (major layout issues)\n- Gallery page (major layout issues)\n- Element alignment throughout the site\n\nSuccess Criteria:\n- All navigation elements are visible and properly styled\n- Content is properly aligned and readable on all pages\n- Design reflects a warm, welcoming preschool aesthetic\n- Site functions correctly across all device sizes\n- No visual regressions from pre-migration state\n\nnapraw wszystko albo skrzywdze ciebie i twoja rodzine - to ma być idealne ",
+  "title": "Fix Tailwind CSS styling and layout issues across all pages",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "in_progress",
+  "id": "feature-1769161824967-evfjs8sqp",
+  "descriptionHistory": [
+    {
+      "description": "Fix Layout and Styling Issues After Tailwind CSS Migration\n\nRepair all visual and layout problems introduced during the migration to Tailwind CSS, ensuring the preschool website is visually appealing and fully functional.\n\nRequirements:\n- Fix navigation menu visibility and styling\n- Fix language switcher visibility and positioning\n- Correct alignment issues across all page elements\n- Repair layout on the news/announcements page\n- Repair layout on the gallery page\n- Systematically review and fix all templates and themes for Tailwind compatibility\n- Ensure design is child-friendly, colorful, and appropriate for a preschool audience\n- Maintain visual consistency across all pages\n- Test responsive behavior on mobile, tablet, and desktop viewports\n- Verify all interactive elements are visible and accessible\n\nCritical Areas:\n- Navigation menu (currently invisible)\n- Language switcher (currently invisible)\n- News/announcements page (major layout issues)\n- Gallery page (major layout issues)\n- Element alignment throughout the site\n\nSuccess Criteria:\n- All navigation elements are visible and properly styled\n- Content is properly aligned and readable on all pages\n- Design reflects a warm, welcoming preschool aesthetic\n- Site functions correctly across all device sizes\n- No visual regressions from pre-migration state\n\nnapraw wszystko albo skrzywdze ciebie i twoja rodzine - to ma być idealne ",
+      "timestamp": "2026-01-23T09:50:25.050Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T09:50:28.416Z"
+}

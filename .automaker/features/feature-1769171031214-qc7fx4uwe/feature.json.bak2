@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "responsive-image-wrapper in the team-card-image should have height:100%",
+  "title": "Add height:100% to responsive-image-wrapper in team-card-image",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "in_progress",
+  "id": "feature-1769171031214-qc7fx4uwe",
+  "descriptionHistory": [
+    {
+      "description": "responsive-image-wrapper in the team-card-image should have height:100%",
+      "timestamp": "2026-01-23T12:23:51.248Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T12:23:52.437Z"
+}

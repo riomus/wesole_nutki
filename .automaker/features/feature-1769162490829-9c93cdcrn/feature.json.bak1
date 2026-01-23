@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Repair Leaflet Map Tile Rendering Issues\n\nFix the broken Leaflet map display where map tiles are rendering incorrectly or appearing corrupted.\n\nRequirements:\n- Diagnose the root cause of tile misalignment or display errors (common causes include container sizing issues, missing CSS, incorrect tile layer configuration, or coordinate system problems)\n- Verify Leaflet library and tile provider URLs are correctly configured\n- Ensure map container has explicit height/width set in CSS (Leaflet requires defined dimensions)\n- Check for map.invalidateSize() calls needed after dynamic container resizing\n- Validate tile layer attribution and source URLs are accessible\n- Test tile loading across different zoom levels and map coordinates\n- Verify z-index and CSS properties aren't conflicting with tile rendering\n- Ensure map initialization occurs after DOM is fully loaded\n- Test in multiple browsers to rule out browser-specific rendering issues\n- Confirm no console errors related to tile loading or CORS issues",
+  "title": "Fix Leaflet map tile rendering and display issues",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "verified",
+  "id": "feature-1769162490829-9c93cdcrn",
+  "descriptionHistory": [
+    {
+      "description": "Repair Leaflet Map Tile Rendering Issues\n\nFix the broken Leaflet map display where map tiles are rendering incorrectly or appearing corrupted.\n\nRequirements:\n- Diagnose the root cause of tile misalignment or display errors (common causes include container sizing issues, missing CSS, incorrect tile layer configuration, or coordinate system problems)\n- Verify Leaflet library and tile provider URLs are correctly configured\n- Ensure map container has explicit height/width set in CSS (Leaflet requires defined dimensions)\n- Check for map.invalidateSize() calls needed after dynamic container resizing\n- Validate tile layer attribution and source URLs are accessible\n- Test tile loading across different zoom levels and map coordinates\n- Verify z-index and CSS properties aren't conflicting with tile rendering\n- Ensure map initialization occurs after DOM is fully loaded\n- Test in multiple browsers to rule out browser-specific rendering issues\n- Confirm no console errors related to tile loading or CORS issues",
+      "timestamp": "2026-01-23T10:01:30.924Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T10:07:40.811Z"
+}

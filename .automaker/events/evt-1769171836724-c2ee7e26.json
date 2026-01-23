@@ -1,0 +1,11 @@
+{
+  "id": "evt-1769171836724-c2ee7e26",
+  "trigger": "feature_success",
+  "timestamp": "2026-01-23T12:37:16.724Z",
+  "projectPath": "/Users/romanbartusiak/git/riomus/wesole_nutki",
+  "projectName": "wesole_nutki",
+  "featureId": "feature-1769171676068-4j23tomna",
+  "featureName": "Fix image error state height in team card component",
+  "error": "Feature completed in 153s - auto-verified",
+  "passes": true
+}

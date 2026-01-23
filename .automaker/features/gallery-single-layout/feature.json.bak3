@@ -1,0 +1,12 @@
+{
+  "id": "gallery-single-layout",
+  "category": "Core",
+  "title": "Single Gallery Page Layout",
+  "description": "Create the individual gallery template displaying all photos in a grid layout with title, description, and date. Prepare structure for lightbox integration to view full-size images.",
+  "status": "backlog",
+  "priority": 1,
+  "complexity": "moderate",
+  "createdAt": "2026-01-22T14:36:35.503Z",
+  "updatedAt": "2026-01-22T14:36:35.503Z",
+  "descriptionHistory": []
+}

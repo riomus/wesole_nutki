@@ -1,0 +1,28 @@
+{
+  "category": "Uncategorized",
+  "description": "Standardize News Card Design Across Application\n\nUpdate the news card component on the homepage to match the superior design and layout currently used on the dedicated news page.\n\nRequirements:\n- Audit both card implementations to identify specific visual and structural differences\n- Apply the news page card styling (colors, spacing, typography, shadows, borders) to the homepage card\n- Ensure consistent card dimensions, image aspect ratios, and content alignment\n- Match interaction states (hover effects, click behavior, focus states)\n- Verify responsive behavior matches across both locations\n- Consolidate duplicate code by creating a shared card component if implementations are separate\n- Test appearance across different viewport sizes and browsers\n- Ensure no regression in functionality (links, accessibility, performance)\n\nSuccess criteria:\n- Homepage news cards are visually indistinguishable from news page cards\n- Both cards use the same component or styling system\n- No visual inconsistencies across breakpoints",
+  "title": "Standardize news card design across application",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "backlog",
+  "id": "feature-1769164280503-g9m650tqp",
+  "descriptionHistory": [
+    {
+      "description": "Standardize News Card Design Across Application\n\nUpdate the news card component on the homepage to match the superior design and layout currently used on the dedicated news page.\n\nRequirements:\n- Audit both card implementations to identify specific visual and structural differences\n- Apply the news page card styling (colors, spacing, typography, shadows, borders) to the homepage card\n- Ensure consistent card dimensions, image aspect ratios, and content alignment\n- Match interaction states (hover effects, click behavior, focus states)\n- Verify responsive behavior matches across both locations\n- Consolidate duplicate code by creating a shared card component if implementations are separate\n- Test appearance across different viewport sizes and browsers\n- Ensure no regression in functionality (links, accessibility, performance)\n\nSuccess criteria:\n- Homepage news cards are visually indistinguishable from news page cards\n- Both cards use the same component or styling system\n- No visual inconsistencies across breakpoints",
+      "timestamp": "2026-01-23T10:31:20.538Z",
+      "source": "initial"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Gallery Card Display Issue - Fix Card Body Visibility\n\nResolve the display problem where the gallery card body is not rendering correctly due to incorrect height inheritance from the parent gallery-card-link element.\n\nRequirements:\n- Investigate the CSS styles applied to `.gallery-card-link` and `.gallery-card-body` elements\n- Identify why `height: 100%` on `.gallery-card-link` is causing the card body to not display\n- Determine if the issue is related to parent container constraints or flex/grid layout conflicts\n- Implement a fix that allows the card body to display properly while maintaining intended layout structure\n- Consider alternative approaches such as:\n  - Using `min-height` instead of `height: 100%`\n  - Adjusting flex properties if using flexbox\n  - Modifying parent container constraints\n  - Using grid layout if more appropriate\n- Verify the fix works across different card content lengths and viewport sizes\n- Ensure clickable area of the gallery-card-link remains functional after the fix\n- Test in major browsers to ensure consistent rendering",
+  "title": "Fix gallery card body visibility in CSS",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "in_progress",
+  "id": "feature-1769170033204-qbllesbi1",
+  "descriptionHistory": [
+    {
+      "description": "Gallery Card Display Issue - Fix Card Body Visibility\n\nResolve the display problem where the gallery card body is not rendering correctly due to incorrect height inheritance from the parent gallery-card-link element.\n\nRequirements:\n- Investigate the CSS styles applied to `.gallery-card-link` and `.gallery-card-body` elements\n- Identify why `height: 100%` on `.gallery-card-link` is causing the card body to not display\n- Determine if the issue is related to parent container constraints or flex/grid layout conflicts\n- Implement a fix that allows the card body to display properly while maintaining intended layout structure\n- Consider alternative approaches such as:\n  - Using `min-height` instead of `height: 100%`\n  - Adjusting flex properties if using flexbox\n  - Modifying parent container constraints\n  - Using grid layout if more appropriate\n- Verify the fix works across different card content lengths and viewport sizes\n- Ensure clickable area of the gallery-card-link remains functional after the fix\n- Test in major browsers to ensure consistent rendering",
+      "timestamp": "2026-01-23T12:07:13.258Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T12:07:20.400Z"
+}

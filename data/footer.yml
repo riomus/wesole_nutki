@@ -1,0 +1,92 @@
+# Footer Configuration
+# Managed via Decap CMS at /admin/
+
+# Footer Quick Links
+# These are additional/custom links beyond the main navigation
+# Set use_main_menu to true to use the main navigation menu items
+quick_links:
+  use_main_menu: true
+  # Custom links (used when use_main_menu is false or to add additional links)
+  custom_links:
+    - name_pl: "Strona Główna"
+      name_en: "Home"
+      url: "/"
+      weight: 1
+    - name_pl: "O Nas"
+      name_en: "About Us"
+      url: "/about/"
+      weight: 2
+    - name_pl: "Oferta"
+      name_en: "Programs"
+      url: "/programs/"
+      weight: 3
+    - name_pl: "Galeria"
+      name_en: "Gallery"
+      url: "/gallery/"
+      weight: 4
+    - name_pl: "Kontakt"
+      name_en: "Contact"
+      url: "/contact/"
+      weight: 5
+
+# Footer Useful Links (second column of links)
+useful_links:
+  enabled: false
+  links:
+    - name_pl: "Polityka prywatności"
+      name_en: "Privacy Policy"
+      url: "/privacy/"
+      weight: 1
+    - name_pl: "Regulamin"
+      name_en: "Terms of Service"
+      url: "/terms/"
+      weight: 2
+    - name_pl: "FAQ"
+      name_en: "FAQ"
+      url: "/faq/"
+      weight: 3
+
+# Footer Description
+# Shown below the brand name in the footer
+description:
+  pl: "Wesołe Nutki to miejsce, gdzie każde dziecko odkrywa radość nauki poprzez zabawę, kreatywność i przyjaźń."
+  en: "Wesołe Nutki is a place where every child discovers the joy of learning through play, creativity, and friendship."
+
+# Social Media Configuration
+# Note: URLs are configured in data/settings.yml
+social_media:
+  show_icons: true
+  # Additional social platforms beyond settings.yml
+  twitter: ""
+  tiktok: ""
+  pinterest: ""
+
+# Newsletter Section (optional)
+newsletter:
+  enabled: false
+  title_pl: "Zapisz się do newslettera"
+  title_en: "Subscribe to Newsletter"
+  description_pl: "Bądź na bieżąco z aktualnościami przedszkola"
+  description_en: "Stay updated with preschool news"
+  placeholder_pl: "Twój adres email"
+  placeholder_en: "Your email address"
+  button_pl: "Zapisz się"
+  button_en: "Subscribe"
+
+# Copyright Configuration
+copyright:
+  # Text shown before the year (year is auto-inserted)
+  text_pl: "Wesołe Nutki. Wszelkie prawa zastrzeżone."
+  text_en: "Wesołe Nutki. All rights reserved."
+  # Additional links in copyright bar
+  show_privacy_link: false
+  show_terms_link: false
+
+# Footer Layout Configuration
+layout:
+  # Number of columns: 3 or 4
+  columns: 4
+  # Show opening hours section
+  show_hours: true
+  # Show language switcher
+  show_language_switcher: true

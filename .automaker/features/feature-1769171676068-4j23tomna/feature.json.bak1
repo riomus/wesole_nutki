@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Apply Full Height to Image Error State in Team Card Component\n\nUpdate the CSS styling for the image error state within the team card component to occupy the full available height of its container.\n\nRequirements:\n- Locate the image error handling code in the team card component\n- Add `height: 100%` to the error state element's styles\n- Ensure the parent container has a defined height for the percentage to work correctly\n- Verify the error state displays properly across different card sizes\n- Test that the full-height error state maintains proper aspect ratio and alignment with other team card elements\n- Confirm no layout shifts occur when switching from loading/image state to error state",
+  "title": "Fix image error state height in team card component",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "verified",
+  "id": "feature-1769171676068-4j23tomna",
+  "descriptionHistory": [
+    {
+      "description": "Apply Full Height to Image Error State in Team Card Component\n\nUpdate the CSS styling for the image error state within the team card component to occupy the full available height of its container.\n\nRequirements:\n- Locate the image error handling code in the team card component\n- Add `height: 100%` to the error state element's styles\n- Ensure the parent container has a defined height for the percentage to work correctly\n- Verify the error state displays properly across different card sizes\n- Test that the full-height error state maintains proper aspect ratio and alignment with other team card elements\n- Confirm no layout shifts occur when switching from loading/image state to error state",
+      "timestamp": "2026-01-23T12:34:36.162Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T12:37:16.719Z"
+}

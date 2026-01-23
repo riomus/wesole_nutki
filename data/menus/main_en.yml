@@ -1,0 +1,148 @@
+# English Main Navigation Menu
+# This file is editable through the CMS admin interface
+# Changes here will update the main navigation on the English version of the site
+
+items:
+  - identifier: home
+    name: Home
+    url: /en/
+    weight: 1
+    i18n_key: menu_home
+    external: false
+    open_in_new_tab: false
+
+  - identifier: about
+    name: About Us
+    url: /en/about/
+    weight: 2
+    i18n_key: menu_about
+    external: false
+    open_in_new_tab: false
+
+  - identifier: programs
+    name: Programs
+    url: "#"
+    weight: 3
+    i18n_key: menu_programs
+    external: false
+    open_in_new_tab: false
+    children:
+      - identifier: programs-overview
+        name: Our Programs
+        url: /en/programs/
+        weight: 1
+        i18n_key: menu_programs_overview
+        external: false
+        open_in_new_tab: false
+
+      - identifier: programs-schedule
+        name: Daily Schedule
+        url: /en/programs/schedule/
+        weight: 2
+        i18n_key: menu_programs_schedule
+        external: false
+        open_in_new_tab: false
+
+  - identifier: news
+    name: News
+    url: /en/news/
+    weight: 4
+    i18n_key: menu_news
+    external: false
+    open_in_new_tab: false
+
+  - identifier: gallery
+    name: Gallery
+    url: /en/gallery/
+    weight: 5
+    i18n_key: menu_gallery
+    external: false
+    open_in_new_tab: false
+
+  - identifier: more
+    name: More
+    url: "#"
+    weight: 6
+    i18n_key: menu_more
+    external: false
+    open_in_new_tab: false
+    children:
+      - identifier: more-recruitment
+        name: Recruitment
+        url: /rekrutacja/
+        weight: 1
+        i18n_key: menu_more_recruitment
+        external: false
+        open_in_new_tab: false
+
+      - identifier: more-vision
+        name: Our Vision
+        url: /o-przedszkolu/nasza-wizja/
+        weight: 2
+        i18n_key: menu_more_vision
+        external: false
+        open_in_new_tab: false
+
+      - identifier: more-offer
+        name: Offer
+        url: /o-przedszkolu/oferta/
+        weight: 3
+        i18n_key: menu_more_offer
+        external: false
+        open_in_new_tab: false
+
+      - identifier: more-pricing
+        name: Pricing
+        url: /o-przedszkolu/cennik/
+        weight: 4
+        i18n_key: menu_more_pricing
+        external: false
+        open_in_new_tab: false
+
+      - identifier: more-payments
+        name: Payments
+        url: /o-przedszkolu/platnosci/
+        weight: 5
+        i18n_key: menu_more_payments
+        external: false
+        open_in_new_tab: false
+
+      - identifier: more-enrollment
+        name: Registration
+        url: /o-przedszkolu/zapisy/
+        weight: 6
+        i18n_key: menu_more_enrollment
+        external: false
+        open_in_new_tab: false
+
+      - identifier: more-privacy
+        name: Privacy Policy
+        url: /en/documents/privacy-policy/
+        weight: 7
+        i18n_key: menu_more_privacy
+        external: false
+        open_in_new_tab: false
+
+      - identifier: more-child-protection
+        name: Child Protection Standards
+        url: /standardy-ochrony-maloletnich/
+        weight: 8
+        i18n_key: menu_more_child_protection
+        external: false
+        open_in_new_tab: false
+
+  - identifier: contact
+    name: Contact
+    url: /en/contact/
+    weight: 7
+    i18n_key: menu_contact
+    external: false
+    open_in_new_tab: false
+
+  - identifier: documents
+    name: Documents
+    url: /en/documents/
+    weight: 8
+    i18n_key: menu_documents
+    external: false
+    open_in_new_tab: false

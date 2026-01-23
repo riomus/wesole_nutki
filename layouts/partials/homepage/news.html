@@ -1,0 +1,44 @@
+{{- $data := site.Data.homepage.news -}}
+{{- if $data.enabled -}}
+{{- $section := $data.section | default "news" -}}
+{{- $count := $data.count | default 3 -}}
+{{- /* Get news pages from the news section.
+       With contentDir per language, site.GetPage "section" finds the correct language's news section */ -}}
+{{- $newsPage := site.GetPage "section" $section -}}
+{{- $pages := slice -}}
+{{- if $newsPage -}}
+  {{- $pages = $newsPage.RegularPages.ByDate.Reverse -}}
+{{- end -}}
+{{- if $data.featured_only -}}
+  {{- $pages = where $pages ".Params.featured" true -}}
+{{- end -}}
+{{- $pages = first $count $pages -}}
+
+{{- if $pages -}}
+<!-- News Highlights Section -->
+<section class="section section-alt news-section" id="news-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-heading">{{ i18n $data.heading_key | default "Latest News" }}</h2>
+      {{- with $data.subtitle_key -}}
+      <p class="section-subtitle">{{ i18n . | default "Stay updated with our latest activities" }}</p>
+      {{- end -}}
+    </div>
+    <div class="row g-4">
+      {{- range $pages -}}
+      <div class="col-lg-4 col-md-6">
+        {{ partial "news-card.html" . }}
+      </div>
+      {{- end -}}
+    </div>
+    {{- if $data.show_view_all -}}
+    <div class="text-center mt-5">
+      <a href="{{ $section | relLangURL }}" class="btn btn-primary btn-lg">
+        {{ i18n $data.view_all_label_key | default "View All News" }}
+      </a>
+    </div>
+    {{- end -}}
+  </div>
+</section>
+{{- end -}}
+{{- end -}}

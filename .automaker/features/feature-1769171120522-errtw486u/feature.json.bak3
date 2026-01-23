@@ -1,0 +1,28 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix Map Column Responsiveness on Contact Page\n\nThe map component on the contact page is only sized with col-lg-7, which causes it to display too small on mobile devices. Update the responsive grid classes to ensure proper display across all screen sizes.\n\nRequirements:\n- Add appropriate Bootstrap column classes for mobile (col-12 or col-sm-*) and tablet (col-md-*) breakpoints\n- Ensure the map displays at full width on mobile devices for better usability\n- Maintain the existing col-lg-7 layout for large desktop screens\n- Verify the map height is appropriate on mobile devices\n- Test the layout on multiple breakpoints (mobile, tablet, desktop) to ensure smooth responsive behavior\n- Ensure any adjacent content (contact form, info, etc.) also responds appropriately to the grid changes",
+  "title": "Fix map column responsiveness on contact page",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "backlog",
+  "id": "feature-1769171120522-errtw486u",
+  "descriptionHistory": [
+    {
+      "description": "Fix Map Column Responsiveness on Contact Page\n\nThe map component on the contact page is only sized with col-lg-7, which causes it to display too small on mobile devices. Update the responsive grid classes to ensure proper display across all screen sizes.\n\nRequirements:\n- Add appropriate Bootstrap column classes for mobile (col-12 or col-sm-*) and tablet (col-md-*) breakpoints\n- Ensure the map displays at full width on mobile devices for better usability\n- Maintain the existing col-lg-7 layout for large desktop screens\n- Verify the map height is appropriate on mobile devices\n- Test the layout on multiple breakpoints (mobile, tablet, desktop) to ensure smooth responsive behavior\n- Ensure any adjacent content (contact form, info, etc.) also responds appropriately to the grid changes",
+      "timestamp": "2026-01-23T12:25:20.616Z",
+      "source": "initial"
+    }
+  ]
+}

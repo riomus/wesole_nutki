@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix Single Gallery View Layout and Display Issues\n\nResolve display and ordering problems in the single gallery view to ensure all gallery components render correctly and in the proper sequence.\n\nRequirements:\n- Fix gallery-meta component styling to display information cleanly and legibly\n- Correct gallery-overlay positioning and appearance issues\n- Reorder component rendering so gallery text/description appears above the image gallery\n- Ensure proper spacing and alignment between all gallery sections (text, images, metadata, overlay)\n- Test layout responsiveness across different screen sizes\n- Verify overlay interactions (if applicable) function correctly after fixes",
+  "title": "Fix gallery view layout and component ordering",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "in_progress",
+  "id": "feature-1769168264332-jx764xb4c",
+  "descriptionHistory": [
+    {
+      "description": "Fix Single Gallery View Layout and Display Issues\n\nResolve display and ordering problems in the single gallery view to ensure all gallery components render correctly and in the proper sequence.\n\nRequirements:\n- Fix gallery-meta component styling to display information cleanly and legibly\n- Correct gallery-overlay positioning and appearance issues\n- Reorder component rendering so gallery text/description appears above the image gallery\n- Ensure proper spacing and alignment between all gallery sections (text, images, metadata, overlay)\n- Test layout responsiveness across different screen sizes\n- Verify overlay interactions (if applicable) function correctly after fixes",
+      "timestamp": "2026-01-23T11:37:45.542Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T11:41:04.945Z"
+}

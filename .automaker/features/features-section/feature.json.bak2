@@ -1,0 +1,12 @@
+{
+  "id": "features-section",
+  "category": "UI",
+  "title": "Features Showcase Section",
+  "description": "Create a features grid section displaying key preschool offerings with icons, titles, and descriptions. Support 3-6 feature cards with responsive layout that adapts to different screen sizes.",
+  "status": "in_progress",
+  "priority": 2,
+  "complexity": "simple",
+  "createdAt": "2026-01-22T14:36:35.498Z",
+  "updatedAt": "2026-01-22T15:53:42.661Z",
+  "descriptionHistory": []
+}

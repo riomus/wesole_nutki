@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Set Team Card Image Container to Full Height\n\nConfigure the responsive-image-wrapper element within team-card-image components to occupy 100% of its parent container's height.\n\nRequirements:\n- Locate the responsive-image-wrapper element inside team-card-image components\n- Apply height: 100% CSS property to the responsive-image-wrapper\n- Ensure the parent container (team-card-image) has a defined height for percentage-based sizing to work\n- Verify images scale properly without distortion (maintain aspect ratio if needed)\n- Test across different viewport sizes to confirm responsive behavior\n- Check that the change doesn't break existing layout or cause overflow issues",
+  "title": "",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": "Set Team Card Image Container to Full Height\n\nConfigure the responsive-image-wrapper element within team-card-image components to occupy 100% of its parent container's height.\n\nRequirements:\n- Locate the responsive-image-wrapper element inside team-card-image components\n- Apply height: 100% CSS property to the responsive-image-wrapper\n- Ensure the parent container (team-card-image) has a defined height for percentage-based sizing to work\n- Verify images scale properly without distortion (maintain aspect ratio if needed)\n- Test across different viewport sizes to confirm responsive behavior\n- Check that the change doesn't break existing layout or cause overflow issues",
+  "status": "in_progress",
+  "id": "feature-1769170569290-suw9k0b33",
+  "descriptionHistory": [
+    {
+      "description": "Set Team Card Image Container to Full Height\n\nConfigure the responsive-image-wrapper element within team-card-image components to occupy 100% of its parent container's height.\n\nRequirements:\n- Locate the responsive-image-wrapper element inside team-card-image components\n- Apply height: 100% CSS property to the responsive-image-wrapper\n- Ensure the parent container (team-card-image) has a defined height for percentage-based sizing to work\n- Verify images scale properly without distortion (maintain aspect ratio if needed)\n- Test across different viewport sizes to confirm responsive behavior\n- Check that the change doesn't break existing layout or cause overflow issues",
+      "timestamp": "2026-01-23T12:16:09.403Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T12:16:14.132Z"
+}

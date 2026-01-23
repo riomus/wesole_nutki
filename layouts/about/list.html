@@ -1,0 +1,48 @@
+{{ define "main" }}
+{{/* Breadcrumb Navigation */}}
+{{ partial "breadcrumb.html" . }}
+
+{{/* About Page Template
+     This template uses data files from data/about/ to render sections:
+     - hero.yml: Hero section with background image
+     - mission.yml: Mission/Philosophy section
+     - values.yml: Core values grid
+     - team.yml: Team members section
+     - facilities.yml: Facilities information
+     - contact.yml: Contact CTA section
+*/}}
+
+{{/* Hero Section */}}
+{{ partial "about/hero.html" . }}
+
+{{/* Content from about.md (if any) */}}
+{{ if .Content }}
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="about-page-content">
+          {{ .Content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{/* Mission/Philosophy Section */}}
+{{ partial "about/mission.html" . }}
+
+{{/* Values Section */}}
+{{ partial "about/values.html" . }}
+
+{{/* Team Section */}}
+{{ partial "about/team.html" . }}
+
+{{/* Facilities Section */}}
+{{ partial "about/facilities.html" . }}
+
+{{/* Contact CTA Section */}}
+{{ partial "about/contact-cta.html" . }}
+
+{{ end }}

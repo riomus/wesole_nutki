@@ -1,0 +1,12 @@
+{
+  "id": "news-tags",
+  "category": "Core",
+  "title": "News Tagging System",
+  "description": "Implement tag taxonomy for news articles allowing flexible content organization. Display tags on article pages and create tag archive pages for browsing related content.",
+  "status": "completed",
+  "priority": 3,
+  "complexity": "simple",
+  "createdAt": "2026-01-22T14:36:35.501Z",
+  "updatedAt": "2026-01-22T16:39:34.734Z",
+  "descriptionHistory": []
+}

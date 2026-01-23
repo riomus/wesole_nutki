@@ -1,0 +1,12 @@
+{
+  "id": "homepage-layout",
+  "category": "Core",
+  "title": "Homepage Layout Template",
+  "description": "Create the main homepage template with configurable sections including hero area, features showcase, about preview, and news highlights. Use Hugo's data files for easy content configuration.",
+  "status": "in_progress",
+  "priority": 1,
+  "complexity": "moderate",
+  "createdAt": "2026-01-22T14:36:35.497Z",
+  "updatedAt": "2026-01-22T14:58:16.944Z",
+  "descriptionHistory": []
+}

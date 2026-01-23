@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix Breadcrumb Alignment on Subpages\n\nCorrect the visual alignment issues in breadcrumb navigation where icons and text elements are misaligned on subpages.\n\nRequirements:\n- Identify breadcrumb components used across subpages\n- Verify SVG icon display properties and set to inline or inline-block as needed\n- Adjust vertical alignment of icons to match text baseline\n- Ensure consistent spacing between icon and text elements\n- Test alignment across different breadcrumb depths and text lengths\n- Verify fix works consistently across all subpages using breadcrumbs\n\nSpecific alignment adjustments:\n- Set proper CSS display property for SVG elements (likely display: inline or inline-block)\n- Adjust vertical-align property to center or text-bottom for icon-text alignment\n- Consider adding flexbox/grid alignment if container needs restructuring\n- Maintain consistent visual rhythm with appropriate margins/padding",
+  "title": "Fix Breadcrumb Icon and Text Alignment",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "verified",
+  "id": "feature-1769163248839-t5ljm1cus",
+  "descriptionHistory": [
+    {
+      "description": "Fix Breadcrumb Alignment on Subpages\n\nCorrect the visual alignment issues in breadcrumb navigation where icons and text elements are misaligned on subpages.\n\nRequirements:\n- Identify breadcrumb components used across subpages\n- Verify SVG icon display properties and set to inline or inline-block as needed\n- Adjust vertical alignment of icons to match text baseline\n- Ensure consistent spacing between icon and text elements\n- Test alignment across different breadcrumb depths and text lengths\n- Verify fix works consistently across all subpages using breadcrumbs\n\nSpecific alignment adjustments:\n- Set proper CSS display property for SVG elements (likely display: inline or inline-block)\n- Adjust vertical-align property to center or text-bottom for icon-text alignment\n- Consider adding flexbox/grid alignment if container needs restructuring\n- Maintain consistent visual rhythm with appropriate margins/padding",
+      "timestamp": "2026-01-23T10:14:08.928Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T10:24:08.639Z"
+}

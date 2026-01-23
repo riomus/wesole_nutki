@@ -1,0 +1,171 @@
+{{ define "main" }}
+{{/* Breadcrumb Navigation */}}
+{{ partial "breadcrumb.html" . }}
+
+<section class="schedule-page py-5">
+  <div class="container">
+    {{/* Page Header */}}
+    <header class="section-header text-center mb-5">
+      <h1 class="section-heading">{{ .Title }}</h1>
+      {{ with .Content }}
+      <div class="section-subtitle">{{ . }}</div>
+      {{ end }}
+    </header>
+
+    {{/* Full Schedule */}}
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="schedule-full">
+          {{/* Morning Section */}}
+          <div class="schedule-section">
+            <h2 class="schedule-section-title">
+              <span class="schedule-section-icon">🌅</span>
+              {{ i18n "schedule_morning" | default "Morning" }}
+            </h2>
+            <div class="schedule-items">
+              <div class="schedule-full-item">
+                <div class="schedule-full-time">7:00 - 8:30</div>
+                <div class="schedule-full-content">
+                  <h4>{{ i18n "schedule_arrival" | default "Arrival & Free Play" }}</h4>
+                  <p>{{ i18n "schedule_arrival_full" | default "Children arrive and engage in quiet activities, free play in learning centers, individual conversations with teachers." }}</p>
+                </div>
+              </div>
+              <div class="schedule-full-item">
+                <div class="schedule-full-time">8:30 - 9:00</div>
+                <div class="schedule-full-content">
+                  <h4>{{ i18n "schedule_breakfast" | default "Breakfast" }}</h4>
+                  <p>{{ i18n "schedule_breakfast_full" | default "Healthy breakfast prepared fresh daily. Children learn table manners and self-service skills." }}</p>
+                </div>
+              </div>
+              <div class="schedule-full-item">
+                <div class="schedule-full-time">9:00 - 9:30</div>
+                <div class="schedule-full-content">
+                  <h4>{{ i18n "schedule_circle" | default "Circle Time" }}</h4>
+                  <p>{{ i18n "schedule_circle_full" | default "Morning greeting, calendar activities, discussing the day's plan, songs and movement activities." }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {{/* Learning Section */}}
+          <div class="schedule-section">
+            <h2 class="schedule-section-title">
+              <span class="schedule-section-icon">📚</span>
+              {{ i18n "schedule_learning_time" | default "Learning Time" }}
+            </h2>
+            <div class="schedule-items">
+              <div class="schedule-full-item">
+                <div class="schedule-full-time">9:30 - 10:30</div>
+                <div class="schedule-full-content">
+                  <h4>{{ i18n "schedule_main_activity" | default "Main Educational Activity" }}</h4>
+                  <p>{{ i18n "schedule_main_activity_full" | default "Structured learning activities based on weekly theme: literacy, math, science, art, or social studies. Small group and individual instruction." }}</p>
+                </div>
+              </div>
+              <div class="schedule-full-item">
+                <div class="schedule-full-time">10:30 - 11:30</div>
+                <div class="schedule-full-content">
+                  <h4>{{ i18n "schedule_outdoor" | default "Outdoor Play & Physical Activity" }}</h4>
+                  <p>{{ i18n "schedule_outdoor_full" | default "Structured outdoor play, sports activities, nature exploration. In bad weather: indoor gym or movement activities." }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {{/* Midday Section */}}
+          <div class="schedule-section">
+            <h2 class="schedule-section-title">
+              <span class="schedule-section-icon">☀️</span>
+              {{ i18n "schedule_midday" | default "Midday" }}
+            </h2>
+            <div class="schedule-items">
+              <div class="schedule-full-item">
+                <div class="schedule-full-time">11:30 - 12:00</div>
+                <div class="schedule-full-content">
+                  <h4>{{ i18n "schedule_lunch" | default "Lunch" }}</h4>
+                  <p>{{ i18n "schedule_lunch_full" | default "Nutritious hot lunch prepared by our kitchen. Balanced meals following children's dietary needs and preferences." }}</p>
+                </div>
+              </div>
+              <div class="schedule-full-item">
+                <div class="schedule-full-time">12:00 - 14:00</div>
+                <div class="schedule-full-content">
+                  <h4>{{ i18n "schedule_rest" | default "Rest Time" }}</h4>
+                  <p>{{ i18n "schedule_rest_full" | default "Nap time for younger children. Older children engage in quiet activities: reading, puzzles, art projects." }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {{/* Afternoon Section */}}
+          <div class="schedule-section">
+            <h2 class="schedule-section-title">
+              <span class="schedule-section-icon">🌤️</span>
+              {{ i18n "schedule_afternoon_title" | default "Afternoon" }}
+            </h2>
+            <div class="schedule-items">
+              <div class="schedule-full-item">
+                <div class="schedule-full-time">14:00 - 14:30</div>
+                <div class="schedule-full-content">
+                  <h4>{{ i18n "schedule_snack" | default "Afternoon Snack" }}</h4>
+                  <p>{{ i18n "schedule_snack_full" | default "Light healthy snack: fruits, vegetables, dairy products, whole grain snacks." }}</p>
+                </div>
+              </div>
+              <div class="schedule-full-item">
+                <div class="schedule-full-time">14:30 - 15:30</div>
+                <div class="schedule-full-content">
+                  <h4>{{ i18n "schedule_enrichment" | default "Enrichment Activities" }}</h4>
+                  <p>{{ i18n "schedule_enrichment_full" | default "Specialized activities: music, dance, English, art workshops, science experiments, or special events." }}</p>
+                </div>
+              </div>
+              <div class="schedule-full-item">
+                <div class="schedule-full-time">15:30 - 17:00</div>
+                <div class="schedule-full-content">
+                  <h4>{{ i18n "schedule_departure" | default "Free Play & Departure" }}</h4>
+                  <p>{{ i18n "schedule_departure_full" | default "Free play time, learning centers, outdoor play (weather permitting). Gradual pickup by parents with opportunity for teacher communication." }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {{/* Additional Info */}}
+    <div class="row mt-5">
+      <div class="col-lg-4 mb-4">
+        <div class="schedule-info-card">
+          <div class="schedule-info-icon">🍎</div>
+          <h3>{{ i18n "meals_nutrition" | default "Meals & Nutrition" }}</h3>
+          <p>{{ i18n "meals_nutrition_desc" | default "All meals are prepared fresh daily in our kitchen using high-quality ingredients. We accommodate dietary restrictions and allergies." }}</p>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="schedule-info-card">
+          <div class="schedule-info-icon">🎒</div>
+          <h3>{{ i18n "what_to_bring" | default "What to Bring" }}</h3>
+          <p>{{ i18n "what_to_bring_desc" | default "Comfortable clothes for play, indoor shoes, change of clothes, and any comfort items for rest time (for younger children)." }}</p>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="schedule-info-card">
+          <div class="schedule-info-icon">📱</div>
+          <h3>{{ i18n "parent_communication" | default "Stay Connected" }}</h3>
+          <p>{{ i18n "parent_communication_desc" | default "Regular updates through our parent app, daily reports, and open communication with teachers during drop-off and pick-up times." }}</p>
+        </div>
+      </div>
+    </div>
+
+    {{/* Back to Programs */}}
+    <div class="text-center mt-4">
+      <a href="{{ "programs/" | relLangURL }}" class="btn btn-outline-primary me-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="me-1">
+          <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+        </svg>
+        {{ i18n "all_programs" | default "All Programs" }}
+      </a>
+      <a href="{{ "contact/" | relLangURL }}" class="btn btn-primary">
+        {{ i18n "contact_us" | default "Contact Us" }}
+      </a>
+    </div>
+  </div>
+</section>
+{{ end }}

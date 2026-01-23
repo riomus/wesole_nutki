@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix Gallery Filter Button Layout and Display\n\nResolve layout issues causing gallery filter buttons to render incorrectly or be cut off from view.\n\nRequirements:\n- Identify and fix CSS/styling issues preventing all filters from displaying properly\n- Ensure all filter buttons are fully visible and accessible\n- Improve button arrangement (consider wrapping, scrolling, or responsive grid layout)\n- Verify proper spacing and alignment between filter buttons\n- Test responsive behavior across different screen sizes (mobile, tablet, desktop)\n- Ensure visual consistency with the rest of the gallery interface\n- Confirm all filters remain functional after layout fixes\n\nEdge cases to consider:\n- Long filter label text\n- Large number of filter options\n- Small viewport sizes\n- Dynamic addition or removal of filters",
+  "title": "Fix gallery filter button layout and display",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "verified",
+  "id": "feature-1769166663075-mdd9pmzxc",
+  "descriptionHistory": [
+    {
+      "description": "Fix Gallery Filter Button Layout and Display\n\nResolve layout issues causing gallery filter buttons to render incorrectly or be cut off from view.\n\nRequirements:\n- Identify and fix CSS/styling issues preventing all filters from displaying properly\n- Ensure all filter buttons are fully visible and accessible\n- Improve button arrangement (consider wrapping, scrolling, or responsive grid layout)\n- Verify proper spacing and alignment between filter buttons\n- Test responsive behavior across different screen sizes (mobile, tablet, desktop)\n- Ensure visual consistency with the rest of the gallery interface\n- Confirm all filters remain functional after layout fixes\n\nEdge cases to consider:\n- Long filter label text\n- Large number of filter options\n- Small viewport sizes\n- Dynamic addition or removal of filters",
+      "timestamp": "2026-01-23T11:11:03.108Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T11:15:17.765Z"
+}

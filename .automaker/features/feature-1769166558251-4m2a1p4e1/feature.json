@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Standardize Section Background Styling to Match Visit-CTA Component\n\nUpdate section background styling to use consistent rounded corners matching the existing visit-cta component design pattern.\n\nRequirements:\n- Apply same border-radius values used in visit-cta component to the target section\n- Ensure rounded corners are visible and properly rendered on all screen sizes\n- Match any additional styling from visit-cta such as padding, shadows, or background colors if applicable\n- Verify visual consistency across different browsers and devices\n- Identify which specific section(s) need this styling applied\n- Consider responsive behavior - adjust border-radius on mobile if needed\n- Ensure content within the section respects the rounded boundaries (no overflow issues)",
+  "title": "Standardize section background styling with rounded corners",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "completed",
+  "id": "feature-1769166558251-4m2a1p4e1",
+  "descriptionHistory": [
+    {
+      "description": "Standardize Section Background Styling to Match Visit-CTA Component\n\nUpdate section background styling to use consistent rounded corners matching the existing visit-cta component design pattern.\n\nRequirements:\n- Apply same border-radius values used in visit-cta component to the target section\n- Ensure rounded corners are visible and properly rendered on all screen sizes\n- Match any additional styling from visit-cta such as padding, shadows, or background colors if applicable\n- Verify visual consistency across different browsers and devices\n- Identify which specific section(s) need this styling applied\n- Consider responsive behavior - adjust border-radius on mobile if needed\n- Ensure content within the section respects the rounded boundaries (no overflow issues)",
+      "timestamp": "2026-01-23T11:09:18.343Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T11:13:30.859Z"
+}

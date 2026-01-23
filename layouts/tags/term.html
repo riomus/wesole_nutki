@@ -1,0 +1,60 @@
+{{ define "main" }}
+{{/* Breadcrumb Navigation */}}
+{{ partial "breadcrumb.html" . }}
+
+<section class="py-5">
+  <div class="container">
+    <header class="mb-5">
+      <div class="d-flex align-items-center mb-3">
+        {{/* Tag icon */}}
+        <span class="news-tag-icon me-3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16" class="text-secondary">
+            <path d="M2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586V2zm3.5 4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+          </svg>
+        </span>
+        <h1 class="display-4 mb-0">{{ .Title }}</h1>
+      </div>
+      <p class="lead text-muted">
+        {{ len .Pages }} {{ if eq (len .Pages) 1 }}{{ i18n "article_singular" | default "article" }}{{ else }}{{ i18n "articles_plural" | default "articles" }}{{ end }}
+        {{ i18n "with_this_tag" | default "with this tag" }}
+      </p>
+    </header>
+
+    {{/* Tag filter buttons */}}
+    {{ partial "news-tag-filter.html" . }}
+
+    {{/* Use paginator for proper pagination */}}
+    {{ $paginator := .Paginate (.Pages.ByDate.Reverse) }}
+
+    {{ if $paginator.Pages }}
+    <div class="news-grid">
+      {{ range $paginator.Pages }}
+      <div class="news-grid-item">
+        {{ partial "news-card.html" . }}
+      </div>
+      {{ end }}
+    </div>
+
+    {{/* Custom Pagination */}}
+    {{ partial "pagination.html" $paginator }}
+    {{ else }}
+    <div class="text-center py-5">
+      <p class="text-muted fs-5">{{ i18n "no_articles_with_tag" | default "No articles with this tag yet." }}</p>
+    </div>
+    {{ end }}
+
+    {{/* Link back to all news */}}
+    <div class="text-center mt-5">
+      <a href="{{ "news" | relLangURL }}" class="btn btn-outline-primary me-2">
+        <span class="me-2">&larr;</span>{{ i18n "all_news" | default "All news" }}
+      </a>
+      <a href="{{ "tags" | relLangURL }}" class="btn btn-outline-secondary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="me-1">
+          <path d="M2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586V2zm3.5 4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+        </svg>
+        {{ i18n "all_tags" | default "All tags" }}
+      </a>
+    </div>
+  </div>
+</section>
+{{ end }}

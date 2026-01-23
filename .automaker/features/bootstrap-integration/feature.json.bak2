@@ -1,0 +1,12 @@
+{
+  "id": "bootstrap-integration",
+  "category": "UI",
+  "title": "Integrate Bootstrap Framework",
+  "description": "Add Bootstrap 5.x CSS and JavaScript files to the project. Set up SCSS compilation pipeline and configure Hugo to process Bootstrap with custom variables for preschool branding.",
+  "status": "in_progress",
+  "priority": 1,
+  "complexity": "simple",
+  "createdAt": "2026-01-22T14:36:35.494Z",
+  "updatedAt": "2026-01-22T14:37:00.532Z",
+  "descriptionHistory": []
+}

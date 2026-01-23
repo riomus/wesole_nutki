@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aktualnosci on Wesołe Nutki - Przedszkole</title>
+    <link>http://localhost:1313/pl/news/</link>
+    <description>Recent content in Aktualnosci on Wesołe Nutki - Przedszkole</description>
+    <generator>Hugo</generator>
+    <language>pl</language>
+    <lastBuildDate>Wed, 15 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/pl/news/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Zimowe zabawy na śniegu</title>
+      <link>http://localhost:1313/pl/news/2025/01/zimowe-zabawy-na-%C5%9Bniegu/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pl/news/2025/01/zimowe-zabawy-na-%C5%9Bniegu/</guid>
+      <description>Nasze przedszkolaki świetnie bawiły się na śniegu! Zobaczcie zdjęcia z naszych zimowych zabaw.</description>
+    </item>
+    <item>
+      <title>Warsztaty Kulinarne dla Dzieci</title>
+      <link>http://localhost:1313/pl/news/2024/11/warsztaty-kulinarne-dla-dzieci/</link>
+      <pubDate>Tue, 05 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pl/news/2024/11/warsztaty-kulinarne-dla-dzieci/</guid>
+      <description>W listopadzie rozpoczynamy cykl warsztatów kulinarnych dla dzieci. Małe kucharze nauczą się przygotowywać proste i zdrowe posiłki.</description>
+    </item>
+    <item>
+      <title>Jesienny Piknik Rodzinny</title>
+      <link>http://localhost:1313/pl/news/2024/10/jesienny-piknik-rodzinny/</link>
+      <pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pl/news/2024/10/jesienny-piknik-rodzinny/</guid>
+      <description>Zapraszamy wszystkie rodziny na jesienny piknik w ogrodzie przedszkolnym. Czeka nas wiele atrakcji, konkursów i wspaniała zabawa na świeżym powietrzu.</description>
+    </item>
+    <item>
+      <title>Witamy w Nowym Roku Szkolnym 2024/2025</title>
+      <link>http://localhost:1313/pl/news/2024/09/witamy-w-nowym-roku-szkolnym-2024/2025/</link>
+      <pubDate>Mon, 02 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pl/news/2024/09/witamy-w-nowym-roku-szkolnym-2024/2025/</guid>
+      <description>Z radością witamy wszystkie dzieci i rodziców w nowym roku szkolnym. Przygotowaliśmy wiele atrakcji i nowych aktywności dla naszych małych przedszkolaków.</description>
+    </item>
+  </channel>
+</rss>

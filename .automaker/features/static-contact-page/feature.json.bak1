@@ -1,0 +1,12 @@
+{
+  "id": "static-contact-page",
+  "category": "Core",
+  "title": "Contact Information Page",
+  "description": "Build a contact page with preschool address, phone numbers, email, opening hours, and an embedded map. Include visual contact information cards and directions.",
+  "status": "verified",
+  "priority": 1,
+  "complexity": "simple",
+  "createdAt": "2026-01-22T14:36:35.502Z",
+  "updatedAt": "2026-01-22T15:42:27.877Z",
+  "descriptionHistory": []
+}

@@ -1,0 +1,28 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix Icon Visibility Issue for Success and Info States\n\nResolve the contrast problem where success and info icons appear invisible due to white icons being displayed on white backgrounds.\n\nRequirements:\n- Identify all success and info icon components with the visibility issue\n- Update icon colors to ensure sufficient contrast against white backgrounds (use appropriate brand colors: green for success, blue for info)\n- Alternatively, if icons should remain white, change the background color to provide contrast\n- Verify the fix works across all instances where these icons appear (notifications, alerts, toasts, status indicators, etc.)\n- Ensure the solution follows accessibility guidelines (WCAG AA minimum contrast ratio of 4.5:1)\n- Test in both light and dark modes if applicable\n- Maintain visual consistency with the overall design system",
+  "title": "Fix icon contrast for success and info states",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "backlog",
+  "id": "feature-1769164233871-x7bnut3c6",
+  "descriptionHistory": [
+    {
+      "description": "Fix Icon Visibility Issue for Success and Info States\n\nResolve the contrast problem where success and info icons appear invisible due to white icons being displayed on white backgrounds.\n\nRequirements:\n- Identify all success and info icon components with the visibility issue\n- Update icon colors to ensure sufficient contrast against white backgrounds (use appropriate brand colors: green for success, blue for info)\n- Alternatively, if icons should remain white, change the background color to provide contrast\n- Verify the fix works across all instances where these icons appear (notifications, alerts, toasts, status indicators, etc.)\n- Ensure the solution follows accessibility guidelines (WCAG AA minimum contrast ratio of 4.5:1)\n- Test in both light and dark modes if applicable\n- Maintain visual consistency with the overall design system",
+      "timestamp": "2026-01-23T10:30:33.980Z",
+      "source": "initial"
+    }
+  ]
+}

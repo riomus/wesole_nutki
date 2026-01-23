@@ -1,0 +1,12 @@
+{
+  "id": "news-pagination",
+  "category": "Core",
+  "title": "News Pagination System",
+  "description": "Implement pagination for the news list page to handle multiple articles efficiently. Add previous/next navigation and numbered page links with customizable items per page setting.",
+  "status": "completed",
+  "priority": 2,
+  "complexity": "simple",
+  "createdAt": "2026-01-22T14:36:35.500Z",
+  "updatedAt": "2026-01-22T16:25:26.072Z",
+  "descriptionHistory": []
+}

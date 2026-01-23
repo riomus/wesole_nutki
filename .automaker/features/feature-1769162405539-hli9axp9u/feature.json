@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Navigate to Contact Page When Clicking 'Book Appointment' Button\n\nFix the 'Book Appointment' (umów wizytę) button navigation to direct users to the Contact page instead of the Gallery page.\n\nRequirements:\n- Locate the 'Book Appointment' button/link in the application\n- Update the navigation target from Gallery page to Contact page\n- Verify the button exists in all locations where it appears (header, footer, landing page, etc.)\n- Test the navigation flow to ensure users land on the correct Contact page\n- Confirm the Contact page loads properly and displays relevant booking/contact information\n- Check for any related links or calls-to-action that may have the same incorrect routing",
+  "title": "Fix Book Appointment button navigation to Contact page",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "completed",
+  "id": "feature-1769162405539-hli9axp9u",
+  "descriptionHistory": [
+    {
+      "description": "Navigate to Contact Page When Clicking 'Book Appointment' Button\n\nFix the 'Book Appointment' (umów wizytę) button navigation to direct users to the Contact page instead of the Gallery page.\n\nRequirements:\n- Locate the 'Book Appointment' button/link in the application\n- Update the navigation target from Gallery page to Contact page\n- Verify the button exists in all locations where it appears (header, footer, landing page, etc.)\n- Test the navigation flow to ensure users land on the correct Contact page\n- Confirm the Contact page loads properly and displays relevant booking/contact information\n- Check for any related links or calls-to-action that may have the same incorrect routing",
+      "timestamp": "2026-01-23T10:00:05.637Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T10:06:21.127Z"
+}

@@ -1,0 +1,11 @@
+# About Page Contact Section Configuration
+enabled: true
+
+# Section header keys (from i18n)
+heading_key: about_contact_heading
+subtitle_key: about_contact_subtitle
+
+# CTA button
+button:
+  label_key: contact_us
+  url_key: contact

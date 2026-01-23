@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}" class="no-js">
+<head>
+  {{- partial "head.html" . -}}
+</head>
+<body>
+  <a class="visually-hidden-focusable" href="#main-content">{{ i18n "skip_to_content" | default "Skip to content" }}</a>
+
+  {{- partial "header.html" . -}}
+
+  <main id="main-content" role="main">
+    {{- block "main" . }}{{- end }}
+  </main>
+
+  {{- partial "footer.html" . -}}
+
+  <!-- Main JavaScript Bundle via Hugo Pipes -->
+  {{ $jsOptions := dict "targetPath" "js/bundle.js" "minify" hugo.IsProduction }}
+  {{ with resources.Get "js/main.js" }}
+    {{ $js := . | js.Build $jsOptions }}
+    {{ if hugo.IsProduction }}
+      {{ $js = $js | fingerprint "sha256" }}
+      <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous" defer></script>
+    {{ else }}
+      <script src="{{ $js.RelPermalink }}" defer></script>
+    {{ end }}
+  {{ end }}
+
+  {{- block "scripts" . }}{{- end }}
+
+  <!-- Netlify Identity redirect for Decap CMS -->
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+</body>
+</html>

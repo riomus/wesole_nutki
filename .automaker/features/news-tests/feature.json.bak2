@@ -1,0 +1,12 @@
+{
+  "id": "news-tests",
+  "category": "Testing",
+  "title": "News Section E2E Tests",
+  "description": "Write tests for news list pagination, single article rendering, category filtering, and embedded galleries within news posts in both languages.",
+  "status": "in_progress",
+  "priority": 2,
+  "complexity": "moderate",
+  "createdAt": "2026-01-22T14:36:35.512Z",
+  "updatedAt": "2026-01-22T16:17:01.485Z",
+  "descriptionHistory": []
+}

@@ -1,0 +1,12 @@
+{
+  "id": "multilingual-config",
+  "category": "Core",
+  "title": "Configure Multilingual Support",
+  "description": "Set up Hugo's i18n system for Polish and English languages with proper language configuration, content directories (content/pl/, content/en/), and i18n translation files for common UI strings.",
+  "status": "in_progress",
+  "priority": 1,
+  "complexity": "moderate",
+  "createdAt": "2026-01-22T14:36:35.493Z",
+  "updatedAt": "2026-01-22T15:03:48.971Z",
+  "descriptionHistory": []
+}

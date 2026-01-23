@@ -1,0 +1,1524 @@
+{
+  "version": 1,
+  "events": [
+    {
+      "id": "evt-1769175062576-e665acb9",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T13:31:02.576Z",
+      "featureId": "feature-1769175062542-tm28ttue4"
+    },
+    {
+      "id": "evt-1769175048264-2e848222",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T13:30:48.264Z",
+      "featureName": "Fix registration page typography issues",
+      "featureId": "feature-1769174727009-5cfbrm83c"
+    },
+    {
+      "id": "evt-1769175031893-4d916367",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T13:30:31.893Z",
+      "featureId": "feature-1769175031803-j4x8h9ttx"
+    },
+    {
+      "id": "evt-1769174911037-034541de",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T13:28:31.037Z",
+      "featureName": "Fix Learn More button language-specific routing",
+      "featureId": "feature-1769174686235-e4i602645"
+    },
+    {
+      "id": "evt-1769174727104-950c9542",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T13:25:27.104Z",
+      "featureId": "feature-1769174727009-5cfbrm83c"
+    },
+    {
+      "id": "evt-1769174686324-66e2247f",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T13:24:46.324Z",
+      "featureId": "feature-1769174686235-e4i602645"
+    },
+    {
+      "id": "evt-1769174629827-1948c83d",
+      "trigger": "auto_mode_complete",
+      "timestamp": "2026-01-23T13:23:49.827Z"
+    },
+    {
+      "id": "evt-1769174622508-4fa39647",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T13:23:42.508Z",
+      "featureName": "Fix Typography Issues on Plan Zajec Page",
+      "featureId": "feature-1769174182098-msbpf0gco"
+    },
+    {
+      "id": "evt-1769174441671-67e43314",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T13:20:41.671Z",
+      "featureName": "Fix Typography and Rendering on Payments Page",
+      "featureId": "feature-1769174234998-689ytbrjf"
+    },
+    {
+      "id": "evt-1769174408615-e33e165a",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T13:20:08.615Z",
+      "featureName": "Fix program subpage layout and typography issues",
+      "featureId": "feature-1769174076657-0ah3yoz7t"
+    },
+    {
+      "id": "evt-1769174235090-1e78b2a4",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T13:17:15.090Z",
+      "featureId": "feature-1769174234998-689ytbrjf"
+    },
+    {
+      "id": "evt-1769174182192-da532121",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T13:16:22.192Z",
+      "featureId": "feature-1769174182098-msbpf0gco"
+    },
+    {
+      "id": "evt-1769174076750-8820cebb",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T13:14:36.750Z",
+      "featureId": "feature-1769174076657-0ah3yoz7t"
+    },
+    {
+      "id": "evt-1769173905701-bbe7f4e8",
+      "trigger": "auto_mode_complete",
+      "timestamp": "2026-01-23T13:11:45.701Z"
+    },
+    {
+      "id": "evt-1769173904930-d7c7f013",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T13:11:44.930Z",
+      "featureName": "",
+      "featureId": "feature-1769173350055-7lqjnnuev"
+    },
+    {
+      "id": "evt-1769173828430-218f4d23",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T13:10:28.430Z",
+      "featureName": "Synchronize English menu with Polish structure",
+      "featureId": "feature-1769173385166-welt8hrha"
+    },
+    {
+      "id": "evt-1769173824166-d2c5d2ab",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T13:10:24.166Z",
+      "featureName": "",
+      "featureId": "feature-1769173671887-vukuajfjy"
+    },
+    {
+      "id": "evt-1769173672228-c3daa578",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T13:07:52.228Z",
+      "featureId": "feature-1769173671887-vukuajfjy"
+    },
+    {
+      "id": "evt-1769173385311-1434197e",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T13:03:05.311Z",
+      "featureId": "feature-1769173385166-welt8hrha"
+    },
+    {
+      "id": "evt-1769173350154-8404b1ba",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T13:02:30.154Z",
+      "featureId": "feature-1769173350055-7lqjnnuev"
+    },
+    {
+      "id": "evt-1769172760104-587486b3",
+      "trigger": "auto_mode_complete",
+      "timestamp": "2026-01-23T12:52:40.104Z"
+    },
+    {
+      "id": "evt-1769172755166-4c2e8b2a",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T12:52:35.166Z",
+      "featureName": "Restructure main menu and add More section dropdown",
+      "featureId": "feature-1769172513066-giyvxu8xs"
+    },
+    {
+      "id": "evt-1769172513157-5989f636",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T12:48:33.157Z",
+      "featureId": "feature-1769172513066-giyvxu8xs"
+    },
+    {
+      "id": "evt-1769172125243-63426add",
+      "trigger": "auto_mode_complete",
+      "timestamp": "2026-01-23T12:42:05.243Z"
+    },
+    {
+      "id": "evt-1769172121678-9b76b485",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T12:42:01.678Z",
+      "featureName": "Synchronize navigation menu with reference site structure",
+      "featureId": "feature-1769171721992-owkjjbc0r"
+    },
+    {
+      "id": "evt-1769172101677-729bf98a",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T12:41:41.677Z",
+      "featureName": "Update gallery card image border radius styling",
+      "featureId": "feature-1769171961513-x65ki28x0"
+    },
+    {
+      "id": "evt-1769172070524-b9e2bffc",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T12:41:10.524Z",
+      "featureName": "Update embedded gallery image styling for seamless appearance",
+      "featureId": "feature-1769171862437-ficeysq9g"
+    },
+    {
+      "id": "evt-1769171961599-58b1a89e",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T12:39:21.599Z",
+      "featureId": "feature-1769171961513-x65ki28x0"
+    },
+    {
+      "id": "evt-1769171862525-40346de8",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T12:37:42.525Z",
+      "featureId": "feature-1769171862437-ficeysq9g"
+    },
+    {
+      "id": "evt-1769171836724-c2ee7e26",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T12:37:16.724Z",
+      "featureName": "Fix image error state height in team card component",
+      "featureId": "feature-1769171676068-4j23tomna"
+    },
+    {
+      "id": "evt-1769171722085-a24f3139",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T12:35:22.085Z",
+      "featureId": "feature-1769171721992-owkjjbc0r"
+    },
+    {
+      "id": "evt-1769171676163-4d59b5b3",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T12:34:36.163Z",
+      "featureId": "feature-1769171676068-4j23tomna"
+    },
+    {
+      "id": "evt-1769171532593-8807cdca",
+      "trigger": "auto_mode_complete",
+      "timestamp": "2026-01-23T12:32:12.593Z"
+    },
+    {
+      "id": "evt-1769171528962-88f77e2e",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T12:32:08.962Z",
+      "featureName": "Remove bottom border radius from gallery card images",
+      "featureId": "feature-1769171421014-x5wsi8ap0"
+    },
+    {
+      "id": "evt-1769171421106-89504e8f",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T12:30:21.106Z",
+      "featureId": "feature-1769171421014-x5wsi8ap0"
+    },
+    {
+      "id": "evt-1769171369907-d2acb6b5",
+      "trigger": "auto_mode_complete",
+      "timestamp": "2026-01-23T12:29:29.907Z"
+    },
+    {
+      "id": "evt-1769171363800-7f0bd57a",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T12:29:23.800Z",
+      "featureName": "Update embedded gallery item image styling",
+      "featureId": "feature-1769171169021-94xx3jpuw"
+    },
+    {
+      "id": "evt-1769171307086-91035f8f",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T12:28:27.086Z",
+      "featureName": "Fix map column responsiveness on contact page",
+      "featureId": "feature-1769171120522-errtw486u"
+    },
+    {
+      "id": "evt-1769171184289-d502e40e",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T12:26:24.289Z",
+      "featureName": "",
+      "featureId": "feature-1769171031214-qc7fx4uwe"
+    },
+    {
+      "id": "evt-1769171169114-26fb3a33",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T12:26:09.114Z",
+      "featureId": "feature-1769171169021-94xx3jpuw"
+    },
+    {
+      "id": "evt-1769171120617-2d083606",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T12:25:20.617Z",
+      "featureId": "feature-1769171120522-errtw486u"
+    },
+    {
+      "id": "evt-1769171097119-4ae968fa",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T12:24:57.119Z",
+      "featureName": "Audit and Fix Polish Diacritical Marks Across Application",
+      "featureId": "feature-1769170648560-d2jvsuyr3"
+    },
+    {
+      "id": "evt-1769171031249-22e7b729",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T12:23:51.249Z",
+      "featureId": "feature-1769171031214-qc7fx4uwe"
+    },
+    {
+      "id": "evt-1769170830250-e4201123",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T12:20:30.250Z",
+      "featureName": "Remove embedded gallery image margins and bottom border-radius",
+      "featureId": "feature-1769170123458-ics0btbll"
+    },
+    {
+      "id": "evt-1769170757758-065a4045",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T12:19:17.758Z",
+      "featureName": "",
+      "featureId": "feature-1769170569290-suw9k0b33"
+    },
+    {
+      "id": "evt-1769170648729-2757dd84",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T12:17:28.729Z",
+      "featureId": "feature-1769170648560-d2jvsuyr3"
+    },
+    {
+      "id": "evt-1769170622668-c264c001",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T12:17:02.668Z",
+      "featureName": "Remove fixed aspect ratio from gallery card images",
+      "featureId": "feature-1769170091521-gdi3ucku2"
+    },
+    {
+      "id": "evt-1769170569420-86a44ac5",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T12:16:09.420Z",
+      "featureId": "feature-1769170569290-suw9k0b33"
+    },
+    {
+      "id": "evt-1769170500191-1f0cac22",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T12:15:00.191Z",
+      "featureName": "Fix gallery card body visibility in CSS",
+      "featureId": "feature-1769170033204-qbllesbi1"
+    },
+    {
+      "id": "evt-1769170466884-101d2f17",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T12:14:26.884Z",
+      "featureName": "",
+      "featureId": "feature-1769169930475-t2nu7qje2"
+    },
+    {
+      "id": "evt-1769170123557-dfbd6497",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T12:08:43.557Z",
+      "featureId": "feature-1769170123458-ics0btbll"
+    },
+    {
+      "id": "evt-1769170091649-ba93c628",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T12:08:11.649Z",
+      "featureId": "feature-1769170091521-gdi3ucku2"
+    },
+    {
+      "id": "evt-1769170045812-8a97ffd9",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T12:07:25.812Z",
+      "featureName": "Fix card spacing, typography, and date localization",
+      "featureId": "feature-1769169190252-jsjw50c3l"
+    },
+    {
+      "id": "evt-1769170033259-e5260078",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T12:07:13.259Z",
+      "featureId": "feature-1769170033204-qbllesbi1"
+    },
+    {
+      "id": "evt-1769169930843-7548e51b",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T12:05:30.843Z",
+      "featureId": "feature-1769169930475-t2nu7qje2"
+    },
+    {
+      "id": "evt-1769169879995-4f210adf",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T12:04:39.995Z",
+      "featureName": "Fix gallery card body rendering on list page",
+      "featureId": "feature-1769169087587-qlkoygp8l"
+    },
+    {
+      "id": "evt-1769169843532-588fdab3",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T12:04:03.532Z",
+      "featureName": "Implement locale-aware date formatting across gallery",
+      "featureId": "feature-1769169137493-jywvb69iv"
+    },
+    {
+      "id": "evt-1769169746477-323a6f5f",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T12:02:26.477Z",
+      "featureName": "",
+      "featureId": "feature-1769168977735-zul7a9t2m"
+    },
+    {
+      "id": "evt-1769169470840-928a7e10",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T11:57:50.840Z",
+      "featureName": "Fix embedded gallery top spacing in post view",
+      "featureId": "feature-1769169048080-vgocy8ifc"
+    },
+    {
+      "id": "evt-1769169190352-ad10ec6d",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T11:53:10.352Z",
+      "featureId": "feature-1769169190252-jsjw50c3l"
+    },
+    {
+      "id": "evt-1769169137537-41bb2172",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T11:52:17.537Z",
+      "featureId": "feature-1769169137493-jywvb69iv"
+    },
+    {
+      "id": "evt-1769169087721-6fa19635",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T11:51:27.721Z",
+      "featureId": "feature-1769169087587-qlkoygp8l"
+    },
+    {
+      "id": "evt-1769169048224-d27775de",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T11:50:48.224Z",
+      "featureId": "feature-1769169048080-vgocy8ifc"
+    },
+    {
+      "id": "evt-1769168977897-e1e776e1",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T11:49:37.897Z",
+      "featureId": "feature-1769168977735-zul7a9t2m"
+    },
+    {
+      "id": "evt-1769168909126-7b52b8c4",
+      "trigger": "auto_mode_complete",
+      "timestamp": "2026-01-23T11:48:29.126Z"
+    },
+    {
+      "id": "evt-1769168904259-f06f0535",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T11:48:24.259Z",
+      "featureName": "Fix embedded gallery overlay rendering in news articles",
+      "featureId": "feature-1769168030875-jhvm8uu7s"
+    },
+    {
+      "id": "evt-1769168790956-e590414a",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T11:46:30.956Z",
+      "featureName": "Fix gallery view layout and component ordering",
+      "featureId": "feature-1769168264332-jx764xb4c"
+    },
+    {
+      "id": "evt-1769168675481-4e25879e",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T11:44:35.481Z",
+      "featureName": "",
+      "featureId": "feature-1769167923684-8al0n4fio"
+    },
+    {
+      "id": "evt-1769168464866-2de6766f",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T11:41:04.866Z",
+      "featureName": "Fix filter selection visual feedback in gallery and news",
+      "featureId": "feature-1769167670196-n070dguwh"
+    },
+    {
+      "id": "evt-1769168383592-cdc56c56",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T11:39:43.592Z",
+      "featureName": "Fix gallery card layout and title visibility issues",
+      "featureId": "feature-1769167599767-dyymc9ujj"
+    },
+    {
+      "id": "evt-1769168354585-f7806dd3",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T11:39:14.585Z",
+      "featureName": "Fix News Post Display and Share Functionality",
+      "featureId": "feature-1769167279151-sfketyujt"
+    },
+    {
+      "id": "evt-1769168265651-4c2771aa",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T11:37:45.651Z",
+      "featureId": "feature-1769168264332-jx764xb4c"
+    },
+    {
+      "id": "evt-1769168031136-4b7ac9d7",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T11:33:51.137Z",
+      "featureId": "feature-1769168030875-jhvm8uu7s"
+    },
+    {
+      "id": "evt-1769167940072-09847fd5",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T11:32:20.072Z",
+      "featureName": "Add placeholder image fallbacks for all post views",
+      "featureId": "feature-1769167220092-c8eb5ix5e"
+    },
+    {
+      "id": "evt-1769167923948-155f7dae",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T11:32:03.948Z",
+      "featureId": "feature-1769167923684-8al0n4fio"
+    },
+    {
+      "id": "evt-1769167686136-9e0a9874",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T11:28:06.136Z",
+      "featureName": "",
+      "featureId": "feature-1769166905166-20kh3ij06"
+    },
+    {
+      "id": "evt-1769167670545-589ed370",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T11:27:50.545Z",
+      "featureId": "feature-1769167670196-n070dguwh"
+    },
+    {
+      "id": "evt-1769167603175-6c0f6fa8",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T11:26:43.175Z",
+      "featureName": "Remove Privacy, Terms, and FAQ footer links",
+      "featureId": "feature-1769167020507-4oiluxi1j"
+    },
+    {
+      "id": "evt-1769167600200-aa94688b",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T11:26:40.200Z",
+      "featureId": "feature-1769167599767-dyymc9ujj"
+    },
+    {
+      "id": "evt-1769167279209-849c1ce9",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T11:21:19.209Z",
+      "featureId": "feature-1769167279151-sfketyujt"
+    },
+    {
+      "id": "evt-1769167266155-c6715c69",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T11:21:06.155Z",
+      "featureName": "Fix news filter display and styling issues",
+      "featureId": "feature-1769166812164-u0ezazu16"
+    },
+    {
+      "id": "evt-1769167220366-0c1047ed",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T11:20:20.366Z",
+      "featureId": "feature-1769167220092-c8eb5ix5e"
+    },
+    {
+      "id": "evt-1769167205315-37226385",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T11:20:05.315Z",
+      "featureName": "Fix submenu spacing and sizing issues",
+      "featureId": "feature-1769166711633-7ou5ug0wm"
+    },
+    {
+      "id": "evt-1769167047078-7836dc2b",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T11:17:27.078Z",
+      "featureName": "Remove rounded corners from full-width sections",
+      "featureId": "feature-1769166769032-gbdp78xm1"
+    },
+    {
+      "id": "evt-1769167031875-809560f0",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T11:17:11.875Z",
+      "featureName": "",
+      "featureId": "feature-1769166636083-7ycmhlff1"
+    },
+    {
+      "id": "evt-1769167020641-ba8227d2",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T11:17:00.641Z",
+      "featureId": "feature-1769167020507-4oiluxi1j"
+    },
+    {
+      "id": "evt-1769166917770-1dcb3dbf",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T11:15:17.770Z",
+      "featureName": "Fix gallery filter button layout and display",
+      "featureId": "feature-1769166663075-mdd9pmzxc"
+    },
+    {
+      "id": "evt-1769166905208-45cfdc44",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T11:15:05.208Z",
+      "featureId": "feature-1769166905166-20kh3ij06"
+    },
+    {
+      "id": "evt-1769166812254-24a4b96d",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T11:13:32.254Z",
+      "featureId": "feature-1769166812164-u0ezazu16"
+    },
+    {
+      "id": "evt-1769166810863-7a745a96",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T11:13:30.863Z",
+      "featureName": "Standardize section background styling with rounded corners",
+      "featureId": "feature-1769166558251-4m2a1p4e1"
+    },
+    {
+      "id": "evt-1769166769126-60fe5e12",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T11:12:49.126Z",
+      "featureId": "feature-1769166769032-gbdp78xm1"
+    },
+    {
+      "id": "evt-1769166756509-84eeda2b",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T11:12:36.509Z",
+      "featureName": "",
+      "featureId": "feature-1769166519909-bx5heq4rw"
+    },
+    {
+      "id": "evt-1769166711730-eba4bed6",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T11:11:51.730Z",
+      "featureId": "feature-1769166711633-7ou5ug0wm"
+    },
+    {
+      "id": "evt-1769166663109-c3868fdf",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T11:11:03.109Z",
+      "featureId": "feature-1769166663075-mdd9pmzxc"
+    },
+    {
+      "id": "evt-1769166636183-96434553",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T11:10:36.183Z",
+      "featureId": "feature-1769166636083-7ycmhlff1"
+    },
+    {
+      "id": "evt-1769166558344-d8f2a84f",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T11:09:18.344Z",
+      "featureId": "feature-1769166558251-4m2a1p4e1"
+    },
+    {
+      "id": "evt-1769166520004-4b88d015",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T11:08:40.004Z",
+      "featureId": "feature-1769166519909-bx5heq4rw"
+    },
+    {
+      "id": "evt-1769166381844-59b51fa6",
+      "trigger": "auto_mode_complete",
+      "timestamp": "2026-01-23T11:06:21.844Z"
+    },
+    {
+      "id": "evt-1769166379826-4026ce8b",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T11:06:19.826Z",
+      "featureName": "Fix navigation menu active state indicator",
+      "featureId": "feature-1769165716430-2030kagcp"
+    },
+    {
+      "id": "evt-1769166193523-53d5864e",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T11:03:13.524Z",
+      "featureName": "Add recruitment announcement hero section with enrollment details",
+      "featureId": "feature-1769164997999-anw140i20"
+    },
+    {
+      "id": "evt-1769166186392-c603d28f",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T11:03:06.392Z",
+      "featureName": "Standardize single news page design patterns",
+      "featureId": "feature-1769165494794-n4dcrunq3"
+    },
+    {
+      "id": "evt-1769166131240-cdb559db",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T11:02:11.240Z",
+      "featureName": "Fix Polish Character Encoding Issues",
+      "featureId": "feature-1769164893440-rc1lo9rg3"
+    },
+    {
+      "id": "evt-1769165858000-c5310506",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T10:57:38.000Z",
+      "featureName": "Fix typography inconsistencies in schedule timeline",
+      "featureId": "feature-1769164720552-ha6b2d7v2"
+    },
+    {
+      "id": "evt-1769165857678-f755ac8a",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T10:57:37.678Z",
+      "featureName": "Fix feature-icon visibility in success and info states",
+      "featureId": "feature-1769164809408-95vsm20hw"
+    },
+    {
+      "id": "evt-1769165716528-c23b685c",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T10:55:16.528Z",
+      "featureId": "feature-1769165716430-2030kagcp"
+    },
+    {
+      "id": "evt-1769165584656-9a159812",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T10:53:04.656Z",
+      "featureName": "Improve About Us Page Typography and Readability",
+      "featureId": "feature-1769164620951-wi5jvn1yn"
+    },
+    {
+      "id": "evt-1769165495172-a6acae1d",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T10:51:35.172Z",
+      "featureId": "feature-1769165494794-n4dcrunq3"
+    },
+    {
+      "id": "evt-1769165209688-70324223",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T10:46:49.688Z",
+      "featureName": "Fix counter suffix layout wrapping",
+      "featureId": "feature-1769164503403-8bfirexm2"
+    },
+    {
+      "id": "evt-1769165190560-a48379e7",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T10:46:30.561Z",
+      "featureName": "Add image loading placeholders and fallback UI",
+      "featureId": "feature-1769164467289-fxy6a4toa"
+    },
+    {
+      "id": "evt-1769164998039-d7500ec9",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T10:43:18.039Z",
+      "featureId": "feature-1769164997999-anw140i20"
+    },
+    {
+      "id": "evt-1769164978558-90cce0df",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T10:42:58.558Z",
+      "featureName": "Update Contact Card Design to Match System Standards",
+      "featureId": "feature-1769164338907-duvdrks2o"
+    },
+    {
+      "id": "evt-1769164918084-8b2e183d",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T10:41:58.084Z",
+      "featureName": "Remove redundant hr element from footer",
+      "featureId": "feature-1769164425988-zlw467ziu"
+    },
+    {
+      "id": "evt-1769164893709-79fbd580",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T10:41:33.709Z",
+      "featureId": "feature-1769164893440-rc1lo9rg3"
+    },
+    {
+      "id": "evt-1769164825424-9ce60aa4",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T10:40:25.424Z",
+      "featureName": "Reposition social media icons to right alignment",
+      "featureId": "feature-1769164393136-8x7oe0oon"
+    },
+    {
+      "id": "evt-1769164809719-a6b58924",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T10:40:09.719Z",
+      "featureId": "feature-1769164809408-95vsm20hw"
+    },
+    {
+      "id": "evt-1769164720731-34d1effc",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T10:38:40.731Z",
+      "featureId": "feature-1769164720552-ha6b2d7v2"
+    },
+    {
+      "id": "evt-1769164717648-44d41f99",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T10:38:37.648Z",
+      "featureName": "Add Polish character support to fonts",
+      "featureId": "feature-1769164309670-09dxxdlq7"
+    },
+    {
+      "id": "evt-1769164637682-3c5365b1",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T10:37:17.682Z",
+      "featureName": "Standardize news card design across application",
+      "featureId": "feature-1769164280503-g9m650tqp"
+    },
+    {
+      "id": "evt-1769164621120-e03ff378",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T10:37:01.120Z",
+      "featureId": "feature-1769164620951-wi5jvn1yn"
+    },
+    {
+      "id": "evt-1769164507213-2da055c4",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T10:35:07.213Z",
+      "featureName": "Fix Map Pin Coordinates on Contact Page",
+      "featureId": "feature-1769164153039-244jqz35u"
+    },
+    {
+      "id": "evt-1769164503728-a259057c",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T10:35:03.728Z",
+      "featureId": "feature-1769164503403-8bfirexm2"
+    },
+    {
+      "id": "evt-1769164467543-1a3161c0",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T10:34:27.543Z",
+      "featureId": "feature-1769164467289-fxy6a4toa"
+    },
+    {
+      "id": "evt-1769164426235-a4ff0fb3",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T10:33:46.235Z",
+      "featureId": "feature-1769164425988-zlw467ziu"
+    },
+    {
+      "id": "evt-1769164408611-d3ee6137",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T10:33:28.611Z",
+      "featureName": "Fix icon contrast for success and info states",
+      "featureId": "feature-1769164233871-x7bnut3c6"
+    },
+    {
+      "id": "evt-1769164393365-e6cd07f5",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T10:33:13.366Z",
+      "featureId": "feature-1769164393136-8x7oe0oon"
+    },
+    {
+      "id": "evt-1769164339000-424bffd8",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T10:32:19.000Z",
+      "featureId": "feature-1769164338907-duvdrks2o"
+    },
+    {
+      "id": "evt-1769164326407-aa04a7bb",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T10:32:06.407Z",
+      "featureName": "Fix and Standardize Card Component Styling",
+      "featureId": "feature-1769163655371-jqsffcjd4"
+    },
+    {
+      "id": "evt-1769164309966-17c1ea7a",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T10:31:49.966Z",
+      "featureId": "feature-1769164309670-09dxxdlq7"
+    },
+    {
+      "id": "evt-1769164280539-c3bf284d",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T10:31:20.539Z",
+      "featureId": "feature-1769164280503-g9m650tqp"
+    },
+    {
+      "id": "evt-1769164243328-52763bb7",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T10:30:43.328Z",
+      "featureName": "Add preschool-themed hero background to About Us page",
+      "featureId": "feature-1769163852953-gmpkcfopk"
+    },
+    {
+      "id": "evt-1769164233982-6090f913",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T10:30:33.982Z",
+      "featureId": "feature-1769164233871-x7bnut3c6"
+    },
+    {
+      "id": "evt-1769164154434-bf1f2c69",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T10:29:14.434Z",
+      "featureName": "Fix icon-accent contrast for accessibility compliance",
+      "featureId": "feature-1769163708140-5di9f8gs9"
+    },
+    {
+      "id": "evt-1769164153295-0499b3a4",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T10:29:13.295Z",
+      "featureId": "feature-1769164153039-244jqz35u"
+    },
+    {
+      "id": "evt-1769164023227-4d116375",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T10:27:03.227Z",
+      "featureName": "",
+      "featureId": "feature-1769163176548-76yokshp3"
+    },
+    {
+      "id": "evt-1769163918425-26788498",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T10:25:18.425Z",
+      "featureName": "Enhance news card visual design and readability",
+      "featureId": "feature-1769163484449-oxvdo078g"
+    },
+    {
+      "id": "evt-1769163853237-73b56c4e",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T10:24:13.237Z",
+      "featureId": "feature-1769163852953-gmpkcfopk"
+    },
+    {
+      "id": "evt-1769163848700-1b94b415",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T10:24:08.700Z",
+      "featureName": "",
+      "featureId": "feature-1769163248839-t5ljm1cus"
+    },
+    {
+      "id": "evt-1769163708468-f7da824c",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T10:21:48.468Z",
+      "featureId": "feature-1769163708140-5di9f8gs9"
+    },
+    {
+      "id": "evt-1769163655518-99940b35",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T10:20:55.518Z",
+      "featureId": "feature-1769163655371-jqsffcjd4"
+    },
+    {
+      "id": "evt-1769163484733-644e81ab",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T10:18:04.733Z",
+      "featureId": "feature-1769163484449-oxvdo078g"
+    },
+    {
+      "id": "evt-1769163250678-e1606a11",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T10:14:10.678Z",
+      "featureName": "Fix Bootstrap grid column display issues",
+      "featureId": "feature-1769163027698-t0lkxjaxb"
+    },
+    {
+      "id": "evt-1769163248929-c75d41ab",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T10:14:08.929Z",
+      "featureId": "feature-1769163248839-t5ljm1cus"
+    },
+    {
+      "id": "evt-1769163176642-e6898bb8",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T10:12:56.642Z",
+      "featureId": "feature-1769163176548-76yokshp3"
+    },
+    {
+      "id": "evt-1769163027796-4280d3fe",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T10:10:27.796Z",
+      "featureId": "feature-1769163027698-t0lkxjaxb"
+    },
+    {
+      "id": "evt-1769162934641-98e10ac5",
+      "trigger": "auto_mode_complete",
+      "timestamp": "2026-01-23T10:08:54.641Z"
+    },
+    {
+      "id": "evt-1769162924789-33a95530",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T10:08:44.789Z",
+      "featureName": "",
+      "featureId": "feature-1769162300031-k1qqn39id"
+    },
+    {
+      "id": "evt-1769162860817-f51b0036",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T10:07:40.817Z",
+      "featureName": "Fix Leaflet map tile rendering and display issues",
+      "featureId": "feature-1769162490829-9c93cdcrn"
+    },
+    {
+      "id": "evt-1769162781133-ee4db31f",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T10:06:21.133Z",
+      "featureName": "",
+      "featureId": "feature-1769162405539-hli9axp9u"
+    },
+    {
+      "id": "evt-1769162550438-e4296f4b",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T10:02:30.438Z",
+      "featureName": "Remove footer wave component",
+      "featureId": "feature-1769162355010-ah4bkzu8o"
+    },
+    {
+      "id": "evt-1769162490925-47ddfa0f",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T10:01:30.925Z",
+      "featureId": "feature-1769162490829-9c93cdcrn"
+    },
+    {
+      "id": "evt-1769162405638-b9f3634a",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T10:00:05.638Z",
+      "featureId": "feature-1769162405539-hli9axp9u"
+    },
+    {
+      "id": "evt-1769162355042-c3cec315",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T09:59:15.042Z",
+      "featureId": "feature-1769162355010-ah4bkzu8o"
+    },
+    {
+      "id": "evt-1769162300134-fcf11a2f",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T09:58:20.134Z",
+      "featureId": "feature-1769162300031-k1qqn39id"
+    },
+    {
+      "id": "evt-1769162181846-603322b4",
+      "trigger": "auto_mode_complete",
+      "timestamp": "2026-01-23T09:56:21.846Z"
+    },
+    {
+      "id": "evt-1769162177767-1bc55bca",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T09:56:17.767Z",
+      "featureName": "Fix Tailwind CSS styling and layout issues across all pages",
+      "featureId": "feature-1769161824967-evfjs8sqp"
+    },
+    {
+      "id": "evt-1769161825051-83da37b4",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T09:50:25.051Z",
+      "featureId": "feature-1769161824967-evfjs8sqp"
+    },
+    {
+      "id": "evt-1769161647824-4f8a1118",
+      "trigger": "auto_mode_complete",
+      "timestamp": "2026-01-23T09:47:27.824Z"
+    },
+    {
+      "id": "evt-1769161643214-72712178",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T09:47:23.214Z",
+      "featureName": "Fix Tailwind CSS design and layout issues",
+      "featureId": "feature-1769161107088-t8w7cx280"
+    },
+    {
+      "id": "evt-1769161508785-b50fc38e",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T09:45:08.786Z",
+      "featureName": "Integrate Custom Logo from External Image Source",
+      "featureId": "feature-1769161342432-vuqx11vui"
+    },
+    {
+      "id": "evt-1769161445005-9bae7bb7",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T09:44:05.005Z",
+      "featureName": "Update Wesołe Nutki contact and social media information",
+      "featureId": "feature-1769160983134-bzft8v0xk"
+    },
+    {
+      "id": "evt-1769161393472-a8c70038",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T09:43:13.472Z",
+      "featureName": "Localize Polish homepage news section date formatting",
+      "featureId": "feature-1769160880510-6pzqwudhk"
+    },
+    {
+      "id": "evt-1769161342556-b400c1df",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T09:42:22.556Z",
+      "featureId": "feature-1769161342432-vuqx11vui"
+    },
+    {
+      "id": "evt-1769161107184-1af779a8",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T09:38:27.184Z",
+      "featureId": "feature-1769161107088-t8w7cx280"
+    },
+    {
+      "id": "evt-1769160983231-c4da7bc2",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T09:36:23.231Z",
+      "featureId": "feature-1769160983134-bzft8v0xk"
+    },
+    {
+      "id": "evt-1769160965517-58c509f2",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T09:36:05.517Z",
+      "featureName": "Fix Post-Tailwind Migration Layout Issues",
+      "featureId": "feature-1769160592135-fhhixs4rk"
+    },
+    {
+      "id": "evt-1769160880604-ad87cb84",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T09:34:40.604Z",
+      "featureId": "feature-1769160880510-6pzqwudhk"
+    },
+    {
+      "id": "evt-1769160704702-43eb86d6",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T09:31:44.702Z",
+      "featureName": "Scrape and archive wesolenutki.eu website content",
+      "featureId": "feature-1769160082949-18241ob5m"
+    },
+    {
+      "id": "evt-1769160592229-6c4c1aca",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T09:29:52.229Z",
+      "featureId": "feature-1769160592135-fhhixs4rk"
+    },
+    {
+      "id": "evt-1769160227097-e147732e",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T09:23:47.097Z",
+      "featureName": "Migrate from Bootstrap to Tailwind CSS",
+      "featureId": "feature-1769158784602-va0o53sxf"
+    },
+    {
+      "id": "evt-1769160083045-4f523f96",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T09:21:23.045Z",
+      "featureId": "feature-1769160082949-18241ob5m"
+    },
+    {
+      "id": "evt-1769159428326-c13d0328",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T09:10:28.326Z",
+      "featureName": "Fix Missing CMS Default Media Library Registration",
+      "featureId": "feature-1769158760642-iewabgqp6"
+    },
+    {
+      "id": "evt-1769159413060-c4492eef",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T09:10:13.060Z",
+      "featureName": "Fix gallery image 404 loading errors",
+      "featureId": "feature-1769158675122-r3ksfwybr"
+    },
+    {
+      "id": "evt-1769159304917-bb2b10a0",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T09:08:24.917Z",
+      "featureName": "",
+      "featureId": "feature-1769158721222-6s3v1nhek"
+    },
+    {
+      "id": "evt-1769159250648-43b598b8",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T09:07:30.648Z",
+      "featureName": "Fix Menu Collapse Functionality",
+      "featureId": "feature-1769158582107-bt1imw1rl"
+    },
+    {
+      "id": "evt-1769158784919-2cee517e",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T08:59:44.919Z",
+      "featureId": "feature-1769158784602-va0o53sxf"
+    },
+    {
+      "id": "evt-1769158760869-3216ff3b",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T08:59:20.869Z",
+      "featureId": "feature-1769158760642-iewabgqp6"
+    },
+    {
+      "id": "evt-1769158721485-228fd739",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T08:58:41.485Z",
+      "featureId": "feature-1769158721222-6s3v1nhek"
+    },
+    {
+      "id": "evt-1769158675231-47a03639",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T08:57:55.231Z",
+      "featureId": "feature-1769158675122-r3ksfwybr"
+    },
+    {
+      "id": "evt-1769158582223-d5433bd1",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T08:56:22.223Z",
+      "featureId": "feature-1769158582107-bt1imw1rl"
+    },
+    {
+      "id": "evt-1769154495116-33455ac2",
+      "trigger": "auto_mode_complete",
+      "timestamp": "2026-01-23T07:48:15.116Z"
+    },
+    {
+      "id": "evt-1769154493304-8c4ceb42",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T07:48:13.304Z",
+      "featureName": "Write Comprehensive README Documentation",
+      "featureId": "feature-1769154255121-94iqx8wwa"
+    },
+    {
+      "id": "evt-1769154255232-5c324de5",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T07:44:15.232Z",
+      "featureId": "feature-1769154255121-94iqx8wwa"
+    },
+    {
+      "id": "evt-1769099975720-600ce645",
+      "trigger": "auto_mode_complete",
+      "timestamp": "2026-01-22T16:39:35.720Z"
+    },
+    {
+      "id": "evt-1769099974739-6f0a83bd",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T16:39:34.739Z",
+      "featureName": "News Tagging System",
+      "featureId": "news-tags"
+    },
+    {
+      "id": "evt-1769099674714-773113d5",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T16:34:34.714Z",
+      "featureName": "Favicon and App Icons",
+      "featureId": "favicon-setup"
+    },
+    {
+      "id": "evt-1769099613902-4d8f3623",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T16:33:33.902Z",
+      "featureName": "Custom 404 Error Page",
+      "featureId": "404-page"
+    },
+    {
+      "id": "evt-1769099601335-32e6d1d8",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T16:33:21.335Z",
+      "featureName": "Social Media Integration",
+      "featureId": "social-media-links"
+    },
+    {
+      "id": "evt-1769099396845-66b6e844",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T16:29:56.845Z",
+      "featureName": "SEO Meta Tags System",
+      "featureId": "seo-meta-tags"
+    },
+    {
+      "id": "evt-1769099300593-f05a3488",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T16:28:20.593Z",
+      "featureName": "News Section E2E Tests",
+      "featureId": "news-tests"
+    },
+    {
+      "id": "evt-1769099242051-8f1d7f13",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T16:27:22.051Z",
+      "featureName": "Responsive Design Tests",
+      "featureId": "responsive-tests"
+    },
+    {
+      "id": "evt-1769099126078-94b5ea79",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T16:25:26.078Z",
+      "featureName": "News Pagination System",
+      "featureId": "news-pagination"
+    },
+    {
+      "id": "evt-1769098986176-924f8b75",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T16:23:06.176Z",
+      "featureName": "Latest News Homepage Widget",
+      "featureId": "news-homepage-widget"
+    },
+    {
+      "id": "evt-1769098616768-b0db3fa0",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T16:16:56.768Z",
+      "featureName": "Navigation Menu Tests",
+      "featureId": "navigation-tests"
+    },
+    {
+      "id": "evt-1769098533013-1498d69b",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T16:15:33.013Z",
+      "featureName": "News Category System",
+      "featureId": "news-categories"
+    },
+    {
+      "id": "evt-1769098326467-19693dee",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T16:12:06.467Z",
+      "featureName": "Image Processing Pipeline",
+      "featureId": "image-optimization"
+    },
+    {
+      "id": "evt-1769098137191-e8c8a0ba",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T16:08:57.191Z",
+      "featureName": "Location Map Embedding",
+      "featureId": "map-integration"
+    },
+    {
+      "id": "evt-1769097991789-aa1dd476",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T16:06:31.789Z",
+      "featureName": "Gallery Functionality Tests",
+      "featureId": "gallery-tests"
+    },
+    {
+      "id": "evt-1769097923621-7561ddea",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T16:05:23.621Z",
+      "featureName": "Gallery Category System",
+      "featureId": "gallery-categories"
+    },
+    {
+      "id": "evt-1769097905489-083ba670",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T16:05:05.489Z",
+      "featureName": "Homepage E2E Tests",
+      "featureId": "homepage-tests"
+    },
+    {
+      "id": "evt-1769097605221-0e3d65a9",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T16:00:05.221Z",
+      "featureName": "Footer Content and Links",
+      "featureId": "footer-content"
+    },
+    {
+      "id": "evt-1769097438360-c3ff1508",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T15:57:18.360Z",
+      "featureName": "Features Showcase Section",
+      "featureId": "features-section"
+    },
+    {
+      "id": "evt-1769097314309-6411720e",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T15:55:14.309Z",
+      "featureName": "Gallery Embedding in News Posts",
+      "featureId": "embedded-gallery-shortcode"
+    },
+    {
+      "id": "evt-1769097264775-4f970aa2",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T15:54:24.775Z",
+      "featureName": "CMS Preview Templates",
+      "featureId": "cms-preview-templates"
+    },
+    {
+      "id": "evt-1769097220159-e4423804",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T15:53:40.159Z",
+      "featureName": "CMS Site Settings Config",
+      "featureId": "cms-settings-config"
+    },
+    {
+      "id": "evt-1769096867165-cabae6d6",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T15:47:47.165Z",
+      "featureName": "Breadcrumb Navigation Component",
+      "featureId": "breadcrumb-navigation"
+    },
+    {
+      "id": "evt-1769096863165-f3dd0fa1",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T15:47:43.165Z",
+      "featureName": "CMS Menu Configuration",
+      "featureId": "cms-menu-config"
+    },
+    {
+      "id": "evt-1769096792717-d54e52ea",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T15:46:32.717Z",
+      "featureName": "CMS Media Library Setup",
+      "featureId": "cms-media-library"
+    },
+    {
+      "id": "evt-1769096547882-a8636f3d",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T15:42:27.882Z",
+      "featureName": "Contact Information Page",
+      "featureId": "static-contact-page"
+    },
+    {
+      "id": "evt-1769096545106-609e1739",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T15:42:25.106Z",
+      "featureName": "About Preview Section",
+      "featureId": "about-preview"
+    },
+    {
+      "id": "evt-1769096484325-2eda9b55",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T15:41:24.325Z",
+      "featureName": "About Us Static Page",
+      "featureId": "static-about-page"
+    },
+    {
+      "id": "evt-1769096326097-5f878e54",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T15:38:46.097Z",
+      "featureName": "Programs/Offerings Page",
+      "featureId": "programs-page"
+    },
+    {
+      "id": "evt-1769095923540-d2909b5e",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T15:32:03.540Z",
+      "featureName": "CMS Pages Collection Config",
+      "featureId": "cms-pages-collection"
+    },
+    {
+      "id": "evt-1769095452327-ed82c824",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T15:24:12.327Z",
+      "featureName": "News Single Post Layout",
+      "featureId": "news-single-layout"
+    },
+    {
+      "id": "evt-1769095360137-a1564151",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T15:22:40.137Z",
+      "featureName": "CMS News Collection Config",
+      "featureId": "cms-news-collection"
+    },
+    {
+      "id": "evt-1769095225766-e1b143da",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T15:20:25.766Z",
+      "featureName": "Playwright Test Framework Setup",
+      "featureId": "playwright-setup"
+    },
+    {
+      "id": "evt-1769095098713-98255b22",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T15:18:18.713Z",
+      "featureName": "Responsive Mobile Menu",
+      "featureId": "mobile-navigation"
+    },
+    {
+      "id": "evt-1769094955739-cb8aeb03",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T15:15:55.739Z",
+      "featureName": "News List Page Layout",
+      "featureId": "news-list-layout"
+    },
+    {
+      "id": "evt-1769094823260-bb01c665",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T15:13:43.260Z",
+      "featureName": "Primary Navigation Menu",
+      "featureId": "navigation-menu"
+    },
+    {
+      "id": "evt-1769094542620-2a9ed5cd",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T15:09:02.620Z",
+      "featureName": "Configure Multilingual Support",
+      "featureId": "multilingual-config"
+    },
+    {
+      "id": "evt-1769094528483-15042a9c",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T15:08:48.483Z",
+      "featureName": "Language Switcher Component",
+      "featureId": "language-switcher"
+    },
+    {
+      "id": "evt-1769094434571-84031fa2",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T15:07:14.571Z",
+      "featureName": "Image Lightbox Implementation",
+      "featureId": "lightbox-integration"
+    },
+    {
+      "id": "evt-1769094302006-b6f7fbe5",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T15:05:02.006Z",
+      "featureName": "Hero Banner Section",
+      "featureId": "hero-section"
+    },
+    {
+      "id": "evt-1769094228485-bd67e9f7",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T15:03:48.485Z",
+      "featureName": "Homepage Layout Template",
+      "featureId": "homepage-layout"
+    },
+    {
+      "id": "evt-1769094020052-260215bd",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T15:00:20.052Z",
+      "featureName": "GitHub Pages Configuration",
+      "featureId": "github-pages-config"
+    },
+    {
+      "id": "evt-1769094001405-ca4ee75e",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T15:00:01.405Z",
+      "featureName": "Single Gallery Page Layout",
+      "featureId": "gallery-single-layout"
+    },
+    {
+      "id": "evt-1769093894616-167f2839",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T14:58:14.616Z",
+      "featureName": "Adapt Educenter Theme Assets",
+      "featureId": "educenter-theme-adaptation"
+    },
+    {
+      "id": "evt-1769093798528-a67a738e",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T14:56:38.528Z",
+      "featureName": "GitHub Actions CI/CD Pipeline",
+      "featureId": "github-actions-workflow"
+    },
+    {
+      "id": "evt-1769093639364-bfb136b1",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T14:53:59.364Z",
+      "featureName": "Gallery List Page Layout",
+      "featureId": "gallery-list-layout"
+    },
+    {
+      "id": "evt-1769093605375-10726490",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T14:53:25.375Z",
+      "featureName": "CMS Gallery Collection Config",
+      "featureId": "cms-gallery-collection"
+    },
+    {
+      "id": "evt-1769093137281-43111b4c",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T14:45:37.281Z",
+      "featureName": "Decap CMS Installation",
+      "featureId": "decap-cms-setup"
+    },
+    {
+      "id": "evt-1769093007241-ee23e9e5",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T14:43:27.241Z",
+      "featureName": "Create Base HTML Templates",
+      "featureId": "base-layouts"
+    },
+    {
+      "id": "evt-1769092994533-f843be0d",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T14:43:14.533Z",
+      "featureName": "Integrate Bootstrap Framework",
+      "featureId": "bootstrap-integration"
+    },
+    {
+      "id": "evt-1769092887783-69448e0a",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-22T14:41:27.783Z",
+      "featureName": "Initialize Hugo Project Structure",
+      "featureId": "hugo-project-init"
+    }
+  ]
+}

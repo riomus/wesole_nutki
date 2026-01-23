@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix Polish Character Encoding Issues on Webpage\n\nResolve character encoding problems causing Polish special characters to display incorrectly or not appear at all throughout the webpage.\n\nRequirements:\n- Identify all locations where Polish characters (ą, ć, ę, ł, ń, ó, ś, ź, ż and their uppercase variants) are missing or displaying as garbled text\n- Verify HTML document is declared with UTF-8 encoding in the meta charset tag\n- Ensure server is sending correct Content-Type header with UTF-8 charset\n- Check that source files are saved in UTF-8 encoding format\n- Verify database connection and queries use UTF-8 character set if content is dynamically loaded\n- Replace any incorrectly encoded text with properly encoded Polish characters\n- Test display across different browsers to confirm characters render correctly\n- Validate that user input forms properly handle and store Polish characters\n\nSuccess Criteria:\n- All Polish special characters display correctly throughout the webpage\n- No placeholder characters (�, ?, boxes) appear where Polish letters should be\n- Text is readable and maintains proper Polish spelling and grammar",
+  "title": "Fix Polish Character Encoding Issues",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "verified",
+  "id": "feature-1769164893440-rc1lo9rg3",
+  "descriptionHistory": [
+    {
+      "description": "Fix Polish Character Encoding Issues on Webpage\n\nResolve character encoding problems causing Polish special characters to display incorrectly or not appear at all throughout the webpage.\n\nRequirements:\n- Identify all locations where Polish characters (ą, ć, ę, ł, ń, ó, ś, ź, ż and their uppercase variants) are missing or displaying as garbled text\n- Verify HTML document is declared with UTF-8 encoding in the meta charset tag\n- Ensure server is sending correct Content-Type header with UTF-8 charset\n- Check that source files are saved in UTF-8 encoding format\n- Verify database connection and queries use UTF-8 character set if content is dynamically loaded\n- Replace any incorrectly encoded text with properly encoded Polish characters\n- Test display across different browsers to confirm characters render correctly\n- Validate that user input forms properly handle and store Polish characters\n\nSuccess Criteria:\n- All Polish special characters display correctly throughout the webpage\n- No placeholder characters (�, ?, boxes) appear where Polish letters should be\n- Text is readable and maintains proper Polish spelling and grammar",
+      "timestamp": "2026-01-23T10:41:33.701Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T11:02:11.234Z"
+}

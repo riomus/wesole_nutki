@@ -1,0 +1,12 @@
+{
+  "id": "base-layouts",
+  "category": "Core",
+  "title": "Create Base HTML Templates",
+  "description": "Build foundational Hugo templates including baseof.html layout with HTML structure, head partial with meta tags, header and footer partials for consistent site structure across all pages.",
+  "status": "verified",
+  "priority": 1,
+  "complexity": "moderate",
+  "createdAt": "2026-01-22T14:36:35.494Z",
+  "updatedAt": "2026-01-22T14:43:27.236Z",
+  "descriptionHistory": []
+}

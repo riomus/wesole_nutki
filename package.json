@@ -1,0 +1,30 @@
+{
+  "name": "wesole-nutki",
+  "version": "1.0.0",
+  "description": "Wesole Nutki - Preschool website built with Hugo and Tailwind CSS",
+  "private": true,
+  "scripts": {
+    "dev": "hugo server --buildDrafts --buildFuture",
+    "build": "hugo --minify",
+    "clean": "rm -rf public resources",
+    "test": "npx playwright test",
+    "test:ui": "npx playwright test --ui",
+    "test:chrome": "npx playwright test --project=chromium",
+    "test:firefox": "npx playwright test --project=firefox",
+    "test:safari": "npx playwright test --project=webkit",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "autoprefixer": "^10.4.20",
+    "glightbox": "^3.3.1",
+    "postcss": "^8.4.49",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^3.4.17",
+    "yaml": "^2.8.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

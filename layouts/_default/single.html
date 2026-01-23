@@ -1,0 +1,60 @@
+{{ define "main" }}
+{{/* Breadcrumb Navigation */}}
+{{ partial "breadcrumb.html" . }}
+
+<article class="py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <header class="mb-4">
+          <h1 class="display-5 fw-bold">{{ .Title }}</h1>
+          {{ if not .Date.IsZero }}
+          <p class="text-muted">
+            <time datetime="{{ .Date.Format "2006-01-02" }}">
+              {{ i18n "posted_on" }} {{ partial "format-date" .Date }}
+            </time>
+            {{ with .Params.author }}
+            {{ i18n "by_author" }} {{ . }}
+            {{ end }}
+          </p>
+          {{ end }}
+        </header>
+
+        {{ with .Params.image }}
+        <figure class="mb-4">
+          {{ partial "responsive-image" (dict
+            "src" .
+            "alt" $.Title
+            "class" "img-fluid rounded"
+            "sizes" "(max-width: 768px) 100vw, (max-width: 1024px) 80vw, 70vw"
+            "loading" "eager"
+            "context" $
+          ) }}
+        </figure>
+        {{ end }}
+
+        <div class="content">
+          {{ .Content }}
+        </div>
+
+        {{ with .Params.tags }}
+        <footer class="mt-5 pt-4 border-top">
+          <p class="text-muted">
+            {{ i18n "tags" }}:
+            {{ range . }}
+            <a href="{{ "tags/" | relLangURL }}{{ . | urlize }}" class="badge bg-secondary text-decoration-none me-1">{{ . }}</a>
+            {{ end }}
+          </p>
+        </footer>
+        {{ end }}
+
+        <nav class="mt-4">
+          <a href="{{ .Site.Home.Permalink }}" class="btn btn-outline-primary">
+            &larr; {{ i18n "back_to_home" }}
+          </a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</article>
+{{ end }}
