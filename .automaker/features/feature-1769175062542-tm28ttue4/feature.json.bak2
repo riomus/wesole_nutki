@@ -1,7 +1,7 @@
 {
   "category": "Uncategorized",
   "description": "Remove Bottom Border Radius from Gallery Item Images\n\nUpdate the CSS styling for images within gallery items to have square bottom corners instead of rounded ones.\n\nRequirements:\n- Target img elements that are children of .gallery-item containers\n- Remove or override border-radius on bottom-left and bottom-right corners\n- Preserve any existing top corner rounding if present\n- Ensure the change applies consistently across all gallery items\n- Verify visual appearance matches design intent (likely to align with a caption or container below the image)",
-  "title": "",
+  "title": "Remove Bottom Border Radius from Gallery Images",
   "images": [],
   "imagePaths": [],
   "textFilePaths": [],
@@ -15,8 +15,8 @@
   "requirePlanApproval": false,
   "dependencies": [],
   "workMode": "current",
-  "titleGenerating": "Remove Bottom Border Radius from Gallery Item Images\n\nUpdate the CSS styling for images within gallery items to have square bottom corners instead of rounded ones.\n\nRequirements:\n- Target img elements that are children of .gallery-item containers\n- Remove or override border-radius on bottom-left and bottom-right corners\n- Preserve any existing top corner rounding if present\n- Ensure the change applies consistently across all gallery items\n- Verify visual appearance matches design intent (likely to align with a caption or container below the image)",
-  "status": "backlog",
+  "titleGenerating": false,
+  "status": "in_progress",
   "id": "feature-1769175062542-tm28ttue4",
   "descriptionHistory": [
     {
@@ -24,5 +24,6 @@
       "timestamp": "2026-01-23T13:31:02.575Z",
       "source": "initial"
     }
-  ]
+  ],
+  "updatedAt": "2026-01-23T13:31:07.791Z"
 }

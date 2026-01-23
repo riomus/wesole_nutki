@@ -1,0 +1,28 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix Typography Issues on Privacy Policy Page\n\nInvestigate and resolve typography-related issues on the privacy policy page at /o-przedszkolu/polityka-prywatnosci/.\n\nRequirements:\n- Review the page at http://localhost:62110/o-przedszkolu/polityka-prywatnosci/ to identify typography problems\n- Address common typography issues such as:\n  - Incorrect font families, weights, or sizes\n  - Poor line height or letter spacing\n  - Inconsistent heading hierarchy\n  - Text overflow or wrapping problems\n  - Incorrect text alignment or justification\n  - Color contrast issues affecting readability\n  - Missing or broken Polish language character support (ą, ć, ę, ł, ń, ó, ś, ź, ż)\n- Ensure typography matches the design system used elsewhere in the application\n- Verify text is readable across different screen sizes (mobile, tablet, desktop)\n- Test with actual Polish content to ensure proper rendering of diacritics\n- Ensure compliance with WCAG accessibility standards for text readability",
+  "title": "Fix Privacy Policy Page Typography Issues",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "backlog",
+  "id": "feature-1769175672284-hzu5ldlih",
+  "descriptionHistory": [
+    {
+      "description": "Fix Typography Issues on Privacy Policy Page\n\nInvestigate and resolve typography-related issues on the privacy policy page at /o-przedszkolu/polityka-prywatnosci/.\n\nRequirements:\n- Review the page at http://localhost:62110/o-przedszkolu/polityka-prywatnosci/ to identify typography problems\n- Address common typography issues such as:\n  - Incorrect font families, weights, or sizes\n  - Poor line height or letter spacing\n  - Inconsistent heading hierarchy\n  - Text overflow or wrapping problems\n  - Incorrect text alignment or justification\n  - Color contrast issues affecting readability\n  - Missing or broken Polish language character support (ą, ć, ę, ł, ń, ó, ś, ź, ż)\n- Ensure typography matches the design system used elsewhere in the application\n- Verify text is readable across different screen sizes (mobile, tablet, desktop)\n- Test with actual Polish content to ensure proper rendering of diacritics\n- Ensure compliance with WCAG accessibility standards for text readability",
+      "timestamp": "2026-01-23T13:41:12.370Z",
+      "source": "initial"
+    }
+  ]
+}

@@ -6,7 +6,7 @@
 
 <!-- Educenter-style Hero Section -->
 <section class="hero-section{{ if and (eq $bgStyle "image") $bgImage }} hero-bg-image{{ end }}"
-  {{- if and (eq $bgStyle "image") $bgImage }} style="background-image: url('{{ $bgImage }}'); --hero-overlay-opacity: {{ $overlayOpacity }};"{{ end }}
+  {{- if and (eq $bgStyle "image") $bgImage }} style="background-image: url('{{ $bgImage | relURL }}'); --hero-overlay-opacity: {{ $overlayOpacity }};"{{ end }}
   data-testid="hero-section">
   {{- if and (eq $bgStyle "image") $bgImage }}
   <div class="hero-overlay"></div>

@@ -1875,6 +1875,140 @@ Requirements:
 - Ensure proper contrast ratios for accessibility compliance
 - Check Polish language characters render correctly (including diacritics: ą, ć, ę, ł, ń, ó, ś, ź, ż)</description>
     </feature>
+    <feature>
+      <name>Remove Bottom Border Radius from Gallery Images</name>
+      <description>Remove Bottom Border Radius from Gallery Item Images
+
+Update the CSS styling for images within gallery items to have square bottom corners instead of rounded ones.
+
+Requirements:
+- Target img elements that are children of .gallery-item containers
+- Remove or override border-radius on bottom-left and bottom-right corners
+- Preserve any existing top corner rounding if present
+- Ensure the change applies consistently across all gallery items
+- Verify visual appearance matches design intent (likely to align with a caption or container below the image)</description>
+    </feature>
+    <feature>
+      <name>Add Dynamic Footer Navigation Menu Mirroring Header</name>
+      <description>Align Footer Navigation Menu with Header Menu
+
+Create a footer navigation menu that mirrors the top-level items from the header menu, ensuring consistent structure and alignment across both navigation areas.
+
+Requirements:
+- Extract top-level menu items from the existing header navigation
+- Generate footer menu dynamically using the same data source as header menu
+- Ensure footer menu items match header items in order and content
+- Maintain visual alignment between footer and header menu layouts
+- Verify both menus update automatically when navigation structure changes
+- Apply appropriate styling to distinguish footer menu while maintaining consistency
+- Test that all footer menu links function correctly and point to same destinations as header
+- Handle responsive behavior for both menus on mobile and tablet breakpoints
+- Ensure accessibility features (ARIA labels, keyboard navigation) are consistent between both menus</description>
+    </feature>
+    <feature>
+      <name>Fix Privacy Policy Page Typography Issues</name>
+      <description>Fix Typography Issues on Privacy Policy Page
+
+Investigate and resolve typography-related issues on the privacy policy page at /o-przedszkolu/polityka-prywatnosci/.
+
+Requirements:
+- Review the page at http://localhost:62110/o-przedszkolu/polityka-prywatnosci/ to identify typography problems
+- Address common typography issues such as:
+  - Incorrect font families, weights, or sizes
+  - Poor line height or letter spacing
+  - Inconsistent heading hierarchy
+  - Text overflow or wrapping problems
+  - Incorrect text alignment or justification
+  - Color contrast issues affecting readability
+  - Missing or broken Polish language character support (ą, ć, ę, ł, ń, ó, ś, ź, ż)
+- Ensure typography matches the design system used elsewhere in the application
+- Verify text is readable across different screen sizes (mobile, tablet, desktop)
+- Test with actual Polish content to ensure proper rendering of diacritics
+- Ensure compliance with WCAG accessibility standards for text readability</description>
+    </feature>
+    <feature>
+      <name>Fix Decap CMS External Media Library Error on GitHub Pages</name>
+      <description>Resolve Decap CMS External Media Library Error on GitHub Pages
+
+Fix the &quot;Missing external media library &apos;default&apos;&quot; error that prevents Decap CMS from functioning correctly when deployed to GitHub Pages.
+
+Requirements:
+- Locate the CMS initialization code (typically in admin/index.html or a dedicated CMS setup file)
+- Verify that the media library is properly registered using &apos;registerMediaLibrary&apos; before CMS initialization
+- Ensure the registration occurs before &apos;CMS.init()&apos; is called
+- Confirm the media library configuration in config.yml matches the registered library name
+- Test CMS functionality locally before deploying
+- Deploy to GitHub Pages and verify the CMS loads without configuration errors
+- Ensure image/media upload and management features work correctly
+
+Edge cases to consider:
+- Check if the media library registration code is being properly bundled for production
+- Verify asset paths are correct for GitHub Pages subdirectory deployment if applicable
+- Confirm all CMS dependencies are included in the production build
+- Check browser console for any related module loading errors
+
+Success criteria:
+- CMS admin interface loads without &quot;Missing external media library&quot; error
+- Media library functions correctly (upload, select, delete operations)
+- Configuration validates successfully with no errors in config.yml</description>
+    </feature>
+    <feature>
+      <name>Fix Markdown Rendering on Enrollment Subpage</name>
+      <description>Fix Markdown Rendering on Enrollment Subpage
+
+Investigate and resolve markdown rendering issues on the http://localhost:1313/o-przedszkolu/zapisy/ (enrollment) subpage that are preventing content from displaying correctly.
+
+Requirements:
+- Identify which markdown elements are not rendering properly (headings, lists, links, formatting, etc.)
+- Locate the source markdown file for the zapisy (enrollment) page
+- Fix syntax errors or incorrect markdown formatting in the source file
+- Verify proper configuration of markdown processor settings if needed
+- Ensure all content displays as intended after fixes
+- Test that links, images, and special formatting work correctly
+- Confirm the page renders consistently with other subpages on the site
+- Rebuild and verify changes at localhost:1313</description>
+    </feature>
+    <feature>
+      <name>Fix GitHub Pages Asset Loading Paths</name>
+      <description>Fix GitHub Pages Deployment Asset Loading Errors
+
+Resolve 404 errors preventing static assets from loading correctly after deployment to GitHub Pages.
+
+Requirements:
+- Investigate and fix the base path configuration for GitHub Pages deployment (likely missing repository name in paths)
+- Ensure all asset references use correct paths relative to the deployment URL
+- Fix the following failing resources:
+  - hero-bg.svg (background image)
+  - /images/favicon.svg and /favicon.svg (favicon icons)
+  - about-preview.jpg (image in /images/ directory)
+  - site.webmanifest (PWA manifest file)
+- Update build configuration to handle GitHub Pages subdirectory deployment if applicable
+- Verify asset file locations in the deployed build output match referenced paths
+- Test all asset loading after deployment to confirm 404s are resolved
+- Ensure both root-level assets (favicon, manifest) and nested assets (/images/*) load correctly
+
+Edge cases to consider:
+- Project may be deployed to username.github.io/repo-name requiring base path prefix
+- Assets may exist but have incorrect casing in paths (case-sensitive on GitHub Pages)
+- Build process may not be copying all assets to the output directory
+- HTML meta tags and manifest references may need path adjustments</description>
+    </feature>
+    <feature>
+      <name>Translate all textual pages to English</name>
+      <description>Implement English Translation for Textual Pages
+
+Create English translations for all text-based content pages and integrate them into the English version of the website.
+
+Requirements:
+- Identify all textual pages that need translation (e.g., About, FAQ, Terms of Service, Privacy Policy, Help documentation)
+- Translate page content from source language to English while maintaining tone and intent
+- Update the English site to display translated content instead of original language
+- Ensure proper language routing so English site serves English content
+- Maintain consistent terminology and style across all translated pages
+- Verify all UI labels, headings, and navigation elements are in English
+- Test that links, images, and formatting remain intact after translation
+- Consider implementing i18n infrastructure if not already present for future language support</description>
+    </feature>
   </implemented_features>
 
   <additional_requirements>

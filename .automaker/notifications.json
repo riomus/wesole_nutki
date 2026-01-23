@@ -1484,6 +1484,83 @@
       "dismissed": false,
       "featureId": "feature-1769174727009-5cfbrm83c",
       "projectPath": "/Users/romanbartusiak/git/riomus/wesole_nutki"
+    },
+    {
+      "id": "c57c83ff-8db8-4e17-95ca-eca5f9d7dd9f",
+      "type": "feature_verified",
+      "title": "Feature Verified",
+      "message": "\"feature-1769175062542-tm28ttue4\" has been verified and is complete.",
+      "createdAt": "2026-01-23T13:33:25.648Z",
+      "read": false,
+      "dismissed": false,
+      "featureId": "feature-1769175062542-tm28ttue4",
+      "projectPath": "/Users/romanbartusiak/git/riomus/wesole_nutki"
+    },
+    {
+      "id": "ce1cd0bb-bf43-4da8-a1c1-2264716200e6",
+      "type": "feature_verified",
+      "title": "Feature Verified",
+      "message": "\"feature-1769175031803-j4x8h9ttx\" has been verified and is complete.",
+      "createdAt": "2026-01-23T13:35:21.858Z",
+      "read": false,
+      "dismissed": false,
+      "featureId": "feature-1769175031803-j4x8h9ttx",
+      "projectPath": "/Users/romanbartusiak/git/riomus/wesole_nutki"
+    },
+    {
+      "id": "e0e95cc4-9ddd-4d98-8f59-94bd9b8305fe",
+      "type": "feature_verified",
+      "title": "Feature Verified",
+      "message": "\"feature-1769175672284-hzu5ldlih\" has been verified and is complete.",
+      "createdAt": "2026-01-23T13:45:05.278Z",
+      "read": false,
+      "dismissed": false,
+      "featureId": "feature-1769175672284-hzu5ldlih",
+      "projectPath": "/Users/romanbartusiak/git/riomus/wesole_nutki"
+    },
+    {
+      "id": "b32997a8-1302-4827-b5fe-e3088a85ef81",
+      "type": "feature_verified",
+      "title": "Feature Verified",
+      "message": "\"feature-1769175952531-73y9ac035\" has been verified and is complete.",
+      "createdAt": "2026-01-23T13:49:55.806Z",
+      "read": false,
+      "dismissed": false,
+      "featureId": "feature-1769175952531-73y9ac035",
+      "projectPath": "/Users/romanbartusiak/git/riomus/wesole_nutki"
+    },
+    {
+      "id": "06fc6b81-eee7-4681-9cb5-2e166388cb83",
+      "type": "feature_verified",
+      "title": "Feature Verified",
+      "message": "\"feature-1769176197632-q3z0tnah0\" has been verified and is complete.",
+      "createdAt": "2026-01-23T13:52:46.334Z",
+      "read": false,
+      "dismissed": false,
+      "featureId": "feature-1769176197632-q3z0tnah0",
+      "projectPath": "/Users/romanbartusiak/git/riomus/wesole_nutki"
+    },
+    {
+      "id": "9a2da0ed-6927-4597-a3a6-e0d80424409b",
+      "type": "feature_verified",
+      "title": "Feature Verified",
+      "message": "\"feature-1769175888295-3k1urjb5e\" has been verified and is complete.",
+      "createdAt": "2026-01-23T13:54:23.310Z",
+      "read": false,
+      "dismissed": false,
+      "featureId": "feature-1769175888295-3k1urjb5e",
+      "projectPath": "/Users/romanbartusiak/git/riomus/wesole_nutki"
+    },
+    {
+      "id": "d0043cdd-5b9a-4e79-84b6-9d1c19e24290",
+      "type": "feature_verified",
+      "title": "Feature Verified",
+      "message": "\"feature-1769176038593-80ig66pfw\" has been verified and is complete.",
+      "createdAt": "2026-01-23T13:55:25.185Z",
+      "read": false,
+      "dismissed": false,
+      "featureId": "feature-1769176038593-80ig66pfw",
+      "projectPath": "/Users/romanbartusiak/git/riomus/wesole_nutki"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "category": "Uncategorized",
   "description": "Fix Typography Issues on Payment Information Page\n\nCorrect typography problems on the /o-przedszkolu/platnosci/ (About Preschool - Payments) page to ensure proper text rendering and readability.\n\nRequirements:\n- Identify and document all typography issues on the page (incorrect fonts, sizes, spacing, alignment, special character rendering)\n- Ensure Polish language characters (ą, ć, ę, ł, ń, ó, ś, ź, ż) render correctly\n- Verify font family consistency with the rest of the site\n- Fix any line height, letter spacing, or word spacing problems\n- Correct text alignment and hierarchy issues (headings vs body text)\n- Ensure responsive typography scales properly on mobile and tablet devices\n- Validate text color contrast meets accessibility standards (WCAG AA minimum)\n- Test rendering across major browsers (Chrome, Firefox, Safari, Edge)",
-  "title": "",
+  "title": "Fix Typography and Rendering on Payments Page",
   "images": [],
   "imagePaths": [],
   "textFilePaths": [],
@@ -15,7 +15,7 @@
   "requirePlanApproval": false,
   "dependencies": [],
   "workMode": "current",
-  "titleGenerating": "Fix Typography Issues on Payment Information Page\n\nCorrect typography problems on the /o-przedszkolu/platnosci/ (About Preschool - Payments) page to ensure proper text rendering and readability.\n\nRequirements:\n- Identify and document all typography issues on the page (incorrect fonts, sizes, spacing, alignment, special character rendering)\n- Ensure Polish language characters (ą, ć, ę, ł, ń, ó, ś, ź, ż) render correctly\n- Verify font family consistency with the rest of the site\n- Fix any line height, letter spacing, or word spacing problems\n- Correct text alignment and hierarchy issues (headings vs body text)\n- Ensure responsive typography scales properly on mobile and tablet devices\n- Validate text color contrast meets accessibility standards (WCAG AA minimum)\n- Test rendering across major browsers (Chrome, Firefox, Safari, Edge)",
+  "titleGenerating": false,
   "status": "backlog",
   "id": "feature-1769174234998-689ytbrjf",
   "descriptionHistory": [

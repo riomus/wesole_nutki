@@ -10,7 +10,7 @@ background_style: image
 # Background image (used when background_style is 'image')
 # Supported formats: jpg, png, svg, webp
 # Recommended size: 1920x1080 or larger for best quality
-background_image: /images/hero-bg.svg
+background_image: images/hero-bg.svg
 
 # Overlay opacity for background images (0.0 to 1.0)
 # Darker overlay makes text more readable

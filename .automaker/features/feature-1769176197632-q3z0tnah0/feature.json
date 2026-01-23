@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix Markdown Rendering on Enrollment Subpage\n\nInvestigate and resolve markdown rendering issues on the http://localhost:1313/o-przedszkolu/zapisy/ (enrollment) subpage that are preventing content from displaying correctly.\n\nRequirements:\n- Identify which markdown elements are not rendering properly (headings, lists, links, formatting, etc.)\n- Locate the source markdown file for the zapisy (enrollment) page\n- Fix syntax errors or incorrect markdown formatting in the source file\n- Verify proper configuration of markdown processor settings if needed\n- Ensure all content displays as intended after fixes\n- Test that links, images, and special formatting work correctly\n- Confirm the page renders consistently with other subpages on the site\n- Rebuild and verify changes at localhost:1313",
+  "title": "Fix Markdown Rendering on Enrollment Subpage",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "completed",
+  "id": "feature-1769176197632-q3z0tnah0",
+  "descriptionHistory": [
+    {
+      "description": "Fix Markdown Rendering on Enrollment Subpage\n\nInvestigate and resolve markdown rendering issues on the http://localhost:1313/o-przedszkolu/zapisy/ (enrollment) subpage that are preventing content from displaying correctly.\n\nRequirements:\n- Identify which markdown elements are not rendering properly (headings, lists, links, formatting, etc.)\n- Locate the source markdown file for the zapisy (enrollment) page\n- Fix syntax errors or incorrect markdown formatting in the source file\n- Verify proper configuration of markdown processor settings if needed\n- Ensure all content displays as intended after fixes\n- Test that links, images, and special formatting work correctly\n- Confirm the page renders consistently with other subpages on the site\n- Rebuild and verify changes at localhost:1313",
+      "timestamp": "2026-01-23T13:49:58.024Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T13:52:46.333Z"
+}

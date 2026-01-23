@@ -2,38 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Galeria on Wesołe Nutki - Przedszkole</title>
-    <link>http://localhost:1313/pl/gallery/</link>
+    <link>https://riomus.github.io/wesole_nutki/pl/gallery/</link>
     <description>Recent content in Galeria on Wesołe Nutki - Przedszkole</description>
     <generator>Hugo</generator>
     <language>pl</language>
-    <lastBuildDate>Sun, 20 Oct 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/pl/gallery/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://riomus.github.io/wesole_nutki/pl/gallery/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Jesienny festyn rodzinny</title>
-      <link>http://localhost:1313/pl/gallery/jesienny-festyn-2024/</link>
+      <link>https://riomus.github.io/wesole_nutki/pl/gallery/jesienny-festyn-2024/</link>
       <pubDate>Sun, 20 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/pl/gallery/jesienny-festyn-2024/</guid>
+      <guid>https://riomus.github.io/wesole_nutki/pl/gallery/jesienny-festyn-2024/</guid>
       <description>&lt;p&gt;Nasz coroczny jesienny festyn rodzinny był pełen atrakcji! Wspólnie z rodzicami i dziećmi bawiliśmy się przy muzyce, tworzyliśmy jesienne dekoracje i degustowaliśmy pyszne przysmaki.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Codzienne zajecia w przedszkolu</title>
-      <link>http://localhost:1313/pl/gallery/codzienne-zajecia/</link>
+      <link>https://riomus.github.io/wesole_nutki/pl/gallery/codzienne-zajecia/</link>
       <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/pl/gallery/codzienne-zajecia/</guid>
+      <guid>https://riomus.github.io/wesole_nutki/pl/gallery/codzienne-zajecia/</guid>
       <description>&lt;p&gt;Każdy dzień w przedszkolu Wesołe Nutki jest pełen radości i nauki.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Wiosenna wycieczka do parku</title>
-      <link>http://localhost:1313/pl/gallery/wiosenna-wycieczka-2024/</link>
+      <link>https://riomus.github.io/wesole_nutki/pl/gallery/wiosenna-wycieczka-2024/</link>
       <pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/pl/gallery/wiosenna-wycieczka-2024/</guid>
+      <guid>https://riomus.github.io/wesole_nutki/pl/gallery/wiosenna-wycieczka-2024/</guid>
       <description>&lt;p&gt;Nasza wiosenna wycieczka do parku była pełna przygód! Dzieci miały okazję obserwować budzącą się przyrodę, bawić się na świeżym powietrzu i cieszyć się piękną wiosenną pogodą.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Przedstawienie swiateczne</title>
-      <link>http://localhost:1313/pl/gallery/swieta-2023/</link>
+      <link>https://riomus.github.io/wesole_nutki/pl/gallery/swieta-2023/</link>
       <pubDate>Mon, 18 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/pl/gallery/swieta-2023/</guid>
+      <guid>https://riomus.github.io/wesole_nutki/pl/gallery/swieta-2023/</guid>
       <description>&lt;p&gt;Magiczne przedstawienie świąteczne przygotowane przez nasze przedszkolaki. Dzieci zaprezentowały swoje talenty artystyczne, śpiewając kolędy i odgrywając scenki bożonarodzeniowe.&lt;/p&gt;</description>
     </item>
   </channel>

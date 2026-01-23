@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Implement English Translation for Textual Pages\n\nCreate English translations for all text-based content pages and integrate them into the English version of the website.\n\nRequirements:\n- Identify all textual pages that need translation (e.g., About, FAQ, Terms of Service, Privacy Policy, Help documentation)\n- Translate page content from source language to English while maintaining tone and intent\n- Update the English site to display translated content instead of original language\n- Ensure proper language routing so English site serves English content\n- Maintain consistent terminology and style across all translated pages\n- Verify all UI labels, headings, and navigation elements are in English\n- Test that links, images, and formatting remain intact after translation\n- Consider implementing i18n infrastructure if not already present for future language support",
+  "title": "Translate all textual pages to English",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "verified",
+  "id": "feature-1769176038593-80ig66pfw",
+  "descriptionHistory": [
+    {
+      "description": "Implement English Translation for Textual Pages\n\nCreate English translations for all text-based content pages and integrate them into the English version of the website.\n\nRequirements:\n- Identify all textual pages that need translation (e.g., About, FAQ, Terms of Service, Privacy Policy, Help documentation)\n- Translate page content from source language to English while maintaining tone and intent\n- Update the English site to display translated content instead of original language\n- Ensure proper language routing so English site serves English content\n- Maintain consistent terminology and style across all translated pages\n- Verify all UI labels, headings, and navigation elements are in English\n- Test that links, images, and formatting remain intact after translation\n- Consider implementing i18n infrastructure if not already present for future language support",
+      "timestamp": "2026-01-23T13:47:18.732Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T13:55:25.184Z"
+}

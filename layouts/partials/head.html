@@ -197,15 +197,15 @@
 
 <!-- Favicon and PWA Icons -->
 <!-- SVG favicon for modern browsers (scales to any size) -->
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/svg+xml" href="{{ "favicon.svg" | relURL }}">
 <!-- Fallback PNG favicon from branding config -->
 {{ with $branding.favicon }}
 <link rel="icon" type="image/png" href="{{ . | relURL }}">
 {{ end }}
 <!-- Apple Touch Icon for iOS devices -->
-<link rel="apple-touch-icon" href="/apple-touch-icon.svg">
+<link rel="apple-touch-icon" href="{{ "apple-touch-icon.svg" | relURL }}">
 <!-- PWA Web App Manifest -->
-<link rel="manifest" href="/site.webmanifest">
+<link rel="manifest" href="{{ "site.webmanifest" | relURL }}">
 <!-- Theme color for browser chrome -->
 <meta name="theme-color" content="#4CAF50">
 <!-- Microsoft Tile Color -->

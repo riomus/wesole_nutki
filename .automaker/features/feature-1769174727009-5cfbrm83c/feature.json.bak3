@@ -1,7 +1,7 @@
 {
   "category": "Uncategorized",
   "description": "Fix Typography Issues on Registration Page\n\nResolve typography and text rendering problems on the o-przedszkolu/zapisy/ (About Preschool/Registration) page.\n\nRequirements:\n- Identify all typography issues on the /o-przedszkolu/zapisy/ page (font sizes, weights, line heights, spacing, alignment)\n- Ensure text is readable and properly formatted across all sections\n- Check for consistency with typography styles used elsewhere on the site\n- Verify proper font family application and fallbacks\n- Fix any text overflow, wrapping, or truncation issues\n- Test typography rendering across different browsers and viewport sizes\n- Ensure proper contrast ratios for accessibility compliance\n- Check Polish language characters render correctly (including diacritics: ą, ć, ę, ł, ń, ó, ś, ź, ż)",
-  "title": "",
+  "title": "Fix registration page typography issues",
   "images": [],
   "imagePaths": [],
   "textFilePaths": [],
@@ -15,7 +15,7 @@
   "requirePlanApproval": false,
   "dependencies": [],
   "workMode": "current",
-  "titleGenerating": "Fix Typography Issues on Registration Page\n\nResolve typography and text rendering problems on the o-przedszkolu/zapisy/ (About Preschool/Registration) page.\n\nRequirements:\n- Identify all typography issues on the /o-przedszkolu/zapisy/ page (font sizes, weights, line heights, spacing, alignment)\n- Ensure text is readable and properly formatted across all sections\n- Check for consistency with typography styles used elsewhere on the site\n- Verify proper font family application and fallbacks\n- Fix any text overflow, wrapping, or truncation issues\n- Test typography rendering across different browsers and viewport sizes\n- Ensure proper contrast ratios for accessibility compliance\n- Check Polish language characters render correctly (including diacritics: ą, ć, ę, ł, ń, ó, ś, ź, ż)",
+  "titleGenerating": false,
   "status": "backlog",
   "id": "feature-1769174727009-5cfbrm83c",
   "descriptionHistory": [

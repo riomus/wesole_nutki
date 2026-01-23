@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix GitHub Pages Deployment Asset Loading Errors\n\nResolve 404 errors preventing static assets from loading correctly after deployment to GitHub Pages.\n\nRequirements:\n- Investigate and fix the base path configuration for GitHub Pages deployment (likely missing repository name in paths)\n- Ensure all asset references use correct paths relative to the deployment URL\n- Fix the following failing resources:\n  - hero-bg.svg (background image)\n  - /images/favicon.svg and /favicon.svg (favicon icons)\n  - about-preview.jpg (image in /images/ directory)\n  - site.webmanifest (PWA manifest file)\n- Update build configuration to handle GitHub Pages subdirectory deployment if applicable\n- Verify asset file locations in the deployed build output match referenced paths\n- Test all asset loading after deployment to confirm 404s are resolved\n- Ensure both root-level assets (favicon, manifest) and nested assets (/images/*) load correctly\n\nEdge cases to consider:\n- Project may be deployed to username.github.io/repo-name requiring base path prefix\n- Assets may exist but have incorrect casing in paths (case-sensitive on GitHub Pages)\n- Build process may not be copying all assets to the output directory\n- HTML meta tags and manifest references may need path adjustments",
+  "title": "Fix GitHub Pages Asset Loading Paths",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "verified",
+  "id": "feature-1769175888295-3k1urjb5e",
+  "descriptionHistory": [
+    {
+      "description": "Fix GitHub Pages Deployment Asset Loading Errors\n\nResolve 404 errors preventing static assets from loading correctly after deployment to GitHub Pages.\n\nRequirements:\n- Investigate and fix the base path configuration for GitHub Pages deployment (likely missing repository name in paths)\n- Ensure all asset references use correct paths relative to the deployment URL\n- Fix the following failing resources:\n  - hero-bg.svg (background image)\n  - /images/favicon.svg and /favicon.svg (favicon icons)\n  - about-preview.jpg (image in /images/ directory)\n  - site.webmanifest (PWA manifest file)\n- Update build configuration to handle GitHub Pages subdirectory deployment if applicable\n- Verify asset file locations in the deployed build output match referenced paths\n- Test all asset loading after deployment to confirm 404s are resolved\n- Ensure both root-level assets (favicon, manifest) and nested assets (/images/*) load correctly\n\nEdge cases to consider:\n- Project may be deployed to username.github.io/repo-name requiring base path prefix\n- Assets may exist but have incorrect casing in paths (case-sensitive on GitHub Pages)\n- Build process may not be copying all assets to the output directory\n- HTML meta tags and manifest references may need path adjustments",
+      "timestamp": "2026-01-23T13:44:48.381Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T13:54:23.308Z"
+}

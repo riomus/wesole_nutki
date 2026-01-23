@@ -2,31 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Documents on Wesole Nutki - Preschool</title>
-    <link>http://localhost:1313/en/documents/</link>
+    <link>https://riomus.github.io/wesole_nutki/en/documents/</link>
     <description>Recent content in Documents on Wesole Nutki - Preschool</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 01 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/documents/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://riomus.github.io/wesole_nutki/en/documents/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Preschool Statute</title>
-      <link>http://localhost:1313/en/documents/statute/</link>
+      <link>https://riomus.github.io/wesole_nutki/en/documents/statute/</link>
       <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/documents/statute/</guid>
+      <guid>https://riomus.github.io/wesole_nutki/en/documents/statute/</guid>
       <description>&lt;h2 id=&#34;wesole-nutki-preschool-statute&#34;&gt;Wesole Nutki Preschool Statute&lt;/h2&gt;&#xA;&lt;p&gt;The statute defines the basic principles of preschool operation, rights and obligations of children and parents.&lt;/p&gt;&#xA;&lt;h3 id=&#34;key-information&#34;&gt;Key information:&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Organization of preschool work&lt;/li&gt;&#xA;&lt;li&gt;Rights and obligations of parents&lt;/li&gt;&#xA;&lt;li&gt;Recruitment rules&lt;/li&gt;&#xA;&lt;li&gt;Cooperation with parents&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Child Enrollment Form</title>
-      <link>http://localhost:1313/en/documents/enrollment-form/</link>
+      <link>https://riomus.github.io/wesole_nutki/en/documents/enrollment-form/</link>
       <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/documents/enrollment-form/</guid>
+      <guid>https://riomus.github.io/wesole_nutki/en/documents/enrollment-form/</guid>
       <description>&lt;h2 id=&#34;child-enrollment-form&#34;&gt;Child Enrollment Form&lt;/h2&gt;&#xA;&lt;p&gt;Official child enrollment form for Wesole Nutki preschool, compliant with GDPR requirements.&lt;/p&gt;&#xA;&lt;h3 id=&#34;form-contents&#34;&gt;Form contents:&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Personal data of child and parents&lt;/li&gt;&#xA;&lt;li&gt;Health information&lt;/li&gt;&#xA;&lt;li&gt;Consents and declarations&lt;/li&gt;&#xA;&lt;li&gt;GDPR clauses&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Privacy Policy</title>
-      <link>http://localhost:1313/en/documents/privacy-policy/</link>
+      <link>https://riomus.github.io/wesole_nutki/en/documents/privacy-policy/</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/documents/privacy-policy/</guid>
+      <guid>https://riomus.github.io/wesole_nutki/en/documents/privacy-policy/</guid>
       <description>&lt;h2 id=&#34;privacy-policy&#34;&gt;Privacy Policy&lt;/h2&gt;&#xA;&lt;p&gt;Wesole Nutki preschool attaches great importance to the protection of personal data of children and parents.&lt;/p&gt;&#xA;&lt;h3 id=&#34;document-scope&#34;&gt;Document scope:&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Personal data controllers&lt;/li&gt;&#xA;&lt;li&gt;Data processing purposes&lt;/li&gt;&#xA;&lt;li&gt;Rights of data subjects&lt;/li&gt;&#xA;&lt;li&gt;Personal data security measures&lt;/li&gt;&#xA;&lt;li&gt;Cookie policy&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;All personal data is processed in accordance with the Regulation of the European Parliament and of the Council (EU) 2016/679 (GDPR).&lt;/p&gt;</description>
     </item>
   </channel>

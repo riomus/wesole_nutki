@@ -38,35 +38,27 @@
         <h5 class="footer-heading">{{ i18n "quick_links" | default "Quick Links" }}</h5>
         <nav aria-label="{{ i18n "quick_links" | default "Quick Links" }}">
           <ul class="footer-links">
-            {{/* Use main menu or custom links from footer data */}}
-            {{ if and $footerData.quick_links (eq $footerData.quick_links.use_main_menu true) }}
-              {{/* Use main navigation menu */}}
-              {{ range .Site.Menus.main }}
-              <li>
-                <a href="{{ .URL }}">{{ .Name }}</a>
-              </li>
-              {{ end }}
-            {{ else if and $footerData.quick_links $footerData.quick_links.custom_links }}
-              {{/* Use custom links from footer data */}}
-              {{ $lang := .Site.Language.Lang }}
-              {{ range sort $footerData.quick_links.custom_links "weight" }}
-              <li>
-                {{ $name := "" }}
-                {{ if eq $lang "pl" }}
-                  {{ $name = .name_pl }}
-                {{ else }}
-                  {{ $name = .name_en }}
+            {{/* Load menu from same data source as header (data/menus/main_[language].yml) */}}
+            {{ $lang := .Site.Language.Lang }}
+            {{ $menuData := index .Site.Data.menus (printf "main_%s" $lang) }}
+            {{/* Fallback to Polish menu if language-specific menu not found */}}
+            {{ if not $menuData }}
+              {{ $menuData = .Site.Data.menus.main_pl }}
+            {{ end }}
+            {{/* Sort menu items by weight and show only top-level items (no children) */}}
+            {{ $menuItems := sort $menuData.items "weight" }}
+            {{ range $menuItems }}
+              {{/* Get translated name using i18n key if available */}}
+              {{ $menuName := .name }}
+              {{ with .i18n_key }}
+                {{ $translated := i18n . }}
+                {{ if $translated }}
+                  {{ $menuName = $translated }}
                 {{ end }}
-                <a href="{{ .url | relLangURL }}">{{ $name }}</a>
-              </li>
               {{ end }}
-            {{ else }}
-              {{/* Fallback to main menu */}}
-              {{ range .Site.Menus.main }}
               <li>
-                <a href="{{ .URL }}">{{ .Name }}</a>
+                <a href="{{ .url }}">{{ $menuName }}</a>
               </li>
-              {{ end }}
             {{ end }}
           </ul>
         </nav>

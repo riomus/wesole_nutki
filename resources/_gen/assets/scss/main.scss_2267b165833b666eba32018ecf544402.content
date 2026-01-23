@@ -5471,6 +5471,7 @@ img.img-fluid {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 500ms;
     display: block;
+    border-radius: 1rem 1rem 0 0;
 }
 .gallery-overlay {
     position: absolute;

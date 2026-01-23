@@ -2,31 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dokumenty on Wesołe Nutki - Przedszkole</title>
-    <link>http://localhost:1313/pl/documents/</link>
+    <link>https://riomus.github.io/wesole_nutki/pl/documents/</link>
     <description>Recent content in Dokumenty on Wesołe Nutki - Przedszkole</description>
     <generator>Hugo</generator>
     <language>pl</language>
-    <lastBuildDate>Sun, 01 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/pl/documents/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://riomus.github.io/wesole_nutki/pl/documents/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Statut Przedszkola</title>
-      <link>http://localhost:1313/pl/documents/statut/</link>
+      <link>https://riomus.github.io/wesole_nutki/pl/documents/statut/</link>
       <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/pl/documents/statut/</guid>
+      <guid>https://riomus.github.io/wesole_nutki/pl/documents/statut/</guid>
       <description>&lt;h2 id=&#34;statut-przedszkola-wesołe-nutki&#34;&gt;Statut Przedszkola Wesołe Nutki&lt;/h2&gt;&#xA;&lt;p&gt;Statut określa podstawowe zasady funkcjonowania przedszkola, prawa i obowiązki dzieci oraz rodziców.&lt;/p&gt;&#xA;&lt;h3 id=&#34;najważniejsze-informacje&#34;&gt;Najważniejsze informacje:&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Organizacja pracy przedszkola&lt;/li&gt;&#xA;&lt;li&gt;Prawa i obowiązki rodziców&lt;/li&gt;&#xA;&lt;li&gt;Zasady rekrutacji&lt;/li&gt;&#xA;&lt;li&gt;Współpraca z rodzicami&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Karta Zgłoszenia Dziecka</title>
-      <link>http://localhost:1313/pl/documents/karta-zgloszenia/</link>
+      <link>https://riomus.github.io/wesole_nutki/pl/documents/karta-zgloszenia/</link>
       <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/pl/documents/karta-zgloszenia/</guid>
+      <guid>https://riomus.github.io/wesole_nutki/pl/documents/karta-zgloszenia/</guid>
       <description>&lt;h2 id=&#34;karta-zgłoszenia-dziecka&#34;&gt;Karta Zgłoszenia Dziecka&lt;/h2&gt;&#xA;&lt;p&gt;Oficjalny formularz zgłoszeniowy dziecka do przedszkola Wesołe Nutki, zgodny z wymogami RODO.&lt;/p&gt;&#xA;&lt;h3 id=&#34;co-zawiera-formularz&#34;&gt;Co zawiera formularz:&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Dane osobowe dziecka i rodziców&lt;/li&gt;&#xA;&lt;li&gt;Informacje zdrowotne&lt;/li&gt;&#xA;&lt;li&gt;Zgody i oświadczenia&lt;/li&gt;&#xA;&lt;li&gt;Klauzule RODO&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Polityka Prywatności</title>
-      <link>http://localhost:1313/pl/documents/polityka-prywatnosci/</link>
+      <link>https://riomus.github.io/wesole_nutki/pl/documents/polityka-prywatnosci/</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/pl/documents/polityka-prywatnosci/</guid>
+      <guid>https://riomus.github.io/wesole_nutki/pl/documents/polityka-prywatnosci/</guid>
       <description>&lt;h2 id=&#34;polityka-prywatności&#34;&gt;Polityka Prywatności&lt;/h2&gt;&#xA;&lt;p&gt;Przedszkole Wesołe Nutki przywiązuje dużą wagę do ochrony danych osobowych dzieci i rodziców.&lt;/p&gt;&#xA;&lt;h3 id=&#34;zakres-dokumentu&#34;&gt;Zakres dokumentu:&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Administratorzy danych osobowych&lt;/li&gt;&#xA;&lt;li&gt;Cele przetwarzania danych&lt;/li&gt;&#xA;&lt;li&gt;Prawa osób, których dane dotyczą&lt;/li&gt;&#xA;&lt;li&gt;Zabezpieczenia danych osobowych&lt;/li&gt;&#xA;&lt;li&gt;Polityka cookies&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Wszystkie dane osobowe przetwarzane są zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 (RODO).&lt;/p&gt;</description>
     </item>
   </channel>

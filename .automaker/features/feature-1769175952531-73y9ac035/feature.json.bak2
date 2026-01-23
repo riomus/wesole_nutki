@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Resolve Decap CMS External Media Library Error on GitHub Pages\n\nFix the \"Missing external media library 'default'\" error that prevents Decap CMS from functioning correctly when deployed to GitHub Pages.\n\nRequirements:\n- Locate the CMS initialization code (typically in admin/index.html or a dedicated CMS setup file)\n- Verify that the media library is properly registered using 'registerMediaLibrary' before CMS initialization\n- Ensure the registration occurs before 'CMS.init()' is called\n- Confirm the media library configuration in config.yml matches the registered library name\n- Test CMS functionality locally before deploying\n- Deploy to GitHub Pages and verify the CMS loads without configuration errors\n- Ensure image/media upload and management features work correctly\n\nEdge cases to consider:\n- Check if the media library registration code is being properly bundled for production\n- Verify asset paths are correct for GitHub Pages subdirectory deployment if applicable\n- Confirm all CMS dependencies are included in the production build\n- Check browser console for any related module loading errors\n\nSuccess criteria:\n- CMS admin interface loads without \"Missing external media library\" error\n- Media library functions correctly (upload, select, delete operations)\n- Configuration validates successfully with no errors in config.yml",
+  "title": "Fix Decap CMS External Media Library Error on GitHub Pages",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "in_progress",
+  "id": "feature-1769175952531-73y9ac035",
+  "descriptionHistory": [
+    {
+      "description": "Resolve Decap CMS External Media Library Error on GitHub Pages\n\nFix the \"Missing external media library 'default'\" error that prevents Decap CMS from functioning correctly when deployed to GitHub Pages.\n\nRequirements:\n- Locate the CMS initialization code (typically in admin/index.html or a dedicated CMS setup file)\n- Verify that the media library is properly registered using 'registerMediaLibrary' before CMS initialization\n- Ensure the registration occurs before 'CMS.init()' is called\n- Confirm the media library configuration in config.yml matches the registered library name\n- Test CMS functionality locally before deploying\n- Deploy to GitHub Pages and verify the CMS loads without configuration errors\n- Ensure image/media upload and management features work correctly\n\nEdge cases to consider:\n- Check if the media library registration code is being properly bundled for production\n- Verify asset paths are correct for GitHub Pages subdirectory deployment if applicable\n- Confirm all CMS dependencies are included in the production build\n- Check browser console for any related module loading errors\n\nSuccess criteria:\n- CMS admin interface loads without \"Missing external media library\" error\n- Media library functions correctly (upload, select, delete operations)\n- Configuration validates successfully with no errors in config.yml",
+      "timestamp": "2026-01-23T13:45:52.624Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T13:45:57.473Z"
+}

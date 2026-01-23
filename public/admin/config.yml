@@ -12,12 +12,6 @@ publish_mode: editorial_workflow
 media_folder: static/images
 public_folder: /images
 
-# Media library settings
-media_library:
-  name: default
-  max_file_size: 5242880  # 5MB max file size
-  folder_support: true     # Enable folder organization
-
 # Slug configuration for file naming
 slug:
   encoding: "ascii"
