@@ -24,10 +24,10 @@ subheadline_key: hero_subheadline
 # CTA Buttons
 buttons:
   - label_key: learn_more
-    url_menu_index: 1
+    url_menu_identifier: about
     style: light
     icon: arrow-right
   - label_key: contact_us
-    url_menu_index: 5
+    url: /pl/contact/
     style: outline-light
     icon: null

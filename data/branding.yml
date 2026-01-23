@@ -2,13 +2,13 @@
 # Managed via Decap CMS at /admin/
 
 # Main site logo
-logo: /images/logo.png
+logo: images/logo.png
 
 # Alternative logo for dark backgrounds
 logo_alt:
 
 # Site favicon (SVG for modern browsers, PNG as fallback)
-favicon: /images/favicon.svg
+favicon: images/favicon.svg
 
 # Default Open Graph image for social sharing
-og_image: /images/og-default.jpg
+og_image: images/og-default.jpg

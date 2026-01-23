@@ -1,0 +1,28 @@
+{
+  "category": "Uncategorized",
+  "description": "Add Language-Aware Navigation to About Page Button\n\nUpdate the \"dowiedz się więcej\" (learn more) button on the home page to direct users to the About page with proper language routing.\n\nRequirements:\n- Locate the \"dowiedz się więcej\" button component on the home page\n- Implement dynamic routing that preserves the current language context\n- Link should navigate to /{currentLanguage}/about (e.g., /pl/about, /en/about, /de/about)\n- Ensure the button works correctly for all supported language variants\n- Verify navigation maintains the language state throughout the user session\n- Test that the About page loads correctly when accessed via this button\n- Confirm the button styling and behavior remain unchanged",
+  "title": "",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": "Add Language-Aware Navigation to About Page Button\n\nUpdate the \"dowiedz się więcej\" (learn more) button on the home page to direct users to the About page with proper language routing.\n\nRequirements:\n- Locate the \"dowiedz się więcej\" button component on the home page\n- Implement dynamic routing that preserves the current language context\n- Link should navigate to /{currentLanguage}/about (e.g., /pl/about, /en/about, /de/about)\n- Ensure the button works correctly for all supported language variants\n- Verify navigation maintains the language state throughout the user session\n- Test that the About page loads correctly when accessed via this button\n- Confirm the button styling and behavior remain unchanged",
+  "status": "backlog",
+  "id": "feature-1769177591743-rglw626zi",
+  "descriptionHistory": [
+    {
+      "description": "Add Language-Aware Navigation to About Page Button\n\nUpdate the \"dowiedz się więcej\" (learn more) button on the home page to direct users to the About page with proper language routing.\n\nRequirements:\n- Locate the \"dowiedz się więcej\" button component on the home page\n- Implement dynamic routing that preserves the current language context\n- Link should navigate to /{currentLanguage}/about (e.g., /pl/about, /en/about, /de/about)\n- Ensure the button works correctly for all supported language variants\n- Verify navigation maintains the language state throughout the user session\n- Test that the About page loads correctly when accessed via this button\n- Confirm the button styling and behavior remain unchanged",
+      "timestamp": "2026-01-23T14:13:11.826Z",
+      "source": "initial"
+    }
+  ]
+}

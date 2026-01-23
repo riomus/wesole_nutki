@@ -2,8 +2,6 @@ backend:
   name: github
   repo: riomus/wesole_nutki
   branch: master
-  base_url: https://api.netlify.com
-  auth_endpoint: auth
 
 # Publish mode for editorial workflow (optional - enables draft/review/ready states)
 publish_mode: editorial_workflow

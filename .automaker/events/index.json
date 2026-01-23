@@ -2,6 +2,63 @@
   "version": 1,
   "events": [
     {
+      "id": "evt-1769177851645-d32ec892",
+      "trigger": "auto_mode_complete",
+      "timestamp": "2026-01-23T14:17:31.646Z"
+    },
+    {
+      "id": "evt-1769177842337-f01e9bbe",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T14:17:22.337Z",
+      "featureName": "Add language-aware routing to learn more button",
+      "featureId": "feature-1769177591743-rglw626zi"
+    },
+    {
+      "id": "evt-1769177718685-681c38fe",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T14:15:18.685Z",
+      "featureName": "Configure GitHub Pages subdirectory deployment",
+      "featureId": "feature-1769177538743-crulo4ysq"
+    },
+    {
+      "id": "evt-1769177591827-94bfd84b",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T14:13:11.827Z",
+      "featureId": "feature-1769177591743-rglw626zi"
+    },
+    {
+      "id": "evt-1769177578782-68105704",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T14:12:58.782Z",
+      "featureName": "",
+      "featureId": "feature-1769177390813-w8xqj0xdh"
+    },
+    {
+      "id": "evt-1769177555572-39118fd5",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T14:12:35.572Z",
+      "featureName": "",
+      "featureId": "feature-1769177318281-m5l7tl2ez"
+    },
+    {
+      "id": "evt-1769177538771-269e532d",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T14:12:18.771Z",
+      "featureId": "feature-1769177538743-crulo4ysq"
+    },
+    {
+      "id": "evt-1769177390905-146da584",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T14:09:50.905Z",
+      "featureId": "feature-1769177390813-w8xqj0xdh"
+    },
+    {
+      "id": "evt-1769177318374-3bd7d2b7",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T14:08:38.374Z",
+      "featureId": "feature-1769177318281-m5l7tl2ez"
+    },
+    {
       "id": "evt-1769176527957-0c4fa671",
       "trigger": "auto_mode_complete",
       "timestamp": "2026-01-23T13:55:27.957Z"

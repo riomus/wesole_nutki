@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Add Navigation Link from Homepage Button to Contact Page\n\nCreate a clickable button labeled \"Skontaktuj się\" (Contact Us in Polish) on the homepage that navigates users to the contact subpage when clicked.\n\nRequirements:\n- Place the \"Skontaktuj się\" button in an appropriate location on the homepage (header, hero section, or footer)\n- Configure the button to route to the contact page URL when clicked\n- Ensure the button styling matches the existing design system\n- Verify the link works correctly (no 404 errors, correct page loads)\n- Make the button keyboard accessible (can be activated via Enter/Space)\n- Add appropriate hover and focus states for better UX\n- Test that the navigation works on both desktop and mobile viewports\n- Ensure the contact page exists and is ready to receive traffic",
+  "title": "",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": "Add Navigation Link from Homepage Button to Contact Page\n\nCreate a clickable button labeled \"Skontaktuj się\" (Contact Us in Polish) on the homepage that navigates users to the contact subpage when clicked.\n\nRequirements:\n- Place the \"Skontaktuj się\" button in an appropriate location on the homepage (header, hero section, or footer)\n- Configure the button to route to the contact page URL when clicked\n- Ensure the button styling matches the existing design system\n- Verify the link works correctly (no 404 errors, correct page loads)\n- Make the button keyboard accessible (can be activated via Enter/Space)\n- Add appropriate hover and focus states for better UX\n- Test that the navigation works on both desktop and mobile viewports\n- Ensure the contact page exists and is ready to receive traffic",
+  "status": "in_progress",
+  "id": "feature-1769177390813-w8xqj0xdh",
+  "descriptionHistory": [
+    {
+      "description": "Add Navigation Link from Homepage Button to Contact Page\n\nCreate a clickable button labeled \"Skontaktuj się\" (Contact Us in Polish) on the homepage that navigates users to the contact subpage when clicked.\n\nRequirements:\n- Place the \"Skontaktuj się\" button in an appropriate location on the homepage (header, hero section, or footer)\n- Configure the button to route to the contact page URL when clicked\n- Ensure the button styling matches the existing design system\n- Verify the link works correctly (no 404 errors, correct page loads)\n- Make the button keyboard accessible (can be activated via Enter/Space)\n- Add appropriate hover and focus states for better UX\n- Test that the navigation works on both desktop and mobile viewports\n- Ensure the contact page exists and is ready to receive traffic",
+      "timestamp": "2026-01-23T14:09:50.904Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T14:09:53.542Z"
+}

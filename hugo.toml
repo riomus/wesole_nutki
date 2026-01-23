@@ -4,8 +4,8 @@
 # Base URL for GitHub Pages deployment
 # This is overridden by the GitHub Actions workflow using --baseURL flag
 # Custom domain configured via static/CNAME - HTTPS is enforced by GitHub Pages
-# Fallback (if no custom domain): https://riomus.github.io/wesole_nutki/
-baseURL = "https://wesolenutki.pl/"
+# Custom domain with subdirectory: https://bartusiak.ai/wesole_nutki/
+baseURL = "https://bartusiak.ai/wesole_nutki/"
 title = "Wesole Nutki"
 
 # Default language
@@ -413,8 +413,8 @@ summaryLength = 70
   instagram = ""
 
   # Images
-  logo = "/images/logo.png"
-  favicon = "/images/favicon.svg"
+  logo = "images/logo.png"
+  favicon = "images/favicon.svg"
 
   # Features
   enableSearch = false

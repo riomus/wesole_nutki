@@ -39,6 +39,13 @@
           {{- $url := "#" -}}
           {{- if .url -}}
             {{- $url = .url -}}
+          {{- else if .url_menu_identifier -}}
+            {{- $targetIdentifier := .url_menu_identifier -}}
+            {{- range $.Site.Menus.main -}}
+              {{- if eq .Identifier $targetIdentifier -}}
+                {{- $url = .URL -}}
+              {{- end -}}
+            {{- end -}}
           {{- else if .url_menu_index -}}
             {{- $menuItem := index $.Site.Menus.main .url_menu_index -}}
             {{- if $menuItem -}}

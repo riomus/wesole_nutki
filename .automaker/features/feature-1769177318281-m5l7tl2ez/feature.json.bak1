@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Resolve Logo Image Not Loading on GitHub Pages Deployment\n\nFix the issue where logo.png fails to display when the application is deployed to GitHub Pages, despite working correctly in local development environment.\n\nRequirements:\n- Verify the logo.png file is included in the build output directory\n- Check that the image path is correctly referenced (absolute vs relative paths)\n- Ensure the path accounts for GitHub Pages base URL or subdirectory structure\n- Confirm the image file name matches exactly (case-sensitive on GitHub Pages)\n- Validate the image is accessible via the deployed URL in browser network tab\n- Test the fix in both local development and GitHub Pages production environment\n- Consider build configuration differences between local and GitHub Pages\n\nEdge cases to check:\n- Repository served from root vs project subdirectory (username.github.io vs username.github.io/project)\n- Image import statements vs public folder references\n- Build tool path resolution (Webpack, Vite, etc.)",
+  "title": "Fix logo image path for GitHub Pages deployment",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "in_progress",
+  "id": "feature-1769177318281-m5l7tl2ez",
+  "descriptionHistory": [
+    {
+      "description": "Resolve Logo Image Not Loading on GitHub Pages Deployment\n\nFix the issue where logo.png fails to display when the application is deployed to GitHub Pages, despite working correctly in local development environment.\n\nRequirements:\n- Verify the logo.png file is included in the build output directory\n- Check that the image path is correctly referenced (absolute vs relative paths)\n- Ensure the path accounts for GitHub Pages base URL or subdirectory structure\n- Confirm the image file name matches exactly (case-sensitive on GitHub Pages)\n- Validate the image is accessible via the deployed URL in browser network tab\n- Test the fix in both local development and GitHub Pages production environment\n- Consider build configuration differences between local and GitHub Pages\n\nEdge cases to check:\n- Repository served from root vs project subdirectory (username.github.io vs username.github.io/project)\n- Image import statements vs public folder references\n- Build tool path resolution (Webpack, Vite, etc.)",
+      "timestamp": "2026-01-23T14:08:38.372Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T14:08:41.197Z"
+}

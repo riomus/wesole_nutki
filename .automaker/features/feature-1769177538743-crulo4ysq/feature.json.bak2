@@ -1,0 +1,28 @@
+{
+  "category": "Uncategorized",
+  "description": "Configure GitHub Pages Deployment for Custom Domain Path\n\nUpdate the application configuration to work correctly when deployed to GitHub Pages at the URL path http://bartusiak.ai/wesole_nutki/.\n\nRequirements:\n- Configure base URL/path prefix to handle the /wesole_nutki/ subdirectory\n- Update asset paths (CSS, JavaScript, images) to load from correct location\n- Fix navigation/routing to work with the subdirectory path structure\n- Update any hardcoded URLs or absolute paths to be relative or include base path\n- Ensure all internal links navigate correctly within the subdirectory context\n- Test that all pages, resources, and navigation work correctly at the deployed URL\n- Update build configuration to include proper publicPath or base settings\n- Verify no 404 errors for assets or routes when accessing the site\n\nEdge cases to consider:\n- Direct navigation to nested routes (e.g., /wesole_nutki/about)\n- Browser refresh on non-root pages\n- Links in dynamically generated content\n- API endpoints or external resource references if applicable",
+  "title": "Configure GitHub Pages subdirectory deployment",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "backlog",
+  "id": "feature-1769177538743-crulo4ysq",
+  "descriptionHistory": [
+    {
+      "description": "Configure GitHub Pages Deployment for Custom Domain Path\n\nUpdate the application configuration to work correctly when deployed to GitHub Pages at the URL path http://bartusiak.ai/wesole_nutki/.\n\nRequirements:\n- Configure base URL/path prefix to handle the /wesole_nutki/ subdirectory\n- Update asset paths (CSS, JavaScript, images) to load from correct location\n- Fix navigation/routing to work with the subdirectory path structure\n- Update any hardcoded URLs or absolute paths to be relative or include base path\n- Ensure all internal links navigate correctly within the subdirectory context\n- Test that all pages, resources, and navigation work correctly at the deployed URL\n- Update build configuration to include proper publicPath or base settings\n- Verify no 404 errors for assets or routes when accessing the site\n\nEdge cases to consider:\n- Direct navigation to nested routes (e.g., /wesole_nutki/about)\n- Browser refresh on non-root pages\n- Links in dynamically generated content\n- API endpoints or external resource references if applicable",
+      "timestamp": "2026-01-23T14:12:18.770Z",
+      "source": "initial"
+    }
+  ]
+}

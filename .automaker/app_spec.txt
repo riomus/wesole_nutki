@@ -2009,6 +2009,79 @@ Requirements:
 - Test that links, images, and formatting remain intact after translation
 - Consider implementing i18n infrastructure if not already present for future language support</description>
     </feature>
+    <feature>
+      <name>Fix logo image path for GitHub Pages deployment</name>
+      <description>Resolve Logo Image Not Loading on GitHub Pages Deployment
+
+Fix the issue where logo.png fails to display when the application is deployed to GitHub Pages, despite working correctly in local development environment.
+
+Requirements:
+- Verify the logo.png file is included in the build output directory
+- Check that the image path is correctly referenced (absolute vs relative paths)
+- Ensure the path accounts for GitHub Pages base URL or subdirectory structure
+- Confirm the image file name matches exactly (case-sensitive on GitHub Pages)
+- Validate the image is accessible via the deployed URL in browser network tab
+- Test the fix in both local development and GitHub Pages production environment
+- Consider build configuration differences between local and GitHub Pages
+
+Edge cases to check:
+- Repository served from root vs project subdirectory (username.github.io vs username.github.io/project)
+- Image import statements vs public folder references
+- Build tool path resolution (Webpack, Vite, etc.)</description>
+    </feature>
+    <feature>
+      <name>Add Contact Us Navigation Button to Homepage</name>
+      <description>Add Navigation Link from Homepage Button to Contact Page
+
+Create a clickable button labeled &quot;Skontaktuj się&quot; (Contact Us in Polish) on the homepage that navigates users to the contact subpage when clicked.
+
+Requirements:
+- Place the &quot;Skontaktuj się&quot; button in an appropriate location on the homepage (header, hero section, or footer)
+- Configure the button to route to the contact page URL when clicked
+- Ensure the button styling matches the existing design system
+- Verify the link works correctly (no 404 errors, correct page loads)
+- Make the button keyboard accessible (can be activated via Enter/Space)
+- Add appropriate hover and focus states for better UX
+- Test that the navigation works on both desktop and mobile viewports
+- Ensure the contact page exists and is ready to receive traffic</description>
+    </feature>
+    <feature>
+      <name>Configure GitHub Pages subdirectory deployment</name>
+      <description>Configure GitHub Pages Deployment for Custom Domain Path
+
+Update the application configuration to work correctly when deployed to GitHub Pages at the URL path http://bartusiak.ai/wesole_nutki/.
+
+Requirements:
+- Configure base URL/path prefix to handle the /wesole_nutki/ subdirectory
+- Update asset paths (CSS, JavaScript, images) to load from correct location
+- Fix navigation/routing to work with the subdirectory path structure
+- Update any hardcoded URLs or absolute paths to be relative or include base path
+- Ensure all internal links navigate correctly within the subdirectory context
+- Test that all pages, resources, and navigation work correctly at the deployed URL
+- Update build configuration to include proper publicPath or base settings
+- Verify no 404 errors for assets or routes when accessing the site
+
+Edge cases to consider:
+- Direct navigation to nested routes (e.g., /wesole_nutki/about)
+- Browser refresh on non-root pages
+- Links in dynamically generated content
+- API endpoints or external resource references if applicable</description>
+    </feature>
+    <feature>
+      <name>Add language-aware routing to learn more button</name>
+      <description>Add Language-Aware Navigation to About Page Button
+
+Update the &quot;dowiedz się więcej&quot; (learn more) button on the home page to direct users to the About page with proper language routing.
+
+Requirements:
+- Locate the &quot;dowiedz się więcej&quot; button component on the home page
+- Implement dynamic routing that preserves the current language context
+- Link should navigate to /{currentLanguage}/about (e.g., /pl/about, /en/about, /de/about)
+- Ensure the button works correctly for all supported language variants
+- Verify navigation maintains the language state throughout the user session
+- Test that the About page loads correctly when accessed via this button
+- Confirm the button styling and behavior remain unchanged</description>
+    </feature>
   </implemented_features>
 
   <additional_requirements>
