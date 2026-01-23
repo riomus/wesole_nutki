@@ -1,0 +1,11 @@
+{
+  "id": "evt-1769199062984-fddf20d0",
+  "trigger": "feature_success",
+  "timestamp": "2026-01-23T20:11:02.984Z",
+  "projectPath": "/Users/romanbartusiak/git/riomus/wesole_nutki",
+  "projectName": "wesole_nutki",
+  "featureId": "feature-1769198695080-kn65zx3vf",
+  "featureName": "Reorganize content directory for multilingual CMS support",
+  "error": "Feature completed in 340s - auto-verified",
+  "passes": true
+}

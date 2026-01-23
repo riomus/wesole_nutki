@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Add Explicit Close Button to Lightbox Image Preview\n\nImplement a visible and accessible close/exit button for the lightbox image preview component to improve user experience and discoverability.\n\nRequirements:\n- Add a clearly visible close button (typically an \"X\" icon) to the lightbox overlay\n- Position the button in a standard location (top-right corner is conventional)\n- Ensure the button is visible against all image backgrounds (use contrasting color or semi-transparent background)\n- Make the button easily clickable/tappable with appropriate touch target size (minimum 44x44px)\n- Maintain existing close functionality (ESC key, clicking overlay background) as fallback options\n- Add hover/focus states for better interactivity feedback\n- Ensure close button is keyboard accessible and properly announced to screen readers\n- Test across different viewport sizes to ensure button remains accessible on mobile devices",
+  "title": "Add Close Button to Lightbox Image Preview",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "in_progress",
+  "id": "feature-1769200270493-grg479vwp",
+  "descriptionHistory": [
+    {
+      "description": "Add Explicit Close Button to Lightbox Image Preview\n\nImplement a visible and accessible close/exit button for the lightbox image preview component to improve user experience and discoverability.\n\nRequirements:\n- Add a clearly visible close button (typically an \"X\" icon) to the lightbox overlay\n- Position the button in a standard location (top-right corner is conventional)\n- Ensure the button is visible against all image backgrounds (use contrasting color or semi-transparent background)\n- Make the button easily clickable/tappable with appropriate touch target size (minimum 44x44px)\n- Maintain existing close functionality (ESC key, clicking overlay background) as fallback options\n- Add hover/focus states for better interactivity feedback\n- Ensure close button is keyboard accessible and properly announced to screen readers\n- Test across different viewport sizes to ensure button remains accessible on mobile devices",
+      "timestamp": "2026-01-23T20:31:10.586Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T20:31:15.717Z"
+}

@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Implement Fallback Image Handling for News Item Thumbnails\n\nEnsure all news items display a fallback placeholder image when the primary image is missing, broken, or fails to load on news pages.\n\nRequirements:\n- Detect when a news item's main image is unavailable (404, null, undefined, or failed to load)\n- Display a default fallback image in place of missing images\n- Maintain consistent aspect ratio and dimensions between actual and fallback images\n- Apply fallback logic to all news listing pages and detail views\n- Consider adding a generic news-related placeholder image if one doesn't exist\n- Handle edge cases: slow-loading images, network timeouts, CORS errors\n- Ensure fallback works for both initial render and runtime errors\n- Test with news items that have: no image URL, invalid URLs, and broken image links",
+  "title": "Implement fallback images for missing news thumbnails",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "in_progress",
+  "id": "feature-1769200629832-4n7kultk4",
+  "descriptionHistory": [
+    {
+      "description": "Implement Fallback Image Handling for News Item Thumbnails\n\nEnsure all news items display a fallback placeholder image when the primary image is missing, broken, or fails to load on news pages.\n\nRequirements:\n- Detect when a news item's main image is unavailable (404, null, undefined, or failed to load)\n- Display a default fallback image in place of missing images\n- Maintain consistent aspect ratio and dimensions between actual and fallback images\n- Apply fallback logic to all news listing pages and detail views\n- Consider adding a generic news-related placeholder image if one doesn't exist\n- Handle edge cases: slow-loading images, network timeouts, CORS errors\n- Ensure fallback works for both initial render and runtime errors\n- Test with news items that have: no image URL, invalid URLs, and broken image links",
+      "timestamp": "2026-01-23T20:37:09.873Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T20:39:04.177Z"
+}

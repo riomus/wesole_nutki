@@ -1,7 +1,7 @@
 {
   "category": "Uncategorized",
   "description": "Update Gallery Card Counter Z-Index Layer Positioning\n\nFix the visual stacking order of the gallery card counter so it appears above the image instead of being hidden underneath.\n\nRequirements:\n- Increase the z-index value of `.gallery-card .gallery-card-count` to ensure it layers above the gallery image\n- Verify that the parent `.gallery-card` element has appropriate positioning context (position: relative) for z-index to work\n- Test that the counter remains visible across different gallery card states (hover, active, etc.)\n- Ensure the z-index value doesn't conflict with other UI elements (modals, dropdowns, tooltips)\n- Confirm visual appearance is correct across different browsers",
-  "title": "",
+  "title": "Fix gallery card counter z-index layering",
   "images": [],
   "imagePaths": [],
   "textFilePaths": [],
@@ -15,7 +15,7 @@
   "requirePlanApproval": false,
   "dependencies": [],
   "workMode": "current",
-  "titleGenerating": "Update Gallery Card Counter Z-Index Layer Positioning\n\nFix the visual stacking order of the gallery card counter so it appears above the image instead of being hidden underneath.\n\nRequirements:\n- Increase the z-index value of `.gallery-card .gallery-card-count` to ensure it layers above the gallery image\n- Verify that the parent `.gallery-card` element has appropriate positioning context (position: relative) for z-index to work\n- Test that the counter remains visible across different gallery card states (hover, active, etc.)\n- Ensure the z-index value doesn't conflict with other UI elements (modals, dropdowns, tooltips)\n- Confirm visual appearance is correct across different browsers",
+  "titleGenerating": false,
   "status": "in_progress",
   "id": "feature-1769191420021-g8nhb4ojo",
   "descriptionHistory": [

@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix Gallery Card Image Error State Positioning\n\nUpdate the CSS for the image error state in gallery card images to use `position: initial` instead of the current positioning value.\n\nRequirements:\n- Locate the `.image-error` class within the `.gallery-card-image` component\n- Change the position property from its current value to `position: initial`\n- Verify the error state displays correctly when images fail to load\n- Ensure the change doesn't break the layout of other gallery card elements\n- Test across different viewport sizes to confirm responsive behavior remains intact\n\nEdge cases to consider:\n- Error state appearance when gallery is in grid vs list view\n- Interaction with any overlay or placeholder elements\n- Proper alignment with card borders and padding",
+  "title": "Fix gallery card image error positioning",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "in_progress",
+  "id": "feature-1769199938654-lwgam3nlq",
+  "descriptionHistory": [
+    {
+      "description": "Fix Gallery Card Image Error State Positioning\n\nUpdate the CSS for the image error state in gallery card images to use `position: initial` instead of the current positioning value.\n\nRequirements:\n- Locate the `.image-error` class within the `.gallery-card-image` component\n- Change the position property from its current value to `position: initial`\n- Verify the error state displays correctly when images fail to load\n- Ensure the change doesn't break the layout of other gallery card elements\n- Test across different viewport sizes to confirm responsive behavior remains intact\n\nEdge cases to consider:\n- Error state appearance when gallery is in grid vs list view\n- Interaction with any overlay or placeholder elements\n- Proper alignment with card borders and padding",
+      "timestamp": "2026-01-23T20:25:38.746Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T20:25:40.050Z"
+}

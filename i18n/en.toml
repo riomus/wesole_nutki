@@ -292,6 +292,39 @@ other = "Gallery"
 [menu_contact]
 other = "Contact"
 
+[menu_offer]
+other = "Offer"
+
+[menu_more]
+other = "More"
+
+[menu_documents]
+other = "Documents"
+
+[menu_more_recruitment]
+other = "Recruitment"
+
+[menu_more_vision]
+other = "Our Vision"
+
+[menu_more_offer]
+other = "Offer"
+
+[menu_more_pricing]
+other = "Pricing"
+
+[menu_more_payments]
+other = "Payments"
+
+[menu_more_enrollment]
+other = "Registration"
+
+[menu_more_privacy]
+other = "Privacy Policy"
+
+[menu_more_child_protection]
+other = "Child Protection Standards"
+
 # Footer section
 [quick_links]
 other = "Quick Links"
@@ -1010,3 +1043,16 @@ other = "No documents found"
 
 [breadcrumb_documents]
 other = "Documents"
+
+# ============================================================
+# Footer Status Indicator Translations
+# ============================================================
+
+[open_now]
+other = "Open now"
+
+[currently_closed]
+other = "Closed"
+
+[close_menu]
+other = "Close menu"

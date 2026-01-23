@@ -1,0 +1,11 @@
+{
+  "id": "evt-1769199071458-03095d3a",
+  "trigger": "feature_success",
+  "timestamp": "2026-01-23T20:11:11.458Z",
+  "projectPath": "/Users/romanbartusiak/git/riomus/wesole_nutki",
+  "projectName": "wesole_nutki",
+  "featureId": "feature-1769198437271-vaeq3wzmg",
+  "featureName": "Align English website structure with Polish version",
+  "error": "Feature completed in 385s - auto-verified",
+  "passes": true
+}

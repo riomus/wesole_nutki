@@ -452,7 +452,6 @@
       @apply font-heading text-white mb-6;
       font-size: clamp(2.5rem, 5vw, 3.5rem);
       line-height: 1.2;
-      text-shadow: 0 2px 4px rgba(45, 49, 66, 0.2);
 
       @media (max-width: 768px) {
         font-size: clamp(2rem, 6vw, 2.5rem);
@@ -460,9 +459,9 @@
     }
 
     .lead {
-      @apply opacity-95 max-w-2xl mx-auto mb-8 leading-relaxed;
+      @apply max-w-2xl mx-auto mb-8 leading-relaxed;
       font-size: clamp(1rem, 2vw, 1.25rem);
-      text-shadow: 0 1px 2px rgba(45, 49, 66, 0.1);
+      color: #ffffff !important;
     }
 
     .hero-buttons {
@@ -967,6 +966,15 @@
       @apply relative overflow-hidden;
       aspect-ratio: 16/9;
       background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+
+      // Ensure image error state displays correctly within card header
+      .responsive-image-wrapper.image-error {
+        position: initial;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     }
 
     .program-card-image {
@@ -2268,6 +2276,36 @@
       a:hover img {
         @apply scale-110;
       }
+
+      // Fallback UI for failed images
+      .news-card-fallback {
+        @apply absolute inset-0 flex flex-col items-center justify-center bg-gradient-to-br from-primary/10 to-coral/10;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+
+        svg {
+          @apply mb-3 opacity-30;
+          color: currentColor;
+        }
+
+        .fallback-text {
+          @apply text-sm text-dark/60;
+          font-weight: 500;
+        }
+      }
+
+      // When image fails to load, hide image and show fallback
+      &.image-error {
+        img {
+          @apply opacity-0;
+        }
+
+        .news-card-fallback {
+          @apply opacity-100;
+          pointer-events: auto;
+        }
+      }
     }
 
     .news-card-placeholder {
@@ -2437,6 +2475,7 @@
   // Featured Image
   .article-featured-image {
     @apply mb-8 rounded-3xl overflow-hidden shadow-lg;
+    position: relative;
 
     img {
       @apply w-full h-auto;
@@ -3601,6 +3640,11 @@
         @apply w-full h-full object-contain transition-transform duration-500;
         border-radius: 1rem 1rem 0 0;
       }
+
+      // Override positioning for image error state
+      .responsive-image-wrapper.image-error {
+        position: initial;
+      }
     }
 
     &:hover .gallery-card-image img {
@@ -3944,10 +3988,48 @@
         @apply border-primary text-primary bg-primary/5;
       }
 
+      &:focus {
+        @apply outline-none ring-2 ring-primary ring-offset-2;
+      }
+
       svg {
         @apply w-4 h-4;
       }
     }
+
+    // Ellipsis styling
+    .page-ellipsis {
+      @apply flex items-center justify-center w-10 h-10 text-dark/50 font-semibold;
+      user-select: none;
+    }
+
+    // Prev/Next button specific styles
+    .page-link-prev,
+    .page-link-next {
+      @apply gap-1;
+      min-width: 2.5rem;
+
+      // Icon styling
+      .page-link-icon {
+        @apply flex items-center justify-center;
+      }
+
+      // Text styling (hidden on mobile)
+      .page-link-text {
+        white-space: nowrap;
+      }
+    }
+  }
+
+  // Pagination info text
+  .pagination-info {
+    @apply text-center text-sm mt-3;
+    color: var(--bs-secondary, #6c757d);
+  }
+
+  // Pagination nav container
+  .pagination-nav {
+    @apply mt-5;
   }
 
   // ============================================================
@@ -4458,6 +4540,7 @@
 
   // Show fallback when image fails to load
   .responsive-image-wrapper.image-error {
+    position: relative;
     // Remove min-height constraint to eliminate blank space
     min-height: 120px; // Just enough for error icon and text
     height: auto;
@@ -5156,7 +5239,7 @@
   // and proper visibility on all devices and backgrounds
 
   :global(.glightbox-container) {
-    // Ensure close button is always visible
+    // Ensure close button is always visible with enhanced styling
     :global(.gclose) {
       @apply transition-all duration-200;
       width: 44px !important;
@@ -5165,22 +5248,60 @@
       min-height: 44px !important;
       top: 15px !important;
       right: 15px !important;
-      background: rgba(0, 0, 0, 0.7) !important;
+      background: rgba(0, 0, 0, 0.8) !important;
+      border: 2px solid rgba(255, 255, 255, 0.3) !important;
       border-radius: 50% !important;
       display: flex !important;
       align-items: center !important;
       justify-content: center !important;
       z-index: 99999 !important;
-      backdrop-filter: blur(4px);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5),
+                  0 0 0 1px rgba(255, 255, 255, 0.1) inset !important;
+      cursor: pointer !important;
+      position: relative !important;
+
+      // Tooltip on hover (shows keyboard shortcut hint)
+      &::after {
+        content: attr(title);
+        position: absolute;
+        top: calc(100% + 10px);
+        right: 0;
+        background: rgba(0, 0, 0, 0.9);
+        color: white;
+        padding: 6px 12px;
+        border-radius: 6px;
+        font-size: 12px;
+        font-weight: 500;
+        white-space: nowrap;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.2s ease;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      }
 
       &:hover {
-        background: rgba(0, 0, 0, 0.9) !important;
+        background: rgba(0, 0, 0, 0.95) !important;
+        border-color: rgba(255, 255, 255, 0.5) !important;
         transform: scale(1.1);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7),
+                    0 0 0 1px rgba(255, 255, 255, 0.2) inset !important;
+
+        // Show tooltip on hover
+        &::after {
+          opacity: 1;
+        }
+      }
+
+      &:active {
+        transform: scale(1.05);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6) !important;
       }
 
       &:focus-visible {
-        outline: 2px solid #81d742 !important;
-        outline-offset: 2px !important;
+        outline: 3px solid #81d742 !important;
+        outline-offset: 3px !important;
+        border-color: rgba(255, 255, 255, 0.6) !important;
       }
 
       svg {
@@ -5188,6 +5309,7 @@
         height: 24px !important;
         color: white !important;
         fill: white !important;
+        filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.5));
       }
     }
 
@@ -5233,6 +5355,14 @@
         height: 48px !important;
         min-width: 48px !important;
         min-height: 48px !important;
+        border-width: 2.5px !important;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6),
+                    0 0 0 1px rgba(255, 255, 255, 0.15) inset !important;
+
+        svg {
+          width: 26px !important;
+          height: 26px !important;
+        }
       }
 
       :global(.gnext),

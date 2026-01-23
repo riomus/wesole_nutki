@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Remove Text Shadows from Hero Section and Update Text Colors\n\nUpdate the hero section typography to improve readability by removing text shadows from headings and adjusting paragraph text color.\n\nRequirements:\n- Remove all text-shadow CSS properties from <h1>, <h2>, <h3>, etc. elements within the hero section\n- Change <p> element color to white (#ffffff or equivalent) in the hero section\n- Remove any text-shadow properties from <p> elements in the hero section\n- Ensure changes only affect the hero section, not other page areas\n- Verify text remains readable against the hero background\n- Check consistency across different viewport sizes and devices",
+  "title": "Remove text shadows and update hero typography colors",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "in_progress",
+  "id": "feature-1769199525604-phkawtbdo",
+  "descriptionHistory": [
+    {
+      "description": "Remove Text Shadows from Hero Section and Update Text Colors\n\nUpdate the hero section typography to improve readability by removing text shadows from headings and adjusting paragraph text color.\n\nRequirements:\n- Remove all text-shadow CSS properties from <h1>, <h2>, <h3>, etc. elements within the hero section\n- Change <p> element color to white (#ffffff or equivalent) in the hero section\n- Remove any text-shadow properties from <p> elements in the hero section\n- Ensure changes only affect the hero section, not other page areas\n- Verify text remains readable against the hero background\n- Check consistency across different viewport sizes and devices",
+      "timestamp": "2026-01-23T20:18:45.688Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T20:18:52.268Z"
+}

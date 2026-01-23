@@ -4,8 +4,8 @@
 {{ $paginator := . }}
 
 {{ if gt $paginator.TotalPages 1 }}
-<nav class="pagination-nav mt-5" aria-label="{{ i18n "pagination_aria_label" | default "Page navigation" }}">
-  <ul class="pagination justify-content-center flex-wrap">
+<nav class="pagination-nav mt-5" role="navigation" aria-label="{{ i18n "pagination_aria_label" | default "Page navigation" }}">
+  <ul class="pagination justify-content-center flex-wrap gap-2">
 
     {{/* Previous Page Button */}}
     {{ if $paginator.HasPrev }}

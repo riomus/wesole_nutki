@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix Featured Image Error Icon Positioning\n\nCorrect the positioning of the error icon that displays when the featured image fails to load in article components.\n\nRequirements:\n- Locate the image-error element within article-featured-image component\n- Add position: relative to the parent container (article-featured-image) to establish positioning context\n- Ensure the error icon displays in the intended location relative to the image container\n- Verify the error state displays correctly across different screen sizes and layouts\n- Test with both missing images and failed image loads to confirm proper positioning",
+  "title": "Fix featured image error icon positioning",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "verified",
+  "id": "feature-1769198156792-vlv5e4b5p",
+  "descriptionHistory": [
+    {
+      "description": "Fix Featured Image Error Icon Positioning\n\nCorrect the positioning of the error icon that displays when the featured image fails to load in article components.\n\nRequirements:\n- Locate the image-error element within article-featured-image component\n- Add position: relative to the parent container (article-featured-image) to establish positioning context\n- Ensure the error icon displays in the intended location relative to the image container\n- Verify the error state displays correctly across different screen sizes and layouts\n- Test with both missing images and failed image loads to confirm proper positioning",
+      "timestamp": "2026-01-23T19:55:56.875Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T20:04:43.924Z"
+}

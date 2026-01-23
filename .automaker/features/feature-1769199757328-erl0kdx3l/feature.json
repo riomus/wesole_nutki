@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix Pagination Controls Display on News Pages\n\nInvestigate and resolve rendering issues causing pagination controls to display incorrectly on news pages and other paginated content areas.\n\nRequirements:\n- Identify the specific display problems with pagination controls (alignment, visibility, layout breakage, missing elements)\n- Locate all news pages and other areas where pagination is used\n- Ensure pagination controls render correctly across different screen sizes and devices\n- Verify pagination functionality works properly (navigation between pages, current page indicator, disabled states for first/last pages)\n- Check for CSS conflicts or JavaScript errors affecting pagination display\n- Test with different data sets (few items, many items, edge cases like single page or empty results)\n- Ensure consistent styling with the rest of the application\n\nEdge cases to consider:\n- Single page of results (pagination should hide or disable appropriately)\n- Empty results or no data\n- Very large page numbers\n- Mobile and tablet viewports",
+  "title": "Fix pagination controls rendering issues on news pages",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "completed",
+  "id": "feature-1769199757328-erl0kdx3l",
+  "descriptionHistory": [
+    {
+      "description": "Fix Pagination Controls Display on News Pages\n\nInvestigate and resolve rendering issues causing pagination controls to display incorrectly on news pages and other paginated content areas.\n\nRequirements:\n- Identify the specific display problems with pagination controls (alignment, visibility, layout breakage, missing elements)\n- Locate all news pages and other areas where pagination is used\n- Ensure pagination controls render correctly across different screen sizes and devices\n- Verify pagination functionality works properly (navigation between pages, current page indicator, disabled states for first/last pages)\n- Check for CSS conflicts or JavaScript errors affecting pagination display\n- Test with different data sets (few items, many items, edge cases like single page or empty results)\n- Ensure consistent styling with the rest of the application\n\nEdge cases to consider:\n- Single page of results (pagination should hide or disable appropriately)\n- Empty results or no data\n- Very large page numbers\n- Mobile and tablet viewports",
+      "timestamp": "2026-01-23T20:22:37.374Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T20:28:49.195Z"
+}

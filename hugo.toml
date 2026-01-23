@@ -42,7 +42,7 @@ summaryLength = 70
     languageCode = "pl"
     weight = 1
     title = "Wesołe Nutki - Przedszkole"
-    contentDir = "content"
+    contentDir = "content/pl"
     [languages.pl.params]
       description = "Wesołe Nutki - Przedszkole we Wrocławiu"
 

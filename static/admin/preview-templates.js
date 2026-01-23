@@ -576,35 +576,196 @@ const HomepagePreview = createClass({
 });
 
 // ============================================================
+// DOCUMENT PREVIEW TEMPLATE
+// ============================================================
+const DocumentPreview = createClass({
+  render: function() {
+    const entry = this.props.entry;
+    const title = entry.getIn(['data', 'title']) || 'Untitled Document';
+    const description = entry.getIn(['data', 'description']) || '';
+    const date = entry.getIn(['data', 'date']);
+    const category = entry.getIn(['data', 'category']) || '';
+    const pdfFile = entry.getIn(['data', 'pdf_file']);
+    const attachments = entry.getIn(['data', 'attachments']);
+    const body = this.props.widgetFor('body');
+
+    return h('div', { className: 'preview-container' },
+      // Page header
+      h('div', { className: 'page-header' },
+        h('div', { className: 'container' },
+          h('nav', { className: 'breadcrumb-nav' },
+            h('span', {}, 'Strona glowna'),
+            h('span', { className: 'separator' }, ' / '),
+            h('span', {}, 'Dokumenty'),
+            h('span', { className: 'separator' }, ' / '),
+            h('span', { className: 'current' }, title)
+          ),
+          h('h1', { className: 'page-title' }, title)
+        )
+      ),
+
+      // Main content
+      h('div', { className: 'container' },
+        h('article', { className: 'document-page' },
+          // Document info
+          h('div', { className: 'document-info' },
+            h('div', { className: 'document-meta' },
+              date && h('span', { className: 'document-date' },
+                h('svg', { width: '16', height: '16', viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: '2' },
+                  h('rect', { x: '3', y: '4', width: '18', height: '18', rx: '2', ry: '2' }),
+                  h('line', { x1: '16', y1: '2', x2: '16', y2: '6' }),
+                  h('line', { x1: '8', y1: '2', x2: '8', y2: '6' }),
+                  h('line', { x1: '3', y1: '10', x2: '21', y2: '10' })
+                ),
+                formatDate(date)
+              ),
+              category && h('span', { className: 'category-badge', style: { marginLeft: '1rem' } }, category)
+            )
+          ),
+
+          // Description
+          description && h('p', { className: 'document-description', style: { fontSize: '1.1rem', marginBottom: '2rem' } }, description),
+
+          // Main PDF download
+          pdfFile && h('div', { className: 'card', style: { padding: '1.5rem', marginBottom: '2rem' } },
+            h('h3', { style: { fontSize: '1.25rem', marginBottom: '1rem' } }, 'Glowny dokument'),
+            h('a', {
+              href: getImageUrl(pdfFile),
+              className: 'btn',
+              style: {
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.5rem',
+                padding: '0.75rem 1.5rem',
+                background: 'linear-gradient(135deg, var(--preschool-primary) 0%, var(--preschool-coral) 100%)',
+                color: 'white',
+                borderRadius: 'var(--border-radius-pill)',
+                fontWeight: '600',
+                textDecoration: 'none'
+              }
+            },
+              h('svg', { width: '20', height: '20', viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: '2' },
+                h('path', { d: 'M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' }),
+                h('polyline', { points: '7 10 12 15 17 10' }),
+                h('line', { x1: '12', y1: '15', x2: '12', y2: '3' })
+              ),
+              'Pobierz PDF'
+            )
+          ),
+
+          // Additional attachments
+          attachments && attachments.size > 0 && h('div', { style: { marginBottom: '2rem' } },
+            h('h3', { style: { fontSize: '1.25rem', marginBottom: '1rem' } }, 'Dodatkowe pliki'),
+            h('div', { className: 'attachments-list' },
+              attachments.map((attachment, index) => {
+                const name = attachment.get('name') || 'Plik';
+                const file = attachment.get('file');
+                const desc = attachment.get('description') || '';
+
+                return h('div', {
+                  key: index,
+                  className: 'card',
+                  style: { padding: '1rem', marginBottom: '1rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }
+                },
+                  h('div', {},
+                    h('strong', {}, name),
+                    desc && h('p', { style: { margin: '0.25rem 0 0 0', fontSize: '0.9rem', opacity: '0.7' } }, desc)
+                  ),
+                  file && h('a', {
+                    href: getImageUrl(file),
+                    style: {
+                      padding: '0.5rem 1rem',
+                      background: 'var(--preschool-secondary)',
+                      color: 'white',
+                      borderRadius: 'var(--border-radius)',
+                      fontWeight: '600',
+                      fontSize: '0.9rem',
+                      textDecoration: 'none'
+                    }
+                  }, 'Pobierz')
+                );
+              })
+            )
+          ),
+
+          // Additional content
+          body && h('div', { className: 'document-content', style: { marginTop: '2rem' } }, body)
+        )
+      )
+    );
+  }
+});
+
+// ============================================================
+// UNIFIED PREVIEW TEMPLATE RESOLVER
+// ============================================================
+// This resolver checks the file name to determine which preview template to use
+// Useful for file-based collections where different files need different templates
+const StaticPagePreview = createClass({
+  render: function() {
+    const entry = this.props.entry;
+    const fileName = this.props.fieldsMetaData?.getIn(['name', 'value']) ||
+                     this.props.entry.getIn(['slug']) || '';
+
+    // Determine which template to use based on file name or metadata
+    if (fileName.includes('contact')) {
+      return ContactPreview.prototype.render.call(this);
+    } else {
+      // Default to About template for other static pages
+      return AboutPreview.prototype.render.call(this);
+    }
+  }
+});
+
+// ============================================================
 // REGISTER PREVIEW TEMPLATES
 // ============================================================
 
-// News previews (Polish and English)
-CMS.registerPreviewTemplate('news_pl', NewsPreview);
-CMS.registerPreviewTemplate('news_en', NewsPreview);
+// Wait for CMS to be ready before registering templates
+if (typeof CMS !== 'undefined') {
+  // News previews (Polish and English)
+  CMS.registerPreviewTemplate('news_pl', NewsPreview);
+  CMS.registerPreviewTemplate('news_en', NewsPreview);
 
-// Page previews
-CMS.registerPreviewTemplate('pages_pl', PagePreview);
-CMS.registerPreviewTemplate('pages_en', PagePreview);
+  // Page previews
+  CMS.registerPreviewTemplate('pages_pl', PagePreview);
+  CMS.registerPreviewTemplate('pages_en', PagePreview);
 
-// Gallery previews
-CMS.registerPreviewTemplate('gallery_pl', GalleryPreview);
-CMS.registerPreviewTemplate('gallery_en', GalleryPreview);
+  // Gallery previews
+  CMS.registerPreviewTemplate('gallery_pl', GalleryPreview);
+  CMS.registerPreviewTemplate('gallery_en', GalleryPreview);
 
-// Program previews
-CMS.registerPreviewTemplate('programs_pl', ProgramPreview);
-CMS.registerPreviewTemplate('programs_en', ProgramPreview);
+  // Program previews
+  CMS.registerPreviewTemplate('programs_pl', ProgramPreview);
+  CMS.registerPreviewTemplate('programs_en', ProgramPreview);
 
-// Static pages (About, Contact)
-CMS.registerPreviewTemplate('static_pages_pl', AboutPreview);
-CMS.registerPreviewTemplate('static_pages_en', AboutPreview);
+  // Static pages (uses unified resolver to handle About and Contact)
+  CMS.registerPreviewTemplate('static_pages_pl', StaticPagePreview);
+  CMS.registerPreviewTemplate('static_pages_en', StaticPagePreview);
 
-// Homepage previews
-CMS.registerPreviewTemplate('homepage_pl', HomepagePreview);
-CMS.registerPreviewTemplate('homepage_en', HomepagePreview);
+  // Homepage previews
+  CMS.registerPreviewTemplate('homepage_pl', HomepagePreview);
+  CMS.registerPreviewTemplate('homepage_en', HomepagePreview);
 
-// Program overview pages
-CMS.registerPreviewTemplate('programs_overview_pl', PagePreview);
-CMS.registerPreviewTemplate('programs_overview_en', PagePreview);
+  // Program overview pages
+  CMS.registerPreviewTemplate('programs_overview_pl', PagePreview);
+  CMS.registerPreviewTemplate('programs_overview_en', PagePreview);
 
-console.log('Wesole Nutki CMS preview templates loaded successfully');
+  // Document previews
+  CMS.registerPreviewTemplate('documents_pl', DocumentPreview);
+  CMS.registerPreviewTemplate('documents_en', DocumentPreview);
+
+  console.log('Wesole Nutki CMS preview templates loaded successfully');
+  console.log('Registered templates:', {
+    news: ['news_pl', 'news_en'],
+    pages: ['pages_pl', 'pages_en'],
+    gallery: ['gallery_pl', 'gallery_en'],
+    programs: ['programs_pl', 'programs_en'],
+    static_pages: ['static_pages_pl (auto-resolver)', 'static_pages_en (auto-resolver)'],
+    homepage: ['homepage_pl', 'homepage_en'],
+    programs_overview: ['programs_overview_pl', 'programs_overview_en'],
+    documents: ['documents_pl', 'documents_en']
+  });
+} else {
+  console.error('Decap CMS not loaded. Preview templates cannot be registered.');
+}

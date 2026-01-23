@@ -1,0 +1,28 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix Header Shadow for Readability\n\nUpdate the header's drop shadow styling to use white color instead of its current color, which makes it difficult to read against the background.\n\nRequirements:\n- Change the header shadow color to white\n- Verify shadow is visible and improves text readability\n- Test against different background colors/images that may appear behind the header\n- Ensure shadow has appropriate opacity and blur radius for optimal contrast\n- Check readability on both desktop and mobile viewports\n- Confirm the change doesn't negatively impact accessibility (WCAG contrast requirements)",
+  "title": "Update header shadow to white for improved readability",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "backlog",
+  "id": "feature-1769198748571-n5lijnoy0",
+  "descriptionHistory": [
+    {
+      "description": "Fix Header Shadow for Readability\n\nUpdate the header's drop shadow styling to use white color instead of its current color, which makes it difficult to read against the background.\n\nRequirements:\n- Change the header shadow color to white\n- Verify shadow is visible and improves text readability\n- Test against different background colors/images that may appear behind the header\n- Ensure shadow has appropriate opacity and blur radius for optimal contrast\n- Check readability on both desktop and mobile viewports\n- Confirm the change doesn't negatively impact accessibility (WCAG contrast requirements)",
+      "timestamp": "2026-01-23T20:05:48.600Z",
+      "source": "initial"
+    }
+  ]
+}

@@ -63,22 +63,6 @@
       {{- range $related -}}
       {{- $relatedPost := . -}}
       <article class="related-post-card">
-        {{- with .Params.featured_image -}}
-        <a href="{{ $relatedPost.Permalink }}" class="related-post-image">
-          {{ partial "responsive-image" (dict
-            "src" .
-            "alt" $relatedPost.Title
-            "class" "related-post-img"
-            "sizes" "(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw"
-            "loading" "lazy"
-            "context" $relatedPost
-          ) }}
-        </a>
-        {{- else -}}
-        <a href="{{ $relatedPost.Permalink }}" class="related-post-image related-post-placeholder">
-          <span class="placeholder-icon">📰</span>
-        </a>
-        {{- end -}}
         <div class="related-post-content">
           {{- if not .Date.IsZero -}}
           <time datetime="{{ .Date.Format "2006-01-02" }}" class="related-post-date">

@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Implement CMS Preview Template Resolution\n\nConfigure the CMS preview functionality to correctly apply and render page templates that match the published version of the site.\n\nRequirements:\n- Investigate why preview mode is not loading the correct templates\n- Ensure preview mode uses the same template selection logic as the live site\n- Map CMS content types to their corresponding page templates\n- Verify template data bindings are working correctly in preview mode\n- Handle cases where template may not exist or content type is misconfigured\n- Test preview functionality across all content types and page templates\n- Ensure preview accurately reflects how the page will appear when published\n- Validate that template assets (CSS, JS) load correctly in preview mode\n\nEdge cases to consider:\n- New content types without assigned templates\n- Template changes that haven't been deployed yet\n- Nested or dynamic template components\n- Custom fields that may not render in preview",
+  "title": "Fix CMS preview template resolution and rendering",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "completed",
+  "id": "feature-1769196908659-psa1ejpo6",
+  "descriptionHistory": [
+    {
+      "description": "Implement CMS Preview Template Resolution\n\nConfigure the CMS preview functionality to correctly apply and render page templates that match the published version of the site.\n\nRequirements:\n- Investigate why preview mode is not loading the correct templates\n- Ensure preview mode uses the same template selection logic as the live site\n- Map CMS content types to their corresponding page templates\n- Verify template data bindings are working correctly in preview mode\n- Handle cases where template may not exist or content type is misconfigured\n- Test preview functionality across all content types and page templates\n- Ensure preview accurately reflects how the page will appear when published\n- Validate that template assets (CSS, JS) load correctly in preview mode\n\nEdge cases to consider:\n- New content types without assigned templates\n- Template changes that haven't been deployed yet\n- Nested or dynamic template components\n- Custom fields that may not render in preview",
+      "timestamp": "2026-01-23T19:35:08.760Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T19:41:21.773Z"
+}

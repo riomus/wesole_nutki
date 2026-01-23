@@ -1,7 +1,7 @@
 {
   "category": "Uncategorized",
   "description": "Add Contact Page Redirect to Home Page Appointment Button\n\nConfigure the \"umów wizytę\" (book appointment) button on the home page to navigate users to the contact page with proper language routing.\n\nRequirements:\n- Locate the \"umów wizytę\" button component on the home page\n- Update the button's href/onClick to route to /<lang>/contact where <lang> is the current locale\n- Ensure language parameter is dynamically populated based on active language (e.g., /en/contact, /pl/contact)\n- Maintain existing button styling and accessibility attributes\n- Verify navigation works correctly for all supported languages\n- Test that the routing preserves any existing query parameters if needed\n- Ensure the contact page exists and renders properly for all language variants",
-  "title": "",
+  "title": "Configure appointment button language-aware routing to contact page",
   "images": [],
   "imagePaths": [],
   "textFilePaths": [],
@@ -15,7 +15,7 @@
   "requirePlanApproval": false,
   "dependencies": [],
   "workMode": "current",
-  "titleGenerating": "Add Contact Page Redirect to Home Page Appointment Button\n\nConfigure the \"umów wizytę\" (book appointment) button on the home page to navigate users to the contact page with proper language routing.\n\nRequirements:\n- Locate the \"umów wizytę\" button component on the home page\n- Update the button's href/onClick to route to /<lang>/contact where <lang> is the current locale\n- Ensure language parameter is dynamically populated based on active language (e.g., /en/contact, /pl/contact)\n- Maintain existing button styling and accessibility attributes\n- Verify navigation works correctly for all supported languages\n- Test that the routing preserves any existing query parameters if needed\n- Ensure the contact page exists and renders properly for all language variants",
+  "titleGenerating": false,
   "status": "backlog",
   "id": "feature-1769181270760-wcrlhgpg9",
   "descriptionHistory": [

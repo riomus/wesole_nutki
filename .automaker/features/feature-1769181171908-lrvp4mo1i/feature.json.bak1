@@ -16,7 +16,7 @@
   "dependencies": [],
   "workMode": "current",
   "titleGenerating": false,
-  "status": "in_progress",
+  "status": "verified",
   "id": "feature-1769181171908-lrvp4mo1i",
   "descriptionHistory": [
     {
@@ -25,5 +25,5 @@
       "source": "initial"
     }
   ],
-  "updatedAt": "2026-01-23T15:12:55.430Z"
+  "updatedAt": "2026-01-23T15:19:17.075Z"
 }

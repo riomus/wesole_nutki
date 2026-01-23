@@ -2,458 +2,278 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/en/documents/statute/</loc>
+    <loc>http://localhost:52589/en/documents/statute/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/en/programs/toddlers/</loc>
+    <loc>http://localhost:52589/en/programs/toddlers/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/en/documents/enrollment-form/</loc>
+    <loc>http://localhost:52589/en/documents/enrollment-form/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/en/programs/preschoolers/</loc>
+    <loc>http://localhost:52589/en/programs/preschoolers/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/en/documents/privacy-policy/</loc>
+    <loc>http://localhost:52589/en/documents/privacy-policy/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/en/programs/pre-k/</loc>
+    <loc>http://localhost:52589/en/programs/pre-k/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/en/programs/kindergarten/</loc>
+    <loc>http://localhost:52589/en/programs/kindergarten/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/en/programs/schedule/</loc>
+    <loc>http://localhost:52589/en/programs/schedule/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="http://localhost:1313/pl/programs/schedule/"
+                href="http://localhost:52589/pl/programs/schedule/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/programs/schedule/"
+                href="http://localhost:52589/en/programs/schedule/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/child-protection-standards/</loc>
+    <loc>http://localhost:52589/en/child-protection-standards/</loc>
     <lastmod>2026-01-23T14:55:21+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/en/galleries/</loc>
+    <loc>http://localhost:52589/en/galleries/</loc>
     <lastmod>2026-01-23T14:55:21+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/en/daily-plan/events/</loc>
+    <loc>http://localhost:52589/en/daily-plan/events/</loc>
     <lastmod>2026-01-23T14:55:21+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/en/daily-plan/extra-activities/</loc>
+    <loc>http://localhost:52589/en/daily-plan/extra-activities/</loc>
     <lastmod>2026-01-23T14:55:21+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/en/schedule/</loc>
+    <loc>http://localhost:52589/en/schedule/</loc>
     <lastmod>2026-01-23T14:55:21+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/en/daily-plan/</loc>
+    <loc>http://localhost:52589/en/daily-plan/</loc>
     <lastmod>2026-01-23T14:55:21+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/en/staff/</loc>
+    <loc>http://localhost:52589/en/staff/</loc>
     <lastmod>2026-01-23T14:55:21+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/en/about/enrollment/</loc>
+    <loc>http://localhost:52589/en/about/enrollment/</loc>
     <lastmod>2026-01-23T14:55:21+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/en/about/payments/</loc>
+    <loc>http://localhost:52589/en/about/payments/</loc>
     <lastmod>2026-01-23T14:55:21+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/en/about/pricing/</loc>
+    <loc>http://localhost:52589/en/about/pricing/</loc>
     <lastmod>2026-01-23T14:55:21+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/en/about/offer/</loc>
+    <loc>http://localhost:52589/en/about/offer/</loc>
     <lastmod>2026-01-23T14:55:21+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/en/about/vision/</loc>
+    <loc>http://localhost:52589/en/about/vision/</loc>
     <lastmod>2026-01-23T14:55:21+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/en/recruitment/</loc>
+    <loc>http://localhost:52589/en/recruitment/</loc>
     <lastmod>2026-01-23T14:55:21+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/en/categories/</loc>
+    <loc>http://localhost:52589/en/categories/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="http://localhost:1313/pl/categories/"
+                href="http://localhost:52589/pl/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/categories/"
+                href="http://localhost:52589/en/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/categories/events/</loc>
+    <loc>http://localhost:52589/en/categories/events/</loc>
+    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:52589/en/tags/fun/</loc>
+    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:52589/en/tags/snow/</loc>
+    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:52589/en/tags/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="http://localhost:1313/pl/categories/events/"
+                href="http://localhost:52589/pl/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/categories/events/"
+                href="http://localhost:52589/en/tags/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/tags/fun/</loc>
+    <loc>http://localhost:52589/en/categories/winter/</loc>
+    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:52589/en/tags/winter/</loc>
+    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:52589/en/news/2025/01/winter-fun-in-the-snow/</loc>
+    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:52589/en/categories/activities/</loc>
+    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:52589/en/tags/cooking/</loc>
+    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:52589/en/news/2024/11/cooking-workshops-for-children/</loc>
+    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:52589/en/tags/healthy-eating/</loc>
+    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:52589/en/tags/workshops/</loc>
+    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:52589/en/gallery/autumn-festival-2024/</loc>
+    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:52589/en/gallery_categories/events/</loc>
+    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:52589/en/gallery_categories/family/</loc>
+    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:52589/en/gallery_categories/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="http://localhost:1313/pl/tags/fun/"
+                href="http://localhost:52589/pl/gallery_categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/tags/fun/"
+                href="http://localhost:52589/en/gallery_categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/tags/snow/</loc>
+    <loc>http://localhost:52589/en/tags/autumn/</loc>
+    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:52589/en/news/2024/10/autumn-family-picnic/</loc>
+    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:52589/en/tags/family/</loc>
+    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:52589/en/tags/picnic/</loc>
+    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:52589/en/tags/beginning/</loc>
+    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:52589/en/tags/school-year/</loc>
+    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:52589/en/news/2024/09/welcome-to-the-new-school-year-2024/2025/</loc>
+    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:52589/en/gallery_categories/daily-activities/</loc>
+    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:52589/en/gallery/daily-activities/</loc>
+    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:52589/en/gallery_categories/excursions/</loc>
+    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:52589/en/gallery/spring-trip-2024/</loc>
+    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:52589/en/gallery/christmas-2023/</loc>
+    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:52589/en/gallery_categories/holidays/</loc>
+    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:52589/en/about/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="http://localhost:1313/pl/tags/snow/"
+                href="http://localhost:52589/pl/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/tags/snow/"
+                href="http://localhost:52589/en/about/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/tags/</loc>
+    <loc>http://localhost:52589/en/contact/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="http://localhost:1313/pl/tags/"
+                href="http://localhost:52589/pl/contact/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/tags/"
+                href="http://localhost:52589/en/contact/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/categories/winter/</loc>
+    <loc>http://localhost:52589/en/documents/</loc>
+    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:52589/en/gallery/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="http://localhost:1313/pl/categories/winter/"
+                href="http://localhost:52589/pl/gallery/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/categories/winter/"
+                href="http://localhost:52589/en/gallery/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/tags/winter/</loc>
+    <loc>http://localhost:52589/en/news/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="http://localhost:1313/pl/tags/winter/"
+                href="http://localhost:52589/pl/news/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/tags/winter/"
+                href="http://localhost:52589/en/news/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/news/2025/01/winter-fun-in-the-snow/</loc>
-    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/en/categories/activities/</loc>
+    <loc>http://localhost:52589/en/programs/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="http://localhost:1313/pl/categories/activities/"
+                href="http://localhost:52589/pl/programs/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/categories/activities/"
+                href="http://localhost:52589/en/programs/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/tags/cooking/</loc>
+    <loc>http://localhost:52589/en/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="http://localhost:1313/pl/tags/cooking/"
+                href="http://localhost:52589/pl/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/tags/cooking/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/en/news/2024/11/cooking-workshops-for-children/</loc>
-    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/en/tags/healthy-eating/</loc>
-    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="http://localhost:1313/pl/tags/healthy-eating/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/tags/healthy-eating/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/en/tags/workshops/</loc>
-    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="http://localhost:1313/pl/tags/workshops/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/tags/workshops/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/en/gallery/autumn-festival-2024/</loc>
-    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/en/gallery_categories/events/</loc>
-    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="http://localhost:1313/pl/gallery_categories/events/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/gallery_categories/events/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/en/gallery_categories/family/</loc>
-    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="http://localhost:1313/pl/gallery_categories/family/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/gallery_categories/family/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/en/gallery_categories/</loc>
-    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="http://localhost:1313/pl/gallery_categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/gallery_categories/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/en/tags/autumn/</loc>
-    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="http://localhost:1313/pl/tags/autumn/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/tags/autumn/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/en/news/2024/10/autumn-family-picnic/</loc>
-    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/en/tags/family/</loc>
-    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="http://localhost:1313/pl/tags/family/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/tags/family/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/en/tags/picnic/</loc>
-    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="http://localhost:1313/pl/tags/picnic/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/tags/picnic/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/en/tags/beginning/</loc>
-    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="http://localhost:1313/pl/tags/beginning/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/tags/beginning/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/en/tags/school-year/</loc>
-    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="http://localhost:1313/pl/tags/school-year/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/tags/school-year/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/en/news/2024/09/welcome-to-the-new-school-year-2024/2025/</loc>
-    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/en/gallery_categories/daily-activities/</loc>
-    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="http://localhost:1313/pl/gallery_categories/daily-activities/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/gallery_categories/daily-activities/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/en/gallery/daily-activities/</loc>
-    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/en/gallery_categories/excursions/</loc>
-    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="http://localhost:1313/pl/gallery_categories/excursions/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/gallery_categories/excursions/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/en/gallery/spring-trip-2024/</loc>
-    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/en/gallery/christmas-2023/</loc>
-    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/en/gallery_categories/holidays/</loc>
-    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="http://localhost:1313/pl/gallery_categories/holidays/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/gallery_categories/holidays/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/en/about/</loc>
-    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/en/contact/</loc>
-    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/en/documents/</loc>
-    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="http://localhost:1313/pl/documents/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/documents/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/en/gallery/</loc>
-    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="http://localhost:1313/pl/gallery/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/gallery/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/en/news/</loc>
-    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="http://localhost:1313/pl/news/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/news/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/en/programs/</loc>
-    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="http://localhost:1313/pl/programs/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/programs/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/en/</loc>
-    <lastmod>2026-01-23T14:32:29+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="http://localhost:1313/pl/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/"
+                href="http://localhost:52589/en/"
                 />
   </url>
 </urlset>

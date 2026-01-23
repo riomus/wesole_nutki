@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Reorganize Content Directory Structure for Multilingual CMS Support\n\nAudit and restructure the content directory to ensure Polish language pages are correctly placed in the 'pl' subdirectory for proper CMS functionality.\n\nRequirements:\n- Scan the content directory to identify all Polish language pages currently located outside the 'pl' folder\n- Move all Polish pages to content/pl/ maintaining their relative structure\n- Verify other language pages are also in their correct language-specific directories\n- Update any internal references or links that point to the moved files\n- Check CMS configuration to confirm it expects this directory structure\n- Test CMS functionality after reorganization to ensure pages are properly detected and editable\n- Document the correct directory structure convention for future content additions\n\nEdge cases to consider:\n- Pages with mixed language content or translation pairs\n- Asset references (images, files) that may use relative paths\n- URL routing that may depend on file location\n- Build process dependencies on specific directory structures",
+  "title": "Reorganize content directory for multilingual CMS support",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "completed",
+  "id": "feature-1769198695080-kn65zx3vf",
+  "descriptionHistory": [
+    {
+      "description": "Reorganize Content Directory Structure for Multilingual CMS Support\n\nAudit and restructure the content directory to ensure Polish language pages are correctly placed in the 'pl' subdirectory for proper CMS functionality.\n\nRequirements:\n- Scan the content directory to identify all Polish language pages currently located outside the 'pl' folder\n- Move all Polish pages to content/pl/ maintaining their relative structure\n- Verify other language pages are also in their correct language-specific directories\n- Update any internal references or links that point to the moved files\n- Check CMS configuration to confirm it expects this directory structure\n- Test CMS functionality after reorganization to ensure pages are properly detected and editable\n- Document the correct directory structure convention for future content additions\n\nEdge cases to consider:\n- Pages with mixed language content or translation pairs\n- Asset references (images, files) that may use relative paths\n- URL routing that may depend on file location\n- Build process dependencies on specific directory structures",
+      "timestamp": "2026-01-23T20:04:55.107Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T20:11:02.975Z"
+}

@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Remove Images from Post List Views and Display Text Excerpts Only\n\nModify the post list display to exclude images from post content and show only a text preview for each post entry.\n\nRequirements:\n- Strip all images from post content when rendering in list views\n- Display a text-only excerpt from each post (no image tags or embedded media)\n- Determine appropriate excerpt length (e.g., 150-200 characters or first paragraph)\n- Add ellipsis or \"Read more\" indicator if text is truncated\n- Ensure images still display normally in individual post detail views\n- Handle edge cases: posts with only images, posts with no text content\n- Maintain proper text formatting while removing image elements\n- Verify changes apply to all post list contexts (home page, category pages, search results, archive views)",
+  "title": "Remove Images from Post List Views, Show Text Excerpts",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "completed",
+  "id": "feature-1769199379963-dzrxrwoy9",
+  "descriptionHistory": [
+    {
+      "description": "Remove Images from Post List Views and Display Text Excerpts Only\n\nModify the post list display to exclude images from post content and show only a text preview for each post entry.\n\nRequirements:\n- Strip all images from post content when rendering in list views\n- Display a text-only excerpt from each post (no image tags or embedded media)\n- Determine appropriate excerpt length (e.g., 150-200 characters or first paragraph)\n- Add ellipsis or \"Read more\" indicator if text is truncated\n- Ensure images still display normally in individual post detail views\n- Handle edge cases: posts with only images, posts with no text content\n- Maintain proper text formatting while removing image elements\n- Verify changes apply to all post list contexts (home page, category pages, search results, archive views)",
+      "timestamp": "2026-01-23T20:16:20.052Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T20:22:55.530Z"
+}

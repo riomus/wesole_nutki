@@ -2,6 +2,325 @@
   "version": 1,
   "events": [
     {
+      "id": "evt-1769201047711-9bc137cf",
+      "trigger": "auto_mode_complete",
+      "timestamp": "2026-01-23T20:44:07.711Z"
+    },
+    {
+      "id": "evt-1769201044595-6e03d7dd",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T20:44:04.595Z",
+      "featureName": "Implement fallback images for missing news thumbnails",
+      "featureId": "feature-1769200629832-4n7kultk4"
+    },
+    {
+      "id": "evt-1769200859605-4202056d",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T20:40:59.605Z",
+      "featureName": "Add Close Button to Lightbox Image Preview",
+      "featureId": "feature-1769200270493-grg479vwp"
+    },
+    {
+      "id": "evt-1769200766201-0a7608db",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T20:39:26.201Z",
+      "featureName": "Synchronize English menu structure with Polish menu",
+      "featureId": "feature-1769200470181-vcf90fgww"
+    },
+    {
+      "id": "evt-1769200741782-6995a83a",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T20:39:01.782Z",
+      "featureName": "Fix image error positioning in program card header",
+      "featureId": "feature-1769200536681-kmhej47mj"
+    },
+    {
+      "id": "evt-1769200629874-b1c6ad16",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T20:37:09.874Z",
+      "featureId": "feature-1769200629832-4n7kultk4"
+    },
+    {
+      "id": "evt-1769200536717-b9d28faf",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T20:35:36.717Z",
+      "featureId": "feature-1769200536681-kmhej47mj"
+    },
+    {
+      "id": "evt-1769200470276-c9a33dbd",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T20:34:30.276Z",
+      "featureId": "feature-1769200470181-vcf90fgww"
+    },
+    {
+      "id": "evt-1769200432423-a21a51f4",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T20:33:52.423Z",
+      "featureName": "",
+      "featureId": "feature-1769200250785-9ix55wodd"
+    },
+    {
+      "id": "evt-1769200270587-2b0fc6b5",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T20:31:10.587Z",
+      "featureId": "feature-1769200270493-grg479vwp"
+    },
+    {
+      "id": "evt-1769200250877-31f732d1",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T20:30:50.877Z",
+      "featureId": "feature-1769200250785-9ix55wodd"
+    },
+    {
+      "id": "evt-1769200233466-670f78a4",
+      "trigger": "auto_mode_complete",
+      "timestamp": "2026-01-23T20:30:33.466Z"
+    },
+    {
+      "id": "evt-1769200223638-84c7ce58",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T20:30:23.638Z",
+      "featureName": "",
+      "featureId": "feature-1769199938654-lwgam3nlq"
+    },
+    {
+      "id": "evt-1769200129210-36073e86",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T20:28:49.210Z",
+      "featureName": "",
+      "featureId": "feature-1769199757328-erl0kdx3l"
+    },
+    {
+      "id": "evt-1769200007767-c31a9cd7",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T20:26:47.767Z",
+      "featureName": "Fix image-error positioning in program-card-header",
+      "featureId": "feature-1769199859394-me4236dzp"
+    },
+    {
+      "id": "evt-1769199938747-7f386b9e",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T20:25:38.747Z",
+      "featureId": "feature-1769199938654-lwgam3nlq"
+    },
+    {
+      "id": "evt-1769199859483-df43f33e",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T20:24:19.483Z",
+      "featureId": "feature-1769199859394-me4236dzp"
+    },
+    {
+      "id": "evt-1769199830529-4cddc33e",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T20:23:50.529Z",
+      "featureName": "Remove text shadows and update hero typography colors",
+      "featureId": "feature-1769199525604-phkawtbdo"
+    },
+    {
+      "id": "evt-1769199775539-5567f320",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T20:22:55.539Z",
+      "featureName": "Remove Images from Post List Views, Show Text Excerpts",
+      "featureId": "feature-1769199379963-dzrxrwoy9"
+    },
+    {
+      "id": "evt-1769199758311-a0b81ade",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T20:22:38.311Z",
+      "featureName": "Fix image-error positioning in about-mission component",
+      "featureId": "feature-1769199491959-donz5jggt"
+    },
+    {
+      "id": "evt-1769199757375-23cea037",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T20:22:37.375Z",
+      "featureId": "feature-1769199757328-erl0kdx3l"
+    },
+    {
+      "id": "evt-1769199525689-f7191002",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T20:18:45.689Z",
+      "featureId": "feature-1769199525604-phkawtbdo"
+    },
+    {
+      "id": "evt-1769199492037-cb580042",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T20:18:12.037Z",
+      "featureId": "feature-1769199491959-donz5jggt"
+    },
+    {
+      "id": "evt-1769199418818-4e823c70",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T20:16:58.818Z",
+      "featureName": "Add close button to expanded gallery view",
+      "featureId": "feature-1769198799354-x8w1zkaal"
+    },
+    {
+      "id": "evt-1769199380053-8bef38f8",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T20:16:20.053Z",
+      "featureId": "feature-1769199379963-dzrxrwoy9"
+    },
+    {
+      "id": "evt-1769199317780-3abda3b5",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T20:15:17.780Z",
+      "featureName": "Update header shadow to white for improved readability",
+      "featureId": "feature-1769198748571-n5lijnoy0"
+    },
+    {
+      "id": "evt-1769199071458-03095d3a",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T20:11:11.458Z",
+      "featureName": "Align English website structure with Polish version",
+      "featureId": "feature-1769198437271-vaeq3wzmg"
+    },
+    {
+      "id": "evt-1769199062984-fddf20d0",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T20:11:02.984Z",
+      "featureName": "Reorganize content directory for multilingual CMS support",
+      "featureId": "feature-1769198695080-kn65zx3vf"
+    },
+    {
+      "id": "evt-1769199043650-42ce4043",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T20:10:43.650Z",
+      "featureName": "Fix Menu English Translation Display",
+      "featureId": "feature-1769198299478-3gv372r7i"
+    },
+    {
+      "id": "evt-1769198799385-9978120e",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T20:06:39.385Z",
+      "featureId": "feature-1769198799354-x8w1zkaal"
+    },
+    {
+      "id": "evt-1769198748602-4200e2bf",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T20:05:48.602Z",
+      "featureId": "feature-1769198748571-n5lijnoy0"
+    },
+    {
+      "id": "evt-1769198722189-a33d7f1e",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T20:05:22.189Z",
+      "featureName": "",
+      "featureId": "feature-1769198231306-mljs4x3xe"
+    },
+    {
+      "id": "evt-1769198695108-d2e55537",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T20:04:55.108Z",
+      "featureId": "feature-1769198695080-kn65zx3vf"
+    },
+    {
+      "id": "evt-1769198683951-51c48215",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T20:04:43.951Z",
+      "featureName": "",
+      "featureId": "feature-1769198156792-vlv5e4b5p"
+    },
+    {
+      "id": "evt-1769198636753-ced131e0",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T20:03:56.753Z",
+      "featureName": "",
+      "featureId": "feature-1769198191254-jege90h2h"
+    },
+    {
+      "id": "evt-1769198437870-07310744",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T20:00:37.870Z",
+      "featureId": "feature-1769198437271-vaeq3wzmg"
+    },
+    {
+      "id": "evt-1769198299560-992c1344",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T19:58:19.560Z",
+      "featureId": "feature-1769198299478-3gv372r7i"
+    },
+    {
+      "id": "evt-1769198231335-051bb2c8",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T19:57:11.335Z",
+      "featureId": "feature-1769198231306-mljs4x3xe"
+    },
+    {
+      "id": "evt-1769198191343-1bcb7cb0",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T19:56:31.343Z",
+      "featureId": "feature-1769198191254-jege90h2h"
+    },
+    {
+      "id": "evt-1769198156876-8d06dfbc",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T19:55:56.876Z",
+      "featureId": "feature-1769198156792-vlv5e4b5p"
+    },
+    {
+      "id": "evt-1769198019642-4297f41e",
+      "trigger": "auto_mode_complete",
+      "timestamp": "2026-01-23T19:53:39.642Z"
+    },
+    {
+      "id": "evt-1769198018799-94c4f1b3",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T19:53:38.799Z",
+      "featureName": "",
+      "featureId": "feature-1769197549966-jxatyzkpt"
+    },
+    {
+      "id": "evt-1769197965538-60f8c5a2",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T19:52:45.538Z",
+      "featureName": "",
+      "featureId": "feature-1769197516632-11xamc86c"
+    },
+    {
+      "id": "evt-1769197667101-5bc3fce4",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T19:47:47.101Z",
+      "featureName": "Fix image error state positioning in responsive wrapper",
+      "featureId": "feature-1769197487716-bfvwlkrwx"
+    },
+    {
+      "id": "evt-1769197550002-31761c71",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T19:45:50.002Z",
+      "featureId": "feature-1769197549966-jxatyzkpt"
+    },
+    {
+      "id": "evt-1769197516668-fff70228",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T19:45:16.668Z",
+      "featureId": "feature-1769197516632-11xamc86c"
+    },
+    {
+      "id": "evt-1769197487808-cbda1ca9",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T19:44:47.808Z",
+      "featureId": "feature-1769197487716-bfvwlkrwx"
+    },
+    {
+      "id": "evt-1769197285107-37d86a36",
+      "trigger": "auto_mode_complete",
+      "timestamp": "2026-01-23T19:41:25.107Z"
+    },
+    {
+      "id": "evt-1769197281784-92281b55",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T19:41:21.784Z",
+      "featureName": "",
+      "featureId": "feature-1769196908659-psa1ejpo6"
+    },
+    {
+      "id": "evt-1769196908761-988ecc09",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T19:35:08.761Z",
+      "featureId": "feature-1769196908659-psa1ejpo6"
+    },
+    {
       "id": "evt-1769191949341-6cc81829",
       "trigger": "auto_mode_complete",
       "timestamp": "2026-01-23T18:12:29.341Z"

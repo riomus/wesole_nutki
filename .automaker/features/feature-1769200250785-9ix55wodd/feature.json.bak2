@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Display Featured Images on News Cards Without Content Images\n\nUpdate the news page to show the main promotional image for each news card while preventing images from appearing within the article content.\n\nRequirements:\n- Display the featured/promotional image at the top or thumbnail position of each news card\n- Ensure the promotional image is visually prominent and properly sized for the card layout\n- Strip or hide all images that appear within the article content text\n- Maintain proper aspect ratios and responsive behavior for card images\n- Preserve other content elements (title, excerpt, date, author, etc.)\n- Handle cases where no promotional image exists (show placeholder or default state)\n- Ensure performance is not impacted by image loading (implement lazy loading if needed)\n\nTechnical considerations:\n- Identify the correct field/property for the promotional/featured image\n- Implement content sanitization to remove inline images from article body\n- Test with various content lengths and image sizes\n- Verify layout consistency across different screen sizes",
+  "title": "Display featured images on news cards",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "in_progress",
+  "id": "feature-1769200250785-9ix55wodd",
+  "descriptionHistory": [
+    {
+      "description": "Display Featured Images on News Cards Without Content Images\n\nUpdate the news page to show the main promotional image for each news card while preventing images from appearing within the article content.\n\nRequirements:\n- Display the featured/promotional image at the top or thumbnail position of each news card\n- Ensure the promotional image is visually prominent and properly sized for the card layout\n- Strip or hide all images that appear within the article content text\n- Maintain proper aspect ratios and responsive behavior for card images\n- Preserve other content elements (title, excerpt, date, author, etc.)\n- Handle cases where no promotional image exists (show placeholder or default state)\n- Ensure performance is not impacted by image loading (implement lazy loading if needed)\n\nTechnical considerations:\n- Identify the correct field/property for the promotional/featured image\n- Implement content sanitization to remove inline images from article body\n- Test with various content lengths and image sizes\n- Verify layout consistency across different screen sizes",
+      "timestamp": "2026-01-23T20:30:50.876Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T20:30:53.577Z"
+}

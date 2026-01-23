@@ -2347,6 +2347,409 @@ Requirements:
 - Verify the error state still displays correctly (error icon, message, or fallback content)
 - Test that successful image loading is not affected by the fix</description>
     </feature>
+    <feature>
+      <name>Fix CMS preview template resolution and rendering</name>
+      <description>Implement CMS Preview Template Resolution
+
+Configure the CMS preview functionality to correctly apply and render page templates that match the published version of the site.
+
+Requirements:
+- Investigate why preview mode is not loading the correct templates
+- Ensure preview mode uses the same template selection logic as the live site
+- Map CMS content types to their corresponding page templates
+- Verify template data bindings are working correctly in preview mode
+- Handle cases where template may not exist or content type is misconfigured
+- Test preview functionality across all content types and page templates
+- Ensure preview accurately reflects how the page will appear when published
+- Validate that template assets (CSS, JS) load correctly in preview mode
+
+Edge cases to consider:
+- New content types without assigned templates
+- Template changes that haven&apos;t been deployed yet
+- Nested or dynamic template components
+- Custom fields that may not render in preview</description>
+    </feature>
+    <feature>
+      <name>Fix image error state positioning in responsive wrapper</name>
+      <description>Fix Responsive Image Wrapper Positioning for Image Error States
+
+Correct the CSS positioning property for `.responsive-image-wrapper.image-error` elements to resolve sizing issues when images fail to load.
+
+Requirements:
+- Update `.responsive-image-wrapper.image-error` CSS rule to use `position: initial` instead of current positioning value
+- Verify that image error state dimensions now render correctly
+- Test that the change doesn&apos;t break layout for successful image loads
+- Ensure the fix works across different viewport sizes (mobile, tablet, desktop)
+- Check for any parent container layout conflicts that might be affected by this change
+- Validate that other states of `.responsive-image-wrapper` (loading, success) remain unaffected</description>
+    </feature>
+    <feature>
+      <name>Synchronize Polish and English data structures</name>
+      <description>Ensure Polish (pl) and English (en) Data Structures are Identical
+
+Verify and align the data structures between Polish and English language configurations to maintain consistency across both language versions.
+
+Requirements:
+- Compare the structure of pl and en data objects/files (keys, nesting levels, data types)
+- Identify any missing keys, extra keys, or structural differences between the two
+- Add any missing keys from one language to the other with appropriate placeholder values
+- Ensure nested object hierarchies match exactly between pl and en
+- Verify array structures contain the same number of elements and types
+- Remove any language-specific keys that don&apos;t exist in both versions (or document why they should remain)
+- Validate that both structures can be parsed by the same code without conditional logic
+- Run tests or validation to confirm structural parity
+
+Edge cases to consider:
+- Keys that exist in one language but not the other
+- Different data types for the same key (string vs object, etc.)
+- Inconsistent nesting depth
+- Arrays with mismatched lengths
+- Extra whitespace or formatting differences that might hide structural issues</description>
+    </feature>
+    <feature>
+      <name>Implement Multilingual CMS Content Management System</name>
+      <description>Implement Multilingual CMS Content Management for All Webpage Text
+
+Enable full content management system (CMS) control for all text elements displayed on the website, supporting both English (en) and Polish (pl) languages.
+
+Requirements:
+- Audit all hardcoded text strings across the entire website
+- Move all text content to CMS-managed fields or content blocks
+- Create language-specific content entries for English and Polish
+- Implement language switcher functionality that dynamically loads appropriate content
+- Ensure CMS provides intuitive editing interface for both language versions
+- Include all text types: headings, body copy, buttons, labels, tooltips, error messages, and alt text
+- Set up translation workflow if content editors need to manage both languages
+- Add validation to ensure both language versions are populated before publishing
+- Test that language switching works correctly on all pages
+- Document which CMS fields correspond to which on-page elements for content editors
+
+Edge cases to consider:
+- Text embedded in images or SVGs (should be replaced with accessible alternatives)
+- Dynamic content that combines text with user data
+- Date, time, and number formatting differences between locales
+- Right-to-left layout considerations if future languages require it
+- Fallback behavior when translation is missing in one language</description>
+    </feature>
+    <feature>
+      <name>Improve hero paragraph contrast and readability</name>
+      <description>Fix Hero Headline Paragraph Visibility Issue
+
+Improve the contrast and readability of the paragraph text within the hero-headline section that is currently difficult to see due to insufficient contrast with the hero overlay shadow.
+
+Requirements:
+- Identify the current paragraph text color in the hero-headline component
+- Analyze the hero overlay shadow color and opacity causing the contrast issue
+- Adjust the paragraph text color to ensure sufficient contrast ratio (minimum WCAG AA standard: 4.5:1 for normal text)
+- Consider alternative solutions: modify overlay opacity, add text shadow, or apply background gradient
+- Test visibility across different screen sizes and devices
+- Ensure the fix maintains the overall design aesthetic
+- Verify readability in various lighting conditions if possible</description>
+    </feature>
+    <feature>
+      <name>Fix featured image error icon positioning</name>
+      <description>Fix Featured Image Error Icon Positioning
+
+Correct the positioning of the error icon that displays when the featured image fails to load in article components.
+
+Requirements:
+- Locate the image-error element within article-featured-image component
+- Add position: relative to the parent container (article-featured-image) to establish positioning context
+- Ensure the error icon displays in the intended location relative to the image container
+- Verify the error state displays correctly across different screen sizes and layouts
+- Test with both missing images and failed image loads to confirm proper positioning</description>
+    </feature>
+    <feature>
+      <name>Update language picker to reflect active selection</name>
+      <description>Update Language Picker to Reflect Current Language Selection
+
+Fix the language picker component so that it accurately displays the currently active language when the application language changes.
+
+Requirements:
+- Ensure language picker UI updates immediately when language is changed programmatically or through other means
+- Verify that the picker correctly displays the current language on initial component mount
+- Check that language state is properly synchronized between the language picker and the application&apos;s language context/store
+- Handle language changes triggered from multiple sources (user selection, system preference, URL parameter, stored preference)
+- Test language persistence across page refreshes and ensure picker reflects the persisted value
+- Verify proper reactivity to language state changes in the component lifecycle
+
+Edge cases to consider:
+- Language changes while picker dropdown is open
+- Rapid successive language changes
+- Invalid or unsupported language codes
+- Language change during component unmount/remount</description>
+    </feature>
+    <feature>
+      <name>Fix Menu English Translation Display</name>
+      <description>Fix Menu Internationalization - Ensure English Translation
+
+Resolve the issue where menu items are not displaying in English, ensuring proper internationalization support is implemented.
+
+Requirements:
+- Identify which menu components are not being translated (main navigation, dropdown menus, context menus, etc.)
+- Verify English translation strings exist in the language resource files
+- Ensure the i18n/localization library is properly configured and connected to menu components
+- Check that the correct language locale is being detected or set to English
+- Verify all menu items, labels, and tooltips are using translation keys rather than hardcoded text
+- Test menu display with English locale to confirm all items appear correctly
+- Check for any fallback language issues if English translations are missing
+
+Edge Cases to Consider:
+- Dynamic menu items generated from data
+- Nested or multi-level menu structures
+- Menu items that appear conditionally based on user state
+- Keyboard shortcuts or accessibility labels associated with menus</description>
+    </feature>
+    <feature>
+      <name>Reorganize content directory for multilingual CMS support</name>
+      <description>Reorganize Content Directory Structure for Multilingual CMS Support
+
+Audit and restructure the content directory to ensure Polish language pages are correctly placed in the &apos;pl&apos; subdirectory for proper CMS functionality.
+
+Requirements:
+- Scan the content directory to identify all Polish language pages currently located outside the &apos;pl&apos; folder
+- Move all Polish pages to content/pl/ maintaining their relative structure
+- Verify other language pages are also in their correct language-specific directories
+- Update any internal references or links that point to the moved files
+- Check CMS configuration to confirm it expects this directory structure
+- Test CMS functionality after reorganization to ensure pages are properly detected and editable
+- Document the correct directory structure convention for future content additions
+
+Edge cases to consider:
+- Pages with mixed language content or translation pairs
+- Asset references (images, files) that may use relative paths
+- URL routing that may depend on file location
+- Build process dependencies on specific directory structures</description>
+    </feature>
+    <feature>
+      <name>Align English website structure with Polish version</name>
+      <description>Fix English Website Structure to Match Polish Version
+
+Update the English version of the website to have the same page structure and content organization as the Polish version, with all content properly translated to English.
+
+Requirements:
+- Audit both Polish and English versions to identify structural differences
+- Create corresponding English pages for any pages that exist in Polish but are missing in English
+- Ensure navigation menu structure matches between both language versions
+- Translate all Polish content to English while maintaining the same:
+  - Page hierarchy and organization
+  - Section layouts and components
+  - Content types (text, images, links, forms, etc.)
+  - Call-to-action placements
+- Fix the home page to match Polish home page structure
+- Verify all internal links work correctly in English version
+- Ensure language switcher properly toggles between equivalent pages
+- Test that both versions have feature parity and parallel user journeys</description>
+    </feature>
+    <feature>
+      <name>Update header shadow to white for improved readability</name>
+      <description>Fix Header Shadow for Readability
+
+Update the header&apos;s drop shadow styling to use white color instead of its current color, which makes it difficult to read against the background.
+
+Requirements:
+- Change the header shadow color to white
+- Verify shadow is visible and improves text readability
+- Test against different background colors/images that may appear behind the header
+- Ensure shadow has appropriate opacity and blur radius for optimal contrast
+- Check readability on both desktop and mobile viewports
+- Confirm the change doesn&apos;t negatively impact accessibility (WCAG contrast requirements)</description>
+    </feature>
+    <feature>
+      <name>Add close button to expanded gallery view</name>
+      <description>Add Explicit Close Button to Gallery View
+
+Implement a visible X (close) button in the gallery view that appears when users click to expand an image, providing a clear way to exit back to the main view.
+
+Requirements:
+- Add a clearly visible X button in the expanded gallery view
+- Position the button in a standard location (typically top-right corner)
+- Ensure button remains visible and accessible regardless of image content or color
+- Apply appropriate styling for visibility (consider contrast, drop shadow, or background)
+- Close the gallery view and return to previous state when X button is clicked
+- Ensure button works on both desktop (mouse click) and mobile (touch)
+- Consider adding hover states for better user feedback on desktop
+- Maintain existing close functionality (ESC key, background click) alongside the new button</description>
+    </feature>
+    <feature>
+      <name>Fix image-error positioning in about-mission component</name>
+      <description>Fix About Mission Image Error Styling
+
+Add position:relative to the image-error class within the about-mission-image component to correct its layout behavior.
+
+Requirements:
+- Locate the CSS/styling for the image-error class in the about-mission-image context
+- Add position:relative to enable proper positioning of child elements or overlays
+- Verify the change doesn&apos;t break existing layout in other breakpoints (mobile, tablet, desktop)
+- Test that any absolutely positioned child elements now position correctly relative to this container
+- Ensure the fix doesn&apos;t introduce visual regressions in the about/mission section</description>
+    </feature>
+    <feature>
+      <name>Remove Images from Post List Views, Show Text Excerpts</name>
+      <description>Remove Images from Post List Views and Display Text Excerpts Only
+
+Modify the post list display to exclude images from post content and show only a text preview for each post entry.
+
+Requirements:
+- Strip all images from post content when rendering in list views
+- Display a text-only excerpt from each post (no image tags or embedded media)
+- Determine appropriate excerpt length (e.g., 150-200 characters or first paragraph)
+- Add ellipsis or &quot;Read more&quot; indicator if text is truncated
+- Ensure images still display normally in individual post detail views
+- Handle edge cases: posts with only images, posts with no text content
+- Maintain proper text formatting while removing image elements
+- Verify changes apply to all post list contexts (home page, category pages, search results, archive views)</description>
+    </feature>
+    <feature>
+      <name>Remove text shadows and update hero typography colors</name>
+      <description>Remove Text Shadows from Hero Section and Update Text Colors
+
+Update the hero section typography to improve readability by removing text shadows from headings and adjusting paragraph text color.
+
+Requirements:
+- Remove all text-shadow CSS properties from &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, etc. elements within the hero section
+- Change &lt;p&gt; element color to white (#ffffff or equivalent) in the hero section
+- Remove any text-shadow properties from &lt;p&gt; elements in the hero section
+- Ensure changes only affect the hero section, not other page areas
+- Verify text remains readable against the hero background
+- Check consistency across different viewport sizes and devices</description>
+    </feature>
+    <feature>
+      <name>Fix image-error positioning in program-card-header</name>
+      <description>Add Position Relative Styling to Image Error Element in Program Card Header
+
+Apply position:initial CSS property to the image-error element within the program-card-header component to fix layout positioning issues.
+
+Requirements:
+- Locate the image-error element inside program-card-header component
+- Add position:relative CSS rule to the image-error class or element
+- Verify the positioning change doesn&apos;t break existing layout or overlap other elements
+- Test with actual error states to ensure image error display renders correctly
+- Check responsive behavior across different screen sizes
+- Ensure z-index stacking context works as expected if absolute-positioned children exist</description>
+    </feature>
+    <feature>
+      <name>Fix pagination controls rendering issues on news pages</name>
+      <description>Fix Pagination Controls Display on News Pages
+
+Investigate and resolve rendering issues causing pagination controls to display incorrectly on news pages and other paginated content areas.
+
+Requirements:
+- Identify the specific display problems with pagination controls (alignment, visibility, layout breakage, missing elements)
+- Locate all news pages and other areas where pagination is used
+- Ensure pagination controls render correctly across different screen sizes and devices
+- Verify pagination functionality works properly (navigation between pages, current page indicator, disabled states for first/last pages)
+- Check for CSS conflicts or JavaScript errors affecting pagination display
+- Test with different data sets (few items, many items, edge cases like single page or empty results)
+- Ensure consistent styling with the rest of the application
+
+Edge cases to consider:
+- Single page of results (pagination should hide or disable appropriately)
+- Empty results or no data
+- Very large page numbers
+- Mobile and tablet viewports</description>
+    </feature>
+    <feature>
+      <name>Fix gallery card image error positioning</name>
+      <description>Fix Gallery Card Image Error State Positioning
+
+Update the CSS for the image error state in gallery card images to use `position: initial` instead of the current positioning value.
+
+Requirements:
+- Locate the `.image-error` class within the `.gallery-card-image` component
+- Change the position property from its current value to `position: initial`
+- Verify the error state displays correctly when images fail to load
+- Ensure the change doesn&apos;t break the layout of other gallery card elements
+- Test across different viewport sizes to confirm responsive behavior remains intact
+
+Edge cases to consider:
+- Error state appearance when gallery is in grid vs list view
+- Interaction with any overlay or placeholder elements
+- Proper alignment with card borders and padding</description>
+    </feature>
+    <feature>
+      <name>Display featured images on news cards</name>
+      <description>Display Featured Images on News Cards Without Content Images
+
+Update the news page to show the main promotional image for each news card while preventing images from appearing within the article content.
+
+Requirements:
+- Display the featured/promotional image at the top or thumbnail position of each news card
+- Ensure the promotional image is visually prominent and properly sized for the card layout
+- Strip or hide all images that appear within the article content text
+- Maintain proper aspect ratios and responsive behavior for card images
+- Preserve other content elements (title, excerpt, date, author, etc.)
+- Handle cases where no promotional image exists (show placeholder or default state)
+- Ensure performance is not impacted by image loading (implement lazy loading if needed)
+
+Technical considerations:
+- Identify the correct field/property for the promotional/featured image
+- Implement content sanitization to remove inline images from article body
+- Test with various content lengths and image sizes
+- Verify layout consistency across different screen sizes</description>
+    </feature>
+    <feature>
+      <name>Fix image error positioning in program card header</name>
+      <description>Fix Image Error Styling in Program Card Header
+
+Update the CSS for image error states within the program card header component to use position:relative and min-height:100% instead of the current positioning value.
+
+Requirements:
+- Locate the .image-error class or equivalent styling within the program-card-header component
+- Change the position property from its current value (likely absolute, relative, or fixed) to initial
+- Verify the change doesn&apos;t break the layout in normal display state
+- Test how the error state image displays across different card sizes and viewport widths
+- Ensure the image error placeholder or icon remains properly visible and aligned after the change
+- Check for any related styles that may need adjustment due to position change (z-index, top, left, right, bottom properties)</description>
+    </feature>
+    <feature>
+      <name>Synchronize English menu structure with Polish menu</name>
+      <description>Create English Menu Matching Polish Menu Structure
+
+Update the English language menu to contain identical navigation items as the Polish menu, with properly translated labels and localized URLs.
+
+Requirements:
+- Audit the Polish (pl) menu to identify all navigation items and their hierarchy
+- Create corresponding English (en) menu entries with the same structure and order
+- Translate all Polish menu item labels to English accurately
+- Update URLs to use English slugs/paths while maintaining the same destination pages
+- Ensure menu depth and nesting matches exactly between pl and en versions
+- Verify all links are functional and point to the correct English content
+- Maintain consistent styling and behavior across both language versions
+- Test navigation flow to ensure no broken links or missing pages</description>
+    </feature>
+    <feature>
+      <name>Add Close Button to Lightbox Image Preview</name>
+      <description>Add Explicit Close Button to Lightbox Image Preview
+
+Implement a visible and accessible close/exit button for the lightbox image preview component to improve user experience and discoverability.
+
+Requirements:
+- Add a clearly visible close button (typically an &quot;X&quot; icon) to the lightbox overlay
+- Position the button in a standard location (top-right corner is conventional)
+- Ensure the button is visible against all image backgrounds (use contrasting color or semi-transparent background)
+- Make the button easily clickable/tappable with appropriate touch target size (minimum 44x44px)
+- Maintain existing close functionality (ESC key, clicking overlay background) as fallback options
+- Add hover/focus states for better interactivity feedback
+- Ensure close button is keyboard accessible and properly announced to screen readers
+- Test across different viewport sizes to ensure button remains accessible on mobile devices</description>
+    </feature>
+    <feature>
+      <name>Implement fallback images for missing news thumbnails</name>
+      <description>Implement Fallback Image Handling for News Item Thumbnails
+
+Ensure all news items display a fallback placeholder image when the primary image is missing, broken, or fails to load on news pages.
+
+Requirements:
+- Detect when a news item&apos;s main image is unavailable (404, null, undefined, or failed to load)
+- Display a default fallback image in place of missing images
+- Maintain consistent aspect ratio and dimensions between actual and fallback images
+- Apply fallback logic to all news listing pages and detail views
+- Consider adding a generic news-related placeholder image if one doesn&apos;t exist
+- Handle edge cases: slow-loading images, network timeouts, CORS errors
+- Ensure fallback works for both initial render and runtime errors
+- Test with news items that have: no image URL, invalid URLs, and broken image links</description>
+    </feature>
   </implemented_features>
 
   <additional_requirements>

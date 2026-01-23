@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Ensure Polish (pl) and English (en) Data Structures are Identical\n\nVerify and align the data structures between Polish and English language configurations to maintain consistency across both language versions.\n\nRequirements:\n- Compare the structure of pl and en data objects/files (keys, nesting levels, data types)\n- Identify any missing keys, extra keys, or structural differences between the two\n- Add any missing keys from one language to the other with appropriate placeholder values\n- Ensure nested object hierarchies match exactly between pl and en\n- Verify array structures contain the same number of elements and types\n- Remove any language-specific keys that don't exist in both versions (or document why they should remain)\n- Validate that both structures can be parsed by the same code without conditional logic\n- Run tests or validation to confirm structural parity\n\nEdge cases to consider:\n- Keys that exist in one language but not the other\n- Different data types for the same key (string vs object, etc.)\n- Inconsistent nesting depth\n- Arrays with mismatched lengths\n- Extra whitespace or formatting differences that might hide structural issues",
+  "title": "",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": "Ensure Polish (pl) and English (en) Data Structures are Identical\n\nVerify and align the data structures between Polish and English language configurations to maintain consistency across both language versions.\n\nRequirements:\n- Compare the structure of pl and en data objects/files (keys, nesting levels, data types)\n- Identify any missing keys, extra keys, or structural differences between the two\n- Add any missing keys from one language to the other with appropriate placeholder values\n- Ensure nested object hierarchies match exactly between pl and en\n- Verify array structures contain the same number of elements and types\n- Remove any language-specific keys that don't exist in both versions (or document why they should remain)\n- Validate that both structures can be parsed by the same code without conditional logic\n- Run tests or validation to confirm structural parity\n\nEdge cases to consider:\n- Keys that exist in one language but not the other\n- Different data types for the same key (string vs object, etc.)\n- Inconsistent nesting depth\n- Arrays with mismatched lengths\n- Extra whitespace or formatting differences that might hide structural issues",
+  "status": "in_progress",
+  "id": "feature-1769197516632-11xamc86c",
+  "descriptionHistory": [
+    {
+      "description": "Ensure Polish (pl) and English (en) Data Structures are Identical\n\nVerify and align the data structures between Polish and English language configurations to maintain consistency across both language versions.\n\nRequirements:\n- Compare the structure of pl and en data objects/files (keys, nesting levels, data types)\n- Identify any missing keys, extra keys, or structural differences between the two\n- Add any missing keys from one language to the other with appropriate placeholder values\n- Ensure nested object hierarchies match exactly between pl and en\n- Verify array structures contain the same number of elements and types\n- Remove any language-specific keys that don't exist in both versions (or document why they should remain)\n- Validate that both structures can be parsed by the same code without conditional logic\n- Run tests or validation to confirm structural parity\n\nEdge cases to consider:\n- Keys that exist in one language but not the other\n- Different data types for the same key (string vs object, etc.)\n- Inconsistent nesting depth\n- Arrays with mismatched lengths\n- Extra whitespace or formatting differences that might hide structural issues",
+      "timestamp": "2026-01-23T19:45:16.667Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T19:45:18.361Z"
+}

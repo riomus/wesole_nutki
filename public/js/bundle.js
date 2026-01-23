@@ -1289,6 +1289,18 @@
       // Callbacks for custom behavior
       onOpen: () => {
         document.body.classList.add("glightbox-open");
+        setTimeout(() => {
+          const closeBtn = document.querySelector(".gclose");
+          if (closeBtn) {
+            closeBtn.setAttribute("aria-label", "Close image gallery");
+            closeBtn.setAttribute("role", "button");
+            closeBtn.setAttribute("data-testid", "lightbox-close-button");
+            closeBtn.setAttribute("title", "Close (ESC)");
+            if (!closeBtn.hasAttribute("tabindex")) {
+              closeBtn.setAttribute("tabindex", "0");
+            }
+          }
+        }, 100);
       },
       onClose: () => {
         document.body.classList.remove("glightbox-open");
@@ -1385,6 +1397,77 @@
       });
     });
   }
+  function initNewsImageFallback() {
+    const newsImages = document.querySelectorAll(".news-card-image");
+    if (newsImages.length === 0) return;
+    newsImages.forEach((img) => {
+      if (img.complete && img.naturalHeight === 0) {
+        const wrapper = img.parentElement;
+        if (wrapper && wrapper.classList.contains("card-img-wrapper")) {
+          wrapper.classList.add("image-error");
+        }
+      }
+      img.addEventListener("error", function() {
+        const wrapper = this.parentElement;
+        if (wrapper && wrapper.classList.contains("card-img-wrapper")) {
+          wrapper.classList.add("image-error");
+        }
+        console.warn("News image failed to load:", this.src);
+      });
+      img.addEventListener("load", function() {
+        const wrapper = this.parentElement;
+        if (wrapper && wrapper.classList.contains("card-img-wrapper")) {
+          wrapper.classList.remove("image-error");
+        }
+      });
+      if (!img.complete) {
+        const timeout = setTimeout(() => {
+          if (!img.complete || img.naturalHeight === 0) {
+            const wrapper = img.parentElement;
+            if (wrapper && wrapper.classList.contains("card-img-wrapper")) {
+              wrapper.classList.add("image-error");
+            }
+            console.warn("News image load timeout:", img.src);
+          }
+        }, 1e4);
+        img.addEventListener("load", () => clearTimeout(timeout), { once: true });
+        img.addEventListener("error", () => clearTimeout(timeout), { once: true });
+      }
+    });
+  }
+  function initLanguagePickerSync() {
+    const languageSwitchers = document.querySelectorAll(".language-switcher");
+    if (languageSwitchers.length === 0) return;
+    function detectLanguageFromURL() {
+      const path = window.location.pathname;
+      const langMatch = path.match(/\/(pl|en)\//);
+      if (langMatch) {
+        return langMatch[1];
+      }
+      return "pl";
+    }
+    function updateLanguagePickerState() {
+      const currentLang = detectLanguageFromURL();
+      languageSwitchers.forEach((switcher) => {
+        const langButtons = switcher.querySelectorAll(".lang-btn");
+        langButtons.forEach((btn) => {
+          const btnLang = btn.getAttribute("data-lang");
+          if (btnLang === currentLang) {
+            btn.classList.add("active");
+            btn.setAttribute("aria-current", "true");
+          } else {
+            btn.classList.remove("active");
+            btn.removeAttribute("aria-current");
+          }
+        });
+        switcher.setAttribute("data-current-lang", currentLang);
+      });
+    }
+    updateLanguagePickerState();
+    window.addEventListener("popstate", function() {
+      setTimeout(updateLanguagePickerState, 50);
+    });
+  }
   document.addEventListener("DOMContentLoaded", function() {
     initNavbarScroll();
     initScrollAnimations();
@@ -1394,6 +1477,8 @@
     initGalleryLightbox();
     initBackToTop();
     initResponsiveImages();
+    initNewsImageFallback();
+    initLanguagePickerSync();
     document.body.classList.add("loaded");
   });
 })();

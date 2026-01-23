@@ -1,4 +1,4 @@
 ---
-title: "Aktualności"
-description: "Najnowsze wiadomości z przedszkola Wesołe Nutki"
+title: "Aktualnosci"
+description: "Najnowsze wiadomosci i aktualnosci z przedszkola Wesole Nutki"
 ---

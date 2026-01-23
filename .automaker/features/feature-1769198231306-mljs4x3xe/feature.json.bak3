@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Update Language Picker to Reflect Current Language Selection\n\nFix the language picker component so that it accurately displays the currently active language when the application language changes.\n\nRequirements:\n- Ensure language picker UI updates immediately when language is changed programmatically or through other means\n- Verify that the picker correctly displays the current language on initial component mount\n- Check that language state is properly synchronized between the language picker and the application's language context/store\n- Handle language changes triggered from multiple sources (user selection, system preference, URL parameter, stored preference)\n- Test language persistence across page refreshes and ensure picker reflects the persisted value\n- Verify proper reactivity to language state changes in the component lifecycle\n\nEdge cases to consider:\n- Language changes while picker dropdown is open\n- Rapid successive language changes\n- Invalid or unsupported language codes\n- Language change during component unmount/remount",
+  "title": "",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": "Update Language Picker to Reflect Current Language Selection\n\nFix the language picker component so that it accurately displays the currently active language when the application language changes.\n\nRequirements:\n- Ensure language picker UI updates immediately when language is changed programmatically or through other means\n- Verify that the picker correctly displays the current language on initial component mount\n- Check that language state is properly synchronized between the language picker and the application's language context/store\n- Handle language changes triggered from multiple sources (user selection, system preference, URL parameter, stored preference)\n- Test language persistence across page refreshes and ensure picker reflects the persisted value\n- Verify proper reactivity to language state changes in the component lifecycle\n\nEdge cases to consider:\n- Language changes while picker dropdown is open\n- Rapid successive language changes\n- Invalid or unsupported language codes\n- Language change during component unmount/remount",
+  "status": "in_progress",
+  "id": "feature-1769198231306-mljs4x3xe",
+  "descriptionHistory": [
+    {
+      "description": "Update Language Picker to Reflect Current Language Selection\n\nFix the language picker component so that it accurately displays the currently active language when the application language changes.\n\nRequirements:\n- Ensure language picker UI updates immediately when language is changed programmatically or through other means\n- Verify that the picker correctly displays the current language on initial component mount\n- Check that language state is properly synchronized between the language picker and the application's language context/store\n- Handle language changes triggered from multiple sources (user selection, system preference, URL parameter, stored preference)\n- Test language persistence across page refreshes and ensure picker reflects the persisted value\n- Verify proper reactivity to language state changes in the component lifecycle\n\nEdge cases to consider:\n- Language changes while picker dropdown is open\n- Rapid successive language changes\n- Invalid or unsupported language codes\n- Language change during component unmount/remount",
+      "timestamp": "2026-01-23T19:57:11.333Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T19:57:14.793Z"
+}

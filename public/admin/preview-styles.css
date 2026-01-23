@@ -934,6 +934,132 @@ a:hover {
 }
 
 /* ============================================================
+   MARKDOWN CONTENT RENDERING
+   ============================================================ */
+/* Ensure markdown content renders properly in previews */
+.preview-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.preview-container table th,
+.preview-container table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(45, 49, 66, 0.1);
+}
+
+.preview-container table th {
+  background: var(--preschool-light);
+  font-weight: 600;
+  color: var(--preschool-dark);
+}
+
+.preview-container table tr:last-child td {
+  border-bottom: none;
+}
+
+.preview-container table tr:hover {
+  background: rgba(255, 107, 53, 0.03);
+}
+
+.preview-container code {
+  background: var(--preschool-light);
+  color: var(--preschool-primary);
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+  font-size: 0.9em;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.preview-container pre {
+  background: var(--preschool-dark);
+  color: var(--preschool-light);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+.preview-container pre code {
+  background: transparent;
+  color: inherit;
+  padding: 0;
+}
+
+.preview-container hr {
+  border: none;
+  border-top: 2px solid rgba(45, 49, 66, 0.1);
+  margin: 2rem 0;
+}
+
+/* ============================================================
+   UTILITY CLASSES
+   ============================================================ */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-muted {
+  opacity: 0.7;
+}
+
+.text-primary {
+  color: var(--preschool-primary);
+}
+
+.text-secondary {
+  color: var(--preschool-secondary);
+}
+
+.mb-0 { margin-bottom: 0; }
+.mb-1 { margin-bottom: 0.25rem; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-3 { margin-bottom: 1rem; }
+.mb-4 { margin-bottom: 1.5rem; }
+.mb-5 { margin-bottom: 3rem; }
+
+.mt-0 { margin-top: 0; }
+.mt-1 { margin-top: 0.25rem; }
+.mt-2 { margin-top: 0.5rem; }
+.mt-3 { margin-top: 1rem; }
+.mt-4 { margin-top: 1.5rem; }
+.mt-5 { margin-top: 3rem; }
+
+/* ============================================================
+   LOADING STATE
+   ============================================================ */
+.preview-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  color: var(--preschool-primary);
+  font-size: 1.1rem;
+}
+
+.preview-error {
+  background: #ffe6e6;
+  color: var(--preschool-danger);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  margin: 2rem;
+  border-left: 4px solid var(--preschool-danger);
+}
+
+/* ============================================================
    GOOGLE FONTS IMPORT (for preview)
    ============================================================ */
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@300;400;500;600;700&display=swap');

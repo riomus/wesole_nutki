@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Add Position Relative Styling to Image Error Element in Program Card Header\n\nApply position:initial CSS property to the image-error element within the program-card-header component to fix layout positioning issues.\n\nRequirements:\n- Locate the image-error element inside program-card-header component\n- Add position:relative CSS rule to the image-error class or element\n- Verify the positioning change doesn't break existing layout or overlap other elements\n- Test with actual error states to ensure image error display renders correctly\n- Check responsive behavior across different screen sizes\n- Ensure z-index stacking context works as expected if absolute-positioned children exist",
+  "title": "Fix image-error positioning in program-card-header",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "verified",
+  "id": "feature-1769199859394-me4236dzp",
+  "descriptionHistory": [
+    {
+      "description": "Add Position Relative Styling to Image Error Element in Program Card Header\n\nApply position:initial CSS property to the image-error element within the program-card-header component to fix layout positioning issues.\n\nRequirements:\n- Locate the image-error element inside program-card-header component\n- Add position:relative CSS rule to the image-error class or element\n- Verify the positioning change doesn't break existing layout or overlap other elements\n- Test with actual error states to ensure image error display renders correctly\n- Check responsive behavior across different screen sizes\n- Ensure z-index stacking context works as expected if absolute-positioned children exist",
+      "timestamp": "2026-01-23T20:24:19.482Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T20:26:47.758Z"
+}

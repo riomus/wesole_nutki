@@ -1,0 +1,5 @@
+# Page snapshot
+
+```yaml
+- heading "Page Not Found" [level=1] [ref=e2]
+```

@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Create English Menu Matching Polish Menu Structure\n\nUpdate the English language menu to contain identical navigation items as the Polish menu, with properly translated labels and localized URLs.\n\nRequirements:\n- Audit the Polish (pl) menu to identify all navigation items and their hierarchy\n- Create corresponding English (en) menu entries with the same structure and order\n- Translate all Polish menu item labels to English accurately\n- Update URLs to use English slugs/paths while maintaining the same destination pages\n- Ensure menu depth and nesting matches exactly between pl and en versions\n- Verify all links are functional and point to the correct English content\n- Maintain consistent styling and behavior across both language versions\n- Test navigation flow to ensure no broken links or missing pages",
+  "title": "Synchronize English menu structure with Polish menu",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "verified",
+  "id": "feature-1769200470181-vcf90fgww",
+  "descriptionHistory": [
+    {
+      "description": "Create English Menu Matching Polish Menu Structure\n\nUpdate the English language menu to contain identical navigation items as the Polish menu, with properly translated labels and localized URLs.\n\nRequirements:\n- Audit the Polish (pl) menu to identify all navigation items and their hierarchy\n- Create corresponding English (en) menu entries with the same structure and order\n- Translate all Polish menu item labels to English accurately\n- Update URLs to use English slugs/paths while maintaining the same destination pages\n- Ensure menu depth and nesting matches exactly between pl and en versions\n- Verify all links are functional and point to the correct English content\n- Maintain consistent styling and behavior across both language versions\n- Test navigation flow to ensure no broken links or missing pages",
+      "timestamp": "2026-01-23T20:34:30.275Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T20:39:26.192Z"
+}

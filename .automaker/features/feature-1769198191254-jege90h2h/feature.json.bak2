@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix Hero Headline Paragraph Visibility Issue\n\nImprove the contrast and readability of the paragraph text within the hero-headline section that is currently difficult to see due to insufficient contrast with the hero overlay shadow.\n\nRequirements:\n- Identify the current paragraph text color in the hero-headline component\n- Analyze the hero overlay shadow color and opacity causing the contrast issue\n- Adjust the paragraph text color to ensure sufficient contrast ratio (minimum WCAG AA standard: 4.5:1 for normal text)\n- Consider alternative solutions: modify overlay opacity, add text shadow, or apply background gradient\n- Test visibility across different screen sizes and devices\n- Ensure the fix maintains the overall design aesthetic\n- Verify readability in various lighting conditions if possible",
+  "title": "Improve hero paragraph contrast and readability",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "in_progress",
+  "id": "feature-1769198191254-jege90h2h",
+  "descriptionHistory": [
+    {
+      "description": "Fix Hero Headline Paragraph Visibility Issue\n\nImprove the contrast and readability of the paragraph text within the hero-headline section that is currently difficult to see due to insufficient contrast with the hero overlay shadow.\n\nRequirements:\n- Identify the current paragraph text color in the hero-headline component\n- Analyze the hero overlay shadow color and opacity causing the contrast issue\n- Adjust the paragraph text color to ensure sufficient contrast ratio (minimum WCAG AA standard: 4.5:1 for normal text)\n- Consider alternative solutions: modify overlay opacity, add text shadow, or apply background gradient\n- Test visibility across different screen sizes and devices\n- Ensure the fix maintains the overall design aesthetic\n- Verify readability in various lighting conditions if possible",
+      "timestamp": "2026-01-23T19:56:31.342Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T19:56:32.573Z"
+}

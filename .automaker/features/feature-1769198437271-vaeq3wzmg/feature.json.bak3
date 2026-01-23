@@ -1,0 +1,28 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix English Website Structure to Match Polish Version\n\nUpdate the English version of the website to have the same page structure and content organization as the Polish version, with all content properly translated to English.\n\nRequirements:\n- Audit both Polish and English versions to identify structural differences\n- Create corresponding English pages for any pages that exist in Polish but are missing in English\n- Ensure navigation menu structure matches between both language versions\n- Translate all Polish content to English while maintaining the same:\n  - Page hierarchy and organization\n  - Section layouts and components\n  - Content types (text, images, links, forms, etc.)\n  - Call-to-action placements\n- Fix the home page to match Polish home page structure\n- Verify all internal links work correctly in English version\n- Ensure language switcher properly toggles between equivalent pages\n- Test that both versions have feature parity and parallel user journeys",
+  "title": "Align English website structure with Polish version",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "backlog",
+  "id": "feature-1769198437271-vaeq3wzmg",
+  "descriptionHistory": [
+    {
+      "description": "Fix English Website Structure to Match Polish Version\n\nUpdate the English version of the website to have the same page structure and content organization as the Polish version, with all content properly translated to English.\n\nRequirements:\n- Audit both Polish and English versions to identify structural differences\n- Create corresponding English pages for any pages that exist in Polish but are missing in English\n- Ensure navigation menu structure matches between both language versions\n- Translate all Polish content to English while maintaining the same:\n  - Page hierarchy and organization\n  - Section layouts and components\n  - Content types (text, images, links, forms, etc.)\n  - Call-to-action placements\n- Fix the home page to match Polish home page structure\n- Verify all internal links work correctly in English version\n- Ensure language switcher properly toggles between equivalent pages\n- Test that both versions have feature parity and parallel user journeys",
+      "timestamp": "2026-01-23T20:00:37.773Z",
+      "source": "initial"
+    }
+  ]
+}

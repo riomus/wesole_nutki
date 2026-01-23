@@ -1,0 +1,28 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix Image Error Styling in Program Card Header\n\nUpdate the CSS for image error states within the program card header component to use position:relative and min-height:100% instead of the current positioning value.\n\nRequirements:\n- Locate the .image-error class or equivalent styling within the program-card-header component\n- Change the position property from its current value (likely absolute, relative, or fixed) to initial\n- Verify the change doesn't break the layout in normal display state\n- Test how the error state image displays across different card sizes and viewport widths\n- Ensure the image error placeholder or icon remains properly visible and aligned after the change\n- Check for any related styles that may need adjustment due to position change (z-index, top, left, right, bottom properties)",
+  "title": "Fix image error positioning in program card header",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "backlog",
+  "id": "feature-1769200536681-kmhej47mj",
+  "descriptionHistory": [
+    {
+      "description": "Fix Image Error Styling in Program Card Header\n\nUpdate the CSS for image error states within the program card header component to use position:relative and min-height:100% instead of the current positioning value.\n\nRequirements:\n- Locate the .image-error class or equivalent styling within the program-card-header component\n- Change the position property from its current value (likely absolute, relative, or fixed) to initial\n- Verify the change doesn't break the layout in normal display state\n- Test how the error state image displays across different card sizes and viewport widths\n- Ensure the image error placeholder or icon remains properly visible and aligned after the change\n- Check for any related styles that may need adjustment due to position change (z-index, top, left, right, bottom properties)",
+      "timestamp": "2026-01-23T20:35:36.716Z",
+      "source": "initial"
+    }
+  ]
+}

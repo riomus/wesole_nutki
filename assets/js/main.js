@@ -400,6 +400,23 @@ function initGalleryLightbox() {
     // Callbacks for custom behavior
     onOpen: () => {
       document.body.classList.add('glightbox-open');
+
+      // Enhance close button with explicit accessibility attributes
+      setTimeout(() => {
+        const closeBtn = document.querySelector('.gclose');
+        if (closeBtn) {
+          // Add explicit ARIA label for screen readers
+          closeBtn.setAttribute('aria-label', 'Close image gallery');
+          closeBtn.setAttribute('role', 'button');
+          closeBtn.setAttribute('data-testid', 'lightbox-close-button');
+          closeBtn.setAttribute('title', 'Close (ESC)');
+
+          // Ensure keyboard focus is possible
+          if (!closeBtn.hasAttribute('tabindex')) {
+            closeBtn.setAttribute('tabindex', '0');
+          }
+        }
+      }, 100);
     },
     onClose: () => {
       document.body.classList.remove('glightbox-open');
@@ -525,6 +542,119 @@ function initResponsiveImages() {
 }
 
 // ============================================================
+// NEWS IMAGE FALLBACK HANDLER
+// ============================================================
+function initNewsImageFallback() {
+  const newsImages = document.querySelectorAll('.news-card-image');
+
+  if (newsImages.length === 0) return;
+
+  newsImages.forEach(img => {
+    // Handle already failed images (for cached 404s)
+    if (img.complete && img.naturalHeight === 0) {
+      const wrapper = img.parentElement;
+      if (wrapper && wrapper.classList.contains('card-img-wrapper')) {
+        wrapper.classList.add('image-error');
+      }
+    }
+
+    // Add error event listener for runtime failures
+    img.addEventListener('error', function() {
+      const wrapper = this.parentElement;
+      if (wrapper && wrapper.classList.contains('card-img-wrapper')) {
+        wrapper.classList.add('image-error');
+      }
+      console.warn('News image failed to load:', this.src);
+    });
+
+    // Handle successful loads to ensure error state is removed if image loads later
+    img.addEventListener('load', function() {
+      const wrapper = this.parentElement;
+      if (wrapper && wrapper.classList.contains('card-img-wrapper')) {
+        wrapper.classList.remove('image-error');
+      }
+    });
+
+    // Add timeout fallback for slow-loading images (10 seconds)
+    if (!img.complete) {
+      const timeout = setTimeout(() => {
+        // Check if image still hasn't loaded
+        if (!img.complete || img.naturalHeight === 0) {
+          const wrapper = img.parentElement;
+          if (wrapper && wrapper.classList.contains('card-img-wrapper')) {
+            wrapper.classList.add('image-error');
+          }
+          console.warn('News image load timeout:', img.src);
+        }
+      }, 10000);
+
+      // Clear timeout if image loads successfully
+      img.addEventListener('load', () => clearTimeout(timeout), { once: true });
+      img.addEventListener('error', () => clearTimeout(timeout), { once: true });
+    }
+  });
+}
+
+// ============================================================
+// LANGUAGE PICKER STATE SYNCHRONIZATION
+// ============================================================
+function initLanguagePickerSync() {
+  const languageSwitchers = document.querySelectorAll('.language-switcher');
+
+  if (languageSwitchers.length === 0) return;
+
+  // Function to detect current language from URL path
+  function detectLanguageFromURL() {
+    const path = window.location.pathname;
+
+    // Match language code in URL path (e.g., /pl/, /en/, or /wesole_nutki/pl/)
+    const langMatch = path.match(/\/(pl|en)\//);
+
+    if (langMatch) {
+      return langMatch[1];
+    }
+
+    // Default to Polish if no language detected
+    return 'pl';
+  }
+
+  // Function to update active language state in all pickers
+  function updateLanguagePickerState() {
+    const currentLang = detectLanguageFromURL();
+
+    languageSwitchers.forEach(switcher => {
+      const langButtons = switcher.querySelectorAll('.lang-btn');
+
+      langButtons.forEach(btn => {
+        const btnLang = btn.getAttribute('data-lang');
+
+        if (btnLang === currentLang) {
+          // Make this button active - just add the class, don't change DOM structure
+          btn.classList.add('active');
+          btn.setAttribute('aria-current', 'true');
+        } else {
+          // Make this button inactive
+          btn.classList.remove('active');
+          btn.removeAttribute('aria-current');
+        }
+      });
+
+      // Update data-current-lang attribute on the container
+      switcher.setAttribute('data-current-lang', currentLang);
+    });
+  }
+
+  // Initial sync on page load (defensive - Hugo should already render correctly)
+  updateLanguagePickerState();
+
+  // Listen for browser navigation (back/forward buttons)
+  window.addEventListener('popstate', function() {
+    // Small delay to ensure URL is updated
+    setTimeout(updateLanguagePickerState, 50);
+  });
+}
+
+// ============================================================
 // INITIALIZE ALL FEATURES
 // ============================================================
 document.addEventListener('DOMContentLoaded', function() {
@@ -537,6 +667,8 @@ document.addEventListener('DOMContentLoaded', function() {
   initGalleryLightbox();
   initBackToTop();
   initResponsiveImages();
+  initNewsImageFallback();
+  initLanguagePickerSync();
 
   // Add loaded class for any CSS transitions
   document.body.classList.add('loaded');

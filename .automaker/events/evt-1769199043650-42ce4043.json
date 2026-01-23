@@ -1,0 +1,11 @@
+{
+  "id": "evt-1769199043650-42ce4043",
+  "trigger": "feature_success",
+  "timestamp": "2026-01-23T20:10:43.650Z",
+  "projectPath": "/Users/romanbartusiak/git/riomus/wesole_nutki",
+  "projectName": "wesole_nutki",
+  "featureId": "feature-1769198299478-3gv372r7i",
+  "featureName": "Fix Menu English Translation Display",
+  "error": "Feature completed in 406s - auto-verified",
+  "passes": true
+}

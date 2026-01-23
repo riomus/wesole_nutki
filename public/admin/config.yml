@@ -2,7 +2,7 @@
 backend:
   name: git-gateway
   repo: riomus/wesole_nutki
-  branch: main
+  branch: master
   auth_type: pkce
   base_url: https://auth.decapbridge.com
   auth_endpoint: /sites/b61619a5-b054-40c9-960d-b3861a953269/pkce
@@ -983,3 +983,23 @@ collections:
         default: "Other"
         hint: "Document category"
       - {label: "Body", name: "body", widget: "markdown", required: false, hint: "Additional description or information about the document"}
+
+  # UI Text Translations - Polish
+  - name: ui_text_pl
+    label: "Teksty interfejsu (PL)"
+    files:
+      - name: ui_translations_pl
+        label: "Tlumaczenia interfejsu (PL)"
+        file: i18n/pl.toml
+        fields:
+          - {label: "Plik tłumaczeń", name: "body", widget: "code", default_language: "toml", output_code_only: true, hint: "Edytuj tłumaczenia interfejsu użytkownika w formacie TOML. Każdy wpis powinien mieć format: [klucz]\nother = \"wartość\""}
+
+  # UI Text Translations - English
+  - name: ui_text_en
+    label: "UI Text (EN)"
+    files:
+      - name: ui_translations_en
+        label: "UI Translations (EN)"
+        file: i18n/en.toml
+        fields:
+          - {label: "Translation file", name: "body", widget: "code", default_language: "toml", output_code_only: true, hint: "Edit user interface translations in TOML format. Each entry should have format: [key]\nother = \"value\""}

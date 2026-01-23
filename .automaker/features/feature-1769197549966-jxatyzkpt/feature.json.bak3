@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Implement Multilingual CMS Content Management for All Webpage Text\n\nEnable full content management system (CMS) control for all text elements displayed on the website, supporting both English (en) and Polish (pl) languages.\n\nRequirements:\n- Audit all hardcoded text strings across the entire website\n- Move all text content to CMS-managed fields or content blocks\n- Create language-specific content entries for English and Polish\n- Implement language switcher functionality that dynamically loads appropriate content\n- Ensure CMS provides intuitive editing interface for both language versions\n- Include all text types: headings, body copy, buttons, labels, tooltips, error messages, and alt text\n- Set up translation workflow if content editors need to manage both languages\n- Add validation to ensure both language versions are populated before publishing\n- Test that language switching works correctly on all pages\n- Document which CMS fields correspond to which on-page elements for content editors\n\nEdge cases to consider:\n- Text embedded in images or SVGs (should be replaced with accessible alternatives)\n- Dynamic content that combines text with user data\n- Date, time, and number formatting differences between locales\n- Right-to-left layout considerations if future languages require it\n- Fallback behavior when translation is missing in one language",
+  "title": "",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": "Implement Multilingual CMS Content Management for All Webpage Text\n\nEnable full content management system (CMS) control for all text elements displayed on the website, supporting both English (en) and Polish (pl) languages.\n\nRequirements:\n- Audit all hardcoded text strings across the entire website\n- Move all text content to CMS-managed fields or content blocks\n- Create language-specific content entries for English and Polish\n- Implement language switcher functionality that dynamically loads appropriate content\n- Ensure CMS provides intuitive editing interface for both language versions\n- Include all text types: headings, body copy, buttons, labels, tooltips, error messages, and alt text\n- Set up translation workflow if content editors need to manage both languages\n- Add validation to ensure both language versions are populated before publishing\n- Test that language switching works correctly on all pages\n- Document which CMS fields correspond to which on-page elements for content editors\n\nEdge cases to consider:\n- Text embedded in images or SVGs (should be replaced with accessible alternatives)\n- Dynamic content that combines text with user data\n- Date, time, and number formatting differences between locales\n- Right-to-left layout considerations if future languages require it\n- Fallback behavior when translation is missing in one language",
+  "status": "in_progress",
+  "id": "feature-1769197549966-jxatyzkpt",
+  "descriptionHistory": [
+    {
+      "description": "Implement Multilingual CMS Content Management for All Webpage Text\n\nEnable full content management system (CMS) control for all text elements displayed on the website, supporting both English (en) and Polish (pl) languages.\n\nRequirements:\n- Audit all hardcoded text strings across the entire website\n- Move all text content to CMS-managed fields or content blocks\n- Create language-specific content entries for English and Polish\n- Implement language switcher functionality that dynamically loads appropriate content\n- Ensure CMS provides intuitive editing interface for both language versions\n- Include all text types: headings, body copy, buttons, labels, tooltips, error messages, and alt text\n- Set up translation workflow if content editors need to manage both languages\n- Add validation to ensure both language versions are populated before publishing\n- Test that language switching works correctly on all pages\n- Document which CMS fields correspond to which on-page elements for content editors\n\nEdge cases to consider:\n- Text embedded in images or SVGs (should be replaced with accessible alternatives)\n- Dynamic content that combines text with user data\n- Date, time, and number formatting differences between locales\n- Right-to-left layout considerations if future languages require it\n- Fallback behavior when translation is missing in one language",
+      "timestamp": "2026-01-23T19:45:50.001Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T19:45:50.518Z"
+}

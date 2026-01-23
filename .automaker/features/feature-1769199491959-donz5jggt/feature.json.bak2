@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix About Mission Image Error Styling\n\nAdd position:relative to the image-error class within the about-mission-image component to correct its layout behavior.\n\nRequirements:\n- Locate the CSS/styling for the image-error class in the about-mission-image context\n- Add position:relative to enable proper positioning of child elements or overlays\n- Verify the change doesn't break existing layout in other breakpoints (mobile, tablet, desktop)\n- Test that any absolutely positioned child elements now position correctly relative to this container\n- Ensure the fix doesn't introduce visual regressions in the about/mission section",
+  "title": "Fix image-error positioning in about-mission component",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "in_progress",
+  "id": "feature-1769199491959-donz5jggt",
+  "descriptionHistory": [
+    {
+      "description": "Fix About Mission Image Error Styling\n\nAdd position:relative to the image-error class within the about-mission-image component to correct its layout behavior.\n\nRequirements:\n- Locate the CSS/styling for the image-error class in the about-mission-image context\n- Add position:relative to enable proper positioning of child elements or overlays\n- Verify the change doesn't break existing layout in other breakpoints (mobile, tablet, desktop)\n- Test that any absolutely positioned child elements now position correctly relative to this container\n- Ensure the fix doesn't introduce visual regressions in the about/mission section",
+      "timestamp": "2026-01-23T20:18:12.036Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T20:18:20.071Z"
+}

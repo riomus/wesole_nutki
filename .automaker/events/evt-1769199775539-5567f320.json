@@ -1,0 +1,11 @@
+{
+  "id": "evt-1769199775539-5567f320",
+  "trigger": "feature_success",
+  "timestamp": "2026-01-23T20:22:55.539Z",
+  "projectPath": "/Users/romanbartusiak/git/riomus/wesole_nutki",
+  "projectName": "wesole_nutki",
+  "featureId": "feature-1769199379963-dzrxrwoy9",
+  "featureName": "Remove Images from Post List Views, Show Text Excerpts",
+  "error": "Feature completed in 388s - auto-verified",
+  "passes": true
+}

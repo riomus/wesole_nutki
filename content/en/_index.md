@@ -1,4 +1,4 @@
 ---
-title: "Wesole Nutki - Preschool"
-description: "Wesole Nutki Preschool in Wroclaw, Poland"
+title: "Wesole Nutki - Language and Music Preschool"
+description: "Private Language and Music Preschool in Wroclaw, Poland"
 ---

@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix Menu Internationalization - Ensure English Translation\n\nResolve the issue where menu items are not displaying in English, ensuring proper internationalization support is implemented.\n\nRequirements:\n- Identify which menu components are not being translated (main navigation, dropdown menus, context menus, etc.)\n- Verify English translation strings exist in the language resource files\n- Ensure the i18n/localization library is properly configured and connected to menu components\n- Check that the correct language locale is being detected or set to English\n- Verify all menu items, labels, and tooltips are using translation keys rather than hardcoded text\n- Test menu display with English locale to confirm all items appear correctly\n- Check for any fallback language issues if English translations are missing\n\nEdge Cases to Consider:\n- Dynamic menu items generated from data\n- Nested or multi-level menu structures\n- Menu items that appear conditionally based on user state\n- Keyboard shortcuts or accessibility labels associated with menus",
+  "title": "Fix Menu English Translation Display",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "completed",
+  "id": "feature-1769198299478-3gv372r7i",
+  "descriptionHistory": [
+    {
+      "description": "Fix Menu Internationalization - Ensure English Translation\n\nResolve the issue where menu items are not displaying in English, ensuring proper internationalization support is implemented.\n\nRequirements:\n- Identify which menu components are not being translated (main navigation, dropdown menus, context menus, etc.)\n- Verify English translation strings exist in the language resource files\n- Ensure the i18n/localization library is properly configured and connected to menu components\n- Check that the correct language locale is being detected or set to English\n- Verify all menu items, labels, and tooltips are using translation keys rather than hardcoded text\n- Test menu display with English locale to confirm all items appear correctly\n- Check for any fallback language issues if English translations are missing\n\nEdge Cases to Consider:\n- Dynamic menu items generated from data\n- Nested or multi-level menu structures\n- Menu items that appear conditionally based on user state\n- Keyboard shortcuts or accessibility labels associated with menus",
+      "timestamp": "2026-01-23T19:58:19.559Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T20:10:43.641Z"
+}

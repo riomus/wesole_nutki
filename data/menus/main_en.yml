@@ -11,107 +11,115 @@ items:
     external: false
     open_in_new_tab: false
 
-  - identifier: about
-    name: About Us
-    url: en/about/
-    weight: 2
-    i18n_key: menu_about
-    external: false
-    open_in_new_tab: false
-
-  - identifier: programs
-    name: Programs
-    url: "#"
-    weight: 3
-    i18n_key: menu_programs
-    external: false
-    open_in_new_tab: false
-    children:
-      - identifier: programs-overview
-        name: Our Programs
-        url: /en/programs/
-        weight: 1
-        i18n_key: menu_programs_overview
-        external: false
-        open_in_new_tab: false
-
-      - identifier: programs-schedule
-        name: Daily Schedule
-        url: /en/programs/schedule/
-        weight: 2
-        i18n_key: menu_programs_schedule
-        external: false
-        open_in_new_tab: false
-
   - identifier: news
     name: News
     url: /en/news/
-    weight: 4
+    weight: 2
     i18n_key: menu_news
     external: false
     open_in_new_tab: false
 
-  - identifier: gallery
-    name: Gallery
+  - identifier: about
+    name: About Us
+    url: /en/about/
+    weight: 3
+    i18n_key: menu_about
+    external: false
+    open_in_new_tab: false
+
+  - identifier: offer
+    name: Offer
+    url: /en/programs/
+    weight: 4
+    i18n_key: menu_offer
+    external: false
+    open_in_new_tab: false
+
+  - identifier: daily-plan
+    name: Daily Plan
+    url: /en/programs/schedule/
+    weight: 6
+    i18n_key: menu_daily_plan
+    external: false
+    open_in_new_tab: false
+    children:
+      - identifier: daily-plan-weekly
+        name: Weekly Plan
+        url: /en/schedule/
+        weight: 1
+        i18n_key: menu_daily_plan_weekly
+        external: false
+        open_in_new_tab: false
+
+      - identifier: daily-plan-extra
+        name: Extra Activities 2025/2026
+        url: /en/daily-plan/extra-activities/
+        weight: 2
+        i18n_key: menu_daily_plan_extra
+        external: false
+        open_in_new_tab: false
+
+      - identifier: daily-plan-calendar
+        name: School Year Calendar 2025/2026
+        url: /en/daily-plan/events/
+        weight: 3
+        i18n_key: menu_daily_plan_calendar
+        external: false
+        open_in_new_tab: false
+
+  - identifier: galleries
+    name: Galleries
     url: /en/gallery/
-    weight: 5
-    i18n_key: menu_gallery
+    weight: 7
+    i18n_key: menu_galleries
     external: false
     open_in_new_tab: false
 
   - identifier: more
-    name: More
+    name: More...
     url: "#"
-    weight: 6
+    weight: 8
     i18n_key: menu_more
     external: false
     open_in_new_tab: false
     children:
       - identifier: more-recruitment
         name: Recruitment
-        url: /rekrutacja/
+        url: /en/recruitment/
         weight: 1
-        i18n_key: menu_more_recruitment
+        i18n_key: menu_recruitment
         external: false
         open_in_new_tab: false
 
       - identifier: more-vision
         name: Our Vision
-        url: /o-przedszkolu/nasza-wizja/
+        url: /en/about/vision/
         weight: 2
-        i18n_key: menu_more_vision
-        external: false
-        open_in_new_tab: false
-
-      - identifier: more-offer
-        name: Offer
-        url: /o-przedszkolu/oferta/
-        weight: 3
-        i18n_key: menu_more_offer
+        i18n_key: menu_about_vision
         external: false
         open_in_new_tab: false
 
       - identifier: more-pricing
         name: Pricing
-        url: /o-przedszkolu/cennik/
+        url: /en/about/pricing/
         weight: 4
-        i18n_key: menu_more_pricing
+        i18n_key: menu_about_pricing
         external: false
         open_in_new_tab: false
 
       - identifier: more-payments
         name: Payments
-        url: /o-przedszkolu/platnosci/
+        url: /en/about/payments/
         weight: 5
-        i18n_key: menu_more_payments
+        i18n_key: menu_about_payments
         external: false
         open_in_new_tab: false
 
       - identifier: more-enrollment
-        name: Registration
-        url: /o-przedszkolu/zapisy/
+        name: Enrollment
+        url: /en/about/enrollment/
         weight: 6
-        i18n_key: menu_more_enrollment
+        i18n_key: menu_about_enrollment
         external: false
         open_in_new_tab: false
 
@@ -119,30 +127,22 @@ items:
         name: Privacy Policy
         url: /en/documents/privacy-policy/
         weight: 7
-        i18n_key: menu_more_privacy
+        i18n_key: menu_about_privacy
         external: false
         open_in_new_tab: false
 
       - identifier: more-child-protection
         name: Child Protection Standards
-        url: /standardy-ochrony-maloletnich/
+        url: /en/child-protection-standards/
         weight: 8
-        i18n_key: menu_more_child_protection
+        i18n_key: menu_child_protection
         external: false
         open_in_new_tab: false
 
   - identifier: contact
     name: Contact
-    url: en/contact/
-    weight: 7
+    url: /en/contact/
+    weight: 9
     i18n_key: menu_contact
-    external: false
-    open_in_new_tab: false
-
-  - identifier: documents
-    name: Documents
-    url: /en/documents/
-    weight: 8
-    i18n_key: menu_documents
     external: false
     open_in_new_tab: false

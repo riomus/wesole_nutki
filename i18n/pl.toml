@@ -244,6 +244,87 @@ other = "Galeria"
 [menu_contact]
 other = "Kontakt"
 
+[menu_recruitment]
+other = "Rekrutacja"
+
+[menu_about_vision]
+other = "Nasza Wizja"
+
+[menu_about_offer]
+other = "Oferta"
+
+[menu_about_pricing]
+other = "Cennik"
+
+[menu_about_payments]
+other = "Płatności"
+
+[menu_about_enrollment]
+other = "Zapisy"
+
+[menu_about_documents]
+other = "Dokumenty"
+
+[menu_about_privacy]
+other = "Polityka Prywatności"
+
+[menu_staff]
+other = "Kadra"
+
+[menu_volunteers]
+other = "Wolontariusze"
+
+[menu_daily_plan]
+other = "Plan Dnia"
+
+[menu_daily_plan_weekly]
+other = "Plan Tygodniowy"
+
+[menu_daily_plan_extra]
+other = "Zajęcia Dodatkowe 2025/2026"
+
+[menu_daily_plan_calendar]
+other = "Harmonogram Roku Szkolnego 2025/2026"
+
+[menu_galleries]
+other = "Galerie"
+
+[menu_child_protection]
+other = "Standardy Ochrony Małoletnich"
+
+[menu_offer]
+other = "Oferta"
+
+[menu_more]
+other = "Więcej..."
+
+[menu_documents]
+other = "Dokumenty"
+
+[menu_more_recruitment]
+other = "Rekrutacja"
+
+[menu_more_vision]
+other = "Nasza Wizja"
+
+[menu_more_offer]
+other = "Oferta"
+
+[menu_more_pricing]
+other = "Cennik"
+
+[menu_more_payments]
+other = "Płatności"
+
+[menu_more_enrollment]
+other = "Zapisy"
+
+[menu_more_privacy]
+other = "Polityka Prywatności"
+
+[menu_more_child_protection]
+other = "Standardy Ochrony Małoletnich"
+
 # Footer section
 [quick_links]
 other = "Szybkie linki"
@@ -962,3 +1043,16 @@ other = "Nie znaleziono dokumentów"
 
 [breadcrumb_documents]
 other = "Dokumenty"
+
+# ============================================================
+# Footer Status Indicator Translations
+# ============================================================
+
+[open_now]
+other = "Otwarte teraz"
+
+[currently_closed]
+other = "Zamknięte"
+
+[close_menu]
+other = "Zamknij menu"

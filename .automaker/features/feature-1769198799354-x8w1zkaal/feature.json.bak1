@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Add Explicit Close Button to Gallery View\n\nImplement a visible X (close) button in the gallery view that appears when users click to expand an image, providing a clear way to exit back to the main view.\n\nRequirements:\n- Add a clearly visible X button in the expanded gallery view\n- Position the button in a standard location (typically top-right corner)\n- Ensure button remains visible and accessible regardless of image content or color\n- Apply appropriate styling for visibility (consider contrast, drop shadow, or background)\n- Close the gallery view and return to previous state when X button is clicked\n- Ensure button works on both desktop (mouse click) and mobile (touch)\n- Consider adding hover states for better user feedback on desktop\n- Maintain existing close functionality (ESC key, background click) alongside the new button",
+  "title": "Add close button to expanded gallery view",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "verified",
+  "id": "feature-1769198799354-x8w1zkaal",
+  "descriptionHistory": [
+    {
+      "description": "Add Explicit Close Button to Gallery View\n\nImplement a visible X (close) button in the gallery view that appears when users click to expand an image, providing a clear way to exit back to the main view.\n\nRequirements:\n- Add a clearly visible X button in the expanded gallery view\n- Position the button in a standard location (typically top-right corner)\n- Ensure button remains visible and accessible regardless of image content or color\n- Apply appropriate styling for visibility (consider contrast, drop shadow, or background)\n- Close the gallery view and return to previous state when X button is clicked\n- Ensure button works on both desktop (mouse click) and mobile (touch)\n- Consider adding hover states for better user feedback on desktop\n- Maintain existing close functionality (ESC key, background click) alongside the new button",
+      "timestamp": "2026-01-23T20:06:39.385Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-23T20:16:58.809Z"
+}

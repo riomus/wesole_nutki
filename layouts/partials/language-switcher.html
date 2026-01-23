@@ -11,32 +11,33 @@
 {{ $currentLang := .Site.Language.Lang }}
 {{ $currentPage := . }}
 
-<div class="language-switcher" role="navigation" aria-label="{{ i18n "language_switcher" | default "Language selection" }}">
+<div class="language-switcher" role="navigation" aria-label="{{ i18n "language_switcher" | default "Language selection" }}" data-current-lang="{{ $currentLang }}">
   <div class="lang-toggle">
     {{ range .Site.Languages }}
-    {{ $isActive := eq .Lang $currentLang }}
+    {{ $targetLang := .Lang }}
+    {{ $isActive := eq $targetLang $currentLang }}
     {{/* Find translated page URL or fall back to language home */}}
     {{ $targetURL := "" }}
     {{ if $currentPage.IsTranslated }}
       {{ range $currentPage.Translations }}
-        {{ if eq .Lang $.Lang }}
+        {{ if eq .Lang $targetLang }}
           {{ $targetURL = .Permalink }}
         {{ end }}
       {{ end }}
     {{ end }}
     {{ if not $targetURL }}
-      {{ $targetURL = .Lang | absLangURL }}
+      {{ $targetURL = $targetLang | absLangURL }}
     {{ end }}
 
     {{ if $isActive }}
-    <span class="lang-btn active" aria-current="true" title="{{ .LanguageName }}">
+    <span class="lang-btn active" data-lang="{{ .Lang }}" aria-current="true" title="{{ .LanguageName }}">
       {{ if eq $variant "full" }}
       <span class="lang-flag" aria-hidden="true">{{ if eq .Lang "pl" }}🇵🇱{{ else if eq .Lang "en" }}🇬🇧{{ end }}</span>
       {{ end }}
       <span class="lang-code">{{ upper .Lang }}</span>
     </span>
     {{ else }}
-    <a href="{{ $targetURL }}" class="lang-btn" hreflang="{{ .Lang }}" title="{{ .LanguageName }}">
+    <a href="{{ $targetURL }}" class="lang-btn" data-lang="{{ .Lang }}" hreflang="{{ .Lang }}" title="{{ .LanguageName }}">
       {{ if eq $variant "full" }}
       <span class="lang-flag" aria-hidden="true">{{ if eq .Lang "pl" }}🇵🇱{{ else if eq .Lang "en" }}🇬🇧{{ end }}</span>
       {{ end }}
