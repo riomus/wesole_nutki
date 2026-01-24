@@ -21,6 +21,11 @@ disableKinds = []
 # Enable robots.txt generation
 enableRobotsTXT = true
 
+# Canonify URLs - Convert all relative URLs to absolute URLs based on baseURL
+# This is essential for GitHub Pages deployment to a subdirectory
+# All URLs in content (including markdown images) will be prefixed with baseURL
+canonifyURLs = true
+
 # Pagination
 [pagination]
   pagerSize = 10

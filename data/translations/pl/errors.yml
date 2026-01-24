@@ -1,0 +1,9 @@
+# Error pages translations - Polish
+page_not_found: "Strona nie znaleziona"
+page_not_found_message: "Przepraszamy, strona której szukasz nie istnieje."
+page_not_found_encouragement: "Nie martw się! Możesz przeglądać naszą stronę korzystając z poniższych linków."
+helpful_links: "Przydatne linki"
+error_404: "Błąd 404"
+error_500: "Błąd 500"
+error_500_message: "Przepraszamy, coś poszło nie tak."
+try_again: "Spróbuj ponownie"

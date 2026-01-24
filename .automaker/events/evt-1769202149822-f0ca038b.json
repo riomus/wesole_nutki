@@ -1,0 +1,11 @@
+{
+  "id": "evt-1769202149822-f0ca038b",
+  "trigger": "feature_success",
+  "timestamp": "2026-01-23T21:02:29.822Z",
+  "projectPath": "/Users/romanbartusiak/git/riomus/wesole_nutki",
+  "projectName": "wesole_nutki",
+  "featureId": "feature-1769201544247-yjy0lshee",
+  "featureName": "Migrate UI translations from TOML to CMS schemas",
+  "error": "Feature completed in 597s - auto-verified",
+  "passes": true
+}

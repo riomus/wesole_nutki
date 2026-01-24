@@ -1,0 +1,28 @@
+{
+  "category": "Uncategorized",
+  "description": "Implement CMS-Based UI Translation System for Webpage Sections\n\nFix the non-functional CMS editing functionality by migrating UI translation keys to use CMS schemas instead of direct TOML file editing for both Polish (pl) and English (en) languages.\n\nCurrent Problem:\n- CMS edition is not working for all webpage elements\n- Users cannot edit sections of webpages through the CMS interface\n- Translation keys are currently using direct TOML editing instead of CMS schemas\n\nRequirements:\n- Audit all webpage sections to identify which elements are not editable through CMS\n- Migrate UI translation keys (pl and en) from direct TOML file editing to CMS schema-based approach\n- Ensure CMS schemas are properly defined for all translatable webpage sections\n- Connect frontend translation rendering to pull from CMS schemas instead of static TOML files\n- Verify all webpage sections are editable through the CMS interface after migration\n- Test editing functionality for both Polish and English translations\n- Ensure changes made in CMS are immediately reflected on the website\n- Document the new CMS schema structure for future content editors\n\nEdge Cases to Consider:\n- Handling fallback translations when CMS values are missing\n- Migration of existing TOML translations to CMS without data loss\n- Maintaining translation key consistency across both languages\n- Proper error handling when CMS schema fails to load\n\nSuccess Criteria:\n- All webpage sections are editable through CMS interface\n- No direct TOML file editing required for content updates\n- Both pl and en translations work correctly through CMS\n- Content editors can successfully modify all webpage sections",
+  "title": "Migrate UI translations from TOML to CMS schemas",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "backlog",
+  "id": "feature-1769201544247-yjy0lshee",
+  "descriptionHistory": [
+    {
+      "description": "Implement CMS-Based UI Translation System for Webpage Sections\n\nFix the non-functional CMS editing functionality by migrating UI translation keys to use CMS schemas instead of direct TOML file editing for both Polish (pl) and English (en) languages.\n\nCurrent Problem:\n- CMS edition is not working for all webpage elements\n- Users cannot edit sections of webpages through the CMS interface\n- Translation keys are currently using direct TOML editing instead of CMS schemas\n\nRequirements:\n- Audit all webpage sections to identify which elements are not editable through CMS\n- Migrate UI translation keys (pl and en) from direct TOML file editing to CMS schema-based approach\n- Ensure CMS schemas are properly defined for all translatable webpage sections\n- Connect frontend translation rendering to pull from CMS schemas instead of static TOML files\n- Verify all webpage sections are editable through the CMS interface after migration\n- Test editing functionality for both Polish and English translations\n- Ensure changes made in CMS are immediately reflected on the website\n- Document the new CMS schema structure for future content editors\n\nEdge Cases to Consider:\n- Handling fallback translations when CMS values are missing\n- Migration of existing TOML translations to CMS without data loss\n- Maintaining translation key consistency across both languages\n- Proper error handling when CMS schema fails to load\n\nSuccess Criteria:\n- All webpage sections are editable through CMS interface\n- No direct TOML file editing required for content updates\n- Both pl and en translations work correctly through CMS\n- Content editors can successfully modify all webpage sections",
+      "timestamp": "2026-01-23T20:52:24.286Z",
+      "source": "initial"
+    }
+  ]
+}

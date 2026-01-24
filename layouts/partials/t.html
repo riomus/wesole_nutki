@@ -1,0 +1,48 @@
+{{- /*
+  Translation helper with data file support and i18n fallback
+
+  Usage:
+    {{ partial "t.html" (dict "category" "global" "key" "site_title" "context" .) }}
+    {{ partial "t.html" (dict "category" "homepage" "key" "hero_headline" "context" .) }}
+    {{ partial "t.html" (dict "category" "navigation" "key" "home" "context" . "default" "Home") }}
+
+  Parameters:
+    - category: The translation category (global, navigation, homepage, news, gallery, programs, contact, footer, errors)
+    - key: The translation key within the category
+    - context: The page context (usually .)
+    - default: Optional default value if translation not found
+*/ -}}
+
+{{- $category := .category -}}
+{{- $key := .key -}}
+{{- $context := .context -}}
+{{- $default := .default | default "" -}}
+{{- $lang := $context.Language.Lang -}}
+
+{{- /* Initialize result */ -}}
+{{- $result := "" -}}
+
+{{- /* Try to read from data files first */ -}}
+{{- if $context.Site.Data.translations -}}
+  {{- if index $context.Site.Data.translations $lang -}}
+    {{- if index (index $context.Site.Data.translations $lang) $category -}}
+      {{- $categoryData := index (index $context.Site.Data.translations $lang) $category -}}
+      {{- if index $categoryData $key -}}
+        {{- $result = index $categoryData $key -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* Fallback to i18n if not found in data files */ -}}
+{{- if not $result -}}
+  {{- $result = $context.Site.Language.Params.i18n $key | default (i18n $key) -}}
+{{- end -}}
+
+{{- /* Final fallback to default value */ -}}
+{{- if not $result -}}
+  {{- $result = $default -}}
+{{- end -}}
+
+{{- /* Output the result */ -}}
+{{- $result -}}

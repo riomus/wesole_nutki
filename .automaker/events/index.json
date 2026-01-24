@@ -2,6 +2,55 @@
   "version": 1,
   "events": [
     {
+      "id": "evt-1769202159406-34d90aec",
+      "trigger": "auto_mode_complete",
+      "timestamp": "2026-01-23T21:02:39.406Z"
+    },
+    {
+      "id": "evt-1769202149822-f0ca038b",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T21:02:29.822Z",
+      "featureName": "Migrate UI translations from TOML to CMS schemas",
+      "featureId": "feature-1769201544247-yjy0lshee"
+    },
+    {
+      "id": "evt-1769202137525-4e54585f",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T21:02:17.525Z",
+      "featureName": "",
+      "featureId": "feature-1769201814187-qe524yebe"
+    },
+    {
+      "id": "evt-1769201814273-25b72aef",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T20:56:54.273Z",
+      "featureId": "feature-1769201814187-qe524yebe"
+    },
+    {
+      "id": "evt-1769201544287-3c8e0857",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T20:52:24.287Z",
+      "featureId": "feature-1769201544247-yjy0lshee"
+    },
+    {
+      "id": "evt-1769201512304-1e04f97e",
+      "trigger": "auto_mode_complete",
+      "timestamp": "2026-01-23T20:51:52.304Z"
+    },
+    {
+      "id": "evt-1769201509438-a6c22254",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-23T20:51:49.438Z",
+      "featureName": "Fix image URLs for GitHub Pages deployment",
+      "featureId": "feature-1769201239372-pe132zak7"
+    },
+    {
+      "id": "evt-1769201239454-2e05bcbe",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-23T20:47:19.454Z",
+      "featureId": "feature-1769201239372-pe132zak7"
+    },
+    {
       "id": "evt-1769201047711-9bc137cf",
       "trigger": "auto_mode_complete",
       "timestamp": "2026-01-23T20:44:07.711Z"

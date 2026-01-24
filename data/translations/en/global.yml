@@ -1,0 +1,34 @@
+# Global UI translations - English
+# Site information
+site_title: "Wesole Nutki"
+site_description: "Preschool in Wroclaw"
+
+# Common actions
+read_more: "Read more"
+learn_more: "Learn More"
+contact_us: "Contact Us"
+schedule_visit: "Schedule a visit"
+back_to_home: "Back to home"
+
+# Common elements
+search: "Search"
+search_placeholder: "Enter search term..."
+no_results: "No results"
+menu: "Menu"
+close: "Close"
+phone: "Phone"
+email: "Email"
+address: "Address"
+follow_us: "Follow us"
+language: "Language"
+language_switcher: "Language selection"
+skip_to_content: "Skip to content"
+photos: "photos"
+
+# Content sections
+categories: "Categories"
+tags: "Tags"
+share: "Share"
+posted_on: "Posted on"
+by_author: "by"
+copyright: "All rights reserved"

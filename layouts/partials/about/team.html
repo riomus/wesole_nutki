@@ -11,6 +11,7 @@
     </div>
     <div class="row g-4 justify-content-center">
       {{- range $data.members -}}
+      {{- if ne .visible false -}}
       <div class="col-lg-3 col-md-6">
         <div class="team-card h-100">
           <div class="team-card-image">
@@ -36,11 +37,14 @@
             <h4 class="team-card-name" style="font-size: 1.25rem; font-weight: 600; line-height: 1.3; margin-bottom: 0.5rem;">{{ .name }}</h4>
             <p class="team-card-role" style="font-size: 0.875rem; font-weight: 600; letter-spacing: 0.05em; margin-bottom: 0.75rem;">{{ i18n .role_key | default .role_key }}</p>
             {{- with .bio_key -}}
+            {{- if ne . "" -}}
             <p class="team-card-bio" style="font-size: 0.9375rem; line-height: 1.6; color: rgba(45, 49, 66, 0.75);">{{ i18n . }}</p>
+            {{- end -}}
             {{- end -}}
           </div>
         </div>
       </div>
+      {{- end -}}
       {{- end -}}
     </div>
   </div>

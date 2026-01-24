@@ -984,22 +984,605 @@ collections:
         hint: "Document category"
       - {label: "Body", name: "body", widget: "markdown", required: false, hint: "Additional description or information about the document"}
 
-  # UI Text Translations - Polish
-  - name: ui_text_pl
-    label: "Teksty interfejsu (PL)"
+  # Team/Staff Management
+  - name: team_staff
+    label: "Zespół / Team"
     files:
-      - name: ui_translations_pl
-        label: "Tlumaczenia interfejsu (PL)"
-        file: i18n/pl.toml
+      - name: team_data
+        label: "Zarządzanie zespołem / Manage Team"
+        file: data/about/team.yml
         fields:
-          - {label: "Plik tłumaczeń", name: "body", widget: "code", default_language: "toml", output_code_only: true, hint: "Edytuj tłumaczenia interfejsu użytkownika w formacie TOML. Każdy wpis powinien mieć format: [klucz]\nother = \"wartość\""}
+          - label: "Widoczność sekcji / Section Visible"
+            name: "enabled"
+            widget: "boolean"
+            default: true
+            hint: "Pokaż/ukryj całą sekcję zespołu na stronie / Show/hide entire team section"
+          - label: "Klucz nagłówka / Heading Key"
+            name: "heading_key"
+            widget: "string"
+            default: "about_team_heading"
+            hint: "Klucz tłumaczenia dla nagłówka / Translation key for heading"
+          - label: "Klucz podtytułu / Subtitle Key"
+            name: "subtitle_key"
+            widget: "string"
+            required: false
+            default: "about_team_subtitle"
+            hint: "Klucz tłumaczenia dla podtytułu / Translation key for subtitle"
+          - label: "Członkowie zespołu / Team Members"
+            name: "members"
+            widget: "list"
+            allow_add: true
+            summary: "{{fields.name}} - {{fields.role_key}}"
+            hint: "Dodaj, edytuj lub usuń członków zespołu. Przeciągnij aby zmienić kolejność / Add, edit or remove team members. Drag to reorder."
+            fields:
+              - {label: "Imię i nazwisko / Name", name: "name", widget: "string", hint: "Pełne imię i nazwisko"}
+              - label: "Klucz roli / Role Key"
+                name: "role_key"
+                widget: "string"
+                hint: "Klucz tłumaczenia dla stanowiska (np. 'staff_role_director'). Dodaj tłumaczenia w sekcji 'Zespół - Tłumaczenia' / Translation key for role. Add translations in 'Team Translations' section"
+              - label: "Klucz biografii / Bio Key"
+                name: "bio_key"
+                widget: "string"
+                required: false
+                hint: "Klucz tłumaczenia dla opisu (np. 'staff_bio_director'). Dodaj tłumaczenia w sekcji 'Zespół - Tłumaczenia' / Translation key for bio. Add translations in 'Team Translations' section"
+              - label: "Zdjęcie / Photo"
+                name: "image"
+                widget: "image"
+                required: false
+                hint: "Zdjęcie profilowe (zalecany rozmiar: 400x400px kwadrat, format: JPG, max 5MB) / Profile photo (recommended: 400x400px square, JPG, max 5MB)"
+                media_folder: "/static/images/team"
+                public_folder: "/images/team"
+                choose_url: false
+              - label: "Kolejność / Order"
+                name: "weight"
+                widget: "number"
+                default: 10
+                required: false
+                hint: "Kolejność wyświetlania (mniejsza liczba = wyżej) / Display order (lower number = higher)"
+              - label: "Widoczność / Visible"
+                name: "visible"
+                widget: "boolean"
+                default: true
+                hint: "Pokaż/ukryj tego członka zespołu / Show/hide this team member"
 
-  # UI Text Translations - English
-  - name: ui_text_en
-    label: "UI Text (EN)"
+  # UI Text Translations - Polish (Structured)
+  - name: ui_global_pl
+    label: "Teksty globalne (PL)"
     files:
-      - name: ui_translations_en
-        label: "UI Translations (EN)"
-        file: i18n/en.toml
+      - name: global_pl
+        label: "Ogólne teksty interfejsu"
+        file: data/translations/pl/global.yml
         fields:
-          - {label: "Translation file", name: "body", widget: "code", default_language: "toml", output_code_only: true, hint: "Edit user interface translations in TOML format. Each entry should have format: [key]\nother = \"value\""}
+          - {label: "Tytuł strony", name: "site_title", widget: "string"}
+          - {label: "Opis strony", name: "site_description", widget: "string"}
+          - {label: "Czytaj więcej", name: "read_more", widget: "string"}
+          - {label: "Dowiedz się więcej", name: "learn_more", widget: "string"}
+          - {label: "Skontaktuj się", name: "contact_us", widget: "string"}
+          - {label: "Umów wizytę", name: "schedule_visit", widget: "string"}
+          - {label: "Powrót do strony głównej", name: "back_to_home", widget: "string"}
+          - {label: "Szukaj", name: "search", widget: "string"}
+          - {label: "Placeholder wyszukiwania", name: "search_placeholder", widget: "string"}
+          - {label: "Brak wyników", name: "no_results", widget: "string"}
+          - {label: "Menu", name: "menu", widget: "string"}
+          - {label: "Zamknij", name: "close", widget: "string"}
+          - {label: "Telefon", name: "phone", widget: "string"}
+          - {label: "Email", name: "email", widget: "string"}
+          - {label: "Adres", name: "address", widget: "string"}
+          - {label: "Śledź nas", name: "follow_us", widget: "string"}
+          - {label: "Język", name: "language", widget: "string"}
+          - {label: "Wybór języka", name: "language_switcher", widget: "string"}
+          - {label: "Przejdź do treści", name: "skip_to_content", widget: "string"}
+          - {label: "Zdjęć", name: "photos", widget: "string"}
+          - {label: "Kategorie", name: "categories", widget: "string"}
+          - {label: "Tagi", name: "tags", widget: "string"}
+          - {label: "Udostępnij", name: "share", widget: "string"}
+          - {label: "Opublikowano", name: "posted_on", widget: "string"}
+          - {label: "Przez (autor)", name: "by_author", widget: "string"}
+          - {label: "Prawa autorskie", name: "copyright", widget: "string"}
+
+  - name: ui_navigation_pl
+    label: "Nawigacja (PL)"
+    files:
+      - name: navigation_pl
+        label: "Teksty nawigacji"
+        file: data/translations/pl/navigation.yml
+        fields:
+          - {label: "Strona główna", name: "home", widget: "string"}
+          - {label: "O nas", name: "about_us", widget: "string"}
+          - {label: "Programy", name: "programs", widget: "string"}
+          - {label: "Nasza oferta", name: "our_offer", widget: "string"}
+          - {label: "Aktualności", name: "news", widget: "string"}
+          - {label: "Galeria", name: "gallery", widget: "string"}
+          - {label: "Kontakt", name: "contact", widget: "string"}
+          - {label: "Menu: Strona główna", name: "menu_home", widget: "string"}
+          - {label: "Menu: O nas", name: "menu_about", widget: "string"}
+          - {label: "Menu: Programy", name: "menu_programs", widget: "string"}
+          - {label: "Menu: Przegląd programów", name: "menu_programs_overview", widget: "string"}
+          - {label: "Menu: Plan zajęć", name: "menu_programs_schedule", widget: "string"}
+          - {label: "Menu: Aktualności", name: "menu_news", widget: "string"}
+          - {label: "Menu: Galeria", name: "menu_gallery", widget: "string"}
+          - {label: "Menu: Galerie", name: "menu_galleries", widget: "string"}
+          - {label: "Menu: Kontakt", name: "menu_contact", widget: "string"}
+          - {label: "Menu: Rekrutacja", name: "menu_recruitment", widget: "string"}
+          - {label: "Menu: Nasza wizja", name: "menu_about_vision", widget: "string"}
+          - {label: "Menu: Oferta", name: "menu_about_offer", widget: "string"}
+          - {label: "Menu: Cennik", name: "menu_about_pricing", widget: "string"}
+          - {label: "Menu: Płatności", name: "menu_about_payments", widget: "string"}
+          - {label: "Menu: Zapisy", name: "menu_about_enrollment", widget: "string"}
+          - {label: "Menu: Dokumenty", name: "menu_about_documents", widget: "string"}
+          - {label: "Menu: Polityka prywatności", name: "menu_about_privacy", widget: "string"}
+          - {label: "Menu: Kadra", name: "menu_staff", widget: "string"}
+          - {label: "Menu: Wolontariusze", name: "menu_volunteers", widget: "string"}
+          - {label: "Menu: Plan dnia", name: "menu_daily_plan", widget: "string"}
+          - {label: "Menu: Tygodniowy plan", name: "menu_daily_plan_weekly", widget: "string"}
+          - {label: "Menu: Zajęcia dodatkowe", name: "menu_daily_plan_extra", widget: "string"}
+          - {label: "Menu: Kalendarz", name: "menu_daily_plan_calendar", widget: "string"}
+          - {label: "Menu: Ochrona dzieci", name: "menu_child_protection", widget: "string"}
+          - {label: "Menu: Więcej", name: "menu_more", widget: "string"}
+          - {label: "Menu: Rekrutacja (dodatkowe)", name: "menu_more_recruitment", widget: "string"}
+
+  - name: ui_homepage_pl
+    label: "Strona główna (PL)"
+    files:
+      - name: homepage_pl
+        label: "Teksty strony głównej"
+        file: data/translations/pl/homepage.yml
+        fields:
+          - {label: "Nagłówek hero", name: "hero_headline", widget: "string"}
+          - {label: "Podtytuł hero", name: "hero_subheadline", widget: "text"}
+          - {label: "Dlaczego my", name: "why_choose_us", widget: "string"}
+          - {label: "Dlaczego my - podtytuł", name: "why_choose_us_subtitle", widget: "string"}
+          - {label: "Serdeczna opieka", name: "loving_care", widget: "string"}
+          - {label: "Serdeczna opieka - opis", name: "loving_care_desc", widget: "text"}
+          - {label: "Edukacja na najwyższym poziomie", name: "quality_education", widget: "string"}
+          - {label: "Edukacja - opis", name: "quality_education_desc", widget: "text"}
+          - {label: "Społeczność", name: "community", widget: "string"}
+          - {label: "Społeczność - opis", name: "community_desc", widget: "text"}
+          - {label: "Bezpieczne środowisko", name: "safe_environment", widget: "string"}
+          - {label: "Bezpieczne środowisko - opis", name: "safe_environment_desc", widget: "text"}
+          - {label: "Nauka przez zabawę", name: "play_based_learning", widget: "string"}
+          - {label: "Nauka przez zabawę - opis", name: "play_based_learning_desc", widget: "text"}
+          - {label: "Wykwalifikowani nauczyciele", name: "qualified_teachers", widget: "string"}
+          - {label: "Wykwalifikowani nauczyciele - opis", name: "qualified_teachers_desc", widget: "text"}
+          - {label: "Szczęśliwych dzieci", name: "happy_children", widget: "string"}
+          - {label: "Wykwalifikowanych nauczycieli", name: "expert_teachers", widget: "string"}
+          - {label: "Lat doświadczenia", name: "years_experience", widget: "string"}
+          - {label: "% zadowolonych rodziców", name: "parent_satisfaction", widget: "string"}
+          - {label: "Gotowi dać najlepszy start?", name: "ready_to_start", widget: "string"}
+          - {label: "Opis CTA", name: "cta_description", widget: "text"}
+          - {label: "Najnowsze aktualności", name: "latest_news", widget: "string"}
+          - {label: "Najnowsze aktualności - podtytuł", name: "latest_news_subtitle", widget: "string"}
+          - {label: "O nas - podtytuł", name: "about_us_subtitle", widget: "string"}
+          - {label: "O nas - podgląd tekstu", name: "about_preview_text", widget: "text"}
+          - {label: "O nas - opis obrazka", name: "about_image_alt", widget: "string"}
+
+  - name: ui_news_pl
+    label: "Aktualności (PL)"
+    files:
+      - name: news_pl
+        label: "Teksty aktualności"
+        file: data/translations/pl/news.yml
+        fields:
+          - {label: "Wszystkie aktualności", name: "all_news", widget: "string"}
+          - {label: "Powiązane artykuły", name: "related_posts", widget: "string"}
+          - {label: "Nowsze wpisy", name: "newer_posts", widget: "string"}
+          - {label: "Starsze wpisy", name: "older_posts", widget: "string"}
+          - {label: "Czas czytania", name: "reading_time", widget: "string"}
+          - {label: "Minut czytania", name: "minutes_read", widget: "string"}
+          - {label: "Powrót do aktualności", name: "back_to_news", widget: "string"}
+          - {label: "Poprzedni artykuł", name: "previous_article", widget: "string"}
+          - {label: "Następny artykuł", name: "next_article", widget: "string"}
+          - {label: "Brak aktualności", name: "no_news", widget: "string"}
+          - {label: "Archiwum aktualności", name: "news_archive", widget: "string"}
+          - {label: "Wyróżnione aktualności", name: "featured_news", widget: "string"}
+
+  - name: ui_gallery_pl
+    label: "Galeria (PL)"
+    files:
+      - name: gallery_pl
+        label: "Teksty galerii"
+        file: data/translations/pl/gallery.yml
+        fields:
+          - {label: "Zobacz galerię", name: "view_gallery", widget: "string"}
+          - {label: "Wszystkie galerie", name: "all_galleries", widget: "string"}
+          - {label: "Inne galerie", name: "other_galleries", widget: "string"}
+          - {label: "Zobacz pełną galerię", name: "view_full_gallery", widget: "string"}
+          - {label: "Powrót do galerii", name: "back_to_galleries", widget: "string"}
+          - {label: "Brak galerii", name: "no_galleries", widget: "string"}
+          - {label: "Kategorie galerii", name: "gallery_categories", widget: "string"}
+          - {label: "Najnowsze galerie", name: "latest_galleries", widget: "string"}
+
+  - name: ui_programs_pl
+    label: "Programy (PL)"
+    files:
+      - name: programs_pl
+        label: "Teksty programów"
+        file: data/translations/pl/programs.yml
+        fields:
+          - {label: "Wszystkie programy", name: "all_programs", widget: "string"}
+          - {label: "Szczegóły programu", name: "program_details", widget: "string"}
+          - {label: "Grupa wiekowa", name: "age_group", widget: "string"}
+          - {label: "Wielkość grupy", name: "group_size", widget: "string"}
+          - {label: "Godziny", name: "hours", widget: "string"}
+          - {label: "Plan dnia", name: "daily_schedule", widget: "string"}
+          - {label: "Cechy programu", name: "program_features", widget: "string"}
+          - {label: "Zajęcia", name: "program_activities", widget: "string"}
+          - {label: "Informacje o zapisach", name: "enrollment_info", widget: "string"}
+          - {label: "Powrót do programów", name: "back_to_programs", widget: "string"}
+          - {label: "Zobacz plan zajęć", name: "view_schedule", widget: "string"}
+          - {label: "Pobierz plan zajęć", name: "download_schedule", widget: "string"}
+
+  - name: ui_contact_pl
+    label: "Kontakt (PL)"
+    files:
+      - name: contact_pl
+        label: "Teksty strony kontakt"
+        file: data/translations/pl/contact.yml
+        fields:
+          - {label: "Informacje kontaktowe", name: "contact_information", widget: "string"}
+          - {label: "Nasza lokalizacja", name: "our_location", widget: "string"}
+          - {label: "Wyznacz trasę", name: "get_directions", widget: "string"}
+          - {label: "Godziny otwarcia", name: "opening_hours", widget: "string"}
+          - {label: "Wyślij wiadomość", name: "send_message", widget: "string"}
+          - {label: "Twoje imię", name: "your_name", widget: "string"}
+          - {label: "Twój email", name: "your_email", widget: "string"}
+          - {label: "Twój telefon", name: "your_phone", widget: "string"}
+          - {label: "Twoja wiadomość", name: "your_message", widget: "string"}
+          - {label: "Wiadomość wysłana", name: "message_sent", widget: "string"}
+          - {label: "Błąd wysyłania", name: "message_error", widget: "string"}
+          - {label: "Umów wizytę - nagłówek", name: "schedule_visit_heading", widget: "string"}
+          - {label: "Umów wizytę - opis", name: "schedule_visit_description", widget: "text"}
+          - {label: "Formularz: Imię i nazwisko", name: "visit_form_name", widget: "string"}
+          - {label: "Formularz: Email", name: "visit_form_email", widget: "string"}
+          - {label: "Formularz: Telefon", name: "visit_form_phone", widget: "string"}
+          - {label: "Formularz: Data", name: "visit_form_date", widget: "string"}
+          - {label: "Formularz: Godzina", name: "visit_form_time", widget: "string"}
+          - {label: "Formularz: Wiadomość", name: "visit_form_message", widget: "string"}
+          - {label: "Formularz: Przycisk wyślij", name: "visit_form_submit", widget: "string"}
+
+  - name: ui_footer_pl
+    label: "Stopka (PL)"
+    files:
+      - name: footer_pl
+        label: "Teksty stopki"
+        file: data/translations/pl/footer.yml
+        fields:
+          - {label: "Szybkie linki", name: "quick_links", widget: "string"}
+          - {label: "Przydatne linki", name: "useful_links", widget: "string"}
+          - {label: "Bądź w kontakcie", name: "stay_connected", widget: "string"}
+          - {label: "Zapisz się do newslettera", name: "newsletter_signup", widget: "string"}
+          - {label: "Placeholder newslettera", name: "newsletter_placeholder", widget: "string"}
+          - {label: "Przycisk newslettera", name: "newsletter_submit", widget: "string"}
+          - {label: "Newsletter - sukces", name: "newsletter_success", widget: "string"}
+          - {label: "Media społecznościowe", name: "social_media", widget: "string"}
+          - {label: "O przedszkolu", name: "preschool_info", widget: "string"}
+          - {label: "Opis stopki", name: "footer_description", widget: "text"}
+
+  - name: ui_errors_pl
+    label: "Błędy (PL)"
+    files:
+      - name: errors_pl
+        label: "Teksty błędów"
+        file: data/translations/pl/errors.yml
+        fields:
+          - {label: "Strona nie znaleziona", name: "page_not_found", widget: "string"}
+          - {label: "Strona nie znaleziona - wiadomość", name: "page_not_found_message", widget: "text"}
+          - {label: "Zachęta", name: "page_not_found_encouragement", widget: "text"}
+          - {label: "Przydatne linki", name: "helpful_links", widget: "string"}
+          - {label: "Błąd 404", name: "error_404", widget: "string"}
+          - {label: "Błąd 500", name: "error_500", widget: "string"}
+          - {label: "Błąd 500 - wiadomość", name: "error_500_message", widget: "string"}
+          - {label: "Spróbuj ponownie", name: "try_again", widget: "string"}
+
+  - name: ui_staff_pl
+    label: "Zespół - Tłumaczenia (PL)"
+    files:
+      - name: staff_pl
+        label: "Teksty sekcji zespołu"
+        file: data/translations/pl/staff.yml
+        fields:
+          - {label: "Nagłówek sekcji", name: "about_team_heading", widget: "string", default: "Nasz Zespół"}
+          - {label: "Podtytuł sekcji", name: "about_team_subtitle", widget: "text", required: false, default: "Poznaj naszych wykwalifikowanych i zaangażowanych nauczycieli"}
+          - label: "Role członków zespołu"
+            name: "roles"
+            widget: "object"
+            hint: "Stanowiska członków zespołu"
+            collapsed: true
+            fields:
+              - {label: "Dyrektor", name: "staff_role_director", widget: "string", required: false, default: "Dyrektor"}
+              - {label: "Wychowawca - Wiewióreczki", name: "staff_role_teacher_squirrels", widget: "string", required: false, default: "Wychowawca - Wiewióreczki"}
+              - {label: "Pomoc nauczyciela - Wiewióreczki", name: "staff_role_assistant_squirrels", widget: "string", required: false, default: "Pomoc nauczyciela"}
+              - {label: "Wychowawca - Motylki", name: "staff_role_teacher_butterflies", widget: "string", required: false, default: "Wychowawca - Motylki"}
+              - {label: "Pomoc nauczyciela - Motylki", name: "staff_role_assistant_butterflies", widget: "string", required: false, default: "Pomoc nauczyciela"}
+              - {label: "Wychowawca - Biedronki", name: "staff_role_teacher_ladybugs", widget: "string", required: false, default: "Wychowawca - Biedronki"}
+              - {label: "Wychowawca - Jeżyki", name: "staff_role_teacher_hedgehogs", widget: "string", required: false, default: "Wychowawca - Jeżyki"}
+              - {label: "Nauczyciel rytmiki", name: "staff_role_rhythmics", widget: "string", required: false, default: "Nauczyciel rytmiki"}
+              - {label: "Nauczyciel gimnastyki", name: "staff_role_gymnastics", widget: "string", required: false, default: "Nauczyciel gimnastyki"}
+              - {label: "Nauczyciel języka angielskiego", name: "staff_role_english", widget: "string", required: false, default: "Nauczyciel języka angielskiego"}
+              - {label: "Psycholog", name: "staff_role_psychologist", widget: "string", required: false, default: "Psycholog"}
+              - {label: "Logopeda", name: "staff_role_speech_therapist", widget: "string", required: false, default: "Logopeda"}
+              - {label: "Pedagog specjalny", name: "staff_role_special_educator", widget: "string", required: false, default: "Pedagog specjalny"}
+              - {label: "Kucharka", name: "staff_role_cook", widget: "string", required: false, default: "Kucharka"}
+              - {label: "Psychodietetyk", name: "staff_role_dietitian", widget: "string", required: false, default: "Psychodietetyk"}
+              - {label: "Personel obsługi", name: "staff_role_maintenance", widget: "string", required: false, default: "Personel obsługi"}
+          - label: "Biografie członków zespołu"
+            name: "bios"
+            widget: "object"
+            hint: "Opisy członków zespołu"
+            collapsed: true
+            fields:
+              - {label: "Bio - Dyrektor", name: "staff_bio_director", widget: "text", required: false}
+              - {label: "Bio - Nauczyciel 1", name: "staff_bio_teacher1", widget: "text", required: false}
+              - {label: "Bio - Nauczyciel 2", name: "staff_bio_teacher2", widget: "text", required: false}
+              - {label: "Bio - Nauczyciel 3", name: "staff_bio_teacher3", widget: "text", required: false}
+
+  # UI Text Translations - English (Structured)
+  - name: ui_global_en
+    label: "Global Text (EN)"
+    files:
+      - name: global_en
+        label: "General interface text"
+        file: data/translations/en/global.yml
+        fields:
+          - {label: "Site title", name: "site_title", widget: "string"}
+          - {label: "Site description", name: "site_description", widget: "string"}
+          - {label: "Read more", name: "read_more", widget: "string"}
+          - {label: "Learn more", name: "learn_more", widget: "string"}
+          - {label: "Contact us", name: "contact_us", widget: "string"}
+          - {label: "Schedule a visit", name: "schedule_visit", widget: "string"}
+          - {label: "Back to home", name: "back_to_home", widget: "string"}
+          - {label: "Search", name: "search", widget: "string"}
+          - {label: "Search placeholder", name: "search_placeholder", widget: "string"}
+          - {label: "No results", name: "no_results", widget: "string"}
+          - {label: "Menu", name: "menu", widget: "string"}
+          - {label: "Close", name: "close", widget: "string"}
+          - {label: "Phone", name: "phone", widget: "string"}
+          - {label: "Email", name: "email", widget: "string"}
+          - {label: "Address", name: "address", widget: "string"}
+          - {label: "Follow us", name: "follow_us", widget: "string"}
+          - {label: "Language", name: "language", widget: "string"}
+          - {label: "Language switcher", name: "language_switcher", widget: "string"}
+          - {label: "Skip to content", name: "skip_to_content", widget: "string"}
+          - {label: "Photos", name: "photos", widget: "string"}
+          - {label: "Categories", name: "categories", widget: "string"}
+          - {label: "Tags", name: "tags", widget: "string"}
+          - {label: "Share", name: "share", widget: "string"}
+          - {label: "Posted on", name: "posted_on", widget: "string"}
+          - {label: "By (author)", name: "by_author", widget: "string"}
+          - {label: "Copyright", name: "copyright", widget: "string"}
+
+  - name: ui_navigation_en
+    label: "Navigation (EN)"
+    files:
+      - name: navigation_en
+        label: "Navigation text"
+        file: data/translations/en/navigation.yml
+        fields:
+          - {label: "Home", name: "home", widget: "string"}
+          - {label: "About us", name: "about_us", widget: "string"}
+          - {label: "Programs", name: "programs", widget: "string"}
+          - {label: "Our offer", name: "our_offer", widget: "string"}
+          - {label: "News", name: "news", widget: "string"}
+          - {label: "Gallery", name: "gallery", widget: "string"}
+          - {label: "Contact", name: "contact", widget: "string"}
+          - {label: "Menu: Home", name: "menu_home", widget: "string"}
+          - {label: "Menu: About", name: "menu_about", widget: "string"}
+          - {label: "Menu: Programs", name: "menu_programs", widget: "string"}
+          - {label: "Menu: Programs Overview", name: "menu_programs_overview", widget: "string"}
+          - {label: "Menu: Schedule", name: "menu_programs_schedule", widget: "string"}
+          - {label: "Menu: News", name: "menu_news", widget: "string"}
+          - {label: "Menu: Gallery", name: "menu_gallery", widget: "string"}
+          - {label: "Menu: Galleries", name: "menu_galleries", widget: "string"}
+          - {label: "Menu: Contact", name: "menu_contact", widget: "string"}
+          - {label: "Menu: Recruitment", name: "menu_recruitment", widget: "string"}
+          - {label: "Menu: Our Vision", name: "menu_about_vision", widget: "string"}
+          - {label: "Menu: Offer", name: "menu_about_offer", widget: "string"}
+          - {label: "Menu: Pricing", name: "menu_about_pricing", widget: "string"}
+          - {label: "Menu: Payments", name: "menu_about_payments", widget: "string"}
+          - {label: "Menu: Enrollment", name: "menu_about_enrollment", widget: "string"}
+          - {label: "Menu: Documents", name: "menu_about_documents", widget: "string"}
+          - {label: "Menu: Privacy Policy", name: "menu_about_privacy", widget: "string"}
+          - {label: "Menu: Staff", name: "menu_staff", widget: "string"}
+          - {label: "Menu: Volunteers", name: "menu_volunteers", widget: "string"}
+          - {label: "Menu: Daily Plan", name: "menu_daily_plan", widget: "string"}
+          - {label: "Menu: Weekly Schedule", name: "menu_daily_plan_weekly", widget: "string"}
+          - {label: "Menu: Extra Activities", name: "menu_daily_plan_extra", widget: "string"}
+          - {label: "Menu: Calendar", name: "menu_daily_plan_calendar", widget: "string"}
+          - {label: "Menu: Child Protection", name: "menu_child_protection", widget: "string"}
+          - {label: "Menu: More", name: "menu_more", widget: "string"}
+          - {label: "Menu: Recruitment (additional)", name: "menu_more_recruitment", widget: "string"}
+
+  - name: ui_homepage_en
+    label: "Homepage (EN)"
+    files:
+      - name: homepage_en
+        label: "Homepage text"
+        file: data/translations/en/homepage.yml
+        fields:
+          - {label: "Hero headline", name: "hero_headline", widget: "string"}
+          - {label: "Hero subheadline", name: "hero_subheadline", widget: "text"}
+          - {label: "Why choose us", name: "why_choose_us", widget: "string"}
+          - {label: "Why choose us - subtitle", name: "why_choose_us_subtitle", widget: "string"}
+          - {label: "Loving care", name: "loving_care", widget: "string"}
+          - {label: "Loving care - description", name: "loving_care_desc", widget: "text"}
+          - {label: "Quality education", name: "quality_education", widget: "string"}
+          - {label: "Quality education - description", name: "quality_education_desc", widget: "text"}
+          - {label: "Community", name: "community", widget: "string"}
+          - {label: "Community - description", name: "community_desc", widget: "text"}
+          - {label: "Safe environment", name: "safe_environment", widget: "string"}
+          - {label: "Safe environment - description", name: "safe_environment_desc", widget: "text"}
+          - {label: "Play-based learning", name: "play_based_learning", widget: "string"}
+          - {label: "Play-based learning - description", name: "play_based_learning_desc", widget: "text"}
+          - {label: "Qualified teachers", name: "qualified_teachers", widget: "string"}
+          - {label: "Qualified teachers - description", name: "qualified_teachers_desc", widget: "text"}
+          - {label: "Happy children", name: "happy_children", widget: "string"}
+          - {label: "Expert teachers", name: "expert_teachers", widget: "string"}
+          - {label: "Years experience", name: "years_experience", widget: "string"}
+          - {label: "% parent satisfaction", name: "parent_satisfaction", widget: "string"}
+          - {label: "Ready to give best start?", name: "ready_to_start", widget: "string"}
+          - {label: "CTA description", name: "cta_description", widget: "text"}
+          - {label: "Latest news", name: "latest_news", widget: "string"}
+          - {label: "Latest news - subtitle", name: "latest_news_subtitle", widget: "string"}
+          - {label: "About us - subtitle", name: "about_us_subtitle", widget: "string"}
+          - {label: "About preview text", name: "about_preview_text", widget: "text"}
+          - {label: "About image alt", name: "about_image_alt", widget: "string"}
+
+  - name: ui_news_en
+    label: "News (EN)"
+    files:
+      - name: news_en
+        label: "News text"
+        file: data/translations/en/news.yml
+        fields:
+          - {label: "All news", name: "all_news", widget: "string"}
+          - {label: "Related posts", name: "related_posts", widget: "string"}
+          - {label: "Newer posts", name: "newer_posts", widget: "string"}
+          - {label: "Older posts", name: "older_posts", widget: "string"}
+          - {label: "Reading time", name: "reading_time", widget: "string"}
+          - {label: "Minutes read", name: "minutes_read", widget: "string"}
+          - {label: "Back to news", name: "back_to_news", widget: "string"}
+          - {label: "Previous article", name: "previous_article", widget: "string"}
+          - {label: "Next article", name: "next_article", widget: "string"}
+          - {label: "No news", name: "no_news", widget: "string"}
+          - {label: "News archive", name: "news_archive", widget: "string"}
+          - {label: "Featured news", name: "featured_news", widget: "string"}
+
+  - name: ui_gallery_en
+    label: "Gallery (EN)"
+    files:
+      - name: gallery_en
+        label: "Gallery text"
+        file: data/translations/en/gallery.yml
+        fields:
+          - {label: "View gallery", name: "view_gallery", widget: "string"}
+          - {label: "All galleries", name: "all_galleries", widget: "string"}
+          - {label: "Other galleries", name: "other_galleries", widget: "string"}
+          - {label: "View full gallery", name: "view_full_gallery", widget: "string"}
+          - {label: "Back to galleries", name: "back_to_galleries", widget: "string"}
+          - {label: "No galleries", name: "no_galleries", widget: "string"}
+          - {label: "Gallery categories", name: "gallery_categories", widget: "string"}
+          - {label: "Latest galleries", name: "latest_galleries", widget: "string"}
+
+  - name: ui_programs_en
+    label: "Programs (EN)"
+    files:
+      - name: programs_en
+        label: "Programs text"
+        file: data/translations/en/programs.yml
+        fields:
+          - {label: "All programs", name: "all_programs", widget: "string"}
+          - {label: "Program details", name: "program_details", widget: "string"}
+          - {label: "Age group", name: "age_group", widget: "string"}
+          - {label: "Group size", name: "group_size", widget: "string"}
+          - {label: "Hours", name: "hours", widget: "string"}
+          - {label: "Daily schedule", name: "daily_schedule", widget: "string"}
+          - {label: "Program features", name: "program_features", widget: "string"}
+          - {label: "Activities", name: "program_activities", widget: "string"}
+          - {label: "Enrollment info", name: "enrollment_info", widget: "string"}
+          - {label: "Back to programs", name: "back_to_programs", widget: "string"}
+          - {label: "View schedule", name: "view_schedule", widget: "string"}
+          - {label: "Download schedule", name: "download_schedule", widget: "string"}
+
+  - name: ui_contact_en
+    label: "Contact (EN)"
+    files:
+      - name: contact_en
+        label: "Contact page text"
+        file: data/translations/en/contact.yml
+        fields:
+          - {label: "Contact information", name: "contact_information", widget: "string"}
+          - {label: "Our location", name: "our_location", widget: "string"}
+          - {label: "Get directions", name: "get_directions", widget: "string"}
+          - {label: "Opening hours", name: "opening_hours", widget: "string"}
+          - {label: "Send message", name: "send_message", widget: "string"}
+          - {label: "Your name", name: "your_name", widget: "string"}
+          - {label: "Your email", name: "your_email", widget: "string"}
+          - {label: "Your phone", name: "your_phone", widget: "string"}
+          - {label: "Your message", name: "your_message", widget: "string"}
+          - {label: "Message sent", name: "message_sent", widget: "string"}
+          - {label: "Message error", name: "message_error", widget: "string"}
+          - {label: "Schedule visit - heading", name: "schedule_visit_heading", widget: "string"}
+          - {label: "Schedule visit - description", name: "schedule_visit_description", widget: "text"}
+          - {label: "Form: Full name", name: "visit_form_name", widget: "string"}
+          - {label: "Form: Email", name: "visit_form_email", widget: "string"}
+          - {label: "Form: Phone", name: "visit_form_phone", widget: "string"}
+          - {label: "Form: Date", name: "visit_form_date", widget: "string"}
+          - {label: "Form: Time", name: "visit_form_time", widget: "string"}
+          - {label: "Form: Message", name: "visit_form_message", widget: "string"}
+          - {label: "Form: Submit button", name: "visit_form_submit", widget: "string"}
+
+  - name: ui_footer_en
+    label: "Footer (EN)"
+    files:
+      - name: footer_en
+        label: "Footer text"
+        file: data/translations/en/footer.yml
+        fields:
+          - {label: "Quick links", name: "quick_links", widget: "string"}
+          - {label: "Useful links", name: "useful_links", widget: "string"}
+          - {label: "Stay connected", name: "stay_connected", widget: "string"}
+          - {label: "Newsletter signup", name: "newsletter_signup", widget: "string"}
+          - {label: "Newsletter placeholder", name: "newsletter_placeholder", widget: "string"}
+          - {label: "Newsletter submit", name: "newsletter_submit", widget: "string"}
+          - {label: "Newsletter success", name: "newsletter_success", widget: "string"}
+          - {label: "Social media", name: "social_media", widget: "string"}
+          - {label: "About preschool", name: "preschool_info", widget: "string"}
+          - {label: "Footer description", name: "footer_description", widget: "text"}
+
+  - name: ui_errors_en
+    label: "Errors (EN)"
+    files:
+      - name: errors_en
+        label: "Error text"
+        file: data/translations/en/errors.yml
+        fields:
+          - {label: "Page not found", name: "page_not_found", widget: "string"}
+          - {label: "Page not found - message", name: "page_not_found_message", widget: "text"}
+          - {label: "Encouragement", name: "page_not_found_encouragement", widget: "text"}
+          - {label: "Helpful links", name: "helpful_links", widget: "string"}
+          - {label: "Error 404", name: "error_404", widget: "string"}
+          - {label: "Error 500", name: "error_500", widget: "string"}
+          - {label: "Error 500 - message", name: "error_500_message", widget: "string"}
+          - {label: "Try again", name: "try_again", widget: "string"}
+
+  - name: ui_staff_en
+    label: "Team - Translations (EN)"
+    files:
+      - name: staff_en
+        label: "Team section text"
+        file: data/translations/en/staff.yml
+        fields:
+          - {label: "Section heading", name: "about_team_heading", widget: "string", default: "Our Team"}
+          - {label: "Section subtitle", name: "about_team_subtitle", widget: "text", required: false, default: "Meet our qualified and dedicated teachers"}
+          - label: "Team member roles"
+            name: "roles"
+            widget: "object"
+            hint: "Team member positions"
+            collapsed: true
+            fields:
+              - {label: "Director", name: "staff_role_director", widget: "string", required: false, default: "Director"}
+              - {label: "Lead Teacher - Squirrels", name: "staff_role_teacher_squirrels", widget: "string", required: false, default: "Lead Teacher - Squirrels"}
+              - {label: "Teaching Assistant - Squirrels", name: "staff_role_assistant_squirrels", widget: "string", required: false, default: "Teaching Assistant"}
+              - {label: "Lead Teacher - Butterflies", name: "staff_role_teacher_butterflies", widget: "string", required: false, default: "Lead Teacher - Butterflies"}
+              - {label: "Teaching Assistant - Butterflies", name: "staff_role_assistant_butterflies", widget: "string", required: false, default: "Teaching Assistant"}
+              - {label: "Lead Teacher - Ladybugs", name: "staff_role_teacher_ladybugs", widget: "string", required: false, default: "Lead Teacher - Ladybugs"}
+              - {label: "Lead Teacher - Hedgehogs", name: "staff_role_teacher_hedgehogs", widget: "string", required: false, default: "Lead Teacher - Hedgehogs"}
+              - {label: "Rhythmics Teacher", name: "staff_role_rhythmics", widget: "string", required: false, default: "Rhythmics Teacher"}
+              - {label: "Gymnastics Teacher", name: "staff_role_gymnastics", widget: "string", required: false, default: "Gymnastics Teacher"}
+              - {label: "English Teacher", name: "staff_role_english", widget: "string", required: false, default: "English Language Teacher"}
+              - {label: "Psychologist", name: "staff_role_psychologist", widget: "string", required: false, default: "Psychologist"}
+              - {label: "Speech Therapist", name: "staff_role_speech_therapist", widget: "string", required: false, default: "Speech Therapist"}
+              - {label: "Special Education Teacher", name: "staff_role_special_educator", widget: "string", required: false, default: "Special Education Teacher"}
+              - {label: "Cook", name: "staff_role_cook", widget: "string", required: false, default: "Cook"}
+              - {label: "Dietitian", name: "staff_role_dietitian", widget: "string", required: false, default: "Psycho-Dietitian"}
+              - {label: "Maintenance Staff", name: "staff_role_maintenance", widget: "string", required: false, default: "Maintenance Staff"}
+          - label: "Team member biographies"
+            name: "bios"
+            widget: "object"
+            hint: "Team member descriptions"
+            collapsed: true
+            fields:
+              - {label: "Bio - Director", name: "staff_bio_director", widget: "text", required: false}
+              - {label: "Bio - Teacher 1", name: "staff_bio_teacher1", widget: "text", required: false}
+              - {label: "Bio - Teacher 2", name: "staff_bio_teacher2", widget: "text", required: false}
+              - {label: "Bio - Teacher 3", name: "staff_bio_teacher3", widget: "text", required: false}

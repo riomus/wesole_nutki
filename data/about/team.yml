@@ -6,23 +6,136 @@ heading_key: about_team_heading
 subtitle_key: about_team_subtitle
 
 # Team members
+# Note: Use translation keys for role_key and bio_key
+# Add translations in data/translations/pl/staff.yml and data/translations/en/staff.yml
 members:
-  - name: Anna Kowalska
-    role_key: about_team_role_director
-    bio_key: about_team_bio_director
-    image: /images/team/director.jpg
+  # Group Teachers (Wychowawcy)
+  - name: Patrycja Gajzler
+    role_key: staff_role_teacher_squirrels
+    bio_key: staff_bio_teacher1
+    image: /images/team/patrycja-gajzler.jpg
+    weight: 1
+    visible: true
 
-  - name: Maria Nowak
-    role_key: about_team_role_teacher1
-    bio_key: about_team_bio_teacher1
-    image: /images/team/teacher1.jpg
+  - name: Maja Kalinowska
+    role_key: staff_role_assistant_squirrels
+    bio_key: ""
+    image: /images/team/maja-kalinowska.jpg
+    weight: 2
+    visible: true
 
-  - name: Katarzyna Wisniewska
-    role_key: about_team_role_teacher2
-    bio_key: about_team_bio_teacher2
-    image: /images/team/teacher2.jpg
+  - name: Paulina Milewska
+    role_key: staff_role_teacher_butterflies
+    bio_key: ""
+    image: /images/team/paulina-milewska.jpg
+    weight: 3
+    visible: true
 
-  - name: Ewa Dabrowska
-    role_key: about_team_role_teacher3
-    bio_key: about_team_bio_teacher3
-    image: /images/team/teacher3.jpg
+  - name: Anita Nowak
+    role_key: staff_role_assistant_butterflies
+    bio_key: ""
+    image: /images/team/anita-nowak.jpg
+    weight: 4
+    visible: true
+
+  - name: Halszka Szymaniak
+    role_key: staff_role_teacher_ladybugs
+    bio_key: ""
+    image: /images/team/halszka-szymaniak.jpg
+    weight: 5
+    visible: true
+
+  - name: Katarzyna Ścibór
+    role_key: staff_role_teacher_ladybugs
+    bio_key: ""
+    image: /images/team/katarzyna-scibor.jpg
+    weight: 6
+    visible: true
+
+  - name: Kacper Rygałło
+    role_key: staff_role_teacher_hedgehogs
+    bio_key: ""
+    image: /images/team/kacper-rygallo.jpg
+    weight: 7
+    visible: true
+
+  # Additional Activity Teachers
+  - name: Anna Kierakowicz
+    role_key: staff_role_rhythmics
+    bio_key: ""
+    image: /images/team/anna-kierakowicz.jpg
+    weight: 10
+    visible: true
+
+  - name: Alma Eperlein
+    role_key: staff_role_gymnastics
+    bio_key: ""
+    image: /images/team/alma-eperlein.jpg
+    weight: 11
+    visible: true
+
+  - name: Inna
+    role_key: staff_role_english
+    bio_key: ""
+    image: /images/team/inna.jpg
+    weight: 12
+    visible: true
+
+  # Psychological and Pedagogical Support
+  - name: Karolina Zwolińska
+    role_key: staff_role_psychologist
+    bio_key: ""
+    image: /images/team/karolina-zwolinska.jpg
+    weight: 20
+    visible: true
+
+  - name: Joanna Dominik
+    role_key: staff_role_speech_therapist
+    bio_key: ""
+    image: /images/team/joanna-dominik.jpg
+    weight: 21
+    visible: true
+
+  - name: Anna Brodzisz
+    role_key: staff_role_special_educator
+    bio_key: ""
+    image: /images/team/anna-brodzisz.jpg
+    weight: 22
+    visible: true
+
+  # Kitchen Staff
+  - name: Edyta Andrzejewska
+    role_key: staff_role_cook
+    bio_key: ""
+    image: /images/team/edyta-andrzejewska.jpg
+    weight: 30
+    visible: true
+
+  - name: Marta Pałubińska
+    role_key: staff_role_cook
+    bio_key: ""
+    image: /images/team/marta-palubinska.jpg
+    weight: 31
+    visible: true
+
+  - name: Pani Ania
+    role_key: staff_role_cook
+    bio_key: ""
+    image: /images/team/pani-ania.jpg
+    weight: 32
+    visible: true
+
+  - name: Małgorzata Talaga-Duma
+    role_key: staff_role_dietitian
+    bio_key: ""
+    image: /images/team/malgorzata-talaga-duma.jpg
+    weight: 33
+    visible: true
+
+  # Maintenance Staff
+  - name: Iwonka Brańska
+    role_key: staff_role_maintenance
+    bio_key: ""
+    image: /images/team/iwonka-branska.jpg
+    weight: 40
+    visible: true

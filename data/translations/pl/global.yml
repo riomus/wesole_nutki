@@ -1,0 +1,34 @@
+# Global UI translations - Polish
+# Site information
+site_title: "Wesołe Nutki"
+site_description: "Przedszkole we Wrocławiu"
+
+# Common actions
+read_more: "Czytaj więcej"
+learn_more: "Dowiedz się więcej"
+contact_us: "Skontaktuj się"
+schedule_visit: "Umów wizytę"
+back_to_home: "Powrót do strony głównej"
+
+# Common elements
+search: "Szukaj"
+search_placeholder: "Wpisz szukaną frazę..."
+no_results: "Brak wyników"
+menu: "Menu"
+close: "Zamknij"
+phone: "Telefon"
+email: "Email"
+address: "Adres"
+follow_us: "Śledź nas"
+language: "Język"
+language_switcher: "Wybór języka"
+skip_to_content: "Przejdź do treści"
+photos: "zdjęć"
+
+# Content sections
+categories: "Kategorie"
+tags: "Tagi"
+share: "Udostępnij"
+posted_on: "Opublikowano"
+by_author: "przez"
+copyright: "Wszelkie prawa zastrzeżone"

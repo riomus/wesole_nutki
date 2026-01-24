@@ -2750,6 +2750,84 @@ Requirements:
 - Ensure fallback works for both initial render and runtime errors
 - Test with news items that have: no image URL, invalid URLs, and broken image links</description>
     </feature>
+    <feature>
+      <name>Fix image URLs for GitHub Pages deployment</name>
+      <description>Investigate and Fix Broken Image URLs on GitHub Pages Site
+
+Images are not loading on the GitHub Pages deployment because the URLs are being incorrectly generated as relative paths (bartusiak.ai/wesole_nutki...) instead of absolute paths with the correct subdirectory structure (https://bartusiak.ai/images/scraped/...).
+
+Requirements:
+- Identify where image URLs are being constructed in the codebase
+- Determine why the path generation differs between local development and GitHub Pages deployment
+- Fix the URL construction to correctly reference images in the /images/scraped/ directory
+- Ensure the fix works for both local development and GitHub Pages deployment
+- Verify that base URL configuration is properly set for GitHub Pages
+- Test that all images load correctly after deployment
+- Check for any other assets (CSS, JS) that might have similar path issues
+
+Example of current broken behavior:
+- Current (broken): bartusiak.ai/wesole_nutki...
+- Expected (working): https://bartusiak.ai/images/scraped/2023-01-30-pracuj-z-wesolymi-nutkami-0.jpg</description>
+    </feature>
+    <feature>
+      <name>Implement Full CMS for Dynamic Content Management</name>
+      <description>Implement Full CMS Management for All Website Sections
+
+Enable complete content management system control over all website sections, allowing non-technical staff to create, edit, and delete content without code changes.
+
+Requirements:
+- Create CMS models/schemas for all currently hard-coded sections
+- Implement CRUD interfaces for managing programs (add, edit, delete, reorder)
+- Implement CRUD interfaces for managing people/team members (profiles, bios, photos, roles)
+- Ensure all text content is editable through CMS (headings, descriptions, body text)
+- Make all images manageable through CMS (upload, replace, alt text)
+- Add ability to control section visibility (show/hide sections)
+- Implement drag-and-drop or ordering controls for resequencing items
+- Add rich text editing capabilities where appropriate
+- Include image upload with automatic resizing/optimization
+- Set up proper validation rules for required fields
+- Create preview functionality before publishing changes
+- Test all CRUD operations work correctly and update live site
+- Document CMS structure and provide usage guide for content editors
+
+Sections to verify are CMS-managed:
+- Programs section (titles, descriptions, details, images)
+- People/Team section (names, roles, bios, headshots)
+- Any other content sections currently in the site</description>
+    </feature>
+    <feature>
+      <name>Migrate UI translations from TOML to CMS schemas</name>
+      <description>Implement CMS-Based UI Translation System for Webpage Sections
+
+Fix the non-functional CMS editing functionality by migrating UI translation keys to use CMS schemas instead of direct TOML file editing for both Polish (pl) and English (en) languages.
+
+Current Problem:
+- CMS edition is not working for all webpage elements
+- Users cannot edit sections of webpages through the CMS interface
+- Translation keys are currently using direct TOML editing instead of CMS schemas
+
+Requirements:
+- Audit all webpage sections to identify which elements are not editable through CMS
+- Migrate UI translation keys (pl and en) from direct TOML file editing to CMS schema-based approach
+- Ensure CMS schemas are properly defined for all translatable webpage sections
+- Connect frontend translation rendering to pull from CMS schemas instead of static TOML files
+- Verify all webpage sections are editable through the CMS interface after migration
+- Test editing functionality for both Polish and English translations
+- Ensure changes made in CMS are immediately reflected on the website
+- Document the new CMS schema structure for future content editors
+
+Edge Cases to Consider:
+- Handling fallback translations when CMS values are missing
+- Migration of existing TOML translations to CMS without data loss
+- Maintaining translation key consistency across both languages
+- Proper error handling when CMS schema fails to load
+
+Success Criteria:
+- All webpage sections are editable through CMS interface
+- No direct TOML file editing required for content updates
+- Both pl and en translations work correctly through CMS
+- Content editors can successfully modify all webpage sections</description>
+    </feature>
   </implemented_features>
 
   <additional_requirements>
