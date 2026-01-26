@@ -730,8 +730,42 @@
     }
   }
 
+  // Mission section image container - ensures rounded corners display properly
+  .about-mission-image {
+    @apply overflow-hidden;
+    border-radius: 0.375rem; // Matches Bootstrap's rounded-3 (0.375rem)
+    // Rounded corners applied to container to ensure proper clipping
+    // Matches the rounded-3 class on the image for consistent styling
+  }
+
   // Mission section enhanced typography
   .about-mission-content {
+    // Mission subtitle styling - replaces inline styles
+    .mission-subtitle {
+      @apply text-base md:text-lg leading-normal mb-6;
+      font-size: 1.125rem;
+      line-height: 1.6;
+
+      @media (max-width: 768px) {
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+    }
+
+    // Mission description styling - replaces inline styles
+    .mission-description {
+      @apply text-base md:text-lg leading-relaxed mb-6;
+      font-size: 1.125rem;
+      line-height: 1.75;
+      color: rgba(45, 49, 66, 0.85);
+
+      @media (max-width: 768px) {
+        font-size: 1rem;
+        line-height: 1.7;
+      }
+    }
+
+    // Generic about-text fallback
     .about-text {
       @apply text-base md:text-lg text-dark/80 leading-relaxed mb-6;
       line-height: 1.75;
@@ -4481,6 +4515,10 @@
     min-height: 200px; // Minimum height during loading
     max-height: 800px; // Prevent extremely tall images from dominating layout
     width: 100%;
+
+    // Inherit border-radius from parent container if present
+    // This ensures rounded corners work properly with loading states
+    border-radius: inherit;
 
     picture, img {
       @apply relative object-contain;

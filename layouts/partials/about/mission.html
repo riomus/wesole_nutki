@@ -1,9 +1,16 @@
 {{- $data := site.Data.about.mission -}}
 {{- if $data.enabled -}}
-<!-- Mission/Philosophy Section -->
+{{/*
+  Mission/Philosophy Section
+  Features:
+  - Responsive image with rounded corners (rounded-3) and shadow (shadow-lg)
+  - Two-column layout (image + content)
+  - Supports optional subtitle and highlights list
+*/}}
 <section class="section about-mission-section" id="mission-section">
   <div class="container">
     <div class="row align-items-center g-5">
+      {{/* Mission Image Column - Rounded corners applied via rounded-3 class */}}
       <div class="col-lg-6">
         {{- if $data.image -}}
         <div class="about-mission-image">
@@ -17,13 +24,14 @@
         </div>
         {{- end -}}
       </div>
+      {{/* Mission Content Column */}}
       <div class="col-lg-6">
         <div class="about-mission-content">
-          <h2 class="section-heading text-start" style="margin-bottom: 1.25rem;">{{ i18n $data.heading_key | default "Our Mission" }}</h2>
+          <h2 class="section-heading text-start mb-4">{{ i18n $data.heading_key | default "Our Mission" }}</h2>
           {{- with $data.subtitle_key -}}
-          <p class="section-subtitle text-start" style="font-size: 1.125rem; line-height: 1.6; margin-bottom: 1.5rem;">{{ i18n . }}</p>
+          <p class="section-subtitle text-start mission-subtitle">{{ i18n . }}</p>
           {{- end -}}
-          <p class="about-text" style="font-size: 1.125rem; line-height: 1.75; margin-bottom: 1.5rem; color: rgba(45, 49, 66, 0.85);">{{ i18n $data.content_key }}</p>
+          <p class="about-text mission-description">{{ i18n $data.content_key }}</p>
           {{- if $data.highlights -}}
           <ul class="feature-list">
             {{- range $data.highlights -}}
