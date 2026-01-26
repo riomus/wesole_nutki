@@ -3298,6 +3298,27 @@ Edge cases to consider:
 - Any region-specific variants (en-US, en-GB, etc.)
 - Fallback behavior if translations are missing</description>
     </feature>
+    <feature>
+      <name>Fix image path configuration for GitHub Pages deployment</name>
+      <description>Extract and Fix Image Path Configuration for GitHub Pages Deployment
+
+Resolve image loading issues in the wesole_nutki application where images fail to load on GitHub Pages due to missing path prefix, while maintaining functionality on localhost.
+
+Requirements:
+- Investigate how images are currently referenced in the news section (https://bartusiak.ai/wesole_nutki/pl/news/)
+- Identify why the path https://bartusiak.ai/images/scraped/2025-06-03-warsztaty-ekologiczne-0.png is being generated instead of https://bartusiak.ai/wesole_nutki/images/scraped/...
+- Locate the image path configuration or base URL settings in the codebase
+- Implement a solution that prepends &apos;/wesole_nutki&apos; to image paths when deployed to GitHub Pages
+- Ensure localhost development environment continues to work without the prefix
+- Verify the fix works for all news images, not just the specific example
+- Test both environments (localhost and gh-pages) to confirm images load correctly
+
+Edge cases to consider:
+- Images referenced in different components or pages beyond the news section
+- Hardcoded absolute paths vs relative paths
+- Build configuration differences between development and production
+- Potential base URL configuration in framework/build tool settings</description>
+    </feature>
   </implemented_features>
 
   <additional_requirements>

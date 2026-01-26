@@ -1,0 +1,112 @@
+{
+  "category": "Uncategorized",
+  "description": "Extract and Fix Image Path Configuration for GitHub Pages Deployment\n\nResolve image loading issues in the wesole_nutki application where images fail to load on GitHub Pages due to missing path prefix, while maintaining functionality on localhost.\n\nRequirements:\n- Investigate how images are currently referenced in the news section (https://bartusiak.ai/wesole_nutki/pl/news/)\n- Identify why the path https://bartusiak.ai/images/scraped/2025-06-03-warsztaty-ekologiczne-0.png is being generated instead of https://bartusiak.ai/wesole_nutki/images/scraped/...\n- Locate the image path configuration or base URL settings in the codebase\n- Implement a solution that prepends '/wesole_nutki' to image paths when deployed to GitHub Pages\n- Ensure localhost development environment continues to work without the prefix\n- Verify the fix works for all news images, not just the specific example\n- Test both environments (localhost and gh-pages) to confirm images load correctly\n\nEdge cases to consider:\n- Images referenced in different components or pages beyond the news section\n- Hardcoded absolute paths vs relative paths\n- Build configuration differences between development and production\n- Potential base URL configuration in framework/build tool settings",
+  "title": "Fix image path configuration for GitHub Pages deployment",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "full",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "in_progress",
+  "id": "feature-1769410813825-59yxroho5",
+  "descriptionHistory": [
+    {
+      "description": "Extract and Fix Image Path Configuration for GitHub Pages Deployment\n\nResolve image loading issues in the wesole_nutki application where images fail to load on GitHub Pages due to missing path prefix, while maintaining functionality on localhost.\n\nRequirements:\n- Investigate how images are currently referenced in the news section (https://bartusiak.ai/wesole_nutki/pl/news/)\n- Identify why the path https://bartusiak.ai/images/scraped/2025-06-03-warsztaty-ekologiczne-0.png is being generated instead of https://bartusiak.ai/wesole_nutki/images/scraped/...\n- Locate the image path configuration or base URL settings in the codebase\n- Implement a solution that prepends '/wesole_nutki' to image paths when deployed to GitHub Pages\n- Ensure localhost development environment continues to work without the prefix\n- Verify the fix works for all news images, not just the specific example\n- Test both environments (localhost and gh-pages) to confirm images load correctly\n\nEdge cases to consider:\n- Images referenced in different components or pages beyond the news section\n- Hardcoded absolute paths vs relative paths\n- Build configuration differences between development and production\n- Potential base URL configuration in framework/build tool settings",
+      "timestamp": "2026-01-26T07:00:13.918Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-26T07:18:32.221Z",
+  "planSpec": {
+    "status": "approved",
+    "version": 1,
+    "reviewedByUser": false,
+    "content": "I'll analyze the codebase to understand the image path configuration issue and generate a comprehensive specification.\n\n🔧 Tool: Glob\nInput: {\n  \"pattern\": \"**/vite.config.*\"\n}\n\n🔧 Tool: Glob\nInput: {\n  \"pattern\": \"**/next.config.*\"\n}\n\n🔧 Tool: Glob\nInput: {\n  \"pattern\": \"**/package.json\"\n}\n\n🔧 Tool: Grep\nInput: {\n  \"pattern\": \"scraped.*\\\\.(png|jpg|jpeg|webp)\",\n  \"output_mode\": \"content\"\n}\n\n🔧 Tool: Read\nInput: {\n  \"file_path\": \"/Users/romanbartusiak/git/riomus/wesole_nutki/package.json\"\n}\n\n🔧 Tool: Glob\nInput: {\n  \"pattern\": \"**/hugo.yaml\"\n}\n\n🔧 Tool: Glob\nInput: {\n  \"pattern\": \"**/hugo.toml\"\n}\n\n🔧 Tool: Glob\nInput: {\n  \"pattern\": \"**/config.yaml\"\n}\n\n🔧 Tool: Glob\nInput: {\n  \"pattern\": \"**/config.toml\"\n}\n\n🔧 Tool: Read\nInput: {\n  \"file_path\": \"/Users/romanbartusiak/git/riomus/wesole_nutki/hugo.toml\"\n}\n\n🔧 Tool: Glob\nInput: {\n  \"pattern\": \"**/.github/workflows/*.yml\"\n}\n\n🔧 Tool: Read\nInput: {\n  \"file_path\": \"/Users/romanbartusiak/git/riomus/wesole_nutki/.github/workflows/deploy.yml\"\n}\n\n🔧 Tool: Grep\nInput: {\n  \"pattern\": \"\\\\.Permalink|\\\\.RelPermalink|\\\\.URL\",\n  \"output_mode\": \"files_with_matches\",\n  \"path\": \"layouts\"\n}\n\n🔧 Tool: Glob\nInput: {\n  \"pattern\": \"layouts/**/*.html\"\n}\n\n🔧 Tool: Read\nInput: {\n  \"file_path\": \"/Users/romanbartusiak/git/riomus/wesole_nutki/layouts/partials/responsive-image.html\"\n}\n\n🔧 Tool: Read\nInput: {\n  \"file_path\": \"/Users/romanbartusiak/git/riomus/wesole_nutki/layouts/partials/news-card.html\"\n}\n\n🔧 Tool: Read\nInput: {\n  \"file_path\": \"/Users/romanbartusiak/git/riomus/wesole_nutki/layouts/news/single.html\"\n}\n\n🔧 Tool: Bash\nInput: {\n  \"command\": \"ls -la /Users/romanbartusiak/git/riomus/wesole_nutki/static/images/scraped/ | head -10\",\n  \"description\": \"Check if scraped images exist in static folder\"\n}\n\n🔧 Tool: Bash\nInput: {\n  \"command\": \"ls -la /Users/romanbartusiak/git/riomus/wesole_nutki/public/images/scraped/ 2>/dev/null | head -10 || echo \\\"public/images/scraped does not exist\\\"\",\n  \"description\": \"Check if scraped images exist in public folder\"\n}\n\n🔧 Tool: Grep\nInput: {\n  \"pattern\": \"baseURL.*localhost\",\n  \"output_mode\": \"content\"\n}\n\n🔧 Tool: Read\nInput: {\n  \"file_path\": \"/Users/romanbartusiak/git/riomus/wesole_nutki/public/pl/news/index.html\",\n  \"limit\": 50\n}\n\n🔧 Tool: Grep\nInput: {\n  \"pattern\": \"src=.*images/scraped\",\n  \"output_mode\": \"content\",\n  \"path\": \"public/pl/news\",\n  \"-n\": true\n}\nNow I have all the information needed to generate the comprehensive specification.\n\n---\n\n# Comprehensive Specification: Image Path Configuration for GitHub Pages Deployment\n\n## 1. Problem Statement\n\nImages in the wesole_nutki application fail to load on GitHub Pages deployment because static image paths are missing the `/wesole_nutki` base path prefix. The application is deployed at `https://bartusiak.ai/wesole_nutki/`, but images are referenced as `/images/scraped/...` instead of `/wesole_nutki/images/scraped/...`, resulting in 404 errors while the same images load correctly on localhost.\n\n## 2. User Story\n\nAs a **visitor to the wesole_nutki website on GitHub Pages**, I want **all images to load correctly**, so that **I can view news articles, galleries, and other content with their associated images without encountering broken image links**.\n\n## 3. Acceptance Criteria\n\n### Happy Path\n- **GIVEN** the site is deployed to GitHub Pages at `https://bartusiak.ai/wesole_nutki/`\n- **WHEN** a user navigates to the news page at `https://bartusiak.ai/wesole_nutki/pl/news/`\n- **THEN** all images should load with the correct path `https://bartusiak.ai/wesole_nutki/images/scraped/...`\n\n### Edge Cases\n- **GIVEN** the site is running on localhost at `http://localhost:1313/`\n- **WHEN** a developer views the news page\n- **THEN** images should load with the path `/images/scraped/...` without the base path prefix\n\n- **GIVEN** the site is tested with base path on localhost at `http://localhost:1313/wesole_nutki/`\n- **WHEN** running `npm run dev:basepath` or `npm run test:basepath`\n- **THEN** images should load with the path `/wesole_nutki/images/scraped/...`\n\n### Error Handling\n- **GIVEN** an image file is missing from the static folder\n- **WHEN** the page attempts to render the image\n- **THEN** the existing error handling fallback UI should display gracefully\n\n## 4. Technical Context\n\n| Aspect | Value |\n|--------|-------|\n| Affected Files | `layouts/partials/news-card.html`, `layouts/partials/responsive-image.html`, `hugo.toml`, `.github/workflows/deploy.yml` |\n| Dependencies | Hugo static site generator (v0.140.2) |\n| Constraints | Must maintain localhost development without base path; static images cannot be processed by Hugo's asset pipeline |\n| Patterns to Follow | Use Hugo's `relURL` function which respects `baseURL` configuration; maintain existing error handling UI |\n\n## 5. Non-Goals\n\nThis feature explicitly does **NOT** include:\n- Converting static images to Hugo processed assets\n- Changing the deployment URL structure from `bartusiak.ai/wesole_nutki/` to a root domain\n- Implementing a CDN for image delivery\n- Modifying image file names or directory structure in `static/images/scraped/`\n\n## 6. Implementation Tasks\n\n```tasks\n## Phase 1: Investigation & Diagnosis\n- [ ] T001: Verify current build output and confirm relURL not working for static images | File: public/pl/news/index.html\n- [ ] T002: Test production build locally to reproduce the issue | File: .github/workflows/deploy.yml\n- [ ] T003: Research Hugo's relURL behavior with static files vs processed resources | File: hugo.toml\n\n## Phase 2: Core Implementation\n- [ ] T004: Verify hugo.toml baseURL configuration is correct | File: hugo.toml\n- [ ] T005: Ensure GitHub Actions workflow respects baseURL during build | File: .github/workflows/deploy.yml\n- [ ] T006: Rebuild site with production configuration to verify fix | File: public/\n\n## Phase 3: Verification & Testing\n- [ ] T007: Create Playwright test to verify image paths on basepath localhost | File: tests/verify-image-paths.spec.ts\n- [ ] T008: Run Playwright test and verify all images load correctly | File: tests/verify-image-paths.spec.ts\n- [ ] T009: Clean up temporary test file after verification | File: tests/verify-image-paths.spec.ts\n- [ ] T010: Verify production build output has correct image paths | File: public/pl/news/index.html\n```\n\n## 7. Success Metrics\n\n- All images on the news page load successfully when tested at `http://localhost:1313/wesole_nutki/` (simulating GitHub Pages)\n- Playwright test passes verifying image paths include the base path prefix\n- Production build output shows image src attributes as `/wesole_nutki/images/scraped/...`\n- Localhost development (without base path) continues to work with paths `/images/scraped/...`\n\n## 8. Risks & Mitigations\n\n| Risk | Mitigation |\n|------|------------|\n| Breaking localhost development when fixing GitHub Pages paths | Use environment-based configuration and test both `npm run dev` and `npm run dev:basepath` scenarios |\n| Hugo's relURL not working as expected for static files | Investigate if canonifyURLs or other Hugo config affects static file path generation |\n| Cached builds containing old paths | Clean public directory and rebuild from scratch to ensure fresh output |\n| Changes affecting other image references beyond news section | Grep for all image references and test galleries, about pages, and homepage |\n\n---",
+    "generatedAt": "2026-01-26T07:01:37.280Z",
+    "tasks": [
+      {
+        "id": "T001",
+        "description": "Verify current build output and confirm relURL not working for static images",
+        "filePath": "public/pl/news/index.html",
+        "phase": "Phase 1: Investigation & Diagnosis",
+        "status": "pending"
+      },
+      {
+        "id": "T002",
+        "description": "Test production build locally to reproduce the issue",
+        "filePath": ".github/workflows/deploy.yml",
+        "phase": "Phase 1: Investigation & Diagnosis",
+        "status": "pending"
+      },
+      {
+        "id": "T003",
+        "description": "Research Hugo's relURL behavior with static files vs processed resources",
+        "filePath": "hugo.toml",
+        "phase": "Phase 1: Investigation & Diagnosis",
+        "status": "pending"
+      },
+      {
+        "id": "T004",
+        "description": "Verify hugo.toml baseURL configuration is correct",
+        "filePath": "hugo.toml",
+        "phase": "Phase 2: Core Implementation",
+        "status": "pending"
+      },
+      {
+        "id": "T005",
+        "description": "Ensure GitHub Actions workflow respects baseURL during build",
+        "filePath": ".github/workflows/deploy.yml",
+        "phase": "Phase 2: Core Implementation",
+        "status": "pending"
+      },
+      {
+        "id": "T006",
+        "description": "Rebuild site with production configuration to verify fix",
+        "filePath": "public/",
+        "phase": "Phase 2: Core Implementation",
+        "status": "pending"
+      },
+      {
+        "id": "T007",
+        "description": "Create Playwright test to verify image paths on basepath localhost",
+        "filePath": "tests/verify-image-paths.spec.ts",
+        "phase": "Phase 3: Verification & Testing",
+        "status": "pending"
+      },
+      {
+        "id": "T008",
+        "description": "Run Playwright test and verify all images load correctly",
+        "filePath": "tests/verify-image-paths.spec.ts",
+        "phase": "Phase 3: Verification & Testing",
+        "status": "pending"
+      },
+      {
+        "id": "T009",
+        "description": "Clean up temporary test file after verification",
+        "filePath": "tests/verify-image-paths.spec.ts",
+        "phase": "Phase 3: Verification & Testing",
+        "status": "pending"
+      },
+      {
+        "id": "T010",
+        "description": "Verify production build output has correct image paths",
+        "filePath": "public/pl/news/index.html",
+        "phase": "Phase 3: Verification & Testing",
+        "status": "pending"
+      }
+    ],
+    "tasksTotal": 10,
+    "tasksCompleted": 9,
+    "approvedAt": "2026-01-26T07:01:37.282Z",
+    "currentTaskId": "T010"
+  }
+}

@@ -65,7 +65,10 @@ jobs:
           HUGO_ENVIRONMENT: production
           TZ: Europe/Warsaw
         run: |
+          # Build with explicit baseURL for subdirectory deployment
+          # Site is deployed to custom domain (bartusiak.ai) with subdirectory (/wesole_nutki/)
           hugo \
+            --baseURL https://bartusiak.ai/wesole_nutki/ \
             --minify
 
       - name: Upload artifact
