@@ -57,7 +57,7 @@
                 {{ end }}
               {{ end }}
               <li>
-                <a href="{{ strings.TrimPrefix "/" .url | relURL }}">{{ $menuName }}</a>
+                <a href="{{ .url | relURL }}">{{ $menuName }}</a>
               </li>
             {{ end }}
           </ul>
@@ -196,7 +196,7 @@
               {{ else }}
                 {{ $name = .name_en }}
               {{ end }}
-              <a href="{{ .url | relLangURL }}">{{ $name }}</a>
+              <a href="{{ .url | relURL }}">{{ $name }}</a>
             {{ end }}
           </nav>
           {{ end }}

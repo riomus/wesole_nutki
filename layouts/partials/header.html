@@ -51,9 +51,9 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-white">
     <div class="container">
       <!-- Logo/Brand -->
-      <a class="navbar-brand" href="{{ .Site.Home.Permalink }}">
+      <a class="navbar-brand" href="{{ .Site.Home.RelPermalink }}">
         {{ with .Site.Params.logo }}
-        <img src="{{ . | absURL }}" alt="{{ $.Site.Title }}" height="45" class="d-inline-block align-text-top">
+        <img src="{{ . | relURL }}" alt="{{ $.Site.Title }}" height="45" class="d-inline-block align-text-top">
         {{ else }}
         {{ .Site.Title }}
         {{ end }}
@@ -145,7 +145,7 @@
               {{/* Menu item with dropdown - mobile collapsible */}}
               <li class="nav-item dropdown mobile-dropdown">
                 <a class="nav-link dropdown-toggle{{ if $isActive }} active{{ end }}"
-                   href="{{ strings.TrimPrefix "/" $menuURL | relURL }}"
+                   href="{{ $menuURL | relURL }}"
                    id="navbarDropdown{{ .identifier }}"
                    role="button"
                    data-bs-toggle="dropdown"
@@ -179,7 +179,7 @@
                     {{ $childNewTab := default false .open_in_new_tab }}
                     <li>
                       <a class="dropdown-item{{ if $childActive }} active{{ end }}"
-                         href="{{ strings.TrimPrefix "/" .url | relURL }}"
+                         href="{{ .url | relURL }}"
                          {{ if $childActive }}aria-current="page"{{ end }}
                          {{ if $childExternal }}rel="noopener noreferrer"{{ end }}
                          {{ if $childNewTab }}target="_blank"{{ end }}>
@@ -199,7 +199,7 @@
               {{/* Regular menu item without dropdown */}}
               <li class="nav-item">
                 <a class="nav-link{{ if or $isActive $isCurrentPage }} active{{ end }}"
-                   href="{{ strings.TrimPrefix "/" $menuURL | relURL }}"
+                   href="{{ $menuURL | relURL }}"
                    {{ if $isCurrentPage }}aria-current="page"{{ end }}
                    {{ if $isExternal }}rel="noopener noreferrer"{{ end }}
                    {{ if $openInNewTab }}target="_blank"{{ end }}>

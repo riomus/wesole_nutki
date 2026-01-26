@@ -21,10 +21,16 @@ disableKinds = []
 # Enable robots.txt generation
 enableRobotsTXT = true
 
-# Canonify URLs - Disabled to support both localhost and GitHub Pages subdirectory deployment
-# With canonifyURLs=false, Hugo uses RelPermalink/relURL which respect the --baseURL flag
-# Development: --baseURL http://localhost:1313/ generates paths like /css/style.css
-# Production: baseURL in config generates paths like /wesole_nutki/css/style.css
+# Canonify URLs - Best Practice Configuration
+# IMPORTANT: Set to false for modern Hugo best practices (Hugo 0.60+)
+# Benefits of canonifyURLs=false:
+# - Templates have explicit control over URL generation using absURL/relURL functions
+# - Supports flexible deployment scenarios (root domain, subdirectory, CDN)
+# - Better performance as Hugo doesn't rewrite all URLs at build time
+# - Easier debugging since URL generation is explicit in templates
+# Development: Hugo dev server generates relative paths (e.g., /css/style.css)
+# Production: baseURL config generates prefixed paths (e.g., /wesole_nutki/css/style.css)
+# Note: All templates must use proper URL functions (.Permalink for absolute, relURL for relative)
 canonifyURLs = false
 
 # Pagination
@@ -456,7 +462,7 @@ summaryLength = 70
 
 # Output formats
 [outputs]
-  home = ["HTML", "RSS"]
+  home = ["HTML", "RSS", "WebAppManifest"]
   section = ["HTML", "RSS"]
   taxonomy = ["HTML"]
   term = ["HTML"]

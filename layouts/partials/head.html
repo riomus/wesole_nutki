@@ -1,12 +1,14 @@
-{{/* Load global settings */}}
+{{/* Load global settings with fallback */}}
 {{ $settings := site.Data.settings }}
-{{ $seo := $settings.seo }}
+{{ $seo := dict }}
+{{ if $settings }}{{ $seo = $settings.seo }}{{ end }}
 {{ $siteTitle := "" }}
-{{ with $settings }}{{ $siteTitle = .site_title }}{{ end }}
+{{ if $settings }}{{ with $settings.site_title }}{{ $siteTitle = . }}{{ end }}{{ end }}
 {{ if not $siteTitle }}{{ $siteTitle = .Site.Title }}{{ end }}
 
-{{/* Load branding settings */}}
-{{ $branding := site.Data.branding }}
+{{/* Load branding settings with fallback */}}
+{{ $branding := dict }}
+{{ with site.Data.branding }}{{ $branding = . }}{{ end }}
 
 {{/*
   SEO Meta Tags with Per-Page Customization
@@ -50,8 +52,11 @@
   {{ with $seo.meta_keywords }}{{ $keywords = . }}{{ end }}
 {{ end }}
 
-{{/* Determine canonical URL */}}
-{{ $canonicalURL := .Permalink }}
+{{/* Cache .Permalink for reuse - used in canonical, og:url, and alternate links */}}
+{{ $pagePermalink := .Permalink }}
+
+{{/* Determine canonical URL - default to .Permalink, allow custom override */}}
+{{ $canonicalURL := $pagePermalink }}
 {{ with .Params.canonical }}{{ $canonicalURL = . | absURL }}{{ end }}
 
 {{/* Determine robots directives */}}
@@ -82,12 +87,13 @@
 {{ if .IsPage }}{{ $ogType = "article" }}{{ end }}
 {{ with .Params.og_type }}{{ $ogType = . }}{{ end }}
 
+{{/* Determine OG image with priority cascade: og_image > image > featured_image > branding > logo */}}
 {{ $ogImage := "" }}
-{{ with $branding.og_image }}{{ $ogImage = . }}{{ end }}
-{{ with .Site.Params.logo }}{{ if not $ogImage }}{{ $ogImage = . }}{{ end }}{{ end }}
-{{ with .Params.featured_image }}{{ $ogImage = . }}{{ end }}
-{{ with .Params.image }}{{ $ogImage = . }}{{ end }}
 {{ with .Params.og_image }}{{ $ogImage = . }}{{ end }}
+{{ if not $ogImage }}{{ with .Params.image }}{{ $ogImage = . }}{{ end }}{{ end }}
+{{ if not $ogImage }}{{ with .Params.featured_image }}{{ $ogImage = . }}{{ end }}{{ end }}
+{{ if not $ogImage }}{{ with $branding.og_image }}{{ $ogImage = . }}{{ end }}{{ end }}
+{{ if not $ogImage }}{{ with .Site.Params.logo }}{{ $ogImage = . }}{{ end }}{{ end }}
 
 {{/* Twitter Card settings */}}
 {{ $twitterCard := "summary_large_image" }}
@@ -136,12 +142,14 @@
 
 <!-- Language and locale -->
 <meta property="og:locale" content="{{ .Site.Language.Lang }}">
-{{ range .Site.Languages }}
-{{ if ne .Lang $.Site.Language.Lang }}
-<link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Lang | absLangURL }}">
+<!-- Alternate language links for translated versions -->
+{{ $currentPermalink := .Permalink }}
+{{ $homePermalink := .Site.Home.Permalink }}
+{{ range .Translations }}
+<link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
 {{ end }}
-{{ end }}
-<link rel="alternate" hreflang="x-default" href="{{ .Site.BaseURL }}">
+<link rel="alternate" hreflang="{{ .Lang }}" href="{{ $currentPermalink }}">
+<link rel="alternate" hreflang="x-default" href="{{ $homePermalink }}">
 
 <!-- Canonical URL -->
 <link rel="canonical" href="{{ $canonicalURL }}">
@@ -152,8 +160,8 @@
 <meta property="og:description" content="{{ . }}">
 {{ end }}
 <meta property="og:type" content="{{ $ogType }}">
-<meta property="og:url" content="{{ .Permalink }}">
-<meta property="og:site_name" content="{{ with $settings.site_title }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}">
+<meta property="og:url" content="{{ $pagePermalink }}">
+<meta property="og:site_name" content="{{ $siteTitle }}">
 {{ with $ogImage }}
 <meta property="og:image" content="{{ . | absURL }}">
 {{ end }}
@@ -205,7 +213,9 @@
 <!-- Apple Touch Icon for iOS devices -->
 <link rel="apple-touch-icon" href="{{ "apple-touch-icon.svg" | relURL }}">
 <!-- PWA Web App Manifest -->
-<link rel="manifest" href="{{ "site.webmanifest" | relURL }}">
+{{ with .Site.Home.OutputFormats.Get "WebAppManifest" -}}
+<link rel="manifest" href="{{ .RelPermalink }}">
+{{- end }}
 <!-- Theme color for browser chrome -->
 <meta name="theme-color" content="#4CAF50">
 <!-- Microsoft Tile Color -->

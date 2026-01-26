@@ -21,7 +21,7 @@
     {{ if $currentPage.IsTranslated }}
       {{ range $currentPage.Translations }}
         {{ if eq .Lang $targetLang }}
-          {{ $targetURL = .Permalink }}
+          {{ $targetURL = .RelPermalink }}
         {{ end }}
       {{ end }}
     {{ end }}

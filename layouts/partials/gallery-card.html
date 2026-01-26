@@ -2,7 +2,7 @@
 {{/* Supports both old format (string list) and new format (object list with src, caption, alt) */}}
 {{/* Now with responsive images and WebP format support */}}
 <article class="gallery-card">
-  <a href="{{ .Permalink }}" class="gallery-card-link">
+  <a href="{{ .RelPermalink }}" class="gallery-card-link">
     <div class="gallery-card-image">
       {{/* Determine cover image - supports both old and new image formats */}}
       {{ $coverImage := .Params.featured_image }}

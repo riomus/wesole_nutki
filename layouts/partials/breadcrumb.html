@@ -14,7 +14,7 @@
 {{ $breadcrumbs := slice }}
 
 {{/* Add home page as first item */}}
-{{ $home := dict "title" (i18n "breadcrumb_home" | default "Home") "url" .Site.Home.Permalink "isCurrent" false }}
+{{ $home := dict "title" (i18n "breadcrumb_home" | default "Home") "url" .Site.Home.RelPermalink "isCurrent" false }}
 {{ $breadcrumbs = $breadcrumbs | append $home }}
 
 {{/* Build hierarchy from ancestors */}}
@@ -50,7 +50,7 @@
       {{ end }}
     {{ end }}
   {{ end }}
-  {{ $item := dict "title" $title "url" .Permalink "isCurrent" false }}
+  {{ $item := dict "title" $title "url" .RelPermalink "isCurrent" false }}
   {{ $breadcrumbs = $breadcrumbs | append $item }}
 {{ end }}
 
@@ -70,7 +70,7 @@
     {{ end }}
   {{ end }}
 {{ end }}
-{{ $currentItem := dict "title" $currentTitle "url" .Permalink "isCurrent" true }}
+{{ $currentItem := dict "title" $currentTitle "url" .RelPermalink "isCurrent" true }}
 {{ $breadcrumbs = $breadcrumbs | append $currentItem }}
 
 {{/* JSON-LD Structured Data for SEO */}}
@@ -85,7 +85,7 @@
       "@type": "ListItem",
       "position": {{ add $index 1 }},
       "name": {{ $item.title | jsonify }},
-      "item": {{ $item.url | jsonify }}
+      "item": {{ $item.url | absURL | jsonify }}
     }
     {{- end }}
   ]
@@ -103,7 +103,7 @@
         <span itemprop="name" aria-current="page">{{ $item.title | truncate 50 }}</span>
         <meta itemprop="position" content="{{ add $index 1 }}">
         {{- else -}}
-        <a href="{{ $item.url }}" itemprop="item">
+        <a href="{{ $item.url | relURL }}" itemprop="item">
           {{- if eq $index 0 -}}
           {{/* Home icon for first item */}}
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16" class="me-1" aria-hidden="true">
