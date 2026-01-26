@@ -58,14 +58,6 @@ items:
         external: false
         open_in_new_tab: false
 
-      - identifier: daily-plan-calendar
-        name: Harmonogram roku szkolnego 2025/2026
-        url: /pl/plan-dnia/imprezy/
-        weight: 3
-        i18n_key: menu_daily_plan_calendar
-        external: false
-        open_in_new_tab: false
-
   - identifier: galleries
     name: Galerie
     url: /pl/gallery/

@@ -2,7 +2,7 @@
 title: "Plan dnia - Wesołe Nutki"
 date: 2026-01-23T09:28:03.976Z
 type: page
-url: "/plan-dnia/"
+url: "/pl/plan-dnia/"
 ---
 
 ## **6.30 – 8.10**

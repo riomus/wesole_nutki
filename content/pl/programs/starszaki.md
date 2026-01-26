@@ -1,5 +1,6 @@
 ---
 title: "Grupa Starszaki"
+type: "program"
 description: "Program dla dzieci w wieku 4-5 lat"
 weight: 3
 icon: "🦆"

@@ -16,7 +16,7 @@
   "dependencies": [],
   "workMode": "current",
   "titleGenerating": false,
-  "status": "in_progress",
+  "status": "verified",
   "id": "feature-1769409758045-30vjtsb1h",
   "descriptionHistory": [
     {
@@ -26,5 +26,5 @@
     }
   ],
   "startedAt": "2026-01-26T06:42:38.166Z",
-  "updatedAt": "2026-01-26T06:42:38.269Z"
+  "updatedAt": "2026-01-26T06:44:31.927Z"
 }

@@ -1,0 +1,11 @@
+{
+  "id": "evt-1769435417154-a11c7da2",
+  "trigger": "feature_error",
+  "timestamp": "2026-01-26T13:50:17.154Z",
+  "projectPath": "/Users/romanbartusiak/git/riomus/wesole_nutki",
+  "projectName": "wesole_nutki",
+  "featureId": "feature-1769435414367-ozk0utihx",
+  "featureName": "",
+  "error": "Claude Code process exited with code 1",
+  "errorType": "execution"
+}

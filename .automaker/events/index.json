@@ -2,6 +2,39 @@
   "version": 1,
   "events": [
     {
+      "id": "evt-1769435597359-cdc0a82c",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T13:53:17.359Z",
+      "featureName": "",
+      "featureId": "feature-1769435595317-fxh1si8zc"
+    },
+    {
+      "id": "evt-1769435595408-09285b23",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-26T13:53:15.408Z",
+      "featureId": "feature-1769435595317-fxh1si8zc"
+    },
+    {
+      "id": "evt-1769435539709-6c9e7d25",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-26T13:52:19.709Z",
+      "featureName": "",
+      "featureId": "feature-1769435414367-ozk0utihx"
+    },
+    {
+      "id": "evt-1769435417154-a11c7da2",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T13:50:17.154Z",
+      "featureName": "",
+      "featureId": "feature-1769435414367-ozk0utihx"
+    },
+    {
+      "id": "evt-1769435414468-1ccec98b",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-26T13:50:14.468Z",
+      "featureId": "feature-1769435414367-ozk0utihx"
+    },
+    {
       "id": "evt-1769435124577-8311e4c2",
       "trigger": "feature_error",
       "timestamp": "2026-01-26T13:45:24.577Z",

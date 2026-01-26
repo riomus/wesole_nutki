@@ -2,7 +2,7 @@
 title: "Płatności - Wesołe Nutki"
 date: 2026-01-23T09:27:42.615Z
 type: page
-url: "/o-przedszkolu/platnosci/"
+url: "/pl/o-przedszkolu/platnosci/"
 ---
 
 Płatności należy dokonywać **do 10 dnia każdego miesiąca** na rachunek bankowy:

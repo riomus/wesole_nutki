@@ -2,7 +2,7 @@
 title: "Cennik - Wesołe Nutki"
 date: 2026-01-23T09:27:39.397Z
 type: page
-url: "/o-przedszkolu/cennik/"
+url: "/pl/o-przedszkolu/cennik/"
 ---
 
 **Zasa­dy odpłat­no­ści w roku  2025/2026**

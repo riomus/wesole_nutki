@@ -1,7 +1,7 @@
 {
   "category": "Uncategorized",
   "description": "Add Translation for \"Open Now\" Status Indicator on English Pages\n\nImplement proper translation handling for the \"Open Now\" status indicator that is currently displaying untranslated text on English language pages.\n\nRequirements:\n- Locate all instances of the \"Open Now\" status indicator in the codebase\n- Ensure the text is wrapped in the translation function/system\n- Add or verify the English translation key exists in the language files\n- Verify the indicator displays correctly translated text on English pages\n- Test that translations work correctly for all supported languages (not just English)\n- Check for any similar untranslated status indicators (e.g., \"Closed\", \"Opening Soon\") that may need the same fix",
-  "title": "",
+  "title": "Fix \"Open Now\" status indicator translation",
   "images": [],
   "imagePaths": [],
   "textFilePaths": [],
@@ -15,7 +15,7 @@
   "requirePlanApproval": false,
   "dependencies": [],
   "workMode": "current",
-  "titleGenerating": "Add Translation for \"Open Now\" Status Indicator on English Pages\n\nImplement proper translation handling for the \"Open Now\" status indicator that is currently displaying untranslated text on English language pages.\n\nRequirements:\n- Locate all instances of the \"Open Now\" status indicator in the codebase\n- Ensure the text is wrapped in the translation function/system\n- Add or verify the English translation key exists in the language files\n- Verify the indicator displays correctly translated text on English pages\n- Test that translations work correctly for all supported languages (not just English)\n- Check for any similar untranslated status indicators (e.g., \"Closed\", \"Opening Soon\") that may need the same fix",
+  "titleGenerating": false,
   "status": "backlog",
   "id": "feature-1769409998442-n3p4998om",
   "descriptionHistory": [

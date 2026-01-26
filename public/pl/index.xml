@@ -43,13 +43,6 @@
       <description>&lt;p&gt;Nasz dzień przedszkolny jest starannie zaplanowany, aby zapewnić dzieciom optymalne warunki do nauki, zabawy i odpoczynku. Plan jest elastyczny i dostosowywany do potrzeb poszczególnych grup wiekowych.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Test Image BasePath</title>
-      <link>http://localhost:1313/wesole_nutki/pl/test-basepath-images/</link>
-      <pubDate>Mon, 26 Jan 2026 10:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/pl/test-basepath-images/</guid>
-      <description>&lt;h1 id=&#34;image-basepath-feature-test-page&#34;&gt;Image BasePath Feature Test Page&lt;/h1&gt;&#xA;&lt;p&gt;This page contains various image types to test that Hugo correctly handles baseURL configuration&#xA;for images in markdown content. When deployed to a subdirectory (e.g., &lt;code&gt;/wesole_nutki/&lt;/code&gt;), all&#xA;internal image paths should automatically include the base path prefix.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Purpose&lt;/strong&gt;: Verify that Hugo&amp;rsquo;s &lt;code&gt;.RelPermalink&lt;/code&gt; and &lt;code&gt;relURL&lt;/code&gt; functions correctly prepend the&#xA;configured baseURL to all internal images while leaving external URLs unchanged.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;test-1-assets-images-processed-by-hugo&#34;&gt;Test 1: Assets Images (Processed by Hugo)&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;What&amp;rsquo;s being tested&lt;/strong&gt;: Images from the &lt;code&gt;assets/images/&lt;/code&gt; directory that Hugo processes.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Pracuj z Wesołymi Nutkami! - Wesołe Nutki</title>
       <link>http://localhost:1313/wesole_nutki/pl/2023/01/30/pracuj-z-wesolymi-nutkami/</link>
       <pubDate>Fri, 23 Jan 2026 09:29:08 +0000</pubDate>
@@ -99,38 +92,17 @@
       <description>&lt;p&gt;W naszym przed­szko­lu &lt;strong&gt;regu­lar­nie odby­wa­ją się kon­cer­ty z muzy­ką na żywo&lt;/strong&gt;, któ­re pozwa­la­ją dzie­ciom pozna­wać instru­men­ty i roz­wi­jać wraż­li­wość muzyczną. 💛&lt;/p&gt;&#xA;&lt;p&gt;Ostat­nio mie­li­śmy oka­zję uczest­ni­czyć w pięk­nym kon­cer­cie pt. &lt;em&gt;„Pan Malusz­kie­wicz na morzu peł­nym dźwię­ków”&lt;/em&gt; w wyko­na­niu &lt;strong&gt;Lubu­skie­go Biu­ra Kon­cer­to­we­go „Orfe­usz“&lt;/strong&gt;. 🌊🎵&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&#xA;  &#xA;  &lt;div class=&#34;responsive-image-wrapper&#34;&gt;&#xA;    &lt;img&#xA;      src=&#34;http://localhost:1313/wesole_nutki/images/scraped/2025-10-27-koncert-0.jpeg&#34;&#xA;      alt=&#34;&#34;&#xA;      class=&#34;markdown-image responsive-image-main&#34;&#xA;      loading=&#34;lazy&#34;&#xA;      decoding=&#34;async&#34;&#xA;      onerror=&#34;this.parentElement.classList.add(&#39;image-error&#39;); this.onerror=null;&#34;&#xA;    &gt;&#xA;&#xA;    &#xA;    &lt;div class=&#34;responsive-image-fallback&#34; aria-hidden=&#34;true&#34;&gt;&#xA;      &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;48&#34; height=&#34;48&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 16 16&#34;&gt;&#xA;        &lt;path d=&#34;M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z&#34;/&gt;&#xA;        &lt;path d=&#34;M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z&#34;/&gt;&#xA;      &lt;/svg&gt;&#xA;      &lt;span class=&#34;responsive-image-fallback-text&#34;&gt;Obraz niedostępny&lt;/span&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/p&gt;</description>
     </item>
     <item>
-      <title></title>
-      <link>http://localhost:1313/wesole_nutki/wp-content/uploads/2019/11/Karta-Zg%C5%82oszenia-Dziecka_RODO-poprawione.pdf</link>
-      <pubDate>Fri, 23 Jan 2026 09:28:30 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/wp-content/uploads/2019/11/Karta-Zg%C5%82oszenia-Dziecka_RODO-poprawione.pdf</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Standardy ochrony małoletnich - Wesołe Nutki</title>
-      <link>http://localhost:1313/wesole_nutki/standardy-ochrony-maloletnich/</link>
+      <link>http://localhost:1313/wesole_nutki/pl/standardy-ochrony-maloletnich/</link>
       <pubDate>Fri, 23 Jan 2026 09:28:26 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/standardy-ochrony-maloletnich/</guid>
+      <guid>http://localhost:1313/wesole_nutki/pl/standardy-ochrony-maloletnich/</guid>
       <description>&lt;p&gt;W naszym przed­szko­lu naj­waż­niej­sze jest, aby każ­de dziec­ko czu­ło się bez­piecz­nie, szczę­śli­wie i oto­czo­ne tro­ską. Dla­te­go wpro­wa­dza­my dodat­ko­we zasa­dy ochro­ny mało­let­nich, któ­re poma­ga­ją nam dbać o ich bez­pie­czeń­stwo i dobro. Choć te zasa­dy wyni­ka­ją z obo­wią­zu­ją­cych prze­pi­sów pra­wa, to przede wszyst­kim są one wyra­zem naszej odpo­wie­dzial­no­ści za dzie­ci, któ­re Pań­stwo nam powierzają.&lt;/p&gt;&#xA;&lt;p&gt;Nasze przed­szko­le jest miej­scem, gdzie każ­de dziec­ko może roz­wi­jać się w atmos­fe­rze zaufa­nia, cie­pła i sza­cun­ku. Dba­my o to, aby nasze wycho­waw­czy­nie i wycho­waw­cy byli odpo­wied­nio przy­go­to­wa­ni i świa­do­mi, jak waż­na jest ochro­na najmłodszych.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Galerie - Wesołe Nutki</title>
-      <link>http://localhost:1313/wesole_nutki/galerie/</link>
-      <pubDate>Fri, 23 Jan 2026 09:28:22 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/galerie/</guid>
-      <description>&lt;p&gt;&#xA;&#xA;  &#xA;  &lt;div class=&#34;responsive-image-wrapper&#34;&gt;&#xA;    &lt;img&#xA;      src=&#34;http://localhost:1313/wesole_nutki/images/scraped/galerie-0.jpg&#34;&#xA;      alt=&#34;&#34;&#xA;      class=&#34;markdown-image responsive-image-main&#34;&#xA;      loading=&#34;lazy&#34;&#xA;      decoding=&#34;async&#34;&#xA;      onerror=&#34;this.parentElement.classList.add(&#39;image-error&#39;); this.onerror=null;&#34;&#xA;    &gt;&#xA;&#xA;    &#xA;    &lt;div class=&#34;responsive-image-fallback&#34; aria-hidden=&#34;true&#34;&gt;&#xA;      &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;48&#34; height=&#34;48&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 16 16&#34;&gt;&#xA;        &lt;path d=&#34;M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z&#34;/&gt;&#xA;        &lt;path d=&#34;M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z&#34;/&gt;&#xA;      &lt;/svg&gt;&#xA;      &lt;span class=&#34;responsive-image-fallback-text&#34;&gt;Obraz niedostępny&lt;/span&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&#xA;  &#xA;  &lt;div class=&#34;responsive-image-wrapper&#34;&gt;&#xA;    &lt;img&#xA;      src=&#34;http://localhost:1313/wesole_nutki/images/scraped/galerie-1.jpg&#34;&#xA;      alt=&#34;&#34;&#xA;      class=&#34;markdown-image responsive-image-main&#34;&#xA;      loading=&#34;lazy&#34;&#xA;      decoding=&#34;async&#34;&#xA;      onerror=&#34;this.parentElement.classList.add(&#39;image-error&#39;); this.onerror=null;&#34;&#xA;    &gt;&#xA;&#xA;    &#xA;    &lt;div class=&#34;responsive-image-fallback&#34; aria-hidden=&#34;true&#34;&gt;&#xA;      &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;48&#34; height=&#34;48&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 16 16&#34;&gt;&#xA;        &lt;path d=&#34;M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z&#34;/&gt;&#xA;        &lt;path d=&#34;M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z&#34;/&gt;&#xA;      &lt;/svg&gt;&#xA;      &lt;span class=&#34;responsive-image-fallback-text&#34;&gt;Obraz niedostępny&lt;/span&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Harmonogram roku szkolnego 2025 /2026 - Wesołe Nutki</title>
-      <link>http://localhost:1313/wesole_nutki/plan-dnia/imprezy/</link>
-      <pubDate>Fri, 23 Jan 2026 09:28:14 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/plan-dnia/imprezy/</guid>
-      <description>&lt;p&gt;Har­mo­no­gram udo­stęp­ni­my wkrótce&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Zajęcia dodatkowe 2025/2026 - Wesołe Nutki</title>
-      <link>http://localhost:1313/wesole_nutki/plan-dnia/zajecia-dodatkowe/</link>
+      <link>http://localhost:1313/wesole_nutki/pl/plan-dnia/zajecia-dodatkowe/</link>
       <pubDate>Fri, 23 Jan 2026 09:28:10 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/plan-dnia/zajecia-dodatkowe/</guid>
+      <guid>http://localhost:1313/wesole_nutki/pl/plan-dnia/zajecia-dodatkowe/</guid>
       <description>&lt;p&gt;Oprócz zajęć pro­gra­mo­wych reali­zo­wa­nych w ramach cze­sne­go ofe­ru­je­my zaję­cia dodat­ko­we, pro­wa­dzo­ne w godzi­nach popo­łu­dnio­wych, dodat­ko­wo odpłatne:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;pił­ka nożna&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;sza­chy&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;tań­ce&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;balet&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;warsz­ta­ty bębniarskie&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;robo­kloc­ki&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;dra­ma&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;rozkład-zajęć-popołudniowych-dodatkowo-płatnych-dodamy-niebawem&#34;&gt;Rozkład zajęć popołudniowych, dodatkowo płatnych dodamy niebawem&lt;/h2&gt;</description>
     </item>
     <item>
@@ -142,9 +114,9 @@
     </item>
     <item>
       <title>Plan dnia - Wesołe Nutki</title>
-      <link>http://localhost:1313/wesole_nutki/plan-dnia/</link>
+      <link>http://localhost:1313/wesole_nutki/pl/plan-dnia/</link>
       <pubDate>Fri, 23 Jan 2026 09:28:03 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/plan-dnia/</guid>
+      <guid>http://localhost:1313/wesole_nutki/pl/plan-dnia/</guid>
       <description>&lt;h2 id=&#34;630--810&#34;&gt;&lt;strong&gt;6.30 – 8.10&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Scho­dze­nie się dzie­ci do przed­szko­la. Zaba­wy swo­bod­ne w kąci­kach zain­te­re­so­wań. Pra­ca nauczy­cie­li o cha­rak­te­rze korekcyjno–kompensacyjnym, sty­mu­lu­ją­cym, obserwacyjnym.&lt;/p&gt;&#xA;&lt;h2 id=&#34;810--820&#34;&gt;&lt;strong&gt;8.10 – 8.20&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Zaba­wy rucho­we lub ćwi­cze­nia poranne.&lt;/p&gt;&#xA;&lt;h2 id=&#34;820--830&#34;&gt;&lt;strong&gt;8.20 – 8.30&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Przy­go­to­wa­nie do śnia­da­nia, czyn­no­ści porząd­ko­we.  Zabie­gi higieniczne.&lt;/p&gt;&#xA;&lt;h2 id=&#34;830--850&#34;&gt;&lt;strong&gt;8.30 – 8.50&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Śnia­da­nie.&lt;/p&gt;&#xA;&lt;h2 id=&#34;850--900&#34;&gt;&lt;strong&gt;8.50 – 9.00&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Czyn­no­ści samoobsługowe.&lt;/p&gt;&#xA;&lt;h2 id=&#34;900--1130&#34;&gt;&lt;strong&gt;9.00 – 11.30&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Zaję­cia pro­gra­mo­we  inspi­ro­wa­ne przez nauczy­cie­la w celu  wspo­ma­ga­nia roz­wo­ju dzie­ci w sfe­rze języ­ko­wej, poznaw­czej, spo­łecz­nej, arty­stycz­nej, rucho­wej, zdro­wot­nej.  Pobyt na  świe­żym powie­trzu: zaba­wy dowol­ne, zaję­cia rucho­we, spor­to­we, przy­rod­ni­cze, pro­wa­dze­nie obser­wa­cji, wyciecz­ki i spa­ce­ry w celu dydak­tycz­nym lub rekreacyjnym.&lt;/p&gt;</description>
     </item>
     <item>
@@ -163,16 +135,16 @@
     </item>
     <item>
       <title>Płatności - Wesołe Nutki</title>
-      <link>http://localhost:1313/wesole_nutki/o-przedszkolu/platnosci/</link>
+      <link>http://localhost:1313/wesole_nutki/pl/o-przedszkolu/platnosci/</link>
       <pubDate>Fri, 23 Jan 2026 09:27:42 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/o-przedszkolu/platnosci/</guid>
+      <guid>http://localhost:1313/wesole_nutki/pl/o-przedszkolu/platnosci/</guid>
       <description>&lt;p&gt;Płatności należy dokonywać &lt;strong&gt;do 10 dnia każdego miesiąca&lt;/strong&gt; na rachunek bankowy:&lt;/p&gt;&#xA;&lt;p&gt;Przedszkole Niepubliczne Językowo-Muzyczne „Wesołe Nutki&amp;quot;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;ul. Łaciarska 8, 50-104 Wrocław&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Numer rachunku: 56 1020 5242 0000 2102 0260 4536&lt;/p&gt;&#xA;&lt;p&gt;Nazwa Banku: &lt;strong&gt;PKO BP S.A.&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cennik - Wesołe Nutki</title>
-      <link>http://localhost:1313/wesole_nutki/o-przedszkolu/cennik/</link>
+      <link>http://localhost:1313/wesole_nutki/pl/o-przedszkolu/cennik/</link>
       <pubDate>Fri, 23 Jan 2026 09:27:39 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/o-przedszkolu/cennik/</guid>
+      <guid>http://localhost:1313/wesole_nutki/pl/o-przedszkolu/cennik/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Zasa­dy odpłat­no­ści w roku  2025/2026&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&lt;a href=&#34;https://wesolenutki.eu/wp-content/uploads/2025/09/REGULAMIN-odplatnosci-przedszkole-Wesole-Nutki-2025-2026-2.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;&lt;strong&gt;Regu­la­min opłat&lt;/strong&gt;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;Opła­ta wpi­so­wa wno­szo­na jest jed­no­ra­zo­wo w wyso­ko­ści 900 zł.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Cze­sne wyno­si 900 zło­tych za miesiąc.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Opła­ta za wyży­wie­nie wyno­si 25 zł/dzień die­ty stan­dar­do­wej lub 27 zł/dzień die­ty specjalnej.&lt;/p&gt;&#xA;&lt;p&gt;Cze­sne obej­mu­je zaję­cia pro­gra­mo­we (3 razy w tygo­dniu zaję­cia z języ­ka angiel­skie­go, 2 razy w tygo­dniu gim­na­sty­kę ogól­no­ro­zwo­jo­wą z ele­men­ta­mi korek­ty, 2 razy w tygo­dniu ryt­mi­ka, 1 raz w tygo­dniu logo­ryt­mi­ka) oraz impre­zy orga­ni­zo­wa­ne na tere­nie przed­szko­la, w tym teatrzy­ki i koncerty.&lt;/p&gt;</description>
     </item>
     <item>
@@ -181,13 +153,6 @@
       <pubDate>Fri, 23 Jan 2026 09:27:31 +0000</pubDate>
       <guid>http://localhost:1313/wesole_nutki/pl/o-przedszkolu/nasza-wizja/</guid>
       <description>&lt;p&gt;Chce­my two­rzyć miej­sce przy­ja­zne dzie­ciom, rodzi­com, nauczy­cie­lom oraz pra­cow­ni­kom przed­szko­la. Prio­ry­te­tem dla nas aby dzie­ci w poczu­ciu  bez­pie­czeń­stwa i akcep­ta­cji mogły roz­wi­jać swo­je zain­te­re­so­wa­nia, uczyć się poprzez zaba­wę i dzia­ła­nie, a tak­że zdo­by­wać umie­jęt­no­ści i wie­dzę zgod­nie z indy­wi­du­al­ną dro­gą roz­wo­ju. Naszym celem jest wycho­wa­nie dzie­ci do życia w har­mo­nii z samy­mi sobą, inny­mi ludź­mi i ota­cza­ją­cym świa­tem, przy jed­no­cze­snym przy­go­to­wa­niu ich do roz­po­czę­cia nauki szkolnej.&lt;/p&gt;&#xA;&lt;p&gt;Jeste­śmy świa­do­mi zna­cze­nia kon­tak­tu dzie­ci z natu­rą, dla­te­go korzy­sta­my z każ­dej oka­zji, aby spę­dzać czas w naszym ogro­dzie, któ­ry nie tyl­ko dys­po­nu­je funk­cjo­nal­nym pla­cem zabaw, ale wkrót­ce będzie rów­nież wypo­sa­żo­ny w warzyw­ni­ki pro­wa­dzo­ne przez poszcze­gól­ne grupy.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>REKRUTACJA W TOKU - Wesołe Nutki</title>
-      <link>http://localhost:1313/wesole_nutki/pl/rekrutacja/</link>
-      <pubDate>Fri, 23 Jan 2026 09:27:21 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/pl/rekrutacja/</guid>
-      <description>&lt;p&gt;Dro­dzy Rodzi­ce! Uru­cho­mi­li­śmy rekru­ta­cję do nowej gru­py malusz­ków – od wrze­śnia 2026. Ser­decz­nie zapra­sza­my dzie­ci z rocz­ni­ka 2023.&lt;/p&gt;&#xA;&lt;p&gt;Kar­ta zgło­sze­nia dostęp­na do pobra­nia  &#xA;&#xA;&#xA;  &#xA;&lt;a href=&#34;http://localhost:1313/wesole_nutki/documents/karta-zgloszenia.pdf&#34;&gt;tutaj&lt;/a&gt;&#xA; lub w zakład­ce dokumenty.&lt;/p&gt;&#xA;&lt;p&gt;Infor­ma­cje dostęp­ne pod nume­rem tele­fo­nu 71 343 18 99, kom: 536 268 113&lt;/p&gt;&#xA;&lt;p&gt;oraz adre­sem mailo­wym: &#xA;&#xA;&#xA;&lt;a href=&#34;mailto:przedszkole@wesolenutki.eu&#34;&gt;przedszkole@wesolenutki.eu. &lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;ZAPRASZAMY!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Zimowe zabawy na śniegu</title>

@@ -1,36 +1,27 @@
-{{/*
-  BaseURL Path Helper
-
-  Converts internal URLs to use proper basepath configuration by applying relURL.
-  External URLs (http/https) and anchors (#) are returned unchanged.
-
-  This helper eliminates code duplication and ensures consistent URL handling
-  across all templates.
-
-  Usage:
-    {{ partial "helpers/basepath-url" "/pl/about/" }}
-    {{ partial "helpers/basepath-url" "http://example.com" }}
-    {{ partial "helpers/basepath-url" "#section" }}
-
-  Parameters:
-    . (dot): The URL string to process
-
-  Returns:
-    Properly formatted URL with basepath applied for internal links,
-    or the original URL for external/anchor links
-*/}}
-
+{{- /*
+BaseURL Path Helper
+Converts internal URLs to use proper basepath configuration by applying relURL.
+*/ -}}
 {{- $url := . -}}
 {{- $result := $url -}}
-
-{{/* Check if URL is internal (not external http/https and not an anchor #) */}}
-{{- if and $url (not (or (hasPrefix $url "http") (hasPrefix $url "#") (hasPrefix $url "mailto:") (hasPrefix $url "tel:"))) -}}
-  {{/* Internal link - apply relURL for basepath support */}}
-  {{/* Ensure path starts with / for absolute path resolution */}}
-  {{- if not (hasPrefix $url "/") -}}
-    {{- $url = printf "/%s" $url -}}
-  {{- end -}}
-  {{- $result = $url | relURL -}}
+{{- if and $url (not (or (hasPrefix $url "http") (hasPrefix $url "#") (hasPrefix $url "mailto:") (hasPrefix $url
+"tel:"))) -}}
+{{- if not (hasPrefix $url "/") -}}
+{{- $url = printf "/%s" $url -}}
 {{- end -}}
-
+{{- $result = $url | relURL -}}
+{{- /* Robust fallback: check if base path is missing despite relURL */ -}}
+{{- $basePath := "" -}}
+{{- if site.BaseURL -}}
+{{- $basePath = urls.Parse site.BaseURL -}}
+{{- $basePath = $basePath.Path -}}
+{{- end -}}
+{{- if and $basePath (ne $basePath "/") -}}
+{{- $cleanBase := strings.TrimSuffix "/" $basePath -}}
+{{- if not (hasPrefix $result $cleanBase) -}}
+{{- /* Ensure we don't double slash */ -}}
+{{- $result = printf "%s%s" $cleanBase $result -}}
+{{- end -}}
+{{- end -}}
+{{- end -}}
 {{- $result -}}

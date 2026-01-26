@@ -25,7 +25,7 @@
       "source": "initial"
     }
   ],
-  "updatedAt": "2026-01-26T07:18:32.221Z",
+  "updatedAt": "2026-01-26T07:20:41.654Z",
   "planSpec": {
     "status": "approved",
     "version": 1,
@@ -105,7 +105,7 @@
       }
     ],
     "tasksTotal": 10,
-    "tasksCompleted": 9,
+    "tasksCompleted": 10,
     "approvedAt": "2026-01-26T07:01:37.282Z",
     "currentTaskId": "T010"
   }

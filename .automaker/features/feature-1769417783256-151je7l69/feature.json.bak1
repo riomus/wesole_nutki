@@ -16,7 +16,7 @@
   "dependencies": [],
   "workMode": "current",
   "titleGenerating": false,
-  "status": "pipeline_step_mkuxfysz_dc7e1o",
+  "status": "verified",
   "id": "feature-1769417783256-151je7l69",
   "descriptionHistory": [
     {
@@ -25,7 +25,7 @@
       "source": "initial"
     }
   ],
-  "updatedAt": "2026-01-26T09:37:17.228Z",
+  "updatedAt": "2026-01-26T09:40:36.570Z",
   "planSpec": {
     "status": "approved",
     "version": 1,

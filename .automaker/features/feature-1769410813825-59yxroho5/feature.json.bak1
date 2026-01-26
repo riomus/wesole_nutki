@@ -16,7 +16,7 @@
   "dependencies": [],
   "workMode": "current",
   "titleGenerating": false,
-  "status": "in_progress",
+  "status": "verified",
   "id": "feature-1769410813825-59yxroho5",
   "descriptionHistory": [
     {
@@ -25,7 +25,7 @@
       "source": "initial"
     }
   ],
-  "updatedAt": "2026-01-26T07:20:41.654Z",
+  "updatedAt": "2026-01-26T07:20:41.658Z",
   "planSpec": {
     "status": "approved",
     "version": 1,

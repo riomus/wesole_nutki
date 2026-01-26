@@ -3,13 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/wesole_nutki/pl/programs/maluszki/</loc>
-    <lastmod>2026-01-23T21:45:07+01:00</lastmod>
+    <lastmod>2026-01-26T15:23:24+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/wesole_nutki/pl/programs/sredniaki/</loc>
-    <lastmod>2026-01-23T21:45:07+01:00</lastmod>
+    <lastmod>2026-01-26T15:23:24+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/wesole_nutki/pl/programs/starszaki/</loc>
-    <lastmod>2026-01-23T21:45:07+01:00</lastmod>
+    <lastmod>2026-01-26T15:23:24+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/wesole_nutki/pl/programs/zer%C3%B3wka/</loc>
   </url><url>
@@ -25,9 +25,6 @@
                 hreflang="pl"
                 href="http://localhost:1313/wesole_nutki/pl/programs/schedule/"
                 />
-  </url><url>
-    <loc>http://localhost:1313/wesole_nutki/pl/test-basepath-images/</loc>
-    <lastmod>2026-01-26T12:38:56+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/wesole_nutki/pl/2023/01/30/pracuj-z-wesolymi-nutkami/</loc>
     <lastmod>2026-01-26T13:51:24+01:00</lastmod>
@@ -50,50 +47,32 @@
     <loc>http://localhost:1313/wesole_nutki/pl/2025/10/27/koncert/</loc>
     <lastmod>2026-01-26T13:51:24+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/wp-content/uploads/2019/11/Karta-Zg%C5%82oszenia-Dziecka_RODO-poprawione.pdf</loc>
-    <lastmod>2026-01-23T21:45:07+01:00</lastmod>
+    <loc>http://localhost:1313/wesole_nutki/pl/standardy-ochrony-maloletnich/</loc>
+    <lastmod>2026-01-26T15:23:24+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/standardy-ochrony-maloletnich/</loc>
-    <lastmod>2026-01-23T21:45:07+01:00</lastmod>
+    <loc>http://localhost:1313/wesole_nutki/pl/plan-dnia/zajecia-dodatkowe/</loc>
+    <lastmod>2026-01-26T14:49:15+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/galerie/</loc>
-    <lastmod>2026-01-23T21:45:07+01:00</lastmod>
+    <loc>http://localhost:1313/wesole_nutki/pl/plan-zajec/</loc>
+    <lastmod>2026-01-26T14:49:15+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/plan-dnia/imprezy/</loc>
-    <lastmod>2026-01-23T21:45:07+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/wesole_nutki/plan-dnia/zajecia-dodatkowe/</loc>
-    <lastmod>2026-01-23T21:45:07+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/wesole_nutki/plan-zajec/</loc>
-    <lastmod>2026-01-23T21:45:07+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/wesole_nutki/plan-dnia/</loc>
-    <lastmod>2026-01-23T21:45:07+01:00</lastmod>
+    <loc>http://localhost:1313/wesole_nutki/pl/plan-dnia/</loc>
+    <lastmod>2026-01-26T15:23:24+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/wesole_nutki/pl/o-przedszkolu/polityka-prywatnosci/</loc>
-    <lastmod>2026-01-23T21:45:07+01:00</lastmod>
+    <lastmod>2026-01-26T14:49:15+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/o-przedszkolu/zapisy/</loc>
-    <lastmod>2026-01-26T13:51:24+01:00</lastmod>
+    <loc>http://localhost:1313/wesole_nutki/pl/o-przedszkolu/zapisy/</loc>
+    <lastmod>2026-01-26T14:49:15+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/o-przedszkolu/platnosci/</loc>
-    <lastmod>2026-01-23T21:45:07+01:00</lastmod>
+    <loc>http://localhost:1313/wesole_nutki/pl/o-przedszkolu/platnosci/</loc>
+    <lastmod>2026-01-26T15:23:24+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wesole_nutki/o-przedszkolu/cennik/</loc>
-    <lastmod>2026-01-23T21:45:07+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/wesole_nutki/o-przedszkolu/oferta/</loc>
-    <lastmod>2026-01-23T21:45:07+01:00</lastmod>
+    <loc>http://localhost:1313/wesole_nutki/pl/o-przedszkolu/cennik/</loc>
+    <lastmod>2026-01-26T15:23:24+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/wesole_nutki/pl/o-przedszkolu/nasza-wizja/</loc>
-    <lastmod>2026-01-23T21:45:07+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/wesole_nutki/o-przedszkolu/</loc>
-    <lastmod>2026-01-23T21:45:07+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/wesole_nutki/pl/rekrutacja/</loc>
-    <lastmod>2026-01-26T13:51:24+01:00</lastmod>
+    <lastmod>2026-01-26T14:49:15+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/wesole_nutki/pl/categories/</loc>
     <lastmod>2026-01-23T21:45:07+01:00</lastmod>

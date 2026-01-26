@@ -1,0 +1,30 @@
+{
+  "category": "Uncategorized",
+  "description": "Implement CMS Program Management for Multi-language Content\n\nEnsure the Content Management System can properly manage and display programs for English (en) and Polish (pl) languages in the admin interface.\n\nRequirements:\n- Investigate why programs are not visible in the admin page for en and pl languages\n- Verify program data exists in the database for both language variants\n- Ensure proper database queries retrieve programs by language code\n- Fix any UI rendering issues preventing program display in admin interface\n- Test that program management (create, edit, delete) works for both languages\n- Verify language switching functionality works correctly in admin panel\n- Ensure proper error handling when programs are missing for a language",
+  "title": "",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "opencode-grok-code",
+  "thinkingLevel": "none",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "custom",
+  "titleGenerating": false,
+  "status": "verified",
+  "id": "feature-1769435414367-ozk0utihx",
+  "descriptionHistory": [
+    {
+      "description": "Implement CMS Program Management for Multi-language Content\n\nEnsure the Content Management System can properly manage and display programs for English (en) and Polish (pl) languages in the admin interface.\n\nRequirements:\n- Investigate why programs are not visible in the admin page for en and pl languages\n- Verify program data exists in the database for both language variants\n- Ensure proper database queries retrieve programs by language code\n- Fix any UI rendering issues preventing program display in admin interface\n- Test that program management (create, edit, delete) works for both languages\n- Verify language switching functionality works correctly in admin panel\n- Ensure proper error handling when programs are missing for a language",
+      "timestamp": "2026-01-26T13:50:14.467Z",
+      "source": "initial"
+    }
+  ],
+  "startedAt": "2026-01-26T13:52:15.633Z",
+  "updatedAt": "2026-01-26T13:52:19.691Z"
+}

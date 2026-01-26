@@ -3421,6 +3421,21 @@ Edge Cases to Consider:
 - Asset references in CSS or JavaScript files
 - Links within markdown content vs template files</description>
     </feature>
+    <feature>
+      <name>Feature: feature-1769435414367-ozk0utihx</name>
+      <description>Implement CMS Program Management for Multi-language Content
+
+Ensure the Content Management System can properly manage and display programs for English (en) and Polish (pl) languages in the admin interface.
+
+Requirements:
+- Investigate why programs are not visible in the admin page for en and pl languages
+- Verify program data exists in the database for both language variants
+- Ensure proper database queries retrieve programs by language code
+- Fix any UI rendering issues preventing program display in admin interface
+- Test that program management (create, edit, delete) works for both languages
+- Verify language switching functionality works correctly in admin panel
+- Ensure proper error handling when programs are missing for a language</description>
+    </feature>
   </implemented_features>
 
   <additional_requirements>

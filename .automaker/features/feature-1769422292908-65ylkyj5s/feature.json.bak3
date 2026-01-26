@@ -16,7 +16,7 @@
   "dependencies": [],
   "workMode": "current",
   "titleGenerating": false,
-  "status": "verified",
+  "status": "pipeline_step_mkuxbq3f_e37nn5",
   "id": "feature-1769422292908-65ylkyj5s",
   "descriptionHistory": [
     {
@@ -26,5 +26,5 @@
     }
   ],
   "startedAt": "2026-01-26T10:32:12.377Z",
-  "updatedAt": "2026-01-26T10:53:24.299Z"
+  "updatedAt": "2026-01-26T10:57:02.586Z"
 }

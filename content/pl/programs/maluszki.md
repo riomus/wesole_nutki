@@ -1,5 +1,6 @@
 ---
 title: "Grupa Maluszki"
+type: "program"
 description: "Program dla najmłodszych dzieci w wieku 2.5-3 lata"
 weight: 1
 icon: "🐣"

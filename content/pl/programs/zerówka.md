@@ -1,5 +1,6 @@
 ---
 title: "Zerówka"
+type: "program"
 description: "Roczne przygotowanie przedszkolne dla dzieci 5-6 lat"
 weight: 4
 icon: "🎓"
