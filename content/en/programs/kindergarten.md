@@ -1,6 +1,6 @@
 ---
 title: "Kindergarten"
-type: "program"
+translationKey: "program-kindergarten"
 description: "Year of preparation for children aged 5-6"
 weight: 4
 icon: "🎓"

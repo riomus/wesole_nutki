@@ -1,38 +1,38 @@
 {{/*
-  Responsive Image Partial
+Responsive Image Partial
 
-  Automatically generates responsive images in multiple sizes and WebP format.
-  Falls back gracefully to original image if processing is not possible.
+Automatically generates responsive images in multiple sizes and WebP format.
+Falls back gracefully to original image if processing is not possible.
 
-  URL Strategy:
-  - Uses .RelPermalink for processed image resources (includes fingerprint hash in production)
-  - Uses relURL for unprocessable images (external URLs, unsupported formats)
-  - All URLs are relative to support subdirectory deployments and baseURL configuration
+URL Strategy:
+- Uses .RelPermalink for processed image resources (includes fingerprint hash in production)
+- Uses relURL for unprocessable images (external URLs, unsupported formats)
+- All URLs are relative to support subdirectory deployments and baseURL configuration
 
-  Usage:
-    {{ partial "responsive-image" (dict
-      "src" "/images/example.jpg"
-      "alt" "Image description"
-      "class" "my-class"
-      "sizes" "(max-width: 768px) 100vw, 50vw"
-      "width" 800
-      "height" 600
-      "loading" "lazy"
-      "context" .
-    ) }}
+Usage:
+{{ partial "responsive-image" (dict
+"src" "/images/example.jpg"
+"alt" "Image description"
+"class" "my-class"
+"sizes" "(max-width: 768px) 100vw, 50vw"
+"width" 800
+"height" 600
+"loading" "lazy"
+"context" .
+) }}
 
-  Parameters:
-    - src: Image path (required) - can be relative path from assets or absolute URL
-    - alt: Alt text for accessibility (required)
-    - class: CSS classes to add to img element (optional)
-    - sizes: Sizes attribute for responsive images (optional, default: "100vw")
-    - width: Desired max width (optional, used for single image resize)
-    - height: Desired max height (optional)
-    - loading: Loading attribute - "lazy" or "eager" (optional, default: "lazy")
-    - context: Page context for resource access (optional, default: site)
-    - linkUrl: If provided, wraps image in anchor link (optional)
-    - linkClass: CSS class for anchor wrapper (optional)
-    - figcaption: Caption text for figure element (optional)
+Parameters:
+- src: Image path (required) - can be relative path from assets or absolute URL
+- alt: Alt text for accessibility (required)
+- class: CSS classes to add to img element (optional)
+- sizes: Sizes attribute for responsive images (optional, default: "100vw")
+- width: Desired max width (optional, used for single image resize)
+- height: Desired max height (optional)
+- loading: Loading attribute - "lazy" or "eager" (optional, default: "lazy")
+- context: Page context for resource access (optional, default: site)
+- linkUrl: If provided, wraps image in anchor link (optional)
+- linkClass: CSS class for anchor wrapper (optional)
+- figcaption: Caption text for figure element (optional)
 */}}
 
 {{- $src := .src -}}
@@ -57,217 +57,191 @@
 
 {{/* Try to get image as a resource for processing */}}
 {{- if $src -}}
-  {{/* Remove leading slash for assets lookup */}}
-  {{- $assetPath := strings.TrimPrefix "/" $src -}}
+{{/* Remove leading slash for assets lookup */}}
+{{- $assetPath := strings.TrimPrefix "/" $src -}}
 
-  {{/* Try global assets first */}}
-  {{- with resources.Get $assetPath -}}
-    {{- $image = . -}}
-    {{- $isProcessable = true -}}
-  {{- end -}}
+{{/* Try global assets first */}}
+{{- with resources.Get $assetPath -}}
+{{- $image = . -}}
+{{- $isProcessable = true -}}
+{{- end -}}
 
-  {{/* Try page resources if context is a Page with Resources */}}
-  {{/* Only check for page resources if image not found in global assets */}}
-  {{/* Skip if context is a map/dict (data file) or site wrapper */}}
-  {{- if not $image -}}
-    {{- $isPage := false -}}
-    {{- if $context -}}
-      {{/* Check if context has a Kind (indicating it's a Page) */}}
-      {{- $kind := "" -}}
-      {{- with $context.Kind -}}
-        {{- $kind = . -}}
-        {{- $isPage = true -}}
-      {{- end -}}
-    {{- end -}}
-    {{- if $isPage -}}
-      {{- with $context.Resources -}}
-        {{- with .GetMatch (path.Base $src) -}}
-          {{- $image = . -}}
-          {{- $isProcessable = true -}}
-        {{- end -}}
-      {{- end -}}
-    {{- end -}}
-  {{- end -}}
+{{/* Try page resources if context is a Page with Resources */}}
+{{/* Only check for page resources if image not found in global assets */}}
+{{/* Skip if context is a map/dict (data file) or site wrapper */}}
+{{- if not $image -}}
+{{- $isPage := false -}}
+{{- if $context -}}
+{{/* Check if context has a Kind (indicating it's a Page) */}}
+{{- $kind := "" -}}
+{{- with $context.Kind -}}
+{{- $kind = . -}}
+{{- $isPage = true -}}
+{{- end -}}
+{{- end -}}
+{{- if $isPage -}}
+{{- with $context.Resources -}}
+{{- with .GetMatch (path.Base $src) -}}
+{{- $image = . -}}
+{{- $isProcessable = true -}}
+{{- end -}}
+{{- end -}}
+{{- end -}}
+{{- end -}}
 {{- end -}}
 
 {{/* Build the image output */}}
 {{- if and $image $isProcessable -}}
-  {{/* Image is processable - generate responsive versions */}}
+{{/* Image is processable - generate responsive versions */}}
 
-  {{/* Determine format support */}}
-  {{- $supportsWebP := true -}}
-  {{- $format := $image.MediaType.SubType -}}
+{{/* Determine format support */}}
+{{- $supportsWebP := true -}}
+{{- $format := $image.MediaType.SubType -}}
 
-  {{/* Skip processing for SVG, GIF (animated), and already small images */}}
-  {{- $skipProcessing := or (eq $format "svg+xml") (eq $format "svg") (eq $format "gif") -}}
+{{/* Skip processing for SVG, GIF (animated), and already small images */}}
+{{- $skipProcessing := or (eq $format "svg+xml") (eq $format "svg") (eq $format "gif") -}}
 
-  {{- if $skipProcessing -}}
-    {{/* SVG/GIF - use original without processing */}}
-    <img
-      src="{{ $image.RelPermalink }}"
-      alt="{{ $alt }}"
-      {{ with $class }}class="{{ . }}"{{ end }}
-      loading="{{ $loading }}"
-      {{ with $image.Width }}width="{{ . }}"{{ end }}
-      {{ with $image.Height }}height="{{ . }}"{{ end }}
-    >
-  {{- else -}}
-    {{/* Process image - generate srcset for responsive images */}}
+{{- if $skipProcessing -}}
+{{/* SVG/GIF - use original without processing */}}
+<img src="{{ $image.RelPermalink }}" alt="{{ $alt }}" {{ with $class }}class="{{ . }}" {{ end }}
+  loading="{{ $loading }}" {{ with $image.Width }}width="{{ . }}" {{ end }} {{ with $image.Height }}height="{{ . }}" {{
+  end }}>
+{{- else -}}
+{{/* Process image - generate srcset for responsive images */}}
 
-    {{/* Generate WebP and original format versions */}}
-    {{- $srcsetWebP := slice -}}
-    {{- $srcsetOriginal := slice -}}
-    {{- $fallbackImage := $image -}}
+{{/* Generate WebP and original format versions */}}
+{{- $srcsetWebP := slice -}}
+{{- $srcsetOriginal := slice -}}
+{{- $fallbackImage := $image -}}
 
-    {{/* Calculate aspect ratio for consistent cropping */}}
-    {{- $aspectRatio := 0.0 -}}
-    {{- if and $image.Width $image.Height -}}
-      {{- $aspectRatio = div (float $image.Height) (float $image.Width) -}}
-    {{- end -}}
+{{/* Calculate aspect ratio for consistent cropping */}}
+{{- $aspectRatio := 0.0 -}}
+{{- if and $image.Width $image.Height -}}
+{{- $aspectRatio = div (float $image.Height) (float $image.Width) -}}
+{{- end -}}
 
-    {{/* Generate images at each responsive width */}}
-    {{- range $width := $responsiveWidths -}}
-      {{- if le $width $image.Width -}}
-        {{/* Resize to width, maintaining aspect ratio */}}
-        {{- $resized := $image.Resize (printf "%dx" $width) -}}
-        {{- $srcsetOriginal = $srcsetOriginal | append (printf "%s %dw" $resized.RelPermalink $width) -}}
+{{/* Generate images at each responsive width */}}
+{{- range $width := $responsiveWidths -}}
+{{- if le $width $image.Width -}}
+{{/* Resize to width, maintaining aspect ratio */}}
+{{- $resized := $image.Resize (printf "%dx" $width) -}}
+{{- $srcsetOriginal = $srcsetOriginal | append (printf "%s %dw" $resized.RelPermalink $width) -}}
 
-        {{/* Generate WebP version */}}
-        {{- if $supportsWebP -}}
-          {{- $webp := $image.Resize (printf "%dx webp" $width) -}}
-          {{- $srcsetWebP = $srcsetWebP | append (printf "%s %dw" $webp.RelPermalink $width) -}}
-        {{- end -}}
+{{/* Generate WebP version */}}
+{{- if $supportsWebP -}}
+{{- $webp := $image.Resize (printf "%dx webp" $width) -}}
+{{- $srcsetWebP = $srcsetWebP | append (printf "%s %dw" $webp.RelPermalink $width) -}}
+{{- end -}}
 
-        {{/* Use middle size as fallback */}}
-        {{- if and (ge $width 768) (le $width 1024) -}}
-          {{- $fallbackImage = $resized -}}
-        {{- end -}}
-      {{- end -}}
-    {{- end -}}
+{{/* Use middle size as fallback */}}
+{{- if and (ge $width 768) (le $width 1024) -}}
+{{- $fallbackImage = $resized -}}
+{{- end -}}
+{{- end -}}
+{{- end -}}
 
-    {{/* If image is smaller than smallest responsive width, use original */}}
-    {{- if eq (len $srcsetOriginal) 0 -}}
-      {{- $srcsetOriginal = $srcsetOriginal | append (printf "%s %dw" $image.RelPermalink $image.Width) -}}
-      {{- if $supportsWebP -}}
-        {{- $webp := $image.Resize (printf "%dx webp" $image.Width) -}}
-        {{- $srcsetWebP = $srcsetWebP | append (printf "%s %dw" $webp.RelPermalink $image.Width) -}}
-      {{- end -}}
-      {{- $fallbackImage = $image -}}
-    {{- end -}}
+{{/* If image is smaller than smallest responsive width, use original */}}
+{{- if eq (len $srcsetOriginal) 0 -}}
+{{- $srcsetOriginal = $srcsetOriginal | append (printf "%s %dw" $image.RelPermalink $image.Width) -}}
+{{- if $supportsWebP -}}
+{{- $webp := $image.Resize (printf "%dx webp" $image.Width) -}}
+{{- $srcsetWebP = $srcsetWebP | append (printf "%s %dw" $webp.RelPermalink $image.Width) -}}
+{{- end -}}
+{{- $fallbackImage = $image -}}
+{{- end -}}
 
-    {{/* Generate blur placeholder for loading state */}}
-    {{- $placeholder := "" -}}
-    {{- $blurredImage := $image.Resize "20x q20" -}}
-    {{- if $blurredImage -}}
-      {{- $placeholder = $blurredImage.RelPermalink -}}
-    {{- end -}}
+{{/* Generate blur placeholder for loading state */}}
+{{- $placeholder := "" -}}
+{{- $blurredImage := $image.Resize "20x q20" -}}
+{{- if $blurredImage -}}
+{{- $placeholder = $blurredImage.RelPermalink -}}
+{{- end -}}
 
-    {{/* Output picture element with WebP and fallback */}}
-    {{- if $figcaption -}}
-    <figure class="responsive-figure">
-    {{- end -}}
+{{/* Output picture element with WebP and fallback */}}
+{{- if $figcaption -}}
+<figure class="responsive-figure">
+  {{- end -}}
 
-    {{- if $linkUrl -}}
-    <a href="{{ $linkUrl }}" {{ with $linkClass }}class="{{ . }}"{{ end }}>
+  {{- if $linkUrl -}}
+  <a href="{{ $linkUrl }}" {{ with $linkClass }}class="{{ . }}" {{ end }}>
     {{- end -}}
 
     <div class="responsive-image-wrapper">
       {{- if $placeholder -}}
-      <img
-        src="{{ $placeholder }}"
-        alt=""
-        class="responsive-image-placeholder"
-        aria-hidden="true"
-        style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(10px); transform: scale(1.1);"
-      >
+      <img src="{{ $placeholder }}" alt="" class="responsive-image-placeholder" aria-hidden="true"
+        style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(10px); transform: scale(1.1);">
       {{- end -}}
 
       <picture>
         {{/* WebP source */}}
         {{- if and $supportsWebP (gt (len $srcsetWebP) 0) -}}
-        <source
-          type="image/webp"
-          srcset="{{ delimit $srcsetWebP ", " }}"
-          sizes="{{ $sizes }}"
-        >
+        <source type="image/webp" srcset="{{ delimit $srcsetWebP " , " }}" sizes="{{ $sizes }}">
         {{- end -}}
 
         {{/* Original format source */}}
-        <source
-          type="{{ $image.MediaType.Type }}"
-          srcset="{{ delimit $srcsetOriginal ", " }}"
-          sizes="{{ $sizes }}"
-        >
+        <source type="{{ $image.MediaType.Type }}" srcset="{{ delimit $srcsetOriginal " , " }}" sizes="{{ $sizes }}">
 
         {{/* Fallback img element with error handling */}}
-        <img
-          src="{{ $fallbackImage.RelPermalink }}"
-          alt="{{ $alt }}"
-          {{ with $class }}class="{{ . }} responsive-image-main"{{ else }}class="responsive-image-main"{{ end }}
-          loading="{{ $loading }}"
-          width="{{ $fallbackImage.Width }}"
-          height="{{ $fallbackImage.Height }}"
-          decoding="async"
-          onerror="this.parentElement.parentElement.classList.add('image-error'); this.onerror=null;"
-        >
+        <img src="{{ $fallbackImage.RelPermalink }}" alt="{{ $alt }}" {{ with $class
+          }}class="{{ . }} responsive-image-main" {{ else }}class="responsive-image-main" {{ end }}
+          loading="{{ $loading }}" width="{{ $fallbackImage.Width }}" height="{{ $fallbackImage.Height }}"
+          decoding="async" onerror="this.parentElement.parentElement.classList.add('image-error'); this.onerror=null;">
       </picture>
 
       {{/* Fallback UI for failed images */}}
       <div class="responsive-image-fallback" aria-hidden="true">
         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 16 16">
-          <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-          <path d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z"/>
+          <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+          <path
+            d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z" />
         </svg>
         <span class="responsive-image-fallback-text">{{ i18n "image_unavailable" | default "Image unavailable" }}</span>
       </div>
     </div>
 
     {{- if $linkUrl -}}
-    </a>
-    {{- end -}}
-
-    {{- if $figcaption -}}
-      <figcaption>{{ $figcaption }}</figcaption>
-    </figure>
-    {{- end -}}
-  {{- end -}}
-
-{{- else -}}
-  {{/* Image is not processable - use original src with lazy loading and error handling */}}
-  {{- if $figcaption -}}
-  <figure class="responsive-figure">
-  {{- end -}}
-
-  {{- if $linkUrl -}}
-  <a href="{{ $linkUrl }}" {{ with $linkClass }}class="{{ . }}"{{ end }}>
-  {{- end -}}
-
-  <div class="responsive-image-wrapper">
-    <img
-      src="{{ $src | relURL }}"
-      alt="{{ $alt }}"
-      {{ with $class }}class="{{ . }} responsive-image-main"{{ else }}class="responsive-image-main"{{ end }}
-      loading="{{ $loading }}"
-      decoding="async"
-      onerror="this.parentElement.classList.add('image-error'); this.onerror=null;"
-    >
-
-    {{/* Fallback UI for failed images */}}
-    <div class="responsive-image-fallback" aria-hidden="true">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 16 16">
-        <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-        <path d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z"/>
-      </svg>
-      <span class="responsive-image-fallback-text">{{ i18n "image_unavailable" | default "Image unavailable" }}</span>
-    </div>
-  </div>
-
-  {{- if $linkUrl -}}
   </a>
   {{- end -}}
 
   {{- if $figcaption -}}
-    <figcaption>{{ $figcaption }}</figcaption>
-  </figure>
+  <figcaption>{{ $figcaption }}</figcaption>
+</figure>
+{{- end -}}
+{{- end -}}
+
+{{- else -}}
+{{/* Image is not processable - use original src with lazy loading and error handling */}}
+{{- if $figcaption -}}
+<figure class="responsive-figure">
   {{- end -}}
+
+  {{- if $linkUrl -}}
+  <a href="{{ $linkUrl }}" {{ with $linkClass }}class="{{ . }}" {{ end }}>
+    {{- end -}}
+
+    <div class="responsive-image-wrapper">
+      <img src="{{ partial "helpers/image-url" $src }}" alt="{{ $alt }}" {{ with $class
+        }}class="{{ . }} responsive-image-main" {{ else }}class="responsive-image-main" {{ end }}
+        loading="{{ $loading }}" decoding="async"
+        onerror="this.parentElement.classList.add('image-error'); this.onerror=null;">
+
+      {{/* Fallback UI for failed images */}}
+      <div class="responsive-image-fallback" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+          <path
+            d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z" />
+        </svg>
+        <span class="responsive-image-fallback-text">{{ i18n "image_unavailable" | default "Image unavailable" }}</span>
+      </div>
+    </div>
+
+    {{- if $linkUrl -}}
+  </a>
+  {{- end -}}
+
+  {{- if $figcaption -}}
+  <figcaption>{{ $figcaption }}</figcaption>
+</figure>
+{{- end -}}
 {{- end -}}

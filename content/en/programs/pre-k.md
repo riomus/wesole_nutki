@@ -1,6 +1,6 @@
 ---
 title: "Pre-K Group"
-type: "program"
+translationKey: "program-pre-k"
 description: "Program for children aged 4-5 years"
 weight: 3
 icon: "🦆"

@@ -1,6 +1,6 @@
 ---
 title: "Preschool Group"
-type: "program"
+translationKey: "program-preschoolers"
 description: "Program for children aged 3-4 years"
 weight: 2
 icon: "🐥"

@@ -1,6 +1,6 @@
 ---
 title: "Grupa Starszaki"
-type: "program"
+translationKey: "program-pre-k"
 description: "Program dla dzieci w wieku 4-5 lat"
 weight: 3
 icon: "🦆"

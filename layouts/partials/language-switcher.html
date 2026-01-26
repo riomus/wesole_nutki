@@ -1,9 +1,9 @@
 {{/* Language Switcher Component
-    Displays a toggle between Polish and English with flags and abbreviations.
-    Maintains current page context when switching languages.
+Displays a toggle between Polish and English with flags and abbreviations.
+Maintains current page context when switching languages.
 
-    Parameters (optional):
-    - variant: "compact" (abbreviations only) or "full" (flags + abbreviations). Default: "full"
+Parameters (optional):
+- variant: "compact" (abbreviations only) or "full" (flags + abbreviations). Default: "full"
 */}}
 
 {{ if hugo.IsMultilingual }}
@@ -11,7 +11,8 @@
 {{ $currentLang := .Site.Language.Lang }}
 {{ $currentPage := . }}
 
-<div class="language-switcher" role="navigation" aria-label="{{ i18n "language_switcher" | default "Language selection" }}" data-current-lang="{{ $currentLang }}">
+<div class="language-switcher" role="navigation" aria-label="{{ i18n " language_switcher" | default "Language selection"
+  }}" data-current-lang="{{ $currentLang }}">
   <div class="lang-toggle">
     {{ range .Site.Languages }}
     {{ $targetLang := .Lang }}
@@ -19,27 +20,34 @@
     {{/* Find translated page URL or fall back to language home */}}
     {{ $targetURL := "" }}
     {{ if $currentPage.IsTranslated }}
-      {{ range $currentPage.Translations }}
-        {{ if eq .Lang $targetLang }}
-          {{ $targetURL = .RelPermalink }}
-        {{ end }}
-      {{ end }}
+    {{ range $currentPage.Translations }}
+    {{ if eq .Lang $targetLang }}
+    {{ $targetURL = .RelPermalink }}
+    {{ end }}
+    {{ end }}
     {{ end }}
     {{ if not $targetURL }}
-      {{ $targetURL = $targetLang | absLangURL }}
+    {{ range site.Home.AllTranslations }}
+    {{ if eq .Lang $targetLang }}
+    {{ $targetURL = .RelPermalink }}
+    {{ end }}
+    {{ end }}
     {{ end }}
 
     {{ if $isActive }}
     <span class="lang-btn active" data-lang="{{ .Lang }}" aria-current="true" title="{{ .LanguageName }}">
       {{ if eq $variant "full" }}
-      <span class="lang-flag" aria-hidden="true">{{ if eq .Lang "pl" }}🇵🇱{{ else if eq .Lang "en" }}🇬🇧{{ end }}</span>
+      <span class="lang-flag" aria-hidden="true">{{ if eq .Lang "pl" }}🇵🇱{{ else if eq .Lang "en" }}🇬🇧{{ end
+        }}</span>
       {{ end }}
       <span class="lang-code">{{ upper .Lang }}</span>
     </span>
     {{ else }}
-    <a href="{{ $targetURL }}" class="lang-btn" data-lang="{{ .Lang }}" hreflang="{{ .Lang }}" title="{{ .LanguageName }}">
+    <a href="{{ $targetURL }}" class="lang-btn" data-lang="{{ .Lang }}" hreflang="{{ .Lang }}"
+      title="{{ .LanguageName }}">
       {{ if eq $variant "full" }}
-      <span class="lang-flag" aria-hidden="true">{{ if eq .Lang "pl" }}🇵🇱{{ else if eq .Lang "en" }}🇬🇧{{ end }}</span>
+      <span class="lang-flag" aria-hidden="true">{{ if eq .Lang "pl" }}🇵🇱{{ else if eq .Lang "en" }}🇬🇧{{ end
+        }}</span>
       {{ end }}
       <span class="lang-code">{{ upper .Lang }}</span>
     </a>

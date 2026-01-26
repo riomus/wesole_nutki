@@ -1,6 +1,6 @@
 ---
 title: "Toddler Group"
-type: "program"
+translationKey: "program-toddlers"
 description: "Program for youngest children aged 2.5-3 years"
 weight: 1
 icon: "🐣"

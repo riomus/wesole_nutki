@@ -74,14 +74,6 @@ items:
     external: false
     open_in_new_tab: false
     children:
-      - identifier: more-recruitment
-        name: Rekrutacja
-        url: /pl/rekrutacja/
-        weight: 1
-        i18n_key: menu_recruitment
-        external: false
-        open_in_new_tab: false
-
       - identifier: more-vision
         name: Wizja
         url: /pl/o-przedszkolu/nasza-wizja/

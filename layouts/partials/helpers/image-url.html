@@ -1,41 +1,29 @@
-{{/*
-  Image URL Helper
-
-  Processes image URLs to ensure they work correctly with basepath configuration.
-  Handles both absolute paths (starting with /) and relative paths consistently.
-
-  This helper eliminates code duplication in image handling across templates.
-
-  Usage:
-    {{ partial "helpers/image-url" "/images/hero.jpg" }}
-    {{ partial "helpers/image-url" "images/logo.png" }}
-    {{ partial "helpers/image-url" "http://example.com/image.jpg" }}
-
-  Parameters:
-    . (dot): The image path/URL string to process
-
-  Returns:
-    Properly formatted image URL with basepath applied for internal images,
-    or the original URL for external images
-*/}}
-
+{{- /*
+Image URL Helper
+Processes image URLs to ensure they work correctly with basepath configuration.
+*/ -}}
 {{- $imagePath := . -}}
 {{- $result := $imagePath -}}
-
-{{/* Only process if we have a valid image path */}}
 {{- if $imagePath -}}
-  {{/* Check if it's an external URL */}}
-  {{- if or (hasPrefix $imagePath "http") (hasPrefix $imagePath "//") (hasPrefix $imagePath "data:") -}}
-    {{/* External or data URL - use as-is */}}
-    {{- $result = $imagePath -}}
-  {{- else -}}
-    {{/* Internal image path - apply relURL for basepath support */}}
-    {{/* Ensure path starts with / for absolute path resolution */}}
-    {{- if not (hasPrefix $imagePath "/") -}}
-      {{- $imagePath = printf "/%s" $imagePath -}}
-    {{- end -}}
-    {{- $result = $imagePath | relURL -}}
-  {{- end -}}
+{{- if or (hasPrefix $imagePath "http") (hasPrefix $imagePath "//") (hasPrefix $imagePath "data:") -}}
+{{- $result = $imagePath -}}
+{{- else -}}
+{{- if not (hasPrefix $imagePath "/") -}}
+{{- $imagePath = printf "/%s" $imagePath -}}
 {{- end -}}
-
+{{- $result = $imagePath | relURL -}}
+{{- /* Robust fallback: check if base path is missing despite relURL */ -}}
+{{- $basePath := "" -}}
+{{- if site.BaseURL -}}
+{{- $basePath = urls.Parse site.BaseURL -}}
+{{- $basePath = $basePath.Path -}}
+{{- end -}}
+{{- if and $basePath (ne $basePath "/") -}}
+{{- $cleanBase := strings.TrimSuffix "/" $basePath -}}
+{{- if not (hasPrefix $result $cleanBase) -}}
+{{- $result = printf "%s%s" $cleanBase $result -}}
+{{- end -}}
+{{- end -}}
+{{- end -}}
+{{- end -}}
 {{- $result -}}

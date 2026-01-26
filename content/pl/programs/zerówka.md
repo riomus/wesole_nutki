@@ -1,6 +1,6 @@
 ---
 title: "Zerówka"
-type: "program"
+translationKey: "program-kindergarten"
 description: "Roczne przygotowanie przedszkolne dla dzieci 5-6 lat"
 weight: 4
 icon: "🎓"

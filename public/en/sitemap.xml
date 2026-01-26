@@ -7,21 +7,61 @@
   </url><url>
     <loc>http://localhost:1313/wesole_nutki/en/programs/toddlers/</loc>
     <lastmod>2026-01-26T15:23:24+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pl"
+                href="http://localhost:1313/wesole_nutki/pl/programs/maluszki/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/wesole_nutki/en/programs/toddlers/"
+                />
   </url><url>
     <loc>http://localhost:1313/wesole_nutki/en/documents/enrollment-form/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/wesole_nutki/en/programs/preschoolers/</loc>
     <lastmod>2026-01-26T15:23:24+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pl"
+                href="http://localhost:1313/wesole_nutki/pl/programs/sredniaki/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/wesole_nutki/en/programs/preschoolers/"
+                />
   </url><url>
     <loc>http://localhost:1313/wesole_nutki/en/documents/privacy-policy/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/wesole_nutki/en/programs/pre-k/</loc>
     <lastmod>2026-01-26T15:23:24+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pl"
+                href="http://localhost:1313/wesole_nutki/pl/programs/starszaki/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/wesole_nutki/en/programs/pre-k/"
+                />
   </url><url>
     <loc>http://localhost:1313/wesole_nutki/en/programs/kindergarten/</loc>
     <lastmod>2026-01-26T15:23:24+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pl"
+                href="http://localhost:1313/wesole_nutki/pl/programs/zer%C3%B3wka/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/wesole_nutki/en/programs/kindergarten/"
+                />
   </url><url>
     <loc>http://localhost:1313/wesole_nutki/en/programs/schedule/</loc>
     <lastmod>2026-01-23T14:32:29+01:00</lastmod>

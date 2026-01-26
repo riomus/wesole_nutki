@@ -1,6 +1,6 @@
 ---
 title: "Grupa Średniaki"
-type: "program"
+translationKey: "program-preschoolers"
 description: "Program dla dzieci w wieku 3-4 lata"
 weight: 2
 icon: "🐥"
