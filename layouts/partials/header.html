@@ -144,8 +144,18 @@
               {{ $children := sort .children "weight" }}
               {{/* Menu item with dropdown - mobile collapsible */}}
               <li class="nav-item dropdown mobile-dropdown">
+                {{/*
+                  BaseURL Path Handling:
+                  For internal links (starting with /), we strip the leading slash before applying relURL.
+                  This ensures Hugo correctly prefixes the baseURL path (e.g., /wesole_nutki/).
+                  External links (http/https) and anchors (#) are used as-is without modification.
+                */}}
+                {{ $dropdownHref := $menuURL }}
+                {{ if not (or (hasPrefix $menuURL "http") (hasPrefix $menuURL "#")) }}
+                  {{ $dropdownHref = strings.TrimPrefix "/" $menuURL | relURL }}
+                {{ end }}
                 <a class="nav-link dropdown-toggle{{ if $isActive }} active{{ end }}"
-                   href="{{ $menuURL | relURL }}"
+                   href="{{ $dropdownHref }}"
                    id="navbarDropdown{{ .identifier }}"
                    role="button"
                    data-bs-toggle="dropdown"
@@ -178,8 +188,13 @@
                     {{ $childExternal := default false .external }}
                     {{ $childNewTab := default false .open_in_new_tab }}
                     <li>
+                      {{/* BaseURL handling: Strip leading / from internal links before applying relURL */}}
+                      {{ $childHref := .url }}
+                      {{ if not (or (hasPrefix .url "http") (hasPrefix .url "#")) }}
+                        {{ $childHref = strings.TrimPrefix "/" .url | relURL }}
+                      {{ end }}
                       <a class="dropdown-item{{ if $childActive }} active{{ end }}"
-                         href="{{ .url | relURL }}"
+                         href="{{ $childHref }}"
                          {{ if $childActive }}aria-current="page"{{ end }}
                          {{ if $childExternal }}rel="noopener noreferrer"{{ end }}
                          {{ if $childNewTab }}target="_blank"{{ end }}>
@@ -198,8 +213,13 @@
             {{ else }}
               {{/* Regular menu item without dropdown */}}
               <li class="nav-item">
+                {{/* BaseURL handling: Strip leading / from internal links before applying relURL */}}
+                {{ $navHref := $menuURL }}
+                {{ if not (or (hasPrefix $menuURL "http") (hasPrefix $menuURL "#")) }}
+                  {{ $navHref = strings.TrimPrefix "/" $menuURL | relURL }}
+                {{ end }}
                 <a class="nav-link{{ if or $isActive $isCurrentPage }} active{{ end }}"
-                   href="{{ $menuURL | relURL }}"
+                   href="{{ $navHref }}"
                    {{ if $isCurrentPage }}aria-current="page"{{ end }}
                    {{ if $isExternal }}rel="noopener noreferrer"{{ end }}
                    {{ if $openInNewTab }}target="_blank"{{ end }}>

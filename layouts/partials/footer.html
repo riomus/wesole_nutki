@@ -56,8 +56,17 @@
                   {{ $menuName = $translated }}
                 {{ end }}
               {{ end }}
+              {{/*
+                BaseURL Path Handling:
+                Strip leading slash from internal URLs before applying relURL to ensure
+                proper baseURL prefix (e.g., /wesole_nutki/). External links remain unchanged.
+              */}}
+              {{ $footerHref := .url }}
+              {{ if not (or (hasPrefix .url "http") (hasPrefix .url "#")) }}
+                {{ $footerHref = strings.TrimPrefix "/" .url | relURL }}
+              {{ end }}
               <li>
-                <a href="{{ .url | relURL }}">{{ $menuName }}</a>
+                <a href="{{ $footerHref }}">{{ $menuName }}</a>
               </li>
             {{ end }}
           </ul>
@@ -196,7 +205,12 @@
               {{ else }}
                 {{ $name = .name_en }}
               {{ end }}
-              <a href="{{ .url | relURL }}">{{ $name }}</a>
+              {{/* BaseURL handling: Only process internal links, leave external links unchanged */}}
+              {{ $usefulLinkHref := .url }}
+              {{ if not (or (hasPrefix .url "http") (hasPrefix .url "#")) }}
+                {{ $usefulLinkHref = strings.TrimPrefix "/" .url | relURL }}
+              {{ end }}
+              <a href="{{ $usefulLinkHref }}">{{ $name }}</a>
             {{ end }}
           </nav>
           {{ end }}
