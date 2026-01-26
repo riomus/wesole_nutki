@@ -2,7 +2,7 @@
 title: "Międzynarodowy Dzień Muzyki - Wesołe Nutki"
 date: 2026-01-23T09:28:39.030Z
 type: post
-url: "/2025/10/07/miedzynarodowy-dzien-muzyki/"
+url: "/pl/2025/10/07/miedzynarodowy-dzien-muzyki/"
 images:
   - url: "/images/scraped/2025-10-07-miedzynarodowy-dzien-muzyki-0.jpeg"
     alt: ""

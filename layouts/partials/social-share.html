@@ -1,4 +1,10 @@
-{{/* Social Sharing Buttons Partial */}}
+{{/* Social Sharing Buttons Partial
+
+URL Strategy:
+- Uses .Permalink for absolute URLs (required for social media sharing)
+- Social media platforms require fully qualified URLs with protocol and domain
+
+*/}}
 {{- $pageURL := .Permalink -}}
 {{- $pageTitle := .Title | htmlEscape -}}
 {{- $pageSummary := .Summary | plainify | truncate 160 | htmlEscape -}}

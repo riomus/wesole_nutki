@@ -7,7 +7,7 @@ url: "/en/recruitment/"
 
 Dear Parents! We have opened recruitment for a new toddler group – starting September 2026. We cordially invite children born in 2023.
 
-The enrollment form is available for download [here](https://wesolenutki.eu/wp-content/uploads/2019/11/Karta-Zgłoszenia-Dziecka_RODO-poprawione.pdf) or in the documents section.
+The enrollment form is available for download [here](/documents/karta-zgloszenia.pdf) or in the documents section.
 
 Information is available by phone: 71 343 18 99, mobile: 536 268 113
 

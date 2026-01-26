@@ -1,7 +1,7 @@
 {{/* Program Card Partial - displays a program preview with icon, title, age group, summary, and link */}}
 {{/* Now with responsive images and WebP format support */}}
 <article class="program-card h-100">
-  <a href="{{ .Permalink }}" class="program-card-link">
+  <a href="{{ .RelPermalink }}" class="program-card-link" title="{{ i18n "view_program" | default "View program" }}: {{ .Title }}" aria-label="{{ i18n "learn_more_about" | default "Learn more about" }} {{ .Title }}">
     {{/* Program Icon or Image */}}
     <div class="program-card-header">
       {{ with .Params.featured_image }}

@@ -2,7 +2,7 @@
 title: "Muzyka na żywo w przedszkolu - Wesołe Nutki"
 date: 2026-01-23T09:28:53.046Z
 type: post
-url: "/2025/06/10/muzyka-na-zywo-w-przedszkolu/"
+url: "/pl/2025/06/10/muzyka-na-zywo-w-przedszkolu/"
 images:
   - url: "/images/scraped/2025-06-10-muzyka-na-zywo-w-przedszkolu-0.jpeg"
     alt: ""

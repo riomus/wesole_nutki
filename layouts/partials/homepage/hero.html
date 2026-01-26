@@ -59,7 +59,16 @@
               {{- $url = $menuItem.URL -}}
             {{- end -}}
           {{- end -}}
-          <a href="{{ $url | absURL }}" class="btn btn-{{ .style | default "light" }} btn-lg{{ if .icon }} btn-icon{{ end }}" data-testid="hero-cta-button">
+          {{/*
+            BaseURL Path Handling:
+            Strip leading slash from internal URLs before applying relURL to ensure
+            proper baseURL prefix (e.g., /wesole_nutki/). External links and anchors remain unchanged.
+          */}}
+          {{- $buttonHref := $url -}}
+          {{- if not (or (hasPrefix $url "http") (hasPrefix $url "#")) -}}
+            {{- $buttonHref = strings.TrimPrefix "/" $url | relURL -}}
+          {{- end -}}
+          <a href="{{ $buttonHref }}" class="btn btn-{{ .style | default "light" }} btn-lg{{ if .icon }} btn-icon{{ end }}" data-testid="hero-cta-button">
             {{ i18n .label_key | default .label_key }}
             {{- if eq .icon "arrow-right" }}
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">

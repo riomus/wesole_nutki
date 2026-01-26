@@ -2,7 +2,7 @@
 title: "Warsztaty ekologiczne - Wesołe Nutki"
 date: 2026-01-23T09:28:57.217Z
 type: post
-url: "/2025/06/03/warsztaty-ekologiczne/"
+url: "/pl/2025/06/03/warsztaty-ekologiczne/"
 images:
   - url: "/images/scraped/2025-06-03-warsztaty-ekologiczne-0.png"
     alt: ""

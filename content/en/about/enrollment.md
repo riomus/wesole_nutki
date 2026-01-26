@@ -7,7 +7,7 @@ url: "/en/about/enrollment/"
 
 We invite everyone interested in enrolling their child in our preschool to download the enrollment form:
 
-**[Child Enrollment Form (PDF file)](https://wesolenutki.eu/wp-content/uploads/2019/11/Karta-Zgłoszenia-Dziecka_RODO-poprawione.pdf)**
+**[Child Enrollment Form (PDF file)](/documents/karta-zgloszenia.pdf)**
 
 Please submit completed and signed forms directly at the preschool.
 

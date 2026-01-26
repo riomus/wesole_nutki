@@ -5,6 +5,10 @@
      - Schema.org BreadcrumbList JSON-LD structured data for SEO
      - Accessible with proper ARIA attributes
      - Excludes homepage automatically
+
+     URL Configuration:
+     - Uses .RelPermalink for internal navigation (relative URLs)
+     - Uses absURL for JSON-LD structured data (SEO requires absolute URLs)
 */}}
 
 {{/* Don't show breadcrumb on homepage */}}
@@ -103,7 +107,8 @@
         <span itemprop="name" aria-current="page">{{ $item.title | truncate 50 }}</span>
         <meta itemprop="position" content="{{ add $index 1 }}">
         {{- else -}}
-        <a href="{{ $item.url | relURL }}" itemprop="item">
+        {{/* .RelPermalink already returns relative URLs, no need for relURL filter */}}
+        <a href="{{ $item.url }}" itemprop="item" title="{{ $item.title }}">
           {{- if eq $index 0 -}}
           {{/* Home icon for first item */}}
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16" class="me-1" aria-hidden="true">

@@ -14,7 +14,7 @@
       {{ range .Pages }}
       {{ $categoryName := .Title }}
       {{ $galleryCount := len .Pages }}
-      <a href="{{ .Permalink }}" class="gallery-category-card">
+      <a href="{{ .RelPermalink }}" class="gallery-category-card">
         <div class="gallery-category-card-icon">
           {{/* Determine icon based on category name */}}
           {{ if in (lower $categoryName) "event" }}

@@ -7,7 +7,7 @@ url: "/o-przedszkolu/zapisy/"
 
 Wszystkich zainteresowanych zapisaniem swojego dziecka do naszego przedszkola zapraszamy do pobrania karty zgłoszeniowej:
 
-**[Karta Zgłoszenia Dziecka (plik PDF)](https://wesolenutki.eu/wp-content/uploads/2019/11/Karta-Zgłoszenia-Dziecka_RODO-poprawione.pdf)**
+**[Karta Zgłoszenia Dziecka (plik PDF)](/documents/karta-zgloszenia.pdf)**
 
 Wypełnione i podpisane karty prosimy składać bezpośrednio w przedszkolu.
 

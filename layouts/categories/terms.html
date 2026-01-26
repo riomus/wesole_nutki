@@ -14,7 +14,7 @@
       {{ range .Pages }}
       {{ $categoryName := .Title }}
       {{ $articleCount := len .Pages }}
-      <a href="{{ .Permalink }}" class="news-category-card">
+      <a href="{{ .RelPermalink }}" class="news-category-card">
         <div class="news-category-card-icon">
           {{/* Determine icon based on category name */}}
           {{ $lowerName := lower $categoryName }}

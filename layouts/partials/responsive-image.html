@@ -4,6 +4,11 @@
   Automatically generates responsive images in multiple sizes and WebP format.
   Falls back gracefully to original image if processing is not possible.
 
+  URL Strategy:
+  - Uses .RelPermalink for processed image resources (includes fingerprint hash in production)
+  - Uses relURL for unprocessable images (external URLs, unsupported formats)
+  - All URLs are relative to support subdirectory deployments and baseURL configuration
+
   Usage:
     {{ partial "responsive-image" (dict
       "src" "/images/example.jpg"

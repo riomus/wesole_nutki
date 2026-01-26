@@ -44,7 +44,7 @@ items:
     children:
       - identifier: daily-plan-weekly
         name: Plan tygodniowy
-        url: /plan-zajec/
+        url: /pl/plan-zajec/
         weight: 1
         i18n_key: menu_daily_plan_weekly
         external: false
@@ -52,7 +52,7 @@ items:
 
       - identifier: daily-plan-extra
         name: Zajęcia dodatkowe 2025/2026
-        url: /plan-dnia/zajecia-dodatkowe/
+        url: /pl/plan-dnia/zajecia-dodatkowe/
         weight: 2
         i18n_key: menu_daily_plan_extra
         external: false
@@ -60,7 +60,7 @@ items:
 
       - identifier: daily-plan-calendar
         name: Harmonogram roku szkolnego 2025/2026
-        url: /plan-dnia/imprezy/
+        url: /pl/plan-dnia/imprezy/
         weight: 3
         i18n_key: menu_daily_plan_calendar
         external: false
@@ -84,7 +84,7 @@ items:
     children:
       - identifier: more-recruitment
         name: Rekrutacja
-        url: /rekrutacja/
+        url: /pl/rekrutacja/
         weight: 1
         i18n_key: menu_recruitment
         external: false
@@ -92,7 +92,7 @@ items:
 
       - identifier: more-vision
         name: Wizja
-        url: /o-przedszkolu/nasza-wizja/
+        url: /pl/o-przedszkolu/nasza-wizja/
         weight: 2
         i18n_key: menu_about_vision
         external: false
@@ -101,7 +101,7 @@ items:
 
       - identifier: more-pricing
         name: Cennik
-        url: /o-przedszkolu/cennik/
+        url: /pl/o-przedszkolu/cennik/
         weight: 4
         i18n_key: menu_about_pricing
         external: false
@@ -109,7 +109,7 @@ items:
 
       - identifier: more-payments
         name: Płatności
-        url: /o-przedszkolu/platnosci/
+        url: /pl/o-przedszkolu/platnosci/
         weight: 5
         i18n_key: menu_about_payments
         external: false
@@ -117,7 +117,7 @@ items:
 
       - identifier: more-enrollment
         name: Zapisy
-        url: /o-przedszkolu/zapisy/
+        url: /pl/o-przedszkolu/zapisy/
         weight: 6
         i18n_key: menu_about_enrollment
         external: false
@@ -125,7 +125,7 @@ items:
 
       - identifier: more-privacy
         name: Polityka Prywatności
-        url: /o-przedszkolu/polityka-prywatnosci/
+        url: /pl/o-przedszkolu/polityka-prywatnosci/
         weight: 7
         i18n_key: menu_about_privacy
         external: false
@@ -133,7 +133,7 @@ items:
 
       - identifier: more-child-protection
         name: Standardy Ochrony Małoletnich
-        url: /standardy-ochrony-maloletnich/
+        url: /pl/standardy-ochrony-maloletnich/
         weight: 8
         i18n_key: menu_child_protection
         external: false

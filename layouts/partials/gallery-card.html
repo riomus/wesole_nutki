@@ -2,7 +2,7 @@
 {{/* Supports both old format (string list) and new format (object list with src, caption, alt) */}}
 {{/* Now with responsive images and WebP format support */}}
 <article class="gallery-card">
-  <a href="{{ .RelPermalink }}" class="gallery-card-link">
+  <a href="{{ .RelPermalink }}" class="gallery-card-link" title="{{ i18n "view_gallery" | default "View gallery" }}: {{ .Title }}" aria-label="{{ i18n "open_gallery" | default "Open gallery" }} {{ .Title }}">
     <div class="gallery-card-image">
       {{/* Determine cover image - supports both old and new image formats */}}
       {{ $coverImage := .Params.featured_image }}
@@ -73,7 +73,7 @@
       {{ with .Params.gallery_categories }}
       <div class="gallery-card-categories">
         {{ range . }}
-        <a href="{{ printf "gallery_categories/%s" (urlize .) | relLangURL }}" class="gallery-card-tag">{{ . }}</a>
+        <a href="{{ printf "gallery_categories/%s" (urlize .) | relLangURL }}" class="gallery-card-tag" title="{{ i18n "view_category" | default "View category" }}: {{ . }}" aria-label="{{ i18n "filter_by_category" | default "Filter by category" }} {{ . }}">{{ . }}</a>
         {{ end }}
       </div>
       {{ end }}

@@ -7,7 +7,7 @@ const baseURL = useBasePath
   : 'http://localhost:1313';
 const serverCommand = useBasePath
   ? 'hugo server --port 1313 --baseURL http://localhost:1313/wesole_nutki/ --appendPort=false'
-  : 'hugo server --port 1313';
+  : 'hugo server --port 1313 --baseURL http://localhost:1313/ --appendPort=false';
 
 export default defineConfig({
   testDir: './tests',

@@ -2,8 +2,17 @@
 {{- if $data.enabled -}}
 {{- $bgImage := $data.background_image | default "" -}}
 {{- $overlayOpacity := $data.overlay_opacity | default 0.7 -}}
+{{/* BaseURL handling: Strip leading slash from internal URLs for proper basepath prefix */}}
+{{- $bgImageURL := "" -}}
+{{- if $bgImage -}}
+  {{- if or (hasPrefix $bgImage "http") (hasPrefix $bgImage "//") -}}
+    {{- $bgImageURL = $bgImage -}}
+  {{- else -}}
+    {{- $bgImageURL = strings.TrimPrefix "/" $bgImage | relURL -}}
+  {{- end -}}
+{{- end -}}
 <!-- About Page Hero Section -->
-<section class="hero-section hero-bg-image about-hero" {{- if $bgImage }} style="background-image: url('{{ $bgImage | relURL }}'); --hero-overlay-opacity: {{ $overlayOpacity }};"{{- end }}>
+<section class="hero-section hero-bg-image about-hero" {{- if $bgImageURL }} style="background-image: url('{{ $bgImageURL }}'); --hero-overlay-opacity: {{ $overlayOpacity }};"{{- end }}>
   {{- if $data.background_image -}}
   <div class="hero-overlay"></div>
   {{- end -}}

@@ -52,12 +52,35 @@
   {{ with $seo.meta_keywords }}{{ $keywords = . }}{{ end }}
 {{ end }}
 
+{{/*
+  URL Configuration Strategy:
+  - Use .Permalink for absolute URLs (canonical, og:url, JSON-LD)
+  - Use .RelPermalink for internal navigation links
+  - Use absURL for static assets that need absolute URLs (og:image, twitter:image)
+  - Use relURL for static assets in relative context (favicons, local resources)
+
+  This ensures proper URL generation for:
+  - Subdirectory deployments (baseURL with path)
+  - Multi-language sites (language prefixes)
+  - CDN and external references
+  - SEO and social sharing
+*/}}
+
 {{/* Cache .Permalink for reuse - used in canonical, og:url, and alternate links */}}
 {{ $pagePermalink := .Permalink }}
 
 {{/* Determine canonical URL - default to .Permalink, allow custom override */}}
 {{ $canonicalURL := $pagePermalink }}
-{{ with .Params.canonical }}{{ $canonicalURL = . | absURL }}{{ end }}
+{{ with .Params.canonical }}
+  {{/* If custom canonical is provided, ensure it's absolute */}}
+  {{ if hasPrefix . "http" }}
+    {{/* Already absolute URL */}}
+    {{ $canonicalURL = . }}
+  {{ else }}
+    {{/* Relative path - convert to absolute */}}
+    {{ $canonicalURL = . | absURL }}
+  {{ end }}
+{{ end }}
 
 {{/* Determine robots directives */}}
 {{ $robotsContent := "" }}
@@ -87,11 +110,12 @@
 {{ if .IsPage }}{{ $ogType = "article" }}{{ end }}
 {{ with .Params.og_type }}{{ $ogType = . }}{{ end }}
 
-{{/* Determine OG image with priority cascade: og_image > image > featured_image > branding > logo */}}
+{{/* Determine OG image with priority cascade: og_image > image > featured_image > images[0] > branding > logo */}}
 {{ $ogImage := "" }}
 {{ with .Params.og_image }}{{ $ogImage = . }}{{ end }}
 {{ if not $ogImage }}{{ with .Params.image }}{{ $ogImage = . }}{{ end }}{{ end }}
 {{ if not $ogImage }}{{ with .Params.featured_image }}{{ $ogImage = . }}{{ end }}{{ end }}
+{{ if not $ogImage }}{{ with .Params.images }}{{ if gt (len .) 0 }}{{ $firstImage := index . 0 }}{{ if reflect.IsMap $firstImage }}{{ $ogImage = $firstImage.url }}{{ else }}{{ $ogImage = $firstImage }}{{ end }}{{ end }}{{ end }}{{ end }}
 {{ if not $ogImage }}{{ with $branding.og_image }}{{ $ogImage = . }}{{ end }}{{ end }}
 {{ if not $ogImage }}{{ with .Site.Params.logo }}{{ $ogImage = . }}{{ end }}{{ end }}
 
@@ -163,7 +187,10 @@
 <meta property="og:url" content="{{ $pagePermalink }}">
 <meta property="og:site_name" content="{{ $siteTitle }}">
 {{ with $ogImage }}
-<meta property="og:image" content="{{ . | absURL }}">
+{{/* Ensure subdirectory is included: strip leading slash, then apply relURL and absURL */}}
+{{ $imageURL := . }}
+{{ if hasPrefix $imageURL "/" }}{{ $imageURL = strings.TrimPrefix "/" $imageURL }}{{ end }}
+<meta property="og:image" content="{{ $imageURL | relURL | absURL }}">
 {{ end }}
 {{/* Article-specific Open Graph tags */}}
 {{ if eq $ogType "article" }}
@@ -200,7 +227,10 @@
 <meta name="twitter:description" content="{{ . }}">
 {{ end }}
 {{ with $twitterImage }}
-<meta name="twitter:image" content="{{ . | absURL }}">
+{{/* Ensure subdirectory is included: strip leading slash, then apply relURL and absURL */}}
+{{ $imageURL := . }}
+{{ if hasPrefix $imageURL "/" }}{{ $imageURL = strings.TrimPrefix "/" $imageURL }}{{ end }}
+<meta name="twitter:image" content="{{ $imageURL | relURL | absURL }}">
 {{ end }}
 
 <!-- Favicon and PWA Icons -->

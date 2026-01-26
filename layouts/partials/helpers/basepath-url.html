@@ -1,0 +1,32 @@
+{{/*
+  BaseURL Path Helper
+
+  Converts internal URLs to use proper basepath configuration by applying relURL.
+  External URLs (http/https) and anchors (#) are returned unchanged.
+
+  This helper eliminates code duplication and ensures consistent URL handling
+  across all templates.
+
+  Usage:
+    {{ partial "helpers/basepath-url" "/pl/about/" }}
+    {{ partial "helpers/basepath-url" "http://example.com" }}
+    {{ partial "helpers/basepath-url" "#section" }}
+
+  Parameters:
+    . (dot): The URL string to process
+
+  Returns:
+    Properly formatted URL with basepath applied for internal links,
+    or the original URL for external/anchor links
+*/}}
+
+{{- $url := . -}}
+{{- $result := $url -}}
+
+{{/* Check if URL is internal (not external http/https and not an anchor #) */}}
+{{- if and $url (not (or (hasPrefix $url "http") (hasPrefix $url "#") (hasPrefix $url "mailto:") (hasPrefix $url "tel:"))) -}}
+  {{/* Internal link - strip leading slash and apply relURL for basepath support */}}
+  {{- $result = strings.TrimPrefix "/" $url | relURL -}}
+{{- end -}}
+
+{{- $result -}}

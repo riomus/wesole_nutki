@@ -2,7 +2,7 @@
 title: "Pracuj z Wesołymi Nutkami! - Wesołe Nutki"
 date: 2026-01-23T09:29:08.277Z
 type: post
-url: "/2023/01/30/pracuj-z-wesolymi-nutkami/"
+url: "/pl/2023/01/30/pracuj-z-wesolymi-nutkami/"
 images:
   - url: "/images/scraped/2023-01-30-pracuj-z-wesolymi-nutkami-0.jpg"
     alt: ""

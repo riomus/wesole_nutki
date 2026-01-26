@@ -178,7 +178,7 @@
     {{ $galleryPage := .Page.Site.GetPage $ref }}
     {{ if $galleryPage }}
     <div class="embedded-gallery-footer">
-      <a href="{{ $galleryPage.Permalink }}" class="btn btn-outline-primary btn-sm">
+      <a href="{{ $galleryPage.RelPermalink }}" class="btn btn-outline-primary btn-sm">
         {{ i18n "view_full_gallery" | default "View full gallery" }}
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="ms-1" viewBox="0 0 16 16">
           <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>

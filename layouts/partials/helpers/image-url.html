@@ -1,0 +1,43 @@
+{{/*
+  Image URL Helper
+
+  Processes image URLs to ensure they work correctly with basepath configuration.
+  Handles both absolute paths (starting with /) and relative paths consistently.
+
+  This helper eliminates code duplication in image handling across templates.
+
+  Usage:
+    {{ partial "helpers/image-url" "/images/hero.jpg" }}
+    {{ partial "helpers/image-url" "images/logo.png" }}
+    {{ partial "helpers/image-url" "http://example.com/image.jpg" }}
+
+  Parameters:
+    . (dot): The image path/URL string to process
+
+  Returns:
+    Properly formatted image URL with basepath applied for internal images,
+    or the original URL for external images
+*/}}
+
+{{- $imagePath := . -}}
+{{- $result := $imagePath -}}
+
+{{/* Only process if we have a valid image path */}}
+{{- if $imagePath -}}
+  {{/* Check if it's an external URL */}}
+  {{- if or (hasPrefix $imagePath "http") (hasPrefix $imagePath "//") (hasPrefix $imagePath "data:") -}}
+    {{/* External or data URL - use as-is */}}
+    {{- $result = $imagePath -}}
+  {{- else -}}
+    {{/* Internal image path - apply relURL for basepath support */}}
+    {{- if hasPrefix $imagePath "/" -}}
+      {{/* Absolute path - strip leading slash before relURL */}}
+      {{- $result = strings.TrimPrefix "/" $imagePath | relURL -}}
+    {{- else -}}
+      {{/* Relative path - apply relURL directly */}}
+      {{- $result = $imagePath | relURL -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $result -}}

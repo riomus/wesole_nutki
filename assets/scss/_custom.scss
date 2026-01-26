@@ -3315,6 +3315,12 @@
     .sidebar-card-title {
       @apply text-white border-white/20;
     }
+
+    // Override text-white-50 to full opacity for better readability
+    .text-white-50 {
+      color: rgba(255, 255, 255, 1) !important;
+      opacity: 1;
+    }
   }
 
   // Program info list
@@ -4507,6 +4513,12 @@
 
     h2, p {
       text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    // Override text-white-50 to full opacity for better readability
+    .text-white-50 {
+      color: rgba(255, 255, 255, 1) !important;
+      opacity: 1;
     }
   }
 

@@ -35,10 +35,25 @@
           </div>
           <div class="team-card-body">
             <h4 class="team-card-name">{{ .name }}</h4>
-            <p class="team-card-role">{{ i18n .role_key | default .role_key }}</p>
             {{- $lang := $.Site.Language.Lang -}}
             {{- $supportedLangs := slice "pl" "en" -}}
+            {{- $role := "" -}}
             {{- $bio := "" -}}
+
+            {{- /* Select role based on current language with fallback */ -}}
+            {{- if eq $lang "pl" -}}
+              {{- $role = .role_pl | default .role_en -}}
+            {{- else if eq $lang "en" -}}
+              {{- $role = .role_en | default .role_pl -}}
+            {{- else -}}
+              {{- /* Fallback for unsupported languages: try English first, then Polish */ -}}
+              {{- $role = .role_en | default .role_pl -}}
+            {{- end -}}
+
+            {{- /* Render role if we have content */ -}}
+            {{- if $role -}}
+            <p class="team-card-role">{{ $role }}</p>
+            {{- end -}}
 
             {{- /* Select biography based on current language with fallback */ -}}
             {{- if eq $lang "pl" -}}

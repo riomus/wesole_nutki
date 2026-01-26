@@ -2,7 +2,7 @@
 title: "Międzynarodowy Dzień Kropki - Wesołe Nutki"
 date: 2026-01-23T09:28:48.760Z
 type: post
-url: "/2025/09/15/miedzynarodowy-dzien-kropki/"
+url: "/pl/2025/09/15/miedzynarodowy-dzien-kropki/"
 images:
   - url: "/images/scraped/2025-09-15-miedzynarodowy-dzien-kropki-0.jpeg"
     alt: ""

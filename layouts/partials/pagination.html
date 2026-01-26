@@ -19,7 +19,7 @@
     {{/* Previous Page Button */}}
     {{ if $paginator.HasPrev }}
     <li class="page-item">
-      <a class="page-link page-link-prev" href="{{ $paginator.Prev.URL | relURL }}" aria-label="{{ i18n "pagination_previous" | default "Previous page" }}">
+      <a class="page-link page-link-prev" href="{{ $paginator.Prev.URL | relURL }}" title="{{ i18n "pagination_previous" | default "Previous page" }}" aria-label="{{ i18n "pagination_previous" | default "Previous page" }}">
         <span aria-hidden="true">&larr;</span>
       </a>
     </li>
@@ -38,7 +38,7 @@
 
     {{ if $showFirst }}
     <li class="page-item">
-      <a class="page-link" href="{{ $paginator.First.URL | relURL }}">1</a>
+      <a class="page-link" href="{{ $paginator.First.URL | relURL }}" title="{{ i18n "go_to_page" | default "Go to page" }} 1">1</a>
     </li>
     {{ if gt $paginator.PageNumber (add $adjacentPages 2) }}
     <li class="page-item disabled">
@@ -59,7 +59,7 @@
         </li>
         {{ else }}
         <li class="page-item">
-          <a class="page-link" href="{{ .URL | relURL }}">{{ .PageNumber }}</a>
+          <a class="page-link" href="{{ .URL | relURL }}" title="{{ i18n "go_to_page" | default "Go to page" }} {{ .PageNumber }}">{{ .PageNumber }}</a>
         </li>
         {{ end }}
       {{ end }}
@@ -73,14 +73,14 @@
     </li>
     {{ end }}
     <li class="page-item">
-      <a class="page-link" href="{{ $paginator.Last.URL | relURL }}">{{ $paginator.TotalPages }}</a>
+      <a class="page-link" href="{{ $paginator.Last.URL | relURL }}" title="{{ i18n "go_to_page" | default "Go to page" }} {{ $paginator.TotalPages }}">{{ $paginator.TotalPages }}</a>
     </li>
     {{ end }}
 
     {{/* Next Page Button */}}
     {{ if $paginator.HasNext }}
     <li class="page-item">
-      <a class="page-link page-link-next" href="{{ $paginator.Next.URL | relURL }}" aria-label="{{ i18n "pagination_next_page" | default "Next page" }}">
+      <a class="page-link page-link-next" href="{{ $paginator.Next.URL | relURL }}" title="{{ i18n "pagination_next_page" | default "Next page" }}" aria-label="{{ i18n "pagination_next_page" | default "Next page" }}">
         <span aria-hidden="true">&rarr;</span>
       </a>
     </li>
