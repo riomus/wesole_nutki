@@ -1,0 +1,11 @@
+{
+  "id": "evt-1769428862350-c8aa401c",
+  "trigger": "feature_error",
+  "timestamp": "2026-01-26T12:01:02.350Z",
+  "projectPath": "/Users/romanbartusiak/git/riomus/wesole_nutki",
+  "projectName": "wesole_nutki",
+  "featureId": "feature-1769425318393-exqfqsq8h",
+  "featureName": "Fix BaseURL path handling for internal resources",
+  "error": "Claude Code process exited with code 1",
+  "errorType": "execution"
+}

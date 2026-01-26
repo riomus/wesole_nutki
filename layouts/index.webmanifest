@@ -1,0 +1,38 @@
+{{- $settings := site.Data.settings -}}
+{{- $siteTitle := "" -}}
+{{- with $settings -}}{{- $siteTitle = .site_title -}}{{- end -}}
+{{- if not $siteTitle -}}{{- $siteTitle = .Site.Title -}}{{- end -}}
+{
+  "name": "{{ $siteTitle }}",
+  "short_name": "Wesole Nutki",
+  "description": "{{ with $settings.seo.meta_description }}{{ . }}{{ else }}Przedszkole Wesole Nutki we Wroclawiu - radosne miejsce dla Twojego dziecka{{ end }}",
+  "start_url": "{{ "/" | relURL }}",
+  "scope": "{{ "/" | relURL }}",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4CAF50",
+  "orientation": "portrait-primary",
+  "lang": "{{ .Site.Language.Lang }}",
+  "dir": "ltr",
+  "categories": ["education", "kids"],
+  "icons": [
+    {
+      "src": "{{ "favicon.svg" | relURL }}",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "{{ "favicon.svg" | relURL }}",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    },
+    {
+      "src": "{{ "apple-touch-icon.svg" | relURL }}",
+      "sizes": "180x180",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

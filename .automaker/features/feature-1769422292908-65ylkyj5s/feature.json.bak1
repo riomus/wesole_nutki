@@ -1,0 +1,30 @@
+{
+  "category": "Uncategorized",
+  "description": "Add Rounded Corners to Mission Section Images\n\nApply border-radius styling to images in the about/mission section to create rounded corners for a more polished visual appearance.\n\nRequirements:\n- Add rounded corners to the main mission image (about-mission-image)\n- Apply the same rounded corner styling to the error state image (image-error)\n- Ensure consistent border-radius value across both image states\n- Verify rounded corners display correctly across different browsers\n- Check that rounded corners work properly with various image aspect ratios\n- Ensure styling doesn't break responsive behavior on mobile devices",
+  "title": "Add rounded corners to mission section images",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "full",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "pipeline_step_mkuxfysz_dc7e1o",
+  "id": "feature-1769422292908-65ylkyj5s",
+  "descriptionHistory": [
+    {
+      "description": "Add Rounded Corners to Mission Section Images\n\nApply border-radius styling to images in the about/mission section to create rounded corners for a more polished visual appearance.\n\nRequirements:\n- Add rounded corners to the main mission image (about-mission-image)\n- Apply the same rounded corner styling to the error state image (image-error)\n- Ensure consistent border-radius value across both image states\n- Verify rounded corners display correctly across different browsers\n- Check that rounded corners work properly with various image aspect ratios\n- Ensure styling doesn't break responsive behavior on mobile devices",
+      "timestamp": "2026-01-26T10:11:32.938Z",
+      "source": "initial"
+    }
+  ],
+  "startedAt": "2026-01-26T10:32:12.377Z",
+  "updatedAt": "2026-01-26T10:59:53.950Z"
+}

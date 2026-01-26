@@ -1,0 +1,11 @@
+{
+  "id": "evt-1769432262695-d45c3d98",
+  "trigger": "feature_error",
+  "timestamp": "2026-01-26T12:57:42.695Z",
+  "projectPath": "/Users/romanbartusiak/git/riomus/wesole_nutki",
+  "projectName": "wesole_nutki",
+  "featureId": "feature-1769428247791-omdkqp7xo",
+  "featureName": "Fix team page role field direct input storage",
+  "error": "Claude Code process exited with code 1",
+  "errorType": "execution"
+}

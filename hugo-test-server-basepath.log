@@ -1,0 +1,31 @@
+Watching for changes in /Users/romanbartusiak/git/riomus/wesole_nutki/archetypes, /Users/romanbartusiak/git/riomus/wesole_nutki/assets/{css,images,js,scss}, /Users/romanbartusiak/git/riomus/wesole_nutki/content/en/{about,contact,daily-plan,documents,gallery,...}, /Users/romanbartusiak/git/riomus/wesole_nutki/content/pl/{about,contact,gallery,news,programs}, /Users/romanbartusiak/git/riomus/wesole_nutki/data/{about,homepage,menus,translations}, /Users/romanbartusiak/git/riomus/wesole_nutki/i18n, /Users/romanbartusiak/git/riomus/wesole_nutki/layouts/{_default,about,categories,contact,documents,...}, /Users/romanbartusiak/git/riomus/wesole_nutki/package.json, /Users/romanbartusiak/git/riomus/wesole_nutki/postcss.config.js, /Users/romanbartusiak/git/riomus/wesole_nutki/static/{admin,css,documents,fonts,images,...}, ... and 1 more
+Watching for config changes in /Users/romanbartusiak/git/riomus/wesole_nutki/hugo.toml
+Start building sites … 
+hugo v0.154.5+extended+withdeploy darwin/arm64 BuildDate=2026-01-11T20:53:23Z VendorInfo=Homebrew
+
+WARN  Gallery shortcode: Gallery not found at path 'en/gallery/daily-activities'
+WARN  Gallery shortcode: No images found (ref: 'en/gallery/daily-activities', inner content length: 0)
+
+                  │ PL │ EN 
+──────────────────┼────┼────
+ Pages            │ 82 │ 69 
+ Paginator pages  │  1 │  0 
+ Non-page files   │  0 │  0 
+ Static files     │ 71 │ 71 
+ Processed images │ 27 │  0 
+ Aliases          │ 22 │ 22 
+ Cleaned          │  0 │  0 
+
+Built in 866 ms
+Environment: "development"
+Serving pages from disk
+Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+Web Server is available at http://localhost:1314/wesole_nutki/ (bind address 127.0.0.1) 
+Press Ctrl+C to stop
+
+Change detected, rebuilding site (#1).
+2026-01-26 12:21:12.214 +0100
+Template changed /partials/footer.html
+Template added /partials/footer.html.tmp.28203.1769426471635
+Web Server is available at http://localhost:1314/wesole_nutki/ (bind address 127.0.0.1)
+Total in 14 ms

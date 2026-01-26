@@ -1,0 +1,182 @@
+{
+  "metadata": {
+    "description": "Mapping of role_key values to their English translations",
+    "source_files": {
+      "team_config": "data/about/team.yml",
+      "english_translations": "data/translations/en/staff.yml",
+      "polish_translations": "data/translations/pl/staff.yml"
+    },
+    "last_updated": "2024-01-26"
+  },
+  "role_mappings": [
+    {
+      "role_key": "staff_role_director",
+      "english": "Director",
+      "category": "Leadership",
+      "in_use": false,
+      "used_by": []
+    },
+    {
+      "role_key": "staff_role_teacher_squirrels",
+      "english": "Lead Teacher - Squirrels 🐿️",
+      "category": "Group Teachers",
+      "in_use": true,
+      "used_by": ["Patrycja Gajzler"]
+    },
+    {
+      "role_key": "staff_role_assistant_squirrels",
+      "english": "Teaching Assistant - Squirrels",
+      "category": "Group Teachers",
+      "in_use": true,
+      "used_by": ["Maja Kalinowska"]
+    },
+    {
+      "role_key": "staff_role_teacher_butterflies",
+      "english": "Lead Teacher - Butterflies 🦋",
+      "category": "Group Teachers",
+      "in_use": true,
+      "used_by": ["Paulina Milewska"]
+    },
+    {
+      "role_key": "staff_role_assistant_butterflies",
+      "english": "Teaching Assistant - Butterflies",
+      "category": "Group Teachers",
+      "in_use": true,
+      "used_by": ["Anita Nowak"]
+    },
+    {
+      "role_key": "staff_role_teacher_ladybugs",
+      "english": "Lead Teacher - Ladybugs 🐞",
+      "category": "Group Teachers",
+      "in_use": true,
+      "used_by": ["Halszka Szymaniak", "Katarzyna Ścibór"]
+    },
+    {
+      "role_key": "staff_role_teacher_hedgehogs",
+      "english": "Lead Teacher - Hedgehogs 🦔",
+      "category": "Group Teachers",
+      "in_use": true,
+      "used_by": ["Kacper Rygałło"]
+    },
+    {
+      "role_key": "staff_role_rhythmics",
+      "english": "Rhythmics Teacher",
+      "category": "Additional Activity Teachers",
+      "in_use": true,
+      "used_by": ["Anna Kierakowicz"]
+    },
+    {
+      "role_key": "staff_role_gymnastics",
+      "english": "Gymnastics Teacher",
+      "category": "Additional Activity Teachers",
+      "in_use": true,
+      "used_by": ["Alma Eperlein"]
+    },
+    {
+      "role_key": "staff_role_english",
+      "english": "English Language Teacher",
+      "category": "Additional Activity Teachers",
+      "in_use": true,
+      "used_by": ["Inna"]
+    },
+    {
+      "role_key": "staff_role_psychologist",
+      "english": "Psychologist",
+      "category": "Psychological and Pedagogical Support",
+      "in_use": true,
+      "used_by": ["Karolina Zwolińska"]
+    },
+    {
+      "role_key": "staff_role_speech_therapist",
+      "english": "Speech Therapist",
+      "category": "Psychological and Pedagogical Support",
+      "in_use": true,
+      "used_by": ["Joanna Dominik"]
+    },
+    {
+      "role_key": "staff_role_special_educator",
+      "english": "Special Education Teacher",
+      "category": "Psychological and Pedagogical Support",
+      "in_use": true,
+      "used_by": ["Anna Brodzisz"]
+    },
+    {
+      "role_key": "staff_role_cook",
+      "english": "Cook",
+      "category": "Kitchen Staff",
+      "in_use": true,
+      "used_by": ["Edyta Andrzejewska", "Marta Pałubińska", "Pani Ania"]
+    },
+    {
+      "role_key": "staff_role_dietitian",
+      "english": "Psycho-Dietitian",
+      "category": "Kitchen Staff",
+      "in_use": true,
+      "used_by": ["Małgorzata Talaga-Duma"]
+    },
+    {
+      "role_key": "staff_role_maintenance",
+      "english": "Maintenance Staff",
+      "category": "Maintenance",
+      "in_use": true,
+      "used_by": ["Iwonka Brańska"]
+    }
+  ],
+  "categories": [
+    {
+      "name": "Leadership",
+      "role_count": 1,
+      "roles": ["staff_role_director"]
+    },
+    {
+      "name": "Group Teachers",
+      "role_count": 6,
+      "roles": [
+        "staff_role_teacher_squirrels",
+        "staff_role_assistant_squirrels",
+        "staff_role_teacher_butterflies",
+        "staff_role_assistant_butterflies",
+        "staff_role_teacher_ladybugs",
+        "staff_role_teacher_hedgehogs"
+      ]
+    },
+    {
+      "name": "Additional Activity Teachers",
+      "role_count": 3,
+      "roles": [
+        "staff_role_rhythmics",
+        "staff_role_gymnastics",
+        "staff_role_english"
+      ]
+    },
+    {
+      "name": "Psychological and Pedagogical Support",
+      "role_count": 3,
+      "roles": [
+        "staff_role_psychologist",
+        "staff_role_speech_therapist",
+        "staff_role_special_educator"
+      ]
+    },
+    {
+      "name": "Kitchen Staff",
+      "role_count": 2,
+      "roles": [
+        "staff_role_cook",
+        "staff_role_dietitian"
+      ]
+    },
+    {
+      "name": "Maintenance",
+      "role_count": 1,
+      "roles": ["staff_role_maintenance"]
+    }
+  ],
+  "statistics": {
+    "total_role_keys": 16,
+    "total_in_use": 15,
+    "total_unused": 1,
+    "total_team_members": 16,
+    "total_categories": 6
+  }
+}

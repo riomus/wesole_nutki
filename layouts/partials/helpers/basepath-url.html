@@ -25,8 +25,12 @@
 
 {{/* Check if URL is internal (not external http/https and not an anchor #) */}}
 {{- if and $url (not (or (hasPrefix $url "http") (hasPrefix $url "#") (hasPrefix $url "mailto:") (hasPrefix $url "tel:"))) -}}
-  {{/* Internal link - strip leading slash and apply relURL for basepath support */}}
-  {{- $result = strings.TrimPrefix "/" $url | relURL -}}
+  {{/* Internal link - apply relURL for basepath support */}}
+  {{/* Ensure path starts with / for absolute path resolution */}}
+  {{- if not (hasPrefix $url "/") -}}
+    {{- $url = printf "/%s" $url -}}
+  {{- end -}}
+  {{- $result = $url | relURL -}}
 {{- end -}}
 
 {{- $result -}}

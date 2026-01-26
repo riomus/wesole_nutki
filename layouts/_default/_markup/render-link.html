@@ -1,0 +1,146 @@
+{{/*
+  Markdown Link Render Hook
+
+  This render hook intercepts all markdown links and ensures they resolve correctly
+  with the site's base path, particularly important when deploying to subdirectories.
+
+  Hugo automatically provides these variables:
+    .Destination - The URL from markdown [text](url)
+    .Text - The link text from markdown [text](url)
+    .Title - The title attribute if provided [text](url "title")
+    .Page - The page context
+    .PlainText - The plain text version of .Text
+
+  This ensures all markdown links are:
+  - Properly resolved with base path for internal links
+  - Unchanged for external absolute URLs
+  - Unchanged for protocol URLs (mailto:, tel:, etc.)
+  - Accessible with proper title attributes
+  - Correctly targeted (external links open in new tab)
+*/}}
+
+{{- $destination := .Destination -}}
+{{- $text := .Text -}}
+{{- $title := .Title -}}
+{{- $plainText := .PlainText -}}
+
+{{/* Trim whitespace from URL */}}
+{{- $url := trim $destination " \t\n\r" -}}
+
+{{/*
+  URL Scheme Detection (External vs Internal)
+  ==========================================
+
+  This section detects the type of URL and determines how it should be processed.
+
+  URL Type Categories:
+  1. Empty URLs - Empty or whitespace-only strings
+  2. Anchor URLs - Hash-only links (#section, #top)
+  3. Protocol URLs - Special schemes (mailto:, tel:, javascript:, data:, ftp:, file:)
+  4. Absolute URLs - Full URLs with http://, https://, or // protocol
+  5. Root-relative URLs - Paths starting with / (e.g., /en/about/)
+  6. Relative URLs - All other paths (e.g., ./page, ../folder, page)
+
+  External vs Internal Detection:
+  - Absolute URLs are initially marked as external
+  - If the URL's host matches the site's host, it's re-classified as internal
+  - Protocol URLs (mailto:, tel:, etc.) are not considered external links
+  - Empty and anchor URLs are not external
+
+  Processing Flags:
+  - $needsRelURL: true for internal relative URLs that need base path prepended
+  - $isExternal: true for URLs pointing outside the current site
+*/}}
+{{- $needsRelURL := false -}}
+{{- $isExternal := false -}}
+{{- $urlType := "unknown" -}}
+
+{{/* Check for empty URLs */}}
+{{- if eq $url "" -}}
+  {{- $urlType = "empty" -}}
+  {{/* Empty URLs: no processing needed, leave as-is */}}
+
+{{/* Check for anchor-only URLs (starts with #) */}}
+{{- else if hasPrefix $url "#" -}}
+  {{- $urlType = "anchor" -}}
+  {{/* Anchor URLs: no processing needed, they're page-internal */}}
+
+{{/* Check for protocol-based URLs (mailto:, tel:, javascript:, data:, etc.) */}}
+{{- else if or (hasPrefix $url "mailto:") (hasPrefix $url "tel:") (hasPrefix $url "javascript:") (hasPrefix $url "data:") (hasPrefix $url "ftp:") (hasPrefix $url "file:") -}}
+  {{- $urlType = "protocol" -}}
+  {{/* Protocol URLs: no processing needed, preserve as-is */}}
+
+{{/* Check for absolute URLs (http://, https://, //) */}}
+{{- else if or (hasPrefix $url "http://") (hasPrefix $url "https://") (hasPrefix $url "//") -}}
+  {{- $urlType = "absolute" -}}
+  {{- $isExternal = true -}}
+
+  {{/*
+    Smart External Detection:
+    Check if the absolute URL actually points to the same domain.
+    If it does, it's an internal link and shouldn't open in a new tab.
+  */}}
+  {{- $siteHost := "" -}}
+  {{- with urls.Parse site.BaseURL -}}
+    {{- $siteHost = .Host -}}
+  {{- end -}}
+
+  {{- if $siteHost -}}
+    {{- with urls.Parse $url -}}
+      {{- if eq .Host $siteHost -}}
+        {{/* Same domain: treat as internal, not external */}}
+        {{- $isExternal = false -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+
+{{/* Check for root-relative URLs (starts with /) */}}
+{{- else if hasPrefix $url "/" -}}
+  {{- $urlType = "root-relative" -}}
+  {{- $needsRelURL = true -}}
+  {{/* Root-relative URLs need base path prepended via relURL */}}
+
+{{/* Everything else is considered relative */}}
+{{- else -}}
+  {{- $urlType = "relative" -}}
+  {{- $needsRelURL = true -}}
+  {{/* Relative URLs need base path prepended via relURL */}}
+
+{{- end -}}
+
+{{/* Process the URL based on its type */}}
+{{- $processedURL := $url -}}
+{{- if $needsRelURL -}}
+  {{/* Internal relative URLs need base path prepended */}}
+  {{/*
+    Path normalization:
+    1. For root-relative paths (/path), strip the leading slash before relURL
+    2. For relative paths (./path or ../path), normalize and use as-is
+    3. relURL will add the base path prefix (e.g., /wesole_nutki/)
+  */}}
+  {{- $cleanPath := $url -}}
+
+  {{/* Strip leading / from root-relative URLs to avoid double slashes */}}
+  {{- if hasPrefix $url "/" -}}
+    {{- $cleanPath = strings.TrimPrefix "/" $url -}}
+  {{- end -}}
+
+  {{/* Apply relURL to prepend the base path */}}
+  {{- $processedURL = relURL $cleanPath -}}
+{{- end -}}
+
+{{/* Determine if link should open in new tab (external links) */}}
+{{- $target := "" -}}
+{{- $rel := "" -}}
+{{- if $isExternal -}}
+  {{- $target = "_blank" -}}
+  {{- $rel = "noopener noreferrer" -}}
+{{- end -}}
+
+{{/* Build the anchor tag */}}
+<a href="{{ $processedURL }}"
+   {{- with $title }} title="{{ . }}"{{ end }}
+   {{- with $target }} target="{{ . }}"{{ end }}
+   {{- with $rel }} rel="{{ . }}"{{ end }}>
+  {{- $text | safeHTML -}}
+</a>

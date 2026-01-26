@@ -2,7 +2,7 @@
 title: "Nasza wizja - Wesołe Nutki"
 date: 2026-01-23T09:27:31.868Z
 type: page
-url: "/o-przedszkolu/nasza-wizja/"
+url: "/pl/o-przedszkolu/nasza-wizja/"
 ---
 
 Chce­my two­rzyć miej­sce przy­ja­zne dzie­ciom, rodzi­com, nauczy­cie­lom oraz pra­cow­ni­kom przed­szko­la. Prio­ry­te­tem dla nas aby dzie­ci w poczu­ciu  bez­pie­czeń­stwa i akcep­ta­cji mogły roz­wi­jać swo­je zain­te­re­so­wa­nia, uczyć się poprzez zaba­wę i dzia­ła­nie, a tak­że zdo­by­wać umie­jęt­no­ści i wie­dzę zgod­nie z indy­wi­du­al­ną dro­gą roz­wo­ju. Naszym celem jest wycho­wa­nie dzie­ci do życia w har­mo­nii z samy­mi sobą, inny­mi ludź­mi i ota­cza­ją­cym świa­tem, przy jed­no­cze­snym przy­go­to­wa­niu ich do roz­po­czę­cia nauki szkolnej.

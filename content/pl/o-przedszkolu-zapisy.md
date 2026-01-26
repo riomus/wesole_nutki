@@ -2,7 +2,7 @@
 title: "Zapisy - Wesołe Nutki"
 date: 2026-01-23T09:27:45.887Z
 type: page
-url: "/o-przedszkolu/zapisy/"
+url: "/pl/o-przedszkolu/zapisy/"
 ---
 
 Wszystkich zainteresowanych zapisaniem swojego dziecka do naszego przedszkola zapraszamy do pobrania karty zgłoszeniowej:

@@ -1,0 +1,11 @@
+{
+  "id": "evt-1769422473078-4b1a5316",
+  "trigger": "feature_error",
+  "timestamp": "2026-01-26T10:14:33.078Z",
+  "projectPath": "/Users/romanbartusiak/git/riomus/wesole_nutki",
+  "projectName": "wesole_nutki",
+  "featureId": "feature-1769417578466-473s24rqp",
+  "featureName": "Configure Hugo URLs Following Best Practices",
+  "error": "Claude Code process exited with code 1",
+  "errorType": "execution"
+}

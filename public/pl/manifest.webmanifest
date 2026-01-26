@@ -1,0 +1,34 @@
+{
+  "name": "Wesole Nutki",
+  "short_name": "Wesole Nutki",
+  "description": "Przedszkole Wesole Nutki we Wroclawiu - nowoczesna placowka edukacyjna dla dzieci",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4CAF50",
+  "orientation": "portrait-primary",
+  "lang": "pl",
+  "dir": "ltr",
+  "categories": ["education", "kids"],
+  "icons": [
+    {
+      "src": "/wesole_nutki/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/wesole_nutki/favicon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/wesole_nutki/apple-touch-icon.svg",
+      "sizes": "180x180",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

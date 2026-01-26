@@ -30,13 +30,11 @@
     {{- $result = $imagePath -}}
   {{- else -}}
     {{/* Internal image path - apply relURL for basepath support */}}
-    {{- if hasPrefix $imagePath "/" -}}
-      {{/* Absolute path - strip leading slash before relURL */}}
-      {{- $result = strings.TrimPrefix "/" $imagePath | relURL -}}
-    {{- else -}}
-      {{/* Relative path - apply relURL directly */}}
-      {{- $result = $imagePath | relURL -}}
+    {{/* Ensure path starts with / for absolute path resolution */}}
+    {{- if not (hasPrefix $imagePath "/") -}}
+      {{- $imagePath = printf "/%s" $imagePath -}}
     {{- end -}}
+    {{- $result = $imagePath | relURL -}}
   {{- end -}}
 {{- end -}}
 

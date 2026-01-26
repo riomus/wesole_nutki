@@ -2,6 +2,2000 @@
   "version": 1,
   "events": [
     {
+      "id": "evt-1769435124577-8311e4c2",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T13:45:24.577Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769433321384-e779765b",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T13:15:21.384Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769433319353-404fa875",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T13:15:19.353Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769433317164-9be38cf4",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T13:15:17.164Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769433315066-24a2a5ac",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T13:15:15.066Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769433313256-f42bdd67",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T13:15:13.256Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769433311122-91eb0968",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T13:15:11.122Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769433309231-4e1ac3a2",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T13:15:09.231Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769433307079-35ba825f",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T13:15:07.079Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769433304914-700dbf22",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T13:15:04.914Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769433303168-db19e146",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T13:15:03.168Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769433300737-2a09f048",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T13:15:00.737Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769433298594-3da01e0e",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T13:14:58.594Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769433297494-fe5c2d01",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T13:14:57.494Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769433294709-6eced7d9",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T13:14:54.709Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769433292763-ce6b8c86",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T13:14:52.763Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769433290323-5e979756",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T13:14:50.323Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769433288679-7e7fab6a",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T13:14:48.679Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769433286707-a9f827c0",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T13:14:46.707Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769433284676-49981fab",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T13:14:44.676Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769432262695-d45c3d98",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:57:42.695Z",
+      "featureName": "Fix team page role field direct input storage",
+      "featureId": "feature-1769428247791-omdkqp7xo"
+    },
+    {
+      "id": "evt-1769432241285-c4d1e0ea",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:57:21.285Z",
+      "featureName": "Fix team page role field direct input storage",
+      "featureId": "feature-1769428247791-omdkqp7xo"
+    },
+    {
+      "id": "evt-1769432234365-334cf0ed",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:57:14.365Z",
+      "featureName": "Fix team page role field direct input storage",
+      "featureId": "feature-1769428247791-omdkqp7xo"
+    },
+    {
+      "id": "evt-1769432234347-3ca87291",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:57:14.347Z",
+      "featureName": "Fix team page role field direct input storage",
+      "featureId": "feature-1769428247791-omdkqp7xo"
+    },
+    {
+      "id": "evt-1769432095521-06e39e6e",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:54:55.521Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769432095509-ccfa9f55",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:54:55.509Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769432095437-5d2d075d",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:54:55.437Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769432095375-07862ae6",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:54:55.375Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769432095072-815616af",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:54:55.072Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769432094888-e051e050",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:54:54.888Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769432094870-1b5dca6d",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:54:54.870Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769432094771-34dbe1cd",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:54:54.771Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769432094719-7ffca914",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:54:54.719Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769432094475-c8406c44",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:54:54.475Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769432094200-374e5577",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:54:54.200Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769432094083-059bf017",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:54:54.083Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769432093889-e0f72fc3",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:54:53.889Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769432093719-7e0a0fc8",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:54:53.719Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769432093464-3c4b177e",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:54:53.464Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769432093322-2e960818",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:54:53.322Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769432092975-350abb69",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:54:52.975Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769432092816-b35c779a",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:54:52.816Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769432092649-6a39ad04",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:54:52.649Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769432092630-a15a77ea",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:54:52.630Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769432092610-4b6945ce",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:54:52.610Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769432092533-dbf81cc7",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:54:52.533Z",
+      "featureName": "Fix relative URLs in news markdown rendering",
+      "featureId": "feature-1769428370303-a3d2924a4"
+    },
+    {
+      "id": "evt-1769432092343-e6ea22e3",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:54:52.343Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769432092329-54adeb14",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:54:52.329Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769432092313-105e151e",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:54:52.313Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769432091882-6f11f68c",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:54:51.882Z",
+      "featureName": "",
+      "featureId": "feature-1769430909972-4b6akp1fu"
+    },
+    {
+      "id": "evt-1769432091602-5603b752",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:54:51.602Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769432091585-b58b0ac8",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:54:51.585Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769432091580-6c31b4fd",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:54:51.580Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769432091140-0f31c585",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:54:51.140Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769432091120-478c931e",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:54:51.120Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769432091023-4a3fc43e",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:54:51.023Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769432090681-86948732",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:54:50.681Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769432090576-8bfd4a91",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:54:50.576Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769432090495-02690ef1",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:54:50.495Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769432090376-438f4f98",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:54:50.376Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769432090224-20ba37f0",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:54:50.224Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769432089990-e6585236",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:54:49.990Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769432089972-57e22af3",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:54:49.972Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769432089855-1a2eda72",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:54:49.855Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769432089519-59294bad",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:54:49.519Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769432089145-763d7626",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:54:49.145Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769432089067-91bf45ee",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:54:49.067Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769432089031-a8b7b7d2",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:54:49.031Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769431940646-ba16aca8",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-26T12:52:20.646Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769430910623-dfab4a9d",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-26T12:35:10.624Z",
+      "featureId": "feature-1769430909972-4b6akp1fu"
+    },
+    {
+      "id": "evt-1769429052498-4d40d3cb",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:04:12.498Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769429052246-384a7cbc",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:04:12.246Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769429051089-8003e44c",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:04:11.089Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769428938606-ac1f5d65",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:02:18.606Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769428935298-1be3f488",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:02:15.298Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769428934945-5b688cd7",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:02:14.945Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769428930291-5e00910c",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:02:10.291Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769428920593-efb35169",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:02:00.593Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769428920188-5c894374",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:02:00.188Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769428919818-d1fc435a",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:01:59.818Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769428919729-44503879",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:01:59.729Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769428919132-0d7f6683",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:01:59.132Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769428918977-34b1222c",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:01:58.977Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769428918951-4186fdc7",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:01:58.951Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769428917866-aeb925b5",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:01:57.866Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769428917724-a38b877c",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:01:57.724Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769428916980-dc203225",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:01:56.980Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769428916803-33a45755",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:01:56.803Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769428916051-126719bc",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:01:56.051Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769428915983-3c36f1c7",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:01:55.983Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769428915599-7ee409a6",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:01:55.599Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769428914962-50a422a1",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:01:54.962Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769428914126-11440131",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:01:54.126Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769428913619-9811c5a3",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:01:53.619Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769428912979-0a9d1998",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:01:52.979Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769428912766-0901f6fe",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:01:52.766Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769428912018-3276a699",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:01:52.018Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769428911711-a2edf7d6",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:01:51.711Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769428896474-f34507f8",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:01:36.474Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769428893195-38e3d9d1",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:01:33.195Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769428892429-cda14fb9",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:01:32.429Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769428890438-80d3e115",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:01:30.438Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769428889947-08ef52dc",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:01:29.947Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769428887438-fd88f34b",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:01:27.438Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769428886356-8427433a",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:01:26.356Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769428885148-4c3204e7",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:01:25.148Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769428881869-bd076ccf",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:01:21.869Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769428862350-c8aa401c",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:01:02.350Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769428857065-e4a6da51",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:00:57.066Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769428855185-f6ebd69e",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:00:55.185Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769428854315-21164e9a",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:00:54.315Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769428852493-62e0fe05",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:00:52.493Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769428825547-813823d4",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:00:25.547Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769428824494-3211a33b",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:00:24.494Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769428823649-175a6437",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T12:00:23.649Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769428370404-8b8b4d6d",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-26T11:52:50.404Z",
+      "featureId": "feature-1769428370303-a3d2924a4"
+    },
+    {
+      "id": "evt-1769428247888-54eb955e",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-26T11:50:47.888Z",
+      "featureId": "feature-1769428247791-omdkqp7xo"
+    },
+    {
+      "id": "evt-1769427952117-b5c467c4",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T11:45:52.117Z",
+      "featureName": "Fix Hugo image paths with base URL configuration",
+      "featureId": "feature-1769425410338-xxgtpedt9"
+    },
+    {
+      "id": "evt-1769427811822-f54d9b5a",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-26T11:43:31.822Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769427582552-f0b804f1",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-26T11:39:42.552Z",
+      "featureName": "Fix Hugo image paths with base URL configuration",
+      "featureId": "feature-1769425410338-xxgtpedt9"
+    },
+    {
+      "id": "evt-1769426027893-065ee172",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T11:13:47.893Z",
+      "featureName": "Fix Hugo image paths with base URL configuration",
+      "featureId": "feature-1769425410338-xxgtpedt9"
+    },
+    {
+      "id": "evt-1769426025398-dbcd64e8",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T11:13:45.398Z",
+      "featureName": "Fix BaseURL path handling for internal resources",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769426016931-d9bfef5a",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T11:13:36.931Z",
+      "featureName": "Fix Hugo image paths with base URL configuration",
+      "featureId": "feature-1769425410338-xxgtpedt9"
+    },
+    {
+      "id": "evt-1769425410425-c345b280",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-26T11:03:30.425Z",
+      "featureId": "feature-1769425410338-xxgtpedt9"
+    },
+    {
+      "id": "evt-1769425335864-40e4d47c",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T11:02:15.864Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769425318477-1a95fcf7",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-26T11:01:58.477Z",
+      "featureId": "feature-1769425318393-exqfqsq8h"
+    },
+    {
+      "id": "evt-1769425287591-1f07e086",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-26T11:01:27.591Z",
+      "featureName": "Add rounded corners to mission section images",
+      "featureId": "feature-1769422292908-65ylkyj5s"
+    },
+    {
+      "id": "evt-1769424804338-92dc8b53",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-26T10:53:24.338Z",
+      "featureName": "Add rounded corners to mission section images",
+      "featureId": "feature-1769422292908-65ylkyj5s"
+    },
+    {
+      "id": "evt-1769424648832-836eb0a6",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-26T10:50:48.832Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769424510982-e84d20f5",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-26T10:48:30.982Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423124974-73af6c18",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:25:24.974Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423123401-09576832",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:25:23.401Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423120193-65b235b4",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:25:20.193Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423117527-e65b65b2",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:25:17.527Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423113872-2f06418b",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:25:13.872Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423111816-30cc43a2",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:25:11.816Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423109578-7341d4ef",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:25:09.578Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423108314-01a2122c",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:25:08.314Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423105070-039443ba",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:25:05.070Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423102531-752adccc",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:25:02.531Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423100920-f2b97fd5",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:25:00.920Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423099163-289f2784",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:24:59.163Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423095889-b47c3c74",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:24:55.889Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423094039-1c080aa8",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:24:54.039Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423091183-66185d48",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:24:51.183Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423089259-e1957268",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:24:49.259Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423087557-845095ce",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:24:47.557Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423085193-2801cdbe",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:24:45.193Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423082125-016526aa",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:24:42.125Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423079699-468d0d7a",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:24:39.699Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423077494-bacd30f5",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:24:37.494Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423076254-e95a3df1",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:24:36.254Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423075456-983d9686",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:24:35.456Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423072139-35b3fefa",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:24:32.139Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423069092-bbf4a874",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:24:29.092Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423067068-35012265",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:24:27.068Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423064825-2910c34e",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:24:24.825Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423062926-42281f60",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:24:22.926Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423059657-3ccd10bb",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:24:19.657Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423057316-6bcd5e37",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:24:17.316Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423056639-6296ace9",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:24:16.639Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423055701-43cbcf3f",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:24:15.701Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423052150-74955f78",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:24:12.150Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423050759-e32418c6",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:24:10.759Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423047700-df698d6b",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:24:07.700Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423046127-fd5acdd1",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:24:06.127Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423044011-14997680",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:24:04.011Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423042031-6a57d035",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:24:02.031Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423040137-5ec3301a",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:24:00.137Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423037389-6567a2ba",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:23:57.389Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423034642-c8142604",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:23:54.642Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423032942-e7f6ae05",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:23:52.942Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423030739-68675a14",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:23:50.739Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423028003-dd0b0ee1",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:23:48.003Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423026354-199e03f3",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:23:46.354Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423025623-564462f9",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:23:45.623Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423024574-1666dd97",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:23:44.574Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423021481-af545e84",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:23:41.481Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423019154-0c727be5",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:23:39.154Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423017692-bc0e5cb7",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:23:37.692Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423015380-ea25f05a",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:23:35.380Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423011161-70cc2c55",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:23:31.161Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423007774-e5f3d4d7",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:23:27.774Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423005524-172b536d",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:23:25.524Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423004024-ef6d89b9",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:23:24.024Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769423001742-23d99b6e",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:23:21.742Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422998553-fbcc612c",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:23:18.553Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422997053-ff19feab",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:23:17.053Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422994202-71f1c773",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:23:14.202Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422991602-ca0d6450",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:23:11.602Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422988828-4e39ca2a",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:23:08.828Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422987520-6f1f8a99",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:23:07.520Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422985938-2e070f90",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:23:05.938Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422983213-44cf21b9",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:23:03.213Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422981375-484c0fe1",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:23:01.375Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422978417-542bb893",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:22:58.417Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422977095-44e59e05",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:22:57.095Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422974062-c0dec3e2",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:22:54.062Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422972076-422a8807",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:22:52.076Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422969803-39ae1a95",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:22:49.803Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422967850-0580fd7e",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:22:47.850Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422965476-cbc6f98d",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:22:45.476Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422964864-be10e757",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:22:44.864Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422962953-a2884274",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:22:42.953Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422960385-65644aa7",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:22:40.385Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422957584-1ed72e1f",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:22:37.584Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422956139-53cc094f",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:22:36.139Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422954582-dad21f8b",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:22:34.582Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422954305-46025bb6",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:22:34.305Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422953900-255463df",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:22:33.900Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422953436-7bca6bae",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:22:33.436Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422953048-be6dce2f",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:22:33.048Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422952890-9ae5bc2b",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:22:32.890Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422949646-58e63eae",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:22:29.646Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422949595-6d01d61b",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:22:29.595Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422948995-1f3829d6",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:22:28.995Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422948384-838a405e",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:22:28.384Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422947803-d72760f1",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:22:27.803Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422947156-ac00e023",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:22:27.156Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422946399-bf757f6a",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:22:26.399Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422946245-7019f34a",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:22:26.245Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422945740-e8086cb6",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:22:25.740Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422945559-27b6a3f5",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:22:25.559Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422945343-74d2821f",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:22:25.343Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422945292-7911d3c3",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:22:25.292Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422944212-61fecdb1",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:22:24.212Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422943495-fd92cd16",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:22:23.495Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422940811-00bf9af9",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:22:20.811Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422934121-d0b33ea2",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:22:14.121Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422931333-45da1505",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:22:11.333Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422930285-c4b9bc9f",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:22:10.285Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422929933-4b7f8818",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:22:09.933Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422928854-a25a8e3a",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:22:08.854Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422520583-56d0e807",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:15:20.583Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422487650-5d4e1924",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:14:47.650Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422484449-f4cbffca",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:14:44.449Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422474358-fb188c26",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:14:34.358Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422473078-4b1a5316",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:14:33.078Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422466726-1e2a830b",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:14:26.726Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422464897-7d757c93",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:14:24.897Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422462590-2183043f",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:14:22.590Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422444709-4937c057",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:14:04.709Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422441285-2c51bea7",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:14:01.285Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422427912-302fc0f6",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:13:47.912Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422426516-20f8f7ba",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:13:46.516Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422424488-35bf5e5c",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:13:44.488Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422423184-268c9ab6",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:13:43.184Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422422914-e02a930f",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:13:42.914Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422421484-802fbfe6",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:13:41.484Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422420050-8d4ba82e",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:13:40.050Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422416063-77660a38",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:13:36.063Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422411631-c5c3fa57",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:13:31.631Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422406810-c00eac9c",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:13:26.810Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422380395-7bd2b1f6",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:13:00.395Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422379253-84ebef14",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:12:59.253Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422378902-b53d6b52",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:12:58.902Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422373450-37ce5a01",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:12:53.450Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422372727-b04efb52",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:12:52.727Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422371329-23e3a7a0",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:12:51.329Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422371059-012d159c",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:12:51.059Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422370132-88d4041f",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:12:50.132Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422369569-c9274ec4",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:12:49.569Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422369453-9ceac18e",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:12:49.453Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422368319-91cbb1e3",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:12:48.319Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422366519-ae5bb942",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:12:46.519Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422366474-76d9cba8",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:12:46.474Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422364796-d5b8cced",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:12:44.796Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422360665-71e38083",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:12:40.665Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422360249-417fa248",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:12:40.249Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422350829-d5b2535e",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:12:30.829Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422348700-f6d3766f",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:12:28.700Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422347584-f798292a",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:12:27.584Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422347200-5d41c9c0",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:12:27.200Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422345865-d654f8ad",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:12:25.865Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422340258-b2c0f5c6",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:12:20.258Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422339939-63b5d9b0",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:12:19.939Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422339611-00747198",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:12:19.611Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422339259-330e2854",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:12:19.259Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422331830-d96b860b",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:12:11.830Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422324897-00966d17",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:12:04.897Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422292939-27f56351",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-26T10:11:32.939Z",
+      "featureId": "feature-1769422292908-65ylkyj5s"
+    },
+    {
+      "id": "evt-1769422204370-f4ee59ae",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:10:04.370Z",
+      "featureName": "Configure Hugo URLs Following Best Practices",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769422202238-21cc305f",
+      "trigger": "feature_error",
+      "timestamp": "2026-01-26T10:10:02.238Z",
+      "featureName": "",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
+      "id": "evt-1769420436603-0ef4921f",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-26T09:40:36.603Z",
+      "featureName": "",
+      "featureId": "feature-1769417783256-151je7l69"
+    },
+    {
+      "id": "evt-1769417783336-cdc6be38",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-26T08:56:23.336Z",
+      "featureId": "feature-1769417783256-151je7l69"
+    },
+    {
+      "id": "evt-1769417578558-0341327c",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-26T08:52:58.558Z",
+      "featureId": "feature-1769417578466-473s24rqp"
+    },
+    {
       "id": "evt-1769412043066-5ee3a623",
       "trigger": "auto_mode_complete",
       "timestamp": "2026-01-26T07:20:43.066Z"

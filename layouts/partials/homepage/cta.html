@@ -14,16 +14,7 @@
       {{- if $menuItem -}}
         {{- $url = $menuItem.URL -}}
       {{- end -}}
-    {{- end -}}
-    {{/*
-      BaseURL Path Handling:
-      Strip leading slash from internal URLs before applying relURL to ensure
-      proper baseURL prefix (e.g., /wesole_nutki/). External links and anchors remain unchanged.
-    */}}
-    {{- $ctaHref := $url -}}
-    {{- if not (or (hasPrefix $url "http") (hasPrefix $url "#")) -}}
-      {{- $ctaHref = strings.TrimPrefix "/" $url | relURL -}}
-    {{- end -}}
+    {{- end -}}\n    {{/* Use basepath-url helper for consistent URL handling */}}\n    {{- $ctaHref := partial "helpers/basepath-url" $url -}}
     <a href="{{ $ctaHref }}" class="btn btn-{{ .style | default "light" }} btn-lg{{ if .icon }} btn-icon{{ end }}">
       {{ i18n .label_key | default "Schedule a Visit" }}
       {{- if eq .icon "arrow-right" }}

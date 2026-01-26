@@ -1,0 +1,11 @@
+{
+  "id": "evt-1769422202238-21cc305f",
+  "trigger": "feature_error",
+  "timestamp": "2026-01-26T10:10:02.238Z",
+  "projectPath": "/Users/romanbartusiak/git/riomus/wesole_nutki",
+  "projectName": "wesole_nutki",
+  "featureId": "feature-1769417578466-473s24rqp",
+  "featureName": "",
+  "error": "Operation was cancelled",
+  "errorType": "cancellation"
+}

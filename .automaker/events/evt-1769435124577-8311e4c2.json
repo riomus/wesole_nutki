@@ -1,0 +1,11 @@
+{
+  "id": "evt-1769435124577-8311e4c2",
+  "trigger": "feature_error",
+  "timestamp": "2026-01-26T13:45:24.577Z",
+  "projectPath": "/Users/romanbartusiak/git/riomus/wesole_nutki",
+  "projectName": "wesole_nutki",
+  "featureId": "feature-1769425318393-exqfqsq8h",
+  "featureName": "Fix BaseURL path handling for internal resources",
+  "error": "Error: All 1 account(s) rate-limited for claude. Quota resets in 4h 30m. Add more accounts with `opencode auth login` or wait and retry.",
+  "errorType": "execution"
+}

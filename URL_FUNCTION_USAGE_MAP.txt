@@ -1,0 +1,307 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                     URL FUNCTION USAGE MAP                                    ║
+║                    Wesołe Nutki Hugo Template Files                          ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Legend:
+  [R] = relURL          [A] = absURL         [RL] = relLangURL
+  [AL] = absLangURL     [P] = .Permalink     [RP] = .RelPermalink
+  [U] = urlize          [#] = occurrence count
+
+═══════════════════════════════════════════════════════════════════════════════
+
+NAVIGATION & STRUCTURE
+──────────────────────────────────────────────────────────────────────────────
+├─ layouts/partials/header.html                  [R][A][P][RP] (#6)
+│  └─ Logo, main navigation, active state detection
+│
+├─ layouts/partials/footer.html                  [R][RL] (#2)
+│  └─ Footer navigation, document links
+│
+├─ layouts/partials/breadcrumb.html              [P] (#3)
+│  └─ Breadcrumb navigation trail
+│
+├─ layouts/partials/pagination.html              [Uses .URL property]
+│  └─ Page number navigation
+│
+└─ layouts/partials/language-switcher.html       [P][AL] (#2)
+   └─ Language toggle with translation detection
+
+═══════════════════════════════════════════════════════════════════════════════
+
+CONTENT COMPONENTS
+──────────────────────────────────────────────────────────────────────────────
+├─ layouts/partials/news-card.html               [R][P] (#3)
+│  └─ News article card with image and link
+│
+├─ layouts/partials/gallery-card.html            [P][RL][U] (#2)
+│  └─ Gallery item card with category tags
+│
+├─ layouts/partials/program-card.html            [P] (#1)
+│  └─ Program card component
+│
+└─ layouts/partials/related-posts.html           [P] (#1)
+   └─ Related content links
+
+═══════════════════════════════════════════════════════════════════════════════
+
+FILTERING & TAXONOMIES
+──────────────────────────────────────────────────────────────────────────────
+├─ layouts/partials/news-category-filter.html    [RL][U] (#2)
+│  └─ News category filter buttons
+│
+├─ layouts/partials/news-tag-filter.html         [RL][U] (#2)
+│  └─ News tag filter buttons
+│
+└─ layouts/partials/gallery-category-filter.html [RL][U] (#2)
+   └─ Gallery category filter buttons
+
+Pattern: {{ printf "categories/%s" (urlize $name) | relLangURL }}
+
+═══════════════════════════════════════════════════════════════════════════════
+
+IMAGES & MEDIA
+──────────────────────────────────────────────────────────────────────────────
+├─ layouts/partials/responsive-image.html        [R][RP] (#8)
+│  └─ Responsive image with srcset, WebP, blur-up
+│  └─ Pattern: {{ $image.RelPermalink }} for processed resources
+│
+└─ layouts/shortcodes/gallery.html               [R][RP][P] (#3)
+   └─ Gallery shortcode with lightbox
+   └─ Pattern: {{ $resized.RelPermalink }} for image variants
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SEO & METADATA
+──────────────────────────────────────────────────────────────────────────────
+├─ layouts/partials/head.html                    [R][A][RL][AL][P][RP] (#8)
+│  └─ HTML head with comprehensive SEO metadata
+│  └─ Canonical URLs, Open Graph, Twitter Cards, language alternates
+│  └─ Asset loading with SRI
+│
+└─ layouts/partials/social-share.html            [P] (#1)
+   └─ Social media sharing buttons
+   └─ Pattern: {{ .Permalink }} for sharing URLs
+
+═══════════════════════════════════════════════════════════════════════════════
+
+BASE LAYOUTS
+──────────────────────────────────────────────────────────────────────────────
+└─ layouts/_default/baseof.html                  [RP] (#2)
+   └─ Base template with JavaScript loading
+   └─ Pattern: {{ $js.RelPermalink }} with SRI integrity
+
+═══════════════════════════════════════════════════════════════════════════════
+
+PAGE TEMPLATES - DEFAULT
+──────────────────────────────────────────────────────────────────────────────
+├─ layouts/_default/single.html                  [RL][U][P] (#2)
+│  └─ Default single page template
+│
+└─ layouts/_default/list.html                    [P] (#2)
+   └─ Default list page template
+
+═══════════════════════════════════════════════════════════════════════════════
+
+PAGE TEMPLATES - NEWS
+──────────────────────────────────────────────────────────────────────────────
+└─ layouts/news/single.html                      [RL][U] (#6)
+   └─ News article page
+   └─ Back links: news section, categories, tags
+   Pattern:
+     <a href="{{ "news" | relLangURL }}">Back to News</a>
+     <a href="{{ printf "categories/%s" (urlize .) | relLangURL }}">Category</a>
+
+═══════════════════════════════════════════════════════════════════════════════
+
+PAGE TEMPLATES - GALLERY
+──────────────────────────────────────────────────────────────────────────────
+├─ layouts/gallery/single.html                   [RL][U][RP] (#5)
+│  └─ Gallery detail page with images
+│
+└─ layouts/gallery/list.html                     [RL][U] (#2)
+   └─ Gallery listing page
+
+═══════════════════════════════════════════════════════════════════════════════
+
+PAGE TEMPLATES - PROGRAMS
+──────────────────────────────────────────────────────────────────────────────
+├─ layouts/programs/single.html                  [RL] (#5)
+│  └─ Program detail page
+│
+├─ layouts/programs/list.html                    [RL] (#2)
+│  └─ Programs listing
+│
+└─ layouts/programs/schedule.html                [RL] (#2)
+   └─ Schedule page
+
+═══════════════════════════════════════════════════════════════════════════════
+
+PAGE TEMPLATES - DOCUMENTS
+──────────────────────────────────────────────────────────────────────────────
+├─ layouts/documents/list.html                   [RP] (#1)
+│  └─ Documents listing with download links
+│
+└─ layouts/documents/single.html                 [R] (#1)
+   └─ Document detail page
+
+═══════════════════════════════════════════════════════════════════════════════
+
+PAGE TEMPLATES - CONTACT
+──────────────────────────────────────────────────────────────────────────────
+└─ layouts/contact/list.html                     [None]
+   └─ Contact form page
+
+═══════════════════════════════════════════════════════════════════════════════
+
+TAXONOMY TEMPLATES - CATEGORIES
+──────────────────────────────────────────────────────────────────────────────
+├─ layouts/categories/terms.html                 [RL][P] (#2)
+│  └─ All categories listing
+│
+└─ layouts/categories/term.html                  [RL] (#1)
+   └─ Single category page
+
+═══════════════════════════════════════════════════════════════════════════════
+
+TAXONOMY TEMPLATES - TAGS
+──────────────────────────────────────────────────────────────────────────────
+├─ layouts/tags/terms.html                       [P] (#1)
+│  └─ All tags listing
+│
+└─ layouts/tags/term.html                        [RL] (#2)
+   └─ Single tag page
+
+═══════════════════════════════════════════════════════════════════════════════
+
+TAXONOMY TEMPLATES - GALLERY CATEGORIES
+──────────────────────────────────────────────────────────────────────────────
+├─ layouts/gallery_categories/terms.html         [P] (#1)
+│  └─ All gallery categories listing
+│
+└─ layouts/gallery_categories/term.html          [Similar to term pages]
+   └─ Single gallery category page
+
+═══════════════════════════════════════════════════════════════════════════════
+
+ERROR PAGES
+──────────────────────────────────────────────────────────────────────────────
+└─ layouts/404.html                              [RL][P] (#5)
+   └─ 404 error page with helpful links
+   └─ Links to: home, about, programs, news, contact
+
+═══════════════════════════════════════════════════════════════════════════════
+
+HOMEPAGE SECTIONS
+──────────────────────────────────────────────────────────────────────────────
+├─ layouts/partials/homepage/hero.html           [R][A] (#2)
+│  └─ Hero section with background image and CTAs
+│
+├─ layouts/partials/homepage/about.html          [Complex menu resolution] (#1)
+│  └─ About section with CTA button
+│
+├─ layouts/partials/homepage/cta.html            [Menu resolution] (#1)
+│  └─ Call-to-action section
+│
+├─ layouts/partials/homepage/news.html           [RL] (#1)
+│  └─ Latest news section
+│
+├─ layouts/partials/homepage/recruitment.html    [R] (#2)
+│  └─ Recruitment section with documents
+│
+└─ layouts/partials/about/contact-cta.html       [RL] (#1)
+   └─ Contact call-to-action
+
+═══════════════════════════════════════════════════════════════════════════════
+
+UTILITY PARTIALS (No URL Functions)
+──────────────────────────────────────────────────────────────────────────────
+├─ layouts/partials/format-date.html             [None]
+├─ layouts/partials/t.html                       [None]
+├─ layouts/partials/icons/feature-icon.html      [None]
+├─ layouts/partials/icons/stats-icon.html        [None]
+├─ layouts/partials/about/mission.html           [None]
+├─ layouts/partials/about/values.html            [None]
+├─ layouts/partials/about/team.html              [None]
+├─ layouts/partials/about/facilities.html        [None]
+├─ layouts/partials/about/hero.html              [R] - background image
+├─ layouts/partials/homepage/features.html       [None]
+└─ layouts/partials/homepage/stats.html          [None]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+URL FUNCTION USAGE SUMMARY BY TYPE
+──────────────────────────────────────────────────────────────────────────────
+
+Most Used Functions:
+  1. relLangURL    ████████████████████████████ 28 occurrences
+  2. .Permalink    █████████████████████████    25 occurrences
+  3. .RelPermalink ███████████████████          19 occurrences
+  4. relURL        ██████████████████           18 occurrences
+  5. urlize        █████████                     9 occurrences
+  6. absURL        ██████                        6 occurrences
+  7. absLangURL    █████                         5 occurrences
+
+Primary Use Cases:
+  → relLangURL:     Section navigation in multilingual site
+  → .Permalink:     Page-to-page content links
+  → .RelPermalink:  Processed resources (images, CSS, JS)
+  → relURL:         Static assets
+  → urlize:         Taxonomy URL sanitization
+  → absURL:         SEO metadata, social sharing
+  → absLangURL:     Multilingual SEO alternates
+
+═══════════════════════════════════════════════════════════════════════════════
+
+FILES BY COMPLEXITY LEVEL
+──────────────────────────────────────────────────────────────────────────────
+
+High Complexity (Multiple URL functions + logic):
+  • head.html                    (8 functions, SEO metadata)
+  • responsive-image.html        (8 functions, image processing)
+  • header.html                  (6 functions, active state logic)
+  • news/single.html            (6 functions, navigation)
+
+Medium Complexity (Multiple URL functions):
+  • gallery/single.html         (5 functions)
+  • programs/single.html        (5 functions)
+  • 404.html                    (5 functions)
+  • shortcodes/gallery.html     (3 functions)
+
+Low Complexity (1-2 URL functions):
+  • Most card components        (1-3 functions)
+  • Filter components           (2 functions)
+  • Simple page templates       (1-2 functions)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+KEY PATTERNS TO REMEMBER
+──────────────────────────────────────────────────────────────────────────────
+
+1. Taxonomy URLs:
+   {{ printf "categories/%s" (urlize $name) | relLangURL }}
+                              ↑              ↑
+                         Sanitize       Language-aware
+
+2. Menu URLs with Data:
+   {{ strings.TrimPrefix "/" .url | relURL }}
+      ↑
+   Remove leading slash to avoid double slashes
+
+3. Processed Resources:
+   {{ $image.RelPermalink }}
+            ↑
+   Enables SRI and fingerprinting
+
+4. Language Switching:
+   Check .IsTranslated → Use .Permalink
+   Fallback → Use absLangURL
+
+5. SEO Metadata:
+   Canonical: .Permalink
+   OG Image: absURL
+   Alternates: absLangURL
+
+═══════════════════════════════════════════════════════════════════════════════
+
+END OF URL FUNCTION USAGE MAP

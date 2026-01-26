@@ -3319,6 +3319,108 @@ Edge cases to consider:
 - Build configuration differences between development and production
 - Potential base URL configuration in framework/build tool settings</description>
     </feature>
+    <feature>
+      <name>Update CMS team member schema with localized biography fields</name>
+      <description>Restructure CMS Team Member Schema with Localized Biography Fields
+
+Refactor the team member data structure in the CMS to include localized biography fields directly in the team member schema, eliminating the need for separate translation key-value pairs.
+
+Requirements:
+- Update team member schema to include dedicated fields: bio_en, bio_pl, and any other required language variants
+- Remove biography-related translation keys from the separate translation schema
+- Migrate existing biography data from translation key-value structure to the new direct fields
+- Update team building/rendering logic to read biography from the new schema structure
+- Ensure all language configurations are properly mapped (config_en, config_pl, etc.)
+- Verify that the team display correctly shows localized biographies based on active language
+- Update any CMS documentation or admin interfaces to reflect the new schema structure
+
+Edge cases to consider:
+- Handle team members with missing biography translations gracefully
+- Ensure backward compatibility during migration if needed
+- Validate that no biography content is lost during restructuring</description>
+    </feature>
+    <feature>
+      <name>Configure Hugo URLs Following Best Practices</name>
+      <description>Fix Hugo URL Configuration to Follow Best Practices
+
+Update the Hugo site configuration and templates to properly use baseURL and canonifyURLs functions according to Hugo best practices for generating absolute and canonical URLs.
+
+Requirements:
+- Configure baseURL in hugo.toml/config.toml with the production domain
+- Enable canonifyURLs setting appropriately (typically set to false in modern Hugo)
+- Use absURL or relURL template functions instead of relying on canonifyURLs global setting
+- Ensure all internal links use proper URL functions (.RelPermalink, .Permalink, absURL)
+- Update meta tags (og:url, canonical links) to use absolute URLs with absURL
+- Verify RSS feeds and sitemaps generate correct absolute URLs
+- Test that relative asset paths work correctly in both development and production
+- Check that trailing slashes are handled consistently
+- Ensure external links are not modified by URL processing
+- Validate no hardcoded domain URLs exist in templates
+
+Edge cases to consider:
+- Subdirectory deployments vs root domain
+- Protocol-relative URLs
+- Multi-language sites with different base URLs
+- CDN or asset prefix configurations</description>
+    </feature>
+    <feature>
+      <name>Add rounded corners to mission section images</name>
+      <description>Add Rounded Corners to Mission Section Images
+
+Apply border-radius styling to images in the about/mission section to create rounded corners for a more polished visual appearance.
+
+Requirements:
+- Add rounded corners to the main mission image (about-mission-image)
+- Apply the same rounded corner styling to the error state image (image-error)
+- Ensure consistent border-radius value across both image states
+- Verify rounded corners display correctly across different browsers
+- Check that rounded corners work properly with various image aspect ratios
+- Ensure styling doesn&apos;t break responsive behavior on mobile devices</description>
+    </feature>
+    <feature>
+      <name>Fix Hugo image paths with base URL configuration</name>
+      <description>Fix Hugo Markdown Image Paths to Respect Base URL Configuration
+
+Resolve the issue where images referenced with relative URLs in Hugo markdown posts fail to render correctly when the site is deployed with a base path (subdirectory). Images should properly resolve to the correct path including the configured base URL.
+
+Requirements:
+- Identify where image path resolution occurs in the Hugo rendering pipeline
+- Modify image path handling to prepend the configured base URL from Hugo&apos;s config
+- Ensure fix works for multiple image reference formats (markdown syntax, HTML img tags, shortcodes)
+- Handle both root-relative paths (/images/photo.jpg) and relative paths (../images/photo.jpg)
+- Verify images render correctly when site is hosted at root domain vs subdirectory
+- Test with various base URL configurations (e.g., /blog, /docs/v2)
+- Ensure fix doesn&apos;t break images that use absolute URLs (https://...)
+- Validate that the solution works in both development and production builds
+
+Edge cases to consider:
+- Images in different content directories or page bundles
+- Images referenced in front matter
+- Responsive images with srcset attributes
+- Background images in inline CSS</description>
+    </feature>
+    <feature>
+      <name>Fix BaseURL path handling for internal resources</name>
+      <description>Fix BaseURL Path Handling for Internal Links and Images
+
+Resolve broken URLs throughout the website when using a configured basepath by ensuring all internal links and images use absolute paths constructed with the site&apos;s BaseURL.
+
+Requirements:
+- Identify all internal navigation menu items that are not external links
+- Update internal menu item URLs to use {{ .Site.BaseURL }} for absolute path construction
+- Audit and fix all image references to use {{ .Site.BaseURL }} for absolute paths
+- Distinguish between external links (which should remain unchanged) and internal links (which need BaseURL)
+- Test navigation and image loading with various basepath configurations (root path, subdirectory path)
+- Verify relative paths are converted to absolute paths using the BaseURL template variable
+- Ensure no hardcoded paths that would break under different basepath settings
+
+Edge Cases to Consider:
+- Images in different content types (posts, pages, partials)
+- Navigation items in headers, footers, and sidebars
+- Dynamically generated menu items vs static menu configuration
+- Asset references in CSS or JavaScript files
+- Links within markdown content vs template files</description>
+    </feature>
   </implemented_features>
 
   <additional_requirements>

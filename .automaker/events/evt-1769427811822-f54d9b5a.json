@@ -1,0 +1,11 @@
+{
+  "id": "evt-1769427811822-f54d9b5a",
+  "trigger": "feature_success",
+  "timestamp": "2026-01-26T11:43:31.822Z",
+  "projectPath": "/Users/romanbartusiak/git/riomus/wesole_nutki",
+  "projectName": "wesole_nutki",
+  "featureId": "feature-1769425318393-exqfqsq8h",
+  "featureName": "Fix BaseURL path handling for internal resources",
+  "error": "Feature completed in 1637s - auto-verified",
+  "passes": true
+}

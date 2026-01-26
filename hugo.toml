@@ -70,7 +70,7 @@ summaryLength = 70
     [[languages.pl.menus.main]]
       identifier = "recruitment"
       name = "REKRUTACJA W TOKU"
-      url = "/rekrutacja/"
+      url = "/pl/rekrutacja/"
       weight = 2
       [languages.pl.menus.main.params]
         i18n_key = "menu_recruitment"
@@ -78,7 +78,7 @@ summaryLength = 70
     [[languages.pl.menus.main]]
       identifier = "news"
       name = "Aktualności"
-      url = "/category/aktualnosci/"
+      url = "/pl/category/aktualnosci/"
       weight = 3
       [languages.pl.menus.main.params]
         i18n_key = "menu_news"
@@ -86,7 +86,7 @@ summaryLength = 70
     [[languages.pl.menus.main]]
       identifier = "about"
       name = "O przedszkolu"
-      url = "/o-przedszkolu/"
+      url = "/pl/o-przedszkolu/"
       weight = 4
       [languages.pl.menus.main.params]
         i18n_key = "menu_about"
@@ -94,7 +94,7 @@ summaryLength = 70
     [[languages.pl.menus.main]]
       identifier = "about-vision"
       name = "Nasza wizja"
-      url = "/o-przedszkolu/nasza-wizja/"
+      url = "/pl/o-przedszkolu/nasza-wizja/"
       weight = 1
       parent = "about"
       [languages.pl.menus.main.params]
@@ -103,7 +103,7 @@ summaryLength = 70
     [[languages.pl.menus.main]]
       identifier = "about-offer"
       name = "Oferta"
-      url = "/o-przedszkolu/oferta/"
+      url = "/pl/o-przedszkolu/oferta/"
       weight = 2
       parent = "about"
       [languages.pl.menus.main.params]
@@ -112,7 +112,7 @@ summaryLength = 70
     [[languages.pl.menus.main]]
       identifier = "about-pricing"
       name = "Cennik"
-      url = "/o-przedszkolu/cennik/"
+      url = "/pl/o-przedszkolu/cennik/"
       weight = 3
       parent = "about"
       [languages.pl.menus.main.params]
@@ -121,7 +121,7 @@ summaryLength = 70
     [[languages.pl.menus.main]]
       identifier = "about-payments"
       name = "Płatności"
-      url = "/o-przedszkolu/platnosci/"
+      url = "/pl/o-przedszkolu/platnosci/"
       weight = 4
       parent = "about"
       [languages.pl.menus.main.params]
@@ -130,7 +130,7 @@ summaryLength = 70
     [[languages.pl.menus.main]]
       identifier = "about-enrollment"
       name = "Zapisy"
-      url = "/o-przedszkolu/zapisy/"
+      url = "/pl/o-przedszkolu/zapisy/"
       weight = 5
       parent = "about"
       [languages.pl.menus.main.params]
@@ -139,7 +139,7 @@ summaryLength = 70
     [[languages.pl.menus.main]]
       identifier = "about-documents"
       name = "Dokumenty"
-      url = "/o-przedszkolu/dokumenty/"
+      url = "/pl/o-przedszkolu/dokumenty/"
       weight = 6
       parent = "about"
       [languages.pl.menus.main.params]
@@ -148,7 +148,7 @@ summaryLength = 70
     [[languages.pl.menus.main]]
       identifier = "about-privacy"
       name = "Polityka prywatności"
-      url = "/o-przedszkolu/polityka-prywatnosci/"
+      url = "/pl/o-przedszkolu/polityka-prywatnosci/"
       weight = 7
       parent = "about"
       [languages.pl.menus.main.params]
@@ -157,7 +157,7 @@ summaryLength = 70
     [[languages.pl.menus.main]]
       identifier = "staff"
       name = "Kadra"
-      url = "/kadra/"
+      url = "/pl/kadra/"
       weight = 5
       [languages.pl.menus.main.params]
         i18n_key = "menu_staff"
@@ -165,7 +165,7 @@ summaryLength = 70
     [[languages.pl.menus.main]]
       identifier = "volunteers"
       name = "Wolontariusze"
-      url = "/category/wolontariusze/"
+      url = "/pl/category/wolontariusze/"
       weight = 6
       [languages.pl.menus.main.params]
         i18n_key = "menu_volunteers"
@@ -173,7 +173,7 @@ summaryLength = 70
     [[languages.pl.menus.main]]
       identifier = "daily-plan"
       name = "Plan dnia"
-      url = "/plan-dnia/"
+      url = "/pl/plan-dnia/"
       weight = 7
       [languages.pl.menus.main.params]
         i18n_key = "menu_daily_plan"
@@ -181,7 +181,7 @@ summaryLength = 70
     [[languages.pl.menus.main]]
       identifier = "daily-plan-weekly"
       name = "Plan tygodniowy"
-      url = "/plan-zajec/"
+      url = "/pl/plan-zajec/"
       weight = 1
       parent = "daily-plan"
       [languages.pl.menus.main.params]
@@ -190,7 +190,7 @@ summaryLength = 70
     [[languages.pl.menus.main]]
       identifier = "daily-plan-extra"
       name = "Zajęcia dodatkowe 2025/2026"
-      url = "/plan-dnia/zajecia-dodatkowe/"
+      url = "/pl/plan-dnia/zajecia-dodatkowe/"
       weight = 2
       parent = "daily-plan"
       [languages.pl.menus.main.params]
@@ -199,7 +199,7 @@ summaryLength = 70
     [[languages.pl.menus.main]]
       identifier = "daily-plan-calendar"
       name = "Harmonogram roku szkolnego 2025/2026"
-      url = "/plan-dnia/imprezy/"
+      url = "/pl/plan-dnia/imprezy/"
       weight = 3
       parent = "daily-plan"
       [languages.pl.menus.main.params]
@@ -208,7 +208,7 @@ summaryLength = 70
     [[languages.pl.menus.main]]
       identifier = "galleries"
       name = "Galerie"
-      url = "/galerie/"
+      url = "/pl/galerie/"
       weight = 8
       [languages.pl.menus.main.params]
         i18n_key = "menu_galleries"
@@ -216,7 +216,7 @@ summaryLength = 70
     [[languages.pl.menus.main]]
       identifier = "child-protection"
       name = "Standardy ochrony małoletnich"
-      url = "/standardy-ochrony-maloletnich/"
+      url = "/pl/standardy-ochrony-maloletnich/"
       weight = 9
       [languages.pl.menus.main.params]
         i18n_key = "menu_child_protection"
@@ -224,7 +224,7 @@ summaryLength = 70
     [[languages.pl.menus.main]]
       identifier = "contact"
       name = "Kontakt"
-      url = "/kontakt/"
+      url = "/pl/kontakt/"
       weight = 10
       [languages.pl.menus.main.params]
         i18n_key = "menu_contact"

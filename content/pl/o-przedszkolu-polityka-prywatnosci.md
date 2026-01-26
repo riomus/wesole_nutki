@@ -2,7 +2,7 @@
 title: "Polityka prywatności - Wesołe Nutki"
 date: 2026-01-23T09:27:53.185Z
 type: page
-url: "/o-przedszkolu/polityka-prywatnosci/"
+url: "/pl/o-przedszkolu/polityka-prywatnosci/"
 ---
 
 - Admi­ni­stra­to­rem danych oso­bo­wych ser­wi­su wesolenutki.eu jest Przed­szko­le Nie­pu­blicz­ne Języ­ko­wo-Muzycz­ne Weso­łe Nut­ki pod zarzą­dem orga­nu pro­wa­dzą­ce­go: Para­fii Ewan­ge­lic­ko-Augs­bur­skiej we Wro­cła­wiu Opatrz­no­ści Bożej, wpi­sa­nej do reje­stru przed­się­bior­ców Cen­tral­nej Ewi­den­cji i Infor­ma­cji o Dzia­łal­no­ści Gospo­dar­czej pod nume­rem NIP: 897–13-69–404 (dalej: Administrator).

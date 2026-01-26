@@ -1,0 +1,101 @@
+{{- /*
+URL Type Detector Partial
+==========================
+
+This partial detects the type of a URL and returns appropriate metadata.
+
+Usage:
+  {{ $urlInfo := partial "url-type-detector.html" (dict "url" $myURL) }}
+  {{ if eq $urlInfo.type "absolute" }}
+    <a href="{{ $myURL }}">Link</a>
+  {{ else if eq $urlInfo.type "root-relative" }}
+    <a href="{{ $myURL | relURL }}">Link</a>
+  {{ end }}
+
+Input (dict):
+  - url (string, required): The URL to analyze
+
+Output (dict):
+  - type (string): One of: "absolute", "root-relative", "relative", "anchor", "protocol", "empty"
+  - needsRelURL (bool): Whether the URL should be processed with relURL
+  - needsAbsURL (bool): Whether the URL should be processed with absURL
+  - isExternal (bool): Whether the URL points to an external resource
+  - originalURL (string): The original URL that was analyzed
+
+URL Types:
+  - "absolute": Full URLs with protocol (http://, https://, //)
+  - "root-relative": Paths starting with / (e.g., /about, /en/contact/)
+  - "relative": Paths not starting with / (e.g., ../about, contact/info)
+  - "anchor": Hash-only URLs (e.g., #, #section, #top)
+  - "protocol": Special protocol URLs (e.g., mailto:, tel:, javascript:)
+  - "empty": Empty or whitespace-only URLs
+
+Examples:
+  - "https://example.com" → type: "absolute", isExternal: true
+  - "//cdn.example.com" → type: "absolute", isExternal: true
+  - "/en/about/" → type: "root-relative", needsRelURL: true
+  - "about/team" → type: "relative", needsRelURL: true
+  - "#contact" → type: "anchor"
+  - "mailto:info@example.com" → type: "protocol"
+  - "" → type: "empty"
+
+*/ -}}
+
+{{- $url := .url | default "" -}}
+{{- $urlTrimmed := trim $url " \t\n\r" -}}
+
+{{- /* Initialize return values */ -}}
+{{- $type := "unknown" -}}
+{{- $needsRelURL := false -}}
+{{- $needsAbsURL := false -}}
+{{- $isExternal := false -}}
+
+{{- /* Check for empty URLs */ -}}
+{{- if eq $urlTrimmed "" -}}
+  {{- $type = "empty" -}}
+
+{{- /* Check for anchor-only URLs (starts with #) */ -}}
+{{- else if hasPrefix $urlTrimmed "#" -}}
+  {{- $type = "anchor" -}}
+
+{{- /* Check for protocol-based URLs (mailto:, tel:, javascript:, data:, etc.) */ -}}
+{{- else if or (hasPrefix $urlTrimmed "mailto:") (hasPrefix $urlTrimmed "tel:") (hasPrefix $urlTrimmed "javascript:") (hasPrefix $urlTrimmed "data:") (hasPrefix $urlTrimmed "ftp:") (hasPrefix $urlTrimmed "file:") -}}
+  {{- $type = "protocol" -}}
+
+{{- /* Check for absolute URLs (http://, https://, //) */ -}}
+{{- else if or (hasPrefix $urlTrimmed "http://") (hasPrefix $urlTrimmed "https://") (hasPrefix $urlTrimmed "//") -}}
+  {{- $type = "absolute" -}}
+  {{- $isExternal = true -}}
+
+  {{- /* Additional check: if the absolute URL matches the site's domain, it's not external */ -}}
+  {{- $siteHost := urls.Parse site.BaseURL | .Host -}}
+  {{- if $siteHost -}}
+    {{- $urlParsed := urls.Parse $urlTrimmed -}}
+    {{- if $urlParsed -}}
+      {{- $urlHost := $urlParsed.Host -}}
+      {{- if eq $urlHost $siteHost -}}
+        {{- $isExternal = false -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+
+{{- /* Check for root-relative URLs (starts with /) */ -}}
+{{- else if hasPrefix $urlTrimmed "/" -}}
+  {{- $type = "root-relative" -}}
+  {{- $needsRelURL = true -}}
+
+{{- /* Everything else is considered relative */ -}}
+{{- else -}}
+  {{- $type = "relative" -}}
+  {{- $needsRelURL = true -}}
+
+{{- end -}}
+
+{{- /* Return the result as a dictionary */ -}}
+{{- return (dict
+  "type" $type
+  "needsRelURL" $needsRelURL
+  "needsAbsURL" $needsAbsURL
+  "isExternal" $isExternal
+  "originalURL" $url
+) -}}

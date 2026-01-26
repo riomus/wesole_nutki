@@ -1,0 +1,99 @@
+
+> wesole-nutki@1.0.0 dev
+> npm run sync:translations && hugo server --buildDrafts --buildFuture --baseURL http://localhost:1313/
+
+
+> wesole-nutki@1.0.0 sync:translations
+> node scripts/sync-translations.js
+
+🔄 Syncing translations from YAML to TOML...
+
+Processing pl...
+  ✅ Generated /Users/romanbartusiak/git/riomus/wesole_nutki/i18n/pl.toml with 290 keys
+Processing en...
+  ✅ Generated /Users/romanbartusiak/git/riomus/wesole_nutki/i18n/en.toml with 287 keys
+
+✨ Translation sync complete!
+Watching for changes in /Users/romanbartusiak/git/riomus/wesole_nutki/archetypes, /Users/romanbartusiak/git/riomus/wesole_nutki/assets/{css,images,js,scss}, /Users/romanbartusiak/git/riomus/wesole_nutki/content/en/{about,contact,daily-plan,documents,gallery,...}, /Users/romanbartusiak/git/riomus/wesole_nutki/content/pl/{about,contact,gallery,news,programs}, /Users/romanbartusiak/git/riomus/wesole_nutki/data/{about,homepage,menus,translations}, /Users/romanbartusiak/git/riomus/wesole_nutki/i18n, /Users/romanbartusiak/git/riomus/wesole_nutki/layouts/{_default,about,categories,contact,documents,...}, /Users/romanbartusiak/git/riomus/wesole_nutki/package.json, /Users/romanbartusiak/git/riomus/wesole_nutki/postcss.config.js, /Users/romanbartusiak/git/riomus/wesole_nutki/static/{admin,css,documents,fonts,images,...}, ... and 1 more
+Watching for config changes in /Users/romanbartusiak/git/riomus/wesole_nutki/hugo.toml
+Start building sites … 
+hugo v0.154.5+extended+withdeploy darwin/arm64 BuildDate=2026-01-11T20:53:23Z VendorInfo=Homebrew
+
+WARN  Gallery shortcode: Gallery not found at path 'en/gallery/daily-activities'
+WARN  Gallery shortcode: No images found (ref: 'en/gallery/daily-activities', inner content length: 0)
+
+                  │ PL │ EN 
+──────────────────┼────┼────
+ Pages            │ 80 │ 68 
+ Paginator pages  │  1 │  0 
+ Non-page files   │  0 │  0 
+ Static files     │ 72 │ 72 
+ Processed images │ 18 │  0 
+ Aliases          │ 22 │ 22 
+ Cleaned          │  0 │  0 
+
+Built in 821 ms
+Environment: "development"
+Serving pages from disk
+Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1) 
+Press Ctrl+C to stop
+
+Change detected, rebuilding site (#1).
+2026-01-26 10:08:36.147 +0100
+i18n changed /en.toml
+i18n changed /pl.toml
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 698 ms
+
+Change detected, rebuilding site (#2).
+2026-01-26 10:10:49.147 +0100
+Template added /index.webmanifest.tmp.85857.1769418649012
+Template added /index.webmanifest
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 10 ms
+
+Change of config file detected, rebuilding site (#3).
+2026-01-26 10:10:53.647 +0100
+WARN  Gallery shortcode: Gallery not found at path 'en/gallery/daily-activities'
+WARN  Gallery shortcode: No images found (ref: 'en/gallery/daily-activities', inner content length: 0)
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Rebuilt in 864 ms
+
+Change detected, rebuilding site (#4).
+2026-01-26 10:11:02.147 +0100
+Template changed /partials/head.html
+Template added /partials/head.html.tmp.85857.1769418661732
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 22 ms
+
+Change of Static files detected, rebuilding site (#5).
+2026-01-26 10:11:22.146 +0100
+
+Change detected, rebuilding site (#6).
+2026-01-26 10:13:50.148 +0100
+Template changed /partials/header.html
+Template added /partials/header.html.tmp.4873.1769418829872
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 29 ms
+
+Change detected, rebuilding site (#7).
+2026-01-26 10:15:01.648 +0100
+Template changed /partials/header.html
+Template added /partials/header.html.tmp.7970.1769418901305
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 31 ms
+
+Change detected, rebuilding site (#8).
+2026-01-26 10:15:12.148 +0100
+Template changed /partials/header.html
+Template added /partials/header.html.tmp.7970.1769418912058
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 24 ms
+
+Change detected, rebuilding site (#9).
+2026-01-26 10:15:15.648 +0100
+Template changed /partials/footer.html
+Template added /partials/footer.html.tmp.7970.1769418915179
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 21 ms

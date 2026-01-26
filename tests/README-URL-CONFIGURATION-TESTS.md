@@ -103,21 +103,7 @@ Comprehensive URL configuration verification tests.
 - Pagination URLs
 - Production build verification
 
-### 7. **url-verification.spec.ts** (403 lines)
-End-to-end URL verification across the site.
-
-**Coverage:**
-- Homepage URL structure
-- About section URL patterns
-- News/blog URL permalinks
-- Gallery URL structure
-- Contact and static pages
-- 404 error page handling
-- URL consistency across navigation
-- No hardcoded domain URLs
-- Relative vs absolute URL usage verification
-
-### 8. **url-seo-integration.spec.ts** (441 lines - NEW)
+### 7. **url-seo-integration.spec.ts** (441 lines)
 SEO-focused integration tests for URL configuration.
 
 **Coverage:**
@@ -136,16 +122,16 @@ SEO-focused integration tests for URL configuration.
 
 ## Total Test Coverage
 
-- **Total Test Files**: 8 files
-- **Total Test Lines**: ~4,450 lines
-- **Test Categories**: 60+ test suites
-- **Individual Tests**: 300+ individual test cases
+- **Total Test Files**: 7 files
+- **Total Test Lines**: ~4,050 lines
+- **Test Categories**: 55+ test suites
+- **Individual Tests**: 280+ individual test cases
 
 ## Test Execution
 
 ### Run All URL Tests
 ```bash
-npx playwright test tests/canonical-urls.spec.ts tests/open-graph-urls.spec.ts tests/asset-urls.spec.ts tests/internal-navigation-links.spec.ts tests/multi-language-urls.spec.ts tests/url-configuration.spec.ts tests/url-verification.spec.ts tests/url-seo-integration.spec.ts
+npx playwright test tests/canonical-urls.spec.ts tests/open-graph-urls.spec.ts tests/asset-urls.spec.ts tests/internal-navigation-links.spec.ts tests/multi-language-urls.spec.ts tests/url-configuration.spec.ts tests/url-seo-integration.spec.ts
 ```
 
 ### Run Tests with baseURL Configuration
@@ -259,7 +245,7 @@ Tests are configured for:
 
 ### When to Update Tests
 
-1. **Adding New Page Types**: Add tests to `canonical-urls.spec.ts` and `url-verification.spec.ts`
+1. **Adding New Page Types**: Add tests to `canonical-urls.spec.ts` and `url-configuration.spec.ts`
 2. **Changing URL Structure**: Update expectations in all relevant test files
 3. **Adding New Assets**: Add verification to `asset-urls.spec.ts`
 4. **New Languages**: Update `multi-language-urls.spec.ts`

@@ -2,7 +2,7 @@
 title: "Plan tygodniowy - Wesołe Nutki"
 date: 2026-01-23T09:28:07.166Z
 type: page
-url: "/plan-zajec/"
+url: "/pl/plan-zajec/"
 ---
 
 <div class="schedule-table-wrapper">

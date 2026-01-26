@@ -1,0 +1,38 @@
+{{/*
+  Markdown Image Render Hook
+
+  This render hook intercepts all markdown images and renders them using the
+  responsive-image partial for automatic responsive image generation with WebP support.
+
+  Hugo automatically provides these variables:
+    .Destination - The image URL from markdown ![alt](url)
+    .Text - The alt text from markdown ![alt](url)
+    .Title - The title attribute if provided ![alt](url "title")
+    .Page - The page context
+    .Ordinal - The image number on the page (0-indexed)
+
+  This ensures all markdown images are:
+  - Responsive with multiple sizes
+  - Optimized with WebP format
+  - Lazy loaded by default
+  - Accessible with proper alt text
+  - Have error handling with fallback UI
+*/}}
+
+{{- $src := .Destination -}}
+{{- $alt := .Text -}}
+{{- $title := .Title -}}
+
+{{/* Build class string - include title as caption if available */}}
+{{- $class := "markdown-image" -}}
+
+{{/* Call the responsive-image partial with the image parameters */}}
+{{ partial "responsive-image" (dict
+  "src" $src
+  "alt" $alt
+  "class" $class
+  "sizes" "(max-width: 768px) 100vw, (max-width: 1024px) 80vw, 1024px"
+  "loading" "lazy"
+  "context" .Page
+  "figcaption" $title
+) }}

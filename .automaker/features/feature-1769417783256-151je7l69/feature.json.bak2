@@ -1,0 +1,154 @@
+{
+  "category": "Uncategorized",
+  "description": "Restructure CMS Team Member Schema with Localized Biography Fields\n\nRefactor the team member data structure in the CMS to include localized biography fields directly in the team member schema, eliminating the need for separate translation key-value pairs.\n\nRequirements:\n- Update team member schema to include dedicated fields: bio_en, bio_pl, and any other required language variants\n- Remove biography-related translation keys from the separate translation schema\n- Migrate existing biography data from translation key-value structure to the new direct fields\n- Update team building/rendering logic to read biography from the new schema structure\n- Ensure all language configurations are properly mapped (config_en, config_pl, etc.)\n- Verify that the team display correctly shows localized biographies based on active language\n- Update any CMS documentation or admin interfaces to reflect the new schema structure\n\nEdge cases to consider:\n- Handle team members with missing biography translations gracefully\n- Ensure backward compatibility during migration if needed\n- Validate that no biography content is lost during restructuring",
+  "title": "Update CMS team member schema with localized biography fields",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "full",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "pipeline_step_mkuxbq3f_e37nn5",
+  "id": "feature-1769417783256-151je7l69",
+  "descriptionHistory": [
+    {
+      "description": "Restructure CMS Team Member Schema with Localized Biography Fields\n\nRefactor the team member data structure in the CMS to include localized biography fields directly in the team member schema, eliminating the need for separate translation key-value pairs.\n\nRequirements:\n- Update team member schema to include dedicated fields: bio_en, bio_pl, and any other required language variants\n- Remove biography-related translation keys from the separate translation schema\n- Migrate existing biography data from translation key-value structure to the new direct fields\n- Update team building/rendering logic to read biography from the new schema structure\n- Ensure all language configurations are properly mapped (config_en, config_pl, etc.)\n- Verify that the team display correctly shows localized biographies based on active language\n- Update any CMS documentation or admin interfaces to reflect the new schema structure\n\nEdge cases to consider:\n- Handle team members with missing biography translations gracefully\n- Ensure backward compatibility during migration if needed\n- Validate that no biography content is lost during restructuring",
+      "timestamp": "2026-01-26T08:56:23.335Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-26T09:30:05.999Z",
+  "planSpec": {
+    "status": "approved",
+    "version": 1,
+    "reviewedByUser": false,
+    "content": "🔧 Tool: Task\nInput: {\n  \"description\": \"Explore team member CMS structure\",\n  \"prompt\": \"Explore the codebase to understand the current team member CMS structure. I need to find:\\n\\n1. The current team member schema/configuration - look for CMS config files related to team members\\n2. How biographies are currently stored (are they in translations or in the team member data?)\\n3. The translation schema and how biography translations are stored\\n4. Where team members are rendered/displayed in the application\\n5. The file structure for CMS configurations (config_en, config_pl, etc.)\\n6. Any existing team member data files\\n\\nFocus on:\\n- CMS configuration files (likely in /cms, /config, /src directories)\\n- Team member related components\\n- Translation/i18n files\\n- Any data files with team member information\\n\\nProvide a clear summary of:\\n- Current schema structure\\n- How biographies are currently handled\\n- Files that need to be modified\\n- Patterns being used for localization\",\n  \"subagent_type\": \"Explore\"\n}\n\n🔧 Tool: Bash\nInput: {\n  \"command\": \"find /Users/romanbartusiak/git/riomus/wesole_nutki -type f -name \\\"*config*\\\" | grep -E \\\"(cms|config)\\\" | head -20\",\n  \"description\": \"Find config files in the project\"\n}\n\n🔧 Tool: Glob\nInput: {\n  \"pattern\": \"**/*config*.js\",\n  \"path\": \"/Users/romanbartusiak/git/riomus/wesole_nutki\"\n}\n\n🔧 Tool: Glob\nInput: {\n  \"pattern\": \"**/*cms*.js\",\n  \"path\": \"/Users/romanbartusiak/git/riomus/wesole_nutki\"\n}\n\n🔧 Tool: Glob\nInput: {\n  \"pattern\": \"**/team*\",\n  \"path\": \"/Users/romanbartusiak/git/riomus/wesole_nutki\"\n}\n\n🔧 Tool: Bash\nInput: {\n  \"command\": \"find /Users/romanbartusiak/git/riomus/wesole_nutki -type d -name \\\"cms\\\" -o -name \\\"config\\\" -o -name \\\"locales\\\" -o -name \\\"i18n\\\" 2>/dev/null\",\n  \"description\": \"Find cms, config, and i18n directories\"\n}\n\n🔧 Tool: Bash\nInput: {\n  \"command\": \"ls -la /Users/romanbartusiak/git/riomus/wesole_nutki/ | grep -E \\\"^d\\\"\",\n  \"description\": \"List main directories in project\"\n}\n\n🔧 Tool: Bash\nInput: {\n  \"command\": \"ls -la /Users/romanbartusiak/git/riomus/wesole_nutki/i18n/\",\n  \"description\": \"List i18n directory contents\"\n}\n\n🔧 Tool: Read\nInput: {\n  \"file_path\": \"/Users/romanbartusiak/git/riomus/wesole_nutki/data/about/team.yml\"\n}\n\n🔧 Tool: Bash\nInput: {\n  \"command\": \"ls -la /Users/romanbartusiak/git/riomus/wesole_nutki/data/\",\n  \"description\": \"List data directory contents\"\n}\n\n🔧 Tool: Bash\nInput: {\n  \"command\": \"ls -la /Users/romanbartusiak/git/riomus/wesole_nutki/data/translations/\",\n  \"description\": \"List translations directory\"\n}\n\n🔧 Tool: Bash\nInput: {\n  \"command\": \"ls -la /Users/romanbartusiak/git/riomus/wesole_nutki/data/about/\",\n  \"description\": \"List about data directory\"\n}\n\n🔧 Tool: Read\nInput: {\n  \"file_path\": \"/Users/romanbartusiak/git/riomus/wesole_nutki/layouts/partials/about/team.html\"\n}\n\n🔧 Tool: Bash\nInput: {\n  \"command\": \"find /Users/romanbartusiak/git/riomus/wesole_nutki/data/translations -type f -name \\\"*.yml\\\" | head -20\",\n  \"description\": \"Find translation files\"\n}\n\n🔧 Tool: Read\nInput: {\n  \"file_path\": \"/Users/romanbartusiak/git/riomus/wesole_nutki/data/translations/pl/staff.yml\"\n}\n\n🔧 Tool: Read\nInput: {\n  \"file_path\": \"/Users/romanbartusiak/git/riomus/wesole_nutki/data/translations/en/staff.yml\"\n}\n\n🔧 Tool: Read\nInput: {\n  \"file_path\": \"/Users/romanbartusiak/git/riomus/wesole_nutki/data/translations/pl/about.yml\"\n}\n\n🔧 Tool: Read\nInput: {\n  \"file_path\": \"/Users/romanbartusiak/git/riomus/wesole_nutki/data/translations/en/about.yml\"\n}\n\n🔧 Tool: Read\nInput: {\n  \"file_path\": \"/Users/romanbartusiak/git/riomus/wesole_nutki/i18n/en.toml\",\n  \"limit\": 100\n}\n\n🔧 Tool: Read\nInput: {\n  \"file_path\": \"/Users/romanbartusiak/git/riomus/wesole_nutki/i18n/pl.toml\",\n  \"limit\": 100\n}\n\n🔧 Tool: Bash\nInput: {\n  \"command\": \"grep -n \\\"staff_bio\\\" /Users/romanbartusiak/git/riomus/wesole_nutki/data/translations/pl/staff.yml\",\n  \"description\": \"Search for bio entries in Polish staff file\"\n}\n\n🔧 Tool: Bash\nInput: {\n  \"command\": \"grep -n \\\"staff_bio\\\" /Users/romanbartusiak/git/riomus/wesole_nutki/data/translations/en/staff.yml\",\n  \"description\": \"Search for bio entries in English staff file\"\n}\n\n🔧 Tool: Bash\nInput: {\n  \"command\": \"find /Users/romanbartusiak/git/riomus/wesole_nutki -name \\\"*.json\\\" -type f | grep -E \\\"(config|cms|schema)\\\" | grep -v node_modules | head -20\",\n  \"description\": \"Find config/cms/schema JSON files outside node_modules\"\n}\n\n🔧 Tool: Bash\nInput: {\n  \"command\": \"ls -la /Users/romanbartusiak/git/riomus/wesole_nutki/layouts/\",\n  \"description\": \"List layouts directory\"\n}\n\n🔧 Tool: Bash\nInput: {\n  \"command\": \"ls -la /Users/romanbartusiak/git/riomus/wesole_nutki/layouts/partials/about/\",\n  \"description\": \"List about partials\"\n}\n\n🔧 Tool: Bash\nInput: {\n  \"command\": \"find /Users/romanbartusiak/git/riomus/wesole_nutki -name \\\"config.json\\\" -o -name \\\"schema.json\\\" | grep -v node_modules\",\n  \"description\": \"Find config and schema JSON files\"\n}\n\n🔧 Tool: Bash\nInput: {\n  \"command\": \"find /Users/romanbartusiak/git/riomus/wesole_nutki -name \\\"config.yml\\\" -o -name \\\"config.yaml\\\" | grep -v node_modules\",\n  \"description\": \"Find CMS config files\"\n}\n\n🔧 Tool: Bash\nInput: {\n  \"command\": \"ls -la /Users/romanbartusiak/git/riomus/wesole_nutki/static/\",\n  \"description\": \"List static directory\"\n}\n\n🔧 Tool: Bash\nInput: {\n  \"command\": \"find /Users/romanbartusiak/git/riomus/wesole_nutki/static -name \\\"*.yml\\\" -o -name \\\"*.yaml\\\" -o -name \\\"config*\\\"\",\n  \"description\": \"Find config files in static directory\"\n}\n\n🔧 Tool: Read\nInput: {\n  \"file_path\": \"/Users/romanbartusiak/git/riomus/wesole_nutki/static/admin/config.yml\"\n}\n\n🔧 Tool: Bash\nInput: {\n  \"command\": \"wc -l /Users/romanbartusiak/git/riomus/wesole_nutki/static/admin/config.yml\",\n  \"description\": \"Count lines in config file\"\n}\n\n🔧 Tool: Grep\nInput: {\n  \"pattern\": \"team|staff|biography|bio\",\n  \"path\": \"/Users/romanbartusiak/git/riomus/wesole_nutki/static/admin/config.yml\",\n  \"output_mode\": \"content\",\n  \"head_limit\": 100\n}\n\n🔧 Tool: Read\nInput: {\n  \"file_path\": \"/Users/romanbartusiak/git/riomus/wesole_nutki/static/admin/config.yml\",\n  \"offset\": 1,\n  \"limit\": 100\n}\n\n🔧 Tool: Read\nInput: {\n  \"file_path\": \"/Users/romanbartusiak/git/riomus/wesole_nutki/static/admin/config.yml\",\n  \"offset\": 380,\n  \"limit\": 120\n}\n\n🔧 Tool: Read\nInput: {\n  \"file_path\": \"/Users/romanbartusiak/git/riomus/wesole_nutki/static/admin/config.yml\",\n  \"offset\": 988,\n  \"limit\": 100\n}\n\n🔧 Tool: Bash\nInput: {\n  \"command\": \"find /Users/romanbartusiak/git/riomus/wesole_nutki/src -type f 2>/dev/null | head -20\",\n  \"description\": \"Check if src directory exists with component files\"\n}\n\n🔧 Tool: Bash\nInput: {\n  \"command\": \"ls -la /Users/romanbartusiak/git/riomus/wesole_nutki/resources/\",\n  \"description\": \"List resources directory\"\n}\n\n🔧 Tool: Bash\nInput: {\n  \"command\": \"ls -la /Users/romanbartusiak/git/riomus/wesole_nutki/content/\",\n  \"description\": \"List content directory\"\n}\n\n🔧 Tool: Bash\nInput: {\n  \"command\": \"grep -r \\\"bio_key\\\\|role_key\\\" /Users/romanbartusiak/git/riomus/wesole_nutki/layouts --include=\\\"*.html\\\" --include=\\\"*.md\\\" 2>/dev/null\",\n  \"description\": \"Search for bio_key or role_key usage in layouts\"\n}\n\n🔧 Tool: Bash\nInput: {\n  \"command\": \"tree -L 2 /Users/romanbartusiak/git/riomus/wesole_nutki -I 'node_modules|.git|public|.automaker|test-results|playwright-report' -d\",\n  \"description\": \"Show directory tree structure excluding noise\"\n}\n\n🔧 Tool: Bash\nInput: {\n  \"command\": \"ls -la /Users/romanbartusiak/git/riomus/wesole_nutki/data/about/\",\n  \"description\": \"List all files in about data directory\"\n}\n\n🔧 Tool: Read\nInput: {\n  \"file_path\": \"/Users/romanbartusiak/git/riomus/wesole_nutki/data/about/mission.yml\"\n}\n\n🔧 Tool: Bash\nInput: {\n  \"command\": \"grep -r \\\"i18n\\\" /Users/romanbartusiak/git/riomus/wesole_nutki/layouts/partials/about/*.html | head -20\",\n  \"description\": \"Find i18n usage patterns in about partials\"\n}\n# Specification: Restructure CMS Team Member Schema with Localized Biography Fields\n\n## 1. Problem Statement\n\nCurrently, team member biographies are stored in separate translation files using a key-value system, requiring editors to manage biography content across multiple files. This creates unnecessary complexity when maintaining team member information. The goal is to consolidate all team member data, including localized biographies, into a single schema structure for improved maintainability and editor experience.\n\n## 2. User Story\n\nAs a content editor managing team member profiles, I want biography content stored directly in the team member schema alongside other member information, so that I can manage all aspects of a team member's profile in one place without navigating between team data and translation files.\n\n## 3. Acceptance Criteria\n\n### Happy Path\n- **GIVEN** a team member with biographies in both Polish and English, **WHEN** the editor views the team member in the CMS, **THEN** bio_pl and bio_en fields appear directly in the team member form\n- **GIVEN** a team member with bio_pl and bio_en fields populated, **WHEN** the site is rendered in Polish, **THEN** the Polish biography displays correctly\n- **GIVEN** a team member with bio_pl and bio_en fields populated, **WHEN** the site is rendered in English, **THEN** the English biography displays correctly\n\n### Edge Cases\n- **GIVEN** a team member with bio_pl but no bio_en, **WHEN** the site is rendered in English, **THEN** no biography section displays for that member (graceful degradation)\n- **GIVEN** a team member with empty bio_pl and bio_en fields, **WHEN** the site is rendered, **THEN** no biography section displays for that member\n- **GIVEN** existing team members with bio_key references, **WHEN** data migration completes, **THEN** all biography content is preserved in the new structure\n\n### Error Handling\n- **GIVEN** the bio_key field still exists during migration, **WHEN** both bio_key and new bio fields are present, **THEN** the new bio fields take precedence\n- **GIVEN** malformed biography content, **WHEN** rendering the team page, **THEN** the site renders without breaking, displaying available content\n\n## 4. Technical Context\n\n| Aspect | Value |\n|--------|-------|\n| Affected Files | `data/about/team.yml`, `layouts/partials/about/team.html`, `static/admin/config.yml`, `data/translations/pl/staff.yml`, `data/translations/en/staff.yml` |\n| Dependencies | Hugo static site generator, Decap CMS |\n| Constraints | Must maintain backward compatibility during migration; Hugo i18n system still needed for role_key fields; 17 existing team members to preserve |\n| Patterns to Follow | Direct field storage (similar to `name` field); language suffix convention (_pl, _en); optional field pattern (bio can be empty) |\n\n## 5. Non-Goals\n\n- This feature does NOT add support for additional languages beyond Polish and English\n- This feature does NOT change the role_key translation system (roles remain translation-key-based)\n- This feature does NOT modify the image upload or management system\n- This feature does NOT change the weight-based ordering or visibility toggle functionality\n- This feature does NOT add rich text editing capabilities (plain text only)\n\n## 6. Implementation Tasks\n\n```tasks\n## Phase 1: Schema Migration\n- [ ] T001: Update team.yml schema - add bio_pl and bio_en fields to one test member | File: data/about/team.yml\n- [ ] T002: Migrate existing biography from staff_bio_teacher1 translation to new fields | File: data/about/team.yml\n- [ ] T003: Remove bio_key field from test team member | File: data/about/team.yml\n\n## Phase 2: Template Updates\n- [ ] T004: Update team.html template to read from bio_pl/bio_en instead of i18n bio_key | File: layouts/partials/about/team.html\n- [ ] T005: Add language-aware biography rendering logic with fallback handling | File: layouts/partials/about/team.html\n- [ ] T006: Remove or comment out bio_key template logic | File: layouts/partials/about/team.html\n\n## Phase 3: CMS Configuration\n- [ ] T007: Update CMS config team_data collection to include bio_pl field (text widget) | File: static/admin/config.yml\n- [ ] T008: Update CMS config team_data collection to include bio_en field (text widget) | File: static/admin/config.yml\n- [ ] T009: Remove or deprecate bio_key field from CMS config | File: static/admin/config.yml\n\n## Phase 4: Translation File Cleanup\n- [ ] T010: Remove staff_bio_teacher1 key from Polish staff translations | File: data/translations/pl/staff.yml\n- [ ] T011: Remove staff_bio_teacher1 key from English staff translations | File: data/translations/en/staff.yml\n- [ ] T012: Document remaining staff_bio_* keys as deprecated in translation files | File: data/translations/pl/staff.yml, data/translations/en/staff.yml\n\n## Phase 5: Full Migration & Verification\n- [ ] T013: Migrate all remaining team members to new schema (16 members with empty bios) | File: data/about/team.yml\n- [ ] T014: Build site locally and verify team page renders correctly in both languages | File: N/A (build verification)\n- [ ] T015: Create and run Playwright test to verify biography display in both languages | File: tests/team-bio-verification.spec.ts\n- [ ] T016: Delete temporary Playwright test file after verification | File: tests/team-bio-verification.spec.ts\n```\n\n## 7. Success Metrics\n\n- All 17 team members successfully migrated to new schema without data loss\n- Biography content displays correctly for both Polish and English site versions\n- CMS admin interface shows new bio_pl and bio_en fields in team member forms\n- No biography-related translation keys remain in staff.yml files (except documented deprecated keys)\n- Site builds without errors\n- Playwright verification test passes for both language versions\n- Team members without biographies render without errors (graceful handling)\n\n## 8. Risks & Mitigations\n\n| Risk | Mitigation |\n|------|------------|\n| Data loss during migration of existing biography | Test migration with single member first; keep backup of translation files until verification complete |\n| Breaking site build during template changes | Implement template changes incrementally; test build after each change |\n| CMS config syntax errors | Validate YAML syntax after each config change; test CMS interface before full migration |\n| Backward compatibility issues if bio_key still referenced | Implement fallback logic in template to support both old and new patterns during transition |\n| Missing biography for one language breaks rendering | Add conditional rendering checks for undefined/empty bio fields |\n\n---",
+    "generatedAt": "2026-01-26T08:58:27.546Z",
+    "tasks": [
+      {
+        "id": "T001",
+        "description": "Update team.yml schema - add bio_pl and bio_en fields to one test member",
+        "filePath": "data/about/team.yml",
+        "phase": "Phase 1: Schema Migration",
+        "status": "pending"
+      },
+      {
+        "id": "T002",
+        "description": "Migrate existing biography from staff_bio_teacher1 translation to new fields",
+        "filePath": "data/about/team.yml",
+        "phase": "Phase 1: Schema Migration",
+        "status": "pending"
+      },
+      {
+        "id": "T003",
+        "description": "Remove bio_key field from test team member",
+        "filePath": "data/about/team.yml",
+        "phase": "Phase 1: Schema Migration",
+        "status": "pending"
+      },
+      {
+        "id": "T004",
+        "description": "Update team.html template to read from bio_pl/bio_en instead of i18n bio_key",
+        "filePath": "layouts/partials/about/team.html",
+        "phase": "Phase 2: Template Updates",
+        "status": "pending"
+      },
+      {
+        "id": "T005",
+        "description": "Add language-aware biography rendering logic with fallback handling",
+        "filePath": "layouts/partials/about/team.html",
+        "phase": "Phase 2: Template Updates",
+        "status": "pending"
+      },
+      {
+        "id": "T006",
+        "description": "Remove or comment out bio_key template logic",
+        "filePath": "layouts/partials/about/team.html",
+        "phase": "Phase 2: Template Updates",
+        "status": "pending"
+      },
+      {
+        "id": "T007",
+        "description": "Update CMS config team_data collection to include bio_pl field (text widget)",
+        "filePath": "static/admin/config.yml",
+        "phase": "Phase 3: CMS Configuration",
+        "status": "pending"
+      },
+      {
+        "id": "T008",
+        "description": "Update CMS config team_data collection to include bio_en field (text widget)",
+        "filePath": "static/admin/config.yml",
+        "phase": "Phase 3: CMS Configuration",
+        "status": "pending"
+      },
+      {
+        "id": "T009",
+        "description": "Remove or deprecate bio_key field from CMS config",
+        "filePath": "static/admin/config.yml",
+        "phase": "Phase 3: CMS Configuration",
+        "status": "pending"
+      },
+      {
+        "id": "T010",
+        "description": "Remove staff_bio_teacher1 key from Polish staff translations",
+        "filePath": "data/translations/pl/staff.yml",
+        "phase": "Phase 4: Translation File Cleanup",
+        "status": "pending"
+      },
+      {
+        "id": "T011",
+        "description": "Remove staff_bio_teacher1 key from English staff translations",
+        "filePath": "data/translations/en/staff.yml",
+        "phase": "Phase 4: Translation File Cleanup",
+        "status": "pending"
+      },
+      {
+        "id": "T012",
+        "description": "Document remaining staff_bio_* keys as deprecated in translation files",
+        "filePath": "data/translations/pl/staff.yml, data/translations/en/staff.yml",
+        "phase": "Phase 4: Translation File Cleanup",
+        "status": "pending"
+      },
+      {
+        "id": "T013",
+        "description": "Migrate all remaining team members to new schema (16 members with empty bios)",
+        "filePath": "data/about/team.yml",
+        "phase": "Phase 5: Full Migration & Verification",
+        "status": "pending"
+      },
+      {
+        "id": "T014",
+        "description": "Build site locally and verify team page renders correctly in both languages",
+        "filePath": "N/A (build verification)",
+        "phase": "Phase 5: Full Migration & Verification",
+        "status": "pending"
+      },
+      {
+        "id": "T015",
+        "description": "Create and run Playwright test to verify biography display in both languages",
+        "filePath": "tests/team-bio-verification.spec.ts",
+        "phase": "Phase 5: Full Migration & Verification",
+        "status": "pending"
+      },
+      {
+        "id": "T016",
+        "description": "Delete temporary Playwright test file after verification",
+        "filePath": "tests/team-bio-verification.spec.ts",
+        "phase": "Phase 5: Full Migration & Verification",
+        "status": "pending"
+      }
+    ],
+    "tasksTotal": 16,
+    "tasksCompleted": 16,
+    "approvedAt": "2026-01-26T08:58:27.549Z",
+    "currentTaskId": "T016"
+  }
+}

@@ -1,0 +1,17 @@
+Role Key,English Translation,Category,In Use,Used By
+staff_role_director,Director,Leadership,No,
+staff_role_teacher_squirrels,Lead Teacher - Squirrels 🐿️,Group Teachers,Yes,Patrycja Gajzler
+staff_role_assistant_squirrels,Teaching Assistant - Squirrels,Group Teachers,Yes,Maja Kalinowska
+staff_role_teacher_butterflies,Lead Teacher - Butterflies 🦋,Group Teachers,Yes,Paulina Milewska
+staff_role_assistant_butterflies,Teaching Assistant - Butterflies,Group Teachers,Yes,Anita Nowak
+staff_role_teacher_ladybugs,Lead Teacher - Ladybugs 🐞,Group Teachers,Yes,"Halszka Szymaniak, Katarzyna Ścibór"
+staff_role_teacher_hedgehogs,Lead Teacher - Hedgehogs 🦔,Group Teachers,Yes,Kacper Rygałło
+staff_role_rhythmics,Rhythmics Teacher,Additional Activity Teachers,Yes,Anna Kierakowicz
+staff_role_gymnastics,Gymnastics Teacher,Additional Activity Teachers,Yes,Alma Eperlein
+staff_role_english,English Language Teacher,Additional Activity Teachers,Yes,Inna
+staff_role_psychologist,Psychologist,Psychological and Pedagogical Support,Yes,Karolina Zwolińska
+staff_role_speech_therapist,Speech Therapist,Psychological and Pedagogical Support,Yes,Joanna Dominik
+staff_role_special_educator,Special Education Teacher,Psychological and Pedagogical Support,Yes,Anna Brodzisz
+staff_role_cook,Cook,Kitchen Staff,Yes,"Edyta Andrzejewska, Marta Pałubińska, Pani Ania"
+staff_role_dietitian,Psycho-Dietitian,Kitchen Staff,Yes,Małgorzata Talaga-Duma
+staff_role_maintenance,Maintenance Staff,Maintenance,Yes,Iwonka Brańska

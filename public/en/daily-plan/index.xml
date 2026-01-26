@@ -1,11 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Daily Plan - Wesołe Nutki on Wesole Nutki - Preschool</title><link>https://bartusiak.ai/wesole_nutki/en/daily-plan/</link><description>Recent content in Daily Plan - Wesołe Nutki on Wesole Nutki - Preschool</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 23 Jan 2026 14:55:21 +0100</lastBuildDate><atom:link href="https://bartusiak.ai/wesole_nutki/en/daily-plan/index.xml" rel="self" type="application/rss+xml"/><item><title>School Year Calendar 2025/2026 - Wesołe Nutki</title><link>https://bartusiak.ai/wesole_nutki/en/daily-plan/events/</link><pubDate>Fri, 23 Jan 2026 09:28:14 +0000</pubDate><guid>https://bartusiak.ai/wesole_nutki/en/daily-plan/events/</guid><description>&lt;p&gt;The calendar will be available soon&lt;/p&gt;</description></item><item><title>Extra Activities 2025/2026 - Wesołe Nutki</title><link>https://bartusiak.ai/wesole_nutki/en/daily-plan/extra-activities/</link><pubDate>Fri, 23 Jan 2026 09:28:10 +0000</pubDate><guid>https://bartusiak.ai/wesole_nutki/en/daily-plan/extra-activities/</guid><description>&lt;p&gt;In addition to program activities included in tuition, we offer additional afternoon activities for an extra fee:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;soccer&lt;/li&gt;
-&lt;li&gt;chess&lt;/li&gt;
-&lt;li&gt;dance&lt;/li&gt;
-&lt;li&gt;ballet&lt;/li&gt;
-&lt;li&gt;drumming workshops&lt;/li&gt;
-&lt;li&gt;robot building blocks&lt;/li&gt;
-&lt;li&gt;drama&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="schedule-of-afternoon-paid-activities-will-be-added-soon"&gt;Schedule of afternoon paid activities will be added soon&lt;/h2&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Daily Plan - Wesołe Nutki on Wesole Nutki - Preschool</title>
+    <link>http://localhost:1313/wesole_nutki/en/daily-plan/</link>
+    <description>Recent content in Daily Plan - Wesołe Nutki on Wesole Nutki - Preschool</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 23 Jan 2026 14:55:21 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/wesole_nutki/en/daily-plan/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>School Year Calendar 2025/2026 - Wesołe Nutki</title>
+      <link>http://localhost:1313/wesole_nutki/en/daily-plan/events/</link>
+      <pubDate>Fri, 23 Jan 2026 09:28:14 +0000</pubDate>
+      <guid>http://localhost:1313/wesole_nutki/en/daily-plan/events/</guid>
+      <description>&lt;p&gt;The calendar will be available soon&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Extra Activities 2025/2026 - Wesołe Nutki</title>
+      <link>http://localhost:1313/wesole_nutki/en/daily-plan/extra-activities/</link>
+      <pubDate>Fri, 23 Jan 2026 09:28:10 +0000</pubDate>
+      <guid>http://localhost:1313/wesole_nutki/en/daily-plan/extra-activities/</guid>
+      <description>&lt;p&gt;In addition to program activities included in tuition, we offer additional afternoon activities for an extra fee:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;soccer&lt;/li&gt;&#xA;&lt;li&gt;chess&lt;/li&gt;&#xA;&lt;li&gt;dance&lt;/li&gt;&#xA;&lt;li&gt;ballet&lt;/li&gt;&#xA;&lt;li&gt;drumming workshops&lt;/li&gt;&#xA;&lt;li&gt;robot building blocks&lt;/li&gt;&#xA;&lt;li&gt;drama&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;schedule-of-afternoon-paid-activities-will-be-added-soon&#34;&gt;Schedule of afternoon paid activities will be added soon&lt;/h2&gt;</description>
+    </item>
+  </channel>
+</rss>
