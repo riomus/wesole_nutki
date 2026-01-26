@@ -526,6 +526,11 @@
     @apply text-lg text-center text-dark/70 max-w-2xl mx-auto mb-4;
   }
 
+  // Team section specific modifiers
+  .section-subtitle--team {
+    @apply mb-12; // Override default mb-4 for team section
+  }
+
   // About section specific styles
   .about-preview-section {
     @apply bg-white;

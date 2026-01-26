@@ -4,9 +4,9 @@
 <section class="section about-team-section" id="team-section">
   <div class="container">
     <div class="section-header">
-      <h2 class="section-heading" style="margin-bottom: 1rem;">{{ i18n $data.heading_key | default "Our Team" }}</h2>
+      <h2 class="section-heading section-heading--team">{{ i18n $data.heading_key | default "Our Team" }}</h2>
       {{- with $data.subtitle_key -}}
-      <p class="section-subtitle" style="font-size: 1.125rem; line-height: 1.6; max-width: 42rem; margin: 0 auto 3rem;">{{ i18n . }}</p>
+      <p class="section-subtitle section-subtitle--team">{{ i18n . }}</p>
       {{- end -}}
     </div>
     <div class="row g-4 justify-content-center">
@@ -34,12 +34,25 @@
             {{- end -}}
           </div>
           <div class="team-card-body">
-            <h4 class="team-card-name" style="font-size: 1.25rem; font-weight: 600; line-height: 1.3; margin-bottom: 0.5rem;">{{ .name }}</h4>
-            <p class="team-card-role" style="font-size: 0.875rem; font-weight: 600; letter-spacing: 0.05em; margin-bottom: 0.75rem;">{{ i18n .role_key | default .role_key }}</p>
-            {{- with .bio_key -}}
-            {{- if ne . "" -}}
-            <p class="team-card-bio" style="font-size: 0.9375rem; line-height: 1.6; color: rgba(45, 49, 66, 0.75);">{{ i18n . }}</p>
+            <h4 class="team-card-name">{{ .name }}</h4>
+            <p class="team-card-role">{{ i18n .role_key | default .role_key }}</p>
+            {{- $lang := $.Site.Language.Lang -}}
+            {{- $supportedLangs := slice "pl" "en" -}}
+            {{- $bio := "" -}}
+
+            {{- /* Select biography based on current language with fallback */ -}}
+            {{- if eq $lang "pl" -}}
+              {{- $bio = .bio_pl | default .bio_en -}}
+            {{- else if eq $lang "en" -}}
+              {{- $bio = .bio_en | default .bio_pl -}}
+            {{- else -}}
+              {{- /* Fallback for unsupported languages: try English first, then Polish */ -}}
+              {{- $bio = .bio_en | default .bio_pl -}}
             {{- end -}}
+
+            {{- /* Render biography if we have content */ -}}
+            {{- if $bio -}}
+            <p class="team-card-bio">{{ $bio }}</p>
             {{- end -}}
           </div>
         </div>

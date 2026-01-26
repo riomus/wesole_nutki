@@ -21,7 +21,8 @@ staff_role_dietitian: "Psychodietetyk"
 staff_role_maintenance: "Personel obsługi"
 
 # Team member biographies (examples)
+# DEPRECATED: Pola biografii są teraz przechowywane bezpośrednio w team.yml jako bio_pl i bio_en
+# Te klucze są zachowane dla zgodności wstecznej, ale nie powinny być używane dla nowych członków zespołu
 staff_bio_director: "Doświadczony pedagog z pasją do pracy z dziećmi"
-staff_bio_teacher1: "Wykwalifikowany nauczyciel przedszkola"
 staff_bio_teacher2: "Specjalista w zakresie wczesnej edukacji"
 staff_bio_teacher3: "Nauczyciel z wieloletnim doświadczeniem"

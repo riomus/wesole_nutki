@@ -21,7 +21,8 @@ staff_role_dietitian: "Psycho-Dietitian"
 staff_role_maintenance: "Maintenance Staff"
 
 # Team member biographies (examples)
+# DEPRECATED: Biography fields are now stored directly in team.yml as bio_pl and bio_en
+# These keys are kept for backward compatibility but should not be used for new team members
 staff_bio_director: "Experienced educator with a passion for working with children"
-staff_bio_teacher1: "Qualified preschool teacher"
 staff_bio_teacher2: "Early childhood education specialist"
 staff_bio_teacher3: "Teacher with many years of experience"
