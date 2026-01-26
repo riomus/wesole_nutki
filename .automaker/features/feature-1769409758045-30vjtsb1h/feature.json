@@ -1,0 +1,30 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix Missing Translations for Enrollment CTA Elements\n\nEnsure that the `ready_to_enroll` and `enroll_cta_description` text content within the `.cta-section` component is properly translated across all supported languages.\n\nRequirements:\n- Locate the `.cta-section` component in the codebase\n- Identify where `ready_to_enroll` and `enroll_cta_description` content is defined\n- Add these strings to the translation files for all supported locales\n- Update the component to use the translation system (e.g., i18n, translation keys)\n- Verify translations appear correctly for each language\n- Test that language switching updates these elements dynamically\n- Ensure fallback behavior if translation is missing",
+  "title": "Fix missing CTA section translations across locales",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "verified",
+  "id": "feature-1769409758045-30vjtsb1h",
+  "descriptionHistory": [
+    {
+      "description": "Fix Missing Translations for Enrollment CTA Elements\n\nEnsure that the `ready_to_enroll` and `enroll_cta_description` text content within the `.cta-section` component is properly translated across all supported languages.\n\nRequirements:\n- Locate the `.cta-section` component in the codebase\n- Identify where `ready_to_enroll` and `enroll_cta_description` content is defined\n- Add these strings to the translation files for all supported locales\n- Update the component to use the translation system (e.g., i18n, translation keys)\n- Verify translations appear correctly for each language\n- Test that language switching updates these elements dynamically\n- Ensure fallback behavior if translation is missing",
+      "timestamp": "2026-01-26T06:42:38.138Z",
+      "source": "initial"
+    }
+  ],
+  "startedAt": "2026-01-26T06:42:38.166Z",
+  "updatedAt": "2026-01-26T06:44:31.927Z"
+}

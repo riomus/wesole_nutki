@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Standardize Pagination Controls Across All Language Versions\n\nFix pagination display inconsistencies where buttons and page information text appear differently across language versions of the application.\n\nRequirements:\n- Replace text-based pagination buttons (\"Next\", \"Previous\", etc.) with arrow icons across all language versions\n- Use → for next and ← for previous (or appropriate arrow icon set)\n- Ensure \"Page X of Y\" text is properly translated and displays correctly for all supported languages\n- Specifically fix the Polish language version where \"Page 1 of 2\" text is currently showing incorrectly\n- Verify pagination controls render consistently on all localized versions\n- Test with different page counts (single page, multiple pages, edge cases like page 1 and last page)\n- Ensure arrow buttons maintain proper disabled states (e.g., previous disabled on page 1, next disabled on last page)",
+  "title": "",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": "Standardize Pagination Controls Across All Language Versions\n\nFix pagination display inconsistencies where buttons and page information text appear differently across language versions of the application.\n\nRequirements:\n- Replace text-based pagination buttons (\"Next\", \"Previous\", etc.) with arrow icons across all language versions\n- Use → for next and ← for previous (or appropriate arrow icon set)\n- Ensure \"Page X of Y\" text is properly translated and displays correctly for all supported languages\n- Specifically fix the Polish language version where \"Page 1 of 2\" text is currently showing incorrectly\n- Verify pagination controls render consistently on all localized versions\n- Test with different page counts (single page, multiple pages, edge cases like page 1 and last page)\n- Ensure arrow buttons maintain proper disabled states (e.g., previous disabled on page 1, next disabled on last page)",
+  "status": "in_progress",
+  "id": "feature-1769264203941-pqy7ioi57",
+  "descriptionHistory": [
+    {
+      "description": "Standardize Pagination Controls Across All Language Versions\n\nFix pagination display inconsistencies where buttons and page information text appear differently across language versions of the application.\n\nRequirements:\n- Replace text-based pagination buttons (\"Next\", \"Previous\", etc.) with arrow icons across all language versions\n- Use → for next and ← for previous (or appropriate arrow icon set)\n- Ensure \"Page X of Y\" text is properly translated and displays correctly for all supported languages\n- Specifically fix the Polish language version where \"Page 1 of 2\" text is currently showing incorrectly\n- Verify pagination controls render consistently on all localized versions\n- Test with different page counts (single page, multiple pages, edge cases like page 1 and last page)\n- Ensure arrow buttons maintain proper disabled states (e.g., previous disabled on page 1, next disabled on last page)",
+      "timestamp": "2026-01-24T14:16:44.034Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-24T14:16:46.247Z"
+}

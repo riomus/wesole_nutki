@@ -1,0 +1,28 @@
+{
+  "category": "Uncategorized",
+  "description": "Audit and Translate English Text on Polish Language Pages\n\nReview all Polish language pages in the application to identify text that incorrectly appears in English, then translate it to Polish to ensure linguistic consistency.\n\nRequirements:\n- Systematically scan all pages/views designated for Polish locale\n- Identify hardcoded English strings that should be in Polish\n- Check for missing or incorrect translation keys\n- Translate identified English text to proper Polish\n- Verify translations are contextually appropriate and grammatically correct\n- Update language files, translation keys, or string resources as needed\n- Test all affected pages to ensure translations display correctly\n- Check for mixed-language scenarios (English/Polish combinations)\n\nEdge cases to consider:\n- Proper nouns and brand names that should remain in English\n- Technical terms that may not require translation\n- Dynamic content from databases or APIs that may need translation support\n- Date/time formats and number formatting for Polish locale\n- Pluralization rules specific to Polish grammar",
+  "title": "Audit and Translate English Text to Polish",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "backlog",
+  "id": "feature-1769264282364-odr0ax61l",
+  "descriptionHistory": [
+    {
+      "description": "Audit and Translate English Text on Polish Language Pages\n\nReview all Polish language pages in the application to identify text that incorrectly appears in English, then translate it to Polish to ensure linguistic consistency.\n\nRequirements:\n- Systematically scan all pages/views designated for Polish locale\n- Identify hardcoded English strings that should be in Polish\n- Check for missing or incorrect translation keys\n- Translate identified English text to proper Polish\n- Verify translations are contextually appropriate and grammatically correct\n- Update language files, translation keys, or string resources as needed\n- Test all affected pages to ensure translations display correctly\n- Check for mixed-language scenarios (English/Polish combinations)\n\nEdge cases to consider:\n- Proper nouns and brand names that should remain in English\n- Technical terms that may not require translation\n- Dynamic content from databases or APIs that may need translation support\n- Date/time formats and number formatting for Polish locale\n- Pluralization rules specific to Polish grammar",
+      "timestamp": "2026-01-24T14:18:02.462Z",
+      "source": "initial"
+    }
+  ]
+}

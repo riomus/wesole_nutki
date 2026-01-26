@@ -1,0 +1,11 @@
+{
+  "id": "evt-1769267133543-492196b2",
+  "trigger": "feature_success",
+  "timestamp": "2026-01-24T15:05:33.543Z",
+  "projectPath": "/Users/romanbartusiak/git/riomus/wesole_nutki",
+  "projectName": "wesole_nutki",
+  "featureId": "feature-1769266708095-uj1v0aksm",
+  "featureName": "Localize Polish About Page Translations",
+  "error": "Feature completed in 422s - auto-verified",
+  "passes": true
+}

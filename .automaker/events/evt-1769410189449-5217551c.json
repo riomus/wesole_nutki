@@ -1,0 +1,11 @@
+{
+  "id": "evt-1769410189449-5217551c",
+  "trigger": "feature_success",
+  "timestamp": "2026-01-26T06:49:49.449Z",
+  "projectPath": "/Users/romanbartusiak/git/riomus/wesole_nutki",
+  "projectName": "wesole_nutki",
+  "featureId": "feature-1769409998442-n3p4998om",
+  "featureName": "Fix \"Open Now\" status indicator translation",
+  "error": "Feature completed in 180s - auto-verified",
+  "passes": true
+}

@@ -1,0 +1,11 @@
+{
+  "id": "evt-1769268120723-9cf2ce21",
+  "trigger": "feature_success",
+  "timestamp": "2026-01-24T15:22:00.723Z",
+  "projectPath": "/Users/romanbartusiak/git/riomus/wesole_nutki",
+  "projectName": "wesole_nutki",
+  "featureId": "feature-1769267962732-piohbfni6",
+  "featureName": "Add Polish translation for \"Image unavailable\" message",
+  "error": "Feature completed in 152s - auto-verified",
+  "passes": true
+}

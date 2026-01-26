@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Resolve Missing Translation Keys for Schedule View\n\nFix missing translation keys in schedule.html that are preventing proper text display in the schedule interface. All keys with the 'schedule_' prefix need to be properly defined and integrated.\n\nRequirements:\n- Identify all 'schedule_' translation keys referenced in schedule.html\n- Check which keys are missing from translation files (e.g., en.json, i18n files)\n- Add missing translation key definitions with appropriate text values\n- Verify keys exist for all supported languages in the application\n- Ensure proper fallback behavior if translations are unavailable\n- Test schedule.html to confirm all text displays correctly without missing key warnings\n\nEdge Cases to Consider:\n- Keys that may be dynamically constructed or computed\n- Nested translation key structures\n- Plural forms or parameterized translations for schedule-related text",
+  "title": "Fix missing schedule translation keys",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "in_progress",
+  "id": "feature-1769268009680-584klgpxb",
+  "descriptionHistory": [
+    {
+      "description": "Resolve Missing Translation Keys for Schedule View\n\nFix missing translation keys in schedule.html that are preventing proper text display in the schedule interface. All keys with the 'schedule_' prefix need to be properly defined and integrated.\n\nRequirements:\n- Identify all 'schedule_' translation keys referenced in schedule.html\n- Check which keys are missing from translation files (e.g., en.json, i18n files)\n- Add missing translation key definitions with appropriate text values\n- Verify keys exist for all supported languages in the application\n- Ensure proper fallback behavior if translations are unavailable\n- Test schedule.html to confirm all text displays correctly without missing key warnings\n\nEdge Cases to Consider:\n- Keys that may be dynamically constructed or computed\n- Nested translation key structures\n- Plural forms or parameterized translations for schedule-related text",
+      "timestamp": "2026-01-24T15:20:09.716Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-24T15:20:11.121Z"
+}

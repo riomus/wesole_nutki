@@ -1,0 +1,28 @@
+{
+  "category": "Uncategorized",
+  "description": "Translation Keys Missing for Schedule-Related Content\n\nAdd missing translation keys for all schedule-related text strings in the application to ensure proper internationalization support.\n\nRequirements:\n- Identify all hardcoded schedule-related strings currently not using translation keys\n- Create translation key entries with the \"schedule_\" prefix following the project's naming convention\n- Add translations for all supported languages in the application\n- Replace hardcoded strings with proper translation function calls\n- Verify all schedule-related UI elements display correctly in each language\n- Check for consistency with existing translation key patterns in the codebase\n\nAreas to verify:\n- Schedule creation and editing forms\n- Schedule display views (calendar, list, etc.)\n- Schedule-related error messages and validation feedback\n- Schedule status labels and action buttons\n- Time/date formatting strings specific to schedules\n- Schedule notification and reminder text",
+  "title": "Add Schedule Translation Keys",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "backlog",
+  "id": "feature-1769268867622-6s4usci48",
+  "descriptionHistory": [
+    {
+      "description": "Translation Keys Missing for Schedule-Related Content\n\nAdd missing translation keys for all schedule-related text strings in the application to ensure proper internationalization support.\n\nRequirements:\n- Identify all hardcoded schedule-related strings currently not using translation keys\n- Create translation key entries with the \"schedule_\" prefix following the project's naming convention\n- Add translations for all supported languages in the application\n- Replace hardcoded strings with proper translation function calls\n- Verify all schedule-related UI elements display correctly in each language\n- Check for consistency with existing translation key patterns in the codebase\n\nAreas to verify:\n- Schedule creation and editing forms\n- Schedule display views (calendar, list, etc.)\n- Schedule-related error messages and validation feedback\n- Schedule status labels and action buttons\n- Time/date formatting strings specific to schedules\n- Schedule notification and reminder text",
+      "timestamp": "2026-01-24T15:34:27.716Z",
+      "source": "initial"
+    }
+  ]
+}

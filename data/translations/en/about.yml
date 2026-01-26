@@ -1,0 +1,61 @@
+# About Page translations - English
+
+# Hero Section
+about_page_title: "About Us"
+about_page_subtitle: "Get to know Wesole Nutki - a place where every child discovers joy in learning"
+
+# Mission Section
+about_mission_heading: "Our Mission"
+about_mission_subtitle: "What drives us every day"
+about_mission_content: "At Wesole Nutki, we believe every child has unlimited potential. Our mission is to support children's natural curiosity and develop their talents through creative play and modern educational methods in a warm, family atmosphere."
+about_mission_image_alt: "Children learning through play at Wesole Nutki"
+about_mission_highlight_1: "Individual approach to every child"
+about_mission_highlight_2: "Learning through music and languages"
+about_mission_highlight_3: "Safe and supportive environment"
+about_mission_highlight_4: "Experienced and passionate educators"
+
+# Values Section
+about_values_heading: "Our Core Values"
+about_values_subtitle: "The principles that guide everything we do"
+
+about_value_safety_title: "Safety First"
+about_value_safety_desc: "We provide a secure, monitored environment where children can explore and grow with confidence."
+
+about_value_creativity_title: "Creative Expression"
+about_value_creativity_desc: "Through music, art, and play, we encourage children to express themselves freely and develop their imagination."
+
+about_value_development_title: "Holistic Development"
+about_value_development_desc: "We focus on developing the whole child - cognitive, emotional, social, and physical skills."
+
+about_value_community_title: "Strong Community"
+about_value_community_desc: "We build lasting relationships between children, families, and educators, creating a supportive network."
+
+about_value_respect_title: "Respect & Kindness"
+about_value_respect_desc: "We teach children to respect others, embrace diversity, and show kindness in all interactions."
+
+about_value_joy_title: "Joy of Learning"
+about_value_joy_desc: "We believe learning should be joyful, inspiring a lifelong love of discovery and exploration."
+
+# Facilities Section
+about_facilities_heading: "Our Facilities"
+about_facilities_subtitle: "Modern spaces designed for children"
+
+about_facility_classrooms_title: "Bright Classrooms"
+about_facility_classrooms_desc: "Spacious, colorful rooms equipped with modern teaching aids and learning materials."
+
+about_facility_playground_title: "Safe Playground"
+about_facility_playground_desc: "Our own outdoor play area with safe, age-appropriate equipment for active play."
+
+about_facility_kitchen_title: "Healthy Meals"
+about_facility_kitchen_desc: "Nutritious, home-cooked meals prepared fresh daily by our experienced kitchen staff."
+
+about_facility_rest_title: "Rest Areas"
+about_facility_rest_desc: "Comfortable spaces for rest and quiet activities, ensuring children have balance in their day."
+
+# Team Section
+about_team_heading: "Meet Our Team"
+about_team_subtitle: "Dedicated professionals who care for your children"
+
+# Contact Section
+about_contact_heading: "Ready to Join Us?"
+about_contact_subtitle: "Schedule a visit to see our preschool and meet our team. We'd love to welcome your family!"

@@ -1,6 +1,15 @@
 # Footer translations - Polish
 quick_links: "Szybkie linki"
 useful_links: "Przydatne linki"
+
+# Opening hours
+opening_hours: "Godziny otwarcia"
+monday_friday: "Poniedziałek - Piątek"
+saturday: "Sobota"
+sunday: "Niedziela"
+closed: "Zamknięte"
+open_now: "Teraz otwarte"
+currently_closed: "Zamknięte"
 stay_connected: "Bądź w kontakcie"
 newsletter_signup: "Zapisz się do newslettera"
 newsletter_placeholder: "Twój adres email"

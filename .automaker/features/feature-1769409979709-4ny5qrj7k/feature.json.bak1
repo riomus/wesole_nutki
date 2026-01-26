@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Missing English Translations for Recruitment HTML Partial\n\nThe recruitment.html partial template file lacks English language translations, causing content to display incorrectly or not at all for English-speaking users.\n\nRequirements:\n- Locate the recruitment.html partial template file in the codebase\n- Identify all text strings and content that need English translations\n- Create or update the English locale file (e.g., en.yml, en.json) with appropriate translation keys\n- Ensure all translatable strings in recruitment.html use proper i18n syntax\n- Verify translations render correctly when English locale is selected\n- Check for any nested partials or components within recruitment.html that may also need translations\n- Test the recruitment page with English locale to confirm all content displays properly\n- Ensure translation keys follow the project's naming conventions\n\nEdge cases to consider:\n- Pluralization rules for dynamic content\n- Date/time formatting specific to English locales\n- Any region-specific variants (en-US, en-GB, etc.)\n- Fallback behavior if translations are missing",
+  "title": "Add English translations to recruitment partial",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "in_progress",
+  "id": "feature-1769409979709-4ny5qrj7k",
+  "descriptionHistory": [
+    {
+      "description": "Missing English Translations for Recruitment HTML Partial\n\nThe recruitment.html partial template file lacks English language translations, causing content to display incorrectly or not at all for English-speaking users.\n\nRequirements:\n- Locate the recruitment.html partial template file in the codebase\n- Identify all text strings and content that need English translations\n- Create or update the English locale file (e.g., en.yml, en.json) with appropriate translation keys\n- Ensure all translatable strings in recruitment.html use proper i18n syntax\n- Verify translations render correctly when English locale is selected\n- Check for any nested partials or components within recruitment.html that may also need translations\n- Test the recruitment page with English locale to confirm all content displays properly\n- Ensure translation keys follow the project's naming conventions\n\nEdge cases to consider:\n- Pluralization rules for dynamic content\n- Date/time formatting specific to English locales\n- Any region-specific variants (en-US, en-GB, etc.)\n- Fallback behavior if translations are missing",
+      "timestamp": "2026-01-26T06:46:19.785Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-26T06:46:47.657Z"
+}

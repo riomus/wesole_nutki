@@ -1,5 +1,7 @@
 # News/Blog translations - Polish
 all_news: "Wszystkie aktualności"
+all: "Wszystkie"
+filter_by_category: "Filtruj według kategorii"
 related_posts: "Powiązane artykuły"
 newer_posts: "Nowsze wpisy"
 older_posts: "Starsze wpisy"

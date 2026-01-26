@@ -1,7 +1,7 @@
 {
   "category": "Uncategorized",
   "description": "Investigate and Fix Broken Image URLs on GitHub Pages Site\n\nImages are not loading on the GitHub Pages deployment because the URLs are being incorrectly generated as relative paths (bartusiak.ai/wesole_nutki...) instead of absolute paths with the correct subdirectory structure (https://bartusiak.ai/images/scraped/...).\n\nRequirements:\n- Identify where image URLs are being constructed in the codebase\n- Determine why the path generation differs between local development and GitHub Pages deployment\n- Fix the URL construction to correctly reference images in the /images/scraped/ directory\n- Ensure the fix works for both local development and GitHub Pages deployment\n- Verify that base URL configuration is properly set for GitHub Pages\n- Test that all images load correctly after deployment\n- Check for any other assets (CSS, JS) that might have similar path issues\n\nExample of current broken behavior:\n- Current (broken): bartusiak.ai/wesole_nutki...\n- Expected (working): https://bartusiak.ai/images/scraped/2023-01-30-pracuj-z-wesolymi-nutkami-0.jpg",
-  "title": "",
+  "title": "Fix image URLs for GitHub Pages deployment",
   "images": [],
   "imagePaths": [],
   "textFilePaths": [],
@@ -15,7 +15,7 @@
   "requirePlanApproval": false,
   "dependencies": [],
   "workMode": "current",
-  "titleGenerating": "Investigate and Fix Broken Image URLs on GitHub Pages Site\n\nImages are not loading on the GitHub Pages deployment because the URLs are being incorrectly generated as relative paths (bartusiak.ai/wesole_nutki...) instead of absolute paths with the correct subdirectory structure (https://bartusiak.ai/images/scraped/...).\n\nRequirements:\n- Identify where image URLs are being constructed in the codebase\n- Determine why the path generation differs between local development and GitHub Pages deployment\n- Fix the URL construction to correctly reference images in the /images/scraped/ directory\n- Ensure the fix works for both local development and GitHub Pages deployment\n- Verify that base URL configuration is properly set for GitHub Pages\n- Test that all images load correctly after deployment\n- Check for any other assets (CSS, JS) that might have similar path issues\n\nExample of current broken behavior:\n- Current (broken): bartusiak.ai/wesole_nutki...\n- Expected (working): https://bartusiak.ai/images/scraped/2023-01-30-pracuj-z-wesolymi-nutkami-0.jpg",
+  "titleGenerating": false,
   "status": "backlog",
   "id": "feature-1769201239372-pe132zak7",
   "descriptionHistory": [

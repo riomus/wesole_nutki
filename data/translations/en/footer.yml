@@ -1,6 +1,15 @@
 # Footer translations - English
 quick_links: "Quick Links"
 useful_links: "Useful Links"
+
+# Opening hours
+opening_hours: "Opening Hours"
+monday_friday: "Monday - Friday"
+saturday: "Saturday"
+sunday: "Sunday"
+closed: "Closed"
+open_now: "Open now"
+currently_closed: "Closed"
 stay_connected: "Stay Connected"
 newsletter_signup: "Newsletter signup"
 newsletter_placeholder: "Your email address"

@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Resolve Missing Translations and Default Values in Schedule Timeline Component\n\nAudit and complete all translation strings in the .schedule-timeline component to ensure proper localization and remove hardcoded default values.\n\nRequirements:\n- Identify all text content in .schedule-timeline that displays default/untranslated values\n- Add missing translation keys to the appropriate locale files\n- Replace hardcoded strings with proper translation function calls\n- Verify translations exist for all supported languages\n- Test the component in different locales to confirm all text displays correctly\n- Check for edge cases like pluralization, date/time formatting, and dynamic content\n- Ensure fallback behavior is appropriate if translations are unavailable",
+  "title": "Fix missing translations in schedule timeline component",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "verified",
+  "id": "feature-1769269577899-rj9gn1axp",
+  "descriptionHistory": [
+    {
+      "description": "Resolve Missing Translations and Default Values in Schedule Timeline Component\n\nAudit and complete all translation strings in the .schedule-timeline component to ensure proper localization and remove hardcoded default values.\n\nRequirements:\n- Identify all text content in .schedule-timeline that displays default/untranslated values\n- Add missing translation keys to the appropriate locale files\n- Replace hardcoded strings with proper translation function calls\n- Verify translations exist for all supported languages\n- Test the component in different locales to confirm all text displays correctly\n- Check for edge cases like pluralization, date/time formatting, and dynamic content\n- Ensure fallback behavior is appropriate if translations are unavailable",
+      "timestamp": "2026-01-24T15:46:18.004Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-24T15:52:19.667Z"
+}

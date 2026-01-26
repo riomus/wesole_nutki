@@ -13,7 +13,7 @@ items:
 
   - identifier: news
     name: Aktualności
-    url: /pl/news
+    url: /pl/news/
     weight: 2
     i18n_key: menu_news
     external: false
@@ -21,14 +21,14 @@ items:
 
   - identifier: about
     name: O przedszkolu
-    url: pl/about
+    url: /pl/about/
     weight: 3
     i18n_key: menu_about
     external: false
     open_in_new_tab: false
   - identifier: offer
     name: Oferta
-    url: /pl/programs
+    url: /pl/programs/
     weight: 3
     i18n_key: menu_offer
     external: false
@@ -141,7 +141,7 @@ items:
 
   - identifier: contact
     name: Kontakt
-    url: pl/contact/
+    url: /pl/contact/
     weight: 9
     i18n_key: menu_contact
     external: false

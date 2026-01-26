@@ -1,5 +1,302 @@
 # UI translations - Auto-generated from data/translations/
 
+[about_page_title]
+other = "About Us"
+
+[about_page_subtitle]
+other = "Get to know Wesole Nutki - a place where every child discovers joy in learning"
+
+[about_mission_heading]
+other = "Our Mission"
+
+[about_mission_subtitle]
+other = "What drives us every day"
+
+[about_mission_content]
+other = "At Wesole Nutki, we believe every child has unlimited potential. Our mission is to support children's natural curiosity and develop their talents through creative play and modern educational methods in a warm, family atmosphere."
+
+[about_mission_image_alt]
+other = "Children learning through play at Wesole Nutki"
+
+[about_mission_highlight_1]
+other = "Individual approach to every child"
+
+[about_mission_highlight_2]
+other = "Learning through music and languages"
+
+[about_mission_highlight_3]
+other = "Safe and supportive environment"
+
+[about_mission_highlight_4]
+other = "Experienced and passionate educators"
+
+[about_values_heading]
+other = "Our Core Values"
+
+[about_values_subtitle]
+other = "The principles that guide everything we do"
+
+[about_value_safety_title]
+other = "Safety First"
+
+[about_value_safety_desc]
+other = "We provide a secure, monitored environment where children can explore and grow with confidence."
+
+[about_value_creativity_title]
+other = "Creative Expression"
+
+[about_value_creativity_desc]
+other = "Through music, art, and play, we encourage children to express themselves freely and develop their imagination."
+
+[about_value_development_title]
+other = "Holistic Development"
+
+[about_value_development_desc]
+other = "We focus on developing the whole child - cognitive, emotional, social, and physical skills."
+
+[about_value_community_title]
+other = "Strong Community"
+
+[about_value_community_desc]
+other = "We build lasting relationships between children, families, and educators, creating a supportive network."
+
+[about_value_respect_title]
+other = "Respect & Kindness"
+
+[about_value_respect_desc]
+other = "We teach children to respect others, embrace diversity, and show kindness in all interactions."
+
+[about_value_joy_title]
+other = "Joy of Learning"
+
+[about_value_joy_desc]
+other = "We believe learning should be joyful, inspiring a lifelong love of discovery and exploration."
+
+[about_facilities_heading]
+other = "Our Facilities"
+
+[about_facilities_subtitle]
+other = "Modern spaces designed for children"
+
+[about_facility_classrooms_title]
+other = "Bright Classrooms"
+
+[about_facility_classrooms_desc]
+other = "Spacious, colorful rooms equipped with modern teaching aids and learning materials."
+
+[about_facility_playground_title]
+other = "Safe Playground"
+
+[about_facility_playground_desc]
+other = "Our own outdoor play area with safe, age-appropriate equipment for active play."
+
+[about_facility_kitchen_title]
+other = "Healthy Meals"
+
+[about_facility_kitchen_desc]
+other = "Nutritious, home-cooked meals prepared fresh daily by our experienced kitchen staff."
+
+[about_facility_rest_title]
+other = "Rest Areas"
+
+[about_facility_rest_desc]
+other = "Comfortable spaces for rest and quiet activities, ensuring children have balance in their day."
+
+[about_team_heading]
+other = "Our Team"
+
+[about_team_subtitle]
+other = "Meet our qualified and dedicated teachers"
+
+[about_contact_heading]
+other = "Ready to Join Us?"
+
+[about_contact_subtitle]
+other = "Schedule a visit to see our preschool and meet our team. We'd love to welcome your family!"
+
+[contact_information]
+other = "Contact Information"
+
+[our_location]
+other = "Our Location"
+
+[get_directions]
+other = "Get directions"
+
+[opening_hours]
+other = "Opening Hours"
+
+[send_message]
+other = "Send message"
+
+[your_name]
+other = "Your name"
+
+[your_email]
+other = "Your email"
+
+[your_phone]
+other = "Your phone"
+
+[your_message]
+other = "Your message"
+
+[message_sent]
+other = "Message sent"
+
+[message_error]
+other = "Error sending message"
+
+[schedule_visit_heading]
+other = "Schedule a Visit"
+
+[schedule_visit_description]
+other = "We invite you to visit our preschool and meet our team."
+
+[schedule_visit_text]
+other = "We invite you to visit our preschool. We'll show you our classrooms, introduce our staff, and answer all your questions."
+
+[visit_form_name]
+other = "Full name"
+
+[visit_form_email]
+other = "Email"
+
+[visit_form_phone]
+other = "Phone"
+
+[visit_form_date]
+other = "Preferred date"
+
+[visit_form_time]
+other = "Preferred time"
+
+[visit_form_message]
+other = "Message (optional)"
+
+[visit_form_submit]
+other = "Schedule visit"
+
+[call_us]
+other = "Call Us"
+
+[email_us]
+other = "Email Us"
+
+[map_title]
+other = "Interactive map showing preschool location"
+
+[how_to_reach_us]
+other = "How to Reach Us"
+
+[by_car]
+other = "By Car"
+
+[by_public_transport]
+other = "By Public Transport"
+
+[parking]
+other = "Parking"
+
+[page_not_found]
+other = "Page not found"
+
+[page_not_found_message]
+other = "Sorry, the page you are looking for does not exist."
+
+[page_not_found_encouragement]
+other = "Don't worry! You can explore our site using the links below."
+
+[helpful_links]
+other = "Helpful Links"
+
+[error_404]
+other = "Error 404"
+
+[error_500]
+other = "Error 500"
+
+[error_500_message]
+other = "Sorry, something went wrong."
+
+[try_again]
+other = "Try again"
+
+[quick_links]
+other = "Quick Links"
+
+[useful_links]
+other = "Useful Links"
+
+[monday_friday]
+other = "Monday - Friday"
+
+[saturday]
+other = "Saturday"
+
+[sunday]
+other = "Sunday"
+
+[closed]
+other = "Closed"
+
+[open_now]
+other = "Open now"
+
+[currently_closed]
+other = "Closed"
+
+[stay_connected]
+other = "Stay Connected"
+
+[newsletter_signup]
+other = "Newsletter signup"
+
+[newsletter_placeholder]
+other = "Your email address"
+
+[newsletter_submit]
+other = "Subscribe"
+
+[newsletter_success]
+other = "Thank you for subscribing!"
+
+[social_media]
+other = "Social Media"
+
+[preschool_info]
+other = "About the preschool"
+
+[footer_description]
+other = "Wesole Nutki - a preschool where children develop through music, languages, and play."
+
+[view_gallery]
+other = "View gallery"
+
+[all_galleries]
+other = "All galleries"
+
+[other_galleries]
+other = "Other galleries"
+
+[view_full_gallery]
+other = "View full gallery"
+
+[back_to_gallery]
+other = "Back to gallery"
+
+[back_to_galleries]
+other = "Back to galleries"
+
+[no_galleries]
+other = "No galleries"
+
+[gallery_categories]
+other = "Gallery categories"
+
+[latest_galleries]
+other = "Latest galleries"
+
 [site_title]
 other = "Wesole Nutki"
 
@@ -77,6 +374,111 @@ other = "by"
 
 [copyright]
 other = "All rights reserved"
+
+[image_unavailable]
+other = "Image unavailable"
+
+[hero_headline]
+other = "Wesole Nutki - Preschool in Wroclaw"
+
+[hero_subheadline]
+other = "A place where every child discovers the joy of learning through play, creativity, and friendship. Join our preschool family today!"
+
+[why_choose_us]
+other = "Why Choose Us?"
+
+[why_choose_us_subtitle]
+other = "Discover what makes our preschool special"
+
+[loving_care]
+other = "Loving Care"
+
+[loving_care_desc]
+other = "A nurturing environment where every child feels valued and loved."
+
+[quality_education]
+other = "Quality Education"
+
+[quality_education_desc]
+other = "Engaging curriculum designed to inspire curiosity and a love of learning."
+
+[community]
+other = "Community"
+
+[community_desc]
+other = "A welcoming community of families, teachers, and children."
+
+[safe_environment]
+other = "Safe Environment"
+
+[safe_environment_desc]
+other = "A secure space designed with children's safety and well-being as the top priority."
+
+[play_based_learning]
+other = "Play-Based Learning"
+
+[play_based_learning_desc]
+other = "Learning through creative play, exploration, and hands-on activities."
+
+[qualified_teachers]
+other = "Qualified Teachers"
+
+[qualified_teachers_desc]
+other = "Experienced and passionate educators dedicated to early childhood development."
+
+[happy_children]
+other = "Happy Children"
+
+[expert_teachers]
+other = "Expert Teachers"
+
+[years_experience]
+other = "Years Experience"
+
+[parent_satisfaction]
+other = "% Parent Satisfaction"
+
+[ready_to_start]
+other = "Ready to Give Your Child the Best Start?"
+
+[cta_description]
+other = "Join our warm and welcoming preschool community. Schedule a visit today!"
+
+[latest_news]
+other = "Latest news"
+
+[latest_news_subtitle]
+other = "See what's happening at our preschool"
+
+[about_us_subtitle]
+other = "Get to know our preschool"
+
+[about_preview_text]
+other = "Wesole Nutki is a place where children develop in an atmosphere of joy and creative play."
+
+[about_image_alt]
+other = "Children playing at preschool"
+
+[recruitment_heading]
+other = "RECRUITMENT"
+
+[recruitment_announcement]
+other = "Enrollment now open for our language and music preschool"
+
+[recruitment_details]
+other = "WESOŁE NUTKI welcomes children born in 2022. We also have two spots available for children born in 2019"
+
+[download_form_text]
+other = "Download enrollment form:"
+
+[download_application_form]
+other = "Download enrollment form"
+
+[view_documents]
+other = "View documents"
+
+[recruitment_cta]
+other = "JOIN US TODAY!"
 
 [home]
 other = "Home"
@@ -183,87 +585,6 @@ other = "Documents"
 [menu_more_recruitment]
 other = "Recruitment"
 
-[hero_headline]
-other = "Wesole Nutki - Preschool in Wroclaw"
-
-[hero_subheadline]
-other = "A place where every child discovers the joy of learning through play, creativity, and friendship. Join our preschool family today!"
-
-[why_choose_us]
-other = "Why Choose Us?"
-
-[why_choose_us_subtitle]
-other = "Discover what makes our preschool special"
-
-[loving_care]
-other = "Loving Care"
-
-[loving_care_desc]
-other = "A nurturing environment where every child feels valued and loved."
-
-[quality_education]
-other = "Quality Education"
-
-[quality_education_desc]
-other = "Engaging curriculum designed to inspire curiosity and a love of learning."
-
-[community]
-other = "Community"
-
-[community_desc]
-other = "A welcoming community of families, teachers, and children."
-
-[safe_environment]
-other = "Safe Environment"
-
-[safe_environment_desc]
-other = "A secure space designed with children's safety and well-being as the top priority."
-
-[play_based_learning]
-other = "Play-Based Learning"
-
-[play_based_learning_desc]
-other = "Learning through creative play, exploration, and hands-on activities."
-
-[qualified_teachers]
-other = "Qualified Teachers"
-
-[qualified_teachers_desc]
-other = "Experienced and passionate educators dedicated to early childhood development."
-
-[happy_children]
-other = "Happy Children"
-
-[expert_teachers]
-other = "Expert Teachers"
-
-[years_experience]
-other = "Years Experience"
-
-[parent_satisfaction]
-other = "% Parent Satisfaction"
-
-[ready_to_start]
-other = "Ready to Give Your Child the Best Start?"
-
-[cta_description]
-other = "Join our warm and welcoming preschool community. Schedule a visit today!"
-
-[latest_news]
-other = "Latest news"
-
-[latest_news_subtitle]
-other = "See what's happening at our preschool"
-
-[about_us_subtitle]
-other = "Get to know our preschool"
-
-[about_preview_text]
-other = "Wesole Nutki is a place where children develop in an atmosphere of joy and creative play."
-
-[about_image_alt]
-other = "Children playing at preschool"
-
 [all_news]
 other = "All news"
 
@@ -300,30 +621,6 @@ other = "News archive"
 [featured_news]
 other = "Featured news"
 
-[view_gallery]
-other = "View gallery"
-
-[all_galleries]
-other = "All galleries"
-
-[other_galleries]
-other = "Other galleries"
-
-[view_full_gallery]
-other = "View full gallery"
-
-[back_to_galleries]
-other = "Back to galleries"
-
-[no_galleries]
-other = "No galleries"
-
-[gallery_categories]
-other = "Gallery categories"
-
-[latest_galleries]
-other = "Latest galleries"
-
 [all_programs]
 other = "All programs"
 
@@ -342,11 +639,29 @@ other = "Hours"
 [daily_schedule]
 other = "Daily schedule"
 
+[program_schedule]
+other = "Daily Schedule"
+
 [program_features]
 other = "Program features"
 
 [program_activities]
 other = "Activities"
+
+[program_info]
+other = "Program Info"
+
+[key_features]
+other = "Key Features"
+
+[interested_in_program]
+other = "Interested?"
+
+[program_cta_text]
+other = "Contact us to learn more about this program and schedule a visit."
+
+[other_programs]
+other = "Other Programs"
 
 [enrollment_info]
 other = "Enrollment information"
@@ -360,128 +675,135 @@ other = "View schedule"
 [download_schedule]
 other = "Download schedule"
 
-[contact_information]
-other = "Contact Information"
+[ready_to_enroll]
+other = "Ready to Enroll Your Child?"
 
-[our_location]
-other = "Our Location"
+[enroll_cta_description]
+other = "Contact us to learn more about our programs and schedule a visit to our preschool."
 
-[get_directions]
-other = "Get directions"
+[daily_schedule_subtitle]
+other = "A typical day at our preschool"
 
-[opening_hours]
-other = "Opening Hours"
+[view_full_schedule]
+other = "View Full Schedule"
 
-[send_message]
-other = "Send message"
+[schedule_morning]
+other = "Morning"
 
-[your_name]
-other = "Your name"
+[schedule_learning_time]
+other = "Learning Time"
 
-[your_email]
-other = "Your email"
+[schedule_midday]
+other = "Midday"
 
-[your_phone]
-other = "Your phone"
+[schedule_afternoon_title]
+other = "Afternoon"
 
-[your_message]
-other = "Your message"
+[schedule_arrival]
+other = "Arrival & Free Play"
 
-[message_sent]
-other = "Message sent"
+[schedule_arrival_desc]
+other = "Children arrive and engage in free play activities"
 
-[message_error]
-other = "Error sending message"
+[schedule_arrival_full]
+other = "Children arrive and engage in quiet activities, free play in learning centers, individual conversations with teachers."
 
-[schedule_visit_heading]
-other = "Schedule a Visit"
+[schedule_breakfast]
+other = "Breakfast"
 
-[schedule_visit_description]
-other = "We invite you to visit our preschool and meet our team."
+[schedule_breakfast_desc]
+other = "Healthy breakfast time together"
 
-[visit_form_name]
-other = "Full name"
+[schedule_breakfast_full]
+other = "Healthy breakfast prepared fresh daily. Children learn table manners and self-service skills."
 
-[visit_form_email]
-other = "Email"
+[schedule_circle]
+other = "Circle Time"
 
-[visit_form_phone]
-other = "Phone"
+[schedule_circle_full]
+other = "Morning greeting, calendar activities, discussing the day's plan, songs and movement activities."
 
-[visit_form_date]
-other = "Preferred date"
+[schedule_learning]
+other = "Learning Activities"
 
-[visit_form_time]
-other = "Preferred time"
+[schedule_learning_desc]
+other = "Educational activities, creative play, and outdoor time"
 
-[visit_form_message]
-other = "Message (optional)"
+[schedule_main_activity]
+other = "Main Educational Activity"
 
-[visit_form_submit]
-other = "Schedule visit"
+[schedule_main_activity_full]
+other = "Structured learning activities based on weekly theme: literacy, math, science, art, or social studies. Small group and individual instruction."
 
-[quick_links]
-other = "Quick Links"
+[schedule_outdoor]
+other = "Outdoor Play & Physical Activity"
 
-[useful_links]
-other = "Useful Links"
+[schedule_outdoor_full]
+other = "Structured outdoor play, sports activities, nature exploration. In bad weather: indoor gym or movement activities."
 
-[stay_connected]
+[schedule_lunch]
+other = "Lunch"
+
+[schedule_lunch_desc]
+other = "Nutritious lunch prepared fresh daily"
+
+[schedule_lunch_full]
+other = "Nutritious hot lunch prepared by our kitchen. Balanced meals following children's dietary needs and preferences."
+
+[schedule_rest]
+other = "Rest Time"
+
+[schedule_rest_desc]
+other = "Quiet time and nap for younger children"
+
+[schedule_rest_full]
+other = "Nap time for younger children. Older children engage in quiet activities: reading, puzzles, art projects."
+
+[schedule_afternoon]
+other = "Afternoon Activities"
+
+[schedule_afternoon_desc]
+other = "Snack time and creative afternoon activities"
+
+[schedule_snack]
+other = "Afternoon Snack"
+
+[schedule_snack_full]
+other = "Light healthy snack: fruits, vegetables, dairy products, whole grain snacks."
+
+[schedule_enrichment]
+other = "Enrichment Activities"
+
+[schedule_enrichment_full]
+other = "Specialized activities: music, dance, English, art workshops, science experiments, or special events."
+
+[schedule_departure]
+other = "Free Play & Departure"
+
+[schedule_departure_desc]
+other = "Free play and gradual pickup by parents"
+
+[schedule_departure_full]
+other = "Free play time, learning centers, outdoor play (weather permitting). Gradual pickup by parents with opportunity for teacher communication."
+
+[meals_nutrition]
+other = "Meals & Nutrition"
+
+[meals_nutrition_desc]
+other = "All meals are prepared fresh daily in our kitchen using high-quality ingredients. We accommodate dietary restrictions and allergies."
+
+[what_to_bring]
+other = "What to Bring"
+
+[what_to_bring_desc]
+other = "Comfortable clothes for play, indoor shoes, change of clothes, and any comfort items for rest time (for younger children)."
+
+[parent_communication]
 other = "Stay Connected"
 
-[newsletter_signup]
-other = "Newsletter signup"
+[parent_communication_desc]
+other = "Regular updates through our parent app, daily reports, and open communication with teachers during drop-off and pick-up times."
 
-[newsletter_placeholder]
-other = "Your email address"
-
-[newsletter_submit]
-other = "Subscribe"
-
-[newsletter_success]
-other = "Thank you for subscribing!"
-
-[social_media]
-other = "Social Media"
-
-[preschool_info]
-other = "About the preschool"
-
-[footer_description]
-other = "Wesole Nutki - a preschool where children develop through music, languages, and play."
-
-[page_not_found]
-other = "Page not found"
-
-[page_not_found_message]
-other = "Sorry, the page you are looking for does not exist."
-
-[page_not_found_encouragement]
-other = "Don't worry! You can explore our site using the links below."
-
-[helpful_links]
-other = "Helpful Links"
-
-[error_404]
-other = "Error 404"
-
-[error_500]
-other = "Error 500"
-
-[error_500_message]
-other = "Sorry, something went wrong."
-
-[try_again]
-other = "Try again"
-
-# Team/Staff Section
-[about_team_heading]
-other = "Our Team"
-
-[about_team_subtitle]
-other = "Meet our qualified and dedicated teachers"
-
-# Staff Roles
 [staff_role_director]
 other = "Director"
 
@@ -530,7 +852,6 @@ other = "Psycho-Dietitian"
 [staff_role_maintenance]
 other = "Maintenance Staff"
 
-# Staff Biographies
 [staff_bio_director]
 other = "Experienced educator with a passion for working with children"
 

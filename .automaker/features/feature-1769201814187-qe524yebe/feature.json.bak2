@@ -1,7 +1,7 @@
 {
   "category": "Uncategorized",
   "description": "Implement Full CMS Management for All Website Sections\n\nEnable complete content management system control over all website sections, allowing non-technical staff to create, edit, and delete content without code changes.\n\nRequirements:\n- Create CMS models/schemas for all currently hard-coded sections\n- Implement CRUD interfaces for managing programs (add, edit, delete, reorder)\n- Implement CRUD interfaces for managing people/team members (profiles, bios, photos, roles)\n- Ensure all text content is editable through CMS (headings, descriptions, body text)\n- Make all images manageable through CMS (upload, replace, alt text)\n- Add ability to control section visibility (show/hide sections)\n- Implement drag-and-drop or ordering controls for resequencing items\n- Add rich text editing capabilities where appropriate\n- Include image upload with automatic resizing/optimization\n- Set up proper validation rules for required fields\n- Create preview functionality before publishing changes\n- Test all CRUD operations work correctly and update live site\n- Document CMS structure and provide usage guide for content editors\n\nSections to verify are CMS-managed:\n- Programs section (titles, descriptions, details, images)\n- People/Team section (names, roles, bios, headshots)\n- Any other content sections currently in the site",
-  "title": "",
+  "title": "Implement Full CMS for Dynamic Content Management",
   "images": [],
   "imagePaths": [],
   "textFilePaths": [],
@@ -15,7 +15,7 @@
   "requirePlanApproval": false,
   "dependencies": [],
   "workMode": "current",
-  "titleGenerating": "Implement Full CMS Management for All Website Sections\n\nEnable complete content management system control over all website sections, allowing non-technical staff to create, edit, and delete content without code changes.\n\nRequirements:\n- Create CMS models/schemas for all currently hard-coded sections\n- Implement CRUD interfaces for managing programs (add, edit, delete, reorder)\n- Implement CRUD interfaces for managing people/team members (profiles, bios, photos, roles)\n- Ensure all text content is editable through CMS (headings, descriptions, body text)\n- Make all images manageable through CMS (upload, replace, alt text)\n- Add ability to control section visibility (show/hide sections)\n- Implement drag-and-drop or ordering controls for resequencing items\n- Add rich text editing capabilities where appropriate\n- Include image upload with automatic resizing/optimization\n- Set up proper validation rules for required fields\n- Create preview functionality before publishing changes\n- Test all CRUD operations work correctly and update live site\n- Document CMS structure and provide usage guide for content editors\n\nSections to verify are CMS-managed:\n- Programs section (titles, descriptions, details, images)\n- People/Team section (names, roles, bios, headshots)\n- Any other content sections currently in the site",
+  "titleGenerating": false,
   "status": "in_progress",
   "id": "feature-1769201814187-qe524yebe",
   "descriptionHistory": [

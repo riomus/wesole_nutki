@@ -2861,17 +2861,6 @@ img.img-fluid {
     display: block !important; }
 .d-flex {
     display: flex !important; }
-@media (min-width: 576px) {
-    .d-sm-none {
-      display: none !important; }
-    .d-sm-inline {
-      display: inline !important; }
-    .d-sm-inline-block {
-      display: inline-block !important; }
-    .d-sm-block {
-      display: block !important; }
-    .d-sm-flex {
-      display: flex !important; } }
 @media (min-width: 992px) {
     .d-lg-none {
       display: none !important; }
@@ -5857,12 +5846,6 @@ img.img-fluid {
 .pagination .page-link-prev .page-link-text,
       .pagination .page-link-next .page-link-text {
         white-space: nowrap; }
-.pagination-info {
-    margin-top: 0.75rem;
-    text-align: center;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    color: var(--bs-secondary, #6c757d); }
 .pagination-nav {
     margin-top: 1.25rem; }
 .breadcrumb-section {

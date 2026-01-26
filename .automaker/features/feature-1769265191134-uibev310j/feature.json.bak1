@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Correct Missing Translations on PL About Page\n\nThe Polish language version of the About page (/pl/about) contains multiple untranslated elements that are still displaying in the default language instead of Polish.\n\nRequirements:\n- Audit the /pl/about page to identify all untranslated text elements\n- Locate the corresponding translation keys in the Polish language files\n- Add missing Polish translations for all identified elements\n- Verify translations include: headings, body text, button labels, navigation items, meta tags, and any dynamic content\n- Ensure translations are contextually appropriate and grammatically correct\n- Test the page after updates to confirm all elements render in Polish\n- Check for any hardcoded strings that need to be moved to translation files\n\nEdge cases to consider:\n- Pluralization rules specific to Polish language\n- Date/time formatting according to Polish conventions\n- Character encoding for Polish special characters (ą, ć, ę, ł, ń, ó, ś, ź, ż)\n- Fallback behavior if translations are missing",
+  "title": "Fix Missing Polish Translations on About Page",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "verified",
+  "id": "feature-1769265191134-uibev310j",
+  "descriptionHistory": [
+    {
+      "description": "Correct Missing Translations on PL About Page\n\nThe Polish language version of the About page (/pl/about) contains multiple untranslated elements that are still displaying in the default language instead of Polish.\n\nRequirements:\n- Audit the /pl/about page to identify all untranslated text elements\n- Locate the corresponding translation keys in the Polish language files\n- Add missing Polish translations for all identified elements\n- Verify translations include: headings, body text, button labels, navigation items, meta tags, and any dynamic content\n- Ensure translations are contextually appropriate and grammatically correct\n- Test the page after updates to confirm all elements render in Polish\n- Check for any hardcoded strings that need to be moved to translation files\n\nEdge cases to consider:\n- Pluralization rules specific to Polish language\n- Date/time formatting according to Polish conventions\n- Character encoding for Polish special characters (ą, ć, ę, ł, ń, ó, ś, ź, ż)\n- Fallback behavior if translations are missing",
+      "timestamp": "2026-01-24T14:33:11.221Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-24T14:40:04.089Z"
+}

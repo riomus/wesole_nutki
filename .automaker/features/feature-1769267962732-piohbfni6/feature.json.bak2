@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Add Polish Translation for \"Image unavailable\" Message\n\nEnsure the \"Image unavailable\" text is properly translated to Polish and configured in the application's translation system.\n\nRequirements:\n- Locate all instances of \"Image unavailable\" text in the codebase\n- Add Polish translation key to the translation configuration file\n- Provide accurate Polish translation (e.g., \"Obraz niedostępny\")\n- Replace hardcoded \"Image unavailable\" strings with translation keys\n- Verify translation appears correctly when Polish locale is selected\n- Ensure translation follows existing translation file structure and naming conventions\n- Test that fallback to English works if translation is missing",
+  "title": "Add Polish translation for \"Image unavailable\" message",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "in_progress",
+  "id": "feature-1769267962732-piohbfni6",
+  "descriptionHistory": [
+    {
+      "description": "Add Polish Translation for \"Image unavailable\" Message\n\nEnsure the \"Image unavailable\" text is properly translated to Polish and configured in the application's translation system.\n\nRequirements:\n- Locate all instances of \"Image unavailable\" text in the codebase\n- Add Polish translation key to the translation configuration file\n- Provide accurate Polish translation (e.g., \"Obraz niedostępny\")\n- Replace hardcoded \"Image unavailable\" strings with translation keys\n- Verify translation appears correctly when Polish locale is selected\n- Ensure translation follows existing translation file structure and naming conventions\n- Test that fallback to English works if translation is missing",
+      "timestamp": "2026-01-24T15:19:22.829Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-24T15:19:28.898Z"
+}

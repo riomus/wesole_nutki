@@ -2828,6 +2828,476 @@ Success Criteria:
 - Both pl and en translations work correctly through CMS
 - Content editors can successfully modify all webpage sections</description>
     </feature>
+    <feature>
+      <name>Standardize pagination controls across language versions</name>
+      <description>Standardize Pagination Controls Across All Language Versions
+
+Fix pagination display inconsistencies where buttons and page information text appear differently across language versions of the application.
+
+Requirements:
+- Replace text-based pagination buttons (&quot;Next&quot;, &quot;Previous&quot;, etc.) with arrow icons across all language versions
+- Use → for next and ← for previous (or appropriate arrow icon set)
+- Ensure &quot;Page X of Y&quot; text is properly translated and displays correctly for all supported languages
+- Specifically fix the Polish language version where &quot;Page 1 of 2&quot; text is currently showing incorrectly
+- Verify pagination controls render consistently on all localized versions
+- Test with different page counts (single page, multiple pages, edge cases like page 1 and last page)
+- Ensure arrow buttons maintain proper disabled states (e.g., previous disabled on page 1, next disabled on last page)</description>
+    </feature>
+    <feature>
+      <name>Fix Duplicate Path Segments in GitHub Pages Deployment</name>
+      <description>Fix GitHub Pages Deployment Path Configuration
+
+Resolve 404 errors on GitHub Pages deployment caused by incorrect asset path references in the wesole_nutki website.
+
+Problem:
+Static assets (CSS and JavaScript files) are failing to load with 404 errors due to duplicated path segments in URLs (e.g., /wesole_nutki/wesole_nutki/ instead of /wesole_nutki/).
+
+Requirements:
+- Investigate base URL configuration in the site generator or build tool (Hugo, Jekyll, etc.)
+- Correct the baseURL or publicPath setting to match GitHub Pages repository structure
+- Verify asset path generation removes the duplicate /wesole_nutki/ directory reference
+- Rebuild and redeploy the site to GitHub Pages
+- Test all affected resources load correctly:
+  * style.min.338bd0ca61754884d1ae2ea296a84b75bbd045df2ac61c820201736102fe66ef.css
+  * glightbox.min.min.9961219639aa1b1bc73b0871fb62a7ae5d196bd874155d9c09f284bf11a66839.css
+  * bundle.02c579cb5d066be6659a8af0fdbe68aecc966cd2e65c72582734efeafe7a0d3f.js
+- Verify the site renders correctly at https://bartusiak.ai/wesole_nutki/
+- Check for any additional broken links or asset references throughout the site
+
+
+seems like it doubles the path wesole_nutki</description>
+    </feature>
+    <feature>
+      <name>Audit and Translate English Text to Polish</name>
+      <description>Audit and Translate English Text on Polish Language Pages
+
+Review all Polish language pages in the application to identify text that incorrectly appears in English, then translate it to Polish to ensure linguistic consistency.
+
+Requirements:
+- Systematically scan all pages/views designated for Polish locale
+- Identify hardcoded English strings that should be in Polish
+- Check for missing or incorrect translation keys
+- Translate identified English text to proper Polish
+- Verify translations are contextually appropriate and grammatically correct
+- Update language files, translation keys, or string resources as needed
+- Test all affected pages to ensure translations display correctly
+- Check for mixed-language scenarios (English/Polish combinations)
+
+Edge cases to consider:
+- Proper nouns and brand names that should remain in English
+- Technical terms that may not require translation
+- Dynamic content from databases or APIs that may need translation support
+- Date/time formats and number formatting for Polish locale
+- Pluralization rules specific to Polish grammar</description>
+    </feature>
+    <feature>
+      <name>Fix localhost asset paths for dual-environment compatibility</name>
+      <description>Fix LocalHost Development Server Path Configuration
+
+Resolve 404 errors preventing the website from loading on localhost during development while maintaining compatibility with GitHub Pages deployment at bartusiak.ai/wesole_nutki.
+
+Requirements:
+- Configure asset paths (CSS, JS, images) to work in both environments:
+  * LocalHost: root path (http://localhost:port/)
+  * Production: subdirectory path (https://bartusiak.ai/wesole_nutki/)
+- Fix CSS file loading errors:
+  * style.min.338bd0ca61754884d1ae2ea296a84b75bbd045df2ac61c820201736102fe66ef.css
+  * glightbox.min.min.9961219639aa1b1bc73b0871fb62a7ae5d196bd874155d9c09f284bf11a66839.css
+- Fix JavaScript bundle loading error:
+  * bundle.02c579cb5d066be6659a8af0fdbe68aecc966cd2e65c72582734efeafe7a0d3f.js
+- Fix image asset loading (hero-bg.svg and other images)
+- Implement environment-aware base path configuration
+- Verify all static assets are correctly copied to build output
+- Test thoroughly in both environments to confirm no broken links or missing resources
+
+Technical Considerations:
+- Check build tool configuration (webpack/vite/hugo/etc) for base URL settings
+- Ensure static asset paths use relative or configurable base paths
+- Verify deployment script correctly handles subdirectory structure for GitHub Pages
+- Confirm development server serves assets from correct directory</description>
+    </feature>
+    <feature>
+      <name>Fix pagination text translation on Polish language pages</name>
+      <description>Fix Pagination Information Display on Polish Language Page
+
+Resolve the language inconsistency where pagination information text appears in English on the Polish version of the page.
+
+Requirements:
+- Locate the .pagination-info element displaying English text on Polish pages
+- Attempt to implement Polish translation for the pagination text
+  - Identify the translation system/method used in the application (i18n, language files, etc.)
+  - Add Polish translation strings if translation infrastructure exists
+  - Ensure dynamic values (page numbers, total counts) are properly interpolated in Polish
+- If translation is not feasible or supported:
+  - Remove the .pagination-info element entirely from Polish pages
+  - Ensure removal doesn&apos;t break layout or functionality
+  - Verify pagination controls still work correctly without the info text
+- Test the solution on Polish language pages to confirm correct display
+- Check that the change doesn&apos;t affect other language versions (especially English)</description>
+    </feature>
+    <feature>
+      <name>Fix Missing Polish Translations on About Page</name>
+      <description>Correct Missing Translations on PL About Page
+
+The Polish language version of the About page (/pl/about) contains multiple untranslated elements that are still displaying in the default language instead of Polish.
+
+Requirements:
+- Audit the /pl/about page to identify all untranslated text elements
+- Locate the corresponding translation keys in the Polish language files
+- Add missing Polish translations for all identified elements
+- Verify translations include: headings, body text, button labels, navigation items, meta tags, and any dynamic content
+- Ensure translations are contextually appropriate and grammatically correct
+- Test the page after updates to confirm all elements render in Polish
+- Check for any hardcoded strings that need to be moved to translation files
+
+Edge cases to consider:
+- Pluralization rules specific to Polish language
+- Date/time formatting according to Polish conventions
+- Character encoding for Polish special characters (ą, ć, ę, ł, ń, ó, ś, ź, ż)
+- Fallback behavior if translations are missing</description>
+    </feature>
+    <feature>
+      <name>Translate Polish language strings in pl/programs module</name>
+      <description>Translate Remaining Polish Language Strings in pl/programs Module
+
+Complete the Polish language translation for the pl/programs module, which currently contains untranslated strings in English or other languages.
+
+Requirements:
+- Identify all untranslated strings within the pl/programs module
+- Translate missing strings to Polish while maintaining consistent terminology with existing translations
+- Ensure translations fit within UI constraints (button labels, tooltips, etc.)
+- Verify proper handling of Polish special characters (ą, ć, ę, ł, ń, ó, ś, ź, ż)
+- Check for plural forms and ensure correct Polish grammatical cases are used
+- Test the interface with translated strings to confirm proper display
+- Maintain translation key structure and formatting from the source files
+
+Edge cases to consider:
+- Technical terms that may not have direct Polish equivalents
+- String interpolation and variable placeholders
+- Context-dependent translations where same English word needs different Polish translations
+- Character length differences between English and Polish affecting layout</description>
+    </feature>
+    <feature>
+      <name>Complete Polish Translation for Schedule Programs Directory</name>
+      <description>Translate Polish Missing Translations in pl/programs/schedule/ Path
+
+Complete the Polish language translation for content located in the pl/programs/schedule/ directory that currently contains untranslated text.
+
+Requirements:
+- Identify all untranslated strings, labels, and content in pl/programs/schedule/
+- Translate missing text from source language (likely English) to Polish
+- Maintain consistency with existing Polish translations in the project
+- Preserve formatting, placeholders, and any special characters or variables
+- Ensure translations are contextually appropriate for the schedule/programs domain
+- Verify that date/time formats follow Polish localization standards
+- Test rendered output to confirm translations display correctly
+- Review for grammatical accuracy and natural Polish phrasing
+
+Edge cases to consider:
+- Technical terms that may need transliteration vs translation
+- Plural forms (Polish has complex plural rules)
+- Gender-specific language where applicable
+- Character encoding for Polish special characters (ą, ć, ę, ł, ń, ó, ś, ź, ż)</description>
+    </feature>
+    <feature>
+      <name>Add Polish translations to contact page</name>
+      <description>Add Polish Translations for Contact Page
+
+Complete the Polish language translation for the contact page (/pl/contact/) which currently contains untranslated content.
+
+Requirements:
+- Identify all untranslated text strings on the /pl/contact/ page
+- Translate remaining English text to Polish
+- Ensure translations match the tone and style of existing Polish content
+- Verify all UI elements are translated (labels, buttons, placeholders, error messages, validation text)
+- Check for hardcoded strings that should be extracted to translation files
+- Test form functionality with Polish translations
+- Ensure proper Polish character encoding and special characters display correctly
+- Verify translations are contextually appropriate for Polish users
+
+Edge cases to consider:
+- Dynamic content or JavaScript-generated text
+- Meta tags and SEO-related content
+- Error states and validation messages
+- Tooltips and aria-labels for accessibility</description>
+    </feature>
+    <feature>
+      <name>Fix active menu item highlighting across routes</name>
+      <description>Fix Menu Item Active State Highlighting
+
+Resolve the issue where visited or currently active menu items are not displaying the correct visual highlight indicator.
+
+Requirements:
+- Identify the current routing or navigation state management system
+- Ensure active menu items receive the appropriate CSS class or styling
+- Verify the highlight appears immediately when navigating to a route
+- Maintain highlight persistence when page refreshes on an active route
+- Handle edge cases:
+  - Nested routes should highlight both parent and child menu items
+  - Query parameters should not affect active state matching
+  - Trailing slashes in URLs should be handled consistently
+- Test across all menu items to ensure consistent behavior
+- Verify highlight is removed from previously active items when navigating away</description>
+    </feature>
+    <feature>
+      <name>Remove pagination info element from DOM</name>
+      <description>Remove or Hide Pagination Info Element
+
+Remove the `.pagination-info` element from the DOM or hide it using CSS to prevent it from displaying to users.
+
+Requirements:
+- Locate all instances of elements with the `.pagination-info` class in the codebase
+- Choose implementation approach: either delete the HTML/component code entirely or add CSS to hide it
+- If hiding with CSS, use `display: none` or `visibility: hidden` as appropriate
+- Verify the element is no longer visible on all pages where pagination appears
+- Ensure removal/hiding doesn&apos;t break any JavaScript that references this element
+- Check if any parent containers need layout adjustments after removal
+
+Edge cases to consider:
+- Multiple pagination instances on a single page
+- Different pagination implementations across different sections of the application
+- Any accessibility concerns if screen readers still announce hidden content</description>
+    </feature>
+    <feature>
+      <name>Complete Polish translations for programs section</name>
+      <description>Missing Polish Translations in Programs Section
+
+Complete Polish language translations for all content in the /pl/programs/ section of the website.
+
+Requirements:
+- Audit all pages under /pl/programs/ to identify untranslated content
+- Translate all English text that appears in the Polish version including:
+  - Page titles and headings
+  - Body content and descriptions
+  - Navigation elements and breadcrumbs
+  - Button labels and CTAs
+  - Form labels and validation messages
+  - Error messages and tooltips
+  - Meta descriptions and SEO content
+- Ensure translations are contextually appropriate and use proper Polish grammar
+- Maintain consistency with existing Polish translations elsewhere on the site
+- Verify all translated content displays correctly without layout issues
+- Test that language-specific formatting (dates, numbers, currency) is correct
+- Update translation files or CMS entries as appropriate for the project structure</description>
+    </feature>
+    <feature>
+      <name>Localize Polish About Page Translations</name>
+      <description>Missing Polish Translations on /pl/about/ Page
+
+The Polish version of the about page (/pl/about/) contains untranslated content that should be localized to Polish.
+
+Requirements:
+- Audit the /pl/about/ page to identify all untranslated text
+- Translate missing content from English (or source language) to Polish
+- Ensure translations maintain the original meaning and tone
+- Verify all UI elements, headings, body text, and buttons are translated
+- Check for hardcoded English strings in the template or component code
+- Validate that date formats, number formats, and other locale-specific formatting follow Polish conventions
+- Test the page to ensure layout works properly with Polish text lengths
+- Confirm no encoding issues with Polish special characters (ą, ć, ę, ł, ń, ó, ś, ź, ż)
+
+Edge cases to consider:
+- Dynamic content that may bypass translation system
+- Pluralization rules specific to Polish language
+- Content pulled from external sources or APIs
+- Alt text for images and accessibility labels</description>
+    </feature>
+    <feature>
+      <name>Add Polish translation for &quot;Image unavailable&quot; message</name>
+      <description>Add Polish Translation for &quot;Image unavailable&quot; Message
+
+Ensure the &quot;Image unavailable&quot; text is properly translated to Polish and configured in the application&apos;s translation system.
+
+Requirements:
+- Locate all instances of &quot;Image unavailable&quot; text in the codebase
+- Add Polish translation key to the translation configuration file
+- Provide accurate Polish translation (e.g., &quot;Obraz niedostępny&quot;)
+- Replace hardcoded &quot;Image unavailable&quot; strings with translation keys
+- Verify translation appears correctly when Polish locale is selected
+- Ensure translation follows existing translation file structure and naming conventions
+- Test that fallback to English works if translation is missing</description>
+    </feature>
+    <feature>
+      <name>Fix staff.yml translation key generation</name>
+      <description>Generate Staff Translation Keys from staff.yml Configuration
+
+Fix the translation key generation process to properly extract and generate translation keys from the staff.yml configuration file.
+
+Requirements:
+- Investigate why staff.yml is not being processed by the translation key generator
+- Verify staff.yml file location, format, and syntax are correct
+- Ensure staff.yml is included in the translation generation pipeline
+- Check if other similar .yml files are being processed correctly and apply same logic
+- Validate that generated translation keys follow the expected naming convention
+- Test that generated keys are accessible and properly loaded in the application
+- Confirm all staff-related strings in staff.yml have corresponding translation keys created
+- Document the expected structure of staff.yml for translation generation
+
+Edge cases to consider:
+- Nested keys in staff.yml hierarchy
+- Missing or malformed YAML syntax
+- Translation key naming conflicts with existing keys
+- Locale-specific variations if multiple languages are supported</description>
+    </feature>
+    <feature>
+      <name>Fix missing schedule translation keys</name>
+      <description>Resolve Missing Translation Keys for Schedule View
+
+Fix missing translation keys in schedule.html that are preventing proper text display in the schedule interface. All keys with the &apos;schedule_&apos; prefix need to be properly defined and integrated.
+
+Requirements:
+- Identify all &apos;schedule_&apos; translation keys referenced in schedule.html
+- Check which keys are missing from translation files (e.g., en.json, i18n files)
+- Add missing translation key definitions with appropriate text values
+- Verify keys exist for all supported languages in the application
+- Ensure proper fallback behavior if translations are unavailable
+- Test schedule.html to confirm all text displays correctly without missing key warnings
+
+Edge Cases to Consider:
+- Keys that may be dynamically constructed or computed
+- Nested translation key structures
+- Plural forms or parameterized translations for schedule-related text</description>
+    </feature>
+    <feature>
+      <name>Audit and fix missing i18n translations in Hugo templates</name>
+      <description>Audit and Fix i18n Translations in Hugo Templates
+
+Complete a comprehensive audit of internationalization (i18n) usage across all Hugo templates, identify missing translation keys for English and Polish locales, and add the missing translations.
+
+Requirements:
+- Scan all Hugo template files (.html files in layouts/, themes/*/layouts/, partials/, shortcodes/) for i18n function calls
+- Extract all translation keys being referenced (look for patterns like `i18n &quot;key&quot;`, `T &quot;key&quot;`, or similar Hugo i18n syntax)
+- Generate a complete list of unique translation keys required by the templates
+- Compare extracted keys against existing translation files (i18n/en.toml, i18n/en.yaml, i18n/pl.toml, i18n/pl.yaml, or similar)
+- Identify keys that exist in templates but are missing from English translation file
+- Identify keys that exist in templates but are missing from Polish translation file
+- Add missing translation entries to both en and pl translation files with appropriate translations
+- Ensure translation file format and structure matches existing conventions
+- Verify no duplicate keys exist in translation files
+- Document the complete list of found keys and which ones were added</description>
+    </feature>
+    <feature>
+      <name>Fix missing translation keys in program sidebar</name>
+      <description>Resolve Missing Translation Keys in Program Sidebar Component
+
+Identify and fix all missing translation keys in the .program-sidebar component to ensure all text displays properly in the application&apos;s supported languages.
+
+Requirements:
+- Locate the .program-sidebar component file(s) in the codebase
+- Identify all instances where translation keys are missing or undefined
+- Add the missing translation keys to the appropriate locale/translation files
+- Provide translations for all supported languages in the application
+- Verify that all text in the sidebar renders correctly without fallback to key strings
+- Test the sidebar in different language settings to confirm translations display properly
+- Check for any hardcoded strings that should be using translation keys instead</description>
+    </feature>
+    <feature>
+      <name>Add Schedule Translation Keys</name>
+      <description>Translation Keys Missing for Schedule-Related Content
+
+Add missing translation keys for all schedule-related text strings in the application to ensure proper internationalization support.
+
+Requirements:
+- Identify all hardcoded schedule-related strings currently not using translation keys
+- Create translation key entries with the &quot;schedule_&quot; prefix following the project&apos;s naming convention
+- Add translations for all supported languages in the application
+- Replace hardcoded strings with proper translation function calls
+- Verify all schedule-related UI elements display correctly in each language
+- Check for consistency with existing translation key patterns in the codebase
+
+Areas to verify:
+- Schedule creation and editing forms
+- Schedule display views (calendar, list, etc.)
+- Schedule-related error messages and validation feedback
+- Schedule status labels and action buttons
+- Time/date formatting strings specific to schedules
+- Schedule notification and reminder text</description>
+    </feature>
+    <feature>
+      <name>Fix missing translations in schedule timeline component</name>
+      <description>Resolve Missing Translations and Default Values in Schedule Timeline Component
+
+Audit and complete all translation strings in the .schedule-timeline component to ensure proper localization and remove hardcoded default values.
+
+Requirements:
+- Identify all text content in .schedule-timeline that displays default/untranslated values
+- Add missing translation keys to the appropriate locale files
+- Replace hardcoded strings with proper translation function calls
+- Verify translations exist for all supported languages
+- Test the component in different locales to confirm all text displays correctly
+- Check for edge cases like pluralization, date/time formatting, and dynamic content
+- Ensure fallback behavior is appropriate if translations are unavailable</description>
+    </feature>
+    <feature>
+      <name>Fix missing CTA section translations across locales</name>
+      <description>Fix Missing Translations for Enrollment CTA Elements
+
+Ensure that the `ready_to_enroll` and `enroll_cta_description` text content within the `.cta-section` component is properly translated across all supported languages.
+
+Requirements:
+- Locate the `.cta-section` component in the codebase
+- Identify where `ready_to_enroll` and `enroll_cta_description` content is defined
+- Add these strings to the translation files for all supported locales
+- Update the component to use the translation system (e.g., i18n, translation keys)
+- Verify translations appear correctly for each language
+- Test that language switching updates these elements dynamically
+- Ensure fallback behavior if translation is missing</description>
+    </feature>
+    <feature>
+      <name>Add missing back_to_gallery translation key</name>
+      <description>Implement Translation for back_to_gallery Key
+
+The `back_to_gallery` translation key is currently displaying as untranslated text in the application instead of showing the localized string.
+
+Requirements:
+- Locate where the `back_to_gallery` key is being used in the codebase
+- Add the missing translation entry to all supported language files
+- Verify the key matches the expected naming convention in the i18n configuration
+- Ensure the translated text appears correctly in the UI for all languages
+- Test that the translation loads properly in different locales
+- Check for any similar untranslated keys in the same component or feature
+
+Edge cases to consider:
+- Ensure the key isn&apos;t being used with a typo or incorrect namespace
+- Verify the translation files are being properly loaded at runtime
+- Check if there are multiple translation systems that need updating</description>
+    </feature>
+    <feature>
+      <name>Fix &quot;Open Now&quot; status indicator translation</name>
+      <description>Add Translation for &quot;Open Now&quot; Status Indicator on English Pages
+
+Implement proper translation handling for the &quot;Open Now&quot; status indicator that is currently displaying untranslated text on English language pages.
+
+Requirements:
+- Locate all instances of the &quot;Open Now&quot; status indicator in the codebase
+- Ensure the text is wrapped in the translation function/system
+- Add or verify the English translation key exists in the language files
+- Verify the indicator displays correctly translated text on English pages
+- Test that translations work correctly for all supported languages (not just English)
+- Check for any similar untranslated status indicators (e.g., &quot;Closed&quot;, &quot;Opening Soon&quot;) that may need the same fix</description>
+    </feature>
+    <feature>
+      <name>Add English translations to recruitment partial</name>
+      <description>Missing English Translations for Recruitment HTML Partial
+
+The recruitment.html partial template file lacks English language translations, causing content to display incorrectly or not at all for English-speaking users.
+
+Requirements:
+- Locate the recruitment.html partial template file in the codebase
+- Identify all text strings and content that need English translations
+- Create or update the English locale file (e.g., en.yml, en.json) with appropriate translation keys
+- Ensure all translatable strings in recruitment.html use proper i18n syntax
+- Verify translations render correctly when English locale is selected
+- Check for any nested partials or components within recruitment.html that may also need translations
+- Test the recruitment page with English locale to confirm all content displays properly
+- Ensure translation keys follow the project&apos;s naming conventions
+
+Edge cases to consider:
+- Pluralization rules for dynamic content
+- Date/time formatting specific to English locales
+- Any region-specific variants (en-US, en-GB, etc.)
+- Fallback behavior if translations are missing</description>
+    </feature>
   </implemented_features>
 
   <additional_requirements>

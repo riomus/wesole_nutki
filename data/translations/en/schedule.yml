@@ -1,0 +1,64 @@
+# Schedule Page Translation Keys (English)
+
+# Daily schedule section
+daily_schedule_subtitle: "A typical day at our preschool"
+view_full_schedule: "View Full Schedule"
+
+# Section titles
+schedule_morning: "Morning"
+schedule_learning_time: "Learning Time"
+schedule_midday: "Midday"
+schedule_afternoon_title: "Afternoon"
+
+# Morning activities
+schedule_arrival: "Arrival & Free Play"
+schedule_arrival_desc: "Children arrive and engage in free play activities"
+schedule_arrival_full: "Children arrive and engage in quiet activities, free play in learning centers, individual conversations with teachers."
+
+schedule_breakfast: "Breakfast"
+schedule_breakfast_desc: "Healthy breakfast time together"
+schedule_breakfast_full: "Healthy breakfast prepared fresh daily. Children learn table manners and self-service skills."
+
+schedule_circle: "Circle Time"
+schedule_circle_full: "Morning greeting, calendar activities, discussing the day's plan, songs and movement activities."
+
+# Learning time activities
+schedule_learning: "Learning Activities"
+schedule_learning_desc: "Educational activities, creative play, and outdoor time"
+schedule_main_activity: "Main Educational Activity"
+schedule_main_activity_full: "Structured learning activities based on weekly theme: literacy, math, science, art, or social studies. Small group and individual instruction."
+
+schedule_outdoor: "Outdoor Play & Physical Activity"
+schedule_outdoor_full: "Structured outdoor play, sports activities, nature exploration. In bad weather: indoor gym or movement activities."
+
+# Midday activities
+schedule_lunch: "Lunch"
+schedule_lunch_desc: "Nutritious lunch prepared fresh daily"
+schedule_lunch_full: "Nutritious hot lunch prepared by our kitchen. Balanced meals following children's dietary needs and preferences."
+
+schedule_rest: "Rest Time"
+schedule_rest_desc: "Quiet time and nap for younger children"
+schedule_rest_full: "Nap time for younger children. Older children engage in quiet activities: reading, puzzles, art projects."
+
+# Afternoon activities
+schedule_afternoon: "Afternoon Activities"
+schedule_afternoon_desc: "Snack time and creative afternoon activities"
+schedule_snack: "Afternoon Snack"
+schedule_snack_full: "Light healthy snack: fruits, vegetables, dairy products, whole grain snacks."
+
+schedule_enrichment: "Enrichment Activities"
+schedule_enrichment_full: "Specialized activities: music, dance, English, art workshops, science experiments, or special events."
+
+schedule_departure: "Free Play & Departure"
+schedule_departure_desc: "Free play and gradual pickup by parents"
+schedule_departure_full: "Free play time, learning centers, outdoor play (weather permitting). Gradual pickup by parents with opportunity for teacher communication."
+
+# Additional info cards
+meals_nutrition: "Meals & Nutrition"
+meals_nutrition_desc: "All meals are prepared fresh daily in our kitchen using high-quality ingredients. We accommodate dietary restrictions and allergies."
+
+what_to_bring: "What to Bring"
+what_to_bring_desc: "Comfortable clothes for play, indoor shoes, change of clothes, and any comfort items for rest time (for younger children)."
+
+parent_communication: "Stay Connected"
+parent_communication_desc: "Regular updates through our parent app, daily reports, and open communication with teachers during drop-off and pick-up times."

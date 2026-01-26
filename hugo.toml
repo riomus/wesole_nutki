@@ -21,10 +21,11 @@ disableKinds = []
 # Enable robots.txt generation
 enableRobotsTXT = true
 
-# Canonify URLs - Convert all relative URLs to absolute URLs based on baseURL
-# This is essential for GitHub Pages deployment to a subdirectory
-# All URLs in content (including markdown images) will be prefixed with baseURL
-canonifyURLs = true
+# Canonify URLs - Disabled to support both localhost and GitHub Pages subdirectory deployment
+# With canonifyURLs=false, Hugo uses RelPermalink/relURL which respect the --baseURL flag
+# Development: --baseURL http://localhost:1313/ generates paths like /css/style.css
+# Production: baseURL in config generates paths like /wesole_nutki/css/style.css
+canonifyURLs = false
 
 # Pagination
 [pagination]

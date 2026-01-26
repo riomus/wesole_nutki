@@ -32,3 +32,6 @@ share: "Udostępnij"
 posted_on: "Opublikowano"
 by_author: "przez"
 copyright: "Wszelkie prawa zastrzeżone"
+
+# Error messages
+image_unavailable: "Obraz niedostępny"

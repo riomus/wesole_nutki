@@ -39,3 +39,12 @@ latest_news_subtitle: "See what's happening at our preschool"
 about_us_subtitle: "Get to know our preschool"
 about_preview_text: "Wesole Nutki is a place where children develop in an atmosphere of joy and creative play."
 about_image_alt: "Children playing at preschool"
+
+# Recruitment section
+recruitment_heading: "RECRUITMENT"
+recruitment_announcement: "Enrollment now open for our language and music preschool"
+recruitment_details: "WESOŁE NUTKI welcomes children born in 2022. We also have two spots available for children born in 2019"
+download_form_text: "Download enrollment form:"
+download_application_form: "Download enrollment form"
+view_documents: "View documents"
+recruitment_cta: "JOIN US TODAY!"

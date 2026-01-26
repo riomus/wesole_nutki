@@ -1,0 +1,64 @@
+# Schedule Page Translation Keys (Polish)
+
+# Sekcja planu dnia
+daily_schedule_subtitle: "Typowy dzień w naszym przedszkolu"
+view_full_schedule: "Zobacz pełny plan dnia"
+
+# Tytuły sekcji
+schedule_morning: "Poranek"
+schedule_learning_time: "Czas nauki"
+schedule_midday: "Południe"
+schedule_afternoon_title: "Popołudnie"
+
+# Zajęcia poranne
+schedule_arrival: "Przyjście i swobodna zabawa"
+schedule_arrival_desc: "Dzieci przychodzą i uczestniczą w swobodnej zabawie"
+schedule_arrival_full: "Schodzenie się dzieci do przedszkola. Zabawy swobodne w kącikach zainteresowań. Praca nauczycieli o charakterze korekcyjno-kompensacyjnym, stymulującym, obserwacyjnym."
+
+schedule_breakfast: "Śniadanie"
+schedule_breakfast_desc: "Wspólny czas na zdrowe śniadanie"
+schedule_breakfast_full: "Zdrowe śniadanie przygotowywane codziennie na świeżo. Dzieci uczą się dobrych manier przy stole oraz umiejętności samoobsługi."
+
+schedule_circle: "Zbiórka poranna"
+schedule_circle_full: "Powitanie poranne, zajęcia przy kalendarzu, omówienie planu dnia, piosenki i zajęcia ruchowe."
+
+# Czas nauki
+schedule_learning: "Zajęcia edukacyjne"
+schedule_learning_desc: "Zajęcia edukacyjne, kreatywna zabawa i czas na świeżym powietrzu"
+schedule_main_activity: "Główne zajęcia edukacyjne"
+schedule_main_activity_full: "Zajęcia programowe inspirowane przez nauczyciela w celu wspomaga rozwo dzieci w sferze językowej, poznawczej, społecznej, artystycznej, ruchowej, zdrowotnej. Praca w małych grupach i indywidualnie."
+
+schedule_outdoor: "Zabawa na świeżym powietrzu i aktywność fizyczna"
+schedule_outdoor_full: "Pobyt na świeżym powietrzu: zabawy dowolne, zajęcia ruchowe, sportowe, przyrodnicze, prowadzenie obserwacji. W niepogodę: sala gimnastyczna lub zajęcia ruchowe w pomieszczeniach."
+
+# Południe
+schedule_lunch: "Obiad"
+schedule_lunch_desc: "Pożywny obiad przygotowywany codziennie na świeżo"
+schedule_lunch_full: "Pożywny ciepły obiad przygotowywany przez naszą kuchnię. Zbilansowane posiłki dostosowane do potrzeb żywieniowych i preferencji dzieci."
+
+schedule_rest: "Czas odpoczynku"
+schedule_rest_desc: "Cicha chwila i drzemka dla młodszych dzieci"
+schedule_rest_full: "Leżakowanie dla młodszych dzieci. Starsze dzieci uczestniczą w cichych zajęciach: czytanie, puzzle, projekty plastyczne."
+
+# Popołudnie
+schedule_afternoon: "Zajęcia popołudniowe"
+schedule_afternoon_desc: "Czas na podwieczorek i kreatywne zajęcia popołudniowe"
+schedule_snack: "Podwieczorek"
+schedule_snack_full: "Lekka zdrowa przekąska: owoce, warzywa, produkty mleczne, pełnoziarniste przekąski."
+
+schedule_enrichment: "Zajęcia dodatkowe"
+schedule_enrichment_full: "Specjalistyczne zajęcia: muzyka, taniec, język angielski, warsztaty plastyczne, eksperymenty naukowe lub wydarzenia specjalne."
+
+schedule_departure: "Swobodna zabawa i wychodzenie"
+schedule_departure_desc: "Swobodna zabawa i stopniowy odbiór przez rodziców"
+schedule_departure_full: "Czas swobodnej zabawy, kąciki zainteresowań, zabawa na zewnątrz (jeśli pogoda pozwala). Stopniowy odbiór dzieci przez rodziców z możliwością rozmowy z nauczycielem."
+
+# Dodatkowe karty informacyjne
+meals_nutrition: "Posiłki i odżywianie"
+meals_nutrition_desc: "Wszystkie posiłki są przygotowywane codziennie na świeżo w naszej kuchni z wysokiej jakości składników. Uwzględniamy ograniczenia dietetyczne i alergie."
+
+what_to_bring: "Co zabrać ze sobą"
+what_to_bring_desc: "Wygodne ubrania do zabawy, obuwie zmienne, zmiana ubrania oraz przedmioty zapewniające komfort podczas odpoczynku (dla młodszych dzieci)."
+
+parent_communication: "Pozostańcie w kontakcie"
+parent_communication_desc: "Regularne aktualizacje przez naszą aplikację dla rodziców, codzienne raporty oraz otwarta komunikacja z nauczycielami podczas przyprowadzania i odbioru dzieci."

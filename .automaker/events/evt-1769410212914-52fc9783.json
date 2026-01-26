@@ -1,0 +1,11 @@
+{
+  "id": "evt-1769410212914-52fc9783",
+  "trigger": "feature_success",
+  "timestamp": "2026-01-26T06:50:12.914Z",
+  "projectPath": "/Users/romanbartusiak/git/riomus/wesole_nutki",
+  "projectName": "wesole_nutki",
+  "featureId": "feature-1769409979709-4ny5qrj7k",
+  "featureName": "Add English translations to recruitment partial",
+  "error": "Feature completed in 205s - auto-verified",
+  "passes": true
+}

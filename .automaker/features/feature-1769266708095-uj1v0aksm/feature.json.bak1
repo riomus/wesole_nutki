@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Missing Polish Translations on /pl/about/ Page\n\nThe Polish version of the about page (/pl/about/) contains untranslated content that should be localized to Polish.\n\nRequirements:\n- Audit the /pl/about/ page to identify all untranslated text\n- Translate missing content from English (or source language) to Polish\n- Ensure translations maintain the original meaning and tone\n- Verify all UI elements, headings, body text, and buttons are translated\n- Check for hardcoded English strings in the template or component code\n- Validate that date formats, number formats, and other locale-specific formatting follow Polish conventions\n- Test the page to ensure layout works properly with Polish text lengths\n- Confirm no encoding issues with Polish special characters (ą, ć, ę, ł, ń, ó, ś, ź, ż)\n\nEdge cases to consider:\n- Dynamic content that may bypass translation system\n- Pluralization rules specific to Polish language\n- Content pulled from external sources or APIs\n- Alt text for images and accessibility labels",
+  "title": "Localize Polish About Page Translations",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "verified",
+  "id": "feature-1769266708095-uj1v0aksm",
+  "descriptionHistory": [
+    {
+      "description": "Missing Polish Translations on /pl/about/ Page\n\nThe Polish version of the about page (/pl/about/) contains untranslated content that should be localized to Polish.\n\nRequirements:\n- Audit the /pl/about/ page to identify all untranslated text\n- Translate missing content from English (or source language) to Polish\n- Ensure translations maintain the original meaning and tone\n- Verify all UI elements, headings, body text, and buttons are translated\n- Check for hardcoded English strings in the template or component code\n- Validate that date formats, number formats, and other locale-specific formatting follow Polish conventions\n- Test the page to ensure layout works properly with Polish text lengths\n- Confirm no encoding issues with Polish special characters (ą, ć, ę, ł, ń, ó, ś, ź, ż)\n\nEdge cases to consider:\n- Dynamic content that may bypass translation system\n- Pluralization rules specific to Polish language\n- Content pulled from external sources or APIs\n- Alt text for images and accessibility labels",
+      "timestamp": "2026-01-24T14:58:28.127Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-24T15:05:33.536Z"
+}

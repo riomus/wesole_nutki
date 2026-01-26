@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Resolve Missing Translation Keys in Program Sidebar Component\n\nIdentify and fix all missing translation keys in the .program-sidebar component to ensure all text displays properly in the application's supported languages.\n\nRequirements:\n- Locate the .program-sidebar component file(s) in the codebase\n- Identify all instances where translation keys are missing or undefined\n- Add the missing translation keys to the appropriate locale/translation files\n- Provide translations for all supported languages in the application\n- Verify that all text in the sidebar renders correctly without fallback to key strings\n- Test the sidebar in different language settings to confirm translations display properly\n- Check for any hardcoded strings that should be using translation keys instead",
+  "title": "Fix missing translation keys in program sidebar",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "verified",
+  "id": "feature-1769268969315-enwkk3jaj",
+  "descriptionHistory": [
+    {
+      "description": "Resolve Missing Translation Keys in Program Sidebar Component\n\nIdentify and fix all missing translation keys in the .program-sidebar component to ensure all text displays properly in the application's supported languages.\n\nRequirements:\n- Locate the .program-sidebar component file(s) in the codebase\n- Identify all instances where translation keys are missing or undefined\n- Add the missing translation keys to the appropriate locale/translation files\n- Provide translations for all supported languages in the application\n- Verify that all text in the sidebar renders correctly without fallback to key strings\n- Test the sidebar in different language settings to confirm translations display properly\n- Check for any hardcoded strings that should be using translation keys instead",
+      "timestamp": "2026-01-24T15:36:09.408Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-24T15:38:18.331Z"
+}

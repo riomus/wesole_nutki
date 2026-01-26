@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Remove or Hide Pagination Info Element\n\nRemove the `.pagination-info` element from the DOM or hide it using CSS to prevent it from displaying to users.\n\nRequirements:\n- Locate all instances of elements with the `.pagination-info` class in the codebase\n- Choose implementation approach: either delete the HTML/component code entirely or add CSS to hide it\n- If hiding with CSS, use `display: none` or `visibility: hidden` as appropriate\n- Verify the element is no longer visible on all pages where pagination appears\n- Ensure removal/hiding doesn't break any JavaScript that references this element\n- Check if any parent containers need layout adjustments after removal\n\nEdge cases to consider:\n- Multiple pagination instances on a single page\n- Different pagination implementations across different sections of the application\n- Any accessibility concerns if screen readers still announce hidden content",
+  "title": "Remove pagination info element from DOM",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "verified",
+  "id": "feature-1769266687544-eh4wu05uy",
+  "descriptionHistory": [
+    {
+      "description": "Remove or Hide Pagination Info Element\n\nRemove the `.pagination-info` element from the DOM or hide it using CSS to prevent it from displaying to users.\n\nRequirements:\n- Locate all instances of elements with the `.pagination-info` class in the codebase\n- Choose implementation approach: either delete the HTML/component code entirely or add CSS to hide it\n- If hiding with CSS, use `display: none` or `visibility: hidden` as appropriate\n- Verify the element is no longer visible on all pages where pagination appears\n- Ensure removal/hiding doesn't break any JavaScript that references this element\n- Check if any parent containers need layout adjustments after removal\n\nEdge cases to consider:\n- Multiple pagination instances on a single page\n- Different pagination implementations across different sections of the application\n- Any accessibility concerns if screen readers still announce hidden content",
+      "timestamp": "2026-01-24T14:58:07.636Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-24T15:00:40.580Z"
+}

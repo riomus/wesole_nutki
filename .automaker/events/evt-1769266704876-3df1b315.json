@@ -1,0 +1,11 @@
+{
+  "id": "evt-1769266704876-3df1b315",
+  "trigger": "feature_success",
+  "timestamp": "2026-01-24T14:58:24.876Z",
+  "projectPath": "/Users/romanbartusiak/git/riomus/wesole_nutki",
+  "projectName": "wesole_nutki",
+  "featureId": "feature-1769265341235-ynmltf60h",
+  "featureName": "Fix active menu item highlighting across routes",
+  "error": "Feature completed in 871s - auto-verified",
+  "passes": true
+}

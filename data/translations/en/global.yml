@@ -32,3 +32,6 @@ share: "Share"
 posted_on: "Posted on"
 by_author: "by"
 copyright: "All rights reserved"
+
+# Error messages
+image_unavailable: "Image unavailable"

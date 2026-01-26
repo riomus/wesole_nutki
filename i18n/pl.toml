@@ -1,5 +1,302 @@
 # UI translations - Auto-generated from data/translations/
 
+[about_page_title]
+other = "O Nas"
+
+[about_page_subtitle]
+other = "Poznaj Wesołe Nutki - miejsce, gdzie każde dziecko odkrywa radość w nauce"
+
+[about_mission_heading]
+other = "Nasza Misja"
+
+[about_mission_subtitle]
+other = "Co napędza nas każdego dnia"
+
+[about_mission_content]
+other = "W Wesołych Nutkach wierzymy, że każde dziecko ma nieograniczony potencjał. Nasza misja to wspieranie naturalnej ciekawości dzieci i rozwijanie ich talentów poprzez kreatywną zabawę i nowoczesne metody edukacyjne w ciepłej, rodzinnej atmosferze."
+
+[about_mission_image_alt]
+other = "Dzieci uczące się przez zabawę w Wesołych Nutkach"
+
+[about_mission_highlight_1]
+other = "Indywidualne podejście do każdego dziecka"
+
+[about_mission_highlight_2]
+other = "Nauka przez muzykę i języki"
+
+[about_mission_highlight_3]
+other = "Bezpieczne i wspierające środowisko"
+
+[about_mission_highlight_4]
+other = "Doświadczeni i pełni pasji pedagodzy"
+
+[about_values_heading]
+other = "Nasze Wartości"
+
+[about_values_subtitle]
+other = "Zasady, które kierują wszystkim, co robimy"
+
+[about_value_safety_title]
+other = "Bezpieczeństwo Przede Wszystkim"
+
+[about_value_safety_desc]
+other = "Zapewniamy bezpieczne, monitorowane środowisko, w którym dzieci mogą odkrywać i rozwijać się z pewnością siebie."
+
+[about_value_creativity_title]
+other = "Kreatywna Ekspresja"
+
+[about_value_creativity_desc]
+other = "Poprzez muzykę, sztukę i zabawę zachęcamy dzieci do swobodnego wyrażania siebie i rozwijania wyobraźni."
+
+[about_value_development_title]
+other = "Wszechstronny Rozwój"
+
+[about_value_development_desc]
+other = "Skupiamy się na rozwijaniu całego dziecka - umiejętności poznawczych, emocjonalnych, społecznych i fizycznych."
+
+[about_value_community_title]
+other = "Silna Społeczność"
+
+[about_value_community_desc]
+other = "Budujemy trwałe relacje między dziećmi, rodzinami i wychowawcami, tworząc wspierającą sieć."
+
+[about_value_respect_title]
+other = "Szacunek i Życzliwość"
+
+[about_value_respect_desc]
+other = "Uczymy dzieci szanować innych, akceptować różnorodność i okazywać życzliwość we wszystkich interakcjach."
+
+[about_value_joy_title]
+other = "Radość Uczenia Się"
+
+[about_value_joy_desc]
+other = "Wierzymy, że nauka powinna być radosna, inspirując do odkrywania i eksploracji przez całe życie."
+
+[about_facilities_heading]
+other = "Nasze Obiekty"
+
+[about_facilities_subtitle]
+other = "Nowoczesne przestrzenie zaprojektowane dla dzieci"
+
+[about_facility_classrooms_title]
+other = "Jasne Sale"
+
+[about_facility_classrooms_desc]
+other = "Przestronne, kolorowe pomieszczenia wyposażone w nowoczesne pomoce dydaktyczne i materiały edukacyjne."
+
+[about_facility_playground_title]
+other = "Bezpieczny Plac Zabaw"
+
+[about_facility_playground_desc]
+other = "Własny teren zabaw na świeżym powietrzu z bezpiecznym, odpowiednim do wieku sprzętem do aktywnej zabawy."
+
+[about_facility_kitchen_title]
+other = "Zdrowe Posiłki"
+
+[about_facility_kitchen_desc]
+other = "Pożywne, domowe posiłki przygotowywane świeżo każdego dnia przez nasz doświadczony zespół kuchenny."
+
+[about_facility_rest_title]
+other = "Strefy Odpoczynku"
+
+[about_facility_rest_desc]
+other = "Wygodne przestrzenie do odpoczynku i spokojnych zajęć, zapewniające dzieciom równowagę w ciągu dnia."
+
+[about_team_heading]
+other = "Nasz Zespół"
+
+[about_team_subtitle]
+other = "Poznaj naszych wykwalifikowanych i zaangażowanych nauczycieli"
+
+[about_contact_heading]
+other = "Gotowi Do Nas Dołączyć?"
+
+[about_contact_subtitle]
+other = "Umów się na wizytę, aby zobaczyć nasze przedszkole i poznać nasz zespół. Z przyjemnością powitamy Waszą rodzinę!"
+
+[contact_information]
+other = "Informacje kontaktowe"
+
+[our_location]
+other = "Nasza lokalizacja"
+
+[get_directions]
+other = "Wyznacz trasę"
+
+[opening_hours]
+other = "Godziny otwarcia"
+
+[send_message]
+other = "Wyślij wiadomość"
+
+[your_name]
+other = "Twoje imię"
+
+[your_email]
+other = "Twój email"
+
+[your_phone]
+other = "Twój telefon"
+
+[your_message]
+other = "Twoja wiadomość"
+
+[message_sent]
+other = "Wiadomość wysłana"
+
+[message_error]
+other = "Błąd wysyłania wiadomości"
+
+[schedule_visit_heading]
+other = "Umów wizytę"
+
+[schedule_visit_description]
+other = "Zapraszamy do odwiedzenia naszego przedszkola i poznania naszego zespołu."
+
+[schedule_visit_text]
+other = "Zapraszamy do odwiedzenia naszego przedszkola. Pokażemy Państwu nasze sale, przedstawimy nasz zespół i odpowiemy na wszystkie pytania."
+
+[visit_form_name]
+other = "Imię i nazwisko"
+
+[visit_form_email]
+other = "Email"
+
+[visit_form_phone]
+other = "Telefon"
+
+[visit_form_date]
+other = "Preferowana data"
+
+[visit_form_time]
+other = "Preferowana godzina"
+
+[visit_form_message]
+other = "Wiadomość (opcjonalnie)"
+
+[visit_form_submit]
+other = "Umów wizytę"
+
+[call_us]
+other = "Zadzwoń do nas"
+
+[email_us]
+other = "Napisz do nas"
+
+[map_title]
+other = "Interaktywna mapa pokazująca lokalizację przedszkola"
+
+[how_to_reach_us]
+other = "Jak do nas dotrzeć"
+
+[by_car]
+other = "Samochodem"
+
+[by_public_transport]
+other = "Komunikacją miejską"
+
+[parking]
+other = "Parking"
+
+[page_not_found]
+other = "Strona nie znaleziona"
+
+[page_not_found_message]
+other = "Przepraszamy, strona której szukasz nie istnieje."
+
+[page_not_found_encouragement]
+other = "Nie martw się! Możesz przeglądać naszą stronę korzystając z poniższych linków."
+
+[helpful_links]
+other = "Przydatne linki"
+
+[error_404]
+other = "Błąd 404"
+
+[error_500]
+other = "Błąd 500"
+
+[error_500_message]
+other = "Przepraszamy, coś poszło nie tak."
+
+[try_again]
+other = "Spróbuj ponownie"
+
+[quick_links]
+other = "Szybkie linki"
+
+[useful_links]
+other = "Przydatne linki"
+
+[monday_friday]
+other = "Poniedziałek - Piątek"
+
+[saturday]
+other = "Sobota"
+
+[sunday]
+other = "Niedziela"
+
+[closed]
+other = "Zamknięte"
+
+[open_now]
+other = "Teraz otwarte"
+
+[currently_closed]
+other = "Zamknięte"
+
+[stay_connected]
+other = "Bądź w kontakcie"
+
+[newsletter_signup]
+other = "Zapisz się do newslettera"
+
+[newsletter_placeholder]
+other = "Twój adres email"
+
+[newsletter_submit]
+other = "Zapisz się"
+
+[newsletter_success]
+other = "Dziękujemy za zapis!"
+
+[social_media]
+other = "Media społecznościowe"
+
+[preschool_info]
+other = "O przedszkolu"
+
+[footer_description]
+other = "Wesołe Nutki - przedszkole, w którym dzieci rozwijają się przez muzykę, języki i zabawę."
+
+[view_gallery]
+other = "Zobacz galerię"
+
+[all_galleries]
+other = "Wszystkie galerie"
+
+[other_galleries]
+other = "Inne galerie"
+
+[view_full_gallery]
+other = "Zobacz pełną galerię"
+
+[back_to_gallery]
+other = "Powrót do galerii"
+
+[back_to_galleries]
+other = "Powrót do galerii"
+
+[no_galleries]
+other = "Brak galerii"
+
+[gallery_categories]
+other = "Kategorie galerii"
+
+[latest_galleries]
+other = "Najnowsze galerie"
+
 [site_title]
 other = "Wesołe Nutki"
 
@@ -78,6 +375,111 @@ other = "przez"
 [copyright]
 other = "Wszelkie prawa zastrzeżone"
 
+[image_unavailable]
+other = "Obraz niedostępny"
+
+[hero_headline]
+other = "Wesołe Nutki - Przedszkole Językowo-Muzyczne"
+
+[hero_subheadline]
+other = "Ciepła i rodzinna atmosfera w sercu Wrocławia. Przedszkole przy Rynku, gdzie dzieci rozwijają się przez muzykę, języki i kreatywność."
+
+[why_choose_us]
+other = "Dlaczego my?"
+
+[why_choose_us_subtitle]
+other = "Odkryj, co sprawia, że nasze przedszkole jest wyjątkowe"
+
+[loving_care]
+other = "Serdeczna opieka"
+
+[loving_care_desc]
+other = "Przyjazne środowisko, w którym każde dziecko czuje się docenione i kochane."
+
+[quality_education]
+other = "Edukacja na najwyższym poziomie"
+
+[quality_education_desc]
+other = "Angażujący program nauczania, który inspiruje ciekawość i miłość do nauki."
+
+[community]
+other = "Społeczność"
+
+[community_desc]
+other = "Przyjazna społeczność rodzin, nauczycieli i dzieci."
+
+[safe_environment]
+other = "Bezpieczne Środowisko"
+
+[safe_environment_desc]
+other = "Przestrzeń zaprojektowana z myślą o bezpieczeństwie i dobrostanie dzieci jako najwyższym priorytecie."
+
+[play_based_learning]
+other = "Nauka przez Zabawę"
+
+[play_based_learning_desc]
+other = "Nauka poprzez kreatywną zabawę, eksplorację i zajęcia praktyczne."
+
+[qualified_teachers]
+other = "Wykwalifikowani Nauczyciele"
+
+[qualified_teachers_desc]
+other = "Doświadczeni i pełni pasji pedagodzy oddani rozwojowi wczesnego dzieciństwa."
+
+[happy_children]
+other = "Szczęśliwych Dzieci"
+
+[expert_teachers]
+other = "Wykwalifikowanych Nauczycieli"
+
+[years_experience]
+other = "Lat Doświadczenia"
+
+[parent_satisfaction]
+other = "% Zadowolonych Rodziców"
+
+[ready_to_start]
+other = "Gotowi dać swojemu dziecku najlepszy start?"
+
+[cta_description]
+other = "Dołącz do naszej ciepłej i gościnnej społeczności przedszkolnej. Umów się na wizytę już dziś!"
+
+[latest_news]
+other = "Najnowsze aktualności"
+
+[latest_news_subtitle]
+other = "Zobacz, co dzieje się w naszym przedszkolu"
+
+[about_us_subtitle]
+other = "Poznaj nasze przedszkole"
+
+[about_preview_text]
+other = "Wesołe Nutki to miejsce, gdzie dzieci rozwijają się w atmosferze radości i twórczej zabawy."
+
+[about_image_alt]
+other = "Dzieci bawiące się w przedszkolu"
+
+[recruitment_heading]
+other = "REKRUTACJA"
+
+[recruitment_announcement]
+other = "Trwa rekrutacja do naszego przedszkola językowo-muzycznego"
+
+[recruitment_details]
+other = "WESOŁE NUTKI zapraszają dzieci z rocznika 2022. Mamy również dwa miejsca dla dzieci z rocznika 2019"
+
+[download_form_text]
+other = "Pobierz kartę zgłoszenia:"
+
+[download_application_form]
+other = "Pobierz kartę zgłoszenia"
+
+[view_documents]
+other = "Zobacz dokumenty"
+
+[recruitment_cta]
+other = "ZAPRASZAMY!"
+
 [home]
 other = "Strona Główna"
 
@@ -98,6 +500,9 @@ other = "Galeria"
 
 [contact]
 other = "Kontakt"
+
+[close_menu]
+other = "Zamknij menu"
 
 [menu_home]
 other = "Strona główna"
@@ -183,89 +588,14 @@ other = "Dokumenty"
 [menu_more_recruitment]
 other = "Rekrutacja"
 
-[hero_headline]
-other = "Wesołe Nutki - Przedszkole Językowo-Muzyczne"
-
-[hero_subheadline]
-other = "Ciepła i rodzinna atmosfera w sercu Wrocławia. Przedszkole przy Rynku, gdzie dzieci rozwijają się przez muzykę, języki i kreatywność."
-
-[why_choose_us]
-other = "Dlaczego my?"
-
-[why_choose_us_subtitle]
-other = "Odkryj, co sprawia, że nasze przedszkole jest wyjątkowe"
-
-[loving_care]
-other = "Serdeczna opieka"
-
-[loving_care_desc]
-other = "Przyjazne środowisko, w którym każde dziecko czuje się docenione i kochane."
-
-[quality_education]
-other = "Edukacja na najwyższym poziomie"
-
-[quality_education_desc]
-other = "Angażujący program nauczania, który inspiruje ciekawość i miłość do nauki."
-
-[community]
-other = "Społeczność"
-
-[community_desc]
-other = "Przyjazna społeczność rodzin, nauczycieli i dzieci."
-
-[safe_environment]
-other = "Bezpieczne Środowisko"
-
-[safe_environment_desc]
-other = "Przestrzeń zaprojektowana z myślą o bezpieczeństwie i dobrostanie dzieci jako najwyższym priorytecie."
-
-[play_based_learning]
-other = "Nauka przez Zabawę"
-
-[play_based_learning_desc]
-other = "Nauka poprzez kreatywną zabawę, eksplorację i zajęcia praktyczne."
-
-[qualified_teachers]
-other = "Wykwalifikowani Nauczyciele"
-
-[qualified_teachers_desc]
-other = "Doświadczeni i pełni pasji pedagodzy oddani rozwojowi wczesnego dzieciństwa."
-
-[happy_children]
-other = "Szczęśliwych Dzieci"
-
-[expert_teachers]
-other = "Wykwalifikowanych Nauczycieli"
-
-[years_experience]
-other = "Lat Doświadczenia"
-
-[parent_satisfaction]
-other = "% Zadowolonych Rodziców"
-
-[ready_to_start]
-other = "Gotowi dać swojemu dziecku najlepszy start?"
-
-[cta_description]
-other = "Dołącz do naszej ciepłej i gościnnej społeczności przedszkolnej. Umów się na wizytę już dziś!"
-
-[latest_news]
-other = "Najnowsze aktualności"
-
-[latest_news_subtitle]
-other = "Zobacz, co dzieje się w naszym przedszkolu"
-
-[about_us_subtitle]
-other = "Poznaj nasze przedszkole"
-
-[about_preview_text]
-other = "Wesołe Nutki to miejsce, gdzie dzieci rozwijają się w atmosferze radości i twórczej zabawy."
-
-[about_image_alt]
-other = "Dzieci bawiące się w przedszkolu"
-
 [all_news]
 other = "Wszystkie aktualności"
+
+[all]
+other = "Wszystkie"
+
+[filter_by_category]
+other = "Filtruj według kategorii"
 
 [related_posts]
 other = "Powiązane artykuły"
@@ -300,30 +630,6 @@ other = "Archiwum aktualności"
 [featured_news]
 other = "Wyróżnione aktualności"
 
-[view_gallery]
-other = "Zobacz galerię"
-
-[all_galleries]
-other = "Wszystkie galerie"
-
-[other_galleries]
-other = "Inne galerie"
-
-[view_full_gallery]
-other = "Zobacz pełną galerię"
-
-[back_to_galleries]
-other = "Powrót do galerii"
-
-[no_galleries]
-other = "Brak galerii"
-
-[gallery_categories]
-other = "Kategorie galerii"
-
-[latest_galleries]
-other = "Najnowsze galerie"
-
 [all_programs]
 other = "Wszystkie programy"
 
@@ -342,11 +648,29 @@ other = "Godziny"
 [daily_schedule]
 other = "Plan dnia"
 
+[program_schedule]
+other = "Plan Dnia"
+
 [program_features]
 other = "Cechy programu"
 
 [program_activities]
 other = "Zajęcia"
+
+[program_info]
+other = "Informacje o Programie"
+
+[key_features]
+other = "Kluczowe Cechy"
+
+[interested_in_program]
+other = "Zainteresowany?"
+
+[program_cta_text]
+other = "Skontaktuj się z nami, aby dowiedzieć się więcej o tym programie i umówić wizytę."
+
+[other_programs]
+other = "Inne Programy"
 
 [enrollment_info]
 other = "Informacje o zapisach"
@@ -360,128 +684,135 @@ other = "Zobacz plan zajęć"
 [download_schedule]
 other = "Pobierz plan zajęć"
 
-[contact_information]
-other = "Informacje kontaktowe"
+[ready_to_enroll]
+other = "Gotowy na zapisy dziecka?"
 
-[our_location]
-other = "Nasza lokalizacja"
+[enroll_cta_description]
+other = "Skontaktuj się z nami, aby dowiedzieć się więcej o naszych programach i umówić wizytę w przedszkolu."
 
-[get_directions]
-other = "Wyznacz trasę"
+[daily_schedule_subtitle]
+other = "Typowy dzień w naszym przedszkolu"
 
-[opening_hours]
-other = "Godziny otwarcia"
+[view_full_schedule]
+other = "Zobacz pełny plan dnia"
 
-[send_message]
-other = "Wyślij wiadomość"
+[schedule_morning]
+other = "Poranek"
 
-[your_name]
-other = "Twoje imię"
+[schedule_learning_time]
+other = "Czas nauki"
 
-[your_email]
-other = "Twój email"
+[schedule_midday]
+other = "Południe"
 
-[your_phone]
-other = "Twój telefon"
+[schedule_afternoon_title]
+other = "Popołudnie"
 
-[your_message]
-other = "Twoja wiadomość"
+[schedule_arrival]
+other = "Przyjście i swobodna zabawa"
 
-[message_sent]
-other = "Wiadomość wysłana"
+[schedule_arrival_desc]
+other = "Dzieci przychodzą i uczestniczą w swobodnej zabawie"
 
-[message_error]
-other = "Błąd wysyłania wiadomości"
+[schedule_arrival_full]
+other = "Schodzenie się dzieci do przedszkola. Zabawy swobodne w kącikach zainteresowań. Praca nauczycieli o charakterze korekcyjno-kompensacyjnym, stymulującym, obserwacyjnym."
 
-[schedule_visit_heading]
-other = "Umów wizytę"
+[schedule_breakfast]
+other = "Śniadanie"
 
-[schedule_visit_description]
-other = "Zapraszamy do odwiedzenia naszego przedszkola i poznania naszego zespołu."
+[schedule_breakfast_desc]
+other = "Wspólny czas na zdrowe śniadanie"
 
-[visit_form_name]
-other = "Imię i nazwisko"
+[schedule_breakfast_full]
+other = "Zdrowe śniadanie przygotowywane codziennie na świeżo. Dzieci uczą się dobrych manier przy stole oraz umiejętności samoobsługi."
 
-[visit_form_email]
-other = "Email"
+[schedule_circle]
+other = "Zbiórka poranna"
 
-[visit_form_phone]
-other = "Telefon"
+[schedule_circle_full]
+other = "Powitanie poranne, zajęcia przy kalendarzu, omówienie planu dnia, piosenki i zajęcia ruchowe."
 
-[visit_form_date]
-other = "Preferowana data"
+[schedule_learning]
+other = "Zajęcia edukacyjne"
 
-[visit_form_time]
-other = "Preferowana godzina"
+[schedule_learning_desc]
+other = "Zajęcia edukacyjne, kreatywna zabawa i czas na świeżym powietrzu"
 
-[visit_form_message]
-other = "Wiadomość (opcjonalnie)"
+[schedule_main_activity]
+other = "Główne zajęcia edukacyjne"
 
-[visit_form_submit]
-other = "Umów wizytę"
+[schedule_main_activity_full]
+other = "Zajęcia programowe inspirowane przez nauczyciela w celu wspomaga rozwo dzieci w sferze językowej, poznawczej, społecznej, artystycznej, ruchowej, zdrowotnej. Praca w małych grupach i indywidualnie."
 
-[quick_links]
-other = "Szybkie linki"
+[schedule_outdoor]
+other = "Zabawa na świeżym powietrzu i aktywność fizyczna"
 
-[useful_links]
-other = "Przydatne linki"
+[schedule_outdoor_full]
+other = "Pobyt na świeżym powietrzu: zabawy dowolne, zajęcia ruchowe, sportowe, przyrodnicze, prowadzenie obserwacji. W niepogodę: sala gimnastyczna lub zajęcia ruchowe w pomieszczeniach."
 
-[stay_connected]
-other = "Bądź w kontakcie"
+[schedule_lunch]
+other = "Obiad"
 
-[newsletter_signup]
-other = "Zapisz się do newslettera"
+[schedule_lunch_desc]
+other = "Pożywny obiad przygotowywany codziennie na świeżo"
 
-[newsletter_placeholder]
-other = "Twój adres email"
+[schedule_lunch_full]
+other = "Pożywny ciepły obiad przygotowywany przez naszą kuchnię. Zbilansowane posiłki dostosowane do potrzeb żywieniowych i preferencji dzieci."
 
-[newsletter_submit]
-other = "Zapisz się"
+[schedule_rest]
+other = "Czas odpoczynku"
 
-[newsletter_success]
-other = "Dziękujemy za zapis!"
+[schedule_rest_desc]
+other = "Cicha chwila i drzemka dla młodszych dzieci"
 
-[social_media]
-other = "Media społecznościowe"
+[schedule_rest_full]
+other = "Leżakowanie dla młodszych dzieci. Starsze dzieci uczestniczą w cichych zajęciach: czytanie, puzzle, projekty plastyczne."
 
-[preschool_info]
-other = "O przedszkolu"
+[schedule_afternoon]
+other = "Zajęcia popołudniowe"
 
-[footer_description]
-other = "Wesołe Nutki - przedszkole, w którym dzieci rozwijają się przez muzykę, języki i zabawę."
+[schedule_afternoon_desc]
+other = "Czas na podwieczorek i kreatywne zajęcia popołudniowe"
 
-[page_not_found]
-other = "Strona nie znaleziona"
+[schedule_snack]
+other = "Podwieczorek"
 
-[page_not_found_message]
-other = "Przepraszamy, strona której szukasz nie istnieje."
+[schedule_snack_full]
+other = "Lekka zdrowa przekąska: owoce, warzywa, produkty mleczne, pełnoziarniste przekąski."
 
-[page_not_found_encouragement]
-other = "Nie martw się! Możesz przeglądać naszą stronę korzystając z poniższych linków."
+[schedule_enrichment]
+other = "Zajęcia dodatkowe"
 
-[helpful_links]
-other = "Przydatne linki"
+[schedule_enrichment_full]
+other = "Specjalistyczne zajęcia: muzyka, taniec, język angielski, warsztaty plastyczne, eksperymenty naukowe lub wydarzenia specjalne."
 
-[error_404]
-other = "Błąd 404"
+[schedule_departure]
+other = "Swobodna zabawa i wychodzenie"
 
-[error_500]
-other = "Błąd 500"
+[schedule_departure_desc]
+other = "Swobodna zabawa i stopniowy odbiór przez rodziców"
 
-[error_500_message]
-other = "Przepraszamy, coś poszło nie tak."
+[schedule_departure_full]
+other = "Czas swobodnej zabawy, kąciki zainteresowań, zabawa na zewnątrz (jeśli pogoda pozwala). Stopniowy odbiór dzieci przez rodziców z możliwością rozmowy z nauczycielem."
 
-[try_again]
-other = "Spróbuj ponownie"
+[meals_nutrition]
+other = "Posiłki i odżywianie"
 
-# Team/Staff Section
-[about_team_heading]
-other = "Nasz Zespół"
+[meals_nutrition_desc]
+other = "Wszystkie posiłki są przygotowywane codziennie na świeżo w naszej kuchni z wysokiej jakości składników. Uwzględniamy ograniczenia dietetyczne i alergie."
 
-[about_team_subtitle]
-other = "Poznaj naszych wykwalifikowanych i zaangażowanych nauczycieli"
+[what_to_bring]
+other = "Co zabrać ze sobą"
 
-# Staff Roles
+[what_to_bring_desc]
+other = "Wygodne ubrania do zabawy, obuwie zmienne, zmiana ubrania oraz przedmioty zapewniające komfort podczas odpoczynku (dla młodszych dzieci)."
+
+[parent_communication]
+other = "Pozostańcie w kontakcie"
+
+[parent_communication_desc]
+other = "Regularne aktualizacje przez naszą aplikację dla rodziców, codzienne raporty oraz otwarta komunikacja z nauczycielami podczas przyprowadzania i odbioru dzieci."
+
 [staff_role_director]
 other = "Dyrektor"
 
@@ -530,7 +861,6 @@ other = "Psychodietetyk"
 [staff_role_maintenance]
 other = "Personel obsługi"
 
-# Staff Biographies
 [staff_bio_director]
 other = "Doświadczony pedagog z pasją do pracy z dziećmi"
 

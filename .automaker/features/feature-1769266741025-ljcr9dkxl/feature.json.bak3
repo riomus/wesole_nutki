@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Missing Polish Translations in Programs Section\n\nComplete Polish language translations for all content in the /pl/programs/ section of the website.\n\nRequirements:\n- Audit all pages under /pl/programs/ to identify untranslated content\n- Translate all English text that appears in the Polish version including:\n  - Page titles and headings\n  - Body content and descriptions\n  - Navigation elements and breadcrumbs\n  - Button labels and CTAs\n  - Form labels and validation messages\n  - Error messages and tooltips\n  - Meta descriptions and SEO content\n- Ensure translations are contextually appropriate and use proper Polish grammar\n- Maintain consistency with existing Polish translations elsewhere on the site\n- Verify all translated content displays correctly without layout issues\n- Test that language-specific formatting (dates, numbers, currency) is correct\n- Update translation files or CMS entries as appropriate for the project structure",
+  "title": "",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": "Missing Polish Translations in Programs Section\n\nComplete Polish language translations for all content in the /pl/programs/ section of the website.\n\nRequirements:\n- Audit all pages under /pl/programs/ to identify untranslated content\n- Translate all English text that appears in the Polish version including:\n  - Page titles and headings\n  - Body content and descriptions\n  - Navigation elements and breadcrumbs\n  - Button labels and CTAs\n  - Form labels and validation messages\n  - Error messages and tooltips\n  - Meta descriptions and SEO content\n- Ensure translations are contextually appropriate and use proper Polish grammar\n- Maintain consistency with existing Polish translations elsewhere on the site\n- Verify all translated content displays correctly without layout issues\n- Test that language-specific formatting (dates, numbers, currency) is correct\n- Update translation files or CMS entries as appropriate for the project structure",
+  "status": "in_progress",
+  "id": "feature-1769266741025-ljcr9dkxl",
+  "descriptionHistory": [
+    {
+      "description": "Missing Polish Translations in Programs Section\n\nComplete Polish language translations for all content in the /pl/programs/ section of the website.\n\nRequirements:\n- Audit all pages under /pl/programs/ to identify untranslated content\n- Translate all English text that appears in the Polish version including:\n  - Page titles and headings\n  - Body content and descriptions\n  - Navigation elements and breadcrumbs\n  - Button labels and CTAs\n  - Form labels and validation messages\n  - Error messages and tooltips\n  - Meta descriptions and SEO content\n- Ensure translations are contextually appropriate and use proper Polish grammar\n- Maintain consistency with existing Polish translations elsewhere on the site\n- Verify all translated content displays correctly without layout issues\n- Test that language-specific formatting (dates, numbers, currency) is correct\n- Update translation files or CMS entries as appropriate for the project structure",
+      "timestamp": "2026-01-24T14:59:01.063Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-24T14:59:03.672Z"
+}

@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix LocalHost Development Server Path Configuration\n\nResolve 404 errors preventing the website from loading on localhost during development while maintaining compatibility with GitHub Pages deployment at bartusiak.ai/wesole_nutki.\n\nRequirements:\n- Configure asset paths (CSS, JS, images) to work in both environments:\n  * LocalHost: root path (http://localhost:port/)\n  * Production: subdirectory path (https://bartusiak.ai/wesole_nutki/)\n- Fix CSS file loading errors:\n  * style.min.338bd0ca61754884d1ae2ea296a84b75bbd045df2ac61c820201736102fe66ef.css\n  * glightbox.min.min.9961219639aa1b1bc73b0871fb62a7ae5d196bd874155d9c09f284bf11a66839.css\n- Fix JavaScript bundle loading error:\n  * bundle.02c579cb5d066be6659a8af0fdbe68aecc966cd2e65c72582734efeafe7a0d3f.js\n- Fix image asset loading (hero-bg.svg and other images)\n- Implement environment-aware base path configuration\n- Verify all static assets are correctly copied to build output\n- Test thoroughly in both environments to confirm no broken links or missing resources\n\nTechnical Considerations:\n- Check build tool configuration (webpack/vite/hugo/etc) for base URL settings\n- Ensure static asset paths use relative or configurable base paths\n- Verify deployment script correctly handles subdirectory structure for GitHub Pages\n- Confirm development server serves assets from correct directory",
+  "title": "Fix localhost asset paths for dual-environment compatibility",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "verified",
+  "id": "feature-1769264717336-0xwh28jgx",
+  "descriptionHistory": [
+    {
+      "description": "Fix LocalHost Development Server Path Configuration\n\nResolve 404 errors preventing the website from loading on localhost during development while maintaining compatibility with GitHub Pages deployment at bartusiak.ai/wesole_nutki.\n\nRequirements:\n- Configure asset paths (CSS, JS, images) to work in both environments:\n  * LocalHost: root path (http://localhost:port/)\n  * Production: subdirectory path (https://bartusiak.ai/wesole_nutki/)\n- Fix CSS file loading errors:\n  * style.min.338bd0ca61754884d1ae2ea296a84b75bbd045df2ac61c820201736102fe66ef.css\n  * glightbox.min.min.9961219639aa1b1bc73b0871fb62a7ae5d196bd874155d9c09f284bf11a66839.css\n- Fix JavaScript bundle loading error:\n  * bundle.02c579cb5d066be6659a8af0fdbe68aecc966cd2e65c72582734efeafe7a0d3f.js\n- Fix image asset loading (hero-bg.svg and other images)\n- Implement environment-aware base path configuration\n- Verify all static assets are correctly copied to build output\n- Test thoroughly in both environments to confirm no broken links or missing resources\n\nTechnical Considerations:\n- Check build tool configuration (webpack/vite/hugo/etc) for base URL settings\n- Ensure static asset paths use relative or configurable base paths\n- Verify deployment script correctly handles subdirectory structure for GitHub Pages\n- Confirm development server serves assets from correct directory",
+      "timestamp": "2026-01-24T14:25:17.418Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-24T14:28:48.446Z"
+}

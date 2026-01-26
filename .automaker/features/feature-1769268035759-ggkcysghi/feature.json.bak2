@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Generate Staff Translation Keys from staff.yml Configuration\n\nFix the translation key generation process to properly extract and generate translation keys from the staff.yml configuration file.\n\nRequirements:\n- Investigate why staff.yml is not being processed by the translation key generator\n- Verify staff.yml file location, format, and syntax are correct\n- Ensure staff.yml is included in the translation generation pipeline\n- Check if other similar .yml files are being processed correctly and apply same logic\n- Validate that generated translation keys follow the expected naming convention\n- Test that generated keys are accessible and properly loaded in the application\n- Confirm all staff-related strings in staff.yml have corresponding translation keys created\n- Document the expected structure of staff.yml for translation generation\n\nEdge cases to consider:\n- Nested keys in staff.yml hierarchy\n- Missing or malformed YAML syntax\n- Translation key naming conflicts with existing keys\n- Locale-specific variations if multiple languages are supported",
+  "title": "Fix staff.yml translation key generation",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "in_progress",
+  "id": "feature-1769268035759-ggkcysghi",
+  "descriptionHistory": [
+    {
+      "description": "Generate Staff Translation Keys from staff.yml Configuration\n\nFix the translation key generation process to properly extract and generate translation keys from the staff.yml configuration file.\n\nRequirements:\n- Investigate why staff.yml is not being processed by the translation key generator\n- Verify staff.yml file location, format, and syntax are correct\n- Ensure staff.yml is included in the translation generation pipeline\n- Check if other similar .yml files are being processed correctly and apply same logic\n- Validate that generated translation keys follow the expected naming convention\n- Test that generated keys are accessible and properly loaded in the application\n- Confirm all staff-related strings in staff.yml have corresponding translation keys created\n- Document the expected structure of staff.yml for translation generation\n\nEdge cases to consider:\n- Nested keys in staff.yml hierarchy\n- Missing or malformed YAML syntax\n- Translation key naming conflicts with existing keys\n- Locale-specific variations if multiple languages are supported",
+      "timestamp": "2026-01-24T15:20:35.858Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-24T15:20:43.297Z"
+}

@@ -11,15 +11,13 @@
     {{ if $paginator.HasPrev }}
     <li class="page-item">
       <a class="page-link page-link-prev" href="{{ $paginator.Prev.URL }}" aria-label="{{ i18n "pagination_previous" | default "Previous page" }}">
-        <span class="page-link-icon" aria-hidden="true">&laquo;</span>
-        <span class="page-link-text d-none d-sm-inline">{{ i18n "pagination_prev" | default "Previous" }}</span>
+        <span aria-hidden="true">&larr;</span>
       </a>
     </li>
     {{ else }}
     <li class="page-item disabled">
       <span class="page-link page-link-prev" aria-disabled="true">
-        <span class="page-link-icon" aria-hidden="true">&laquo;</span>
-        <span class="page-link-text d-none d-sm-inline">{{ i18n "pagination_prev" | default "Previous" }}</span>
+        <span aria-hidden="true">&larr;</span>
       </span>
     </li>
     {{ end }}
@@ -74,24 +72,17 @@
     {{ if $paginator.HasNext }}
     <li class="page-item">
       <a class="page-link page-link-next" href="{{ $paginator.Next.URL }}" aria-label="{{ i18n "pagination_next_page" | default "Next page" }}">
-        <span class="page-link-text d-none d-sm-inline">{{ i18n "pagination_next" | default "Next" }}</span>
-        <span class="page-link-icon" aria-hidden="true">&raquo;</span>
+        <span aria-hidden="true">&rarr;</span>
       </a>
     </li>
     {{ else }}
     <li class="page-item disabled">
       <span class="page-link page-link-next" aria-disabled="true">
-        <span class="page-link-text d-none d-sm-inline">{{ i18n "pagination_next" | default "Next" }}</span>
-        <span class="page-link-icon" aria-hidden="true">&raquo;</span>
+        <span aria-hidden="true">&rarr;</span>
       </span>
     </li>
     {{ end }}
 
   </ul>
-
-  {{/* Page Info */}}
-  <div class="pagination-info text-center text-muted mt-3">
-    {{ i18n "pagination_page" | default "Page" }} {{ $paginator.PageNumber }} {{ i18n "pagination_of" | default "of" }} {{ $paginator.TotalPages }}
-  </div>
 </nav>
 {{ end }}

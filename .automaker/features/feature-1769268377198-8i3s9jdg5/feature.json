@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Audit and Fix i18n Translations in Hugo Templates\n\nComplete a comprehensive audit of internationalization (i18n) usage across all Hugo templates, identify missing translation keys for English and Polish locales, and add the missing translations.\n\nRequirements:\n- Scan all Hugo template files (.html files in layouts/, themes/*/layouts/, partials/, shortcodes/) for i18n function calls\n- Extract all translation keys being referenced (look for patterns like `i18n \"key\"`, `T \"key\"`, or similar Hugo i18n syntax)\n- Generate a complete list of unique translation keys required by the templates\n- Compare extracted keys against existing translation files (i18n/en.toml, i18n/en.yaml, i18n/pl.toml, i18n/pl.yaml, or similar)\n- Identify keys that exist in templates but are missing from English translation file\n- Identify keys that exist in templates but are missing from Polish translation file\n- Add missing translation entries to both en and pl translation files with appropriate translations\n- Ensure translation file format and structure matches existing conventions\n- Verify no duplicate keys exist in translation files\n- Document the complete list of found keys and which ones were added",
+  "title": "Audit and fix missing i18n translations in Hugo templates",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "completed",
+  "id": "feature-1769268377198-8i3s9jdg5",
+  "descriptionHistory": [
+    {
+      "description": "Audit and Fix i18n Translations in Hugo Templates\n\nComplete a comprehensive audit of internationalization (i18n) usage across all Hugo templates, identify missing translation keys for English and Polish locales, and add the missing translations.\n\nRequirements:\n- Scan all Hugo template files (.html files in layouts/, themes/*/layouts/, partials/, shortcodes/) for i18n function calls\n- Extract all translation keys being referenced (look for patterns like `i18n \"key\"`, `T \"key\"`, or similar Hugo i18n syntax)\n- Generate a complete list of unique translation keys required by the templates\n- Compare extracted keys against existing translation files (i18n/en.toml, i18n/en.yaml, i18n/pl.toml, i18n/pl.yaml, or similar)\n- Identify keys that exist in templates but are missing from English translation file\n- Identify keys that exist in templates but are missing from Polish translation file\n- Add missing translation entries to both en and pl translation files with appropriate translations\n- Ensure translation file format and structure matches existing conventions\n- Verify no duplicate keys exist in translation files\n- Document the complete list of found keys and which ones were added",
+      "timestamp": "2026-01-24T15:26:17.295Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-24T15:32:03.964Z"
+}

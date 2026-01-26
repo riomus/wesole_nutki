@@ -1,0 +1,28 @@
+{
+  "category": "Uncategorized",
+  "description": "Implement Translation for back_to_gallery Key\n\nThe `back_to_gallery` translation key is currently displaying as untranslated text in the application instead of showing the localized string.\n\nRequirements:\n- Locate where the `back_to_gallery` key is being used in the codebase\n- Add the missing translation entry to all supported language files\n- Verify the key matches the expected naming convention in the i18n configuration\n- Ensure the translated text appears correctly in the UI for all languages\n- Test that the translation loads properly in different locales\n- Check for any similar untranslated keys in the same component or feature\n\nEdge cases to consider:\n- Ensure the key isn't being used with a typo or incorrect namespace\n- Verify the translation files are being properly loaded at runtime\n- Check if there are multiple translation systems that need updating",
+  "title": "",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": "Implement Translation for back_to_gallery Key\n\nThe `back_to_gallery` translation key is currently displaying as untranslated text in the application instead of showing the localized string.\n\nRequirements:\n- Locate where the `back_to_gallery` key is being used in the codebase\n- Add the missing translation entry to all supported language files\n- Verify the key matches the expected naming convention in the i18n configuration\n- Ensure the translated text appears correctly in the UI for all languages\n- Test that the translation loads properly in different locales\n- Check for any similar untranslated keys in the same component or feature\n\nEdge cases to consider:\n- Ensure the key isn't being used with a typo or incorrect namespace\n- Verify the translation files are being properly loaded at runtime\n- Check if there are multiple translation systems that need updating",
+  "status": "backlog",
+  "id": "feature-1769409902276-6wbw07gtx",
+  "descriptionHistory": [
+    {
+      "description": "Implement Translation for back_to_gallery Key\n\nThe `back_to_gallery` translation key is currently displaying as untranslated text in the application instead of showing the localized string.\n\nRequirements:\n- Locate where the `back_to_gallery` key is being used in the codebase\n- Add the missing translation entry to all supported language files\n- Verify the key matches the expected naming convention in the i18n configuration\n- Ensure the translated text appears correctly in the UI for all languages\n- Test that the translation loads properly in different locales\n- Check for any similar untranslated keys in the same component or feature\n\nEdge cases to consider:\n- Ensure the key isn't being used with a typo or incorrect namespace\n- Verify the translation files are being properly loaded at runtime\n- Check if there are multiple translation systems that need updating",
+      "timestamp": "2026-01-26T06:45:02.364Z",
+      "source": "initial"
+    }
+  ]
+}

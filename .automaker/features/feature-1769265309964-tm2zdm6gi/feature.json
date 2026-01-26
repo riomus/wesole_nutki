@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Add Polish Translations for Contact Page\n\nComplete the Polish language translation for the contact page (/pl/contact/) which currently contains untranslated content.\n\nRequirements:\n- Identify all untranslated text strings on the /pl/contact/ page\n- Translate remaining English text to Polish\n- Ensure translations match the tone and style of existing Polish content\n- Verify all UI elements are translated (labels, buttons, placeholders, error messages, validation text)\n- Check for hardcoded strings that should be extracted to translation files\n- Test form functionality with Polish translations\n- Ensure proper Polish character encoding and special characters display correctly\n- Verify translations are contextually appropriate for Polish users\n\nEdge cases to consider:\n- Dynamic content or JavaScript-generated text\n- Meta tags and SEO-related content\n- Error states and validation messages\n- Tooltips and aria-labels for accessibility",
+  "title": "Add Polish translations to contact page",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "completed",
+  "id": "feature-1769265309964-tm2zdm6gi",
+  "descriptionHistory": [
+    {
+      "description": "Add Polish Translations for Contact Page\n\nComplete the Polish language translation for the contact page (/pl/contact/) which currently contains untranslated content.\n\nRequirements:\n- Identify all untranslated text strings on the /pl/contact/ page\n- Translate remaining English text to Polish\n- Ensure translations match the tone and style of existing Polish content\n- Verify all UI elements are translated (labels, buttons, placeholders, error messages, validation text)\n- Check for hardcoded strings that should be extracted to translation files\n- Test form functionality with Polish translations\n- Ensure proper Polish character encoding and special characters display correctly\n- Verify translations are contextually appropriate for Polish users\n\nEdge cases to consider:\n- Dynamic content or JavaScript-generated text\n- Meta tags and SEO-related content\n- Error states and validation messages\n- Tooltips and aria-labels for accessibility",
+      "timestamp": "2026-01-24T14:35:10.052Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-24T14:46:56.846Z"
+}

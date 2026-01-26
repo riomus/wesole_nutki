@@ -2,205 +2,205 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Wesole Nutki - Language and Music Preschool on Wesole Nutki - Preschool</title>
-    <link>https://bartusiak.ai/wesole_nutki/en/</link>
+    <link>http://localhost:1313/en/</link>
     <description>Recent content in Wesole Nutki - Language and Music Preschool on Wesole Nutki - Preschool</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="https://bartusiak.ai/wesole_nutki/en/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/en/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Preschool Statute</title>
-      <link>https://bartusiak.ai/wesole_nutki/en/documents/statute/</link>
+      <link>http://localhost:1313/en/documents/statute/</link>
       <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://bartusiak.ai/wesole_nutki/en/documents/statute/</guid>
+      <guid>http://localhost:1313/en/documents/statute/</guid>
       <description>&lt;h2 id=&#34;wesole-nutki-preschool-statute&#34;&gt;Wesole Nutki Preschool Statute&lt;/h2&gt;&#xA;&lt;p&gt;The statute defines the basic principles of preschool operation, rights and obligations of children and parents.&lt;/p&gt;&#xA;&lt;h3 id=&#34;key-information&#34;&gt;Key information:&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Organization of preschool work&lt;/li&gt;&#xA;&lt;li&gt;Rights and obligations of parents&lt;/li&gt;&#xA;&lt;li&gt;Recruitment rules&lt;/li&gt;&#xA;&lt;li&gt;Cooperation with parents&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Toddler Group</title>
-      <link>https://bartusiak.ai/wesole_nutki/en/programs/toddlers/</link>
+      <link>http://localhost:1313/en/programs/toddlers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://bartusiak.ai/wesole_nutki/en/programs/toddlers/</guid>
+      <guid>http://localhost:1313/en/programs/toddlers/</guid>
       <description>First step into preschool adventure. Gentle introduction to group life, developing independence and basic social skills.</description>
     </item>
     <item>
       <title>Child Enrollment Form</title>
-      <link>https://bartusiak.ai/wesole_nutki/en/documents/enrollment-form/</link>
+      <link>http://localhost:1313/en/documents/enrollment-form/</link>
       <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://bartusiak.ai/wesole_nutki/en/documents/enrollment-form/</guid>
+      <guid>http://localhost:1313/en/documents/enrollment-form/</guid>
       <description>&lt;h2 id=&#34;child-enrollment-form&#34;&gt;Child Enrollment Form&lt;/h2&gt;&#xA;&lt;p&gt;Official child enrollment form for Wesole Nutki preschool, compliant with GDPR requirements.&lt;/p&gt;&#xA;&lt;h3 id=&#34;form-contents&#34;&gt;Form contents:&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Personal data of child and parents&lt;/li&gt;&#xA;&lt;li&gt;Health information&lt;/li&gt;&#xA;&lt;li&gt;Consents and declarations&lt;/li&gt;&#xA;&lt;li&gt;GDPR clauses&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Preschool Group</title>
-      <link>https://bartusiak.ai/wesole_nutki/en/programs/preschoolers/</link>
+      <link>http://localhost:1313/en/programs/preschoolers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://bartusiak.ai/wesole_nutki/en/programs/preschoolers/</guid>
+      <guid>http://localhost:1313/en/programs/preschoolers/</guid>
       <description>Developing curiosity about the world and social skills. Intensive learning through play, fostering creativity and building self-confidence.</description>
     </item>
     <item>
       <title>Privacy Policy</title>
-      <link>https://bartusiak.ai/wesole_nutki/en/documents/privacy-policy/</link>
+      <link>http://localhost:1313/en/documents/privacy-policy/</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://bartusiak.ai/wesole_nutki/en/documents/privacy-policy/</guid>
+      <guid>http://localhost:1313/en/documents/privacy-policy/</guid>
       <description>&lt;h2 id=&#34;privacy-policy&#34;&gt;Privacy Policy&lt;/h2&gt;&#xA;&lt;p&gt;Wesole Nutki preschool attaches great importance to the protection of personal data of children and parents.&lt;/p&gt;&#xA;&lt;h3 id=&#34;document-scope&#34;&gt;Document scope:&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Personal data controllers&lt;/li&gt;&#xA;&lt;li&gt;Data processing purposes&lt;/li&gt;&#xA;&lt;li&gt;Rights of data subjects&lt;/li&gt;&#xA;&lt;li&gt;Personal data security measures&lt;/li&gt;&#xA;&lt;li&gt;Cookie policy&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;All personal data is processed in accordance with the Regulation of the European Parliament and of the Council (EU) 2016/679 (GDPR).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Pre-K Group</title>
-      <link>https://bartusiak.ai/wesole_nutki/en/programs/pre-k/</link>
+      <link>http://localhost:1313/en/programs/pre-k/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://bartusiak.ai/wesole_nutki/en/programs/pre-k/</guid>
+      <guid>http://localhost:1313/en/programs/pre-k/</guid>
       <description>Intensive preparation for school learning. Developing reading, writing, and math skills while maintaining the joy of learning.</description>
     </item>
     <item>
       <title>Kindergarten</title>
-      <link>https://bartusiak.ai/wesole_nutki/en/programs/kindergarten/</link>
+      <link>http://localhost:1313/en/programs/kindergarten/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://bartusiak.ai/wesole_nutki/en/programs/kindergarten/</guid>
+      <guid>http://localhost:1313/en/programs/kindergarten/</guid>
       <description>Last year before school. Comprehensive preparation for elementary school, developing all key competencies.</description>
     </item>
     <item>
       <title>Daily Schedule</title>
-      <link>https://bartusiak.ai/wesole_nutki/en/programs/schedule/</link>
+      <link>http://localhost:1313/en/programs/schedule/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://bartusiak.ai/wesole_nutki/en/programs/schedule/</guid>
+      <guid>http://localhost:1313/en/programs/schedule/</guid>
       <description>&lt;p&gt;Our preschool day is carefully planned to provide children with optimal conditions for learning, play, and rest. The schedule is flexible and adapted to the needs of different age groups.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Child Protection Standards - Wesołe Nutki</title>
-      <link>https://bartusiak.ai/wesole_nutki/en/child-protection-standards/</link>
+      <link>http://localhost:1313/en/child-protection-standards/</link>
       <pubDate>Fri, 23 Jan 2026 09:28:26 +0000</pubDate>
-      <guid>https://bartusiak.ai/wesole_nutki/en/child-protection-standards/</guid>
+      <guid>http://localhost:1313/en/child-protection-standards/</guid>
       <description>&lt;p&gt;At our preschool, the most important thing is that every child feels safe, happy, and cared for. That&amp;rsquo;s why we implement additional child protection standards that help us care for their safety and well-being. Although these standards stem from applicable legal regulations, they are above all an expression of our responsibility for the children you entrust to us.&lt;/p&gt;&#xA;&lt;p&gt;Our preschool is a place where every child can develop in an atmosphere of trust, warmth, and respect. We ensure that our teachers are properly prepared and aware of how important it is to protect the youngest.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Galleries - Wesołe Nutki</title>
-      <link>https://bartusiak.ai/wesole_nutki/en/galleries/</link>
+      <link>http://localhost:1313/en/galleries/</link>
       <pubDate>Fri, 23 Jan 2026 09:28:22 +0000</pubDate>
-      <guid>https://bartusiak.ai/wesole_nutki/en/galleries/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://bartusiak.ai/wesole_nutki/images/scraped/galerie-0.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://bartusiak.ai/wesole_nutki/images/scraped/galerie-1.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://bartusiak.ai/wesole_nutki/images/scraped/galerie-2.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://bartusiak.ai/wesole_nutki/images/scraped/galerie-3.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://bartusiak.ai/wesole_nutki/images/scraped/galerie-4.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://bartusiak.ai/wesole_nutki/images/scraped/galerie-5.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://bartusiak.ai/wesole_nutki/images/scraped/galerie-6.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://bartusiak.ai/wesole_nutki/images/scraped/galerie-7.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://bartusiak.ai/wesole_nutki/images/scraped/galerie-8.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://bartusiak.ai/wesole_nutki/images/scraped/galerie-9.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://bartusiak.ai/wesole_nutki/images/scraped/galerie-10.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://bartusiak.ai/wesole_nutki/images/scraped/galerie-11.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://bartusiak.ai/wesole_nutki/images/scraped/galerie-12.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://bartusiak.ai/wesole_nutki/images/scraped/galerie-13.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://bartusiak.ai/wesole_nutki/images/scraped/galerie-14.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://bartusiak.ai/wesole_nutki/images/scraped/galerie-15.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://bartusiak.ai/wesole_nutki/images/scraped/galerie-16.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://bartusiak.ai/wesole_nutki/images/scraped/galerie-17.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://bartusiak.ai/wesole_nutki/images/scraped/galerie-18.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+      <guid>http://localhost:1313/en/galleries/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/scraped/galerie-0.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/scraped/galerie-1.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/scraped/galerie-2.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/scraped/galerie-3.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/scraped/galerie-4.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/scraped/galerie-5.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/scraped/galerie-6.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/scraped/galerie-7.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/scraped/galerie-8.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/scraped/galerie-9.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/scraped/galerie-10.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/scraped/galerie-11.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/scraped/galerie-12.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/scraped/galerie-13.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/scraped/galerie-14.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/scraped/galerie-15.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/scraped/galerie-16.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/scraped/galerie-17.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/scraped/galerie-18.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>School Year Calendar 2025/2026 - Wesołe Nutki</title>
-      <link>https://bartusiak.ai/wesole_nutki/en/daily-plan/events/</link>
+      <link>http://localhost:1313/en/daily-plan/events/</link>
       <pubDate>Fri, 23 Jan 2026 09:28:14 +0000</pubDate>
-      <guid>https://bartusiak.ai/wesole_nutki/en/daily-plan/events/</guid>
+      <guid>http://localhost:1313/en/daily-plan/events/</guid>
       <description>&lt;p&gt;The calendar will be available soon&lt;/p&gt;</description>
     </item>
     <item>
       <title>Extra Activities 2025/2026 - Wesołe Nutki</title>
-      <link>https://bartusiak.ai/wesole_nutki/en/daily-plan/extra-activities/</link>
+      <link>http://localhost:1313/en/daily-plan/extra-activities/</link>
       <pubDate>Fri, 23 Jan 2026 09:28:10 +0000</pubDate>
-      <guid>https://bartusiak.ai/wesole_nutki/en/daily-plan/extra-activities/</guid>
+      <guid>http://localhost:1313/en/daily-plan/extra-activities/</guid>
       <description>&lt;p&gt;In addition to program activities included in tuition, we offer additional afternoon activities for an extra fee:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;soccer&lt;/li&gt;&#xA;&lt;li&gt;chess&lt;/li&gt;&#xA;&lt;li&gt;dance&lt;/li&gt;&#xA;&lt;li&gt;ballet&lt;/li&gt;&#xA;&lt;li&gt;drumming workshops&lt;/li&gt;&#xA;&lt;li&gt;robot building blocks&lt;/li&gt;&#xA;&lt;li&gt;drama&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;schedule-of-afternoon-paid-activities-will-be-added-soon&#34;&gt;Schedule of afternoon paid activities will be added soon&lt;/h2&gt;</description>
     </item>
     <item>
       <title>Weekly Schedule - Wesołe Nutki</title>
-      <link>https://bartusiak.ai/wesole_nutki/en/schedule/</link>
+      <link>http://localhost:1313/en/schedule/</link>
       <pubDate>Fri, 23 Jan 2026 09:28:07 +0000</pubDate>
-      <guid>https://bartusiak.ai/wesole_nutki/en/schedule/</guid>
+      <guid>http://localhost:1313/en/schedule/</guid>
       <description>&lt;div class=&#34;schedule-table-wrapper&#34;&gt;&#xA;  &lt;table class=&#34;weekly-schedule-table&#34;&gt;&#xA;    &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;        &lt;th&gt;Group&lt;/th&gt;&#xA;        &lt;th&gt;Monday&lt;/th&gt;&#xA;        &lt;th&gt;Tuesday&lt;/th&gt;&#xA;        &lt;th&gt;Wednesday&lt;/th&gt;&#xA;        &lt;th&gt;Thursday&lt;/th&gt;&#xA;        &lt;th&gt;Friday&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;    &lt;/thead&gt;&#xA;    &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;        &lt;td class=&#34;group-name&#34;&gt;Squirrels (Wiewórki)&lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;09:00–09:20&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Logorhythmics&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;11:30–11:45&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;English&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;10:15–10:30&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Spanish&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;10:00–10:20&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Rhythmics&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;11:30–11:45&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;English&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;10:30–10:45&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;English&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;09:00–09:20&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Rhythmics&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;09:00–09:30&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Gymnastics&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;        &lt;td class=&#34;group-name&#34;&gt;Butterflies (Motylki)&lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;09:20–09:50&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Logorhythmics&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;11:45–12:15&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;English&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;10:35–10:55&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Spanish&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;10:20–10:50&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Rhythmics&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;11:45–12:15&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;English&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;10:00–10:30&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;English&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;09:20–09:50&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Rhythmics&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;09:30–10:00&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Gymnastics&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;        &lt;td class=&#34;group-name&#34;&gt;Ladybugs (Biedronki)&lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;09:50–10:20&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Logorhythmics&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;12:15–12:45&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;English&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;11:00–11:30&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Spanish&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;10:50–11:20&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Rhythmics&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;12:15–12:45&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;English&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;09:30–10:00&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;English&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;10:00–10:30&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Gymnastics&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;12:30–13:00&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Rhythmics&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;        &lt;td class=&#34;group-name&#34;&gt;Hedgehogs (Jeżyki)&lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;10:20–10:50&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Logorhythmics&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;11:15–11:45&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Spanish&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;12:45–13:15&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;English&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;10:30–11:00&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Gymnastics&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;11:20–11:50&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Rhythmics&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;12:45–13:15&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;English&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;09:00–09:30&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;English&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;10:30–11:00&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Gymnastics&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;13:00–13:30&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Rhythmics&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr class=&#34;extra-activities&#34;&gt;&#xA;        &lt;td class=&#34;group-name&#34;&gt;Extra Activities&lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;14:00&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Soccer&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;16:00&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Drama&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;12:30&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Piano / Singing Lessons&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;16:00&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Drama&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;13:00&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Dance and Ballet&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;14:00&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Drums&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;14:00&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Chess&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;14:30&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Art Classes&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;    &lt;/tbody&gt;&#xA;  &lt;/table&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Staff - Wesołe Nutki</title>
-      <link>https://bartusiak.ai/wesole_nutki/en/staff/</link>
+      <link>http://localhost:1313/en/staff/</link>
       <pubDate>Fri, 23 Jan 2026 09:27:56 +0000</pubDate>
-      <guid>https://bartusiak.ai/wesole_nutki/en/staff/</guid>
+      <guid>http://localhost:1313/en/staff/</guid>
       <description>&lt;p&gt;🐿️ SQUIRRELS (WIEWIÓRECZKI): Patrycja Gajzler (lead teacher), Maja Kalinowska (teaching assistant)&lt;/p&gt;&#xA;&lt;p&gt;🦋 BUTTERFLIES (MOTYLKI): Paulina Milewska (lead teacher), Anita Nowak (teaching assistant)&lt;/p&gt;&#xA;&lt;p&gt;🐞 LADYBUGS (BIEDRONKI): Halszka Szymaniak (lead teacher), Katarzyna Ścibór (lead teacher)&lt;/p&gt;&#xA;&lt;p&gt;🦔 HEDGEHOGS (JEŻYKI): Kacper Rygałło (lead teacher)&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Additional Activity Teachers:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Rhythmics – Anna Kierakowicz&lt;/p&gt;&#xA;&lt;p&gt;Gymnastics – Alma Eperlein&lt;/p&gt;&#xA;&lt;p&gt;English Language – Inna&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Psychological and Pedagogical Support:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Psychologist – Karolina Zwolińska&lt;/p&gt;&#xA;&lt;p&gt;Speech Therapist – Joanna Dominik&lt;/p&gt;&#xA;&lt;p&gt;Special Education Teacher – Anna Brodzisz&lt;/p&gt;</description>
     </item>
     <item>
       <title>Enrollment - Wesołe Nutki</title>
-      <link>https://bartusiak.ai/wesole_nutki/en/about/enrollment/</link>
+      <link>http://localhost:1313/en/about/enrollment/</link>
       <pubDate>Fri, 23 Jan 2026 09:27:45 +0000</pubDate>
-      <guid>https://bartusiak.ai/wesole_nutki/en/about/enrollment/</guid>
+      <guid>http://localhost:1313/en/about/enrollment/</guid>
       <description>&lt;p&gt;We invite everyone interested in enrolling their child in our preschool to download the enrollment form:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://wesolenutki.eu/wp-content/uploads/2019/11/Karta-Zg%C5%82oszenia-Dziecka_RODO-poprawione.pdf&#34;&gt;Child Enrollment Form (PDF file)&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Please submit completed and signed forms directly at the preschool.&lt;/p&gt;&#xA;&lt;p&gt;Recruitment for the next school year takes place in February and March. Children are admitted to older age groups as places become available.&lt;/p&gt;&#xA;&lt;p&gt;The recruitment process includes an introductory meeting and takes into account the order of applications.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Payments - Wesołe Nutki</title>
-      <link>https://bartusiak.ai/wesole_nutki/en/about/payments/</link>
+      <link>http://localhost:1313/en/about/payments/</link>
       <pubDate>Fri, 23 Jan 2026 09:27:42 +0000</pubDate>
-      <guid>https://bartusiak.ai/wesole_nutki/en/about/payments/</guid>
+      <guid>http://localhost:1313/en/about/payments/</guid>
       <description>&lt;p&gt;Payments should be made &lt;strong&gt;by the 10th day of each month&lt;/strong&gt; to the bank account:&lt;/p&gt;&#xA;&lt;p&gt;Przedszkole Niepubliczne Językowo-Muzyczne „Wesołe Nutki&amp;quot;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;ul. Łaciarska 8, 50-104 Wrocław&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Account number: 56 1020 5242 0000 2102 0260 4536&lt;/p&gt;&#xA;&lt;p&gt;Bank name: &lt;strong&gt;PKO BP S.A.&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Pricing - Wesołe Nutki</title>
-      <link>https://bartusiak.ai/wesole_nutki/en/about/pricing/</link>
+      <link>http://localhost:1313/en/about/pricing/</link>
       <pubDate>Fri, 23 Jan 2026 09:27:39 +0000</pubDate>
-      <guid>https://bartusiak.ai/wesole_nutki/en/about/pricing/</guid>
+      <guid>http://localhost:1313/en/about/pricing/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Payment Principles for the 2025/2026 School Year&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://wesolenutki.eu/wp-content/uploads/2025/09/REGULAMIN-odplatnosci-przedszkole-Wesole-Nutki-2025-2026-2.pdf&#34;&gt;&lt;strong&gt;Payment Regulations&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;The registration fee is paid once and amounts to 900 PLN.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Monthly tuition is 900 PLN.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;The meal fee is 25 PLN/day for a standard diet or 27 PLN/day for a special diet.&lt;/p&gt;&#xA;&lt;p&gt;Tuition includes program activities (3 times a week English language classes, 2 times a week general development gymnastics with corrective elements, 2 times a week rhythmics, once a week logorhythmics) as well as events organized at the preschool, including theater performances and concerts.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Offer - Wesołe Nutki</title>
-      <link>https://bartusiak.ai/wesole_nutki/en/about/offer/</link>
+      <link>http://localhost:1313/en/about/offer/</link>
       <pubDate>Fri, 23 Jan 2026 09:27:36 +0000</pubDate>
-      <guid>https://bartusiak.ai/wesole_nutki/en/about/offer/</guid>
+      <guid>http://localhost:1313/en/about/offer/</guid>
       <description>&lt;p&gt;Our preschool cares for children aged 3-6 years (2.5-year-olds are accepted) in five groups. It operates in a detached, single-story building located in close proximity to Wrocław&amp;rsquo;s Market Square. The classrooms are equipped with furniture and toys adapted to the needs and age of the children. Pastel colors give the interiors a warm and cheerful atmosphere.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;The preschool garden&lt;/strong&gt; and the playground located in it provide joyful outdoor play. We pay special attention to ensuring that children spend as much time as possible in the garden and on walks, even in less favorable weather. The playground is equipped with two climbing sets with slides, a &amp;ldquo;monkey bars&amp;rdquo; climbing set for the oldest children, a train, a double sandbox, spring rockers, and a chalkboard for drawing.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Our Vision - Wesołe Nutki</title>
-      <link>https://bartusiak.ai/wesole_nutki/en/about/vision/</link>
+      <link>http://localhost:1313/en/about/vision/</link>
       <pubDate>Fri, 23 Jan 2026 09:27:31 +0000</pubDate>
-      <guid>https://bartusiak.ai/wesole_nutki/en/about/vision/</guid>
+      <guid>http://localhost:1313/en/about/vision/</guid>
       <description>&lt;p&gt;We want to create a place that is friendly to children, parents, teachers, and all preschool staff. Our priority is to ensure that children feel safe and accepted as they develop their interests, learn through play and action, and acquire skills and knowledge according to their individual developmental path. Our goal is to raise children to live in harmony with themselves, with other people, and with the surrounding world, while preparing them to start school.&lt;/p&gt;</description>
     </item>
     <item>
       <title>RECRUITMENT OPEN - Wesołe Nutki</title>
-      <link>https://bartusiak.ai/wesole_nutki/en/recruitment/</link>
+      <link>http://localhost:1313/en/recruitment/</link>
       <pubDate>Fri, 23 Jan 2026 09:27:21 +0000</pubDate>
-      <guid>https://bartusiak.ai/wesole_nutki/en/recruitment/</guid>
+      <guid>http://localhost:1313/en/recruitment/</guid>
       <description>&lt;p&gt;Dear Parents! We have opened recruitment for a new toddler group – starting September 2026. We cordially invite children born in 2023.&lt;/p&gt;&#xA;&lt;p&gt;The enrollment form is available for download &lt;a href=&#34;https://wesolenutki.eu/wp-content/uploads/2019/11/Karta-Zg%C5%82oszenia-Dziecka_RODO-poprawione.pdf&#34;&gt;here&lt;/a&gt; or in the documents section.&lt;/p&gt;&#xA;&lt;p&gt;Information is available by phone: 71 343 18 99, mobile: 536 268 113&lt;/p&gt;&#xA;&lt;p&gt;and by email: &lt;a href=&#34;mailto:przedszkole@wesolenutki.eu&#34;&gt;przedszkole@wesolenutki.eu&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;WELCOME!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Winter Fun in the Snow</title>
-      <link>https://bartusiak.ai/wesole_nutki/en/news/2025/01/winter-fun-in-the-snow/</link>
+      <link>http://localhost:1313/en/news/2025/01/winter-fun-in-the-snow/</link>
       <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://bartusiak.ai/wesole_nutki/en/news/2025/01/winter-fun-in-the-snow/</guid>
+      <guid>http://localhost:1313/en/news/2025/01/winter-fun-in-the-snow/</guid>
       <description>Our preschoolers had a great time playing in the snow! See photos from our winter activities.</description>
     </item>
     <item>
       <title>Cooking Workshops for Children</title>
-      <link>https://bartusiak.ai/wesole_nutki/en/news/2024/11/cooking-workshops-for-children/</link>
+      <link>http://localhost:1313/en/news/2024/11/cooking-workshops-for-children/</link>
       <pubDate>Tue, 05 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>https://bartusiak.ai/wesole_nutki/en/news/2024/11/cooking-workshops-for-children/</guid>
+      <guid>http://localhost:1313/en/news/2024/11/cooking-workshops-for-children/</guid>
       <description>In November, we are starting a series of cooking workshops for children. Little chefs will learn to prepare simple and healthy meals.</description>
     </item>
     <item>
       <title>Autumn Family Festival</title>
-      <link>https://bartusiak.ai/wesole_nutki/en/gallery/autumn-festival-2024/</link>
+      <link>http://localhost:1313/en/gallery/autumn-festival-2024/</link>
       <pubDate>Sun, 20 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://bartusiak.ai/wesole_nutki/en/gallery/autumn-festival-2024/</guid>
+      <guid>http://localhost:1313/en/gallery/autumn-festival-2024/</guid>
       <description>&lt;p&gt;Our annual autumn family festival was full of attractions! Together with parents and children, we had fun with music, created autumn decorations, and tasted delicious treats.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Autumn Family Picnic</title>
-      <link>https://bartusiak.ai/wesole_nutki/en/news/2024/10/autumn-family-picnic/</link>
+      <link>http://localhost:1313/en/news/2024/10/autumn-family-picnic/</link>
       <pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://bartusiak.ai/wesole_nutki/en/news/2024/10/autumn-family-picnic/</guid>
+      <guid>http://localhost:1313/en/news/2024/10/autumn-family-picnic/</guid>
       <description>We invite all families to an autumn picnic in the preschool garden. There will be many attractions, competitions, and great outdoor fun waiting for us.</description>
     </item>
     <item>
       <title>Welcome to the New School Year 2024/2025</title>
-      <link>https://bartusiak.ai/wesole_nutki/en/news/2024/09/welcome-to-the-new-school-year-2024/2025/</link>
+      <link>http://localhost:1313/en/news/2024/09/welcome-to-the-new-school-year-2024/2025/</link>
       <pubDate>Mon, 02 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://bartusiak.ai/wesole_nutki/en/news/2024/09/welcome-to-the-new-school-year-2024/2025/</guid>
+      <guid>http://localhost:1313/en/news/2024/09/welcome-to-the-new-school-year-2024/2025/</guid>
       <description>We are delighted to welcome all children and parents to the new school year. We have prepared many attractions and new activities for our little preschoolers.</description>
     </item>
     <item>
       <title>Daily Activities at Preschool</title>
-      <link>https://bartusiak.ai/wesole_nutki/en/gallery/daily-activities/</link>
+      <link>http://localhost:1313/en/gallery/daily-activities/</link>
       <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://bartusiak.ai/wesole_nutki/en/gallery/daily-activities/</guid>
+      <guid>http://localhost:1313/en/gallery/daily-activities/</guid>
       <description>&lt;p&gt;Take a peek at our daily activities! Art, music, physical play, and much more - every day at Wesole Nutki preschool is full of joy and learning.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Spring Trip to the Park</title>
-      <link>https://bartusiak.ai/wesole_nutki/en/gallery/spring-trip-2024/</link>
+      <link>http://localhost:1313/en/gallery/spring-trip-2024/</link>
       <pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://bartusiak.ai/wesole_nutki/en/gallery/spring-trip-2024/</guid>
+      <guid>http://localhost:1313/en/gallery/spring-trip-2024/</guid>
       <description>&lt;p&gt;Our spring trip to the park was full of adventures! Children had the opportunity to observe awakening nature, play outdoors, and enjoy the beautiful spring weather.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Christmas Performance</title>
-      <link>https://bartusiak.ai/wesole_nutki/en/gallery/christmas-2023/</link>
+      <link>http://localhost:1313/en/gallery/christmas-2023/</link>
       <pubDate>Mon, 18 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>https://bartusiak.ai/wesole_nutki/en/gallery/christmas-2023/</guid>
+      <guid>http://localhost:1313/en/gallery/christmas-2023/</guid>
       <description>&lt;p&gt;A magical Christmas performance prepared by our preschoolers. Children showcased their artistic talents by singing carols and performing Christmas scenes.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,6 +2,353 @@
   "version": 1,
   "events": [
     {
+      "id": "evt-1769410222797-08e6b7a1",
+      "trigger": "auto_mode_complete",
+      "timestamp": "2026-01-26T06:50:22.797Z"
+    },
+    {
+      "id": "evt-1769410212914-52fc9783",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-26T06:50:12.914Z",
+      "featureName": "Add English translations to recruitment partial",
+      "featureId": "feature-1769409979709-4ny5qrj7k"
+    },
+    {
+      "id": "evt-1769410189449-5217551c",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-26T06:49:49.449Z",
+      "featureName": "Fix \"Open Now\" status indicator translation",
+      "featureId": "feature-1769409998442-n3p4998om"
+    },
+    {
+      "id": "evt-1769410166839-a6611a47",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-26T06:49:26.839Z",
+      "featureName": "Add missing back_to_gallery translation key",
+      "featureId": "feature-1769409902276-6wbw07gtx"
+    },
+    {
+      "id": "evt-1769409998532-0d81b744",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-26T06:46:38.532Z",
+      "featureId": "feature-1769409998442-n3p4998om"
+    },
+    {
+      "id": "evt-1769409979786-a86c0b83",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-26T06:46:19.786Z",
+      "featureId": "feature-1769409979709-4ny5qrj7k"
+    },
+    {
+      "id": "evt-1769409902365-1bba5bb2",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-26T06:45:02.365Z",
+      "featureId": "feature-1769409902276-6wbw07gtx"
+    },
+    {
+      "id": "evt-1769409871939-98f42a66",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-26T06:44:31.939Z",
+      "featureName": "",
+      "featureId": "feature-1769409758045-30vjtsb1h"
+    },
+    {
+      "id": "evt-1769409758140-9bd0e689",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-26T06:42:38.140Z",
+      "featureId": "feature-1769409758045-30vjtsb1h"
+    },
+    {
+      "id": "evt-1769269943151-8344272b",
+      "trigger": "auto_mode_complete",
+      "timestamp": "2026-01-24T15:52:23.152Z"
+    },
+    {
+      "id": "evt-1769269939674-0b0b7bce",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-24T15:52:19.674Z",
+      "featureName": "",
+      "featureId": "feature-1769269577899-rj9gn1axp"
+    },
+    {
+      "id": "evt-1769269578005-1573e31c",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-24T15:46:18.005Z",
+      "featureId": "feature-1769269577899-rj9gn1axp"
+    },
+    {
+      "id": "evt-1769269247807-8579096b",
+      "trigger": "auto_mode_complete",
+      "timestamp": "2026-01-24T15:40:47.807Z"
+    },
+    {
+      "id": "evt-1769269241321-a0f5d3ff",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-24T15:40:41.321Z",
+      "featureName": "Add Schedule Translation Keys",
+      "featureId": "feature-1769268867622-6s4usci48"
+    },
+    {
+      "id": "evt-1769269098337-088b4cb4",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-24T15:38:18.337Z",
+      "featureName": "Fix missing translation keys in program sidebar",
+      "featureId": "feature-1769268969315-enwkk3jaj"
+    },
+    {
+      "id": "evt-1769268969409-3f174e13",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-24T15:36:09.409Z",
+      "featureId": "feature-1769268969315-enwkk3jaj"
+    },
+    {
+      "id": "evt-1769268867717-9faa03b5",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-24T15:34:27.717Z",
+      "featureId": "feature-1769268867622-6s4usci48"
+    },
+    {
+      "id": "evt-1769268731348-6e83eee1",
+      "trigger": "auto_mode_complete",
+      "timestamp": "2026-01-24T15:32:11.348Z"
+    },
+    {
+      "id": "evt-1769268723972-f4b45a7c",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-24T15:32:03.972Z",
+      "featureName": "",
+      "featureId": "feature-1769268377198-8i3s9jdg5"
+    },
+    {
+      "id": "evt-1769268557636-8aef372c",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-24T15:29:17.636Z",
+      "featureName": "",
+      "featureId": "feature-1769268009680-584klgpxb"
+    },
+    {
+      "id": "evt-1769268377296-357d9290",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-24T15:26:17.296Z",
+      "featureId": "feature-1769268377198-8i3s9jdg5"
+    },
+    {
+      "id": "evt-1769268287028-41ebdb4a",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-24T15:24:47.028Z",
+      "featureName": "Fix staff.yml translation key generation",
+      "featureId": "feature-1769268035759-ggkcysghi"
+    },
+    {
+      "id": "evt-1769268120723-9cf2ce21",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-24T15:22:00.723Z",
+      "featureName": "Add Polish translation for \"Image unavailable\" message",
+      "featureId": "feature-1769267962732-piohbfni6"
+    },
+    {
+      "id": "evt-1769268035859-7c36e4fd",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-24T15:20:35.859Z",
+      "featureId": "feature-1769268035759-ggkcysghi"
+    },
+    {
+      "id": "evt-1769268009716-5a1f3b31",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-24T15:20:09.716Z",
+      "featureId": "feature-1769268009680-584klgpxb"
+    },
+    {
+      "id": "evt-1769267962830-a0495dd7",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-24T15:19:22.830Z",
+      "featureId": "feature-1769267962732-piohbfni6"
+    },
+    {
+      "id": "evt-1769267137663-31d10f79",
+      "trigger": "auto_mode_complete",
+      "timestamp": "2026-01-24T15:05:37.663Z"
+    },
+    {
+      "id": "evt-1769267133543-492196b2",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-24T15:05:33.543Z",
+      "featureName": "Localize Polish About Page Translations",
+      "featureId": "feature-1769266708095-uj1v0aksm"
+    },
+    {
+      "id": "evt-1769267019668-efa35a21",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-24T15:03:39.668Z",
+      "featureName": "",
+      "featureId": "feature-1769266741025-ljcr9dkxl"
+    },
+    {
+      "id": "evt-1769266840586-e900b9bc",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-24T15:00:40.586Z",
+      "featureName": "",
+      "featureId": "feature-1769266687544-eh4wu05uy"
+    },
+    {
+      "id": "evt-1769266741063-aabe3bcd",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-24T14:59:01.063Z",
+      "featureId": "feature-1769266741025-ljcr9dkxl"
+    },
+    {
+      "id": "evt-1769266708128-92497b5b",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-24T14:58:28.128Z",
+      "featureId": "feature-1769266708095-uj1v0aksm"
+    },
+    {
+      "id": "evt-1769266704876-3df1b315",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-24T14:58:24.876Z",
+      "featureName": "Fix active menu item highlighting across routes",
+      "featureId": "feature-1769265341235-ynmltf60h"
+    },
+    {
+      "id": "evt-1769266687637-9d2bc3e0",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-24T14:58:07.637Z",
+      "featureId": "feature-1769266687544-eh4wu05uy"
+    },
+    {
+      "id": "evt-1769266016852-49a95d99",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-24T14:46:56.852Z",
+      "featureName": "Add Polish translations to contact page",
+      "featureId": "feature-1769265309964-tm2zdm6gi"
+    },
+    {
+      "id": "evt-1769265991624-c03e7486",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-24T14:46:31.624Z",
+      "featureName": "Complete Polish Translation for Schedule Programs Directory",
+      "featureId": "feature-1769265266065-w7bou04m5"
+    },
+    {
+      "id": "evt-1769265852918-777e699a",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-24T14:44:12.918Z",
+      "featureName": "",
+      "featureId": "feature-1769265230134-k2yvitexc"
+    },
+    {
+      "id": "evt-1769265604096-a0f2ad9a",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-24T14:40:04.096Z",
+      "featureName": "Fix Missing Polish Translations on About Page",
+      "featureId": "feature-1769265191134-uibev310j"
+    },
+    {
+      "id": "evt-1769265560661-548c9b88",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-24T14:39:20.661Z",
+      "featureName": "Fix pagination text translation on Polish language pages",
+      "featureId": "feature-1769265163190-f6t63bpwl"
+    },
+    {
+      "id": "evt-1769265341335-a7e49dd1",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-24T14:35:41.335Z",
+      "featureId": "feature-1769265341235-ynmltf60h"
+    },
+    {
+      "id": "evt-1769265310053-895a9416",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-24T14:35:10.053Z",
+      "featureId": "feature-1769265309964-tm2zdm6gi"
+    },
+    {
+      "id": "evt-1769265266164-850033c2",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-24T14:34:26.164Z",
+      "featureId": "feature-1769265266065-w7bou04m5"
+    },
+    {
+      "id": "evt-1769265230234-88fbed87",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-24T14:33:50.234Z",
+      "featureId": "feature-1769265230134-k2yvitexc"
+    },
+    {
+      "id": "evt-1769265191223-73136605",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-24T14:33:11.223Z",
+      "featureId": "feature-1769265191134-uibev310j"
+    },
+    {
+      "id": "evt-1769265163274-c5d88547",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-24T14:32:43.274Z",
+      "featureId": "feature-1769265163190-f6t63bpwl"
+    },
+    {
+      "id": "evt-1769264937568-4fb70c06",
+      "trigger": "auto_mode_complete",
+      "timestamp": "2026-01-24T14:28:57.568Z"
+    },
+    {
+      "id": "evt-1769264928460-9e502455",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-24T14:28:48.460Z",
+      "featureName": "Fix localhost asset paths for dual-environment compatibility",
+      "featureId": "feature-1769264717336-0xwh28jgx"
+    },
+    {
+      "id": "evt-1769264717421-36f08b1a",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-24T14:25:17.421Z",
+      "featureId": "feature-1769264717336-0xwh28jgx"
+    },
+    {
+      "id": "evt-1769264714553-e6ce4acf",
+      "trigger": "auto_mode_complete",
+      "timestamp": "2026-01-24T14:25:14.553Z"
+    },
+    {
+      "id": "evt-1769264705364-9f9b7ffc",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-24T14:25:05.364Z",
+      "featureName": "Audit and Translate English Text to Polish",
+      "featureId": "feature-1769264282364-odr0ax61l"
+    },
+    {
+      "id": "evt-1769264512912-8277bc58",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-24T14:21:52.912Z",
+      "featureName": "",
+      "featureId": "feature-1769264328422-d5sis98ar"
+    },
+    {
+      "id": "evt-1769264371231-aff503d3",
+      "trigger": "feature_success",
+      "timestamp": "2026-01-24T14:19:31.231Z",
+      "featureName": "",
+      "featureId": "feature-1769264203941-pqy7ioi57"
+    },
+    {
+      "id": "evt-1769264328449-71162e3b",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-24T14:18:48.449Z",
+      "featureId": "feature-1769264328422-d5sis98ar"
+    },
+    {
+      "id": "evt-1769264282463-8d1aedc8",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-24T14:18:02.463Z",
+      "featureId": "feature-1769264282364-odr0ax61l"
+    },
+    {
+      "id": "evt-1769264204035-d6e7dbe1",
+      "trigger": "feature_created",
+      "timestamp": "2026-01-24T14:16:44.035Z",
+      "featureId": "feature-1769264203941-pqy7ioi57"
+    },
+    {
       "id": "evt-1769202159406-34d90aec",
       "trigger": "auto_mode_complete",
       "timestamp": "2026-01-23T21:02:39.406Z"

@@ -7,7 +7,7 @@
     "sync:translations": "node scripts/sync-translations.js",
     "dev": "npm run sync:translations && hugo server --buildDrafts --buildFuture --baseURL http://localhost:1313/",
     "dev:basepath": "npm run sync:translations && hugo server --buildDrafts --buildFuture --baseURL http://localhost:1313/wesole_nutki/",
-    "build": "npm run sync:translations && hugo --minify",
+    "build": "npm run sync:translations && HUGO_ENVIRONMENT=production hugo --minify",
     "clean": "rm -rf public resources",
     "test": "npx playwright test",
     "test:ui": "npx playwright test --ui",

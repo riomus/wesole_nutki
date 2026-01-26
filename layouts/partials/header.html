@@ -100,7 +100,14 @@
             {{/* Check if current page matches this menu item */}}
             {{ $pageURL := $currentPage.RelPermalink }}
             {{ $menuURL := .url }}
-            {{ $isCurrentPage := eq $pageURL $menuURL }}
+            {{/* Strip base path from page URL for comparison */}}
+            {{ $basePath := strings.TrimSuffix "/" site.BaseURL | path.Base }}
+            {{ $pageURLClean := strings.TrimPrefix (printf "/%s" $basePath) $pageURL }}
+            {{/* Normalize URLs by ensuring consistent trailing slash handling */}}
+            {{ $normalizedPageURL := strings.TrimSuffix "/" $pageURLClean }}
+            {{ $normalizedMenuURL := strings.TrimSuffix "/" $menuURL }}
+            {{/* Check for exact match (with or without trailing slash) */}}
+            {{ $isCurrentPage := or (eq $pageURLClean $menuURL) (eq $normalizedPageURL $normalizedMenuURL) }}
             {{ $isActive := $isCurrentPage }}
             {{/* Check if page URL starts with menu URL (for section matching) */}}
             {{/* Exclude language root URLs like /pl/ or /en/ from prefix matching */}}
@@ -112,14 +119,17 @@
               {{ end }}
             {{ end }}
             {{ if and (not $isActive) (ne $menuURL "#") (ne $menuURL "/") (not $isLanguageRoot) }}
-              {{ if hasPrefix $pageURL $menuURL }}
+              {{/* Check both with and without trailing slashes for prefix matching */}}
+              {{ if or (hasPrefix $pageURLClean $menuURL) (hasPrefix $normalizedPageURL $normalizedMenuURL) (hasPrefix $pageURLClean (printf "%s/" $normalizedMenuURL)) }}
                 {{ $isActive = true }}
               {{ end }}
             {{ end }}
             {{/* Check children for active state */}}
             {{ if $hasChildren }}
               {{ range .children }}
-                {{ if eq $pageURL .url }}
+                {{ $childURL := .url }}
+                {{ $normalizedChildURL := strings.TrimSuffix "/" $childURL }}
+                {{ if or (eq $pageURLClean $childURL) (eq $normalizedPageURL $normalizedChildURL) }}
                   {{ $isActive = true }}
                 {{ end }}
               {{ end }}
@@ -161,7 +171,9 @@
                       {{ end }}
                     {{ end }}
                     {{/* Check if child is active */}}
-                    {{ $childActive := eq $pageURL .url }}
+                    {{ $childURL := .url }}
+                    {{ $normalizedChildURL := strings.TrimSuffix "/" $childURL }}
+                    {{ $childActive := or (eq $pageURLClean $childURL) (eq $normalizedPageURL $normalizedChildURL) }}
                     {{/* Child external link attributes */}}
                     {{ $childExternal := default false .external }}
                     {{ $childNewTab := default false .open_in_new_tab }}

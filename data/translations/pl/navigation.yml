@@ -7,6 +7,9 @@ news: "Aktualności"
 gallery: "Galeria"
 contact: "Kontakt"
 
+# Mobile menu
+close_menu: "Zamknij menu"
+
 # Menu items
 menu_home: "Strona główna"
 menu_about: "O nas"

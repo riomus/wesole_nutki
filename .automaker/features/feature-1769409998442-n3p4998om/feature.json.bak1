@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Add Translation for \"Open Now\" Status Indicator on English Pages\n\nImplement proper translation handling for the \"Open Now\" status indicator that is currently displaying untranslated text on English language pages.\n\nRequirements:\n- Locate all instances of the \"Open Now\" status indicator in the codebase\n- Ensure the text is wrapped in the translation function/system\n- Add or verify the English translation key exists in the language files\n- Verify the indicator displays correctly translated text on English pages\n- Test that translations work correctly for all supported languages (not just English)\n- Check for any similar untranslated status indicators (e.g., \"Closed\", \"Opening Soon\") that may need the same fix",
+  "title": "Fix \"Open Now\" status indicator translation",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "in_progress",
+  "id": "feature-1769409998442-n3p4998om",
+  "descriptionHistory": [
+    {
+      "description": "Add Translation for \"Open Now\" Status Indicator on English Pages\n\nImplement proper translation handling for the \"Open Now\" status indicator that is currently displaying untranslated text on English language pages.\n\nRequirements:\n- Locate all instances of the \"Open Now\" status indicator in the codebase\n- Ensure the text is wrapped in the translation function/system\n- Add or verify the English translation key exists in the language files\n- Verify the indicator displays correctly translated text on English pages\n- Test that translations work correctly for all supported languages (not just English)\n- Check for any similar untranslated status indicators (e.g., \"Closed\", \"Opening Soon\") that may need the same fix",
+      "timestamp": "2026-01-26T06:46:38.531Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-26T06:46:49.711Z"
+}

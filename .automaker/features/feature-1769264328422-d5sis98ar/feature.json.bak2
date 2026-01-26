@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix GitHub Pages Deployment Path Configuration\n\nResolve 404 errors on GitHub Pages deployment caused by incorrect asset path references in the wesole_nutki website.\n\nProblem:\nStatic assets (CSS and JavaScript files) are failing to load with 404 errors due to duplicated path segments in URLs (e.g., /wesole_nutki/wesole_nutki/ instead of /wesole_nutki/).\n\nRequirements:\n- Investigate base URL configuration in the site generator or build tool (Hugo, Jekyll, etc.)\n- Correct the baseURL or publicPath setting to match GitHub Pages repository structure\n- Verify asset path generation removes the duplicate /wesole_nutki/ directory reference\n- Rebuild and redeploy the site to GitHub Pages\n- Test all affected resources load correctly:\n  * style.min.338bd0ca61754884d1ae2ea296a84b75bbd045df2ac61c820201736102fe66ef.css\n  * glightbox.min.min.9961219639aa1b1bc73b0871fb62a7ae5d196bd874155d9c09f284bf11a66839.css\n  * bundle.02c579cb5d066be6659a8af0fdbe68aecc966cd2e65c72582734efeafe7a0d3f.js\n- Verify the site renders correctly at https://bartusiak.ai/wesole_nutki/\n- Check for any additional broken links or asset references throughout the site\n\n\nseems like it doubles the path wesole_nutki",
+  "title": "Fix Duplicate Path Segments in GitHub Pages Deployment",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "in_progress",
+  "id": "feature-1769264328422-d5sis98ar",
+  "descriptionHistory": [
+    {
+      "description": "Fix GitHub Pages Deployment Path Configuration\n\nResolve 404 errors on GitHub Pages deployment caused by incorrect asset path references in the wesole_nutki website.\n\nProblem:\nStatic assets (CSS and JavaScript files) are failing to load with 404 errors due to duplicated path segments in URLs (e.g., /wesole_nutki/wesole_nutki/ instead of /wesole_nutki/).\n\nRequirements:\n- Investigate base URL configuration in the site generator or build tool (Hugo, Jekyll, etc.)\n- Correct the baseURL or publicPath setting to match GitHub Pages repository structure\n- Verify asset path generation removes the duplicate /wesole_nutki/ directory reference\n- Rebuild and redeploy the site to GitHub Pages\n- Test all affected resources load correctly:\n  * style.min.338bd0ca61754884d1ae2ea296a84b75bbd045df2ac61c820201736102fe66ef.css\n  * glightbox.min.min.9961219639aa1b1bc73b0871fb62a7ae5d196bd874155d9c09f284bf11a66839.css\n  * bundle.02c579cb5d066be6659a8af0fdbe68aecc966cd2e65c72582734efeafe7a0d3f.js\n- Verify the site renders correctly at https://bartusiak.ai/wesole_nutki/\n- Check for any additional broken links or asset references throughout the site\n\n\nseems like it doubles the path wesole_nutki",
+      "timestamp": "2026-01-24T14:18:48.448Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-24T14:18:50.859Z"
+}

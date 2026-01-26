@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Translate Polish Missing Translations in pl/programs/schedule/ Path\n\nComplete the Polish language translation for content located in the pl/programs/schedule/ directory that currently contains untranslated text.\n\nRequirements:\n- Identify all untranslated strings, labels, and content in pl/programs/schedule/\n- Translate missing text from source language (likely English) to Polish\n- Maintain consistency with existing Polish translations in the project\n- Preserve formatting, placeholders, and any special characters or variables\n- Ensure translations are contextually appropriate for the schedule/programs domain\n- Verify that date/time formats follow Polish localization standards\n- Test rendered output to confirm translations display correctly\n- Review for grammatical accuracy and natural Polish phrasing\n\nEdge cases to consider:\n- Technical terms that may need transliteration vs translation\n- Plural forms (Polish has complex plural rules)\n- Gender-specific language where applicable\n- Character encoding for Polish special characters (ą, ć, ę, ł, ń, ó, ś, ź, ż)",
+  "title": "Complete Polish Translation for Schedule Programs Directory",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "verified",
+  "id": "feature-1769265266065-w7bou04m5",
+  "descriptionHistory": [
+    {
+      "description": "Translate Polish Missing Translations in pl/programs/schedule/ Path\n\nComplete the Polish language translation for content located in the pl/programs/schedule/ directory that currently contains untranslated text.\n\nRequirements:\n- Identify all untranslated strings, labels, and content in pl/programs/schedule/\n- Translate missing text from source language (likely English) to Polish\n- Maintain consistency with existing Polish translations in the project\n- Preserve formatting, placeholders, and any special characters or variables\n- Ensure translations are contextually appropriate for the schedule/programs domain\n- Verify that date/time formats follow Polish localization standards\n- Test rendered output to confirm translations display correctly\n- Review for grammatical accuracy and natural Polish phrasing\n\nEdge cases to consider:\n- Technical terms that may need transliteration vs translation\n- Plural forms (Polish has complex plural rules)\n- Gender-specific language where applicable\n- Character encoding for Polish special characters (ą, ć, ę, ł, ń, ó, ś, ź, ż)",
+      "timestamp": "2026-01-24T14:34:26.163Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-24T14:46:31.618Z"
+}

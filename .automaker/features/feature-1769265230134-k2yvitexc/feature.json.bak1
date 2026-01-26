@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Translate Remaining Polish Language Strings in pl/programs Module\n\nComplete the Polish language translation for the pl/programs module, which currently contains untranslated strings in English or other languages.\n\nRequirements:\n- Identify all untranslated strings within the pl/programs module\n- Translate missing strings to Polish while maintaining consistent terminology with existing translations\n- Ensure translations fit within UI constraints (button labels, tooltips, etc.)\n- Verify proper handling of Polish special characters (ą, ć, ę, ł, ń, ó, ś, ź, ż)\n- Check for plural forms and ensure correct Polish grammatical cases are used\n- Test the interface with translated strings to confirm proper display\n- Maintain translation key structure and formatting from the source files\n\nEdge cases to consider:\n- Technical terms that may not have direct Polish equivalents\n- String interpolation and variable placeholders\n- Context-dependent translations where same English word needs different Polish translations\n- Character length differences between English and Polish affecting layout",
+  "title": "Translate Polish language strings in pl/programs module",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "verified",
+  "id": "feature-1769265230134-k2yvitexc",
+  "descriptionHistory": [
+    {
+      "description": "Translate Remaining Polish Language Strings in pl/programs Module\n\nComplete the Polish language translation for the pl/programs module, which currently contains untranslated strings in English or other languages.\n\nRequirements:\n- Identify all untranslated strings within the pl/programs module\n- Translate missing strings to Polish while maintaining consistent terminology with existing translations\n- Ensure translations fit within UI constraints (button labels, tooltips, etc.)\n- Verify proper handling of Polish special characters (ą, ć, ę, ł, ń, ó, ś, ź, ż)\n- Check for plural forms and ensure correct Polish grammatical cases are used\n- Test the interface with translated strings to confirm proper display\n- Maintain translation key structure and formatting from the source files\n\nEdge cases to consider:\n- Technical terms that may not have direct Polish equivalents\n- String interpolation and variable placeholders\n- Context-dependent translations where same English word needs different Polish translations\n- Character length differences between English and Polish affecting layout",
+      "timestamp": "2026-01-24T14:33:50.233Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-24T14:44:12.911Z"
+}

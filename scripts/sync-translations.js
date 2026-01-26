@@ -18,15 +18,18 @@ const DATA_DIR = path.join(__dirname, '../data/translations');
 const I18N_DIR = path.join(__dirname, '../i18n');
 
 const CATEGORIES = [
-  'global',
-  'navigation',
-  'homepage',
-  'news',
-  'gallery',
-  'programs',
+  'about',
   'contact',
+  'errors',
   'footer',
-  'errors'
+  'gallery',
+  'global',
+  'homepage',
+  'navigation',
+  'news',
+  'programs',
+  'schedule',
+  'staff',
 ];
 
 /**

@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix Menu Item Active State Highlighting\n\nResolve the issue where visited or currently active menu items are not displaying the correct visual highlight indicator.\n\nRequirements:\n- Identify the current routing or navigation state management system\n- Ensure active menu items receive the appropriate CSS class or styling\n- Verify the highlight appears immediately when navigating to a route\n- Maintain highlight persistence when page refreshes on an active route\n- Handle edge cases:\n  - Nested routes should highlight both parent and child menu items\n  - Query parameters should not affect active state matching\n  - Trailing slashes in URLs should be handled consistently\n- Test across all menu items to ensure consistent behavior\n- Verify highlight is removed from previously active items when navigating away",
+  "title": "Fix active menu item highlighting across routes",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "verified",
+  "id": "feature-1769265341235-ynmltf60h",
+  "descriptionHistory": [
+    {
+      "description": "Fix Menu Item Active State Highlighting\n\nResolve the issue where visited or currently active menu items are not displaying the correct visual highlight indicator.\n\nRequirements:\n- Identify the current routing or navigation state management system\n- Ensure active menu items receive the appropriate CSS class or styling\n- Verify the highlight appears immediately when navigating to a route\n- Maintain highlight persistence when page refreshes on an active route\n- Handle edge cases:\n  - Nested routes should highlight both parent and child menu items\n  - Query parameters should not affect active state matching\n  - Trailing slashes in URLs should be handled consistently\n- Test across all menu items to ensure consistent behavior\n- Verify highlight is removed from previously active items when navigating away",
+      "timestamp": "2026-01-24T14:35:41.334Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-24T14:58:24.869Z"
+}

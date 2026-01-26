@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "Fix Pagination Information Display on Polish Language Page\n\nResolve the language inconsistency where pagination information text appears in English on the Polish version of the page.\n\nRequirements:\n- Locate the .pagination-info element displaying English text on Polish pages\n- Attempt to implement Polish translation for the pagination text\n  - Identify the translation system/method used in the application (i18n, language files, etc.)\n  - Add Polish translation strings if translation infrastructure exists\n  - Ensure dynamic values (page numbers, total counts) are properly interpolated in Polish\n- If translation is not feasible or supported:\n  - Remove the .pagination-info element entirely from Polish pages\n  - Ensure removal doesn't break layout or functionality\n  - Verify pagination controls still work correctly without the info text\n- Test the solution on Polish language pages to confirm correct display\n- Check that the change doesn't affect other language versions (especially English)",
+  "title": "Fix pagination text translation on Polish language pages",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": false,
+  "model": "claude-sonnet",
+  "thinkingLevel": "medium",
+  "reasoningEffort": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "lite",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "completed",
+  "id": "feature-1769265163190-f6t63bpwl",
+  "descriptionHistory": [
+    {
+      "description": "Fix Pagination Information Display on Polish Language Page\n\nResolve the language inconsistency where pagination information text appears in English on the Polish version of the page.\n\nRequirements:\n- Locate the .pagination-info element displaying English text on Polish pages\n- Attempt to implement Polish translation for the pagination text\n  - Identify the translation system/method used in the application (i18n, language files, etc.)\n  - Add Polish translation strings if translation infrastructure exists\n  - Ensure dynamic values (page numbers, total counts) are properly interpolated in Polish\n- If translation is not feasible or supported:\n  - Remove the .pagination-info element entirely from Polish pages\n  - Ensure removal doesn't break layout or functionality\n  - Verify pagination controls still work correctly without the info text\n- Test the solution on Polish language pages to confirm correct display\n- Check that the change doesn't affect other language versions (especially English)",
+      "timestamp": "2026-01-24T14:32:43.273Z",
+      "source": "initial"
+    }
+  ],
+  "updatedAt": "2026-01-24T14:39:20.472Z"
+}
