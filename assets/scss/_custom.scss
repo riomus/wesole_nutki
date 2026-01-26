@@ -730,12 +730,31 @@
     }
   }
 
-  // Mission section image container - ensures rounded corners display properly
+  // Mission section image container
+  // Ensures rounded corners (rounded-3 class on image) display properly in all states
+  // Feature: Rounded Corners on Mission Images (feature-1769422292908-65ylkyj5s)
   .about-mission-image {
     @apply overflow-hidden;
-    border-radius: 0.375rem; // Matches Bootstrap's rounded-3 (0.375rem)
-    // Rounded corners applied to container to ensure proper clipping
-    // Matches the rounded-3 class on the image for consistent styling
+    border-radius: $border-radius-image; // Uses CSS variable for maintainability - matches Bootstrap's rounded-3
+
+    // Apply rounded corners to wrapper for error states
+    .responsive-image-wrapper {
+      border-radius: $border-radius-image; // Explicit border-radius for error state consistency
+
+      // Ensure error state maintains rounded corners
+      &.image-error {
+        border-radius: $border-radius-image; // Maintain rounded corners in error state
+      }
+    }
+
+    // Ensure main image respects rounded corners
+    img {
+      // rounded-3 class is applied via template
+      // Additional specificity ensures border-radius is not overridden
+      &.rounded-3 {
+        border-radius: $border-radius-image !important;
+      }
+    }
   }
 
   // Mission section enhanced typography

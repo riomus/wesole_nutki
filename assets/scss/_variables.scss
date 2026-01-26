@@ -89,6 +89,9 @@ $border-radius-xl:    1.5rem;     // 24px - feature cards
 $border-radius-pill:  50rem;      // Pill shapes
 $border-radius-circle: 50%;       // Perfect circles
 
+// Component-specific border radius
+$border-radius-image: 0.375rem;   // 6px - matches Bootstrap's rounded-3 for images
+
 // ============================================================
 // Buttons - Educenter-style larger, more prominent
 // ============================================================
