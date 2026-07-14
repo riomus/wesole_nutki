@@ -16,9 +16,14 @@
     "test:safari": "npx playwright test --project=webkit",
     "test:headed": "npx playwright test --headed",
     "test:debug": "npx playwright test --debug",
-    "test:basepath": "BASEPATH=true npx playwright test"
+    "test:basepath": "BASEPATH=true npx playwright test",
+    "audit:lighthouse": "npm run sync:translations && lhci autorun",
+    "audit:wcag": "npm run sync:translations && playwright test --config playwright.audit.config.ts",
+    "audit:quality": "npm run audit:lighthouse && npm run audit:wcag"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.12.1",
+    "@lhci/cli": "^0.15.1",
     "@playwright/test": "^1.49.0",
     "@types/js-yaml": "^4.0.9",
     "autoprefixer": "^10.4.20",
