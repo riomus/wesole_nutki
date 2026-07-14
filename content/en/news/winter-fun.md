@@ -4,7 +4,6 @@ date: 2025-01-15
 draft: false
 categories: ["Events", "Winter"]
 tags: ["winter", "snow", "fun"]
-featured_image: "/images/news/zimowe-zabawy.jpg"
 summary: "Our preschoolers had a great time playing in the snow! See photos from our winter activities."
 ---
 

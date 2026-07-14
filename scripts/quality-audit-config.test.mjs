@@ -34,7 +34,13 @@ test('both audit systems share the complete bilingual route matrix', async () =>
 
 test('Lighthouse targets perfect category scores across three runs', async () => {
   const config = await readText('lighthouserc.cjs');
+  const auditServer = await readText('scripts/serve-audit.mjs');
   assert.match(config, /numberOfRuns:\s*3/);
+  assert.match(config, /node scripts\/serve-audit\.mjs/);
+  assert.match(auditServer, /--environment/);
+  assert.match(auditServer, /production/);
+  assert.match(auditServer, /--minify/);
+  assert.match(auditServer, /brotliCompress/);
   for (const category of ['performance', 'accessibility', 'best-practices', 'seo']) {
     assert.match(config, new RegExp(`categories:${category}['"]?: \\['error', \\{ minScore: 1 \\}\\]`));
   }
@@ -49,4 +55,21 @@ test('GitHub audits run everywhere, retain evidence, and never gate deployment',
   assert.match(workflow, /if:\s*always\(\)/g);
   assert.match(workflow, /actions\/upload-artifact@v4/g);
   assert.doesNotMatch(workflow, /deploy-pages/);
+});
+
+test('public pages avoid known render-blocking audit regressions', async () => {
+  const head = await readText('layouts/partials/head.html');
+  const customStyles = await readText('assets/scss/_custom.scss');
+  const tailwind = await readText('tailwind.config.js');
+  const base = await readText('layouts/_default/baseof.html');
+  const responsiveImage = await readText('layouts/partials/responsive-image.html');
+  assert.doesNotMatch(head, /identity\.netlify\.com/);
+  assert.doesNotMatch(base, /netlifyIdentity/);
+  assert.doesNotMatch(head, /fonts\.googleapis\.com/);
+  assert.doesNotMatch(head, /as="font"/);
+  assert.doesNotMatch(customStyles, /@font-face/);
+  assert.match(tailwind, /ui-rounded/);
+  assert.match(tailwind, /system-ui/);
+  assert.match(head, /\$needsLightbox/);
+  assert.match(responsiveImage, /fetchpriority/);
 });

@@ -9,7 +9,7 @@
 
 // Primary colors - warm and inviting (matching wesolenutki.eu)
 $preschool-primary:     #183C32;  // Deep evergreen - trust and calm
-$preschool-secondary:   #B84D18;  // Burnt orange - warm emphasis
+$preschool-secondary:   #A94316;  // Burnt orange - warm emphasis with AA contrast
 $preschool-accent:      #D7E84A;  // Lime - decorative rhythm
 $preschool-success:     #2E6B57;  // Accessible green
 $preschool-info:        #74C0FC;  // Sky blue - open and friendly
@@ -48,9 +48,9 @@ $dark:          $preschool-dark;
 // ============================================================
 // Typography - Educenter-inspired friendly, readable fonts with Polish character support
 // ============================================================
-$font-family-sans-serif: "Source Sans 3", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-sans-serif: system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 $font-family-base: $font-family-sans-serif;
-$headings-font-family: "Bricolage Grotesque", "Arial Narrow", sans-serif;
+$headings-font-family: ui-rounded, "Arial Rounded MT Bold", system-ui, sans-serif;
 
 // Font weights
 $font-weight-light:   300;

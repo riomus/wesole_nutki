@@ -73,6 +73,7 @@
     {{/* Read More Link */}}
     <a href="{{ .RelPermalink }}" class="read-more mt-auto" title="{{ i18n "read_full_article" | default "Read full article" }}: {{ .Title }}" aria-label="{{ i18n "read_more" | default "Read More" }}: {{ .Title }}">
       {{ i18n "read_more" | default "Read More" }}
+      <span class="visually-hidden">: {{ .Title }}</span>
       {{ partial "helpers/svg-icon" (dict "name" "arrow-right" "width" 16 "height" 16) }}
     </a>
   </div>

@@ -5,8 +5,8 @@ module.exports = {
     collect: {
       url: routes.map((route) => `http://127.0.0.1:1313${route}`),
       numberOfRuns: 3,
-      startServerCommand: 'hugo server --buildFuture --port 1313 --baseURL http://127.0.0.1:1313/ --appendPort=false',
-      startServerReadyPattern: 'Web Server is available',
+      startServerCommand: 'node scripts/serve-audit.mjs',
+      startServerReadyPattern: 'Audit server ready',
       settings: {
         preset: 'desktop',
         chromeFlags: '--headless=new --no-sandbox',

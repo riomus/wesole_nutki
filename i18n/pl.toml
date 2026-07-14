@@ -318,6 +318,21 @@ other = "Umów wizytę"
 [back_to_home]
 other = "Powrót do strony głównej"
 
+[download_pdf]
+other = "Pobierz PDF"
+
+[view_pdf]
+other = "Otwórz PDF"
+
+[main_document]
+other = "Główny dokument"
+
+[pdf_document]
+other = "Dokument PDF"
+
+[last_updated]
+other = "Ostatnia aktualizacja"
+
 [search]
 other = "Szukaj"
 

@@ -4,7 +4,6 @@ date: 2024-10-15
 draft: false
 categories: ["Events"]
 tags: ["picnic", "family", "autumn"]
-featured_image: "/images/news/jesienny-piknik.jpg"
 summary: "We invite all families to an autumn picnic in the preschool garden. There will be many attractions, competitions, and great outdoor fun waiting for us."
 ---
 

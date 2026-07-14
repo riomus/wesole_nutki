@@ -42,6 +42,8 @@ Parameters:
 {{- $maxWidth := .width | default 1280 -}}
 {{- $maxHeight := .height -}}
 {{- $loading := .loading | default "lazy" -}}
+{{- $fetchpriority := .fetchpriority | default "auto" -}}
+{{- $decoding := .decoding | default "async" -}}
 {{- $context := .context -}}
 {{- $linkUrl := .linkUrl -}}
 {{- $linkClass := .linkClass | default "" -}}
@@ -104,7 +106,7 @@ Parameters:
 {{- if $skipProcessing -}}
 {{/* SVG/GIF - use original without processing */}}
 <img src="{{ $image.RelPermalink }}" alt="{{ $alt }}" {{ with $class }}class="{{ . }}" {{ end }}
-  loading="{{ $loading }}" {{ with $image.Width }}width="{{ . }}" {{ end }} {{ with $image.Height }}height="{{ . }}" {{
+  loading="{{ $loading }}" fetchpriority="{{ $fetchpriority }}" {{ with $image.Width }}width="{{ . }}" {{ end }} {{ with $image.Height }}height="{{ . }}" {{
   end }}>
 {{- else -}}
 {{/* Process image - generate srcset for responsive images */}}
@@ -185,7 +187,7 @@ Parameters:
         <img src="{{ $fallbackImage.RelPermalink }}" alt="{{ $alt }}" {{ with $class
           }}class="{{ . }} responsive-image-main" {{ else }}class="responsive-image-main" {{ end }}
           loading="{{ $loading }}" width="{{ $fallbackImage.Width }}" height="{{ $fallbackImage.Height }}"
-          decoding="async" onerror="this.parentElement.parentElement.classList.add('image-error'); this.onerror=null;">
+          fetchpriority="{{ $fetchpriority }}" decoding="{{ $decoding }}" onerror="this.parentElement.parentElement.classList.add('image-error'); this.onerror=null;">
       </picture>
 
       {{/* Fallback UI for failed images */}}
@@ -222,7 +224,7 @@ Parameters:
     <div class="responsive-image-wrapper">
       <img src="{{ partial "helpers/image-url" $src }}" alt="{{ $alt }}" {{ with $class
         }}class="{{ . }} responsive-image-main" {{ else }}class="responsive-image-main" {{ end }}
-        loading="{{ $loading }}" decoding="async"
+        loading="{{ $loading }}" fetchpriority="{{ $fetchpriority }}" decoding="{{ $decoding }}"
         onerror="this.parentElement.classList.add('image-error'); this.onerror=null;">
 
       {{/* Fallback UI for failed images */}}

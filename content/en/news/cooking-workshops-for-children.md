@@ -4,7 +4,6 @@ date: 2024-11-05
 draft: false
 categories: ["Activities"]
 tags: ["workshops", "cooking", "healthy eating"]
-featured_image: "/images/news/warsztaty-kulinarne.jpg"
 summary: "In November, we are starting a series of cooking workshops for children. Little chefs will learn to prepare simple and healthy meals."
 ---
 

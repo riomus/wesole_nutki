@@ -251,12 +251,9 @@
 <!-- Microsoft Tile Color -->
 <meta name="msapplication-TileColor" content="#183c32">
 
-<!-- Preconnect for Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<!-- Music-led display and highly legible body typography, including Polish characters -->
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+{{ if .IsHome }}
+<link rel="preload" as="image" href="{{ "images/scraped/2025-06-10-muzyka-na-zywo-w-przedszkolu-3.jpeg" | relURL }}" fetchpriority="high">
+{{ end }}
 
 <!-- Tailwind CSS with PostCSS via Hugo Pipes -->
 {{ with resources.Get "scss/main.scss" }}
@@ -271,6 +268,8 @@
 {{ end }}
 
 <!-- GLightbox CSS for full-screen image viewing -->
+{{ $needsLightbox := or (eq .Section "gallery") (eq .Section "gallery_categories") }}
+{{ if $needsLightbox }}
 {{ with resources.Get "css/glightbox.min.css" }}
   {{ if hugo.IsProduction }}
     {{ $glightboxCss := . | minify | fingerprint "sha256" }}
@@ -279,12 +278,10 @@
     <link rel="stylesheet" href="{{ .RelPermalink }}">
   {{ end }}
 {{ end }}
+{{ end }}
 
 <!-- No-JS class removal -->
 <script>document.documentElement.classList.remove('no-js');</script>
-
-<!-- Netlify Identity Widget for Decap CMS authentication -->
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
 <!-- Google Analytics (if configured) -->
 {{ with $seo.google_analytics }}

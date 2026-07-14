@@ -9,6 +9,11 @@ learn_more: "Dowiedz się więcej"
 contact_us: "Skontaktuj się"
 schedule_visit: "Umów wizytę"
 back_to_home: "Powrót do strony głównej"
+download_pdf: "Pobierz PDF"
+view_pdf: "Otwórz PDF"
+main_document: "Główny dokument"
+pdf_document: "Dokument PDF"
+last_updated: "Ostatnia aktualizacja"
 
 # Common elements
 search: "Szukaj"

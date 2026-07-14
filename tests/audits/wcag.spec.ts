@@ -21,6 +21,16 @@ for (const route of routes) {
       contentType: 'application/json',
     });
 
-    expect(results.violations).toEqual([]);
+    const violationSummary = results.violations.flatMap((violation) =>
+      violation.nodes.map((node) => ({
+        rule: violation.id,
+        target: node.target.join(' '),
+        message: [...node.any, ...node.all, ...node.none]
+          .map((check) => check.message)
+          .join('; '),
+      })),
+    );
+
+    expect(violationSummary).toEqual([]);
   });
 }

@@ -318,6 +318,21 @@ other = "Schedule a visit"
 [back_to_home]
 other = "Back to home"
 
+[download_pdf]
+other = "Download PDF"
+
+[view_pdf]
+other = "Open PDF"
+
+[main_document]
+other = "Main document"
+
+[pdf_document]
+other = "PDF document"
+
+[last_updated]
+other = "Last updated"
+
 [search]
 other = "Search"
 

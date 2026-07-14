@@ -22,7 +22,7 @@ module.exports = {
           900: '#367711',
         },
         secondary: {
-          DEFAULT: '#B84D18',
+          DEFAULT: '#A94316',
           50: '#fff5e6',
           100: '#ffe4bf',
           200: '#ffd199',
@@ -58,8 +58,8 @@ module.exports = {
         success: '#81d742',
       },
       fontFamily: {
-        sans: ['Source Sans 3', 'sans-serif'],
-        heading: ['Bricolage Grotesque', 'sans-serif'],
+        sans: ['system-ui', 'sans-serif'],
+        heading: ['ui-rounded', 'Arial Rounded MT Bold', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
         'sm': '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
