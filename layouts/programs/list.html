@@ -1,26 +1,13 @@
 {{ define "main" }}
-{{/* Breadcrumb Navigation */}}
-{{ partial "breadcrumb.html" . }}
-
-{{/* Hero Section for Programs Overview */}}
-<section class="programs-hero section-gradient">
-  <div class="container py-5">
-    <header class="section-header text-center">
-      <h1 class="section-heading">{{ .Title | default (i18n "programs") }}</h1>
-      {{ with .Content }}
-      <div class="section-subtitle">{{ . }}</div>
-      {{ end }}
-    </header>
-  </div>
-</section>
-
 <section class="programs-list-section py-5">
   <div class="container">
-    {{ if .Pages }}
+    {{ with .Content }}<div class="content content-introduction">{{ . }}</div>{{ end }}
+    {{ $programs := where .Pages "Params.layout" "ne" "schedule" }}
+    {{ if $programs }}
     {{/* Programs Grid */}}
-    <div class="programs-grid">
-      {{ range .Pages.ByWeight }}
-      <div class="programs-grid-item">
+    <div class="programs-grid program-age-path">
+      {{ range $programs.ByWeight }}
+      <div class="programs-grid-item program-age-row">
         {{ partial "program-card.html" . }}
       </div>
       {{ end }}
@@ -53,49 +40,49 @@
           <div class="schedule-item">
             <div class="schedule-time">7:00 - 8:30</div>
             <div class="schedule-content">
-              <h4>{{ i18n "schedule_arrival" | default "Arrival & Free Play" }}</h4>
+              <h3>{{ i18n "schedule_arrival" | default "Arrival & Free Play" }}</h3>
               <p>{{ i18n "schedule_arrival_desc" | default "Children arrive and engage in free play activities" }}</p>
             </div>
           </div>
           <div class="schedule-item">
             <div class="schedule-time">8:30 - 9:00</div>
             <div class="schedule-content">
-              <h4>{{ i18n "schedule_breakfast" | default "Breakfast" }}</h4>
+              <h3>{{ i18n "schedule_breakfast" | default "Breakfast" }}</h3>
               <p>{{ i18n "schedule_breakfast_desc" | default "Healthy breakfast time together" }}</p>
             </div>
           </div>
           <div class="schedule-item">
             <div class="schedule-time">9:00 - 11:30</div>
             <div class="schedule-content">
-              <h4>{{ i18n "schedule_learning" | default "Learning Activities" }}</h4>
+              <h3>{{ i18n "schedule_learning" | default "Learning Activities" }}</h3>
               <p>{{ i18n "schedule_learning_desc" | default "Educational activities, creative play, and outdoor time" }}</p>
             </div>
           </div>
           <div class="schedule-item">
             <div class="schedule-time">11:30 - 12:00</div>
             <div class="schedule-content">
-              <h4>{{ i18n "schedule_lunch" | default "Lunch" }}</h4>
+              <h3>{{ i18n "schedule_lunch" | default "Lunch" }}</h3>
               <p>{{ i18n "schedule_lunch_desc" | default "Nutritious lunch prepared fresh daily" }}</p>
             </div>
           </div>
           <div class="schedule-item">
             <div class="schedule-time">12:00 - 14:00</div>
             <div class="schedule-content">
-              <h4>{{ i18n "schedule_rest" | default "Rest Time" }}</h4>
+              <h3>{{ i18n "schedule_rest" | default "Rest Time" }}</h3>
               <p>{{ i18n "schedule_rest_desc" | default "Quiet time and nap for younger children" }}</p>
             </div>
           </div>
           <div class="schedule-item">
             <div class="schedule-time">14:00 - 15:00</div>
             <div class="schedule-content">
-              <h4>{{ i18n "schedule_afternoon" | default "Afternoon Activities" }}</h4>
+              <h3>{{ i18n "schedule_afternoon" | default "Afternoon Activities" }}</h3>
               <p>{{ i18n "schedule_afternoon_desc" | default "Snack time and creative afternoon activities" }}</p>
             </div>
           </div>
           <div class="schedule-item">
             <div class="schedule-time">15:00 - 17:00</div>
             <div class="schedule-content">
-              <h4>{{ i18n "schedule_departure" | default "Free Play & Departure" }}</h4>
+              <h3>{{ i18n "schedule_departure" | default "Free Play & Departure" }}</h3>
               <p>{{ i18n "schedule_departure_desc" | default "Free play and gradual pickup by parents" }}</p>
             </div>
           </div>

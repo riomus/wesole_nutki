@@ -1,6 +1,4 @@
 {{ define "main" }}
-{{/* Breadcrumb Navigation */}}
-{{ partial "breadcrumb.html" . }}
 
 <article class="program-article py-5">
   <div class="container">
@@ -20,9 +18,6 @@
             </span>
           </div>
           {{ end }}
-
-          {{/* Title */}}
-          <h1 class="mb-3">{{ .Title }}</h1>
 
           {{/* Summary */}}
           {{ with .Params.summary }}
@@ -63,7 +58,7 @@
             <div class="activity-item">
               {{ with .icon }}<span class="activity-icon">{{ . }}</span>{{ end }}
               <div class="activity-content">
-                <h5>{{ .title }}</h5>
+                <h3>{{ .title }}</h3>
                 {{ with .description }}<p>{{ . }}</p>{{ end }}
               </div>
             </div>

@@ -4,7 +4,7 @@ date: 2025-01-15
 draft: false
 categories: ["Wydarzenia", "Zima"]
 tags: ["zima", "śnieg", "zabawy"]
-featured_image: "/images/news/zimowe-zabawy.jpg"
+featured_image: "/images/scraped/galerie-6.jpg"
 summary: "Nasze przedszkolaki świetnie bawiły się na śniegu! Zobaczcie zdjęcia z naszych zimowych zabaw."
 ---
 

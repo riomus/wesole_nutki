@@ -4,7 +4,7 @@ date: 2024-09-02
 draft: false
 categories: ["Wydarzenia"]
 tags: ["rok szkolny", "rozpoczęcie"]
-featured_image: "/images/news/nowy-rok-szkolny.jpg"
+featured_image: "/images/scraped/category-aktualnosci-0.jpeg"
 summary: "Z radością witamy wszystkie dzieci i rodziców w nowym roku szkolnym. Przygotowaliśmy wiele atrakcji i nowych aktywności dla naszych małych przedszkolaków."
 ---
 

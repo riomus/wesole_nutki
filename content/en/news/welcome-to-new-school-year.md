@@ -4,7 +4,7 @@ date: 2024-09-02
 draft: false
 categories: ["Events"]
 tags: ["school year", "beginning"]
-featured_image: "/images/news/nowy-rok-szkolny.jpg"
+featured_image: "/images/scraped/category-aktualnosci-0.jpeg"
 summary: "We are delighted to welcome all children and parents to the new school year. We have prepared many attractions and new activities for our little preschoolers."
 ---
 

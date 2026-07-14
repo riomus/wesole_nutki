@@ -1,6 +1,4 @@
 {{ define "main" }}
-{{/* Breadcrumb Navigation */}}
-{{ partial "breadcrumb.html" . }}
 
 {{/* About Page Template
      This template uses data files from data/about/ to render sections:
@@ -12,8 +10,16 @@
      - contact.yml: Contact CTA section
 */}}
 
-{{/* Hero Section */}}
-{{ partial "about/hero.html" . }}
+<figure class="about-editorial-photo container">
+  {{ partial "responsive-image" (dict
+    "src" "images/about-preview.jpg"
+    "alt" (cond (eq .Site.Language.Lang "pl") "Dzieci podczas wspólnej zabawy w przedszkolu Wesołe Nutki" "Children playing together at Wesołe Nutki preschool")
+    "class" "about-editorial-photo__image"
+    "sizes" "(max-width: 768px) 100vw, 1120px"
+    "loading" "eager"
+    "context" .
+  ) }}
+</figure>
 
 {{/* Content from about.md (if any) */}}
 {{ if .Content }}

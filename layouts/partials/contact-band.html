@@ -1,0 +1,18 @@
+{{- $phone := .Site.Params.phone -}}
+{{- $email := .Site.Params.email -}}
+{{- $isPolish := eq .Site.Language.Lang "pl" -}}
+<aside class="site-contact-band" aria-labelledby="site-contact-band-title">
+  <div class="container site-contact-band__inner">
+    <div>
+      <p class="site-contact-band__eyebrow">{{ if $isPolish }}Porozmawiajmy o miejscu dla Twojego dziecka{{ else }}Let’s talk about a place for your child{{ end }}</p>
+      <h2 id="site-contact-band-title">{{ if $isPolish }}Najprościej: zadzwoń do nas{{ else }}The simplest next step: call us{{ end }}</h2>
+    </div>
+    <div class="site-contact-band__actions">
+      <a class="site-contact-band__phone" href="tel:{{ $phone | replaceRE `[^+0-9]` `` }}">
+        <span>{{ if $isPolish }}Zadzwoń{{ else }}Call{{ end }}</span>
+        <strong>{{ $phone }}</strong>
+      </a>
+      <a class="site-contact-band__email" href="mailto:{{ $email }}">{{ if $isPolish }}Napisz wiadomość{{ else }}Send an email{{ end }}</a>
+    </div>
+  </div>
+</aside>

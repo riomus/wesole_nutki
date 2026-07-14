@@ -8,7 +8,7 @@ age_group: "4-5 lat"
 group_size: "do 18 dzieci"
 hours: "7:00 - 17:00"
 summary: "Intensywne przygotowanie do nauki szkolnej. Rozwijamy umiejętności czytania, pisania i matematyki przy zachowaniu radości z nauki."
-featured_image: "/images/programs/starszaki.jpg"
+featured_image: "/images/scraped/2025-10-07-miedzynarodowy-dzien-muzyki-1.jpeg"
 features:
   - "Przygotowanie do szkoły"
   - "Nauka czytania i pisania"

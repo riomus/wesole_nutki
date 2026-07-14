@@ -8,7 +8,7 @@ age_group: "4-5 years"
 group_size: "up to 18 children"
 hours: "7:00 AM - 5:00 PM"
 summary: "Intensive preparation for school learning. Developing reading, writing, and math skills while maintaining the joy of learning."
-featured_image: "/images/programs/starszaki.jpg"
+featured_image: "/images/scraped/2025-10-07-miedzynarodowy-dzien-muzyki-1.jpeg"
 features:
   - "School preparation"
   - "Reading and writing skills"

@@ -4,7 +4,7 @@ import { readFileSync } from 'node:fs';
 import path from 'node:path';
 
 const routes: string[] = JSON.parse(
-  readFileSync(path.join(process.cwd(), 'audit/routes.json'), 'utf8'),
+  readFileSync(path.join(process.cwd(), 'audit/all-routes.json'), 'utf8'),
 );
 
 for (const route of routes) {

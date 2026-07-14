@@ -4,7 +4,7 @@ date: 2024-10-15
 draft: false
 categories: ["Wydarzenia"]
 tags: ["piknik", "rodzina", "jesień"]
-featured_image: "/images/news/jesienny-piknik.jpg"
+featured_image: "/images/scraped/2025-09-26-spacer-0.jpeg"
 summary: "Zapraszamy wszystkie rodziny na jesienny piknik w ogrodzie przedszkolnym. Czeka nas wiele atrakcji, konkursów i wspaniała zabawa na świeżym powietrzu."
 ---
 

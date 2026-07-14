@@ -22,6 +22,10 @@
 {{- $src := .Destination -}}
 {{- $alt := .Text -}}
 {{- $title := .Title -}}
+{{- if not $alt -}}
+  {{- $imageLabel := cond (eq .Page.Site.Language.Lang "pl") "zdjęcie" "image" -}}
+  {{- $alt = printf "%s — %s %d" .Page.Title $imageLabel (add .Ordinal 1) -}}
+{{- end -}}
 
 {{/* Build class string - include title as caption if available */}}
 {{- $class := "markdown-image" -}}

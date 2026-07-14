@@ -1,13 +1,10 @@
 {{ define "main" }}
-{{/* Breadcrumb Navigation */}}
-{{ partial "breadcrumb.html" . }}
 
 <section class="py-5">
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <header class="mb-5 text-center">
-          <h1 class="display-4 fw-bold">{{ .Title }}</h1>
+        <header class="mb-5 content-introduction">
           {{ with .Params.description }}
           <p class="lead text-muted">{{ . }}</p>
           {{ end }}
@@ -24,8 +21,9 @@
         {{ $documentsByCategory := $documents.GroupByParam "category" }}
 
         {{/* Display documents by category */}}
+        <div class="resource-list">
         {{ range $documentsByCategory }}
-        <div class="mb-5">
+        <div class="mb-5 resource-list__group">
           <h2 class="h3 mb-4 pb-2 border-bottom">{{ .Key | default "Inne" }}</h2>
           <div class="row g-4">
             {{ range sort .Pages ".Params.weight" }}
@@ -79,6 +77,7 @@
           </div>
         </div>
         {{ end }}
+        </div>
 
         {{/* If no documents found */}}
         {{ if eq (len $documents) 0 }}

@@ -1,80 +1,39 @@
 
 {{ define "main" }}
-{{ partial "breadcrumb.html" . }}
-
 <section class="contact-page py-5">
   <div class="container">
-    <header class="section-header text-center mb-5">
-      <h1 class="section-heading">{{ .Title }}</h1>
-      {{ with .Params.description }}
-      <p class="section-subtitle">{{ . }}</p>
-      {{ end }}
-    </header>
-
-    <!-- Contact Information Cards -->
     {{ with .Params.contact_info }}
-    <div class="row g-4 mb-5">
-      <!-- Address Card -->
-      {{ with .address }}
-      <div class="col-md-6 col-lg-3">
-        <div class="contact-card h-100 p-5">
-          <div class="contact-card-icon mb-4">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
-              <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-            </svg>
-          </div>
-          <h2 class="contact-card-title mb-3">{{ i18n "address" | default "Address" }}</h2>
-          <p class="contact-card-text mb-0">{{ . }}</p>
-        </div>
-      </div>
-      {{ end }}
-
-      <!-- Phone Card -->
+    <div class="contact-primary-actions">
       {{ with .phone }}
-      <div class="col-md-6 col-lg-3">
-        <div class="contact-card h-100 p-5">
-          <div class="contact-card-icon mb-4">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-            </svg>
-          </div>
-          <h2 class="contact-card-title mb-3">{{ i18n "phone" | default "Phone" }}</h2>
-          <a href="tel:{{ . | replaceRE `[^+0-9]` `` }}" class="contact-card-link" aria-label="{{ i18n "call_us" | default "Call us" }}: {{ . }}">{{ . }}</a>
-        </div>
-      </div>
+      <a class="contact-primary-actions__phone" href="tel:{{ . | replaceRE `[^+0-9]` `` }}">
+        <span>{{ if eq $.Site.Language.Lang "pl" }}Zadzwoń do przedszkola{{ else }}Call the preschool{{ end }}</span>
+        <strong>{{ . }}</strong>
+      </a>
       {{ end }}
-
-      <!-- Email Card -->
       {{ with .email }}
-      <div class="col-md-6 col-lg-3">
-        <div class="contact-card h-100 p-5">
-          <div class="contact-card-icon mb-4">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
-              <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
-            </svg>
-          </div>
-          <h2 class="contact-card-title mb-3">{{ i18n "email" | default "Email" }}</h2>
-          <a href="mailto:{{ . }}" class="contact-card-link" aria-label="{{ i18n "email_us" | default "Email us" }}: {{ . }}">{{ . }}</a>
-        </div>
-      </div>
-      {{ end }}
-
-      <!-- Opening Hours Card -->
-      {{ with .hours }}
-      <div class="col-md-6 col-lg-3">
-        <div class="contact-card h-100 p-5">
-          <div class="contact-card-icon mb-4">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
-              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
-              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
-            </svg>
-          </div>
-          <h2 class="contact-card-title mb-3">{{ i18n "opening_hours" | default "Opening Hours" }}</h2>
-          <p class="contact-card-text mb-0">{{ . }}</p>
-        </div>
-      </div>
+      <a class="contact-primary-actions__email" href="mailto:{{ . }}">
+        <span>{{ if eq $.Site.Language.Lang "pl" }}Napisz do nas{{ else }}Email us{{ end }}</span>
+        <strong>{{ . }}</strong>
+      </a>
       {{ end }}
     </div>
+    {{ end }}
+
+    {{ with .Params.contact_info }}
+    <dl class="contact-essential-details">
+      {{ with .address }}
+      <div>
+        <dt>{{ i18n "address" | default "Address" }}</dt>
+        <dd>{{ . }}</dd>
+      </div>
+      {{ end }}
+      {{ with .hours }}
+      <div>
+        <dt>{{ i18n "opening_hours" | default "Opening Hours" }}</dt>
+        <dd>{{ . }}</dd>
+      </div>
+      {{ end }}
+    </dl>
     {{ end }}
 
     <!-- Map and Directions Section -->
@@ -213,35 +172,6 @@
       </div>
     </div>
 
-    <!-- Schedule a Visit Section -->
-    <div class="row mt-5">
-      <div class="col-12">
-        <div class="visit-cta text-center p-5 rounded-4 bg-gradient-primary">
-          <h2 class="h3 text-white mb-3">{{ i18n "schedule_visit_heading" | default "Schedule a Visit" }}</h2>
-          <p class="text-white-50 mb-4">{{ i18n "schedule_visit_text" | default "We invite you to visit our preschool. We'll show you our classrooms, introduce our staff, and answer all your questions." }}</p>
-          {{ with .Params.contact_info }}
-          <div class="d-flex flex-wrap justify-content-center gap-3">
-            {{ with .phone }}
-            <a href="tel:{{ . | replaceRE `[^+0-9]` `` }}" class="btn btn-light btn-lg">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="me-2" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-              </svg>
-              {{ i18n "call_us" | default "Call Us" }}
-            </a>
-            {{ end }}
-            {{ with .email }}
-            <a href="mailto:{{ . }}" class="btn btn-outline-light btn-lg">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="me-2" viewBox="0 0 16 16">
-                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
-              </svg>
-              {{ i18n "email_us" | default "Email Us" }}
-            </a>
-            {{ end }}
-          </div>
-          {{ end }}
-        </div>
-      </div>
-    </div>
   </div>
 </section>
 {{ end }}

@@ -1,6 +1,6 @@
 ---
 title: "Nasza Oferta"
-description: "Poznaj programy edukacyjne przedszkola Wesole Nutki - zajecia dla dzieci w roznym wieku"
+description: "Poznaj programy edukacyjne przedszkola Wesołe Nutki — zajęcia dla dzieci w różnym wieku"
 ---
 
-Przedszkole Wesole Nutki oferuje kompleksowe programy edukacyjne dostosowane do potrzeb dzieci w roznym wieku. Nasze podejscie lacze nauke z zabawa, wspierajac wszechstronny rozwoj kazdego dziecka.
+Przedszkole Wesołe Nutki oferuje kompleksowe programy edukacyjne dostosowane do potrzeb dzieci w różnym wieku. Nasze podejście łączy naukę z zabawą, wspierając wszechstronny rozwój każdego dziecka.

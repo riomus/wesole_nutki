@@ -15,7 +15,7 @@ export default defineConfig({
   },
   projects: [{ name: 'chromium', use: { ...devices['Desktop Chrome'] } }],
   webServer: {
-    command: 'hugo server --buildFuture --port 1313 --baseURL http://127.0.0.1:1313/ --appendPort=false',
+    command: 'node scripts/serve-audit.mjs',
     url: 'http://127.0.0.1:1313/pl/',
     reuseExistingServer: !process.env.CI,
     timeout: 120_000,

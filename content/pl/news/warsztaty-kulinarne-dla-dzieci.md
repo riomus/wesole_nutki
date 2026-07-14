@@ -4,7 +4,7 @@ date: 2024-11-05
 draft: false
 categories: ["Zajęcia"]
 tags: ["warsztaty", "gotowanie", "zdrowe odżywianie"]
-featured_image: "/images/news/warsztaty-kulinarne.jpg"
+featured_image: "/images/scraped/2025-06-03-warsztaty-ekologiczne-1.jpeg"
 summary: "W listopadzie rozpoczynamy cykl warsztatów kulinarnych dla dzieci. Małe kucharze nauczą się przygotowywać proste i zdrowe posiłki."
 ---
 

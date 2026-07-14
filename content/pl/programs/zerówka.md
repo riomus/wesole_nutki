@@ -8,7 +8,7 @@ age_group: "5-6 lat"
 group_size: "do 20 dzieci"
 hours: "7:00 - 17:00"
 summary: "Ostatni rok przed szkołą. Kompleksowe przygotowanie do nauki w szkole podstawowej, rozwijanie wszystkich kompetencji kluczowych."
-featured_image: "/images/programs/zerowka.jpg"
+featured_image: "/images/scraped/2025-06-10-muzyka-na-zywo-w-przedszkolu-3.jpeg"
 features:
   - "Pełne przygotowanie do szkoły"
   - "Nauka czytania i pisania"

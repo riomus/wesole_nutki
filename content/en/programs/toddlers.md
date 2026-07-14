@@ -8,7 +8,7 @@ age_group: "2.5-3 years"
 group_size: "up to 12 children"
 hours: "7:00 AM - 5:00 PM"
 summary: "First step into preschool adventure. Gentle introduction to group life, developing independence and basic social skills."
-featured_image: "/images/programs/maluszki.jpg"
+featured_image: "/images/scraped/galerie-4.jpeg"
 features:
   - "Small group for individual attention"
   - "Gentle adaptation to preschool"

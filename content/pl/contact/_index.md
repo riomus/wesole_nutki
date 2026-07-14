@@ -1,6 +1,6 @@
 ---
 title: "Kontakt"
-description: "Skontaktuj sie z przedszkolem Wesole Nutki - chetnie odpowiemy na wszystkie pytania"
+description: "Skontaktuj się z przedszkolem Wesołe Nutki — chętnie odpowiemy na wszystkie pytania"
 type: "contact"
 url: "/pl/contact/"
 contact_info:

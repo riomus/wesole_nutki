@@ -8,7 +8,7 @@ age_group: "3-4 lata"
 group_size: "do 15 dzieci"
 hours: "7:00 - 17:00"
 summary: "Rozwijamy ciekawość świata i umiejętności społeczne. Intensywna nauka przez zabawę, rozwijanie kreatywności i budowanie pewności siebie."
-featured_image: "/images/programs/sredniaki.jpg"
+featured_image: "/images/scraped/2025-09-15-miedzynarodowy-dzien-kropki-3.jpeg"
 features:
   - "Rozwijanie umiejętności społecznych"
   - "Kreatywne zajęcia plastyczne"

@@ -3,16 +3,16 @@ title: "Autumn Family Festival"
 date: 2024-10-20
 draft: false
 gallery_categories: ["Events", "Family"]
-featured_image: "/images/gallery/autumn-fest-2024/cover.jpg"
+featured_image: "/images/scraped/2025-09-26-spacer-0.jpeg"
 images:
-  - "/images/gallery/autumn-fest-2024/01.jpg"
-  - "/images/gallery/autumn-fest-2024/02.jpg"
-  - "/images/gallery/autumn-fest-2024/03.jpg"
-  - "/images/gallery/autumn-fest-2024/04.jpg"
-  - "/images/gallery/autumn-fest-2024/05.jpg"
-  - "/images/gallery/autumn-fest-2024/06.jpg"
-  - "/images/gallery/autumn-fest-2024/07.jpg"
-  - "/images/gallery/autumn-fest-2024/08.jpg"
+  - "/images/scraped/2025-09-26-spacer-0.jpeg"
+  - "/images/scraped/2025-09-26-spacer-1.jpeg"
+  - "/images/scraped/2025-09-26-spacer-2.jpeg"
+  - "/images/scraped/2025-09-26-spacer-3.jpeg"
+  - "/images/scraped/2025-09-26-spacer-4.jpeg"
+  - "/images/scraped/2025-09-26-spacer-5.jpeg"
+  - "/images/scraped/galerie-10.jpeg"
+  - "/images/scraped/galerie-11.jpeg"
 ---
 
 Our annual autumn family festival was full of attractions! Together with parents and children, we had fun with music, created autumn decorations, and tasted delicious treats.

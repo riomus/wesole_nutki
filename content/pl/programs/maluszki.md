@@ -8,7 +8,7 @@ age_group: "2.5-3 lata"
 group_size: "do 12 dzieci"
 hours: "7:00 - 17:00"
 summary: "Pierwszy krok w przygodę przedszkolną. Delikatne wprowadzenie do życia w grupie, rozwój samodzielności i podstawowych umiejętności społecznych."
-featured_image: "/images/programs/maluszki.jpg"
+featured_image: "/images/scraped/galerie-4.jpeg"
 features:
   - "Mała grupa dla indywidualnej uwagi"
   - "Łagodna adaptacja do przedszkola"

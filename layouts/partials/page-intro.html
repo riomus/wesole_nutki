@@ -1,0 +1,16 @@
+{{- $lang := .Site.Language.Lang -}}
+{{- $eyebrow := cond (eq $lang "pl") "Wesołe Nutki · centrum Wrocławia" "Wesołe Nutki · central Wrocław" -}}
+{{- $description := .Params.description | default .Description -}}
+<section class="editorial-page-intro" aria-labelledby="page-title">
+  <div class="container editorial-page-intro__inner">
+    <div class="editorial-page-intro__copy">
+      {{ partial "breadcrumb.html" . }}
+      <p class="editorial-page-intro__eyebrow">{{ $eyebrow }}</p>
+      <h1 id="page-title">{{ .Title }}</h1>
+      {{ with $description }}<p class="editorial-page-intro__lead">{{ . | plainify }}</p>{{ end }}
+    </div>
+    <div class="editorial-page-intro__staff" aria-hidden="true">
+      <span>♪</span><span>●</span><span>♫</span>
+    </div>
+  </div>
+</section>

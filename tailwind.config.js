@@ -59,7 +59,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['system-ui', 'sans-serif'],
-        heading: ['ui-rounded', 'Arial Rounded MT Bold', 'system-ui', 'sans-serif'],
+        heading: ['Bricolage Grotesque', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
         'sm': '0 1px 2px 0 rgba(0, 0, 0, 0.05)',

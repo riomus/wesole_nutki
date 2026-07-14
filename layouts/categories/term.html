@@ -1,6 +1,4 @@
 {{ define "main" }}
-{{/* Breadcrumb Navigation */}}
-{{ partial "breadcrumb.html" . }}
 
 <section class="py-5">
   <div class="container">
@@ -24,7 +22,6 @@
           {{ else }}<span class="category-emoji">📰</span>
           {{ end }}
         </span>
-        <h1 class="display-4 mb-0">{{ .Title }}</h1>
       </div>
       <p class="lead text-muted">
         {{ len .Pages }} {{ if eq (len .Pages) 1 }}{{ i18n "article_singular" | default "article" }}{{ else }}{{ i18n "articles_plural" | default "articles" }}{{ end }}

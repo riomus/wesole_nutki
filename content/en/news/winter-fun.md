@@ -21,7 +21,7 @@ The children had the opportunity to:
 
 Below you'll find some photos from our winter adventures. Click on a photo to enlarge it!
 
-{{< gallery ref="en/gallery/daily-activities" title="Winter fun with our preschoolers" />}}
+{{< gallery ref="gallery/daily-activities" title="Winter fun with our preschoolers" />}}
 
 ## More Photos
 

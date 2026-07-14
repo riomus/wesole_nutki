@@ -17,8 +17,11 @@
     "test:headed": "npx playwright test --headed",
     "test:debug": "npx playwright test --debug",
     "test:basepath": "BASEPATH=true npx playwright test",
-    "audit:lighthouse": "npm run sync:translations && lhci autorun",
-    "audit:wcag": "npm run sync:translations && playwright test --config playwright.audit.config.ts",
+    "audit:routes": "node scripts/generate-audit-routes.mjs",
+    "audit:lighthouse:critical": "lhci autorun",
+    "audit:lighthouse:coverage": "lhci autorun --config=./lighthouserc.coverage.cjs",
+    "audit:lighthouse": "npm run sync:translations && npm run audit:routes && npm run audit:lighthouse:critical && npm run audit:lighthouse:coverage",
+    "audit:wcag": "npm run sync:translations && npm run audit:routes && playwright test --config playwright.audit.config.ts",
     "audit:quality": "npm run audit:lighthouse && npm run audit:wcag"
   },
   "devDependencies": {

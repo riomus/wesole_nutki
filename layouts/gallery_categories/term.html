@@ -1,6 +1,4 @@
 {{ define "main" }}
-{{/* Breadcrumb Navigation */}}
-{{ partial "breadcrumb.html" . }}
 
 <section class="py-5">
   <div class="container">
@@ -23,7 +21,6 @@
           {{ else }}📷
           {{ end }}
         </span>
-        <h1 class="display-4 mb-0">{{ .Title }}</h1>
       </div>
       <p class="lead text-muted">
         {{ len .Pages }} {{ if eq (len .Pages) 1 }}{{ i18n "gallery_singular" | default "gallery" }}{{ else }}{{ i18n "galleries_plural" | default "galleries" }}{{ end }}

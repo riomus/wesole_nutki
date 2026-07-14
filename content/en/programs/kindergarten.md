@@ -8,7 +8,7 @@ age_group: "5-6 years"
 group_size: "up to 20 children"
 hours: "7:00 AM - 5:00 PM"
 summary: "Last year before school. Comprehensive preparation for elementary school, developing all key competencies."
-featured_image: "/images/programs/zerowka.jpg"
+featured_image: "/images/scraped/2025-06-10-muzyka-na-zywo-w-przedszkolu-3.jpeg"
 features:
   - "Full school preparation"
   - "Reading and writing skills"

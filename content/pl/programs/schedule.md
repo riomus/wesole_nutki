@@ -1,6 +1,6 @@
 ---
 title: "Plan Dnia"
-description: "Szczegółowy plan dnia w przedszkolu Wesole Nutki"
+description: "Szczegółowy plan dnia w przedszkolu Wesołe Nutki"
 layout: "schedule"
 weight: 99
 ---

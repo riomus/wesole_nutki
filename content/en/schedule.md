@@ -5,7 +5,7 @@ type: page
 url: "/en/schedule/"
 ---
 
-<div class="schedule-table-wrapper">
+<div class="schedule-table-wrapper" tabindex="0" role="region" aria-label="Weekly activities schedule">
   <table class="weekly-schedule-table">
     <thead>
       <tr>

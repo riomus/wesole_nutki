@@ -1,13 +1,10 @@
 {{ define "main" }}
-{{/* Breadcrumb Navigation */}}
-{{ partial "breadcrumb.html" . }}
 
 <article class="py-5">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8">
-        <header class="mb-4">
-          <h1 class="display-5 fw-bold">{{ .Title }}</h1>
+        <header class="mb-4 article-meta">
           {{ if not .Date.IsZero }}
           <p class="text-muted">
             <time datetime="{{ .Date.Format "2006-01-02" }}">

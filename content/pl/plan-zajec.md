@@ -5,7 +5,7 @@ type: page
 url: "/pl/plan-zajec/"
 ---
 
-<div class="schedule-table-wrapper">
+<div class="schedule-table-wrapper" tabindex="0" role="region" aria-label="Tygodniowy plan zajęć">
   <table class="weekly-schedule-table">
     <thead>
       <tr>

@@ -137,8 +137,20 @@
   {{- $rel = "noopener noreferrer" -}}
 {{- end -}}
 
+{{/* Linked images have no PlainText. Give each one a descriptive, distinct name
+     derived from the page and destination instead of masking its image alt with
+     the same generic label. */}}
+{{- $accessibleLabel := "" -}}
+{{- if not $plainText -}}
+  {{- $resourcePath := (urls.Parse $url).Path -}}
+  {{- $resourceName := path.Base $resourcePath | replaceRE `[-_]` " " -}}
+  {{- $resourceKind := cond (eq .Page.Site.Language.Lang "pl") "Powiązany plik" "Linked file" -}}
+  {{- $accessibleLabel = printf "%s — %s: %s" .Page.Title $resourceKind $resourceName -}}
+{{- end -}}
+
 {{/* Build the anchor tag */}}
 <a href="{{ $processedURL }}"
+   {{- with $accessibleLabel }} aria-label="{{ . }}"{{ end }}
    {{- with $title }} title="{{ . }}"{{ end }}
    {{- with $target }} target="{{ . }}"{{ end }}
    {{- with $rel }} rel="{{ . }}"{{ end }}>

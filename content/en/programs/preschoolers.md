@@ -8,7 +8,7 @@ age_group: "3-4 years"
 group_size: "up to 15 children"
 hours: "7:00 AM - 5:00 PM"
 summary: "Developing curiosity about the world and social skills. Intensive learning through play, fostering creativity and building self-confidence."
-featured_image: "/images/programs/sredniaki.jpg"
+featured_image: "/images/scraped/2025-09-15-miedzynarodowy-dzien-kropki-3.jpeg"
 features:
   - "Developing social skills"
   - "Creative art activities"

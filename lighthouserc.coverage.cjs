@@ -1,10 +1,10 @@
-const routes = require('./audit/critical-routes.json');
+const routes = require('./audit/coverage-routes.json');
 
 module.exports = {
   ci: {
     collect: {
       url: routes.map((route) => `http://127.0.0.1:1313${route}`),
-      numberOfRuns: 3,
+      numberOfRuns: 1,
       startServerCommand: 'node scripts/serve-audit.mjs',
       startServerReadyPattern: 'Audit server ready',
       settings: {
@@ -22,7 +22,7 @@ module.exports = {
     },
     upload: {
       target: 'filesystem',
-      outputDir: 'test-results/lighthouse-critical',
+      outputDir: 'test-results/lighthouse-coverage',
     },
   },
 };

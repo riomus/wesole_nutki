@@ -1,12 +1,9 @@
 {{ define "main" }}
-{{/* Breadcrumb Navigation */}}
-{{ partial "breadcrumb.html" . }}
 
 <section class="news-list-section py-5">
   <div class="container">
     {{/* Section Header */}}
     <header class="section-header mb-5">
-      <h1 class="section-heading">{{ .Title | default (i18n "news") }}</h1>
       {{ with .Content }}
       <div class="section-subtitle">{{ . }}</div>
       {{ end }}

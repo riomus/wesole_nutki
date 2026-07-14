@@ -1,12 +1,10 @@
 {{ define "main" }}
-{{/* Breadcrumb Navigation */}}
-{{ partial "breadcrumb.html" . }}
 
 <section class="schedule-page py-5">
   <div class="container">
     {{/* Page Header */}}
     <header class="section-header text-center mb-5">
-      <h1 class="section-heading">{{ .Title }}</h1>
+      <h2 class="section-heading">{{ .Title }}</h2>
       {{ with .Content }}
       <div class="section-subtitle">{{ . }}</div>
       {{ end }}
