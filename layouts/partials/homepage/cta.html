@@ -1,33 +1,19 @@
 {{- $data := site.Data.homepage.cta -}}
 {{- if $data.enabled -}}
-<!-- Educenter-style CTA Section -->
-<section class="cta-section">
-  <div class="container">
-    <h2>{{ i18n $data.heading_key | default "Ready to Give Your Child the Best Start?" }}</h2>
-    <p>{{ i18n $data.description_key | default `Join our warm and welcoming preschool community.
-      Schedule a visit today!` }}</p>
-    {{- with $data.button -}}
-    {{- $url := "#" -}}
-    {{- if .url -}}
-    {{- $url = .url -}}
-    {{- else if .url_menu_index -}}
-    {{- $menuItem := index $.Site.Menus.main .url_menu_index -}}
-    {{- if $menuItem -}}
-    {{- $url = $menuItem.URL -}}
-    {{- end -}}
-    {{- end -}}
-    {{/* Use basepath-url helper for consistent URL handling */}}
-    {{- $ctaHref := partial "helpers/basepath-url" $url -}}
-    <a href="{{ $ctaHref }}" class="btn btn-{{ .style | default " light" }} btn-lg{{ if .icon }} btn-icon{{ end }}">
-      {{ i18n .label_key | default "Schedule a Visit" }}
-      {{- if eq .icon "arrow-right" }}
-      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
-        <path fill-rule="evenodd"
-          d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
-      </svg>
-      {{- end -}}
-    </a>
-    {{- end -}}
+{{- $phone := site.Data.settings.contact.phone | default site.Params.phone -}}
+{{- $phoneHref := $phone | replaceRE `[^0-9+]` `` -}}
+{{- $email := site.Data.settings.contact.email | default site.Params.email -}}
+<section class="music-final-cta">
+  <div class="container music-final-grid">
+    <div>
+      <p class="music-eyebrow">{{ i18n "recruitment_heading" }}</p>
+      <h2>{{ i18n $data.heading_key }}</h2>
+      <p>{{ i18n $data.description_key }}</p>
+    </div>
+    <div class="final-actions">
+      <a href="tel:{{ $phoneHref }}" class="btn music-btn-light" data-testid="final-primary-call">{{ i18n "hero_call" }} {{ $phone }}</a>
+      <a href="mailto:{{ $email }}">{{ $email }}</a>
+    </div>
   </div>
 </section>
 {{- end -}}

@@ -1,0 +1,23 @@
+{{- $items := slice
+  (dict "title" "shortcut_schedule" "desc" "shortcut_schedule_desc" "pl" "/pl/plan-zajec/" "en" "/en/schedule/")
+  (dict "title" "shortcut_activities" "desc" "shortcut_activities_desc" "pl" "/pl/plan-dnia/zajecia-dodatkowe/" "en" "/en/daily-plan/extra-activities/")
+  (dict "title" "shortcut_payments" "desc" "shortcut_payments_desc" "pl" "/pl/o-przedszkolu/cennik/" "en" "/en/about/pricing/")
+  (dict "title" "shortcut_documents" "desc" "shortcut_documents_desc" "pl" "/pl/documents/" "en" "/en/documents/")
+-}}
+<section class="parents-section">
+  <div class="container parents-layout">
+    <div class="music-section-heading">
+      <h2>{{ i18n "parents_heading" }}</h2>
+      <p>{{ i18n "parents_subtitle" }}</p>
+    </div>
+    <div class="parents-links">
+      {{- range $items -}}
+      {{- $url := index . $.Lang -}}
+      <a class="parent-shortcut" href="{{ partial "helpers/basepath-url" $url }}">
+        <span><strong>{{ i18n .title }}</strong><small>{{ i18n .desc }}</small></span>
+        <span aria-hidden="true">↗</span>
+      </a>
+      {{- end -}}
+    </div>
+  </div>
+</section>

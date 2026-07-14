@@ -18,11 +18,6 @@ contact:
 # Application Form Download
 # Can link to a document or navigate to documents section
 application_form:
-  # Direct download link (e.g., /documents/enrollment-form.pdf)
-  download_url: "/documents/karta-zgloszenia.pdf"
-  # Alternative: link to documents section page
-  documents_page_url: "/pl/documents/"
-  # Label for download button
   label_key: download_application_form
 
 # Call to Action

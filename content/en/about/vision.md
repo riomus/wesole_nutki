@@ -13,4 +13,4 @@ The "Wesołe Nutki" Preschool is located in the heart of Wrocław, which enables
 
 We also encourage you to visit other sections of our website, such as STAFF or OFFER, to get to know us better.
 
-If you have any questions, please feel free to contact us. You can reach us by sending a message to our email address: przedszkole@wesolenutki.eu or by calling: 530-114-202, 570-244-251.
+If you have any questions, please contact us at przedszkole@wesolenutki.eu or call 71 343 18 99.

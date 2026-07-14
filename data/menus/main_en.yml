@@ -1,133 +1,78 @@
-# English Main Navigation Menu
-# This file is editable through the CMS admin interface
-# Changes here will update the main navigation on the English version of the site
-
 items:
-  - identifier: home
-    name: Home
-    url: /en/
-    weight: 1
-    i18n_key: menu_home
-    external: false
-    open_in_new_tab: false
-
-  - identifier: news
-    name: News
-    url: /en/news/
-    weight: 2
-    i18n_key: menu_news
-    external: false
-    open_in_new_tab: false
-
   - identifier: about
-    name: About Us
+    name: About
     url: /en/about/
-    weight: 3
+    weight: 1
     i18n_key: menu_about
-    external: false
-    open_in_new_tab: false
+    children:
+      - identifier: about-vision
+        name: Our vision
+        url: /en/about/vision/
+        weight: 1
+        i18n_key: menu_about_vision
+      - identifier: about-gallery
+        name: Galleries
+        url: /en/gallery/
+        weight: 2
+        i18n_key: menu_galleries
 
   - identifier: offer
     name: Offer
     url: /en/programs/
-    weight: 4
+    weight: 2
     i18n_key: menu_offer
-    external: false
-    open_in_new_tab: false
-
-  - identifier: daily-plan
-    name: Daily Plan
-    url: /en/programs/schedule/
-    weight: 6
-    i18n_key: menu_daily_plan
-    external: false
-    open_in_new_tab: false
     children:
-      - identifier: daily-plan-weekly
-        name: Weekly Plan
-        url: /en/schedule/
+      - identifier: offer-schedule
+        name: Daily plan
+        url: /en/programs/schedule/
         weight: 1
-        i18n_key: menu_daily_plan_weekly
-        external: false
-        open_in_new_tab: false
-
-      - identifier: daily-plan-extra
-        name: Extra Activities 2025/2026
+        i18n_key: menu_daily_plan
+      - identifier: offer-activities
+        name: Extra activities
         url: /en/daily-plan/extra-activities/
         weight: 2
         i18n_key: menu_daily_plan_extra
-        external: false
-        open_in_new_tab: false
 
-  - identifier: galleries
-    name: Galleries
-    url: /en/gallery/
-    weight: 7
-    i18n_key: menu_galleries
-    external: false
-    open_in_new_tab: false
-
-  - identifier: more
-    name: More...
+  - identifier: parents
+    name: For parents
     url: "#"
-    weight: 8
-    i18n_key: menu_more
-    external: false
-    open_in_new_tab: false
+    weight: 3
+    i18n_key: menu_for_parents
     children:
-
-      - identifier: more-vision
-        name: Our Vision
-        url: /en/about/vision/
-        weight: 2
-        i18n_key: menu_about_vision
-        external: false
-        open_in_new_tab: false
-
-      - identifier: more-pricing
+      - identifier: parents-week
+        name: Weekly schedule
+        url: /en/schedule/
+        weight: 1
+        i18n_key: menu_daily_plan_weekly
+      - identifier: parents-pricing
         name: Pricing
         url: /en/about/pricing/
-        weight: 4
+        weight: 2
         i18n_key: menu_about_pricing
-        external: false
-        open_in_new_tab: false
-
-      - identifier: more-payments
+      - identifier: parents-payments
         name: Payments
         url: /en/about/payments/
-        weight: 5
+        weight: 3
         i18n_key: menu_about_payments
-        external: false
-        open_in_new_tab: false
-
-      - identifier: more-enrollment
-        name: Enrollment
-        url: /en/about/enrollment/
-        weight: 6
-        i18n_key: menu_about_enrollment
-        external: false
-        open_in_new_tab: false
-
-      - identifier: more-privacy
-        name: Privacy Policy
-        url: /en/documents/privacy-policy/
-        weight: 7
-        i18n_key: menu_about_privacy
-        external: false
-        open_in_new_tab: false
-
-      - identifier: more-child-protection
-        name: Child Protection Standards
+      - identifier: parents-documents
+        name: Documents
+        url: /en/documents/
+        weight: 4
+        i18n_key: menu_documents
+      - identifier: parents-protection
+        name: Child protection
         url: /en/child-protection-standards/
-        weight: 8
+        weight: 5
         i18n_key: menu_child_protection
-        external: false
-        open_in_new_tab: false
+
+  - identifier: news
+    name: News
+    url: /en/news/
+    weight: 4
+    i18n_key: menu_news
 
   - identifier: contact
     name: Contact
     url: /en/contact/
-    weight: 9
+    weight: 5
     i18n_key: menu_contact
-    external: false
-    open_in_new_tab: false

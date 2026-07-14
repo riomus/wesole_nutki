@@ -8,15 +8,15 @@
 // ============================================================
 
 // Primary colors - warm and inviting (matching wesolenutki.eu)
-$preschool-primary:     #81d742;  // Brand green - nature and growth
-$preschool-secondary:   #dd8500;  // Brand orange - warm and energetic
-$preschool-accent:      #FFE66D;  // Yellow - sunshine and happiness
-$preschool-success:     #81d742;  // Brand green - success and growth
+$preschool-primary:     #183C32;  // Deep evergreen - trust and calm
+$preschool-secondary:   #B84D18;  // Burnt orange - warm emphasis
+$preschool-accent:      #D7E84A;  // Lime - decorative rhythm
+$preschool-success:     #2E6B57;  // Accessible green
 $preschool-info:        #74C0FC;  // Sky blue - open and friendly
 $preschool-warning:     #FFD166;  // Amber - attention
 $preschool-danger:      #EF476F;  // Coral red - important notices
-$preschool-light:       #FFF8F0;  // Warm white
-$preschool-dark:        #2D3142;  // Soft dark
+$preschool-light:       #FFF8E8;  // Warm cream
+$preschool-dark:        #17312B;  // Evergreen ink
 
 // Extended color palette for Educenter-style components
 $preschool-purple:      #9B5DE5;  // Creative purple
@@ -48,9 +48,9 @@ $dark:          $preschool-dark;
 // ============================================================
 // Typography - Educenter-inspired friendly, readable fonts with Polish character support
 // ============================================================
-$font-family-sans-serif: "Poppins", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-sans-serif: "Source Sans 3", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 $font-family-base: $font-family-sans-serif;
-$headings-font-family: "Quicksand", "Comic Sans MS", sans-serif;
+$headings-font-family: "Bricolage Grotesque", "Arial Narrow", sans-serif;
 
 // Font weights
 $font-weight-light:   300;
@@ -76,7 +76,7 @@ $h6-font-size: 1rem;        // 16px - micro headings
 // Line heights
 $line-height-base: 1.7;     // More spacious for child-friendly readability
 $headings-line-height: 1.3;
-$headings-font-weight: 400;
+$headings-font-weight: 700;
 $headings-margin-bottom: 1rem;
 
 // ============================================================

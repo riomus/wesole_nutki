@@ -9,7 +9,7 @@ Dear Parents! We have opened recruitment for a new toddler group – starting Se
 
 The enrollment form is available for download [here](/documents/karta-zgloszenia.pdf) or in the documents section.
 
-Information is available by phone: 71 343 18 99, mobile: 536 268 113
+Information is available by phone: 71 343 18 99.
 
 and by email: [przedszkole@wesolenutki.eu](mailto:przedszkole@wesolenutki.eu)
 

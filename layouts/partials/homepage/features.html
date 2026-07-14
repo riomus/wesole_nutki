@@ -1,23 +1,19 @@
 {{- $data := site.Data.homepage.features -}}
 {{- if $data.enabled -}}
-<!-- Educenter-style Features Section -->
-<section class="section section-alt" id="features-section">
+<section class="proof-section" id="features-section">
   <div class="container">
-    <div class="section-header">
-      <h2 class="section-heading">{{ i18n $data.heading_key | default "Why Choose Us?" }}</h2>
-      <p class="section-subtitle">{{ i18n $data.subtitle_key | default "Discover what makes our preschool special" }}</p>
+    <div class="music-section-heading">
+      <p class="music-eyebrow">Wesołe Nutki</p>
+      <h2>{{ i18n $data.heading_key }}</h2>
+      <p>{{ i18n $data.subtitle_key }}</p>
     </div>
-    <div class="row g-4">
+    <div class="proof-grid">
       {{- range $data.items -}}
-      <div class="col-lg-4 col-md-6">
-        <div class="feature-card h-100">
-          <div class="feature-icon icon-{{ .color | default "primary" }}">
-            {{- partial "icons/feature-icon.html" .icon -}}
-          </div>
-          <h3>{{ i18n .title_key | default .title_key }}</h3>
-          <p>{{ i18n .description_key | default .description_key }}</p>
-        </div>
-      </div>
+      <article class="proof-item">
+        <span class="proof-number" aria-hidden="true">{{ .number }}</span>
+        <h3>{{ i18n .title_key }}</h3>
+        <p>{{ i18n .description_key }}</p>
+      </article>
       {{- end -}}
     </div>
   </div>

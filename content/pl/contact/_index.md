@@ -5,7 +5,7 @@ type: "contact"
 url: "/pl/contact/"
 contact_info:
   address: "Ul. Łaciarska 8, 50-104 Wrocław"
-  phone: "530 114 202"
+  phone: "71 343 18 99"
   email: "przedszkole@wesolenutki.eu"
   hours: "Poniedziałek - Piątek: 06:30 - 17:30, Sobota - Niedziela: ZAMKNIĘTE"
 map:

@@ -378,17 +378,92 @@ other = "Wszelkie prawa zastrzeżone"
 [image_unavailable]
 other = "Obraz niedostępny"
 
+[hero_eyebrow]
+other = "Przedszkole językowo-muzyczne • Wrocław, Rynek"
+
 [hero_headline]
-other = "Wesołe Nutki - Przedszkole Językowo-Muzyczne"
+other = "Dzieci rosną w rytmie muzyki, języków i bliskości"
 
 [hero_subheadline]
-other = "Ciepła i rodzinna atmosfera w sercu Wrocławia. Przedszkole przy Rynku, gdzie dzieci rozwijają się przez muzykę, języki i kreatywność."
+other = "Kameralne przedszkole w sercu Wrocławia, gdzie codzienna muzyka, angielski i troskliwa opieka pomagają dzieciom odważnie poznawać świat."
+
+[hero_call]
+other = "Zadzwoń:"
+
+[hero_email]
+other = "Napisz do nas"
+
+[hero_about]
+other = "Poznaj Wesołe Nutki"
+
+[hero_image_caption]
+other = "Muzyka jest częścią naszego każdego dnia"
 
 [why_choose_us]
-other = "Dlaczego my?"
+other = "Co słychać w Wesołych Nutkach?"
 
 [why_choose_us_subtitle]
-other = "Odkryj, co sprawia, że nasze przedszkole jest wyjątkowe"
+other = "Trzy rzeczy, które naprawdę kształtują codzienność dzieci"
+
+[proof_music_title]
+other = "Muzyka na co dzień"
+
+[proof_music_desc]
+other = "Śpiew, rytm, instrumenty i spotkania z muzyką na żywo rozwijają słuch, pamięć i swobodę wyrażania siebie."
+
+[proof_languages_title]
+other = "Języki w naturalnym rytmie"
+
+[proof_languages_desc]
+other = "Angielski pojawia się w zabawie i codziennych sytuacjach, bez presji i bez szkolnej ławki."
+
+[proof_closeness_title]
+other = "Kameralna, bliska opieka"
+
+[proof_closeness_desc]
+other = "Znamy dzieci i ich rodziny. Stały rytm dnia daje bezpieczeństwo, a uważna kadra pomaga każdemu dziecku rozwijać się po swojemu."
+
+[parents_heading]
+other = "Wszystko pod ręką dla rodziców"
+
+[parents_subtitle]
+other = "Najczęściej potrzebne informacje — bez szukania po całej stronie."
+
+[shortcut_schedule]
+other = "Plan zajęć"
+
+[shortcut_schedule_desc]
+other = "Sprawdź tygodniowy rytm grup."
+
+[shortcut_activities]
+other = "Zajęcia dodatkowe"
+
+[shortcut_activities_desc]
+other = "Poznaj aktualną ofertę zajęć."
+
+[shortcut_payments]
+other = "Cennik i płatności"
+
+[shortcut_payments_desc]
+other = "Najważniejsze informacje organizacyjne."
+
+[shortcut_documents]
+other = "Dokumenty"
+
+[shortcut_documents_desc]
+other = "Formularze i dokumenty dla rodziców."
+
+[trust_heading]
+other = "Małe przedszkole. Dużo uważności."
+
+[trust_location]
+other = "Rynek, ul. Łaciarska 8"
+
+[trust_hours]
+other = "Otwarte od 6:30 do 17:30"
+
+[trust_contact]
+other = "Bezpośredni kontakt z przedszkolem"
 
 [loving_care]
 other = "Serdeczna opieka"
@@ -454,7 +529,7 @@ other = "Zobacz, co dzieje się w naszym przedszkolu"
 other = "Poznaj nasze przedszkole"
 
 [about_preview_text]
-other = "Wesołe Nutki to miejsce, gdzie dzieci rozwijają się w atmosferze radości i twórczej zabawy."
+other = "Muzyka nie jest u nas dodatkiem. Towarzyszy dzieciom w zabawie, nauce i codziennych rytuałach, budując odwagę, pamięć i radość wspólnego działania."
 
 [about_image_alt]
 other = "Dzieci bawiące się w przedszkolu"
@@ -466,19 +541,16 @@ other = "REKRUTACJA"
 other = "Trwa rekrutacja do naszego przedszkola językowo-muzycznego"
 
 [recruitment_details]
-other = "WESOŁE NUTKI zapraszają dzieci z rocznika 2022. Mamy również dwa miejsca dla dzieci z rocznika 2019"
-
-[download_form_text]
-other = "Pobierz kartę zgłoszenia:"
+other = "Zapraszamy rodziców do kontaktu. Opowiemy o wolnych miejscach, codziennym rytmie grup i kolejnych krokach zapisu."
 
 [download_application_form]
-other = "Pobierz kartę zgłoszenia"
+other = "Karta zgłoszenia"
 
 [view_documents]
 other = "Zobacz dokumenty"
 
 [recruitment_cta]
-other = "ZAPRASZAMY!"
+other = "Porozmawiajmy o miejscu dla Twojego dziecka"
 
 [home]
 other = "Strona Główna"
@@ -587,6 +659,9 @@ other = "Dokumenty"
 
 [menu_more_recruitment]
 other = "Rekrutacja"
+
+[menu_for_parents]
+other = "Dla rodziców"
 
 [all_news]
 other = "Wszystkie aktualności"

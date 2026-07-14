@@ -136,6 +136,19 @@ test.describe('Responsive conversion and navigation', () => {
     expect(box?.width).toBeGreaterThanOrEqual(44);
     expect(box?.height).toBeGreaterThanOrEqual(44);
   });
+
+  test('desktop dropdown and mobile close control remain operable', async ({ page }) => {
+    await page.setViewportSize({ width: 1440, height: 900 });
+    await page.goto('/pl/');
+    await page.getByRole('button', { name: 'O nas' }).click();
+    await expect(page.getByRole('link', { name: 'Nasza wizja' })).toBeVisible();
+
+    await page.setViewportSize({ width: 390, height: 844 });
+    await page.reload();
+    await page.getByRole('button', { name: /menu/i }).click();
+    await page.getByRole('button', { name: /close menu/i }).click();
+    await expect(page.locator('.desktop-nav')).toBeHidden();
+  });
 });
 
 test.describe('Visual and accessibility quality', () => {
@@ -177,6 +190,16 @@ test.describe('Visual and accessibility quality', () => {
     await expect(page.locator('article time').first()).toContainText(
       /stycznia|lutego|marca|kwietnia|maja|czerwca|lipca|sierpnia|września|października|listopada|grudnia/i,
     );
+  });
+
+  test('lazy images do not emit false timeout warnings', async ({ page }) => {
+    const warnings: string[] = [];
+    page.on('console', (message) => {
+      if (message.type() === 'warning') warnings.push(message.text());
+    });
+    await page.goto('/pl/');
+    await page.waitForTimeout(10_100);
+    expect(warnings.filter((warning) => warning.includes('load timeout'))).toEqual([]);
   });
 
   test('404 offers recovery in the active language', async ({ page }) => {

@@ -8,7 +8,7 @@ site_tagline: Przedszkole Jezykowo-Muzyczne
 
 # Contact Information
 contact:
-  phone: "530 114 202"
+  phone: "71 343 18 99"
   email: "przedszkole@wesolenutki.eu"
   address: "Ul. Łaciarska 8"
   city: Wroclaw
@@ -39,7 +39,7 @@ homepage_sections:
   recruitment: true
   features: true
   about: true
-  stats: true
+  stats: false
   news: true
   cta: true
 

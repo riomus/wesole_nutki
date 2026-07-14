@@ -1,132 +1,78 @@
-# Polish Main Navigation Menu
-# This file is editable through the CMS admin interface
-# Changes here will update the main navigation on the Polish version of the site
-
 items:
-  - identifier: home
-    name: Strona Główna
-    url: /pl/
-    weight: 1
-    i18n_key: menu_home
-    external: false
-    open_in_new_tab: false
-
-  - identifier: news
-    name: Aktualności
-    url: /pl/news/
-    weight: 2
-    i18n_key: menu_news
-    external: false
-    open_in_new_tab: false
-
   - identifier: about
     name: O przedszkolu
     url: /pl/about/
-    weight: 3
+    weight: 1
     i18n_key: menu_about
-    external: false
-    open_in_new_tab: false
+    children:
+      - identifier: about-vision
+        name: Nasza wizja
+        url: /pl/o-przedszkolu/nasza-wizja/
+        weight: 1
+        i18n_key: menu_about_vision
+      - identifier: about-gallery
+        name: Galerie
+        url: /pl/gallery/
+        weight: 2
+        i18n_key: menu_galleries
+
   - identifier: offer
     name: Oferta
     url: /pl/programs/
-    weight: 3
+    weight: 2
     i18n_key: menu_offer
-    external: false
-    open_in_new_tab: false
-
-  - identifier: daily-plan
-    name: Plan dnia
-    url: /pl/programs/schedule
-    weight: 6
-    i18n_key: menu_daily_plan
-    external: false
-    open_in_new_tab: false
     children:
-      - identifier: daily-plan-weekly
+      - identifier: offer-schedule
+        name: Plan dnia
+        url: /pl/programs/schedule/
+        weight: 1
+        i18n_key: menu_daily_plan
+      - identifier: offer-activities
+        name: Zajęcia dodatkowe
+        url: /pl/plan-dnia/zajecia-dodatkowe/
+        weight: 2
+        i18n_key: menu_daily_plan_extra
+
+  - identifier: parents
+    name: Dla rodziców
+    url: "#"
+    weight: 3
+    i18n_key: menu_for_parents
+    children:
+      - identifier: parents-week
         name: Plan tygodniowy
         url: /pl/plan-zajec/
         weight: 1
         i18n_key: menu_daily_plan_weekly
-        external: false
-        open_in_new_tab: false
-
-      - identifier: daily-plan-extra
-        name: Zajęcia dodatkowe 2025/2026
-        url: /pl/plan-dnia/zajecia-dodatkowe/
-        weight: 2
-        i18n_key: menu_daily_plan_extra
-        external: false
-        open_in_new_tab: false
-
-  - identifier: galleries
-    name: Galerie
-    url: /pl/gallery/
-    weight: 7
-    i18n_key: menu_galleries
-    external: false
-    open_in_new_tab: false
-
-  - identifier: more
-    name: Więcej...
-    url: "#"
-    weight: 8
-    i18n_key: menu_more
-    external: false
-    open_in_new_tab: false
-    children:
-      - identifier: more-vision
-        name: Wizja
-        url: /pl/o-przedszkolu/nasza-wizja/
-        weight: 2
-        i18n_key: menu_about_vision
-        external: false
-        open_in_new_tab: false
-
-
-      - identifier: more-pricing
+      - identifier: parents-pricing
         name: Cennik
         url: /pl/o-przedszkolu/cennik/
-        weight: 4
+        weight: 2
         i18n_key: menu_about_pricing
-        external: false
-        open_in_new_tab: false
-
-      - identifier: more-payments
+      - identifier: parents-payments
         name: Płatności
         url: /pl/o-przedszkolu/platnosci/
-        weight: 5
+        weight: 3
         i18n_key: menu_about_payments
-        external: false
-        open_in_new_tab: false
-
-      - identifier: more-enrollment
-        name: Zapisy
-        url: /pl/o-przedszkolu/zapisy/
-        weight: 6
-        i18n_key: menu_about_enrollment
-        external: false
-        open_in_new_tab: false
-
-      - identifier: more-privacy
-        name: Polityka Prywatności
-        url: /pl/o-przedszkolu/polityka-prywatnosci/
-        weight: 7
-        i18n_key: menu_about_privacy
-        external: false
-        open_in_new_tab: false
-
-      - identifier: more-child-protection
-        name: Standardy Ochrony Małoletnich
+      - identifier: parents-documents
+        name: Dokumenty
+        url: /pl/documents/
+        weight: 4
+        i18n_key: menu_documents
+      - identifier: parents-protection
+        name: Ochrona dzieci
         url: /pl/standardy-ochrony-maloletnich/
-        weight: 8
+        weight: 5
         i18n_key: menu_child_protection
-        external: false
-        open_in_new_tab: false
+
+  - identifier: news
+    name: Aktualności
+    url: /pl/news/
+    weight: 4
+    i18n_key: menu_news
 
   - identifier: contact
     name: Kontakt
     url: /pl/contact/
-    weight: 9
+    weight: 5
     i18n_key: menu_contact
-    external: false
-    open_in_new_tab: false

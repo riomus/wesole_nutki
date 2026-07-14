@@ -43,10 +43,10 @@ function initNavbarScroll() {
 function initScrollAnimations() {
   // Elements to animate on scroll
   const animatedElements = document.querySelectorAll(
-    '.card, .feature-card, .gallery-card, .gallery-item, .testimonial-card, .counter-item, .section-heading'
+    '.gallery-card, .gallery-item, .testimonial-card'
   );
 
-  if (animatedElements.length === 0) return;
+  if (animatedElements.length === 0 || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
   // Set initial state
   animatedElements.forEach(el => {
@@ -211,28 +211,23 @@ function initMobileMenu() {
 
       // Handle click for dropdown toggle
       newToggle.addEventListener('click', (e) => {
-        // On mobile, toggle submenu
-        if (window.innerWidth < 992) {
-          e.preventDefault();
-          e.stopPropagation();
+        e.preventDefault();
+        e.stopPropagation();
 
-          const isOpen = submenu.classList.contains('show');
+        const isOpen = submenu.classList.contains('show');
+        closeAllSubmenus();
 
-          // Close other open submenus first (accordion behavior)
-          closeAllSubmenus();
-
-          // Toggle current submenu
-          if (!isOpen) {
-            submenu.classList.add('show');
-            dropdown.classList.add('show');
-            newToggle.setAttribute('aria-expanded', 'true');
-            if (arrow) {
-              const svg = arrow.querySelector('svg');
-              if (svg) svg.style.transform = 'rotate(180deg)';
-            }
+        // Pointer hover may already have opened a desktop menu before click.
+        // Keep it open on desktop; on touch layouts a second tap collapses it.
+        if (!isOpen || window.innerWidth >= 1120) {
+          submenu.classList.add('show');
+          dropdown.classList.add('show');
+          newToggle.setAttribute('aria-expanded', 'true');
+          if (arrow) {
+            const svg = arrow.querySelector('svg');
+            if (svg) svg.style.transform = 'rotate(180deg)';
           }
         }
-        // On desktop, let browser follow the link
       });
     });
   }
@@ -244,7 +239,7 @@ function initMobileMenu() {
   const navLinks = navbarCollapse.querySelectorAll('.nav-link:not(.dropdown-toggle)');
   navLinks.forEach(link => {
     link.addEventListener('click', () => {
-      if (window.innerWidth < 992 && navbarCollapse.classList.contains('show')) {
+      if (window.innerWidth < 1120 && navbarCollapse.classList.contains('show')) {
         toggleMenu(false);
       }
     });
@@ -254,7 +249,7 @@ function initMobileMenu() {
   const dropdownItems = navbarCollapse.querySelectorAll('.dropdown-item');
   dropdownItems.forEach(item => {
     item.addEventListener('click', () => {
-      if (window.innerWidth < 992 && navbarCollapse.classList.contains('show')) {
+      if (window.innerWidth < 1120 && navbarCollapse.classList.contains('show')) {
         toggleMenu(false);
       }
     });
@@ -286,7 +281,7 @@ function initMobileMenu() {
   window.addEventListener('resize', () => {
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(() => {
-      if (window.innerWidth >= 992 && navbarCollapse.classList.contains('show')) {
+      if (window.innerWidth >= 1120 && navbarCollapse.classList.contains('show')) {
         toggleMenu(false);
       }
       // Re-setup dropdowns when viewport changes
@@ -296,7 +291,7 @@ function initMobileMenu() {
 
   // Handle clicks outside the menu to close it
   document.addEventListener('click', (e) => {
-    if (window.innerWidth < 992 &&
+    if (window.innerWidth < 1120 &&
         navbarCollapse.classList.contains('show') &&
         !navbarCollapse.contains(e.target) &&
         !menuToggle.contains(e.target)) {
@@ -305,7 +300,7 @@ function initMobileMenu() {
   });
 
   // Desktop dropdown hover behavior
-  if (window.innerWidth >= 992) {
+  if (window.innerWidth >= 1120) {
     mobileDropdowns.forEach(dropdown => {
       const submenu = dropdown.querySelector('.dropdown-menu');
       if (!submenu) return;
@@ -575,23 +570,6 @@ function initNewsImageFallback() {
       }
     });
 
-    // Add timeout fallback for slow-loading images (10 seconds)
-    if (!img.complete) {
-      const timeout = setTimeout(() => {
-        // Check if image still hasn't loaded
-        if (!img.complete || img.naturalHeight === 0) {
-          const wrapper = img.parentElement;
-          if (wrapper && wrapper.classList.contains('card-img-wrapper')) {
-            wrapper.classList.add('image-error');
-          }
-          console.warn('News image load timeout:', img.src);
-        }
-      }, 10000);
-
-      // Clear timeout if image loads successfully
-      img.addEventListener('load', () => clearTimeout(timeout), { once: true });
-      img.addEventListener('error', () => clearTimeout(timeout), { once: true });
-    }
   });
 }
 

@@ -1,59 +1,23 @@
 {{- $data := site.Data.homepage.about -}}
 {{- if $data.enabled -}}
-<!-- About Preview Section -->
-<section class="section about-preview-section" id="about-section">
-  <div class="container">
-    <div class="row align-items-center g-5">
-      <div class="col-lg-6">
-        {{- if $data.image -}}
-        <div class="about-image-wrapper">
-          {{/* Use responsive image partial for optimized loading */}}
-          {{ partial "responsive-image" (dict
-            "src" $data.image
-            "alt" (i18n $data.image_alt_key | default "About us")
-            "class" "img-fluid rounded-3 shadow"
-            "sizes" "(max-width: 992px) 100vw, 50vw"
-            "loading" "lazy"
-            "context" .
-          ) }}
-        </div>
-        {{- end -}}
-      </div>
-      <div class="col-lg-6">
-        <div class="about-content">
-          <h2 class="section-heading text-start">{{ i18n $data.heading_key | default "About Us" }}</h2>
-          {{- with $data.subtitle_key -}}
-          <p class="section-subtitle text-start">{{ i18n . }}</p>
-          {{- end -}}
-          <p class="about-text">{{ i18n $data.content_key | default "Welcome to our preschool, where every child is valued and nurtured." }}</p>
-          {{- with $data.button -}}
-          {{- $url := "#" -}}
-          {{- if .url -}}
-            {{- $url = .url -}}
-          {{- else if .url_menu_identifier -}}
-            {{- $identifier := .url_menu_identifier -}}
-            {{- range $.Site.Menus.main -}}
-              {{- if eq .Identifier $identifier -}}
-                {{- $url = .URL -}}
-              {{- end -}}
-            {{- end -}}
-          {{- else if .url_menu_index -}}
-            {{- $menuItem := index $.Site.Menus.main .url_menu_index -}}
-            {{- if $menuItem -}}
-              {{- $url = $menuItem.URL -}}
-            {{- end -}}
-          {{- end -}}
-          {{/* Use basepath-url helper for consistent URL handling */}}
-          {{- $aboutHref := partial "helpers/basepath-url" $url -}}
-          <a href="{{ $aboutHref }}" class="btn btn-primary btn-lg btn-icon">
-            {{ i18n .label_key | default "Learn More" }}
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-            </svg>
-          </a>
-          {{- end -}}
-        </div>
-      </div>
+{{- $aboutURL := cond (eq .Lang "pl") "/pl/about/" "/en/about/" -}}
+<section class="music-experience" id="music-experience">
+  <div class="container music-experience-grid">
+    <figure class="music-experience-image">
+      {{ partial "responsive-image" (dict
+        "src" $data.image
+        "alt" (i18n $data.image_alt_key)
+        "class" "img-fluid"
+        "sizes" "(max-width: 767px) 100vw, 48vw"
+        "loading" "lazy"
+        "context" .
+      ) }}
+    </figure>
+    <div class="music-experience-copy">
+      <p class="music-eyebrow">{{ i18n $data.subtitle_key }}</p>
+      <h2>{{ i18n $data.heading_key }}</h2>
+      <p>{{ i18n $data.content_key }}</p>
+      <a href="{{ partial "helpers/basepath-url" $aboutURL }}" class="music-text-link">{{ i18n "hero_about" }} <span aria-hidden="true">→</span></a>
     </div>
   </div>
 </section>

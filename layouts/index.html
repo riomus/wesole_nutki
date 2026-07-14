@@ -1,61 +1,11 @@
 {{ define "main" }}
-{{/* Homepage with Configurable Sections
-     Each section is controlled via data files in data/homepage/
-     Section visibility is controlled via data/settings.yml homepage_sections
-     - hero.yml: Hero section configuration
-     - features.yml: Features/Why Choose Us section
-     - about.yml: About preview section
-     - stats.yml: Counter/statistics section
-     - news.yml: Latest news highlights
-     - cta.yml: Call to action section
-*/}}
-
-{{/* Load global settings for section toggles */}}
-{{ $settings := site.Data.settings }}
-{{ $sections := $settings.homepage_sections }}
-
-{{/* Hero Section */}}
-{{ if or (not $sections) $sections.hero }}
-{{ partial "homepage/hero.html" . }}
-{{ end }}
-
-{{/* Recruitment Section - Prominent placement after hero */}}
-{{ if or (not $sections) $sections.recruitment }}
-{{ partial "homepage/recruitment.html" . }}
-{{ end }}
-
-{{/* Content Section (if any content exists in _index.md) */}}
-{{ if .Content }}
-<section class="section">
-  <div class="container">
-    {{ .Content }}
-  </div>
-</section>
-{{ end }}
-
-{{/* Features Section */}}
-{{ if or (not $sections) $sections.features }}
-{{ partial "homepage/features.html" . }}
-{{ end }}
-
-{{/* About Preview Section */}}
-{{ if or (not $sections) $sections.about }}
-{{ partial "homepage/about.html" . }}
-{{ end }}
-
-{{/* Stats/Counter Section */}}
-{{ if or (not $sections) $sections.stats }}
-{{ partial "homepage/stats.html" . }}
-{{ end }}
-
-{{/* News Highlights Section */}}
-{{ if or (not $sections) $sections.news }}
-{{ partial "homepage/news.html" . }}
-{{ end }}
-
-{{/* CTA Section */}}
-{{ if or (not $sections) $sections.cta }}
-{{ partial "homepage/cta.html" . }}
-{{ end }}
-
+{{ $sections := site.Data.settings.homepage_sections }}
+{{ if or (not $sections) $sections.hero }}{{ partial "homepage/hero.html" . }}{{ end }}
+{{ if or (not $sections) $sections.recruitment }}{{ partial "homepage/recruitment.html" . }}{{ end }}
+{{ if or (not $sections) $sections.features }}{{ partial "homepage/features.html" . }}{{ end }}
+{{ partial "homepage/parents.html" . }}
+{{ if or (not $sections) $sections.about }}{{ partial "homepage/about.html" . }}{{ end }}
+{{ partial "homepage/trust.html" . }}
+{{ if or (not $sections) $sections.news }}{{ partial "homepage/news.html" . }}{{ end }}
+{{ if or (not $sections) $sections.cta }}{{ partial "homepage/cta.html" . }}{{ end }}
 {{ end }}

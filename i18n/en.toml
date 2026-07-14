@@ -378,17 +378,92 @@ other = "All rights reserved"
 [image_unavailable]
 other = "Image unavailable"
 
+[hero_eyebrow]
+other = "Language and music preschool • Wrocław Market Square"
+
 [hero_headline]
-other = "Wesole Nutki - Preschool in Wroclaw"
+other = "Children grow through music, languages and close care"
 
 [hero_subheadline]
-other = "A place where every child discovers the joy of learning through play, creativity, and friendship. Join our preschool family today!"
+other = "An intimate preschool in the heart of Wrocław, where daily music, English and attentive care help children explore the world with confidence."
+
+[hero_call]
+other = "Call:"
+
+[hero_email]
+other = "Email us"
+
+[hero_about]
+other = "Meet Wesole Nutki"
+
+[hero_image_caption]
+other = "Music is part of every day at our preschool"
 
 [why_choose_us]
-other = "Why Choose Us?"
+other = "What sets the rhythm at Wesole Nutki?"
 
 [why_choose_us_subtitle]
-other = "Discover what makes our preschool special"
+other = "Three things that genuinely shape every child's day"
+
+[proof_music_title]
+other = "Music every day"
+
+[proof_music_desc]
+other = "Singing, rhythm, instruments and live music develop listening, memory and the confidence to express yourself."
+
+[proof_languages_title]
+other = "Languages in a natural rhythm"
+
+[proof_languages_desc]
+other = "English appears through play and everyday moments, without pressure or a classroom feel."
+
+[proof_closeness_title]
+other = "Small-scale, attentive care"
+
+[proof_closeness_desc]
+other = "We know our children and families. A steady daily rhythm brings security, while attentive teachers support individual growth."
+
+[parents_heading]
+other = "Everything for parents, close at hand"
+
+[parents_subtitle]
+other = "The information you use most often, without searching the whole site."
+
+[shortcut_schedule]
+other = "Weekly schedule"
+
+[shortcut_schedule_desc]
+other = "See the weekly rhythm of each group."
+
+[shortcut_activities]
+other = "Extra activities"
+
+[shortcut_activities_desc]
+other = "Explore the current activity programme."
+
+[shortcut_payments]
+other = "Pricing and payments"
+
+[shortcut_payments_desc]
+other = "Key practical information for families."
+
+[shortcut_documents]
+other = "Documents"
+
+[shortcut_documents_desc]
+other = "Forms and documents for parents."
+
+[trust_heading]
+other = "A small preschool with plenty of attention."
+
+[trust_location]
+other = "Market Square, 8 Laciarska Street"
+
+[trust_hours]
+other = "Open from 6:30 to 17:30"
+
+[trust_contact]
+other = "Direct contact with the preschool"
 
 [loving_care]
 other = "Loving Care"
@@ -454,7 +529,7 @@ other = "See what's happening at our preschool"
 other = "Get to know our preschool"
 
 [about_preview_text]
-other = "Wesole Nutki is a place where children develop in an atmosphere of joy and creative play."
+other = "Music is not an occasional extra here. It accompanies play, learning and everyday rituals, building confidence, memory and the joy of creating together."
 
 [about_image_alt]
 other = "Children playing at preschool"
@@ -466,19 +541,16 @@ other = "RECRUITMENT"
 other = "Enrollment now open for our language and music preschool"
 
 [recruitment_details]
-other = "WESOŁE NUTKI welcomes children born in 2022. We also have two spots available for children born in 2019"
-
-[download_form_text]
-other = "Download enrollment form:"
+other = "Contact us to ask about available places, the daily rhythm of our groups and the next steps for enrollment."
 
 [download_application_form]
-other = "Download enrollment form"
+other = "Enrollment form"
 
 [view_documents]
 other = "View documents"
 
 [recruitment_cta]
-other = "JOIN US TODAY!"
+other = "Let's talk about a place for your child"
 
 [home]
 other = "Home"
@@ -584,6 +656,9 @@ other = "Documents"
 
 [menu_more_recruitment]
 other = "Recruitment"
+
+[menu_for_parents]
+other = "For parents"
 
 [all_news]
 other = "All news"

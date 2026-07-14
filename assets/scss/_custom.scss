@@ -5481,3 +5481,146 @@
     flex-shrink: 0 !important;
   }
 }
+
+// Music-led editorial homepage
+:root {
+  --music-ink: #17312b;
+  --music-green: #183c32;
+  --music-cream: #fff8e8;
+  --music-paper: #f7efd9;
+  --music-orange: #b84d18;
+  --music-lime: #d7e84a;
+  --music-line: rgba(23, 49, 43, .2);
+}
+html { scroll-behavior: smooth; }
+body { background: var(--music-cream); color: var(--music-ink); font: 1.0625rem/1.6 "Source Sans 3", sans-serif; }
+h1, h2, h3, h4, h5, h6, .navbar-brand { color: var(--music-ink); font-family: "Bricolage Grotesque", sans-serif; letter-spacing: -.025em; }
+.container { width: calc(100% - 2rem); max-width: 1180px; }
+.top-bar { background: var(--music-green) !important; }
+.site-header, .navbar { background: var(--music-cream) !important; }
+.navbar { border-bottom: 1px solid var(--music-line); }
+.navbar .container { min-height: 76px; }
+.navbar-brand img { width: auto; max-width: 104px; height: 52px; object-fit: contain; }
+.navbar-nav { gap: .25rem; }
+.navbar .nav-link { color: var(--music-ink) !important; font-weight: 650; padding: .75rem .8rem !important; }
+.navbar .nav-link:hover, .navbar .nav-link:focus-visible, .navbar .nav-link.active { color: var(--music-orange) !important; }
+.dropdown-menu { background: var(--music-cream); border: 1px solid var(--music-line); border-radius: .25rem; box-shadow: 0 18px 40px rgba(23, 49, 43, .12); }
+.dropdown-item { color: var(--music-ink); padding: .7rem 1rem; }
+.dropdown-item:hover, .dropdown-item:focus { color: var(--music-ink); background: var(--music-paper); }
+.mobile-call { align-items: center; justify-content: center; width: 44px; height: 44px; color: var(--music-cream); background: var(--music-green); border-radius: 50%; text-decoration: none; }
+.music-eyebrow { margin: 0 0 1rem; color: var(--music-orange); font-size: .8rem; font-weight: 700; letter-spacing: .12em; line-height: 1.3; text-transform: uppercase; }
+
+.music-hero { position: relative; overflow: hidden; padding: clamp(3.5rem, 8vw, 7rem) 0 clamp(4rem, 9vw, 7.5rem); background: var(--music-cream); }
+.music-hero-grid { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(310px, .92fr); gap: clamp(2.5rem, 7vw, 6.5rem); align-items: center; }
+.music-hero-copy { position: relative; z-index: 2; }
+.music-hero h1 { max-width: 760px; margin: 0 0 1.5rem; font-size: clamp(2.85rem, 6vw, 5.7rem); font-weight: 750; line-height: .96; }
+.music-hero-lead { max-width: 650px; margin: 0 0 2rem; color: #38524b; font-size: clamp(1.125rem, 1.8vw, 1.32rem); line-height: 1.58; }
+.hero-buttons { display: flex; flex-wrap: wrap; gap: .75rem; align-items: center; margin-bottom: 1rem; }
+.music-btn-primary, .music-btn-secondary, .music-btn-light { min-height: 50px; display: inline-flex; align-items: center; justify-content: center; border-radius: .25rem; font-weight: 700; text-decoration: none; }
+.music-btn-primary { color: #fff !important; background: var(--music-green) !important; border: 2px solid var(--music-green) !important; }
+.music-btn-primary:hover, .music-btn-primary:focus-visible { background: #245748 !important; border-color: #245748 !important; }
+.music-btn-secondary { color: var(--music-green) !important; background: transparent !important; border: 2px solid var(--music-green) !important; }
+.music-btn-secondary:hover, .music-btn-secondary:focus-visible { color: #fff !important; background: var(--music-green) !important; }
+.music-text-link { display: inline-flex; min-height: 44px; gap: .5rem; align-items: center; color: var(--music-green); font-weight: 700; text-underline-offset: .25em; }
+.music-text-link:hover { color: var(--music-orange); }
+.music-hero-visual { position: relative; margin: 0; }
+.music-hero-visual::before { content: ""; position: absolute; inset: -14px 18px 18px -14px; z-index: 0; border: 2px solid var(--music-orange); }
+.music-hero-image { position: relative; z-index: 1; display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; filter: saturate(.92) contrast(1.02); }
+.music-hero-visual figcaption { position: relative; z-index: 2; width: 82%; margin: -2.5rem 0 0 auto; padding: 1rem 1.2rem; color: #fff; background: var(--music-orange); font-size: .95rem; font-weight: 650; }
+.music-staff { position: absolute; right: -1rem; bottom: 1.5rem; display: flex; gap: 2rem; color: var(--music-lime); font-size: clamp(2rem, 4vw, 4rem); transform: rotate(-5deg); opacity: .85; }
+
+.recruitment-editorial { padding: clamp(2.5rem, 5vw, 4rem) 0; background: var(--music-paper); border-block: 1px solid var(--music-line); }
+.recruitment-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(2rem, 7vw, 6rem); align-items: start; }
+.recruitment-editorial h2 { max-width: 440px; margin: 0; font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1.03; }
+.recruitment-details { padding-left: clamp(1rem, 4vw, 3rem); border-left: 2px solid var(--music-orange); }
+.recruitment-details > p { max-width: 650px; font-size: 1.15rem; }
+.recruitment-actions { display: flex; flex-wrap: wrap; gap: .8rem 1.25rem; align-items: center; margin: 1.5rem 0 1rem; }
+.recruitment-phone { color: var(--music-ink); }
+
+.proof-section, .parents-section, .music-experience, .music-news { padding: clamp(4rem, 8vw, 7rem) 0; }
+.music-section-heading { max-width: 680px; margin-bottom: clamp(2.25rem, 5vw, 4rem); }
+.music-section-heading h2, .music-experience h2, .music-final-cta h2, .trust-strip h2 { margin: 0 0 1rem; font-size: clamp(2.2rem, 4.4vw, 4.2rem); line-height: 1.02; }
+.music-section-heading > p:last-child { color: #496159; font-size: 1.15rem; }
+.proof-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-block: 1px solid var(--music-line); }
+.proof-item { padding: 2.25rem clamp(1.25rem, 3vw, 2.5rem); border-right: 1px solid var(--music-line); }
+.proof-item:last-child { border-right: 0; }
+.proof-number { display: block; margin-bottom: 3.25rem; color: var(--music-orange); font: 700 .8rem/1 "Bricolage Grotesque", sans-serif; letter-spacing: .12em; }
+.proof-item h3 { margin-bottom: 1rem; font-size: clamp(1.45rem, 2vw, 2rem); }
+.proof-item p { margin: 0; color: #496159; line-height: 1.6; }
+
+.parents-section { color: #fff; background: var(--music-green); }
+.parents-layout { display: grid; grid-template-columns: .75fr 1.25fr; gap: clamp(2rem, 7vw, 7rem); }
+.parents-section h2, .parents-section .music-section-heading > p:last-child { color: #fff; }
+.parents-links { border-top: 1px solid rgba(255,255,255,.3); }
+.parent-shortcut { display: flex; min-height: 92px; padding: 1.25rem 0; align-items: center; justify-content: space-between; color: #fff; border-bottom: 1px solid rgba(255,255,255,.3); text-decoration: none; }
+.parent-shortcut:hover, .parent-shortcut:focus-visible { color: var(--music-lime); padding-left: .5rem; }
+.parent-shortcut strong, .parent-shortcut small { display: block; }
+.parent-shortcut strong { font: 650 1.25rem/1.2 "Bricolage Grotesque", sans-serif; }
+.parent-shortcut small { margin-top: .35rem; color: rgba(255,255,255,.76); font-size: .95rem; }
+
+.music-experience { background: var(--music-paper); }
+.music-experience-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(2.5rem, 8vw, 7rem); align-items: center; }
+.music-experience-image { margin: 0; }
+.music-experience-image img { width: 100%; max-height: 620px; object-fit: cover; }
+.music-experience-copy > p:not(.music-eyebrow) { max-width: 540px; color: #496159; font-size: 1.18rem; line-height: 1.65; }
+.trust-strip { padding: clamp(3rem, 6vw, 5rem) 0; background: var(--music-lime); }
+.trust-strip h2 { max-width: 760px; }
+.trust-facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 2.5rem; border-top: 2px solid var(--music-green); }
+.trust-facts p { margin: 0; padding-top: 1rem; font-weight: 700; }
+
+.music-news { background: var(--music-cream) !important; }
+.music-news .section-header { max-width: 680px; margin: 0 0 3rem; text-align: left; }
+.music-news .section-heading { color: var(--music-ink); font-size: clamp(2.2rem, 4.4vw, 4rem); }
+.music-news .news-card { border: 0; border-top: 1px solid var(--music-line); border-radius: 0; box-shadow: none; background: transparent; }
+.music-news .news-card:hover { transform: none; box-shadow: none; }
+.music-final-cta { padding: clamp(4rem, 8vw, 7rem) 0; color: #fff; background: var(--music-orange); }
+.music-final-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 3rem; align-items: end; }
+.music-final-cta h2 { max-width: 740px; color: #fff; }
+.music-final-cta p { max-width: 680px; color: rgba(255,255,255,.9); }
+.music-final-cta .music-eyebrow { color: #fff; }
+.final-actions { display: flex; flex-direction: column; align-items: flex-start; gap: 1rem; }
+.music-btn-light { color: var(--music-green) !important; background: #fff !important; border: 2px solid #fff !important; }
+.final-actions > a:not(.btn) { color: #fff; font-weight: 700; }
+.not-found-section { min-height: 62vh; display: grid; place-items: center; padding: 5rem 0; }
+.not-found-layout { max-width: 820px; }
+.not-found-code { margin: 0; color: var(--music-lime); font: 750 clamp(5rem, 18vw, 12rem)/.8 "Bricolage Grotesque", sans-serif; }
+.not-found-layout h1 { font-size: clamp(2.5rem, 6vw, 5rem); }
+
+@media (min-width: 1120px) {
+  .mobile-call, .navbar-toggler, .mobile-menu-close { display: none !important; }
+  .navbar-collapse { display: flex !important; flex-basis: auto; }
+}
+@media (max-width: 1119.98px) {
+  .top-bar { display: none !important; }
+  .navbar .container { flex-wrap: nowrap; }
+  .navbar-toggler { display: inline-flex !important; width: 44px; height: 44px; align-items: center; justify-content: center; }
+  .mobile-call { display: inline-flex; margin-left: auto; margin-right: .35rem; }
+  .navbar-expand-lg .navbar-collapse.desktop-nav,
+  .navbar-collapse.desktop-nav.collapse:not(.show) { display: none !important; }
+  .navbar-expand-lg .navbar-collapse.desktop-nav.show { position: fixed; inset: 0; z-index: 1050; display: block !important; overflow-y: auto; padding: 5rem 1.25rem 2rem; background: var(--music-cream); }
+  .navbar-collapse.show .mobile-menu-close { display: inline-flex !important; }
+  .mobile-nav-menu { gap: 0; }
+  .navbar .nav-link { font-size: 1.2rem; }
+  .language-switcher { margin: 1rem 0 0 !important; }
+}
+@media (max-width: 767.98px) {
+  .container { width: calc(100% - 1.25rem); max-width: 1180px; }
+  .navbar-brand img { max-width: 86px; height: 46px; }
+  .music-hero { padding-top: 2.75rem; }
+  .music-hero-grid, .recruitment-grid, .parents-layout, .music-experience-grid, .music-final-grid { grid-template-columns: 1fr; }
+  .music-hero h1 { font-size: clamp(2.55rem, 13vw, 4.1rem); }
+  .music-hero-visual { margin: 1.5rem .5rem 0; }
+  .music-hero-image { aspect-ratio: 5 / 4; }
+  .music-staff { display: none; }
+  .recruitment-details { padding: 1.5rem 0 0; border-left: 0; border-top: 2px solid var(--music-orange); }
+  .proof-grid { grid-template-columns: 1fr; }
+  .proof-item { border-right: 0; border-bottom: 1px solid var(--music-line); }
+  .proof-item:last-child { border-bottom: 0; }
+  .proof-number { margin-bottom: 1.5rem; }
+  .trust-facts { grid-template-columns: 1fr; }
+  .hero-buttons .btn { width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .001ms !important; }
+}

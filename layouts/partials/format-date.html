@@ -1,39 +1,5 @@
-{{/*
-  Date Formatter Partial
-
-  Formats dates according to the site language using i18n month translations.
-  Supports all languages configured in the site with proper localization.
-
-  Usage:
-    {{ partial "format-date" .Date }}
-
-  Parameters:
-    - date: The date object to format
-*/}}
-
 {{- $date := . -}}
-{{- $day := $date.Day -}}
-{{- $month := $date.Month -}}
-{{- $year := $date.Year -}}
-
-{{/* Map month number to i18n key */}}
-{{- $monthKey := "" -}}
-{{- if eq $month 1 -}}{{ $monthKey = "month_january" -}}
-{{- else if eq $month 2 -}}{{ $monthKey = "month_february" -}}
-{{- else if eq $month 3 -}}{{ $monthKey = "month_march" -}}
-{{- else if eq $month 4 -}}{{ $monthKey = "month_april" -}}
-{{- else if eq $month 5 -}}{{ $monthKey = "month_may" -}}
-{{- else if eq $month 6 -}}{{ $monthKey = "month_june" -}}
-{{- else if eq $month 7 -}}{{ $monthKey = "month_july" -}}
-{{- else if eq $month 8 -}}{{ $monthKey = "month_august" -}}
-{{- else if eq $month 9 -}}{{ $monthKey = "month_september" -}}
-{{- else if eq $month 10 -}}{{ $monthKey = "month_october" -}}
-{{- else if eq $month 11 -}}{{ $monthKey = "month_november" -}}
-{{- else if eq $month 12 -}}{{ $monthKey = "month_december" -}}
-{{- end -}}
-
-{{/* Get localized month name from i18n */}}
-{{- $monthName := i18n $monthKey -}}
-
-{{/* Format: day month year (e.g., "2 January 2006" or "2 stycznia 2006") */}}
-{{- printf "%d %s %d" $day $monthName $year -}}
+{{- $monthsPL := slice "stycznia" "lutego" "marca" "kwietnia" "maja" "czerwca" "lipca" "sierpnia" "września" "października" "listopada" "grudnia" -}}
+{{- $monthsEN := slice "January" "February" "March" "April" "May" "June" "July" "August" "September" "October" "November" "December" -}}
+{{- $months := cond (eq site.Language.Lang "pl") $monthsPL $monthsEN -}}
+{{- printf "%d %s %d" $date.Day (index $months (sub (int $date.Month) 1)) $date.Year -}}

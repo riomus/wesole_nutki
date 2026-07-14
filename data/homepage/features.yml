@@ -7,34 +7,14 @@ enabled: true
 heading_key: why_choose_us
 subtitle_key: why_choose_us_subtitle
 
-# Feature items
+# Three concrete reasons to trust the preschool
 items:
-  - icon: heart
-    title_key: loving_care
-    description_key: loving_care_desc
-    color: primary
-
-  - icon: book
-    title_key: quality_education
-    description_key: quality_education_desc
-    color: secondary
-
-  - icon: people
-    title_key: community
-    description_key: community_desc
-    color: success
-
-  - icon: shield
-    title_key: safe_environment
-    description_key: safe_environment_desc
-    color: info
-
-  - icon: puzzle
-    title_key: play_based_learning
-    description_key: play_based_learning_desc
-    color: accent
-
-  - icon: briefcase
-    title_key: qualified_teachers
-    description_key: qualified_teachers_desc
-    color: primary
+  - number: "01"
+    title_key: proof_music_title
+    description_key: proof_music_desc
+  - number: "02"
+    title_key: proof_languages_title
+    description_key: proof_languages_desc
+  - number: "03"
+    title_key: proof_closeness_title
+    description_key: proof_closeness_desc
