@@ -1,5 +1,7 @@
 {{- $t := site.Data.testimonials -}}
 {{- $isPolish := eq .Lang "pl" -}}
+{{- $ratingNum := float (replaceRE "," "." $t.rating) -}}
+{{- $ratingPct := printf "%.1f%%" (mul $ratingNum 20) -}}
 {{- if $t.items -}}
 <section class="testimonials-section" aria-labelledby="testimonials-heading">
   <div class="container">
@@ -11,7 +13,7 @@
       <a class="reviews-rating" href="{{ $t.google_url }}" target="_blank" rel="noopener noreferrer"
          aria-label="{{ if $isPolish }}Ocena {{ $t.rating }} na 5 w Google — zobacz opinie{{ else }}Rated {{ $t.rating }} out of 5 on Google — read the reviews{{ end }}">
         <span class="reviews-rating__score">{{ $t.rating }}</span>
-        <span class="reviews-rating__stars" aria-hidden="true">★★★★★</span>
+        <span class="reviews-rating__stars" style="--fill: {{ $ratingPct }}" aria-hidden="true">★★★★★</span>
         <span class="reviews-rating__label">{{ if $isPolish }}Opinie w Google{{ else }}Google reviews{{ end }}</span>
       </a>
     </div>

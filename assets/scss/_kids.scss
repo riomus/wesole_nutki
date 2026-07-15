@@ -444,7 +444,15 @@
 .reviews-rating:hover,
 .reviews-rating:focus-visible { transform: translateY(-2px); background: #245748; color: #fff; }
 .reviews-rating__score { font-family: ui-rounded, "Arial Rounded MT Bold", system-ui, sans-serif; font-size: 1.35rem; font-weight: 750; }
-.reviews-rating__stars { color: #ffcf4a; letter-spacing: .04em; }
+// Fill the stars proportionally to the score (e.g. 4,7 -> 94%) so the chip
+// reflects the real Google average, not a rounded five.
+.reviews-rating__stars {
+  letter-spacing: .04em;
+  background: linear-gradient(90deg, #ffcf4a var(--fill, 100%), rgba(255, 255, 255, .32) var(--fill, 100%));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 .reviews-rating__label { font-size: .82rem; font-weight: 700; opacity: .9; }
 
 .testimonials-grid {
