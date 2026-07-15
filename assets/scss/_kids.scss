@@ -908,28 +908,57 @@
 // photos HUG their own size (no bars, no crop).
 // ------------------------------------------------------------
 
-// Hero — restore the design's intended 3/2 banner (the responsive-image
-// wrapper was overriding it to object-contain, which caused the letterbox).
-// The wrapper becomes a passthrough so .music-hero-image's cover rule wins;
-// object-position keeps the performer/upper scene when cropping to 3/2.
+// Hero — show the whole photo (no crop, no letterbox bars) as a rounded
+// card, with the orange frame as a clean concentric outline that actually
+// wraps the image, and the caption overlaid on the bottom so it never
+// pushes the frame out of alignment.
+.music-hero-visual { position: relative; }
 .music-hero-visual .responsive-image-wrapper {
-  aspect-ratio: 3 / 2;
+  display: block !important;
+  width: 100% !important;
+  aspect-ratio: auto !important;
   min-height: 0 !important;
   max-height: none !important;
-  display: block !important;
+  border-radius: var(--kids-radius);
+  overflow: hidden;
+  box-shadow: var(--kids-shadow);
 }
 .music-hero-visual .responsive-image-wrapper picture,
 .music-hero-visual .responsive-image-wrapper img,
 .music-hero-image {
+  position: static !important;
+  display: block !important;
   width: 100% !important;
-  height: 100% !important;
-  max-width: none !important;
+  height: auto !important;
+  max-width: 100% !important;
   max-height: none !important;
-  object-fit: cover !important;
-  object-position: center 32% !important;
+  aspect-ratio: auto !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  transform: none !important;
+  border-radius: var(--kids-radius);
 }
-@media (max-width: 767.98px) {
-  .music-hero-visual .responsive-image-wrapper { aspect-ratio: 5 / 4; }
+// Clean concentric orange frame, offset an even amount on every side.
+.music-hero-visual::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: -12px !important;
+  border: 2px solid var(--music-orange) !important;
+  border-radius: calc(var(--kids-radius) + 8px) !important;
+  z-index: 0 !important;
+  pointer-events: none;
+}
+// Caption pill overlaid on the bottom of the photo (absolute → doesn't add
+// height, so the frame stays aligned to the image).
+.music-hero-visual figcaption {
+  position: absolute !important;
+  left: 1.25rem !important;
+  right: 1.25rem !important;
+  bottom: 1rem !important;
+  width: auto !important;
+  margin: 0 !important;
+  z-index: 2 !important;
+  text-align: center;
 }
 
 // Single featured / in-article photos — the frame hugs the image and
