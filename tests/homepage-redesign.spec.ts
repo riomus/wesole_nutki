@@ -164,7 +164,9 @@ test.describe('Visual and accessibility quality', () => {
   test('primary conversion meets WCAG AA contrast', async ({ page }) => {
     await page.goto('/pl/');
 
-    const colors = await page.getByTestId('hero-primary-call').evaluate((element) => {
+    // The primary conversion is the solid "Umów wizytę" button; the phone is a
+    // secondary outline control alongside it.
+    const colors = await page.locator('.hero-buttons .music-btn-primary').first().evaluate((element) => {
       const style = getComputedStyle(element);
       return { foreground: style.color, background: style.backgroundColor };
     });

@@ -3,6 +3,7 @@
 {{- $phone := site.Data.settings.contact.phone | default site.Params.phone -}}
 {{- $phoneHref := $phone | replaceRE `[^0-9+]` `` -}}
 {{- $email := site.Data.settings.contact.email | default site.Params.email -}}
+{{- $enrollURL := cond (eq .Lang "pl") "/pl/o-przedszkolu/zapisy/" "/en/recruitment/" -}}
 <section class="music-final-cta">
   <div class="container music-final-grid">
     <div>
@@ -11,7 +12,8 @@
       <p>{{ i18n $data.description_key }}</p>
     </div>
     <div class="final-actions">
-      <a href="tel:{{ $phoneHref }}" class="btn music-btn-light" data-testid="final-primary-call">{{ i18n "hero_call" }} {{ $phone }}</a>
+      <a href="{{ partial "helpers/basepath-url" $enrollURL }}" class="btn music-btn-light" data-testid="final-primary-cta">{{ if eq .Lang "pl" }}Umów wizytę{{ else }}Book a visit{{ end }}</a>
+      <a href="tel:{{ $phoneHref }}" class="final-call-link" data-testid="final-primary-call">{{ i18n "hero_call" }} {{ $phone }}</a>
       <a href="mailto:{{ $email }}">{{ $email }}</a>
     </div>
   </div>

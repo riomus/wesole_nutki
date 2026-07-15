@@ -367,9 +367,11 @@
 .editorial-page-intro__staff span:nth-child(3) { color: var(--music-orange); }
 
 // ------------------------------------------------------------
-// Final CTA (orange) — round the light button
+// Final CTA (orange) — round the light button; phone as a clear
+// secondary next to the primary "Umów wizytę".
 // ------------------------------------------------------------
 .music-btn-light { box-shadow: 0 8px 18px rgba(0, 0, 0, .12); }
+.final-call-link { font-size: 1.15rem; text-underline-offset: .2em; }
 
 // ------------------------------------------------------------
 // Footer — round the "open now" pill and align the hours
@@ -415,6 +417,7 @@
 .testimonials-section {
   padding: clamp(4rem, 8vw, 7rem) 0;
   background: var(--music-paper);
+  border-top: 1px solid var(--music-line);
 }
 .testimonials-head {
   display: flex;
@@ -551,7 +554,11 @@
 // FAQ — disarm the questions that stall a decision (safety, price,
 // adaptation, hours). Native <details> accordion, no JS needed.
 // ------------------------------------------------------------
-.faq-section { padding: clamp(4rem, 8vw, 7rem) 0; }
+.faq-section {
+  padding: clamp(4rem, 8vw, 7rem) 0;
+  background: var(--music-paper);
+  border-top: 1px solid var(--music-line);
+}
 .faq-grid {
   display: grid;
   grid-template-columns: minmax(0, .82fr) minmax(0, 1.5fr);
