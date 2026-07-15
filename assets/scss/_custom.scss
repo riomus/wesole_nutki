@@ -1054,7 +1054,7 @@
     .program-card-age-badge {
       @apply absolute top-3 right-3 bg-white/95 backdrop-blur-sm px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      color: var(--primary, #81d742);
+      color: var(--music-green, #183c32);
     }
 
     .program-card-body {
@@ -1425,11 +1425,13 @@
 
     h2 {
       @apply font-heading text-4xl md:text-5xl mb-4;
+      color: #fff; // override the global h1–h6 ink colour on this dark band
       text-shadow: 0 2px 8px rgba(45, 49, 66, 0.2);
     }
 
     p {
       @apply text-xl opacity-95 mb-8;
+      color: #fff;
       text-shadow: 0 1px 4px rgba(45, 49, 66, 0.1);
     }
 
