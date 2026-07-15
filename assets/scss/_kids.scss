@@ -901,6 +901,72 @@
 .document-single nav.border-top { border-color: rgba(24, 60, 50, .12) !important; }
 
 // ------------------------------------------------------------
+// Images — kill the letterbox. The responsive-image wrapper uses
+// object-contain in a fixed-width box, so portrait photos (most of
+// our library is ~768x1024) floated in an empty box with paper bars.
+// Two treatments: card/hero frames FILL (cover); single featured
+// photos HUG their own size (no bars, no crop).
+// ------------------------------------------------------------
+
+// Hero — portrait photo fills a portrait frame edge-to-edge (near-zero
+// crop since both are ~0.85 ratio) instead of floating with a side bar.
+.music-hero-visual .responsive-image-wrapper {
+  aspect-ratio: 5 / 6;
+  min-height: 0;
+  max-height: none;
+}
+.music-hero-visual .responsive-image-wrapper picture,
+.music-hero-visual .responsive-image-wrapper img,
+.music-hero-image {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  max-height: none !important;
+  object-fit: cover !important;
+}
+
+// Single featured / in-article photos — the frame hugs the image and
+// centres it, so a portrait shot shows full-size with no side bars and
+// nothing cropped; a landscape shot fills the column up to the height cap.
+.program-featured-image,
+.article-featured-image,
+.page-featured-image {
+  text-align: center;
+}
+.program-featured-image .responsive-image-wrapper,
+.article-featured-image .responsive-image-wrapper,
+.page-featured-image .responsive-image-wrapper,
+.responsive-image-wrapper:has(img.markdown-image) {
+  display: inline-block !important;
+  width: auto !important;
+  max-width: 100%;
+  min-height: 0 !important;
+  max-height: none !important;
+  border-radius: var(--kids-radius);
+  box-shadow: var(--kids-shadow);
+}
+.program-featured-image .responsive-image-wrapper picture,
+.program-featured-image .responsive-image-wrapper img,
+.program-featured-image .responsive-image-main,
+.article-featured-image .responsive-image-wrapper picture,
+.article-featured-image .responsive-image-wrapper img,
+.article-featured-image .responsive-image-main,
+.page-featured-image .responsive-image-wrapper picture,
+.page-featured-image .responsive-image-wrapper img,
+.page-featured-image .responsive-image-main,
+.responsive-image-wrapper:has(img.markdown-image) picture,
+.responsive-image-wrapper:has(img.markdown-image) img {
+  position: static !important;
+  width: auto !important;
+  height: auto !important;
+  max-width: 100% !important;
+  max-height: 34rem !important;
+  aspect-ratio: auto !important;
+  object-fit: contain !important;
+  transform: none !important;
+}
+
+// ------------------------------------------------------------
 // Responsive tidy-ups for the new rounded pieces
 // ------------------------------------------------------------
 @media (max-width: 767.98px) {

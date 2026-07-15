@@ -4539,7 +4539,7 @@
   // Wrapper for responsive images with loading states
   .responsive-image-wrapper {
     @apply relative overflow-hidden;
-    background: var(--page-paper-deep, #f4ead1);
+    background: transparent;
     display: flex;
     align-items: center;
     justify-content: center;

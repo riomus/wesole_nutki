@@ -19,7 +19,7 @@
         {{ end }}
 
         {{ with .Params.image }}
-        <figure class="mb-4">
+        <figure class="mb-4 page-featured-image">
           {{ partial "responsive-image" (dict
             "src" .
             "alt" $.Title
