@@ -704,6 +704,28 @@
 }
 
 // ------------------------------------------------------------
+// Weekly schedule — the table has 7 columns but the page template
+// confines content to a narrow centred column, so it scrolled while
+// the page sides sat empty. Let it break out to (nearly) full width
+// and only scroll on genuinely small screens.
+// ------------------------------------------------------------
+.schedule-table-wrapper {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding-inline: clamp(1rem, 4vw, 3rem);
+  overflow-x: auto;
+}
+.schedule-table-wrapper .weekly-schedule-table {
+  max-width: 1500px;
+  margin-inline: auto;
+}
+
+// ------------------------------------------------------------
 // Motion safety — everything playful stops for reduced-motion users
 // ------------------------------------------------------------
 @media (prefers-reduced-motion: reduce) {
