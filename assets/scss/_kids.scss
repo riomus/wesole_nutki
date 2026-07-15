@@ -908,12 +908,15 @@
 // photos HUG their own size (no bars, no crop).
 // ------------------------------------------------------------
 
-// Hero — portrait photo fills a portrait frame edge-to-edge (near-zero
-// crop since both are ~0.85 ratio) instead of floating with a side bar.
+// Hero — restore the design's intended 3/2 banner (the responsive-image
+// wrapper was overriding it to object-contain, which caused the letterbox).
+// The wrapper becomes a passthrough so .music-hero-image's cover rule wins;
+// object-position keeps the performer/upper scene when cropping to 3/2.
 .music-hero-visual .responsive-image-wrapper {
-  aspect-ratio: 5 / 6;
-  min-height: 0;
-  max-height: none;
+  aspect-ratio: 3 / 2;
+  min-height: 0 !important;
+  max-height: none !important;
+  display: block !important;
 }
 .music-hero-visual .responsive-image-wrapper picture,
 .music-hero-visual .responsive-image-wrapper img,
@@ -923,6 +926,10 @@
   max-width: none !important;
   max-height: none !important;
   object-fit: cover !important;
+  object-position: center 32% !important;
+}
+@media (max-width: 767.98px) {
+  .music-hero-visual .responsive-image-wrapper { aspect-ratio: 5 / 4; }
 }
 
 // Single featured / in-article photos — the frame hugs the image and
@@ -964,6 +971,54 @@
   aspect-ratio: auto !important;
   object-fit: contain !important;
   transform: none !important;
+}
+
+// ------------------------------------------------------------
+// Programs overview — the age rows read as a flat editorial list
+// (hairline dividers, no gap, transparent, and a stray 24px radius on
+// the image that let the tan header peek through at the corners).
+// Restore proper friendly cards: white, rounded, soft shadow, real
+// spacing, and the image filling its half with the card clipping the
+// outer corners cleanly (no tan slivers).
+// ------------------------------------------------------------
+.program-age-path {
+  border-top: 0 !important;
+  margin-top: 1.5rem;
+  display: flex !important;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+.program-age-row {
+  border-bottom: 0 !important;
+}
+.program-age-row .program-card {
+  border-radius: var(--kids-radius) !important;
+  background: #fff !important;
+  box-shadow: var(--kids-shadow) !important;
+  overflow: hidden !important;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.program-age-row .program-card:hover {
+  box-shadow: var(--kids-shadow-lg) !important;
+  transform: translateY(-3px);
+}
+.program-age-row .program-card-link { border-radius: inherit; overflow: hidden; }
+.program-age-row .program-card-header,
+.program-age-row .program-card-image,
+.program-age-row .program-card-header .responsive-image-main,
+.program-age-row .program-card-header .responsive-image-wrapper {
+  border-radius: 0 !important;
+}
+
+// ------------------------------------------------------------
+// Contact — the email was set at the same huge display size as the
+// phone (up to 2.4rem) with overflow-wrap:anywhere, so the address
+// broke mid-domain onto a lonely ".eu" line. Size it to fit one line.
+// ------------------------------------------------------------
+.contact-primary-actions__email strong {
+  font-size: clamp(1.05rem, 2.4vw, 1.55rem) !important;
+  overflow-wrap: break-word;
+  line-height: 1.25;
 }
 
 // ------------------------------------------------------------
