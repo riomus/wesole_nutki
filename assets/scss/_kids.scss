@@ -383,18 +383,33 @@
 // Header logo — the round preschool mark was too small. Give it room
 // (the navbar has space for it) without ballooning the bar.
 // ------------------------------------------------------------
-// Match `.navbar .navbar-brand img` specificity and lift its 45px max-height
-// cap, which was clamping the mark small.
+// Oversized round logo that spills below the header like a stamp/badge.
+// Needs overflow visible on the whole header chain, and a negative margin
+// so it protrudes without making the bar taller.
+.site-header,
+.navbar,
+.navbar .container,
+.navbar-brand { overflow: visible !important; }
+.navbar .navbar-brand { position: relative; z-index: 3; align-self: center; }
+// Keep the bar compact so the oversized mark clearly overhangs below it.
+.navbar .container { min-height: 62px !important; }
 .navbar .navbar-brand img {
-  max-width: 150px !important;
-  height: 60px !important;
-  max-height: 60px !important;
+  height: 104px !important;
+  max-height: 104px !important;
+  max-width: 104px !important;
+  margin-top: -8px !important;
+  margin-bottom: -50px !important;
+  border-radius: 50%;
+  background: var(--music-cream);
+  box-shadow: 0 12px 28px rgba(23, 49, 43, .24);
 }
 @media (max-width: 767.98px) {
   .navbar .navbar-brand img {
-    max-width: 120px !important;
-    height: 52px !important;
-    max-height: 52px !important;
+    height: 78px !important;
+    max-height: 78px !important;
+    max-width: 78px !important;
+    margin-top: -6px !important;
+    margin-bottom: -36px !important;
   }
 }
 
