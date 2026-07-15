@@ -100,7 +100,7 @@ a:hover {
    PAGE HEADER
    ============================================================ */
 .page-header {
-  background: linear-gradient(135deg, var(--preschool-primary) 0%, var(--preschool-coral) 100%);
+  background: var(--preschool-primary);
   color: white;
   padding: 3rem 0;
   margin-bottom: 3rem;
@@ -155,7 +155,7 @@ a:hover {
    HERO SECTION (Homepage)
    ============================================================ */
 .hero-section {
-  background: linear-gradient(135deg, var(--preschool-primary) 0%, var(--preschool-coral) 100%);
+  background: var(--preschool-primary);
   color: white;
   padding: 5rem 0;
   text-align: center;
@@ -261,7 +261,7 @@ a:hover {
 }
 
 .category-badge {
-  background: linear-gradient(135deg, var(--preschool-secondary) 0%, #6dd5cc 100%);
+  background: var(--preschool-secondary);
   color: white;
   padding: 0.35rem 1rem;
   border-radius: var(--border-radius-pill);
@@ -768,7 +768,7 @@ a:hover {
 .contact-icon {
   width: 60px;
   height: 60px;
-  background: linear-gradient(135deg, var(--preschool-primary) 0%, var(--preschool-coral) 100%);
+  background: var(--preschool-primary);
   border-radius: 50%;
   display: flex;
   align-items: center;

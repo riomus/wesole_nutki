@@ -637,7 +637,7 @@ const DocumentPreview = createClass({
                 alignItems: 'center',
                 gap: '0.5rem',
                 padding: '0.75rem 1.5rem',
-                background: 'linear-gradient(135deg, var(--preschool-primary) 0%, var(--preschool-coral) 100%)',
+                background: 'var(--preschool-primary)',
                 color: 'white',
                 borderRadius: 'var(--border-radius-pill)',
                 fontWeight: '600',

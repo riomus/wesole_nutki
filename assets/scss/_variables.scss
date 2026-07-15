@@ -28,12 +28,12 @@ $preschool-lavender:    #E0AAFF;  // Gentle lavender
 // Gradient colors for sections
 $gradient-start:        #81d742;
 $gradient-end:          #dd8500;
-$gradient-secondary:    linear-gradient(135deg, $preschool-secondary 0%, lighten($preschool-secondary, 15%) 100%);
+$gradient-secondary:    $preschool-secondary;
 
 // Section background colors (Educenter-style alternating sections)
 $section-bg-light:      #FFF8F0;
 $section-bg-alt:        #FFF3E6;
-$section-bg-feature:    linear-gradient(135deg, #FFF8F0 0%, #FFE4CC 100%);
+$section-bg-feature:    #FFF8F0;
 
 // Override Bootstrap theme colors
 $primary:       $preschool-primary;

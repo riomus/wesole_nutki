@@ -5335,7 +5335,6 @@
       align-items: center !important;
       justify-content: center !important;
       z-index: 99999 !important;
-      backdrop-filter: blur(8px);
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5),
                   0 0 0 1px rgba(255, 255, 255, 0.1) inset !important;
       cursor: pointer !important;
@@ -5406,7 +5405,6 @@
       display: flex !important;
       align-items: center !important;
       justify-content: center !important;
-      backdrop-filter: blur(4px);
 
       &:hover {
         background: rgba(0, 0, 0, 0.8) !important;
