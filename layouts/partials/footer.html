@@ -152,12 +152,10 @@
 
           if (isOpen) {
             statusElement.innerHTML = '🟢 ' + openText;
-            statusElement.style.backgroundColor = '#d4edda';
-            statusElement.style.color = '#155724';
+            statusElement.classList.add('is-open');
           } else {
             statusElement.innerHTML = '🔴 ' + closedText;
-            statusElement.style.backgroundColor = '#f8d7da';
-            statusElement.style.color = '#721c24';
+            statusElement.classList.add('is-closed');
           }
         })();
         </script>

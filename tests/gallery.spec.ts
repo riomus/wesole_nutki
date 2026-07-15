@@ -13,7 +13,7 @@ test.describe('Gallery List Display', () => {
 
   test('should display gallery list page with title', async ({ page }) => {
     // Check page title is present
-    const pageTitle = page.locator('h1.display-4');
+    const pageTitle = page.locator('#page-title');
     await expect(pageTitle).toBeVisible();
     await expect(pageTitle).toContainText('Galeria');
   });
@@ -73,9 +73,9 @@ test.describe('Single Gallery Page Rendering', () => {
   });
 
   test('should display gallery title', async ({ page }) => {
-    const title = page.locator('h1.display-5');
+    const title = page.locator('#page-title');
     await expect(title).toBeVisible();
-    await expect(title).toContainText('Codzienne zajecia');
+    await expect(title).toContainText('Codzienne zajęcia');
   });
 
   test('should display gallery metadata', async ({ page }) => {
@@ -171,7 +171,7 @@ test.describe('Lightbox Opening and Closing', () => {
     const lightboxImage = page.locator('.glightbox-container img').first();
     const src = await lightboxImage.getAttribute('src');
     expect(src).toBeTruthy();
-    expect(src).toContain('/images/gallery/');
+    expect(src).toContain('/images/');
   });
 
   test('should close lightbox when clicking close button', async ({ page }) => {
@@ -459,7 +459,7 @@ test.describe('Gallery Categories Page', () => {
     await page.goto('/pl/gallery_categories/');
 
     // Check page title
-    const pageTitle = page.locator('h1.display-4');
+    const pageTitle = page.locator('#page-title');
     await expect(pageTitle).toBeVisible();
   });
 

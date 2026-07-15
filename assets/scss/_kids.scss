@@ -1,0 +1,421 @@
+// ============================================================
+// Wesołe Nutki — Kid-friendly layer
+// Loaded LAST so it refines the editorial "music-led" base into
+// something warmer, rounder and more playful — WITHOUT losing the
+// calm typography, alignment or AA contrast the brand relies on.
+//
+// Rules of the layer:
+//  • Keep the cream + evergreen bones and the strong text contrast.
+//  • Soften the shape language: pills + rounded, tactile cards.
+//  • Expand the palette playfully, but only ever place dark ink on
+//    pale tints (AA) or white on the dark solids (AA). Bright hues
+//    such as lime/pink live in decorative, aria-hidden shapes.
+// ============================================================
+
+:root {
+  // Playful, accessible accent tints (dark ink sits on all of these).
+  --kids-sky:      #d7ecfb;
+  --kids-sky-ink:  #12506f;
+  --kids-peach:    #ffe4c9;
+  --kids-mint:     #d8f3e3;
+  --kids-lilac:    #ece0ff;
+  --kids-sun:      #ffd166;
+  --kids-blush:    #ffd9cf;
+  --kids-pink:     #f15bb5;   // decorative only (aria-hidden shapes)
+  --kids-blue:     #1f6f9e;   // solid; white text is AA on this
+
+  // Soft, warm-tinted elevation + friendly rounding.
+  --kids-shadow:      0 12px 30px rgba(24, 60, 50, .10);
+  --kids-shadow-lg:   0 22px 48px rgba(24, 60, 50, .16);
+  --kids-radius:      1.4rem;
+  --kids-radius-sm:   1rem;
+  --kids-pill:        999px;
+}
+
+// ------------------------------------------------------------
+// Utilities the templates rely on but were never defined
+// (news-card used .visually-hidden → the article title was leaking
+//  as visible text after "Czytaj więcej"). Restore it properly.
+// ------------------------------------------------------------
+.visually-hidden,
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+// ------------------------------------------------------------
+// Buttons — friendly, tactile pills with a gentle press feel
+// ------------------------------------------------------------
+.music-btn-primary,
+.music-btn-secondary,
+.music-btn-light,
+.btn-primary,
+.btn.btn-primary {
+  border-radius: var(--kids-pill) !important;
+  padding-inline: 1.6rem;
+  font-weight: 750;
+  transition: transform .18s ease, box-shadow .18s ease, background-color .18s ease, color .18s ease, border-color .18s ease;
+}
+.music-btn-primary { box-shadow: 0 8px 18px rgba(24, 60, 50, .18); }
+.music-btn-primary:hover,
+.music-btn-secondary:hover,
+.music-btn-light:hover,
+.btn-primary:hover,
+.btn.btn-primary:hover { transform: translateY(-2px); }
+.music-btn-primary:active,
+.music-btn-secondary:active,
+.music-btn-light:active { transform: translateY(0); }
+
+// Sitewide primary buttons (e.g. "Wszystkie aktualności") join the family
+.btn-primary,
+.btn.btn-primary {
+  color: #fff !important;
+  background: var(--music-green) !important;
+  border: 2px solid var(--music-green) !important;
+}
+.btn-primary:hover,
+.btn.btn-primary:hover {
+  background: #245748 !important;
+  border-color: #245748 !important;
+}
+
+// ------------------------------------------------------------
+// Hero — round the frame, turn the caption into a friendly tag,
+// and let the notes bob along like a little melody.
+// ------------------------------------------------------------
+.music-hero-image {
+  border-radius: var(--kids-radius);
+  box-shadow: var(--kids-shadow);
+}
+.music-hero-visual::before {
+  inset: -16px 16px 16px -16px;
+  border-radius: var(--kids-radius);
+  border-width: 3px;
+}
+.music-hero-visual figcaption {
+  border-radius: var(--kids-pill);
+  padding: .85rem 1.5rem;
+  box-shadow: var(--kids-shadow);
+}
+.music-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: .5ch;
+}
+.music-eyebrow::before {
+  content: "♪";
+  font-size: 1.1em;
+  line-height: 0;
+  color: var(--music-orange);
+}
+
+// Playful floating notes (decorative, aria-hidden). Bigger + colourful.
+.music-staff {
+  right: clamp(1rem, 3vw, 2.5rem);   // keep inside the hero, no clipping
+  gap: 1.4rem;
+  opacity: 1;
+  font-size: clamp(2.4rem, 5vw, 4.6rem);
+}
+.music-staff span { animation: kids-bob 3.2s ease-in-out infinite; }
+.music-staff span:nth-child(1) { color: var(--kids-pink); }
+.music-staff span:nth-child(2) { color: var(--kids-blue); animation-delay: .35s; }
+.music-staff span:nth-child(3) { color: var(--music-orange); animation-delay: .7s; }
+
+@keyframes kids-bob {
+  0%, 100% { transform: translateY(0) rotate(-6deg); }
+  50%      { transform: translateY(-12px) rotate(4deg); }
+}
+
+// ------------------------------------------------------------
+// Recruitment band — softer paper card feel
+// ------------------------------------------------------------
+.recruitment-editorial {
+  background: linear-gradient(180deg, #fff3df 0%, var(--music-paper) 100%);
+}
+.recruitment-details { border-left-width: 4px; border-radius: 0 var(--kids-radius-sm) var(--kids-radius-sm) 0; }
+
+// ------------------------------------------------------------
+// "Proof" section — the flat, bordered columns become three
+// tactile, colour-coded cards with a round number bead each.
+// ------------------------------------------------------------
+.proof-grid {
+  gap: 1.5rem;
+  border: 0;
+}
+.proof-item {
+  padding: 2.25rem 2rem 2.5rem;
+  border: 0 !important;
+  border-radius: var(--kids-radius);
+  box-shadow: var(--kids-shadow);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.proof-item:hover { transform: translateY(-4px); box-shadow: var(--kids-shadow-lg); }
+.proof-item:nth-child(1) { background: var(--kids-sky); }
+.proof-item:nth-child(2) { background: var(--kids-peach); }
+.proof-item:nth-child(3) { background: var(--kids-mint); }
+.proof-item h3,
+.proof-item p { color: var(--music-ink); }
+.proof-item p { color: #33473f; }
+
+.proof-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  font-size: 1.05rem;
+  letter-spacing: 0;
+  border-radius: 50%;
+}
+.proof-item:nth-child(1) .proof-number { background: var(--kids-blue); }
+.proof-item:nth-child(2) .proof-number { background: var(--music-orange); }
+.proof-item:nth-child(3) .proof-number { background: #1f7a5e; }
+
+// ------------------------------------------------------------
+// Parents section — rounded shortcut cards on the evergreen band,
+// with a proper circular arrow affordance.
+// ------------------------------------------------------------
+.parents-links { border-top: 0; }
+.parent-shortcut {
+  min-height: 0;
+  gap: 1rem;
+  margin-bottom: .85rem;
+  padding: 1.25rem 1.4rem;
+  border: 1px solid rgba(255, 255, 255, .22);
+  border-radius: var(--kids-radius-sm);
+  background: rgba(255, 255, 255, .06);
+  transition: transform .18s ease, background-color .18s ease, border-color .18s ease;
+}
+.parent-shortcut:last-child { margin-bottom: 0; }
+.parent-shortcut:hover,
+.parent-shortcut:focus-visible {
+  padding-left: 1.4rem;               // cancel the old shift-only hover
+  color: #fff;
+  background: rgba(215, 232, 74, .16);
+  border-color: var(--music-lime);
+  transform: translateY(-2px);
+}
+.parent-shortcut > span:last-child {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--music-green);
+  background: var(--music-lime);
+  border-radius: 50%;
+  font-size: 1.1rem;
+  transition: transform .18s ease;
+}
+.parent-shortcut:hover > span:last-child { transform: translate(2px, -2px) rotate(8deg); }
+
+// ------------------------------------------------------------
+// Experience — round the photo
+// ------------------------------------------------------------
+.music-experience-image img {
+  border-radius: var(--kids-radius);
+  box-shadow: var(--kids-shadow);
+}
+
+// ------------------------------------------------------------
+// Trust strip (lime) — facts become friendly rounded chips
+// ------------------------------------------------------------
+.trust-facts {
+  gap: 1rem;
+  margin-top: 2rem;
+  border-top: 0;
+}
+.trust-facts p {
+  padding: 1.1rem 1.35rem;
+  background: rgba(255, 255, 255, .55);
+  border: 2px solid var(--music-green);
+  border-radius: var(--kids-radius-sm);
+  color: var(--music-ink);
+}
+
+// ------------------------------------------------------------
+// News cards — soft rounded cards instead of hairline rows
+// ------------------------------------------------------------
+.music-news .news-card {
+  overflow: hidden;
+  border: 0 !important;
+  border-radius: var(--kids-radius) !important;
+  background: #fff !important;
+  box-shadow: var(--kids-shadow) !important;
+  transition: transform .2s ease, box-shadow .2s ease !important;
+}
+.music-news .news-card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: var(--kids-shadow-lg) !important;
+}
+.music-news .news-card-image,
+.music-news .card-img-wrapper img { border-radius: 0; }
+.music-news .card-body { padding: 1.4rem 1.5rem 1.6rem; }
+.music-news .card-category {
+  display: inline-block;
+  padding: .3rem .8rem;
+  color: var(--music-green);
+  background: var(--kids-sun);
+  border-radius: var(--kids-pill);
+  font-size: .72rem;
+  font-weight: 750;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+.music-news .read-more {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  color: var(--music-orange);
+  font-weight: 750;
+}
+.music-news .read-more:hover { color: #7f2f0d; }
+
+// ------------------------------------------------------------
+// Site-wide content cards (news + gallery lists) — carry the same
+// friendly, tactile look as the homepage so the whole site matches.
+// ------------------------------------------------------------
+.news-card,
+.gallery-card {
+  border: 0 !important;
+  border-radius: var(--kids-radius) !important;
+  background: #fff !important;
+  box-shadow: var(--kids-shadow) !important;
+  transition: transform .2s ease, box-shadow .2s ease !important;
+}
+.news-card:hover,
+.gallery-card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: var(--kids-shadow-lg) !important;
+}
+.card-category {
+  display: inline-block;
+  padding: .3rem .8rem;
+  color: var(--music-green);
+  background: var(--kids-sun);
+  border-radius: var(--kids-pill);
+  font-size: .72rem;
+  font-weight: 750;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+.read-more {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  color: var(--music-orange);
+  font-weight: 750;
+}
+.read-more:hover { color: #7f2f0d; }
+
+// ------------------------------------------------------------
+// Documents / resource lists — the editorial layer forced the card
+// body into a 3-column grid (icon | title | meta) that assumed a flat
+// markup the template never produced, so titles, descriptions and
+// dates overlapped. Restore a clean, responsive grid of friendly
+// document cards instead.
+// ------------------------------------------------------------
+.resource-list { border-top: 0; }
+.resource-list__group {
+  padding-block: .5rem 2rem;
+  border-bottom: 0;
+}
+.resource-list .row {
+  display: flex !important;
+  margin-inline: -.75rem !important;
+}
+.resource-list [class*="col-"] {
+  width: auto !important;
+  padding-inline: .75rem !important;
+}
+.resource-list .card {
+  border: 0 !important;
+  border-radius: var(--kids-radius) !important;
+  background: #fff !important;
+  box-shadow: var(--kids-shadow) !important;
+}
+.resource-list .card-body {
+  display: flex !important;
+  flex-direction: column;
+  grid-template-columns: none !important;
+  padding: 1.5rem !important;
+}
+.resource-list .card svg [stroke="#0d6efd"] { stroke: var(--kids-blue); }
+
+// ------------------------------------------------------------
+// Inner-page hero notes — same playful colour trio as the homepage
+// ------------------------------------------------------------
+.editorial-page-intro__staff span:nth-child(1) { color: var(--kids-pink); }
+.editorial-page-intro__staff span:nth-child(2) { color: var(--kids-blue); }
+.editorial-page-intro__staff span:nth-child(3) { color: var(--music-orange); }
+
+// ------------------------------------------------------------
+// Final CTA (orange) — round the light button
+// ------------------------------------------------------------
+.music-btn-light { box-shadow: 0 8px 18px rgba(0, 0, 0, .12); }
+
+// ------------------------------------------------------------
+// Footer — round the "open now" pill and align the hours
+// ------------------------------------------------------------
+// Long email token was overflowing its narrow column into the hours
+// block — let it wrap and keep the icon rows aligned to the top.
+.site-footer .contact-info p { align-items: flex-start; }
+.site-footer .contact-info a,
+.site-footer .contact-info span { overflow-wrap: anywhere; }
+
+#open-status {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  margin-top: 1rem !important;
+  padding: .5rem 1rem !important;
+  border-radius: var(--kids-pill) !important;
+  font-weight: 700;
+}
+// Branded, high-contrast states (set via .is-open / .is-closed by the
+// footer script instead of clashing inline pastels).
+#open-status.is-open {
+  color: #143d2c !important;
+  background: #cdeecb !important;
+}
+#open-status.is-closed {
+  color: #ffe9e2 !important;
+  background: #7f2f18 !important;
+}
+
+// ------------------------------------------------------------
+// Section rhythm — a soft wavy tint change between the hero and
+// the recruitment band keeps the page feeling handmade, not boxy.
+// (decorative only)
+// ------------------------------------------------------------
+.music-hero { position: relative; }
+
+// ------------------------------------------------------------
+// Motion safety — everything playful stops for reduced-motion users
+// ------------------------------------------------------------
+@media (prefers-reduced-motion: reduce) {
+  .music-staff span { animation: none; }
+  .proof-item,
+  .parent-shortcut,
+  .music-news .news-card,
+  .music-btn-primary,
+  .music-btn-secondary { transition: none !important; }
+}
+
+// ------------------------------------------------------------
+// Responsive tidy-ups for the new rounded pieces
+// ------------------------------------------------------------
+@media (max-width: 767.98px) {
+  .proof-grid { gap: 1.1rem; }
+  .trust-facts { gap: .75rem; }
+}

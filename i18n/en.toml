@@ -678,6 +678,9 @@ other = "For parents"
 [all_news]
 other = "All news"
 
+[all]
+other = "All"
+
 [related_posts]
 other = "Related posts"
 

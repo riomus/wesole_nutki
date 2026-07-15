@@ -13,9 +13,9 @@ test.describe('News List Pagination', () => {
     });
 
     test('should display news list page with section heading', async ({ page }) => {
-      const heading = page.locator('.section-heading');
+      const heading = page.locator('#page-title');
       await expect(heading).toBeVisible();
-      await expect(heading).toContainText('Aktualnosci');
+      await expect(heading).toContainText('Aktualności');
     });
 
     test('should display news grid with articles', async ({ page }) => {
@@ -57,14 +57,9 @@ test.describe('News List Pagination', () => {
       const isVisible = await paginationNav.isVisible().catch(() => false);
 
       if (isVisible) {
-        // Check pagination list
-        const paginationList = page.locator('.pagination');
-        await expect(paginationList).toBeVisible();
-
-        // Check for page info
-        const pageInfo = page.locator('.pagination-info');
-        await expect(pageInfo).toBeVisible();
-        await expect(pageInfo).toContainText('Strona');
+        // Pagination list with numbered page links
+        await expect(page.locator('.pagination')).toBeVisible();
+        expect(await page.locator('.pagination .page-link').count()).toBeGreaterThan(0);
       }
     });
 
@@ -85,7 +80,7 @@ test.describe('News List Pagination', () => {
     });
 
     test('should display news list page with English section heading', async ({ page }) => {
-      const heading = page.locator('.section-heading');
+      const heading = page.locator('#page-title');
       await expect(heading).toBeVisible();
       await expect(heading).toContainText('News');
     });
@@ -117,7 +112,7 @@ test.describe('Single Article Rendering', () => {
       await page.goto('/pl/news/');
 
       // Click on first article (news list uses .card-title a)
-      const firstArticleLink = page.locator('.news-card .card-title a').first();
+      const firstArticleLink = page.locator('.news-card .card-title a[href*="/news/20"]').first();
       await firstArticleLink.click();
 
       // Verify we're on an article page
@@ -126,18 +121,18 @@ test.describe('Single Article Rendering', () => {
 
     test('should display article title', async ({ page }) => {
       await page.goto('/pl/news/');
-      const firstArticleLink = page.locator('.news-card .card-title a').first();
+      const firstArticleLink = page.locator('.news-card .card-title a[href*="/news/20"]').first();
       const expectedTitle = await firstArticleLink.textContent();
       await firstArticleLink.click();
 
-      const articleTitle = page.locator('h1.display-5');
+      const articleTitle = page.locator('#page-title');
       await expect(articleTitle).toBeVisible();
       await expect(articleTitle).toContainText(expectedTitle || '');
     });
 
     test('should display article meta with date', async ({ page }) => {
       await page.goto('/pl/news/');
-      const firstArticleLink = page.locator('.news-card .card-title a').first();
+      const firstArticleLink = page.locator('.news-card .card-title a[href*="/news/20"]').first();
       await firstArticleLink.click();
 
       const articleMeta = page.locator('.article-meta');
@@ -154,7 +149,7 @@ test.describe('Single Article Rendering', () => {
 
     test('should display reading time', async ({ page }) => {
       await page.goto('/pl/news/');
-      const firstArticleLink = page.locator('.news-card .card-title a').first();
+      const firstArticleLink = page.locator('.news-card .card-title a[href*="/news/20"]').first();
       await firstArticleLink.click();
 
       const readingTime = page.locator('.article-reading-time');
@@ -164,14 +159,14 @@ test.describe('Single Article Rendering', () => {
 
     test('should display category badges when article has categories', async ({ page }) => {
       await page.goto('/pl/news/');
-      const firstArticleLink = page.locator('.news-card .card-title a').first();
+      const firstArticleLink = page.locator('.news-card .card-title a[href*="/news/20"]').first();
       await firstArticleLink.click();
 
       const categoriesSection = page.locator('.article-categories');
       const hasCategoriesSection = await categoriesSection.isVisible().catch(() => false);
 
       if (hasCategoriesSection) {
-        const categoryBadges = page.locator('.article-categories .badge');
+        const categoryBadges = page.locator('.article-categories a');
         const count = await categoryBadges.count();
         expect(count).toBeGreaterThanOrEqual(1);
       }
@@ -179,7 +174,7 @@ test.describe('Single Article Rendering', () => {
 
     test('should display article content', async ({ page }) => {
       await page.goto('/pl/news/');
-      const firstArticleLink = page.locator('.news-card .card-title a').first();
+      const firstArticleLink = page.locator('.news-card .card-title a[href*="/news/20"]').first();
       await firstArticleLink.click();
 
       const articleContent = page.locator('.article-content');
@@ -192,7 +187,7 @@ test.describe('Single Article Rendering', () => {
 
     test('should display featured image when article has one', async ({ page }) => {
       await page.goto('/pl/news/');
-      const firstArticleLink = page.locator('.news-card .card-title a').first();
+      const firstArticleLink = page.locator('.news-card .card-title a[href*="/news/20"]').first();
       await firstArticleLink.click();
 
       const featuredImage = page.locator('.article-featured-image img');
@@ -207,7 +202,7 @@ test.describe('Single Article Rendering', () => {
 
     test('should display tags section when article has tags', async ({ page }) => {
       await page.goto('/pl/news/');
-      const firstArticleLink = page.locator('.news-card .card-title a').first();
+      const firstArticleLink = page.locator('.news-card .card-title a[href*="/news/20"]').first();
       await firstArticleLink.click();
 
       const tagsSection = page.locator('.article-tags');
@@ -215,7 +210,7 @@ test.describe('Single Article Rendering', () => {
 
       if (hasTagsSection) {
         await expect(tagsSection).toContainText('Tagi');
-        const tagBadges = page.locator('.article-tags .badge');
+        const tagBadges = page.locator('.article-tags a');
         const count = await tagBadges.count();
         expect(count).toBeGreaterThanOrEqual(1);
       }
@@ -223,7 +218,7 @@ test.describe('Single Article Rendering', () => {
 
     test('should display article navigation section', async ({ page }) => {
       await page.goto('/pl/news/');
-      const firstArticleLink = page.locator('.news-card .card-title a').first();
+      const firstArticleLink = page.locator('.news-card .card-title a[href*="/news/20"]').first();
       await firstArticleLink.click();
 
       const articleNav = page.locator('.article-navigation');
@@ -232,23 +227,23 @@ test.describe('Single Article Rendering', () => {
 
     test('should display back navigation buttons', async ({ page }) => {
       await page.goto('/pl/news/');
-      const firstArticleLink = page.locator('.news-card .card-title a').first();
+      const firstArticleLink = page.locator('.news-card .card-title a[href*="/news/20"]').first();
       await firstArticleLink.click();
 
       const backNav = page.locator('.article-back-nav');
       await expect(backNav).toBeVisible();
 
       // Check for "All News" button
-      const allNewsButton = backNav.locator('a').filter({ hasText: 'Wszystkie aktualnosci' });
+      const allNewsButton = backNav.locator('a').filter({ hasText: 'Wszystkie aktualności' });
       await expect(allNewsButton).toBeVisible();
     });
 
     test('should navigate back to news list when clicking "All News" button', async ({ page }) => {
       await page.goto('/pl/news/');
-      const firstArticleLink = page.locator('.news-card .card-title a').first();
+      const firstArticleLink = page.locator('.news-card .card-title a[href*="/news/20"]').first();
       await firstArticleLink.click();
 
-      const allNewsButton = page.locator('.article-back-nav a').filter({ hasText: 'Wszystkie aktualnosci' });
+      const allNewsButton = page.locator('.article-back-nav a').filter({ hasText: 'Wszystkie aktualności' });
       await allNewsButton.click();
 
       await expect(page).toHaveURL(/\/pl\/news\/?$/);
@@ -256,7 +251,7 @@ test.describe('Single Article Rendering', () => {
 
     test('should display breadcrumb navigation', async ({ page }) => {
       await page.goto('/pl/news/');
-      const firstArticleLink = page.locator('.news-card .card-title a').first();
+      const firstArticleLink = page.locator('.news-card .card-title a[href*="/news/20"]').first();
       await firstArticleLink.click();
 
       const breadcrumb = page.locator('.breadcrumb, nav[aria-label*="breadcrumb"]');
@@ -265,10 +260,10 @@ test.describe('Single Article Rendering', () => {
 
     test('category badges should link to category pages', async ({ page }) => {
       await page.goto('/pl/news/');
-      const firstArticleLink = page.locator('.news-card .card-title a').first();
+      const firstArticleLink = page.locator('.news-card .card-title a[href*="/news/20"]').first();
       await firstArticleLink.click();
 
-      const categoryLink = page.locator('.article-categories .badge').first();
+      const categoryLink = page.locator('.article-categories a').first();
       const isVisible = await categoryLink.isVisible().catch(() => false);
 
       if (isVisible) {
@@ -282,7 +277,7 @@ test.describe('Single Article Rendering', () => {
     test('should load English article page successfully', async ({ page }) => {
       await page.goto('/en/news/');
 
-      const firstArticleLink = page.locator('.news-card .card-title a').first();
+      const firstArticleLink = page.locator('.news-card .card-title a[href*="/news/20"]').first();
       await firstArticleLink.click();
 
       await expect(page).toHaveURL(/\/en\/news\/\d{4}\/\d{2}\//);
@@ -290,17 +285,17 @@ test.describe('Single Article Rendering', () => {
 
     test('should display English reading time text', async ({ page }) => {
       await page.goto('/en/news/');
-      const firstArticleLink = page.locator('.news-card .card-title a').first();
+      const firstArticleLink = page.locator('.news-card .card-title a[href*="/news/20"]').first();
       await firstArticleLink.click();
 
       const readingTime = page.locator('.article-reading-time');
       await expect(readingTime).toBeVisible();
-      await expect(readingTime).toContainText('min read');
+      await expect(readingTime).toContainText('minutes read');
     });
 
     test('should display English tags label', async ({ page }) => {
       await page.goto('/en/news/');
-      const firstArticleLink = page.locator('.news-card .card-title a').first();
+      const firstArticleLink = page.locator('.news-card .card-title a[href*="/news/20"]').first();
       await firstArticleLink.click();
 
       const tagsSection = page.locator('.article-tags');
@@ -313,7 +308,7 @@ test.describe('Single Article Rendering', () => {
 
     test('should display English back navigation buttons', async ({ page }) => {
       await page.goto('/en/news/');
-      const firstArticleLink = page.locator('.news-card .card-title a').first();
+      const firstArticleLink = page.locator('.news-card .card-title a[href*="/news/20"]').first();
       await firstArticleLink.click();
 
       const backNav = page.locator('.article-back-nav');
@@ -474,7 +469,7 @@ test.describe('Embedded Galleries in News Posts', () => {
       await articleLink.click();
     } else {
       // Fallback: click on first article
-      const firstArticleLink = page.locator('.news-card .card-title a').first();
+      const firstArticleLink = page.locator('.news-card .card-title a[href*="/news/20"]').first();
       await firstArticleLink.click();
     }
     await page.waitForLoadState('domcontentloaded');
@@ -489,7 +484,7 @@ test.describe('Embedded Galleries in News Posts', () => {
       await articleLink.click();
     } else {
       // Fallback: click on first article
-      const firstArticleLink = page.locator('.news-card .card-title a').first();
+      const firstArticleLink = page.locator('.news-card .card-title a[href*="/news/20"]').first();
       await firstArticleLink.click();
     }
     await page.waitForLoadState('domcontentloaded');
@@ -779,14 +774,14 @@ test.describe('Cross-Language Feature Verification', () => {
   test('should have consistent article structure across languages', async ({ page }) => {
     // Navigate to Polish article via list
     await page.goto('/pl/news/');
-    const plArticleLink = page.locator('.news-card .card-title a').first();
+    const plArticleLink = page.locator('.news-card .card-title a[href*="/news/20"]').first();
     await plArticleLink.click();
     const plArticleContent = page.locator('.article-content');
     await expect(plArticleContent).toBeVisible();
 
     // Navigate to English article via list
     await page.goto('/en/news/');
-    const enArticleLink = page.locator('.news-card .card-title a').first();
+    const enArticleLink = page.locator('.news-card .card-title a[href*="/news/20"]').first();
     await enArticleLink.click();
     const enArticleContent = page.locator('.article-content');
     await expect(enArticleContent).toBeVisible();
@@ -806,11 +801,11 @@ test.describe('News Accessibility', () => {
   test('should have proper heading hierarchy on article page', async ({ page }) => {
     // Navigate to article via news list
     await page.goto('/pl/news/');
-    const firstArticleLink = page.locator('.news-card .card-title a').first();
+    const firstArticleLink = page.locator('.news-card .card-title a[href*="/news/20"]').first();
     await firstArticleLink.click();
 
     // Article should have a main h1 title
-    const articleTitle = page.locator('h1.display-5');
+    const articleTitle = page.locator('#page-title');
     await expect(articleTitle).toBeVisible();
 
     // Content should use h2 and h3 for subsections
@@ -835,7 +830,7 @@ test.describe('News Accessibility', () => {
   test('should have proper datetime attributes on article', async ({ page }) => {
     // Navigate to article via news list
     await page.goto('/pl/news/');
-    const firstArticleLink = page.locator('.news-card .card-title a').first();
+    const firstArticleLink = page.locator('.news-card .card-title a[href*="/news/20"]').first();
     await firstArticleLink.click();
 
     const timeElement = page.locator('.article-date time');

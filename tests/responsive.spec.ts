@@ -40,48 +40,38 @@ test.describe('Menu Collapse Behavior', () => {
       await expect(navbarCollapse).toBeVisible({ timeout: 5000 });
     });
 
-    test('should collapse mobile menu when hamburger is clicked again', async ({ page }) => {
-      const hamburgerButton = page.locator('.navbar-toggler');
+    test('should collapse mobile menu via the close button', async ({ page }) => {
       const navbarCollapse = page.locator('#navbarMain');
 
-      // Open menu
-      await hamburgerButton.click();
+      await page.locator('.navbar-toggler').click();
       await expect(navbarCollapse).toBeVisible({ timeout: 5000 });
+      await page.waitForTimeout(400);
 
-      // Wait for animation to complete
-      await page.waitForTimeout(500);
-
-      // Close menu
-      await hamburgerButton.click();
+      // The open menu is a full-screen overlay, so close via its (X) button
+      await page.locator('.mobile-menu-close').click();
       await expect(navbarCollapse).not.toBeVisible({ timeout: 5000 });
     });
 
     test('should show all navigation links in mobile menu', async ({ page }) => {
-      const hamburgerButton = page.locator('.navbar-toggler');
-      await hamburgerButton.click();
+      await page.locator('.navbar-toggler').click();
+      await page.waitForTimeout(400);
 
-      await page.waitForTimeout(500);
-
-      // Check all main nav links are visible
-      await expect(page.locator('.navbar-nav .nav-link').filter({ hasText: 'Strona Glowna' })).toBeVisible();
-      await expect(page.locator('.navbar-nav .nav-link').filter({ hasText: 'O Nas' })).toBeVisible();
-      await expect(page.locator('.navbar-nav .nav-link').filter({ hasText: 'Oferta' })).toBeVisible();
-      await expect(page.locator('.navbar-nav .nav-link').filter({ hasText: 'Aktualnosci' })).toBeVisible();
-      await expect(page.locator('.navbar-nav .nav-link').filter({ hasText: 'Galeria' })).toBeVisible();
-      await expect(page.locator('.navbar-nav .nav-link').filter({ hasText: 'Kontakt' })).toBeVisible();
+      const links = page.locator('.navbar-nav .nav-link');
+      await expect(links.filter({ hasText: 'O nas' })).toBeVisible();
+      await expect(links.filter({ hasText: 'Oferta' })).toBeVisible();
+      await expect(links.filter({ hasText: 'Dla rodziców' })).toBeVisible();
+      await expect(links.filter({ hasText: 'Aktualności' })).toBeVisible();
+      await expect(links.filter({ hasText: 'Kontakt' })).toBeVisible();
     });
 
     test('should show mobile submenu when dropdown is clicked', async ({ page }) => {
-      const hamburgerButton = page.locator('.navbar-toggler');
-      await hamburgerButton.click();
-      await page.waitForTimeout(500);
+      await page.locator('.navbar-toggler').click();
+      await page.waitForTimeout(400);
 
-      const dropdownToggle = page.locator('.navbar-nav .dropdown-toggle').filter({ hasText: 'Oferta' });
-      await dropdownToggle.click();
-      await page.waitForTimeout(500);
+      await page.locator('.navbar-nav .dropdown-toggle').filter({ hasText: 'Oferta' }).click();
+      await page.waitForTimeout(400);
 
-      const submenu = page.locator('.mobile-submenu');
-      await expect(submenu).toBeVisible({ timeout: 5000 });
+      await expect(page.locator('.mobile-submenu.show').first()).toBeVisible({ timeout: 5000 });
     });
 
     test('should show language switcher in mobile menu', async ({ page }) => {
@@ -130,8 +120,8 @@ test.describe('Menu Collapse Behavior', () => {
     });
 
     test('should show all navigation links inline on desktop', async ({ page }) => {
-      await expect(page.locator('.navbar-nav .nav-link').filter({ hasText: 'Strona Glowna' })).toBeVisible();
-      await expect(page.locator('.navbar-nav .nav-link').filter({ hasText: 'O Nas' })).toBeVisible();
+      await expect(page.locator('.navbar-nav .nav-link').filter({ hasText: 'O nas' })).toBeVisible();
+      await expect(page.locator('.navbar-nav .nav-link').filter({ hasText: 'Oferta' })).toBeVisible();
       await expect(page.locator('.navbar-nav .nav-link').filter({ hasText: 'Kontakt' })).toBeVisible();
     });
 
@@ -139,7 +129,7 @@ test.describe('Menu Collapse Behavior', () => {
       const dropdownToggle = page.locator('.navbar-nav .dropdown-toggle').filter({ hasText: 'Oferta' });
       await dropdownToggle.hover();
 
-      const dropdownMenu = page.locator('.dropdown-menu').first();
+      const dropdownMenu = dropdownToggle.locator('~ .dropdown-menu');
       await expect(dropdownMenu).toBeVisible({ timeout: 5000 });
     });
   });
@@ -296,17 +286,17 @@ test.describe('Image Scaling Behavior', () => {
     });
   });
 
-  test.describe('Feature Section Images and Icons', () => {
-    test('should display feature icons at appropriate size on mobile', async ({ page }) => {
+  test.describe('Proof Section Number Beads', () => {
+    test('should display numbered beads at a reasonable size on mobile', async ({ page }) => {
       await page.setViewportSize(viewports.mobile);
       await page.goto('/pl/');
       await page.waitForLoadState('networkidle');
 
-      const featureIcon = page.locator('#features-section .feature-icon').first();
-      await expect(featureIcon).toBeVisible();
+      const bead = page.locator('#features-section .proof-number').first();
+      await expect(bead).toBeVisible();
 
-      const boundingBox = await featureIcon.boundingBox();
-      expect(boundingBox?.width).toBeLessThanOrEqual(100); // Icons should be reasonably sized
+      const boundingBox = await bead.boundingBox();
+      expect(boundingBox?.width).toBeLessThanOrEqual(100); // Beads should be compact
     });
   });
 });
@@ -331,7 +321,7 @@ test.describe('Layout Reflow', () => {
       await page.goto('/pl/');
       await page.waitForLoadState('networkidle');
 
-      const featureCards = page.locator('#features-section .feature-card');
+      const featureCards = page.locator('#features-section .proof-item');
       const firstCard = featureCards.first();
       const secondCard = featureCards.nth(1);
 
@@ -350,7 +340,7 @@ test.describe('Layout Reflow', () => {
       await page.goto('/pl/');
       await page.waitForLoadState('networkidle');
 
-      const featureCards = page.locator('#features-section .feature-card');
+      const featureCards = page.locator('#features-section .proof-item');
       const firstCard = featureCards.first();
       const secondCard = featureCards.nth(1);
 
@@ -369,7 +359,7 @@ test.describe('Layout Reflow', () => {
       await page.goto('/pl/');
       await page.waitForLoadState('networkidle');
 
-      const featureCards = page.locator('#features-section .feature-card');
+      const featureCards = page.locator('#features-section .proof-item');
       const firstCard = featureCards.first();
       const secondCard = featureCards.nth(1);
       const thirdCard = featureCards.nth(2);
@@ -544,15 +534,12 @@ test.describe('Touch and Interaction on Mobile', () => {
     await page.waitForLoadState('networkidle');
 
     // Open mobile menu
-    const hamburgerButton = page.locator('.navbar-toggler');
-    await hamburgerButton.click();
-    await page.waitForTimeout(500);
+    await page.locator('.navbar-toggler').click();
+    await page.waitForTimeout(400);
 
-    // Navigate to About page
-    const aboutLink = page.locator('.navbar-nav .nav-link').filter({ hasText: 'O Nas' });
-    await aboutLink.click();
-
-    await expect(page).toHaveURL(/\/pl\/about\/?$/);
+    // Contact is a regular link, so tapping it navigates
+    await page.locator('.navbar-nav .nav-link').filter({ hasText: 'Kontakt' }).click();
+    await expect(page).toHaveURL(/\/pl\/contact\/?$/);
   });
 
   test('should allow click/tap to open gallery lightbox on mobile', async ({ page }) => {
@@ -625,7 +612,7 @@ test.describe('Viewport-Specific Accessibility', () => {
 
 test.describe('Cross-Viewport Content Consistency', () => {
   test('should display same navigation items across viewports', async ({ page }) => {
-    const navItems = ['Strona Glowna', 'O Nas', 'Oferta', 'Aktualnosci', 'Galeria', 'Kontakt'];
+    const navItems = ['O nas', 'Oferta', 'Dla rodziców', 'Aktualności', 'Kontakt'];
 
     // Check mobile
     await page.setViewportSize(viewports.mobile);
@@ -634,7 +621,7 @@ test.describe('Cross-Viewport Content Consistency', () => {
 
     const hamburgerButton = page.locator('.navbar-toggler');
     await hamburgerButton.click();
-    await page.waitForTimeout(500);
+    await page.waitForTimeout(400);
 
     for (const item of navItems) {
       await expect(page.locator('.navbar-nav .nav-link').filter({ hasText: item })).toBeVisible();
@@ -676,17 +663,17 @@ test.describe('Cross-Viewport Content Consistency', () => {
     await page.goto('/pl/');
     await page.waitForLoadState('networkidle');
 
-    const mobileCount = await page.locator('#features-section .feature-card').count();
+    const mobileCount = await page.locator('#features-section .proof-item').count();
 
     // Check desktop
     await page.setViewportSize(viewports.desktop);
     await page.waitForTimeout(300);
 
-    const desktopCount = await page.locator('#features-section .feature-card').count();
+    const desktopCount = await page.locator('#features-section .proof-item').count();
 
     // Same number of cards
     expect(mobileCount).toBe(desktopCount);
-    expect(mobileCount).toBe(6); // 6 feature cards as per existing test
+    expect(mobileCount).toBe(3); // three proof cards
   });
 });
 
