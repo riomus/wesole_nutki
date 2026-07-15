@@ -282,6 +282,13 @@
 .music-news .read-more:hover { color: #7f2f0d; }
 
 // ------------------------------------------------------------
+// Single news article — the template hard-codes a full white
+// background (`@apply bg-white`), which made the article page clash
+// with the cream theme every other page uses. Sit it on the paper.
+// ------------------------------------------------------------
+.news-article { background: transparent !important; }
+
+// ------------------------------------------------------------
 // Site-wide content cards (news + gallery lists) — carry the same
 // friendly, tactile look as the homepage so the whole site matches.
 // ------------------------------------------------------------
