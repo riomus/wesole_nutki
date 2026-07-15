@@ -1,0 +1,18 @@
+# Parent reviews — sourced from the school's public Google reviews (all 5/5).
+# Edit here to add/update. `quote` is Polish; `quote_en` is the English rendering.
+rating: "5,0"
+# Where the rating chip links (Google reviews). Update to the exact Google
+# Business Profile reviews URL when available.
+google_url: "https://www.google.com/maps/search/Przedszkole+Weso%C5%82e+Nutki+Wroc%C5%82aw"
+facebook_url: "https://www.facebook.com/NutkiWroclaw/"
+
+items:
+  - name: "Anna"
+    quote: "Świetne przedszkole. Świadoma kadra. Ciekawe zajęcia. Dużo czasu spędzają na dworze. Mój synek Tymuś tam chodził. Dziękujemy Pani Kasi szczególnie i całemu zespołowi."
+    quote_en: "A wonderful preschool. A mindful team, engaging activities, and lots of time spent outdoors. My son Tymuś went there. Special thanks to Ms. Kasia and the whole team."
+  - name: "Milena"
+    quote: "Po 3 latach spędzonych w Wesołych Nutkach szczerze polecam to przedszkole wszystkim rodzicom."
+    quote_en: "After 3 years spent at Wesołe Nutki, I sincerely recommend this preschool to all parents."
+  - name: "Emilia"
+    quote: "Śliczne przedszkole w centrum Wrocławia."
+    quote_en: "A lovely preschool in the centre of Wrocław."

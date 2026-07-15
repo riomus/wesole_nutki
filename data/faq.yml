@@ -1,0 +1,23 @@
+# Frequently asked questions — answers parents need before deciding.
+# `q`/`a` are Polish; `q_en`/`a_en` are the English versions.
+items:
+  - q: "Jakie są godziny otwarcia?"
+    a: "Jesteśmy otwarci od poniedziałku do piątku w godzinach 6:30–17:30."
+    q_en: "What are your opening hours?"
+    a_en: "We're open Monday to Friday, 6:30 AM–5:30 PM."
+  - q: "Ile kosztuje przedszkole?"
+    a: "Czesne wynosi 900 zł miesięcznie. Wyżywienie to 25 zł/dzień (dieta standardowa) lub 27 zł/dzień (dieta specjalna). Czesne obejmuje wszystkie zajęcia programowe."
+    q_en: "How much does it cost?"
+    a_en: "Tuition is 900 PLN per month. Meals are 25 PLN/day (standard) or 27 PLN/day (special diet). Tuition covers all the program activities."
+  - q: "Co obejmują zajęcia?"
+    a: "Codzienną muzykę i język angielski, a także rytmikę, logorytmikę, gimnastykę ogólnorozwojową oraz koncerty i teatrzyki organizowane w przedszkolu."
+    q_en: "What's included in the program?"
+    a_en: "Daily music and English, plus rhythmics, logorhythmics, developmental gymnastics, and concerts and shows held at the preschool."
+  - q: "Jak wygląda adaptacja dziecka?"
+    a: "Kameralne, małe grupy pozwalają na łagodną adaptację w indywidualnym tempie. Znamy każde dziecko i jego rodzinę, a stały rytm dnia daje poczucie bezpieczeństwa."
+    q_en: "What does settling in look like?"
+    a_en: "Small, intimate groups allow a gentle adaptation at each child's own pace. We know every child and family, and a steady daily rhythm builds a sense of safety."
+  - q: "Jak zapisać dziecko?"
+    a: "Zadzwoń lub napisz, umów wizytę i pobierz Kartę Zgłoszenia. Cały proces opisujemy krok po kroku na stronie Zapisy."
+    q_en: "How do I enroll my child?"
+    a_en: "Call or write, book a visit, and download the enrollment form. We describe the whole process step by step on the Enrollment page."

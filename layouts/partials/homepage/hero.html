@@ -4,6 +4,7 @@
 {{- $phoneHref := $phone | replaceRE `[^0-9+]` `` -}}
 {{- $email := site.Data.settings.contact.email | default site.Params.email -}}
 {{- $aboutURL := cond (eq .Lang "pl") "/pl/about/" "/en/about/" -}}
+{{- $enrollURL := cond (eq .Lang "pl") "/pl/o-przedszkolu/zapisy/" "/en/recruitment/" -}}
 <section class="music-hero" data-testid="hero-section">
   <div class="container music-hero-grid">
     <div class="music-hero-copy">
@@ -11,10 +12,10 @@
       <h1 data-testid="hero-headline">{{ i18n "hero_headline" }}</h1>
       <p class="music-hero-lead" data-testid="hero-subheadline">{{ i18n "hero_subheadline" }}</p>
       <div class="hero-buttons" data-testid="hero-buttons">
-        <a href="tel:{{ $phoneHref }}" class="btn music-btn-primary" data-testid="hero-primary-call">
+        <a href="{{ partial "helpers/basepath-url" $enrollURL }}" class="btn music-btn-primary" data-testid="hero-cta-button">{{ if eq .Lang "pl" }}Umów wizytę{{ else }}Book a visit{{ end }}</a>
+        <a href="tel:{{ $phoneHref }}" class="btn music-btn-secondary" data-testid="hero-primary-call">
           <span>{{ i18n "hero_call" }}</span> {{ $phone }}
         </a>
-        <a href="mailto:{{ $email }}" class="btn music-btn-secondary" data-testid="hero-cta-button">{{ i18n "hero_email" }}</a>
       </div>
       <a class="music-text-link" href="{{ partial "helpers/basepath-url" $aboutURL }}" data-testid="hero-cta-button">
         {{ i18n "hero_about" }} <span aria-hidden="true">→</span>

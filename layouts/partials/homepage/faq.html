@@ -1,0 +1,30 @@
+{{- $faq := site.Data.faq -}}
+{{- $isPolish := eq .Lang "pl" -}}
+{{- $enrollURL := cond $isPolish "/pl/o-przedszkolu/zapisy/" "/en/recruitment/" -}}
+{{- if $faq.items -}}
+<section class="faq-section" aria-labelledby="faq-heading">
+  <div class="container faq-grid">
+    <div class="faq-intro">
+      <p class="music-eyebrow">FAQ</p>
+      <h2 id="faq-heading">{{ if $isPolish }}Najczęstsze pytania{{ else }}Frequently asked questions{{ end }}</h2>
+      <p>{{ if $isPolish }}Nie znalazłeś odpowiedzi? Chętnie porozmawiamy.{{ else }}Didn't find your answer? We'd love to talk.{{ end }}</p>
+      <a class="music-text-link" href="{{ partial "helpers/basepath-url" $enrollURL }}">
+        {{ if $isPolish }}Umów wizytę{{ else }}Book a visit{{ end }} <span aria-hidden="true">→</span>
+      </a>
+    </div>
+    <div class="faq-list">
+      {{- range $i, $item := $faq.items -}}
+      <details class="faq-item"{{ if eq $i 0 }} open{{ end }}>
+        <summary>
+          <span>{{ if $isPolish }}{{ .q }}{{ else }}{{ .q_en | default .q }}{{ end }}</span>
+          <span class="faq-item__icon" aria-hidden="true"></span>
+        </summary>
+        <div class="faq-item__answer">
+          <p>{{ if $isPolish }}{{ .a }}{{ else }}{{ .a_en | default .a }}{{ end }}</p>
+        </div>
+      </details>
+      {{- end -}}
+    </div>
+  </div>
+</section>
+{{- end -}}

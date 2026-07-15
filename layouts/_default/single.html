@@ -4,8 +4,9 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8">
+        {{/* Publish date is meaningful for dated posts, not evergreen info pages */}}
+        {{ if and (not .Date.IsZero) (ne .Type "page") }}
         <header class="mb-4 article-meta">
-          {{ if not .Date.IsZero }}
           <p class="text-muted">
             <time datetime="{{ .Date.Format "2006-01-02" }}">
               {{ i18n "posted_on" }} {{ partial "format-date" .Date }}
@@ -14,8 +15,8 @@
             {{ i18n "by_author" }} {{ . }}
             {{ end }}
           </p>
-          {{ end }}
         </header>
+        {{ end }}
 
         {{ with .Params.image }}
         <figure class="mb-4">
@@ -45,11 +46,17 @@
         </footer>
         {{ end }}
 
-        <nav class="mt-4">
-          <a href="{{ .Site.Home.RelPermalink }}" class="btn btn-outline-primary">
-            &larr; {{ i18n "back_to_home" }}
+        {{/* Forward next-step CTA (not a retreat home). The orange contact
+             band below every page carries phone/email; here we point ready
+             parents straight to enrollment. */}}
+        {{ $enrollURL := cond (eq .Lang "pl") "/pl/o-przedszkolu/zapisy/" "/en/recruitment/" }}
+        {{ if ne .RelPermalink (partial "helpers/basepath-url" $enrollURL) }}
+        <nav class="mt-5 page-next-step">
+          <a href="{{ partial "helpers/basepath-url" $enrollURL }}" class="music-btn-primary">
+            {{ if eq .Lang "pl" }}Umów wizytę{{ else }}Book a visit{{ end }}
           </a>
         </nav>
+        {{ end }}
       </div>
     </div>
   </div>

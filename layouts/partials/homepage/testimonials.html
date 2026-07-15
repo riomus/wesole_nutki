@@ -1,0 +1,33 @@
+{{- $t := site.Data.testimonials -}}
+{{- $isPolish := eq .Lang "pl" -}}
+{{- if $t.items -}}
+<section class="testimonials-section" aria-labelledby="testimonials-heading">
+  <div class="container">
+    <div class="testimonials-head">
+      <div>
+        <p class="music-eyebrow">{{ if $isPolish }}Opinie rodziców{{ else }}Parent reviews{{ end }}</p>
+        <h2 id="testimonials-heading">{{ if $isPolish }}Co mówią rodzice{{ else }}What parents say{{ end }}</h2>
+      </div>
+      <a class="reviews-rating" href="{{ $t.google_url }}" target="_blank" rel="noopener noreferrer"
+         aria-label="{{ if $isPolish }}Ocena {{ $t.rating }} na 5 w Google — zobacz opinie{{ else }}Rated {{ $t.rating }} out of 5 on Google — read the reviews{{ end }}">
+        <span class="reviews-rating__score">{{ $t.rating }}</span>
+        <span class="reviews-rating__stars" aria-hidden="true">★★★★★</span>
+        <span class="reviews-rating__label">{{ if $isPolish }}Opinie w Google{{ else }}Google reviews{{ end }}</span>
+      </a>
+    </div>
+
+    <div class="testimonials-grid">
+      {{- range $t.items -}}
+      <figure class="testimonial-card">
+        <div class="testimonial-card__stars" aria-hidden="true">★★★★★</div>
+        <blockquote class="testimonial-card__quote">{{ if $isPolish }}{{ .quote }}{{ else }}{{ .quote_en | default .quote }}{{ end }}</blockquote>
+        <figcaption class="testimonial-card__author">
+          <span class="testimonial-card__avatar" aria-hidden="true">{{ substr .name 0 1 }}</span>
+          {{ .name }}
+        </figcaption>
+      </figure>
+      {{- end -}}
+    </div>
+  </div>
+</section>
+{{- end -}}

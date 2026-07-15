@@ -408,6 +408,287 @@
 .music-hero { position: relative; }
 
 // ------------------------------------------------------------
+// Testimonials — real parent reviews build the trust that sells a
+// preschool. Warm rounded quote cards on paper, with a Google rating
+// chip that links out to the reviews.
+// ------------------------------------------------------------
+.testimonials-section {
+  padding: clamp(4rem, 8vw, 7rem) 0;
+  background: var(--music-paper);
+}
+.testimonials-head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem 2rem;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: clamp(2rem, 5vw, 3.25rem);
+}
+.testimonials-head h2 { margin: 0; font-size: clamp(2.2rem, 4.4vw, 4rem); line-height: 1.02; }
+
+.reviews-rating {
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+  padding: .7rem 1.15rem;
+  color: #fff;
+  background: var(--music-green);
+  border-radius: var(--kids-pill);
+  box-shadow: var(--kids-shadow);
+  text-decoration: none;
+  transition: transform .18s ease, background-color .18s ease;
+}
+.reviews-rating:hover,
+.reviews-rating:focus-visible { transform: translateY(-2px); background: #245748; color: #fff; }
+.reviews-rating__score { font-family: ui-rounded, "Arial Rounded MT Bold", system-ui, sans-serif; font-size: 1.35rem; font-weight: 750; }
+.reviews-rating__stars { color: #ffcf4a; letter-spacing: .04em; }
+.reviews-rating__label { font-size: .82rem; font-weight: 700; opacity: .9; }
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 1.75rem 1.75rem 1.5rem;
+  background: #fff;
+  border-radius: var(--kids-radius);
+  box-shadow: var(--kids-shadow);
+}
+.testimonial-card__stars { margin-bottom: .9rem; color: #f2a900; font-size: 1.05rem; letter-spacing: .08em; }
+.testimonial-card__quote {
+  flex: 1 1 auto;
+  margin: 0 0 1.35rem;
+  color: #24352f;
+  font-size: 1.06rem;
+  line-height: 1.6;
+}
+.testimonial-card__quote::before { content: "\201C"; }
+.testimonial-card__quote::after { content: "\201D"; }
+.testimonial-card__author {
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+  font-family: ui-rounded, "Arial Rounded MT Bold", system-ui, sans-serif;
+  font-weight: 700;
+  color: var(--music-ink);
+}
+.testimonial-card__avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #fff;
+  background: var(--music-orange);
+  border-radius: 50%;
+  font-size: 1.05rem;
+}
+.testimonial-card:nth-child(2) .testimonial-card__avatar { background: var(--kids-blue); }
+.testimonial-card:nth-child(3) .testimonial-card__avatar { background: #1f7a5e; }
+
+@media (max-width: 991.98px) {
+  .testimonials-grid { grid-template-columns: 1fr; }
+}
+
+// ------------------------------------------------------------
+// Enrollment page — the "how to enroll" steps + a prominent Karta
+// Zgłoszenia call to action, so a ready parent has an obvious path.
+// ------------------------------------------------------------
+.enroll-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 2.5rem 0;
+}
+.enroll-step {
+  padding: 1.75rem;
+  background: #fff;
+  border-radius: var(--kids-radius);
+  box-shadow: var(--kids-shadow);
+}
+.enroll-step__num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 1.1rem;
+  color: #fff;
+  background: var(--music-orange);
+  border-radius: 50%;
+  font-family: ui-rounded, "Arial Rounded MT Bold", system-ui, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 750;
+}
+.enroll-step:nth-child(2) .enroll-step__num { background: var(--kids-blue); }
+.enroll-step:nth-child(3) .enroll-step__num { background: #1f7a5e; }
+.enroll-step h2 { margin: 0 0 .5rem; font-size: clamp(1.2rem, 2vw, 1.45rem); line-height: 1.2; }
+.enroll-step p { margin: 0; color: #33473f; line-height: 1.6; }
+.enroll-step a { color: var(--music-orange); font-weight: 700; }
+
+.enroll-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  margin: 2.5rem 0;
+  padding: clamp(1.75rem, 4vw, 2.5rem);
+  background: linear-gradient(180deg, #fff3df 0%, var(--music-paper) 100%);
+  border-radius: var(--kids-radius);
+}
+.enroll-cta .music-btn-primary { font-size: 1.1rem; padding: .9rem 2rem; }
+.enroll-cta p { margin: 0; color: #33473f; }
+
+@media (max-width: 767.98px) {
+  .enroll-steps { grid-template-columns: 1fr; gap: 1.1rem; }
+}
+
+// ------------------------------------------------------------
+// FAQ — disarm the questions that stall a decision (safety, price,
+// adaptation, hours). Native <details> accordion, no JS needed.
+// ------------------------------------------------------------
+.faq-section { padding: clamp(4rem, 8vw, 7rem) 0; }
+.faq-grid {
+  display: grid;
+  grid-template-columns: minmax(0, .82fr) minmax(0, 1.5fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: start;
+}
+.faq-intro h2 { margin: 0 0 1rem; font-size: clamp(2rem, 4vw, 3.4rem); line-height: 1.03; }
+.faq-intro > p { max-width: 22rem; margin: 0 0 1.25rem; color: #496159; font-size: 1.1rem; }
+
+.faq-item { border-bottom: 1px solid var(--music-line); }
+.faq-item summary {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 0;
+  cursor: pointer;
+  list-style: none;
+  color: var(--music-ink);
+  font-family: ui-rounded, "Arial Rounded MT Bold", system-ui, sans-serif;
+  font-size: clamp(1.05rem, 1.6vw, 1.25rem);
+  font-weight: 700;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary:hover { color: var(--music-orange); }
+.faq-item__icon {
+  position: relative;
+  flex: 0 0 auto;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.faq-item__icon::before,
+.faq-item__icon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0.9rem;
+  height: 2px;
+  background: var(--music-orange);
+  transform: translate(-50%, -50%);
+  transition: transform .2s ease, opacity .2s ease;
+}
+.faq-item__icon::after { transform: translate(-50%, -50%) rotate(90deg); }
+.faq-item[open] .faq-item__icon::after { transform: translate(-50%, -50%) rotate(0); opacity: 0; }
+.faq-item__answer { padding: 0 0 1.35rem; }
+.faq-item__answer p { margin: 0; max-width: 46rem; color: #33473f; line-height: 1.65; }
+
+// ------------------------------------------------------------
+// Related posts (article footer) — match the friendly rounded cards
+// ------------------------------------------------------------
+.related-posts-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+.related-post-card {
+  padding: 1.4rem 1.5rem;
+  background: #fff;
+  border-radius: var(--kids-radius);
+  box-shadow: var(--kids-shadow);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.related-post-card:hover { transform: translateY(-4px); box-shadow: var(--kids-shadow-lg); }
+.related-post-title a { color: var(--music-ink); }
+.related-post-title a:hover { color: var(--music-orange); }
+@media (max-width: 767.98px) { .related-posts-grid { grid-template-columns: 1fr; } }
+
+// ------------------------------------------------------------
+// Branded image fallback — a missing photo should feel intentional,
+// not broken. Cream block with a friendly music note.
+// ------------------------------------------------------------
+.news-card-placeholder,
+.card-img-wrapper.image-error .news-card-fallback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .4rem;
+  min-height: 12rem;
+  color: var(--music-orange);
+  background: var(--page-paper-deep, #f4ead1);
+}
+.news-card-placeholder .placeholder-icon svg,
+.news-card-fallback svg { opacity: .6; }
+.news-card-placeholder::before,
+.card-img-wrapper.image-error .news-card-fallback::before {
+  content: "\266A";
+  font-size: 2.6rem;
+  line-height: 1;
+}
+.fallback-text { color: #7a6a4a; font-size: .85rem; font-weight: 650; }
+
+// ------------------------------------------------------------
+// Sticky mobile conversion bar — a persistent "Umów wizytę" + call,
+// so the primary action is always one tap away on phones.
+// ------------------------------------------------------------
+.mobile-cta-bar { display: none; }
+@media (max-width: 1119.98px) {
+  .mobile-cta-bar {
+    position: fixed;
+    inset: auto 0 0 0;
+    z-index: 1045;
+    display: flex;
+    gap: .6rem;
+    padding: .6rem .75rem calc(.6rem + env(safe-area-inset-bottom, 0px));
+    background: rgba(255, 248, 232, .96);
+    border-top: 1px solid var(--music-line);
+    box-shadow: 0 -6px 20px rgba(23, 49, 43, .12);
+    backdrop-filter: blur(6px);
+  }
+  .mobile-cta-bar__visit {
+    flex: 1 1 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 3rem;
+    color: #fff;
+    background: var(--music-green);
+    border-radius: var(--kids-pill);
+    font-weight: 750;
+    text-decoration: none;
+  }
+  .mobile-cta-bar__visit:active { transform: translateY(1px); }
+  .mobile-cta-bar__call {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    flex: 0 0 auto;
+    color: var(--music-green);
+    background: var(--music-lime);
+    border-radius: 50%;
+    text-decoration: none;
+  }
+  body { padding-bottom: 4.5rem; }
+  .back-to-top { bottom: 5.25rem !important; }
+}
+
+// ------------------------------------------------------------
 // Motion safety — everything playful stops for reduced-motion users
 // ------------------------------------------------------------
 @media (prefers-reduced-motion: reduce) {

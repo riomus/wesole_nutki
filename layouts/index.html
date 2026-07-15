@@ -6,6 +6,8 @@
 {{ partial "homepage/parents.html" . }}
 {{ if or (not $sections) $sections.about }}{{ partial "homepage/about.html" . }}{{ end }}
 {{ partial "homepage/trust.html" . }}
+{{ partial "homepage/testimonials.html" . }}
 {{ if or (not $sections) $sections.news }}{{ partial "homepage/news.html" . }}{{ end }}
+{{ partial "homepage/faq.html" . }}
 {{ if or (not $sections) $sections.cta }}{{ partial "homepage/cta.html" . }}{{ end }}
 {{ end }}

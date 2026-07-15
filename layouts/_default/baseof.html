@@ -16,6 +16,8 @@
 
   {{- partial "footer.html" . -}}
 
+  {{- partial "mobile-cta-bar.html" . -}}
+
   <!-- Main JavaScript Bundle via Hugo Pipes -->
   {{ $jsOptions := dict "targetPath" "js/bundle.js" "minify" hugo.IsProduction }}
   {{ with resources.Get "js/main.js" }}

@@ -42,7 +42,7 @@ test.describe('Hero Section Rendering', () => {
       // Primary call action (phone) + email + "meet us" link
       await expect(page.locator('[data-testid="hero-primary-call"]')).toContainText(/zadzwoń/i);
       await expect(
-        page.locator('[data-testid="hero-cta-button"]').filter({ hasText: 'Napisz do nas' }),
+        page.locator('[data-testid="hero-cta-button"]').filter({ hasText: 'Umów wizytę' }),
       ).toBeVisible();
       await expect(
         page.locator('[data-testid="hero-cta-button"]').filter({ hasText: 'Poznaj Wesołe Nutki' }),
@@ -82,7 +82,7 @@ test.describe('Hero Section Rendering', () => {
     test('should display hero CTA actions in English', async ({ page }) => {
       await expect(page.locator('[data-testid="hero-primary-call"]')).toContainText(/call/i);
       await expect(
-        page.locator('[data-testid="hero-cta-button"]').filter({ hasText: 'Email us' }),
+        page.locator('[data-testid="hero-cta-button"]').filter({ hasText: 'Book a visit' }),
       ).toBeVisible();
       await expect(
         page.locator('[data-testid="hero-cta-button"]').filter({ hasText: 'Meet Wesole Nutki' }),
