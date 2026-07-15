@@ -591,6 +591,9 @@ other = "Kontakt"
 [close_menu]
 other = "Zamknij menu"
 
+[breadcrumb_programs]
+other = "Oferta"
+
 [menu_home]
 other = "Strona główna"
 

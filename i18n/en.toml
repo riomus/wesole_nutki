@@ -394,7 +394,7 @@ other = "All rights reserved"
 other = "Image unavailable"
 
 [hero_eyebrow]
-other = "Language and music preschool • Wrocław Market Square"
+other = "Language & music preschool • Wrocław Rynek"
 
 [hero_headline]
 other = "Children grow through music, languages and close care"
@@ -587,6 +587,9 @@ other = "Gallery"
 
 [contact]
 other = "Contact"
+
+[breadcrumb_programs]
+other = "Offer"
 
 [menu_home]
 other = "Home"

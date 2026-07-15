@@ -414,10 +414,22 @@
 }
 
 // ------------------------------------------------------------
-// Inner-page hero notes — same playful colour trio as the homepage
+// Inner-page hero notes — tidy the three glyphs into an intentional
+// little melody sitting on a baseline, playful colour trio.
 // ------------------------------------------------------------
+.editorial-page-intro__staff {
+  align-items: end;
+  gap: .35rem;
+  transform: rotate(-4deg);
+}
+.editorial-page-intro__staff span { line-height: 1; }
 .editorial-page-intro__staff span:nth-child(1) { color: var(--kids-pink); }
-.editorial-page-intro__staff span:nth-child(2) { color: var(--kids-blue); }
+.editorial-page-intro__staff span:nth-child(2) {
+  align-self: end;
+  margin-bottom: .12em;
+  color: var(--kids-blue);
+  font-size: .5em;
+}
 .editorial-page-intro__staff span:nth-child(3) { color: var(--music-orange); }
 
 // ------------------------------------------------------------

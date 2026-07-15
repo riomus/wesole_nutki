@@ -7,6 +7,9 @@ news: "News"
 gallery: "Gallery"
 contact: "Contact"
 
+# Breadcrumb section labels (keep in sync with the nav labels)
+breadcrumb_programs: "Offer"
+
 # Menu items
 menu_home: "Home"
 menu_about: "About"

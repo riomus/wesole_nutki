@@ -10,6 +10,9 @@ contact: "Kontakt"
 # Mobile menu
 close_menu: "Zamknij menu"
 
+# Breadcrumb section labels (keep in sync with the nav labels)
+breadcrumb_programs: "Oferta"
+
 # Menu items
 menu_home: "Strona główna"
 menu_about: "O nas"
