@@ -17,7 +17,7 @@
       {{ else }}
       <div class="program-card-icon-wrapper">
         {{ with $.Params.icon }}
-        <span class="program-card-icon">{{ . }}</span>
+        <span class="program-card-icon">{{ partial "helpers/activity-icon" . }}</span>
         {{ else }}
         <span class="program-card-icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" viewBox="0 0 16 16">

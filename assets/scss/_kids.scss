@@ -137,7 +137,7 @@
 // Recruitment band — softer paper card feel
 // ------------------------------------------------------------
 .recruitment-editorial {
-  background: linear-gradient(180deg, #fff3df 0%, var(--music-paper) 100%);
+  background: #faf1de;
 }
 .recruitment-details { border-left-width: 4px; border-radius: 0 var(--kids-radius-sm) var(--kids-radius-sm) 0; }
 
@@ -467,6 +467,15 @@
   color: #ffe9e2 !important;
   background: #7f2f18 !important;
 }
+#open-status .status-dot {
+  display: inline-block;
+  flex: 0 0 auto;
+  width: .6rem;
+  height: .6rem;
+  border-radius: 50%;
+}
+#open-status.is-open .status-dot { background: #1f7a3f; }
+#open-status.is-closed .status-dot { background: #ff9f86; }
 
 // ------------------------------------------------------------
 // Section rhythm — a soft wavy tint change between the hero and
@@ -614,7 +623,7 @@
   gap: 1rem;
   margin: 2.5rem 0;
   padding: clamp(1.75rem, 4vw, 2.5rem);
-  background: linear-gradient(180deg, #fff3df 0%, var(--music-paper) 100%);
+  background: #faf1de;
   border-radius: var(--kids-radius);
 }
 .enroll-cta .music-btn-primary { font-size: 1.1rem; padding: .9rem 2rem; }
@@ -735,10 +744,9 @@
     display: flex;
     gap: .6rem;
     padding: .6rem .75rem calc(.6rem + env(safe-area-inset-bottom, 0px));
-    background: rgba(255, 248, 232, .96);
+    background: var(--music-cream);
     border-top: 1px solid var(--music-line);
     box-shadow: 0 -6px 20px rgba(23, 49, 43, .12);
-    backdrop-filter: blur(6px);
   }
   .mobile-cta-bar__visit {
     flex: 1 1 auto;
@@ -799,6 +807,25 @@
 .weekly-schedule-table .group-name { overflow-wrap: normal; }
 .weekly-schedule-table th,
 .weekly-schedule-table td { overflow-wrap: anywhere; }
+
+// ------------------------------------------------------------
+// Kill leftover glassmorphism on card badges (semi-transparent white +
+// backdrop-blur) — a slop tell. Solid pills instead.
+// ------------------------------------------------------------
+.program-card-age-badge,
+.gallery-card-count {
+  background: #fff !important;
+  backdrop-filter: none !important;
+}
+
+// ------------------------------------------------------------
+// Program-activity icons — clean line SVGs (via helpers/activity-icon)
+// in the site's orange, replacing generic emoji.
+// ------------------------------------------------------------
+.activity-item .activity-icon { color: var(--music-orange); }
+.activity-item .activity-icon svg { display: block; width: 1.9rem; height: 1.9rem; }
+.program-icon-small svg { width: 1.1rem; height: 1.1rem; vertical-align: -.15em; color: var(--music-orange); }
+.program-card-icon svg { width: 2.4rem; height: 2.4rem; color: var(--music-green); }
 
 // ------------------------------------------------------------
 // Motion safety — everything playful stops for reduced-motion users

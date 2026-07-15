@@ -151,10 +151,10 @@
           const closedText = statusElement.dataset.closedText;
 
           if (isOpen) {
-            statusElement.innerHTML = '🟢 ' + openText;
+            statusElement.innerHTML = '<span class="status-dot"></span>' + openText;
             statusElement.classList.add('is-open');
           } else {
-            statusElement.innerHTML = '🔴 ' + closedText;
+            statusElement.innerHTML = '<span class="status-dot"></span>' + closedText;
             statusElement.classList.add('is-closed');
           }
         })();
