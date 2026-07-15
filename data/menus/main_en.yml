@@ -22,6 +22,10 @@ items:
     weight: 2
     i18n_key: menu_offer
     children:
+      - identifier: offer-overview
+        name: Our groups
+        url: /en/programs/
+        weight: 0
       - identifier: offer-schedule
         name: Daily plan
         url: /en/programs/schedule/
