@@ -1,214 +1,418 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Wesołe Nutki - Przedszkole Językowo-Muzyczne on Wesołe Nutki - Przedszkole</title>
-    <link>http://localhost:1313/wesole_nutki/pl/</link>
-    <description>Recent content in Wesołe Nutki - Przedszkole Językowo-Muzyczne on Wesołe Nutki - Przedszkole</description>
-    <generator>Hugo</generator>
-    <language>pl</language>
-    <atom:link href="http://localhost:1313/wesole_nutki/pl/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Grupa Maluszki</title>
-      <link>http://localhost:1313/wesole_nutki/pl/programs/maluszki/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/pl/programs/maluszki/</guid>
-      <description>Pierwszy krok w przygodę przedszkolną. Delikatne wprowadzenie do życia w grupie, rozwój samodzielności i podstawowych umiejętności społecznych.</description>
-    </item>
-    <item>
-      <title>Grupa Średniaki</title>
-      <link>http://localhost:1313/wesole_nutki/pl/programs/sredniaki/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/pl/programs/sredniaki/</guid>
-      <description>Rozwijamy ciekawość świata i umiejętności społeczne. Intensywna nauka przez zabawę, rozwijanie kreatywności i budowanie pewności siebie.</description>
-    </item>
-    <item>
-      <title>Grupa Starszaki</title>
-      <link>http://localhost:1313/wesole_nutki/pl/programs/starszaki/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/pl/programs/starszaki/</guid>
-      <description>Intensywne przygotowanie do nauki szkolnej. Rozwijamy umiejętności czytania, pisania i matematyki przy zachowaniu radości z nauki.</description>
-    </item>
-    <item>
-      <title>Zerówka</title>
-      <link>http://localhost:1313/wesole_nutki/pl/programs/zer%C3%B3wka/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/pl/programs/zer%C3%B3wka/</guid>
-      <description>Ostatni rok przed szkołą. Kompleksowe przygotowanie do nauki w szkole podstawowej, rozwijanie wszystkich kompetencji kluczowych.</description>
-    </item>
-    <item>
-      <title>Plan Dnia</title>
-      <link>http://localhost:1313/wesole_nutki/pl/programs/schedule/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/pl/programs/schedule/</guid>
-      <description>&lt;p&gt;Nasz dzień przedszkolny jest starannie zaplanowany, aby zapewnić dzieciom optymalne warunki do nauki, zabawy i odpoczynku. Plan jest elastyczny i dostosowywany do potrzeb poszczególnych grup wiekowych.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Pracuj z Wesołymi Nutkami! - Wesołe Nutki</title>
-      <link>http://localhost:1313/wesole_nutki/pl/2023/01/30/pracuj-z-wesolymi-nutkami/</link>
-      <pubDate>Fri, 23 Jan 2026 09:29:08 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/pl/2023/01/30/pracuj-z-wesolymi-nutkami/</guid>
-      <description>&lt;p&gt;&#xA;&lt;a href=&#34;https://wesolenutki.eu/kontakt/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;&#xA;&#xA;&#xA;&lt;div class=&#34;responsive-image-wrapper&#34;&gt;&#xA;      &lt;img src=&#34;http://localhost:1313/wesole_nutki/images/scraped/2023-01-30-pracuj-z-wesolymi-nutkami-0.jpg&#34; alt=&#34;&#34; class=&#34;markdown-image responsive-image-main&#34; &#xA;        loading=&#34;lazy&#34; decoding=&#34;async&#34;&#xA;        onerror=&#34;this.parentElement.classList.add(&#39;image-error&#39;); this.onerror=null;&#34;&gt;&#xA;&#xA;      &#xA;      &lt;div class=&#34;responsive-image-fallback&#34; aria-hidden=&#34;true&#34;&gt;&#xA;        &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;48&#34; height=&#34;48&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 16 16&#34;&gt;&#xA;          &lt;path d=&#34;M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z&#34; /&gt;&#xA;          &lt;path&#xA;            d=&#34;M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z&#34; /&gt;&#xA;        &lt;/svg&gt;&#xA;        &lt;span class=&#34;responsive-image-fallback-text&#34;&gt;Obraz niedostępny&lt;/span&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;NAUCZYCIEL WYCHOWANIA PRZEDSZKOLNEGO&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Jeśli lubisz pra­cę z dzieć­mi i posia­dasz wykształ­ce­nie kie­run­ko­we Weso­łe Nut­ki zapra­sza­ją do współpracy!&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Warsztaty ekologiczne - Wesołe Nutki</title>
-      <link>http://localhost:1313/wesole_nutki/pl/2025/06/03/warsztaty-ekologiczne/</link>
-      <pubDate>Fri, 23 Jan 2026 09:28:57 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/pl/2025/06/03/warsztaty-ekologiczne/</guid>
-      <description>&lt;p&gt;Ostat­nio nasze przed­szko­la­ki mia­ły oka­zję wziąć udział w eko­lo­gicz­nych warsz­ta­tach rzeź­biar­skich zor­ga­ni­zo­wa­nych przez Gale­rię Nic­po­niej. Dzię­ku­je­my za współ­pra­cę i zapro­sze­nie!&#xA;To była wyjąt­ko­wa oka­zja do twór­cze­go dzia­ła­nia w duchu eko­lo­gii i wspól­ne­go spę­dze­nia czasu.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&#xA;&#xA;&lt;div class=&#34;responsive-image-wrapper&#34;&gt;&#xA;      &lt;img src=&#34;http://localhost:1313/wesole_nutki/images/scraped/2025-06-03-warsztaty-ekologiczne-0.png&#34; alt=&#34;&#34; class=&#34;markdown-image responsive-image-main&#34; &#xA;        loading=&#34;lazy&#34; decoding=&#34;async&#34;&#xA;        onerror=&#34;this.parentElement.classList.add(&#39;image-error&#39;); this.onerror=null;&#34;&gt;&#xA;&#xA;      &#xA;      &lt;div class=&#34;responsive-image-fallback&#34; aria-hidden=&#34;true&#34;&gt;&#xA;        &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;48&#34; height=&#34;48&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 16 16&#34;&gt;&#xA;          &lt;path d=&#34;M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z&#34; /&gt;&#xA;          &lt;path&#xA;            d=&#34;M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z&#34; /&gt;&#xA;        &lt;/svg&gt;&#xA;        &lt;span class=&#34;responsive-image-fallback-text&#34;&gt;Obraz niedostępny&lt;/span&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Muzyka na żywo w przedszkolu - Wesołe Nutki</title>
-      <link>http://localhost:1313/wesole_nutki/pl/2025/06/10/muzyka-na-zywo-w-przedszkolu/</link>
-      <pubDate>Fri, 23 Jan 2026 09:28:53 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/pl/2025/06/10/muzyka-na-zywo-w-przedszkolu/</guid>
-      <description>&lt;p&gt;W minio­nym roku szkol­nym nasze przed­szko­la­ki regu­lar­nie uczest­ni­czy­ły w kon­cer­tach z cyklu „W kra­inie Pani Muzy­ki”, orga­ni­zo­wa­nych przez Lubu­skie Biu­ro Kon­cer­to­we „Orfe­usz”.&lt;/p&gt;&#xA;&lt;p&gt;Były to wyjąt­ko­we spo­tka­nia z muzy­ką na żywo, pro­wa­dzo­ne przez pro­fe­sjo­nal­nych muzy­ków i muzy­ko­lo­gów. Dzie­ci mia­ły oka­zję poznać ponad 35 instru­men­tów, posłu­chać róż­no­rod­nych utwo­rów – tak­że muzy­ki kla­sycz­nej – oraz aktyw­nie uczest­ni­czyć w kon­cer­tach poprzez taniec, śpiew i zabawę.&lt;/p&gt;&#xA;&lt;p&gt;To nie tyl­ko war­to­ścio­we doświad­cze­nie arty­stycz­ne, ale też wspa­nia­ła przy­go­da edu­ka­cyj­na – peł­na rado­ści, śmie­chu i zachwytu.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Międzynarodowy Dzień Kropki - Wesołe Nutki</title>
-      <link>http://localhost:1313/wesole_nutki/pl/2025/09/15/miedzynarodowy-dzien-kropki/</link>
-      <pubDate>Fri, 23 Jan 2026 09:28:48 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/pl/2025/09/15/miedzynarodowy-dzien-kropki/</guid>
-      <description>&lt;p&gt;🎉 Dziś w naszym przed­szko­lu świę­to­wa­li­śmy Mię­dzy­na­ro­do­wy Dzień Kropki!&lt;/p&gt;&#xA;&lt;p&gt;Były opo­wia­da­nia, roz­mo­wy o tym, czym jest krop­ka, „krop­ko­wy taniec” i twór­cze pra­ce pla­stycz­ne. Dzie­ci mia­ły oka­zję roz­wi­jać swo­ją kre­atyw­ność, spraw­ność i odkry­wać, że każ­da mała krop­ka może być począt­kiem cze­goś wyjątkowego ✨&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&#xA;&#xA;&lt;div class=&#34;responsive-image-wrapper&#34;&gt;&#xA;      &lt;img src=&#34;http://localhost:1313/wesole_nutki/images/scraped/2025-09-15-miedzynarodowy-dzien-kropki-0.jpeg&#34; alt=&#34;&#34; class=&#34;markdown-image responsive-image-main&#34; &#xA;        loading=&#34;lazy&#34; decoding=&#34;async&#34;&#xA;        onerror=&#34;this.parentElement.classList.add(&#39;image-error&#39;); this.onerror=null;&#34;&gt;&#xA;&#xA;      &#xA;      &lt;div class=&#34;responsive-image-fallback&#34; aria-hidden=&#34;true&#34;&gt;&#xA;        &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;48&#34; height=&#34;48&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 16 16&#34;&gt;&#xA;          &lt;path d=&#34;M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z&#34; /&gt;&#xA;          &lt;path&#xA;            d=&#34;M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z&#34; /&gt;&#xA;        &lt;/svg&gt;&#xA;        &lt;span class=&#34;responsive-image-fallback-text&#34;&gt;Obraz niedostępny&lt;/span&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Pierwszy jesienny spacer - Wesołe Nutki</title>
-      <link>http://localhost:1313/wesole_nutki/pl/2025/09/26/spacer/</link>
-      <pubDate>Fri, 23 Jan 2026 09:28:44 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/pl/2025/09/26/spacer/</guid>
-      <description>&lt;p&gt;Pierw­sze­go dnia jesie­ni wszyst­kie gru­py wybra­ły się na wspól­ny spa­cer, aby poszu­kać oznak tej pięk­nej pory roku w naszej okolicy 🍁🍁&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&#xA;&#xA;&lt;div class=&#34;responsive-image-wrapper&#34;&gt;&#xA;      &lt;img src=&#34;http://localhost:1313/wesole_nutki/images/scraped/2025-09-26-spacer-0.jpeg&#34; alt=&#34;&#34; class=&#34;markdown-image responsive-image-main&#34; &#xA;        loading=&#34;lazy&#34; decoding=&#34;async&#34;&#xA;        onerror=&#34;this.parentElement.classList.add(&#39;image-error&#39;); this.onerror=null;&#34;&gt;&#xA;&#xA;      &#xA;      &lt;div class=&#34;responsive-image-fallback&#34; aria-hidden=&#34;true&#34;&gt;&#xA;        &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;48&#34; height=&#34;48&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 16 16&#34;&gt;&#xA;          &lt;path d=&#34;M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z&#34; /&gt;&#xA;          &lt;path&#xA;            d=&#34;M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z&#34; /&gt;&#xA;        &lt;/svg&gt;&#xA;        &lt;span class=&#34;responsive-image-fallback-text&#34;&gt;Obraz niedostępny&lt;/span&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Międzynarodowy Dzień Muzyki - Wesołe Nutki</title>
-      <link>http://localhost:1313/wesole_nutki/pl/2025/10/07/miedzynarodowy-dzien-muzyki/</link>
-      <pubDate>Fri, 23 Jan 2026 09:28:39 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/pl/2025/10/07/miedzynarodowy-dzien-muzyki/</guid>
-      <description>&lt;p&gt;🎵 Tak świę­to­wa­li­śmy Mię­dzy­na­ro­do­wy Dzień Muzy­ki – w Nut­kach było jesz­cze tro­chę bar­dziej muzycz­nie niż zwykle 😊&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&#xA;&#xA;&lt;div class=&#34;responsive-image-wrapper&#34;&gt;&#xA;      &lt;img src=&#34;http://localhost:1313/wesole_nutki/images/scraped/2025-10-07-miedzynarodowy-dzien-muzyki-0.jpeg&#34; alt=&#34;&#34; class=&#34;markdown-image responsive-image-main&#34; &#xA;        loading=&#34;lazy&#34; decoding=&#34;async&#34;&#xA;        onerror=&#34;this.parentElement.classList.add(&#39;image-error&#39;); this.onerror=null;&#34;&gt;&#xA;&#xA;      &#xA;      &lt;div class=&#34;responsive-image-fallback&#34; aria-hidden=&#34;true&#34;&gt;&#xA;        &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;48&#34; height=&#34;48&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 16 16&#34;&gt;&#xA;          &lt;path d=&#34;M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z&#34; /&gt;&#xA;          &lt;path&#xA;            d=&#34;M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z&#34; /&gt;&#xA;        &lt;/svg&gt;&#xA;        &lt;span class=&#34;responsive-image-fallback-text&#34;&gt;Obraz niedostępny&lt;/span&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Koncert - Wesołe Nutki</title>
-      <link>http://localhost:1313/wesole_nutki/pl/2025/10/27/koncert/</link>
-      <pubDate>Fri, 23 Jan 2026 09:28:34 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/pl/2025/10/27/koncert/</guid>
-      <description>&lt;p&gt;W naszym przed­szko­lu &lt;strong&gt;regu­lar­nie odby­wa­ją się kon­cer­ty z muzy­ką na żywo&lt;/strong&gt;, któ­re pozwa­la­ją dzie­ciom pozna­wać instru­men­ty i roz­wi­jać wraż­li­wość muzyczną. 💛&lt;/p&gt;&#xA;&lt;p&gt;Ostat­nio mie­li­śmy oka­zję uczest­ni­czyć w pięk­nym kon­cer­cie pt. &lt;em&gt;„Pan Malusz­kie­wicz na morzu peł­nym dźwię­ków”&lt;/em&gt; w wyko­na­niu &lt;strong&gt;Lubu­skie­go Biu­ra Kon­cer­to­we­go „Orfe­usz“&lt;/strong&gt;. 🌊🎵&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&#xA;&#xA;&lt;div class=&#34;responsive-image-wrapper&#34;&gt;&#xA;      &lt;img src=&#34;http://localhost:1313/wesole_nutki/images/scraped/2025-10-27-koncert-0.jpeg&#34; alt=&#34;&#34; class=&#34;markdown-image responsive-image-main&#34; &#xA;        loading=&#34;lazy&#34; decoding=&#34;async&#34;&#xA;        onerror=&#34;this.parentElement.classList.add(&#39;image-error&#39;); this.onerror=null;&#34;&gt;&#xA;&#xA;      &#xA;      &lt;div class=&#34;responsive-image-fallback&#34; aria-hidden=&#34;true&#34;&gt;&#xA;        &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;48&#34; height=&#34;48&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 16 16&#34;&gt;&#xA;          &lt;path d=&#34;M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z&#34; /&gt;&#xA;          &lt;path&#xA;            d=&#34;M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z&#34; /&gt;&#xA;        &lt;/svg&gt;&#xA;        &lt;span class=&#34;responsive-image-fallback-text&#34;&gt;Obraz niedostępny&lt;/span&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Standardy ochrony małoletnich - Wesołe Nutki</title>
-      <link>http://localhost:1313/wesole_nutki/pl/standardy-ochrony-maloletnich/</link>
-      <pubDate>Fri, 23 Jan 2026 09:28:26 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/pl/standardy-ochrony-maloletnich/</guid>
-      <description>&lt;p&gt;W naszym przed­szko­lu naj­waż­niej­sze jest, aby każ­de dziec­ko czu­ło się bez­piecz­nie, szczę­śli­wie i oto­czo­ne tro­ską. Dla­te­go wpro­wa­dza­my dodat­ko­we zasa­dy ochro­ny mało­let­nich, któ­re poma­ga­ją nam dbać o ich bez­pie­czeń­stwo i dobro. Choć te zasa­dy wyni­ka­ją z obo­wią­zu­ją­cych prze­pi­sów pra­wa, to przede wszyst­kim są one wyra­zem naszej odpo­wie­dzial­no­ści za dzie­ci, któ­re Pań­stwo nam powierzają.&lt;/p&gt;&#xA;&lt;p&gt;Nasze przed­szko­le jest miej­scem, gdzie każ­de dziec­ko może roz­wi­jać się w atmos­fe­rze zaufa­nia, cie­pła i sza­cun­ku. Dba­my o to, aby nasze wycho­waw­czy­nie i wycho­waw­cy byli odpo­wied­nio przy­go­to­wa­ni i świa­do­mi, jak waż­na jest ochro­na najmłodszych.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Zajęcia dodatkowe 2025/2026 - Wesołe Nutki</title>
-      <link>http://localhost:1313/wesole_nutki/pl/plan-dnia/zajecia-dodatkowe/</link>
-      <pubDate>Fri, 23 Jan 2026 09:28:10 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/pl/plan-dnia/zajecia-dodatkowe/</guid>
-      <description>&lt;p&gt;Oprócz zajęć pro­gra­mo­wych reali­zo­wa­nych w ramach cze­sne­go ofe­ru­je­my zaję­cia dodat­ko­we, pro­wa­dzo­ne w godzi­nach popo­łu­dnio­wych, dodat­ko­wo odpłatne:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;pił­ka nożna&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;sza­chy&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;tań­ce&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;balet&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;warsz­ta­ty bębniarskie&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;robo­kloc­ki&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;dra­ma&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;rozkład-zajęć-popołudniowych-dodatkowo-płatnych-dodamy-niebawem&#34;&gt;Rozkład zajęć popołudniowych, dodatkowo płatnych dodamy niebawem&lt;/h2&gt;</description>
-    </item>
-    <item>
-      <title>Plan tygodniowy - Wesołe Nutki</title>
-      <link>http://localhost:1313/wesole_nutki/pl/plan-zajec/</link>
-      <pubDate>Fri, 23 Jan 2026 09:28:07 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/pl/plan-zajec/</guid>
-      <description>&lt;div class=&#34;schedule-table-wrapper&#34;&gt;&#xA;  &lt;table class=&#34;weekly-schedule-table&#34;&gt;&#xA;    &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;        &lt;th&gt;Grupa&lt;/th&gt;&#xA;        &lt;th&gt;Poniedziałek&lt;/th&gt;&#xA;        &lt;th&gt;Wtorek&lt;/th&gt;&#xA;        &lt;th&gt;Środa&lt;/th&gt;&#xA;        &lt;th&gt;Czwartek&lt;/th&gt;&#xA;        &lt;th&gt;Piątek&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;    &lt;/thead&gt;&#xA;    &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;        &lt;td class=&#34;group-name&#34;&gt;Wiewórki&lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;09:00–09:20&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Logorytmika&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;11:30–11:45&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;j. angielski&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;10:15–10:30&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;j. hiszpański&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;10:00–10:20&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Rytmika&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;11:30–11:45&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;j. angielski&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;10:30–10:45&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;j. angielski&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;09:00–09:20&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Rytmika&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;09:00–09:30&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Gimnastyka&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;        &lt;td class=&#34;group-name&#34;&gt;Motylki&lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;09:20–09:50&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Logorytmika&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;11:45–12:15&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;j. angielski&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;10:35–10:55&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;j. hiszpański&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;10:20–10:50&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Rytmika&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;11:45–12:15&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;j. angielski&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;10:00–10:30&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;j. angielski&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;09:20–09:50&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Rytmika&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;09:30–10:00&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Gimnastyka&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;        &lt;td class=&#34;group-name&#34;&gt;Biedronki&lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;09:50–10:20&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Logorytmika&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;12:15–12:45&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;j. angielski&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;11:00–11:30&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;j. hiszpański&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;10:50–11:20&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Rytmika&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;12:15–12:45&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;j. angielski&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;09:30–10:00&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;j. angielski&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;10:00–10:30&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Gimnastyka&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;12:30–13:00&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Rytmika&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;        &lt;td class=&#34;group-name&#34;&gt;Jeżyki&lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;10:20–10:50&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Logorytmika&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;11:15–11:45&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;j. hiszpański&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;12:45–13:15&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;j. angielski&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;10:30–11:00&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Gimnastyka&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;11:20–11:50&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Rytmika&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;12:45–13:15&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;j. angielski&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;09:00–09:30&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;j. angielski&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;10:30–11:00&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Gimnastyka&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;13:00–13:30&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Rytmika&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr class=&#34;extra-activities&#34;&gt;&#xA;        &lt;td class=&#34;group-name&#34;&gt;Zajęcia dodatkowe&lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;14:00&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Piłka nożna&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;16:00&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Drama&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;12:30&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Lekcje gry na pianinie / lekcje śpiewu&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;16:00&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Drama&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;13:00&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Taniec i Balet&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;14:00&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Bębny&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;        &lt;td&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;14:00&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Szachy&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;          &lt;div class=&#34;activity&#34;&gt;&#xA;            &lt;span class=&#34;time&#34;&gt;14:30&lt;/span&gt;&#xA;            &lt;span class=&#34;name&#34;&gt;Zajęcia artystyczne&lt;/span&gt;&#xA;          &lt;/div&gt;&#xA;        &lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;    &lt;/tbody&gt;&#xA;  &lt;/table&gt;&#xA;&lt;/div&gt;</description>
-    </item>
-    <item>
-      <title>Plan dnia - Wesołe Nutki</title>
-      <link>http://localhost:1313/wesole_nutki/pl/plan-dnia/</link>
-      <pubDate>Fri, 23 Jan 2026 09:28:03 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/pl/plan-dnia/</guid>
-      <description>&lt;h2 id=&#34;630--810&#34;&gt;&lt;strong&gt;6.30 – 8.10&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Scho­dze­nie się dzie­ci do przed­szko­la. Zaba­wy swo­bod­ne w kąci­kach zain­te­re­so­wań. Pra­ca nauczy­cie­li o cha­rak­te­rze korekcyjno–kompensacyjnym, sty­mu­lu­ją­cym, obserwacyjnym.&lt;/p&gt;&#xA;&lt;h2 id=&#34;810--820&#34;&gt;&lt;strong&gt;8.10 – 8.20&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Zaba­wy rucho­we lub ćwi­cze­nia poranne.&lt;/p&gt;&#xA;&lt;h2 id=&#34;820--830&#34;&gt;&lt;strong&gt;8.20 – 8.30&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Przy­go­to­wa­nie do śnia­da­nia, czyn­no­ści porząd­ko­we.  Zabie­gi higieniczne.&lt;/p&gt;&#xA;&lt;h2 id=&#34;830--850&#34;&gt;&lt;strong&gt;8.30 – 8.50&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Śnia­da­nie.&lt;/p&gt;&#xA;&lt;h2 id=&#34;850--900&#34;&gt;&lt;strong&gt;8.50 – 9.00&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Czyn­no­ści samoobsługowe.&lt;/p&gt;&#xA;&lt;h2 id=&#34;900--1130&#34;&gt;&lt;strong&gt;9.00 – 11.30&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Zaję­cia pro­gra­mo­we  inspi­ro­wa­ne przez nauczy­cie­la w celu  wspo­ma­ga­nia roz­wo­ju dzie­ci w sfe­rze języ­ko­wej, poznaw­czej, spo­łecz­nej, arty­stycz­nej, rucho­wej, zdro­wot­nej.  Pobyt na  świe­żym powie­trzu: zaba­wy dowol­ne, zaję­cia rucho­we, spor­to­we, przy­rod­ni­cze, pro­wa­dze­nie obser­wa­cji, wyciecz­ki i spa­ce­ry w celu dydak­tycz­nym lub rekreacyjnym.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Polityka prywatności - Wesołe Nutki</title>
-      <link>http://localhost:1313/wesole_nutki/pl/o-przedszkolu/polityka-prywatnosci/</link>
-      <pubDate>Fri, 23 Jan 2026 09:27:53 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/pl/o-przedszkolu/polityka-prywatnosci/</guid>
-      <description>&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Admi­ni­stra­to­rem danych oso­bo­wych ser­wi­su wesolenutki.eu jest Przed­szko­le Nie­pu­blicz­ne Języ­ko­wo-Muzycz­ne Weso­łe Nut­ki pod zarzą­dem orga­nu pro­wa­dzą­ce­go: Para­fii Ewan­ge­lic­ko-Augs­bur­skiej we Wro­cła­wiu Opatrz­no­ści Bożej, wpi­sa­nej do reje­stru przed­się­bior­ców Cen­tral­nej Ewi­den­cji i Infor­ma­cji o Dzia­łal­no­ści Gospo­dar­czej pod nume­rem NIP: 897–13-69–404 (dalej: Administrator).&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Admi­ni­stra­tor dzia­ła w opar­ciu o wewnętrz­ne pro­ce­du­ry i zale­ce­nia, zgod­ne z odpo­wied­ni­mi akta­mi praw­ny­mi w zakre­sie ochro­ny danych oso­bo­wych, a w szcze­gól­no­ści z Roz­po­rzą­dze­niem Par­la­men­tu Euro­pej­skie­go i Rady (UE) 2016/679 z dnia 27 kwiet­nia 2016 r. w spra­wie ochro­ny osób fizycz­nych w związ­ku z prze­twa­rza­niem danych oso­bo­wych i w spra­wie swo­bod­ne­go prze­pły­wu takich danych oraz uchy­le­nia dyrek­ty­wy 95/46 WE.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Zapisy - Wesołe Nutki</title>
-      <link>http://localhost:1313/wesole_nutki/pl/o-przedszkolu/zapisy/</link>
-      <pubDate>Fri, 23 Jan 2026 09:27:45 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/pl/o-przedszkolu/zapisy/</guid>
-      <description>&lt;p&gt;Wszystkich zainteresowanych zapisaniem swojego dziecka do naszego przedszkola zapraszamy do pobrania karty zgłoszeniowej:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;&#xA;&#xA;&#xA;  &#xA;&lt;a href=&#34;http://localhost:1313/wesole_nutki/documents/karta-zgloszenia.pdf&#34;&gt;Karta Zgłoszenia Dziecka (plik PDF)&lt;/a&gt;&#xA;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Wypełnione i podpisane karty prosimy składać bezpośrednio w przedszkolu.&lt;/p&gt;&#xA;&lt;p&gt;Rekrutacja na kolejny rok szkolny prowadzona jest w lutym i marcu. Do starszych roczników dzieci przyjmowane są w miarę wolnych miejsc.&lt;/p&gt;&#xA;&lt;p&gt;W procesie rekrutacyjnym przeprowadzane jest spotkanie zapoznawcze oraz brana jest pod uwagę kolejność zgłoszeń.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Płatności - Wesołe Nutki</title>
-      <link>http://localhost:1313/wesole_nutki/pl/o-przedszkolu/platnosci/</link>
-      <pubDate>Fri, 23 Jan 2026 09:27:42 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/pl/o-przedszkolu/platnosci/</guid>
-      <description>&lt;p&gt;Płatności należy dokonywać &lt;strong&gt;do 10 dnia każdego miesiąca&lt;/strong&gt; na rachunek bankowy:&lt;/p&gt;&#xA;&lt;p&gt;Przedszkole Niepubliczne Językowo-Muzyczne „Wesołe Nutki&amp;quot;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;ul. Łaciarska 8, 50-104 Wrocław&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Numer rachunku: 56 1020 5242 0000 2102 0260 4536&lt;/p&gt;&#xA;&lt;p&gt;Nazwa Banku: &lt;strong&gt;PKO BP S.A.&lt;/strong&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Cennik - Wesołe Nutki</title>
-      <link>http://localhost:1313/wesole_nutki/pl/o-przedszkolu/cennik/</link>
-      <pubDate>Fri, 23 Jan 2026 09:27:39 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/pl/o-przedszkolu/cennik/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Zasa­dy odpłat­no­ści w roku  2025/2026&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&lt;a href=&#34;https://wesolenutki.eu/wp-content/uploads/2025/09/REGULAMIN-odplatnosci-przedszkole-Wesole-Nutki-2025-2026-2.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;&lt;strong&gt;Regu­la­min opłat&lt;/strong&gt;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;Opła­ta wpi­so­wa wno­szo­na jest jed­no­ra­zo­wo w wyso­ko­ści 900 zł.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Cze­sne wyno­si 900 zło­tych za miesiąc.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Opła­ta za wyży­wie­nie wyno­si 25 zł/dzień die­ty stan­dar­do­wej lub 27 zł/dzień die­ty specjalnej.&lt;/p&gt;&#xA;&lt;p&gt;Cze­sne obej­mu­je zaję­cia pro­gra­mo­we (3 razy w tygo­dniu zaję­cia z języ­ka angiel­skie­go, 2 razy w tygo­dniu gim­na­sty­kę ogól­no­ro­zwo­jo­wą z ele­men­ta­mi korek­ty, 2 razy w tygo­dniu ryt­mi­ka, 1 raz w tygo­dniu logo­ryt­mi­ka) oraz impre­zy orga­ni­zo­wa­ne na tere­nie przed­szko­la, w tym teatrzy­ki i koncerty.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Nasza wizja - Wesołe Nutki</title>
-      <link>http://localhost:1313/wesole_nutki/pl/o-przedszkolu/nasza-wizja/</link>
-      <pubDate>Fri, 23 Jan 2026 09:27:31 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/pl/o-przedszkolu/nasza-wizja/</guid>
-      <description>&lt;p&gt;Chce­my two­rzyć miej­sce przy­ja­zne dzie­ciom, rodzi­com, nauczy­cie­lom oraz pra­cow­ni­kom przed­szko­la. Prio­ry­te­tem dla nas aby dzie­ci w poczu­ciu  bez­pie­czeń­stwa i akcep­ta­cji mogły roz­wi­jać swo­je zain­te­re­so­wa­nia, uczyć się poprzez zaba­wę i dzia­ła­nie, a tak­że zdo­by­wać umie­jęt­no­ści i wie­dzę zgod­nie z indy­wi­du­al­ną dro­gą roz­wo­ju. Naszym celem jest wycho­wa­nie dzie­ci do życia w har­mo­nii z samy­mi sobą, inny­mi ludź­mi i ota­cza­ją­cym świa­tem, przy jed­no­cze­snym przy­go­to­wa­niu ich do roz­po­czę­cia nauki szkolnej.&lt;/p&gt;&#xA;&lt;p&gt;Jeste­śmy świa­do­mi zna­cze­nia kon­tak­tu dzie­ci z natu­rą, dla­te­go korzy­sta­my z każ­dej oka­zji, aby spę­dzać czas w naszym ogro­dzie, któ­ry nie tyl­ko dys­po­nu­je funk­cjo­nal­nym pla­cem zabaw, ale wkrót­ce będzie rów­nież wypo­sa­żo­ny w warzyw­ni­ki pro­wa­dzo­ne przez poszcze­gól­ne grupy.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Zimowe zabawy na śniegu</title>
-      <link>http://localhost:1313/wesole_nutki/pl/news/2025/01/zimowe-zabawy-na-%C5%9Bniegu/</link>
-      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/pl/news/2025/01/zimowe-zabawy-na-%C5%9Bniegu/</guid>
-      <description>Nasze przedszkolaki świetnie bawiły się na śniegu! Zobaczcie zdjęcia z naszych zimowych zabaw.</description>
-    </item>
-    <item>
-      <title>Warsztaty Kulinarne dla Dzieci</title>
-      <link>http://localhost:1313/wesole_nutki/pl/news/2024/11/warsztaty-kulinarne-dla-dzieci/</link>
-      <pubDate>Tue, 05 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/pl/news/2024/11/warsztaty-kulinarne-dla-dzieci/</guid>
-      <description>W listopadzie rozpoczynamy cykl warsztatów kulinarnych dla dzieci. Małe kucharze nauczą się przygotowywać proste i zdrowe posiłki.</description>
-    </item>
-    <item>
-      <title>Jesienny festyn rodzinny</title>
-      <link>http://localhost:1313/wesole_nutki/pl/gallery/jesienny-festyn-2024/</link>
-      <pubDate>Sun, 20 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/pl/gallery/jesienny-festyn-2024/</guid>
-      <description>&lt;p&gt;Nasz coroczny jesienny festyn rodzinny był pełen atrakcji! Wspólnie z rodzicami i dziećmi bawiliśmy się przy muzyce, tworzyliśmy jesienne dekoracje i degustowaliśmy pyszne przysmaki.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Jesienny Piknik Rodzinny</title>
-      <link>http://localhost:1313/wesole_nutki/pl/news/2024/10/jesienny-piknik-rodzinny/</link>
-      <pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/pl/news/2024/10/jesienny-piknik-rodzinny/</guid>
-      <description>Zapraszamy wszystkie rodziny na jesienny piknik w ogrodzie przedszkolnym. Czeka nas wiele atrakcji, konkursów i wspaniała zabawa na świeżym powietrzu.</description>
-    </item>
-    <item>
-      <title>Witamy w Nowym Roku Szkolnym 2024/2025</title>
-      <link>http://localhost:1313/wesole_nutki/pl/news/2024/09/witamy-w-nowym-roku-szkolnym-2024/2025/</link>
-      <pubDate>Mon, 02 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/pl/news/2024/09/witamy-w-nowym-roku-szkolnym-2024/2025/</guid>
-      <description>Z radością witamy wszystkie dzieci i rodziców w nowym roku szkolnym. Przygotowaliśmy wiele atrakcji i nowych aktywności dla naszych małych przedszkolaków.</description>
-    </item>
-    <item>
-      <title>Codzienne zajecia w przedszkolu</title>
-      <link>http://localhost:1313/wesole_nutki/pl/gallery/codzienne-zajecia/</link>
-      <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/pl/gallery/codzienne-zajecia/</guid>
-      <description>&lt;p&gt;Każdy dzień w przedszkolu Wesołe Nutki jest pełen radości i nauki.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Wiosenna wycieczka do parku</title>
-      <link>http://localhost:1313/wesole_nutki/pl/gallery/wiosenna-wycieczka-2024/</link>
-      <pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/pl/gallery/wiosenna-wycieczka-2024/</guid>
-      <description>&lt;p&gt;Nasza wiosenna wycieczka do parku była pełna przygód! Dzieci miały okazję obserwować budzącą się przyrodę, bawić się na świeżym powietrzu i cieszyć się piękną wiosenną pogodą.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Przedstawienie swiateczne</title>
-      <link>http://localhost:1313/wesole_nutki/pl/gallery/swieta-2023/</link>
-      <pubDate>Mon, 18 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/pl/gallery/swieta-2023/</guid>
-      <description>&lt;p&gt;Magiczne przedstawienie świąteczne przygotowane przez nasze przedszkolaki. Dzieci zaprezentowały swoje talenty artystyczne, śpiewając kolędy i odgrywając scenki bożonarodzeniowe.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Wesołe Nutki - Przedszkole Językowo-Muzyczne on Wesołe Nutki - Przedszkole</title><link>https://bartusiak.ai/wesole_nutki/pl/</link><description>Recent content in Wesołe Nutki - Przedszkole Językowo-Muzyczne on Wesołe Nutki - Przedszkole</description><generator>Hugo</generator><language>pl</language><atom:link href="https://bartusiak.ai/wesole_nutki/pl/index.xml" rel="self" type="application/rss+xml"/><item><title>Statut przedszkola</title><link>https://bartusiak.ai/wesole_nutki/pl/documents/statut/</link><pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate><guid>https://bartusiak.ai/wesole_nutki/pl/documents/statut/</guid><description>&lt;h2 id="statut-przedszkola-wesołe-nutki"&gt;Statut przedszkola Wesołe Nutki&lt;/h2&gt;
+&lt;p&gt;Statut określa zasady funkcjonowania przedszkola, prawa i obowiązki dzieci oraz rodziców.&lt;/p&gt;</description></item><item><title>Grupa Maluszki</title><link>https://bartusiak.ai/wesole_nutki/pl/programs/maluszki/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bartusiak.ai/wesole_nutki/pl/programs/maluszki/</guid><description>Pierwszy krok w przygodę przedszkolną. Delikatne wprowadzenie do życia w grupie, rozwój samodzielności i podstawowych umiejętności społecznych.</description></item><item><title>Karta zgłoszenia dziecka</title><link>https://bartusiak.ai/wesole_nutki/pl/documents/karta-zgloszenia/</link><pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate><guid>https://bartusiak.ai/wesole_nutki/pl/documents/karta-zgloszenia/</guid><description>&lt;h2 id="karta-zgłoszenia-dziecka"&gt;Karta zgłoszenia dziecka&lt;/h2&gt;
+&lt;p&gt;Oficjalny formularz zgłoszeniowy dziecka do przedszkola Wesołe Nutki, zgodny z wymogami RODO.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dane osobowe dziecka i rodziców&lt;/li&gt;
+&lt;li&gt;Informacje zdrowotne&lt;/li&gt;
+&lt;li&gt;Zgody i oświadczenia&lt;/li&gt;
+&lt;li&gt;Klauzule RODO&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Grupa Średniaki</title><link>https://bartusiak.ai/wesole_nutki/pl/programs/sredniaki/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bartusiak.ai/wesole_nutki/pl/programs/sredniaki/</guid><description>Rozwijamy ciekawość świata i umiejętności społeczne. Intensywna nauka przez zabawę, rozwijanie kreatywności i budowanie pewności siebie.</description></item><item><title>Polityka prywatności</title><link>https://bartusiak.ai/wesole_nutki/pl/documents/polityka-prywatnosci/</link><pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate><guid>https://bartusiak.ai/wesole_nutki/pl/documents/polityka-prywatnosci/</guid><description>&lt;h2 id="polityka-prywatności"&gt;Polityka prywatności&lt;/h2&gt;
+&lt;p&gt;Przedszkole Wesołe Nutki przywiązuje dużą wagę do ochrony danych osobowych dzieci i rodziców. Dane są przetwarzane zgodnie z RODO.&lt;/p&gt;</description></item><item><title>Grupa Starszaki</title><link>https://bartusiak.ai/wesole_nutki/pl/programs/starszaki/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bartusiak.ai/wesole_nutki/pl/programs/starszaki/</guid><description>Intensywne przygotowanie do nauki szkolnej. Rozwijamy umiejętności czytania, pisania i matematyki przy zachowaniu radości z nauki.</description></item><item><title>Zerówka</title><link>https://bartusiak.ai/wesole_nutki/pl/programs/zer%C3%B3wka/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bartusiak.ai/wesole_nutki/pl/programs/zer%C3%B3wka/</guid><description>Ostatni rok przed szkołą. Kompleksowe przygotowanie do nauki w szkole podstawowej, rozwijanie wszystkich kompetencji kluczowych.</description></item><item><title>Plan Dnia</title><link>https://bartusiak.ai/wesole_nutki/pl/programs/schedule/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bartusiak.ai/wesole_nutki/pl/programs/schedule/</guid><description>&lt;p&gt;Nasz dzień przedszkolny jest starannie zaplanowany, aby zapewnić dzieciom optymalne warunki do nauki, zabawy i odpoczynku. Plan jest elastyczny i dostosowywany do potrzeb poszczególnych grup wiekowych.&lt;/p&gt;</description></item><item><title>Pracuj z Wesołymi Nutkami! - Wesołe Nutki</title><link>https://bartusiak.ai/wesole_nutki/pl/2023/01/30/pracuj-z-wesolymi-nutkami/</link><pubDate>Fri, 23 Jan 2026 09:29:08 +0000</pubDate><guid>https://bartusiak.ai/wesole_nutki/pl/2023/01/30/pracuj-z-wesolymi-nutkami/</guid><description>Szukamy nauczyciela wychowania przedszkolnego! Praca w małych grupach, elastyczne warunki i wsparcie doświadczonej kadry w sercu Wrocławia.</description></item><item><title>Warsztaty ekologiczne - Wesołe Nutki</title><link>https://bartusiak.ai/wesole_nutki/pl/2025/06/03/warsztaty-ekologiczne/</link><pubDate>Fri, 23 Jan 2026 09:28:57 +0000</pubDate><guid>https://bartusiak.ai/wesole_nutki/pl/2025/06/03/warsztaty-ekologiczne/</guid><description>&lt;p&gt;Ostat­nio nasze przed­szko­la­ki mia­ły oka­zję wziąć udział w eko­lo­gicz­nych warsz­ta­tach rzeź­biar­skich zor­ga­ni­zo­wa­nych przez Gale­rię Nic­po­niej. Dzię­ku­je­my za współ­pra­cę i zapro­sze­nie!
+To była wyjąt­ko­wa oka­zja do twór­cze­go dzia­ła­nia w duchu eko­lo­gii i wspól­ne­go spę­dze­nia czasu.&lt;/p&gt;
+&lt;p&gt;
+
+
+&lt;div class="responsive-image-wrapper"&gt;
+ &lt;img src="https://bartusiak.ai/wesole_nutki/images/scraped/2025-06-03-warsztaty-ekologiczne-0.png" alt="Warsztaty ekologiczne - Wesołe Nutki — zdjęcie 1" class="markdown-image responsive-image-main" 
+ loading="lazy" fetchpriority="auto" decoding="async"
+ onerror="this.parentElement.classList.add('image-error'); this.onerror=null;"&gt;
+
+ 
+ &lt;div class="responsive-image-fallback" aria-hidden="true"&gt;
+ &lt;svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 16 16"&gt;
+ &lt;path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" /&gt;
+ &lt;path
+ d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z" /&gt;
+ &lt;/svg&gt;
+ &lt;span class="responsive-image-fallback-text"&gt;Obraz niedostępny&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/p&gt;</description></item><item><title>Muzyka na żywo w przedszkolu - Wesołe Nutki</title><link>https://bartusiak.ai/wesole_nutki/pl/2025/06/10/muzyka-na-zywo-w-przedszkolu/</link><pubDate>Fri, 23 Jan 2026 09:28:53 +0000</pubDate><guid>https://bartusiak.ai/wesole_nutki/pl/2025/06/10/muzyka-na-zywo-w-przedszkolu/</guid><description>&lt;p&gt;W minio­nym roku szkol­nym nasze przed­szko­la­ki regu­lar­nie uczest­ni­czy­ły w kon­cer­tach z cyklu „W kra­inie Pani Muzy­ki”, orga­ni­zo­wa­nych przez Lubu­skie Biu­ro Kon­cer­to­we „Orfe­usz”.&lt;/p&gt;
+&lt;p&gt;Były to wyjąt­ko­we spo­tka­nia z muzy­ką na żywo, pro­wa­dzo­ne przez pro­fe­sjo­nal­nych muzy­ków i muzy­ko­lo­gów. Dzie­ci mia­ły oka­zję poznać ponad 35 instru­men­tów, posłu­chać róż­no­rod­nych utwo­rów – tak­że muzy­ki kla­sycz­nej – oraz aktyw­nie uczest­ni­czyć w kon­cer­tach poprzez taniec, śpiew i zabawę.&lt;/p&gt;
+&lt;p&gt;To nie tyl­ko war­to­ścio­we doświad­cze­nie arty­stycz­ne, ale też wspa­nia­ła przy­go­da edu­ka­cyj­na – peł­na rado­ści, śmie­chu i zachwytu.&lt;/p&gt;</description></item><item><title>Międzynarodowy Dzień Kropki - Wesołe Nutki</title><link>https://bartusiak.ai/wesole_nutki/pl/2025/09/15/miedzynarodowy-dzien-kropki/</link><pubDate>Fri, 23 Jan 2026 09:28:48 +0000</pubDate><guid>https://bartusiak.ai/wesole_nutki/pl/2025/09/15/miedzynarodowy-dzien-kropki/</guid><description>&lt;p&gt;🎉 Dziś w naszym przed­szko­lu świę­to­wa­li­śmy Mię­dzy­na­ro­do­wy Dzień Kropki!&lt;/p&gt;
+&lt;p&gt;Były opo­wia­da­nia, roz­mo­wy o tym, czym jest krop­ka, „krop­ko­wy taniec” i twór­cze pra­ce pla­stycz­ne. Dzie­ci mia­ły oka­zję roz­wi­jać swo­ją kre­atyw­ność, spraw­ność i odkry­wać, że każ­da mała krop­ka może być począt­kiem cze­goś wyjątkowego ✨&lt;/p&gt;
+&lt;p&gt;
+
+
+&lt;div class="responsive-image-wrapper"&gt;
+ &lt;img src="https://bartusiak.ai/wesole_nutki/images/scraped/2025-09-15-miedzynarodowy-dzien-kropki-0.jpeg" alt="Międzynarodowy Dzień Kropki - Wesołe Nutki — zdjęcie 1" class="markdown-image responsive-image-main" 
+ loading="lazy" fetchpriority="auto" decoding="async"
+ onerror="this.parentElement.classList.add('image-error'); this.onerror=null;"&gt;
+
+ 
+ &lt;div class="responsive-image-fallback" aria-hidden="true"&gt;
+ &lt;svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 16 16"&gt;
+ &lt;path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" /&gt;
+ &lt;path
+ d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z" /&gt;
+ &lt;/svg&gt;
+ &lt;span class="responsive-image-fallback-text"&gt;Obraz niedostępny&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/p&gt;</description></item><item><title>Pierwszy jesienny spacer - Wesołe Nutki</title><link>https://bartusiak.ai/wesole_nutki/pl/2025/09/26/spacer/</link><pubDate>Fri, 23 Jan 2026 09:28:44 +0000</pubDate><guid>https://bartusiak.ai/wesole_nutki/pl/2025/09/26/spacer/</guid><description>&lt;p&gt;Pierw­sze­go dnia jesie­ni wszyst­kie gru­py wybra­ły się na wspól­ny spa­cer, aby poszu­kać oznak tej pięk­nej pory roku w naszej okolicy 🍁🍁&lt;/p&gt;
+&lt;p&gt;
+
+
+&lt;div class="responsive-image-wrapper"&gt;
+ &lt;img src="https://bartusiak.ai/wesole_nutki/images/scraped/2025-09-26-spacer-0.jpeg" alt="Pierwszy jesienny spacer - Wesołe Nutki — zdjęcie 1" class="markdown-image responsive-image-main" 
+ loading="lazy" fetchpriority="auto" decoding="async"
+ onerror="this.parentElement.classList.add('image-error'); this.onerror=null;"&gt;
+
+ 
+ &lt;div class="responsive-image-fallback" aria-hidden="true"&gt;
+ &lt;svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 16 16"&gt;
+ &lt;path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" /&gt;
+ &lt;path
+ d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z" /&gt;
+ &lt;/svg&gt;
+ &lt;span class="responsive-image-fallback-text"&gt;Obraz niedostępny&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/p&gt;</description></item><item><title>Międzynarodowy Dzień Muzyki - Wesołe Nutki</title><link>https://bartusiak.ai/wesole_nutki/pl/2025/10/07/miedzynarodowy-dzien-muzyki/</link><pubDate>Fri, 23 Jan 2026 09:28:39 +0000</pubDate><guid>https://bartusiak.ai/wesole_nutki/pl/2025/10/07/miedzynarodowy-dzien-muzyki/</guid><description>&lt;p&gt;🎵 Tak świę­to­wa­li­śmy Mię­dzy­na­ro­do­wy Dzień Muzy­ki – w Nut­kach było jesz­cze tro­chę bar­dziej muzycz­nie niż zwykle 😊&lt;/p&gt;
+&lt;p&gt;
+
+
+&lt;div class="responsive-image-wrapper"&gt;
+ &lt;img src="https://bartusiak.ai/wesole_nutki/images/scraped/2025-10-07-miedzynarodowy-dzien-muzyki-0.jpeg" alt="Międzynarodowy Dzień Muzyki - Wesołe Nutki — zdjęcie 1" class="markdown-image responsive-image-main" 
+ loading="lazy" fetchpriority="auto" decoding="async"
+ onerror="this.parentElement.classList.add('image-error'); this.onerror=null;"&gt;
+
+ 
+ &lt;div class="responsive-image-fallback" aria-hidden="true"&gt;
+ &lt;svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 16 16"&gt;
+ &lt;path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" /&gt;
+ &lt;path
+ d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z" /&gt;
+ &lt;/svg&gt;
+ &lt;span class="responsive-image-fallback-text"&gt;Obraz niedostępny&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/p&gt;</description></item><item><title>Koncert - Wesołe Nutki</title><link>https://bartusiak.ai/wesole_nutki/pl/2025/10/27/koncert/</link><pubDate>Fri, 23 Jan 2026 09:28:34 +0000</pubDate><guid>https://bartusiak.ai/wesole_nutki/pl/2025/10/27/koncert/</guid><description>&lt;p&gt;W naszym przed­szko­lu &lt;strong&gt;regu­lar­nie odby­wa­ją się kon­cer­ty z muzy­ką na żywo&lt;/strong&gt;, któ­re pozwa­la­ją dzie­ciom pozna­wać instru­men­ty i roz­wi­jać wraż­li­wość muzyczną. 💛&lt;/p&gt;
+&lt;p&gt;Ostat­nio mie­li­śmy oka­zję uczest­ni­czyć w pięk­nym kon­cer­cie pt. &lt;em&gt;„Pan Malusz­kie­wicz na morzu peł­nym dźwię­ków”&lt;/em&gt; w wyko­na­niu &lt;strong&gt;Lubu­skie­go Biu­ra Kon­cer­to­we­go „Orfe­usz“&lt;/strong&gt;. 🌊🎵&lt;/p&gt;
+&lt;p&gt;
+
+
+&lt;div class="responsive-image-wrapper"&gt;
+ &lt;img src="https://bartusiak.ai/wesole_nutki/images/scraped/2025-10-27-koncert-0.jpeg" alt="Koncert - Wesołe Nutki — zdjęcie 1" class="markdown-image responsive-image-main" 
+ loading="lazy" fetchpriority="auto" decoding="async"
+ onerror="this.parentElement.classList.add('image-error'); this.onerror=null;"&gt;
+
+ 
+ &lt;div class="responsive-image-fallback" aria-hidden="true"&gt;
+ &lt;svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 16 16"&gt;
+ &lt;path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" /&gt;
+ &lt;path
+ d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z" /&gt;
+ &lt;/svg&gt;
+ &lt;span class="responsive-image-fallback-text"&gt;Obraz niedostępny&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/p&gt;</description></item><item><title>Standardy ochrony małoletnich - Wesołe Nutki</title><link>https://bartusiak.ai/wesole_nutki/pl/standardy-ochrony-maloletnich/</link><pubDate>Fri, 23 Jan 2026 09:28:26 +0000</pubDate><guid>https://bartusiak.ai/wesole_nutki/pl/standardy-ochrony-maloletnich/</guid><description>&lt;p&gt;W naszym przed­szko­lu naj­waż­niej­sze jest, aby każ­de dziec­ko czu­ło się bez­piecz­nie, szczę­śli­wie i oto­czo­ne tro­ską. Dla­te­go wpro­wa­dza­my dodat­ko­we zasa­dy ochro­ny mało­let­nich, któ­re poma­ga­ją nam dbać o ich bez­pie­czeń­stwo i dobro. Choć te zasa­dy wyni­ka­ją z obo­wią­zu­ją­cych prze­pi­sów pra­wa, to przede wszyst­kim są one wyra­zem naszej odpo­wie­dzial­no­ści za dzie­ci, któ­re Pań­stwo nam powierzają.&lt;/p&gt;
+&lt;p&gt;Nasze przed­szko­le jest miej­scem, gdzie każ­de dziec­ko może roz­wi­jać się w atmos­fe­rze zaufa­nia, cie­pła i sza­cun­ku. Dba­my o to, aby nasze wycho­waw­czy­nie i wycho­waw­cy byli odpo­wied­nio przy­go­to­wa­ni i świa­do­mi, jak waż­na jest ochro­na najmłodszych.&lt;/p&gt;</description></item><item><title>Zajęcia dodatkowe 2025/2026 - Wesołe Nutki</title><link>https://bartusiak.ai/wesole_nutki/pl/plan-dnia/zajecia-dodatkowe/</link><pubDate>Fri, 23 Jan 2026 09:28:10 +0000</pubDate><guid>https://bartusiak.ai/wesole_nutki/pl/plan-dnia/zajecia-dodatkowe/</guid><description>&lt;p&gt;Oprócz zajęć pro­gra­mo­wych reali­zo­wa­nych w ramach cze­sne­go ofe­ru­je­my zaję­cia dodat­ko­we, pro­wa­dzo­ne w godzi­nach popo­łu­dnio­wych, dodat­ko­wo odpłatne:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;pił­ka nożna&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;sza­chy&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;tań­ce&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;balet&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;warsz­ta­ty bębniarskie&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;robo­kloc­ki&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;dra­ma&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="rozkład-zajęć-popołudniowych-dodatkowo-płatnych-dodamy-niebawem"&gt;Rozkład zajęć popołudniowych, dodatkowo płatnych dodamy niebawem&lt;/h2&gt;</description></item><item><title>Plan tygodniowy - Wesołe Nutki</title><link>https://bartusiak.ai/wesole_nutki/pl/plan-zajec/</link><pubDate>Fri, 23 Jan 2026 09:28:07 +0000</pubDate><guid>https://bartusiak.ai/wesole_nutki/pl/plan-zajec/</guid><description>&lt;div class="schedule-table-wrapper" tabindex="0" role="region" aria-label="Tygodniowy plan zajęć"&gt;
+ &lt;table class="weekly-schedule-table"&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Grupa&lt;/th&gt;
+ &lt;th&gt;Poniedziałek&lt;/th&gt;
+ &lt;th&gt;Wtorek&lt;/th&gt;
+ &lt;th&gt;Środa&lt;/th&gt;
+ &lt;th&gt;Czwartek&lt;/th&gt;
+ &lt;th&gt;Piątek&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td class="group-name"&gt;Wiewórki&lt;/td&gt;
+ &lt;td&gt;
+ &lt;div class="activity"&gt;
+ &lt;span class="time"&gt;09:00–09:20&lt;/span&gt;
+ &lt;span class="name"&gt;Logorytmika&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div class="activity"&gt;
+ &lt;span class="time"&gt;11:30–11:45&lt;/span&gt;
+ &lt;span class="name"&gt;j. angielski&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/td&gt;
+ &lt;td&gt;
+ &lt;div class="activity"&gt;
+ &lt;span class="time"&gt;10:15–10:30&lt;/span&gt;
+ &lt;span class="name"&gt;j. hiszpański&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/td&gt;
+ &lt;td&gt;
+ &lt;div class="activity"&gt;
+ &lt;span class="time"&gt;10:00–10:20&lt;/span&gt;
+ &lt;span class="name"&gt;Rytmika&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div class="activity"&gt;
+ &lt;span class="time"&gt;11:30–11:45&lt;/span&gt;
+ &lt;span class="name"&gt;j. angielski&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/td&gt;
+ &lt;td&gt;
+ &lt;div class="activity"&gt;
+ &lt;span class="time"&gt;10:30–10:45&lt;/span&gt;
+ &lt;span class="name"&gt;j. angielski&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div class="activity"&gt;
+ &lt;span class="time"&gt;09:00–09:20&lt;/span&gt;
+ &lt;span class="name"&gt;Rytmika&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/td&gt;
+ &lt;td&gt;
+ &lt;div class="activity"&gt;
+ &lt;span class="time"&gt;09:00–09:30&lt;/span&gt;
+ &lt;span class="name"&gt;Gimnastyka&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td class="group-name"&gt;Motylki&lt;/td&gt;
+ &lt;td&gt;
+ &lt;div class="activity"&gt;
+ &lt;span class="time"&gt;09:20–09:50&lt;/span&gt;
+ &lt;span class="name"&gt;Logorytmika&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div class="activity"&gt;
+ &lt;span class="time"&gt;11:45–12:15&lt;/span&gt;
+ &lt;span class="name"&gt;j. angielski&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/td&gt;
+ &lt;td&gt;
+ &lt;div class="activity"&gt;
+ &lt;span class="time"&gt;10:35–10:55&lt;/span&gt;
+ &lt;span class="name"&gt;j. hiszpański&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/td&gt;
+ &lt;td&gt;
+ &lt;div class="activity"&gt;
+ &lt;span class="time"&gt;10:20–10:50&lt;/span&gt;
+ &lt;span class="name"&gt;Rytmika&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div class="activity"&gt;
+ &lt;span class="time"&gt;11:45–12:15&lt;/span&gt;
+ &lt;span class="name"&gt;j. angielski&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/td&gt;
+ &lt;td&gt;
+ &lt;div class="activity"&gt;
+ &lt;span class="time"&gt;10:00–10:30&lt;/span&gt;
+ &lt;span class="name"&gt;j. angielski&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div class="activity"&gt;
+ &lt;span class="time"&gt;09:20–09:50&lt;/span&gt;
+ &lt;span class="name"&gt;Rytmika&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/td&gt;
+ &lt;td&gt;
+ &lt;div class="activity"&gt;
+ &lt;span class="time"&gt;09:30–10:00&lt;/span&gt;
+ &lt;span class="name"&gt;Gimnastyka&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td class="group-name"&gt;Biedronki&lt;/td&gt;
+ &lt;td&gt;
+ &lt;div class="activity"&gt;
+ &lt;span class="time"&gt;09:50–10:20&lt;/span&gt;
+ &lt;span class="name"&gt;Logorytmika&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div class="activity"&gt;
+ &lt;span class="time"&gt;12:15–12:45&lt;/span&gt;
+ &lt;span class="name"&gt;j. angielski&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/td&gt;
+ &lt;td&gt;
+ &lt;div class="activity"&gt;
+ &lt;span class="time"&gt;11:00–11:30&lt;/span&gt;
+ &lt;span class="name"&gt;j. hiszpański&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/td&gt;
+ &lt;td&gt;
+ &lt;div class="activity"&gt;
+ &lt;span class="time"&gt;10:50–11:20&lt;/span&gt;
+ &lt;span class="name"&gt;Rytmika&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div class="activity"&gt;
+ &lt;span class="time"&gt;12:15–12:45&lt;/span&gt;
+ &lt;span class="name"&gt;j. angielski&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/td&gt;
+ &lt;td&gt;
+ &lt;div class="activity"&gt;
+ &lt;span class="time"&gt;09:30–10:00&lt;/span&gt;
+ &lt;span class="name"&gt;j. angielski&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/td&gt;
+ &lt;td&gt;
+ &lt;div class="activity"&gt;
+ &lt;span class="time"&gt;10:00–10:30&lt;/span&gt;
+ &lt;span class="name"&gt;Gimnastyka&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div class="activity"&gt;
+ &lt;span class="time"&gt;12:30–13:00&lt;/span&gt;
+ &lt;span class="name"&gt;Rytmika&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td class="group-name"&gt;Jeżyki&lt;/td&gt;
+ &lt;td&gt;
+ &lt;div class="activity"&gt;
+ &lt;span class="time"&gt;10:20–10:50&lt;/span&gt;
+ &lt;span class="name"&gt;Logorytmika&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div class="activity"&gt;
+ &lt;span class="time"&gt;11:15–11:45&lt;/span&gt;
+ &lt;span class="name"&gt;j. hiszpański&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div class="activity"&gt;
+ &lt;span class="time"&gt;12:45–13:15&lt;/span&gt;
+ &lt;span class="name"&gt;j. angielski&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/td&gt;
+ &lt;td&gt;
+ &lt;div class="activity"&gt;
+ &lt;span class="time"&gt;10:30–11:00&lt;/span&gt;
+ &lt;span class="name"&gt;Gimnastyka&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/td&gt;
+ &lt;td&gt;
+ &lt;div class="activity"&gt;
+ &lt;span class="time"&gt;11:20–11:50&lt;/span&gt;
+ &lt;span class="name"&gt;Rytmika&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div class="activity"&gt;
+ &lt;span class="time"&gt;12:45–13:15&lt;/span&gt;
+ &lt;span class="name"&gt;j. angielski&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/td&gt;
+ &lt;td&gt;
+ &lt;div class="activity"&gt;
+ &lt;span class="time"&gt;09:00–09:30&lt;/span&gt;
+ &lt;span class="name"&gt;j. angielski&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/td&gt;
+ &lt;td&gt;
+ &lt;div class="activity"&gt;
+ &lt;span class="time"&gt;10:30–11:00&lt;/span&gt;
+ &lt;span class="name"&gt;Gimnastyka&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div class="activity"&gt;
+ &lt;span class="time"&gt;13:00–13:30&lt;/span&gt;
+ &lt;span class="name"&gt;Rytmika&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr class="extra-activities"&gt;
+ &lt;td class="group-name"&gt;Zajęcia dodatkowe&lt;/td&gt;
+ &lt;td&gt;
+ &lt;div class="activity"&gt;
+ &lt;span class="time"&gt;14:00&lt;/span&gt;
+ &lt;span class="name"&gt;Piłka nożna&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div class="activity"&gt;
+ &lt;span class="time"&gt;16:00&lt;/span&gt;
+ &lt;span class="name"&gt;Drama&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/td&gt;
+ &lt;td&gt;
+ &lt;div class="activity"&gt;
+ &lt;span class="time"&gt;12:30&lt;/span&gt;
+ &lt;span class="name"&gt;Lekcje gry na pianinie / lekcje śpiewu&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div class="activity"&gt;
+ &lt;span class="time"&gt;16:00&lt;/span&gt;
+ &lt;span class="name"&gt;Drama&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/td&gt;
+ &lt;td&gt;
+ &lt;div class="activity"&gt;
+ &lt;span class="time"&gt;13:00&lt;/span&gt;
+ &lt;span class="name"&gt;Taniec i Balet&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/td&gt;
+ &lt;td&gt;
+ &lt;div class="activity"&gt;
+ &lt;span class="time"&gt;14:00&lt;/span&gt;
+ &lt;span class="name"&gt;Bębny&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/td&gt;
+ &lt;td&gt;
+ &lt;div class="activity"&gt;
+ &lt;span class="time"&gt;14:00&lt;/span&gt;
+ &lt;span class="name"&gt;Szachy&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div class="activity"&gt;
+ &lt;span class="time"&gt;14:30&lt;/span&gt;
+ &lt;span class="name"&gt;Zajęcia artystyczne&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+ &lt;/table&gt;
+&lt;/div&gt;</description></item><item><title>Plan dnia - Wesołe Nutki</title><link>https://bartusiak.ai/wesole_nutki/pl/plan-dnia/</link><pubDate>Fri, 23 Jan 2026 09:28:03 +0000</pubDate><guid>https://bartusiak.ai/wesole_nutki/pl/plan-dnia/</guid><description>&lt;h2 id="630--810"&gt;&lt;strong&gt;6.30 – 8.10&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Scho­dze­nie się dzie­ci do przed­szko­la. Zaba­wy swo­bod­ne w kąci­kach zain­te­re­so­wań. Pra­ca nauczy­cie­li o cha­rak­te­rze korekcyjno–kompensacyjnym, sty­mu­lu­ją­cym, obserwacyjnym.&lt;/p&gt;
+&lt;h2 id="810--820"&gt;&lt;strong&gt;8.10 – 8.20&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Zaba­wy rucho­we lub ćwi­cze­nia poranne.&lt;/p&gt;
+&lt;h2 id="820--830"&gt;&lt;strong&gt;8.20 – 8.30&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Przy­go­to­wa­nie do śnia­da­nia, czyn­no­ści porząd­ko­we. Zabie­gi higieniczne.&lt;/p&gt;
+&lt;h2 id="830--850"&gt;&lt;strong&gt;8.30 – 8.50&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Śnia­da­nie.&lt;/p&gt;
+&lt;h2 id="850--900"&gt;&lt;strong&gt;8.50 – 9.00&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Czyn­no­ści samoobsługowe.&lt;/p&gt;
+&lt;h2 id="900--1130"&gt;&lt;strong&gt;9.00 – 11.30&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Zaję­cia pro­gra­mo­we inspi­ro­wa­ne przez nauczy­cie­la w celu wspo­ma­ga­nia roz­wo­ju dzie­ci w sfe­rze języ­ko­wej, poznaw­czej, spo­łecz­nej, arty­stycz­nej, rucho­wej, zdro­wot­nej. Pobyt na świe­żym powie­trzu: zaba­wy dowol­ne, zaję­cia rucho­we, spor­to­we, przy­rod­ni­cze, pro­wa­dze­nie obser­wa­cji, wyciecz­ki i spa­ce­ry w celu dydak­tycz­nym lub rekreacyjnym.&lt;/p&gt;</description></item><item><title>Polityka prywatności - Wesołe Nutki</title><link>https://bartusiak.ai/wesole_nutki/pl/o-przedszkolu/polityka-prywatnosci/</link><pubDate>Fri, 23 Jan 2026 09:27:53 +0000</pubDate><guid>https://bartusiak.ai/wesole_nutki/pl/o-przedszkolu/polityka-prywatnosci/</guid><description>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Admi­ni­stra­to­rem danych oso­bo­wych ser­wi­su wesolenutki.eu jest Przed­szko­le Nie­pu­blicz­ne Języ­ko­wo-Muzycz­ne Weso­łe Nut­ki pod zarzą­dem orga­nu pro­wa­dzą­ce­go: Para­fii Ewan­ge­lic­ko-Augs­bur­skiej we Wro­cła­wiu Opatrz­no­ści Bożej, wpi­sa­nej do reje­stru przed­się­bior­ców Cen­tral­nej Ewi­den­cji i Infor­ma­cji o Dzia­łal­no­ści Gospo­dar­czej pod nume­rem NIP: 897–13-69–404 (dalej: Administrator).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Admi­ni­stra­tor dzia­ła w opar­ciu o wewnętrz­ne pro­ce­du­ry i zale­ce­nia, zgod­ne z odpo­wied­ni­mi akta­mi praw­ny­mi w zakre­sie ochro­ny danych oso­bo­wych, a w szcze­gól­no­ści z Roz­po­rzą­dze­niem Par­la­men­tu Euro­pej­skie­go i Rady (UE) 2016/679 z dnia 27 kwiet­nia 2016 r. w spra­wie ochro­ny osób fizycz­nych w związ­ku z prze­twa­rza­niem danych oso­bo­wych i w spra­wie swo­bod­ne­go prze­pły­wu takich danych oraz uchy­le­nia dyrek­ty­wy 95/46 WE.&lt;/p&gt;</description></item><item><title>Zapisy - Wesołe Nutki</title><link>https://bartusiak.ai/wesole_nutki/pl/o-przedszkolu/zapisy/</link><pubDate>Fri, 23 Jan 2026 09:27:45 +0000</pubDate><guid>https://bartusiak.ai/wesole_nutki/pl/o-przedszkolu/zapisy/</guid><description>&lt;p&gt;Cieszymy się, że rozważacie Wesołe Nutki dla swojego dziecka. Zapisy są proste, a my jesteśmy do Waszej dyspozycji na każdym kroku — oto jak to wygląda:&lt;/p&gt;
+&lt;div class="enroll-steps"&gt;
+ &lt;div class="enroll-step"&gt;
+ &lt;span class="enroll-step__num" aria-hidden="true"&gt;1&lt;/span&gt;
+ &lt;h2&gt;Zadzwoń lub napisz&lt;/h2&gt;
+ &lt;p&gt;Zadzwoń pod &lt;a href="tel:713431899"&gt;71&amp;nbsp;343&amp;nbsp;18&amp;nbsp;99&lt;/a&gt; lub napisz na &lt;a href="mailto:przedszkole@wesolenutki.eu"&gt;przedszkole@wesolenutki.eu&lt;/a&gt;. Odpowiemy na wszystkie pytania i umówimy termin wizyty.&lt;/p&gt;
+ &lt;/div&gt;
+ &lt;div class="enroll-step"&gt;
+ &lt;span class="enroll-step__num" aria-hidden="true"&gt;2&lt;/span&gt;
+ &lt;h2&gt;Umów wizytę i poznaj nas&lt;/h2&gt;
+ &lt;p&gt;Zapraszamy na spotkanie zapoznawcze — zobaczycie sale, poznacie kadrę i codzienny rytm dnia, w którym muzyka i angielski są zawsze obecne.&lt;/p&gt;</description></item><item><title>Płatności - Wesołe Nutki</title><link>https://bartusiak.ai/wesole_nutki/pl/o-przedszkolu/platnosci/</link><pubDate>Fri, 23 Jan 2026 09:27:42 +0000</pubDate><guid>https://bartusiak.ai/wesole_nutki/pl/o-przedszkolu/platnosci/</guid><description>&lt;p&gt;Płatności należy dokonywać &lt;strong&gt;do 10 dnia każdego miesiąca&lt;/strong&gt; na rachunek bankowy:&lt;/p&gt;
+&lt;p&gt;Przedszkole Niepubliczne Językowo-Muzyczne „Wesołe Nutki&amp;quot;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ul. Łaciarska 8, 50-104 Wrocław&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Numer rachunku: 56 1020 5242 0000 2102 0260 4536&lt;/p&gt;
+&lt;p&gt;Nazwa Banku: &lt;strong&gt;PKO BP S.A.&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Cennik - Wesołe Nutki</title><link>https://bartusiak.ai/wesole_nutki/pl/o-przedszkolu/cennik/</link><pubDate>Fri, 23 Jan 2026 09:27:39 +0000</pubDate><guid>https://bartusiak.ai/wesole_nutki/pl/o-przedszkolu/cennik/</guid><description>&lt;p&gt;&lt;strong&gt;Zasa­dy odpłat­no­ści w roku 2025/2026&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="https://wesolenutki.eu/wp-content/uploads/2025/09/REGULAMIN-odplatnosci-przedszkole-Wesole-Nutki-2025-2026-2.pdf" target="_blank" rel="noopener noreferrer"&gt;&lt;strong&gt;Regu­la­min opłat&lt;/strong&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;Opła­ta wpi­so­wa wno­szo­na jest jed­no­ra­zo­wo w wyso­ko­ści 900 zł.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Cze­sne wyno­si 900 zło­tych za miesiąc.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Opła­ta za wyży­wie­nie wyno­si 25 zł/dzień die­ty stan­dar­do­wej lub 27 zł/dzień die­ty specjalnej.&lt;/p&gt;
+&lt;p&gt;Cze­sne obej­mu­je zaję­cia pro­gra­mo­we (3 razy w tygo­dniu zaję­cia z języ­ka angiel­skie­go, 2 razy w tygo­dniu gim­na­sty­kę ogól­no­ro­zwo­jo­wą z ele­men­ta­mi korek­ty, 2 razy w tygo­dniu ryt­mi­ka, 1 raz w tygo­dniu logo­ryt­mi­ka) oraz impre­zy orga­ni­zo­wa­ne na tere­nie przed­szko­la, w tym teatrzy­ki i koncerty.&lt;/p&gt;</description></item><item><title>Nasza wizja - Wesołe Nutki</title><link>https://bartusiak.ai/wesole_nutki/pl/o-przedszkolu/nasza-wizja/</link><pubDate>Fri, 23 Jan 2026 09:27:31 +0000</pubDate><guid>https://bartusiak.ai/wesole_nutki/pl/o-przedszkolu/nasza-wizja/</guid><description>&lt;p&gt;Chcemy tworzyć miejsce przyjazne dzieciom, rodzicom, nauczycielom i pracownikom przedszkola. Zależy nam, aby dzieci w atmosferze bezpieczeństwa i akceptacji mogły rozwijać zainteresowania, uczyć się poprzez zabawę i działanie oraz zdobywać umiejętności zgodnie z własną drogą rozwoju.&lt;/p&gt;
+&lt;p&gt;Wiemy, jak ważny jest kontakt z naturą. Korzystamy z każdej okazji, aby spędzać czas w naszym ogrodzie z funkcjonalnym placem zabaw i przestrzenią do wspólnej uprawy roślin.&lt;/p&gt;
+&lt;p&gt;Przedszkole Wesołe Nutki znajduje się w sercu Wrocławia. Dzięki temu współpracujemy z instytucjami kultury, takimi jak Teatr Muzyczny Capitol, Wrocławski Teatr Lalek czy Opera Wrocławska, organizujemy wycieczki i aktywnie uczestniczymy w życiu miasta.&lt;/p&gt;</description></item><item><title>Zimowe zabawy na śniegu</title><link>https://bartusiak.ai/wesole_nutki/pl/news/2025/01/zimowe-zabawy-na-%C5%9Bniegu/</link><pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate><guid>https://bartusiak.ai/wesole_nutki/pl/news/2025/01/zimowe-zabawy-na-%C5%9Bniegu/</guid><description>Nasze przedszkolaki świetnie bawiły się na śniegu! Zobaczcie zdjęcia z naszych zimowych zabaw.</description></item><item><title>Warsztaty Kulinarne dla Dzieci</title><link>https://bartusiak.ai/wesole_nutki/pl/news/2024/11/warsztaty-kulinarne-dla-dzieci/</link><pubDate>Tue, 05 Nov 2024 00:00:00 +0000</pubDate><guid>https://bartusiak.ai/wesole_nutki/pl/news/2024/11/warsztaty-kulinarne-dla-dzieci/</guid><description>W listopadzie rozpoczynamy cykl warsztatów kulinarnych dla dzieci. Małe kucharze nauczą się przygotowywać proste i zdrowe posiłki.</description></item><item><title>Jesienny festyn rodzinny</title><link>https://bartusiak.ai/wesole_nutki/pl/gallery/jesienny-festyn-2024/</link><pubDate>Sun, 20 Oct 2024 00:00:00 +0000</pubDate><guid>https://bartusiak.ai/wesole_nutki/pl/gallery/jesienny-festyn-2024/</guid><description>&lt;p&gt;Nasz coroczny jesienny festyn rodzinny był pełen atrakcji! Wspólnie z rodzicami i dziećmi bawiliśmy się przy muzyce, tworzyliśmy jesienne dekoracje i degustowaliśmy pyszne przysmaki.&lt;/p&gt;</description></item><item><title>Jesienny Piknik Rodzinny</title><link>https://bartusiak.ai/wesole_nutki/pl/news/2024/10/jesienny-piknik-rodzinny/</link><pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate><guid>https://bartusiak.ai/wesole_nutki/pl/news/2024/10/jesienny-piknik-rodzinny/</guid><description>Zapraszamy wszystkie rodziny na jesienny piknik w ogrodzie przedszkolnym. Czeka nas wiele atrakcji, konkursów i wspaniała zabawa na świeżym powietrzu.</description></item><item><title>Witamy w Nowym Roku Szkolnym 2024/2025</title><link>https://bartusiak.ai/wesole_nutki/pl/news/2024/09/witamy-w-nowym-roku-szkolnym-2024/2025/</link><pubDate>Mon, 02 Sep 2024 00:00:00 +0000</pubDate><guid>https://bartusiak.ai/wesole_nutki/pl/news/2024/09/witamy-w-nowym-roku-szkolnym-2024/2025/</guid><description>Z radością witamy wszystkie dzieci i rodziców w nowym roku szkolnym. Przygotowaliśmy wiele atrakcji i nowych aktywności dla naszych małych przedszkolaków.</description></item><item><title>Codzienne zajęcia w przedszkolu</title><link>https://bartusiak.ai/wesole_nutki/pl/gallery/codzienne-zajecia/</link><pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate><guid>https://bartusiak.ai/wesole_nutki/pl/gallery/codzienne-zajecia/</guid><description>&lt;p&gt;Każdy dzień w przedszkolu Wesołe Nutki jest pełen radości i nauki.&lt;/p&gt;</description></item><item><title>Wiosenna wycieczka do parku</title><link>https://bartusiak.ai/wesole_nutki/pl/gallery/wiosenna-wycieczka-2024/</link><pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate><guid>https://bartusiak.ai/wesole_nutki/pl/gallery/wiosenna-wycieczka-2024/</guid><description>&lt;p&gt;Nasza wiosenna wycieczka do parku była pełna przygód! Dzieci miały okazję obserwować budzącą się przyrodę, bawić się na świeżym powietrzu i cieszyć się piękną wiosenną pogodą.&lt;/p&gt;</description></item><item><title>Przedstawienie swiateczne</title><link>https://bartusiak.ai/wesole_nutki/pl/gallery/swieta-2023/</link><pubDate>Mon, 18 Dec 2023 00:00:00 +0000</pubDate><guid>https://bartusiak.ai/wesole_nutki/pl/gallery/swieta-2023/</guid><description>&lt;p&gt;Magiczne przedstawienie świąteczne przygotowane przez nasze przedszkolaki. Dzieci zaprezentowały swoje talenty artystyczne, śpiewając kolędy i odgrywając scenki bożonarodzeniowe.&lt;/p&gt;</description></item></channel></rss>

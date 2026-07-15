@@ -840,6 +840,67 @@
 }
 
 // ------------------------------------------------------------
+// Documents — single page. Was raw Bootstrap: a thin blue/green
+// card border, a Bootstrap-red PDF icon, muted-grey text and plain
+// buttons — all clashing with the warm cream/evergreen system.
+// Rebuild the PDF panel as a friendly white card on the cream page,
+// with an orange file accent and the same pill buttons used sitewide.
+// ------------------------------------------------------------
+.document-single .lead { color: var(--music-ink); }
+.document-single header .badge.bg-primary {
+  display: inline-block;
+  padding: .35rem .85rem;
+  color: #fff;
+  background: var(--music-orange);
+  border-radius: var(--kids-pill);
+  font-size: .72rem;
+  font-weight: 750;
+  letter-spacing: .05em;
+}
+.document-single .card {
+  border: 0 !important;
+  border-radius: var(--kids-radius) !important;
+  background: #fff !important;
+  box-shadow: var(--kids-shadow) !important;
+  overflow: hidden;
+}
+.document-single .card.border-primary {
+  border-inline-start: 6px solid var(--music-orange) !important;
+}
+.document-single .card:hover { box-shadow: var(--kids-shadow-lg) !important; }
+.document-single .card-body { padding: 1.6rem 1.75rem; }
+.document-single .card-title {
+  font-family: "Bricolage Grotesque", system-ui, sans-serif;
+  color: var(--music-green);
+  font-weight: 800;
+}
+.document-single .card-text { color: var(--music-ink); }
+// Recolor the inline PDF / file icons into the brand palette
+.document-single svg [stroke="#dc3545"] { stroke: var(--music-orange); }
+.document-single svg [stroke="#6c757d"] { stroke: var(--music-green); }
+// Buttons — pills, consistent with the rest of the site
+.document-single .btn {
+  border-radius: var(--kids-pill) !important;
+  font-weight: 700;
+  padding-inline: 1.3rem;
+}
+.document-single .btn-outline-secondary,
+.document-single .btn-outline-primary {
+  color: var(--music-green) !important;
+  border: 2px solid rgba(24, 60, 50, .28) !important;
+  background: transparent !important;
+}
+.document-single .btn-outline-secondary:hover,
+.document-single .btn-outline-primary:hover,
+.document-single .btn-outline-secondary:focus-visible,
+.document-single .btn-outline-primary:focus-visible {
+  background: var(--music-green) !important;
+  color: #fff !important;
+  border-color: var(--music-green) !important;
+}
+.document-single nav.border-top { border-color: rgba(24, 60, 50, .12) !important; }
+
+// ------------------------------------------------------------
 // Responsive tidy-ups for the new rounded pieces
 // ------------------------------------------------------------
 @media (max-width: 767.98px) {

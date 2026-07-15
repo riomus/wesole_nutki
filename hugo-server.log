@@ -9,30 +9,28 @@
 🔄 Syncing translations from YAML to TOML...
 
 Processing pl...
-  ✅ Generated /Users/romanbartusiak/git/riomus/wesole_nutki/i18n/pl.toml with 290 keys
+  ✅ Generated /Users/romanbartusiak/git/riomus/wesole_nutki/i18n/pl.toml with 321 keys
 Processing en...
-  ✅ Generated /Users/romanbartusiak/git/riomus/wesole_nutki/i18n/en.toml with 287 keys
+  ✅ Generated /Users/romanbartusiak/git/riomus/wesole_nutki/i18n/en.toml with 319 keys
 
 ✨ Translation sync complete!
-Watching for changes in /Users/romanbartusiak/git/riomus/wesole_nutki/archetypes, /Users/romanbartusiak/git/riomus/wesole_nutki/assets/{css,images,js,scss}, /Users/romanbartusiak/git/riomus/wesole_nutki/content/en/{about,contact,daily-plan,documents,gallery,...}, /Users/romanbartusiak/git/riomus/wesole_nutki/content/pl/{about,contact,gallery,news,programs}, /Users/romanbartusiak/git/riomus/wesole_nutki/data/{about,homepage,menus,translations}, /Users/romanbartusiak/git/riomus/wesole_nutki/i18n, /Users/romanbartusiak/git/riomus/wesole_nutki/layouts/{_default,about,categories,contact,documents,...}, /Users/romanbartusiak/git/riomus/wesole_nutki/package.json, /Users/romanbartusiak/git/riomus/wesole_nutki/postcss.config.js, /Users/romanbartusiak/git/riomus/wesole_nutki/static/{admin,css,documents,fonts,images,...}, ... and 1 more
+Watching for changes in /Users/romanbartusiak/git/riomus/wesole_nutki/archetypes, /Users/romanbartusiak/git/riomus/wesole_nutki/assets/{css,images,js,scss}, /Users/romanbartusiak/git/riomus/wesole_nutki/content/en/{about,contact,daily-plan,documents,gallery,...}, /Users/romanbartusiak/git/riomus/wesole_nutki/content/pl/{about,contact,documents,gallery,news,...}, /Users/romanbartusiak/git/riomus/wesole_nutki/data/{about,homepage,menus,translations}, /Users/romanbartusiak/git/riomus/wesole_nutki/i18n, /Users/romanbartusiak/git/riomus/wesole_nutki/layouts/{_default,about,categories,contact,documents,...}, /Users/romanbartusiak/git/riomus/wesole_nutki/package.json, /Users/romanbartusiak/git/riomus/wesole_nutki/postcss.config.js, /Users/romanbartusiak/git/riomus/wesole_nutki/static/{admin,css,documents,fonts,images,...}, ... and 1 more
 Watching for config changes in /Users/romanbartusiak/git/riomus/wesole_nutki/hugo.toml
 Start building sites … 
 hugo v0.154.5+extended+withdeploy darwin/arm64 BuildDate=2026-01-11T20:53:23Z VendorInfo=Homebrew
 
-WARN  Gallery shortcode: Gallery not found at path 'en/gallery/daily-activities'
-WARN  Gallery shortcode: No images found (ref: 'en/gallery/daily-activities', inner content length: 0)
 
                   │ PL │ EN 
 ──────────────────┼────┼────
- Pages            │ 80 │ 68 
+ Pages            │ 73 │ 67 
  Paginator pages  │  1 │  0 
  Non-page files   │  0 │  0 
- Static files     │ 72 │ 72 
+ Static files     │ 74 │ 74 
  Processed images │ 18 │  0 
  Aliases          │ 22 │ 22 
  Cleaned          │  0 │  0 
 
-Built in 821 ms
+Built in 895 ms
 Environment: "development"
 Serving pages from disk
 Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
@@ -40,60 +38,103 @@ Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
 Press Ctrl+C to stop
 
 Change detected, rebuilding site (#1).
-2026-01-26 10:08:36.147 +0100
+2026-07-15 12:19:00.963 +0200
+Data changed /menus/main_pl.yml
+Data changed /menus/main_pl.yml.tmp.39421.2a5bea8dfbc6
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 17 ms
+
+Change detected, rebuilding site (#2).
+2026-07-15 12:19:46.463 +0200
+Data changed /menus/main_en.yml
+Data changed /menus/main_en.yml.tmp.39421.e349c9c92f2c
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 15 ms
+
+Change detected, rebuilding site (#3).
+2026-07-15 12:30:33.967 +0200
+Asset changed /scss/_custom.scss
+Asset changed /scss/xxxhd932/_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 836 ms
+
+Change detected, rebuilding site (#4).
+2026-07-15 12:33:11.969 +0200
+Asset changed /scss/_custom.scss
+Asset changed /scss/xxoikg2z/_index.md
+Asset changed /scss/xxw9cyay/_index.md
+Asset changed /scss/xxyixu3c/_index.md
+Asset changed /scss/xxhqpkmq/_index.md
+Asset changed /scss/xxklkc1d/_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 687 ms
+
+Change detected, rebuilding site (#5).
+2026-07-15 12:34:04.969 +0200
+Template changed /contact/list.html
+Template added /contact/list.html.tmp.39421.93793e33f500
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 19 ms
+
+Change detected, rebuilding site (#6).
+2026-07-15 12:34:31.968 +0200
+Asset changed /scss/_custom.scss
+Asset changed /scss/_custom.scss.tmp.39421.ae8182977666
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 677 ms
+
+Change detected, rebuilding site (#7).
+2026-07-15 12:35:51.969 +0200
 i18n changed /en.toml
 i18n changed /pl.toml
 Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Total in 698 ms
-
-Change detected, rebuilding site (#2).
-2026-01-26 10:10:49.147 +0100
-Template added /index.webmanifest.tmp.85857.1769418649012
-Template added /index.webmanifest
-Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Total in 10 ms
-
-Change of config file detected, rebuilding site (#3).
-2026-01-26 10:10:53.647 +0100
-WARN  Gallery shortcode: Gallery not found at path 'en/gallery/daily-activities'
-WARN  Gallery shortcode: No images found (ref: 'en/gallery/daily-activities', inner content length: 0)
-Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Rebuilt in 864 ms
-
-Change detected, rebuilding site (#4).
-2026-01-26 10:11:02.147 +0100
-Template changed /partials/head.html
-Template added /partials/head.html.tmp.85857.1769418661732
-Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Total in 22 ms
-
-Change of Static files detected, rebuilding site (#5).
-2026-01-26 10:11:22.146 +0100
-
-Change detected, rebuilding site (#6).
-2026-01-26 10:13:50.148 +0100
-Template changed /partials/header.html
-Template added /partials/header.html.tmp.4873.1769418829872
-Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Total in 29 ms
-
-Change detected, rebuilding site (#7).
-2026-01-26 10:15:01.648 +0100
-Template changed /partials/header.html
-Template added /partials/header.html.tmp.7970.1769418901305
-Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Total in 31 ms
+Total in 712 ms
 
 Change detected, rebuilding site (#8).
-2026-01-26 10:15:12.148 +0100
-Template changed /partials/header.html
-Template added /partials/header.html.tmp.7970.1769418912058
+2026-07-15 12:39:14.764 +0200
+Asset changed /scss/_custom.scss
+Asset changed /scss/xxbvtjii/_index.md
 Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Total in 24 ms
+Total in 1004 ms
 
 Change detected, rebuilding site (#9).
-2026-01-26 10:15:15.648 +0100
-Template changed /partials/footer.html
-Template added /partials/footer.html.tmp.7970.1769418915179
+2026-07-15 12:39:25.469 +0200
+Asset changed /scss/_custom.scss
+Asset changed /scss/_custom.scss.tmp.39421.73f108ef687c
 Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-Total in 21 ms
+Total in 916 ms
+
+Change detected, rebuilding site (#10).
+2026-07-15 12:39:35.650 +0200
+Asset changed /scss/_custom.scss
+Asset changed /scss/_custom.scss.tmp.39421.d2451b6c93e9
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 915 ms
+
+Change detected, rebuilding site (#11).
+2026-07-15 12:41:17.971 +0200
+Template changed /documents/single.html
+Template added /documents/single.html.tmp.39421.7dd33c275d6d
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 17 ms
+
+Change detected, rebuilding site (#12).
+2026-07-15 12:41:55.097 +0200
+Asset changed /scss/_kids.scss
+Asset changed /scss/_kids.scss.tmp.39421.17a2f737a48d
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 661 ms
+
+Change detected, rebuilding site (#13).
+2026-07-15 12:42:06.119 +0200
+i18n changed /en.toml
+i18n changed /pl.toml
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1545 ms
+
+Change detected, rebuilding site (#14).
+2026-07-15 12:43:11.470 +0200
+i18n changed /en.toml
+i18n changed /pl.toml
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 647 ms

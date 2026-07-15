@@ -24,7 +24,7 @@
   // TOP BAR
   // ============================================================
   .top-bar {
-    @apply bg-gradient-to-r from-dark to-dark/90 text-light py-3 text-sm;
+    @apply bg-dark text-light py-3 text-sm;
 
     a {
       @apply text-light transition-colors duration-200 hover:text-accent no-underline;
@@ -301,7 +301,7 @@
       }
 
       &.active {
-        @apply bg-gradient-to-br from-primary to-coral text-white shadow-lg shadow-primary/30;
+        @apply bg-primary text-white shadow-lg shadow-primary/30;
       }
     }
 
@@ -336,7 +336,7 @@
 
     &::before {
       content: '';
-      @apply absolute top-0 left-4 right-4 h-1 bg-gradient-to-r from-primary via-coral to-secondary rounded-full;
+      @apply absolute top-0 left-4 right-4 h-1 bg-primary rounded-full;
     }
 
     li + li {
@@ -354,7 +354,7 @@
 
     &::before {
       content: '';
-      @apply absolute left-0 top-1/2 -translate-y-1/2 w-0 h-3/5 bg-gradient-to-b from-primary to-coral rounded-r-full transition-all duration-200;
+      @apply absolute left-0 top-1/2 -translate-y-1/2 w-0 h-3/5 bg-primary rounded-r-full transition-all duration-200;
     }
 
     &:hover,
@@ -395,7 +395,7 @@
   // HERO SECTION
   // ============================================================
   .hero-section {
-    @apply bg-gradient-to-br from-primary to-coral text-white relative overflow-hidden flex items-center;
+    @apply bg-primary text-white relative overflow-hidden flex items-center;
     min-height: 70vh;
     padding-top: 6rem;
     padding-bottom: 6rem;
@@ -539,7 +539,7 @@
 
       &::after {
         content: '';
-        @apply absolute -bottom-4 -right-4 w-full h-full bg-gradient-to-br from-primary/20 to-coral/20 rounded-3xl -z-10;
+        @apply absolute -bottom-4 -right-4 w-full h-full bg-primary/20 rounded-3xl -z-10;
       }
 
       img {
@@ -941,35 +941,35 @@
     @apply w-20 h-20 mx-auto rounded-full flex items-center justify-center text-white shadow-lg mb-4;
 
     &.icon-primary {
-      @apply bg-gradient-to-br from-primary to-primary/80;
+      @apply bg-primary;
     }
 
     &.icon-secondary {
-      @apply bg-gradient-to-br from-secondary to-secondary/80;
+      @apply bg-secondary;
     }
 
     &.icon-coral {
-      @apply bg-gradient-to-br from-coral to-coral/80;
+      @apply bg-coral;
     }
 
     &.icon-purple {
-      @apply bg-gradient-to-br from-purple to-purple/80;
+      @apply bg-purple;
     }
 
     &.icon-mint {
-      @apply bg-gradient-to-br from-mint to-mint/80;
+      @apply bg-mint;
     }
 
     &.icon-accent {
-      @apply bg-gradient-to-br from-accent to-accent/90 text-dark;
+      @apply bg-accent text-dark;
     }
 
     &.icon-success {
-      @apply bg-gradient-to-br from-success to-success/80;
+      @apply bg-success;
     }
 
     &.icon-info {
-      @apply bg-gradient-to-br from-info to-info/80;
+      @apply bg-info;
     }
 
     svg {
@@ -1022,7 +1022,7 @@
     .program-card-header {
       @apply relative overflow-hidden;
       aspect-ratio: 16/9;
-      background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+      background: var(--page-paper-deep, #f4ead1);
 
       // Ensure image error state displays correctly within card header
       .responsive-image-wrapper.image-error {
@@ -1043,7 +1043,7 @@
     }
 
     .program-card-icon-wrapper {
-      @apply w-full h-full flex items-center justify-center bg-gradient-to-br from-primary/10 to-coral/10;
+      @apply w-full h-full flex items-center justify-center bg-primary/10;
     }
 
     .program-card-icon {
@@ -1124,7 +1124,7 @@
     .team-card-image {
       @apply overflow-hidden;
       aspect-ratio: 1/1;
-      background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+      background: var(--page-paper-deep, #f4ead1);
 
       img {
         @apply w-full h-full object-contain transition-transform duration-500;
@@ -1144,7 +1144,7 @@
     }
 
     .team-card-placeholder {
-      @apply w-full h-full flex items-center justify-center bg-gradient-to-br from-primary/10 to-coral/10;
+      @apply w-full h-full flex items-center justify-center bg-primary/10;
       min-height: 250px;
 
       svg {
@@ -1193,7 +1193,7 @@
     }
 
     .facility-icon {
-      @apply w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center bg-gradient-to-br from-primary to-primary/80 text-white shadow-lg;
+      @apply w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center bg-primary text-white shadow-lg;
 
       svg {
         @apply w-8 h-8;
@@ -1211,7 +1211,7 @@
 
   // Counter/Stats Section
   .counter-section {
-    @apply bg-gradient-to-r from-primary to-coral text-white py-16;
+    @apply bg-primary text-white py-16;
     position: relative;
     overflow: hidden;
 
@@ -1411,7 +1411,7 @@
 
   // CTA Section
   .cta-section {
-    @apply bg-gradient-to-br from-primary via-coral to-secondary text-white py-20 relative overflow-hidden;
+    @apply bg-primary text-white py-20 relative overflow-hidden;
 
     &::before {
       content: '';
@@ -1461,7 +1461,7 @@
   // BACK TO TOP BUTTON
   // ============================================================
   .back-to-top {
-    @apply fixed bottom-8 right-8 w-14 h-14 rounded-full bg-gradient-to-br from-secondary to-coral text-white border-0 cursor-pointer flex items-center justify-center opacity-0 translate-y-5 transition-all duration-300 z-[1000];
+    @apply fixed bottom-8 right-8 w-14 h-14 rounded-full bg-secondary text-white border-0 cursor-pointer flex items-center justify-center opacity-0 translate-y-5 transition-all duration-300 z-[1000];
     box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
     visibility: hidden;
 
@@ -1495,7 +1495,7 @@
   // UTILITIES
   // ============================================================
   .text-gradient {
-    @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent;
+    @apply text-primary;
   }
 
   .bg-pattern {
@@ -2324,7 +2324,7 @@
     .card-img-wrapper {
       @apply overflow-hidden relative;
       aspect-ratio: 16/9;
-      background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+      background: var(--page-paper-deep, #f4ead1);
 
       img {
         @apply w-full h-full object-contain transition-transform duration-500;
@@ -2336,7 +2336,7 @@
 
       // Fallback UI for failed images
       .news-card-fallback {
-        @apply absolute inset-0 flex flex-col items-center justify-center bg-gradient-to-br from-primary/10 to-coral/10;
+        @apply absolute inset-0 flex flex-col items-center justify-center bg-primary/10;
         opacity: 0;
         pointer-events: none;
         transition: opacity 0.3s ease;
@@ -2366,7 +2366,7 @@
     }
 
     .news-card-placeholder {
-      @apply w-full h-full flex items-center justify-center bg-gradient-to-br from-primary/10 to-coral/10;
+      @apply w-full h-full flex items-center justify-center bg-primary/10;
       min-height: 240px;
 
       .placeholder-icon {
@@ -3244,7 +3244,7 @@
   }
 
   .schedule-list {
-    @apply bg-gradient-to-br from-secondary/5 to-accent/5 border border-secondary/20 rounded-xl p-4;
+    @apply bg-secondary/5 border border-secondary/20 rounded-xl p-4;
 
     .schedule-list-item {
       @apply flex items-start gap-4 py-3 border-b border-dark/10;
@@ -3291,7 +3291,7 @@
 
   // Sidebar card component
   .sidebar-card {
-    @apply bg-gradient-to-br from-white to-primary/5 border border-primary/20 rounded-2xl p-5 shadow-md transition-all duration-300;
+    @apply bg-white border border-primary/20 rounded-2xl p-5 shadow-md transition-all duration-300;
 
     &:hover {
       @apply shadow-lg border-primary/30;
@@ -3304,7 +3304,7 @@
 
   // CTA variant
   .sidebar-card-cta {
-    @apply bg-gradient-to-br from-primary to-primary/80 border-primary text-white;
+    @apply bg-primary border-primary text-white;
 
     &:hover {
       @apply shadow-xl border-primary;
@@ -3587,7 +3587,7 @@
   // ============================================================
 
   .related-posts-section {
-    @apply py-12 md:py-16 lg:py-20 bg-gradient-to-br from-light/30 to-primary/5;
+    @apply py-12 md:py-16 lg:py-20 bg-light/30;
 
     .related-posts-title {
       @apply text-3xl md:text-4xl font-heading font-bold text-dark mb-8 text-center;
@@ -3607,7 +3607,7 @@
       }
 
       .related-post-image {
-        @apply block relative overflow-hidden aspect-video bg-gradient-to-br from-primary/10 to-coral/10;
+        @apply block relative overflow-hidden aspect-video bg-primary/10;
 
         img {
           @apply w-full h-full object-contain transition-transform duration-500;
@@ -3696,7 +3696,7 @@
     .gallery-card-image {
       @apply relative overflow-hidden;
       min-height: 250px;
-      background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+      background: var(--page-paper-deep, #f4ead1);
       border-radius: 1rem 1rem 0 0;
 
       img {
@@ -3719,7 +3719,7 @@
     }
 
     .gallery-card-placeholder {
-      @apply w-full h-full flex items-center justify-center bg-gradient-to-br from-purple/10 to-pink/10;
+      @apply w-full h-full flex items-center justify-center bg-purple/10;
       min-height: 250px;
 
       .placeholder-icon {
@@ -3878,7 +3878,7 @@
 
   // Gallery overlay (appears on hover)
   .gallery-overlay {
-    @apply absolute inset-0 bg-gradient-to-t from-dark/70 via-dark/30 to-transparent opacity-0 transition-opacity duration-300;
+    @apply absolute inset-0 bg-dark/70 opacity-0 transition-opacity duration-300;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -4330,7 +4330,7 @@
     &::before {
       content: '';
       @apply absolute left-0 top-0 bottom-0 w-1 rounded-full;
-      background: linear-gradient(180deg, #81d742 0%, #FF8E9E 100%);
+      background: $preschool-primary;
     }
   }
 
@@ -4436,7 +4436,7 @@
   }
 
   .contact-card-icon {
-    @apply w-16 h-16 mx-auto flex items-center justify-center rounded-full bg-gradient-to-br from-primary/10 to-coral/10 transition-all duration-300;
+    @apply w-16 h-16 mx-auto flex items-center justify-center rounded-full bg-primary/10 transition-all duration-300;
 
     svg {
       @apply w-8 h-8 transition-colors duration-300;
@@ -4508,7 +4508,7 @@
 
   // Visit CTA Section
   .visit-cta {
-    @apply bg-gradient-to-br from-primary via-primary/90 to-coral shadow-xl rounded-2xl;
+    @apply bg-primary shadow-xl rounded-2xl;
 
     h2, p {
       text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -4538,7 +4538,8 @@
 
   // Wrapper for responsive images with loading states
   .responsive-image-wrapper {
-    @apply relative overflow-hidden bg-gradient-to-br from-primary/5 to-coral/5;
+    @apply relative overflow-hidden;
+    background: var(--page-paper-deep, #f4ead1);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -4603,16 +4604,17 @@
 
   // Fallback UI for failed images
   .responsive-image-fallback {
-    @apply absolute inset-0 flex flex-col items-center justify-center gap-3 bg-gradient-to-br from-primary/10 to-coral/10 opacity-0 pointer-events-none transition-opacity duration-300;
+    @apply absolute inset-0 flex flex-col items-center justify-center gap-3 opacity-0 pointer-events-none transition-opacity duration-300;
+    background: var(--page-paper-deep, #f4ead1);
     z-index: 3;
     height: 100%;
 
     svg {
-      @apply text-primary/30;
+      @apply text-primary/40;
     }
 
     .responsive-image-fallback-text {
-      @apply text-sm font-medium text-dark/60;
+      @apply text-sm font-medium text-dark;
     }
   }
 
@@ -4648,7 +4650,7 @@
   }
 
   .skeleton-loader {
-    @apply relative overflow-hidden bg-gradient-to-br from-primary/10 to-coral/10;
+    @apply relative overflow-hidden bg-primary/10;
 
     &::after {
       content: '';
@@ -4666,7 +4668,7 @@
   // Enhanced placeholder styles for consistent aspect ratios
   .gallery-card-placeholder,
   .news-card-placeholder {
-    @apply relative overflow-hidden bg-gradient-to-br from-primary/10 to-coral/10;
+    @apply relative overflow-hidden bg-primary/10;
 
     .placeholder-icon {
       @apply text-6xl opacity-20 transition-transform duration-300;
@@ -4691,7 +4693,7 @@
   .embedded-gallery {
     margin: 0.5rem 0;
     padding: 1.5rem;
-    background: linear-gradient(135deg, rgba($preschool-light, 0.5) 0%, rgba($preschool-secondary, 0.1) 100%);
+    background: rgba($preschool-light, 0.4);
     border-radius: $border-radius-xl;
     border: 1px solid rgba($preschool-primary, 0.1);
   }
@@ -4864,7 +4866,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba($preschool-primary, 0.85) 0%, rgba($preschool-coral, 0.85) 100%);
+    background: rgba($preschool-primary, 0.9);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -4954,7 +4956,7 @@
     thead {
       tr {
         // Use darker green for better contrast (WCAG AA compliant - 4.5:1 for normal text)
-        background: linear-gradient(to right, #499d1f, #367711);
+        background: #367711;
 
         th {
           @apply text-white font-heading font-bold text-center;

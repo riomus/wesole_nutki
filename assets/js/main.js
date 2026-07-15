@@ -450,7 +450,7 @@ function initBackToTop() {
         width: 50px;
         height: 50px;
         border-radius: 50%;
-        background: linear-gradient(135deg, #FF6B35, #FF8C61);
+        background: var(--music-orange, #a94316);
         color: white;
         border: none;
         cursor: pointer;
@@ -461,7 +461,7 @@ function initBackToTop() {
         visibility: hidden;
         transform: translateY(20px);
         transition: all 0.3s ease;
-        box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+        box-shadow: 0 8px 20px rgba(169, 67, 22, 0.35);
         z-index: 1000;
       }
       .back-to-top.visible {

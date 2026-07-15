@@ -1,88 +1,101 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Aktualnosci on Wesołe Nutki - Przedszkole</title>
-    <link>http://localhost:1313/wesole_nutki/pl/news/</link>
-    <description>Recent content in Aktualnosci on Wesołe Nutki - Przedszkole</description>
-    <generator>Hugo</generator>
-    <language>pl</language>
-    <atom:link href="http://localhost:1313/wesole_nutki/pl/news/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Pracuj z Wesołymi Nutkami! - Wesołe Nutki</title>
-      <link>http://localhost:1313/wesole_nutki/pl/2023/01/30/pracuj-z-wesolymi-nutkami/</link>
-      <pubDate>Fri, 23 Jan 2026 09:29:08 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/pl/2023/01/30/pracuj-z-wesolymi-nutkami/</guid>
-      <description>&lt;p&gt;&#xA;&lt;a href=&#34;https://wesolenutki.eu/kontakt/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;&#xA;&#xA;&#xA;&lt;div class=&#34;responsive-image-wrapper&#34;&gt;&#xA;      &lt;img src=&#34;http://localhost:1313/wesole_nutki/images/scraped/2023-01-30-pracuj-z-wesolymi-nutkami-0.jpg&#34; alt=&#34;&#34; class=&#34;markdown-image responsive-image-main&#34; &#xA;        loading=&#34;lazy&#34; decoding=&#34;async&#34;&#xA;        onerror=&#34;this.parentElement.classList.add(&#39;image-error&#39;); this.onerror=null;&#34;&gt;&#xA;&#xA;      &#xA;      &lt;div class=&#34;responsive-image-fallback&#34; aria-hidden=&#34;true&#34;&gt;&#xA;        &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;48&#34; height=&#34;48&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 16 16&#34;&gt;&#xA;          &lt;path d=&#34;M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z&#34; /&gt;&#xA;          &lt;path&#xA;            d=&#34;M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z&#34; /&gt;&#xA;        &lt;/svg&gt;&#xA;        &lt;span class=&#34;responsive-image-fallback-text&#34;&gt;Obraz niedostępny&lt;/span&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;NAUCZYCIEL WYCHOWANIA PRZEDSZKOLNEGO&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Jeśli lubisz pra­cę z dzieć­mi i posia­dasz wykształ­ce­nie kie­run­ko­we Weso­łe Nut­ki zapra­sza­ją do współpracy!&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Warsztaty ekologiczne - Wesołe Nutki</title>
-      <link>http://localhost:1313/wesole_nutki/pl/2025/06/03/warsztaty-ekologiczne/</link>
-      <pubDate>Fri, 23 Jan 2026 09:28:57 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/pl/2025/06/03/warsztaty-ekologiczne/</guid>
-      <description>&lt;p&gt;Ostat­nio nasze przed­szko­la­ki mia­ły oka­zję wziąć udział w eko­lo­gicz­nych warsz­ta­tach rzeź­biar­skich zor­ga­ni­zo­wa­nych przez Gale­rię Nic­po­niej. Dzię­ku­je­my za współ­pra­cę i zapro­sze­nie!&#xA;To była wyjąt­ko­wa oka­zja do twór­cze­go dzia­ła­nia w duchu eko­lo­gii i wspól­ne­go spę­dze­nia czasu.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&#xA;&#xA;&lt;div class=&#34;responsive-image-wrapper&#34;&gt;&#xA;      &lt;img src=&#34;http://localhost:1313/wesole_nutki/images/scraped/2025-06-03-warsztaty-ekologiczne-0.png&#34; alt=&#34;&#34; class=&#34;markdown-image responsive-image-main&#34; &#xA;        loading=&#34;lazy&#34; decoding=&#34;async&#34;&#xA;        onerror=&#34;this.parentElement.classList.add(&#39;image-error&#39;); this.onerror=null;&#34;&gt;&#xA;&#xA;      &#xA;      &lt;div class=&#34;responsive-image-fallback&#34; aria-hidden=&#34;true&#34;&gt;&#xA;        &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;48&#34; height=&#34;48&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 16 16&#34;&gt;&#xA;          &lt;path d=&#34;M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z&#34; /&gt;&#xA;          &lt;path&#xA;            d=&#34;M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z&#34; /&gt;&#xA;        &lt;/svg&gt;&#xA;        &lt;span class=&#34;responsive-image-fallback-text&#34;&gt;Obraz niedostępny&lt;/span&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Muzyka na żywo w przedszkolu - Wesołe Nutki</title>
-      <link>http://localhost:1313/wesole_nutki/pl/2025/06/10/muzyka-na-zywo-w-przedszkolu/</link>
-      <pubDate>Fri, 23 Jan 2026 09:28:53 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/pl/2025/06/10/muzyka-na-zywo-w-przedszkolu/</guid>
-      <description>&lt;p&gt;W minio­nym roku szkol­nym nasze przed­szko­la­ki regu­lar­nie uczest­ni­czy­ły w kon­cer­tach z cyklu „W kra­inie Pani Muzy­ki”, orga­ni­zo­wa­nych przez Lubu­skie Biu­ro Kon­cer­to­we „Orfe­usz”.&lt;/p&gt;&#xA;&lt;p&gt;Były to wyjąt­ko­we spo­tka­nia z muzy­ką na żywo, pro­wa­dzo­ne przez pro­fe­sjo­nal­nych muzy­ków i muzy­ko­lo­gów. Dzie­ci mia­ły oka­zję poznać ponad 35 instru­men­tów, posłu­chać róż­no­rod­nych utwo­rów – tak­że muzy­ki kla­sycz­nej – oraz aktyw­nie uczest­ni­czyć w kon­cer­tach poprzez taniec, śpiew i zabawę.&lt;/p&gt;&#xA;&lt;p&gt;To nie tyl­ko war­to­ścio­we doświad­cze­nie arty­stycz­ne, ale też wspa­nia­ła przy­go­da edu­ka­cyj­na – peł­na rado­ści, śmie­chu i zachwytu.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Międzynarodowy Dzień Kropki - Wesołe Nutki</title>
-      <link>http://localhost:1313/wesole_nutki/pl/2025/09/15/miedzynarodowy-dzien-kropki/</link>
-      <pubDate>Fri, 23 Jan 2026 09:28:48 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/pl/2025/09/15/miedzynarodowy-dzien-kropki/</guid>
-      <description>&lt;p&gt;🎉 Dziś w naszym przed­szko­lu świę­to­wa­li­śmy Mię­dzy­na­ro­do­wy Dzień Kropki!&lt;/p&gt;&#xA;&lt;p&gt;Były opo­wia­da­nia, roz­mo­wy o tym, czym jest krop­ka, „krop­ko­wy taniec” i twór­cze pra­ce pla­stycz­ne. Dzie­ci mia­ły oka­zję roz­wi­jać swo­ją kre­atyw­ność, spraw­ność i odkry­wać, że każ­da mała krop­ka może być począt­kiem cze­goś wyjątkowego ✨&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&#xA;&#xA;&lt;div class=&#34;responsive-image-wrapper&#34;&gt;&#xA;      &lt;img src=&#34;http://localhost:1313/wesole_nutki/images/scraped/2025-09-15-miedzynarodowy-dzien-kropki-0.jpeg&#34; alt=&#34;&#34; class=&#34;markdown-image responsive-image-main&#34; &#xA;        loading=&#34;lazy&#34; decoding=&#34;async&#34;&#xA;        onerror=&#34;this.parentElement.classList.add(&#39;image-error&#39;); this.onerror=null;&#34;&gt;&#xA;&#xA;      &#xA;      &lt;div class=&#34;responsive-image-fallback&#34; aria-hidden=&#34;true&#34;&gt;&#xA;        &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;48&#34; height=&#34;48&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 16 16&#34;&gt;&#xA;          &lt;path d=&#34;M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z&#34; /&gt;&#xA;          &lt;path&#xA;            d=&#34;M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z&#34; /&gt;&#xA;        &lt;/svg&gt;&#xA;        &lt;span class=&#34;responsive-image-fallback-text&#34;&gt;Obraz niedostępny&lt;/span&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Pierwszy jesienny spacer - Wesołe Nutki</title>
-      <link>http://localhost:1313/wesole_nutki/pl/2025/09/26/spacer/</link>
-      <pubDate>Fri, 23 Jan 2026 09:28:44 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/pl/2025/09/26/spacer/</guid>
-      <description>&lt;p&gt;Pierw­sze­go dnia jesie­ni wszyst­kie gru­py wybra­ły się na wspól­ny spa­cer, aby poszu­kać oznak tej pięk­nej pory roku w naszej okolicy 🍁🍁&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&#xA;&#xA;&lt;div class=&#34;responsive-image-wrapper&#34;&gt;&#xA;      &lt;img src=&#34;http://localhost:1313/wesole_nutki/images/scraped/2025-09-26-spacer-0.jpeg&#34; alt=&#34;&#34; class=&#34;markdown-image responsive-image-main&#34; &#xA;        loading=&#34;lazy&#34; decoding=&#34;async&#34;&#xA;        onerror=&#34;this.parentElement.classList.add(&#39;image-error&#39;); this.onerror=null;&#34;&gt;&#xA;&#xA;      &#xA;      &lt;div class=&#34;responsive-image-fallback&#34; aria-hidden=&#34;true&#34;&gt;&#xA;        &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;48&#34; height=&#34;48&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 16 16&#34;&gt;&#xA;          &lt;path d=&#34;M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z&#34; /&gt;&#xA;          &lt;path&#xA;            d=&#34;M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z&#34; /&gt;&#xA;        &lt;/svg&gt;&#xA;        &lt;span class=&#34;responsive-image-fallback-text&#34;&gt;Obraz niedostępny&lt;/span&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Międzynarodowy Dzień Muzyki - Wesołe Nutki</title>
-      <link>http://localhost:1313/wesole_nutki/pl/2025/10/07/miedzynarodowy-dzien-muzyki/</link>
-      <pubDate>Fri, 23 Jan 2026 09:28:39 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/pl/2025/10/07/miedzynarodowy-dzien-muzyki/</guid>
-      <description>&lt;p&gt;🎵 Tak świę­to­wa­li­śmy Mię­dzy­na­ro­do­wy Dzień Muzy­ki – w Nut­kach było jesz­cze tro­chę bar­dziej muzycz­nie niż zwykle 😊&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&#xA;&#xA;&lt;div class=&#34;responsive-image-wrapper&#34;&gt;&#xA;      &lt;img src=&#34;http://localhost:1313/wesole_nutki/images/scraped/2025-10-07-miedzynarodowy-dzien-muzyki-0.jpeg&#34; alt=&#34;&#34; class=&#34;markdown-image responsive-image-main&#34; &#xA;        loading=&#34;lazy&#34; decoding=&#34;async&#34;&#xA;        onerror=&#34;this.parentElement.classList.add(&#39;image-error&#39;); this.onerror=null;&#34;&gt;&#xA;&#xA;      &#xA;      &lt;div class=&#34;responsive-image-fallback&#34; aria-hidden=&#34;true&#34;&gt;&#xA;        &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;48&#34; height=&#34;48&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 16 16&#34;&gt;&#xA;          &lt;path d=&#34;M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z&#34; /&gt;&#xA;          &lt;path&#xA;            d=&#34;M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z&#34; /&gt;&#xA;        &lt;/svg&gt;&#xA;        &lt;span class=&#34;responsive-image-fallback-text&#34;&gt;Obraz niedostępny&lt;/span&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Koncert - Wesołe Nutki</title>
-      <link>http://localhost:1313/wesole_nutki/pl/2025/10/27/koncert/</link>
-      <pubDate>Fri, 23 Jan 2026 09:28:34 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/pl/2025/10/27/koncert/</guid>
-      <description>&lt;p&gt;W naszym przed­szko­lu &lt;strong&gt;regu­lar­nie odby­wa­ją się kon­cer­ty z muzy­ką na żywo&lt;/strong&gt;, któ­re pozwa­la­ją dzie­ciom pozna­wać instru­men­ty i roz­wi­jać wraż­li­wość muzyczną. 💛&lt;/p&gt;&#xA;&lt;p&gt;Ostat­nio mie­li­śmy oka­zję uczest­ni­czyć w pięk­nym kon­cer­cie pt. &lt;em&gt;„Pan Malusz­kie­wicz na morzu peł­nym dźwię­ków”&lt;/em&gt; w wyko­na­niu &lt;strong&gt;Lubu­skie­go Biu­ra Kon­cer­to­we­go „Orfe­usz“&lt;/strong&gt;. 🌊🎵&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&#xA;&#xA;&lt;div class=&#34;responsive-image-wrapper&#34;&gt;&#xA;      &lt;img src=&#34;http://localhost:1313/wesole_nutki/images/scraped/2025-10-27-koncert-0.jpeg&#34; alt=&#34;&#34; class=&#34;markdown-image responsive-image-main&#34; &#xA;        loading=&#34;lazy&#34; decoding=&#34;async&#34;&#xA;        onerror=&#34;this.parentElement.classList.add(&#39;image-error&#39;); this.onerror=null;&#34;&gt;&#xA;&#xA;      &#xA;      &lt;div class=&#34;responsive-image-fallback&#34; aria-hidden=&#34;true&#34;&gt;&#xA;        &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;48&#34; height=&#34;48&#34; fill=&#34;currentColor&#34; viewBox=&#34;0 0 16 16&#34;&gt;&#xA;          &lt;path d=&#34;M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z&#34; /&gt;&#xA;          &lt;path&#xA;            d=&#34;M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z&#34; /&gt;&#xA;        &lt;/svg&gt;&#xA;        &lt;span class=&#34;responsive-image-fallback-text&#34;&gt;Obraz niedostępny&lt;/span&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Zimowe zabawy na śniegu</title>
-      <link>http://localhost:1313/wesole_nutki/pl/news/2025/01/zimowe-zabawy-na-%C5%9Bniegu/</link>
-      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/pl/news/2025/01/zimowe-zabawy-na-%C5%9Bniegu/</guid>
-      <description>Nasze przedszkolaki świetnie bawiły się na śniegu! Zobaczcie zdjęcia z naszych zimowych zabaw.</description>
-    </item>
-    <item>
-      <title>Warsztaty Kulinarne dla Dzieci</title>
-      <link>http://localhost:1313/wesole_nutki/pl/news/2024/11/warsztaty-kulinarne-dla-dzieci/</link>
-      <pubDate>Tue, 05 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/pl/news/2024/11/warsztaty-kulinarne-dla-dzieci/</guid>
-      <description>W listopadzie rozpoczynamy cykl warsztatów kulinarnych dla dzieci. Małe kucharze nauczą się przygotowywać proste i zdrowe posiłki.</description>
-    </item>
-    <item>
-      <title>Jesienny Piknik Rodzinny</title>
-      <link>http://localhost:1313/wesole_nutki/pl/news/2024/10/jesienny-piknik-rodzinny/</link>
-      <pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/pl/news/2024/10/jesienny-piknik-rodzinny/</guid>
-      <description>Zapraszamy wszystkie rodziny na jesienny piknik w ogrodzie przedszkolnym. Czeka nas wiele atrakcji, konkursów i wspaniała zabawa na świeżym powietrzu.</description>
-    </item>
-    <item>
-      <title>Witamy w Nowym Roku Szkolnym 2024/2025</title>
-      <link>http://localhost:1313/wesole_nutki/pl/news/2024/09/witamy-w-nowym-roku-szkolnym-2024/2025/</link>
-      <pubDate>Mon, 02 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/wesole_nutki/pl/news/2024/09/witamy-w-nowym-roku-szkolnym-2024/2025/</guid>
-      <description>Z radością witamy wszystkie dzieci i rodziców w nowym roku szkolnym. Przygotowaliśmy wiele atrakcji i nowych aktywności dla naszych małych przedszkolaków.</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Aktualności on Wesołe Nutki - Przedszkole</title><link>https://bartusiak.ai/wesole_nutki/pl/news/</link><description>Recent content in Aktualności on Wesołe Nutki - Przedszkole</description><generator>Hugo</generator><language>pl</language><atom:link href="https://bartusiak.ai/wesole_nutki/pl/news/index.xml" rel="self" type="application/rss+xml"/><item><title>Pracuj z Wesołymi Nutkami! - Wesołe Nutki</title><link>https://bartusiak.ai/wesole_nutki/pl/2023/01/30/pracuj-z-wesolymi-nutkami/</link><pubDate>Fri, 23 Jan 2026 09:29:08 +0000</pubDate><guid>https://bartusiak.ai/wesole_nutki/pl/2023/01/30/pracuj-z-wesolymi-nutkami/</guid><description>Szukamy nauczyciela wychowania przedszkolnego! Praca w małych grupach, elastyczne warunki i wsparcie doświadczonej kadry w sercu Wrocławia.</description></item><item><title>Warsztaty ekologiczne - Wesołe Nutki</title><link>https://bartusiak.ai/wesole_nutki/pl/2025/06/03/warsztaty-ekologiczne/</link><pubDate>Fri, 23 Jan 2026 09:28:57 +0000</pubDate><guid>https://bartusiak.ai/wesole_nutki/pl/2025/06/03/warsztaty-ekologiczne/</guid><description>&lt;p&gt;Ostat­nio nasze przed­szko­la­ki mia­ły oka­zję wziąć udział w eko­lo­gicz­nych warsz­ta­tach rzeź­biar­skich zor­ga­ni­zo­wa­nych przez Gale­rię Nic­po­niej. Dzię­ku­je­my za współ­pra­cę i zapro­sze­nie!
+To była wyjąt­ko­wa oka­zja do twór­cze­go dzia­ła­nia w duchu eko­lo­gii i wspól­ne­go spę­dze­nia czasu.&lt;/p&gt;
+&lt;p&gt;
+
+
+&lt;div class="responsive-image-wrapper"&gt;
+ &lt;img src="https://bartusiak.ai/wesole_nutki/images/scraped/2025-06-03-warsztaty-ekologiczne-0.png" alt="Warsztaty ekologiczne - Wesołe Nutki — zdjęcie 1" class="markdown-image responsive-image-main" 
+ loading="lazy" fetchpriority="auto" decoding="async"
+ onerror="this.parentElement.classList.add('image-error'); this.onerror=null;"&gt;
+
+ 
+ &lt;div class="responsive-image-fallback" aria-hidden="true"&gt;
+ &lt;svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 16 16"&gt;
+ &lt;path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" /&gt;
+ &lt;path
+ d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z" /&gt;
+ &lt;/svg&gt;
+ &lt;span class="responsive-image-fallback-text"&gt;Obraz niedostępny&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/p&gt;</description></item><item><title>Muzyka na żywo w przedszkolu - Wesołe Nutki</title><link>https://bartusiak.ai/wesole_nutki/pl/2025/06/10/muzyka-na-zywo-w-przedszkolu/</link><pubDate>Fri, 23 Jan 2026 09:28:53 +0000</pubDate><guid>https://bartusiak.ai/wesole_nutki/pl/2025/06/10/muzyka-na-zywo-w-przedszkolu/</guid><description>&lt;p&gt;W minio­nym roku szkol­nym nasze przed­szko­la­ki regu­lar­nie uczest­ni­czy­ły w kon­cer­tach z cyklu „W kra­inie Pani Muzy­ki”, orga­ni­zo­wa­nych przez Lubu­skie Biu­ro Kon­cer­to­we „Orfe­usz”.&lt;/p&gt;
+&lt;p&gt;Były to wyjąt­ko­we spo­tka­nia z muzy­ką na żywo, pro­wa­dzo­ne przez pro­fe­sjo­nal­nych muzy­ków i muzy­ko­lo­gów. Dzie­ci mia­ły oka­zję poznać ponad 35 instru­men­tów, posłu­chać róż­no­rod­nych utwo­rów – tak­że muzy­ki kla­sycz­nej – oraz aktyw­nie uczest­ni­czyć w kon­cer­tach poprzez taniec, śpiew i zabawę.&lt;/p&gt;
+&lt;p&gt;To nie tyl­ko war­to­ścio­we doświad­cze­nie arty­stycz­ne, ale też wspa­nia­ła przy­go­da edu­ka­cyj­na – peł­na rado­ści, śmie­chu i zachwytu.&lt;/p&gt;</description></item><item><title>Międzynarodowy Dzień Kropki - Wesołe Nutki</title><link>https://bartusiak.ai/wesole_nutki/pl/2025/09/15/miedzynarodowy-dzien-kropki/</link><pubDate>Fri, 23 Jan 2026 09:28:48 +0000</pubDate><guid>https://bartusiak.ai/wesole_nutki/pl/2025/09/15/miedzynarodowy-dzien-kropki/</guid><description>&lt;p&gt;🎉 Dziś w naszym przed­szko­lu świę­to­wa­li­śmy Mię­dzy­na­ro­do­wy Dzień Kropki!&lt;/p&gt;
+&lt;p&gt;Były opo­wia­da­nia, roz­mo­wy o tym, czym jest krop­ka, „krop­ko­wy taniec” i twór­cze pra­ce pla­stycz­ne. Dzie­ci mia­ły oka­zję roz­wi­jać swo­ją kre­atyw­ność, spraw­ność i odkry­wać, że każ­da mała krop­ka może być począt­kiem cze­goś wyjątkowego ✨&lt;/p&gt;
+&lt;p&gt;
+
+
+&lt;div class="responsive-image-wrapper"&gt;
+ &lt;img src="https://bartusiak.ai/wesole_nutki/images/scraped/2025-09-15-miedzynarodowy-dzien-kropki-0.jpeg" alt="Międzynarodowy Dzień Kropki - Wesołe Nutki — zdjęcie 1" class="markdown-image responsive-image-main" 
+ loading="lazy" fetchpriority="auto" decoding="async"
+ onerror="this.parentElement.classList.add('image-error'); this.onerror=null;"&gt;
+
+ 
+ &lt;div class="responsive-image-fallback" aria-hidden="true"&gt;
+ &lt;svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 16 16"&gt;
+ &lt;path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" /&gt;
+ &lt;path
+ d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z" /&gt;
+ &lt;/svg&gt;
+ &lt;span class="responsive-image-fallback-text"&gt;Obraz niedostępny&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/p&gt;</description></item><item><title>Pierwszy jesienny spacer - Wesołe Nutki</title><link>https://bartusiak.ai/wesole_nutki/pl/2025/09/26/spacer/</link><pubDate>Fri, 23 Jan 2026 09:28:44 +0000</pubDate><guid>https://bartusiak.ai/wesole_nutki/pl/2025/09/26/spacer/</guid><description>&lt;p&gt;Pierw­sze­go dnia jesie­ni wszyst­kie gru­py wybra­ły się na wspól­ny spa­cer, aby poszu­kać oznak tej pięk­nej pory roku w naszej okolicy 🍁🍁&lt;/p&gt;
+&lt;p&gt;
+
+
+&lt;div class="responsive-image-wrapper"&gt;
+ &lt;img src="https://bartusiak.ai/wesole_nutki/images/scraped/2025-09-26-spacer-0.jpeg" alt="Pierwszy jesienny spacer - Wesołe Nutki — zdjęcie 1" class="markdown-image responsive-image-main" 
+ loading="lazy" fetchpriority="auto" decoding="async"
+ onerror="this.parentElement.classList.add('image-error'); this.onerror=null;"&gt;
+
+ 
+ &lt;div class="responsive-image-fallback" aria-hidden="true"&gt;
+ &lt;svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 16 16"&gt;
+ &lt;path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" /&gt;
+ &lt;path
+ d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z" /&gt;
+ &lt;/svg&gt;
+ &lt;span class="responsive-image-fallback-text"&gt;Obraz niedostępny&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/p&gt;</description></item><item><title>Międzynarodowy Dzień Muzyki - Wesołe Nutki</title><link>https://bartusiak.ai/wesole_nutki/pl/2025/10/07/miedzynarodowy-dzien-muzyki/</link><pubDate>Fri, 23 Jan 2026 09:28:39 +0000</pubDate><guid>https://bartusiak.ai/wesole_nutki/pl/2025/10/07/miedzynarodowy-dzien-muzyki/</guid><description>&lt;p&gt;🎵 Tak świę­to­wa­li­śmy Mię­dzy­na­ro­do­wy Dzień Muzy­ki – w Nut­kach było jesz­cze tro­chę bar­dziej muzycz­nie niż zwykle 😊&lt;/p&gt;
+&lt;p&gt;
+
+
+&lt;div class="responsive-image-wrapper"&gt;
+ &lt;img src="https://bartusiak.ai/wesole_nutki/images/scraped/2025-10-07-miedzynarodowy-dzien-muzyki-0.jpeg" alt="Międzynarodowy Dzień Muzyki - Wesołe Nutki — zdjęcie 1" class="markdown-image responsive-image-main" 
+ loading="lazy" fetchpriority="auto" decoding="async"
+ onerror="this.parentElement.classList.add('image-error'); this.onerror=null;"&gt;
+
+ 
+ &lt;div class="responsive-image-fallback" aria-hidden="true"&gt;
+ &lt;svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 16 16"&gt;
+ &lt;path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" /&gt;
+ &lt;path
+ d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z" /&gt;
+ &lt;/svg&gt;
+ &lt;span class="responsive-image-fallback-text"&gt;Obraz niedostępny&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/p&gt;</description></item><item><title>Koncert - Wesołe Nutki</title><link>https://bartusiak.ai/wesole_nutki/pl/2025/10/27/koncert/</link><pubDate>Fri, 23 Jan 2026 09:28:34 +0000</pubDate><guid>https://bartusiak.ai/wesole_nutki/pl/2025/10/27/koncert/</guid><description>&lt;p&gt;W naszym przed­szko­lu &lt;strong&gt;regu­lar­nie odby­wa­ją się kon­cer­ty z muzy­ką na żywo&lt;/strong&gt;, któ­re pozwa­la­ją dzie­ciom pozna­wać instru­men­ty i roz­wi­jać wraż­li­wość muzyczną. 💛&lt;/p&gt;
+&lt;p&gt;Ostat­nio mie­li­śmy oka­zję uczest­ni­czyć w pięk­nym kon­cer­cie pt. &lt;em&gt;„Pan Malusz­kie­wicz na morzu peł­nym dźwię­ków”&lt;/em&gt; w wyko­na­niu &lt;strong&gt;Lubu­skie­go Biu­ra Kon­cer­to­we­go „Orfe­usz“&lt;/strong&gt;. 🌊🎵&lt;/p&gt;
+&lt;p&gt;
+
+
+&lt;div class="responsive-image-wrapper"&gt;
+ &lt;img src="https://bartusiak.ai/wesole_nutki/images/scraped/2025-10-27-koncert-0.jpeg" alt="Koncert - Wesołe Nutki — zdjęcie 1" class="markdown-image responsive-image-main" 
+ loading="lazy" fetchpriority="auto" decoding="async"
+ onerror="this.parentElement.classList.add('image-error'); this.onerror=null;"&gt;
+
+ 
+ &lt;div class="responsive-image-fallback" aria-hidden="true"&gt;
+ &lt;svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 16 16"&gt;
+ &lt;path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" /&gt;
+ &lt;path
+ d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z" /&gt;
+ &lt;/svg&gt;
+ &lt;span class="responsive-image-fallback-text"&gt;Obraz niedostępny&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/p&gt;</description></item><item><title>Zimowe zabawy na śniegu</title><link>https://bartusiak.ai/wesole_nutki/pl/news/2025/01/zimowe-zabawy-na-%C5%9Bniegu/</link><pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate><guid>https://bartusiak.ai/wesole_nutki/pl/news/2025/01/zimowe-zabawy-na-%C5%9Bniegu/</guid><description>Nasze przedszkolaki świetnie bawiły się na śniegu! Zobaczcie zdjęcia z naszych zimowych zabaw.</description></item><item><title>Warsztaty Kulinarne dla Dzieci</title><link>https://bartusiak.ai/wesole_nutki/pl/news/2024/11/warsztaty-kulinarne-dla-dzieci/</link><pubDate>Tue, 05 Nov 2024 00:00:00 +0000</pubDate><guid>https://bartusiak.ai/wesole_nutki/pl/news/2024/11/warsztaty-kulinarne-dla-dzieci/</guid><description>W listopadzie rozpoczynamy cykl warsztatów kulinarnych dla dzieci. Małe kucharze nauczą się przygotowywać proste i zdrowe posiłki.</description></item><item><title>Jesienny Piknik Rodzinny</title><link>https://bartusiak.ai/wesole_nutki/pl/news/2024/10/jesienny-piknik-rodzinny/</link><pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate><guid>https://bartusiak.ai/wesole_nutki/pl/news/2024/10/jesienny-piknik-rodzinny/</guid><description>Zapraszamy wszystkie rodziny na jesienny piknik w ogrodzie przedszkolnym. Czeka nas wiele atrakcji, konkursów i wspaniała zabawa na świeżym powietrzu.</description></item><item><title>Witamy w Nowym Roku Szkolnym 2024/2025</title><link>https://bartusiak.ai/wesole_nutki/pl/news/2024/09/witamy-w-nowym-roku-szkolnym-2024/2025/</link><pubDate>Mon, 02 Sep 2024 00:00:00 +0000</pubDate><guid>https://bartusiak.ai/wesole_nutki/pl/news/2024/09/witamy-w-nowym-roku-szkolnym-2024/2025/</guid><description>Z radością witamy wszystkie dzieci i rodziców w nowym roku szkolnym. Przygotowaliśmy wiele atrakcji i nowych aktywności dla naszych małych przedszkolaków.</description></item></channel></rss>
