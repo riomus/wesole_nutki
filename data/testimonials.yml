@@ -1,9 +1,8 @@
 # Parent reviews — sourced from the school's public Google reviews (all 5/5).
 # Edit here to add/update. `quote` is Polish; `quote_en` is the English rendering.
 rating: "5,0"
-# Where the rating chip links (Google reviews). Update to the exact Google
-# Business Profile reviews URL when available.
-google_url: "https://www.google.com/maps/search/Przedszkole+Weso%C5%82e+Nutki+Wroc%C5%82aw"
+# Where the rating chip links (the school's Google reviews).
+google_url: "https://share.google/qOwZt4XiIAdJAdu27"
 facebook_url: "https://www.facebook.com/NutkiWroclaw/"
 
 items:
